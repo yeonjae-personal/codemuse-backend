@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ui-dsbd-monthly-user-group-offer-m">	
+	
+	<select id="findAll" resultType="com.lgcns.svcp.prod.entity.DsbdMonthlyUserGroupOfferEntity">
+		SELECT tdmugom.year_month, tdmugom.user_group_name, tdmugom.offer_cnt
+			   ,tdmugom.rgst_user, tdmugom.rgst_dtm, tdmugom.upd_user, tdmugom.upd_dtm
+        FROM tb_dsbd_monthly_user_group_offer_m tdmugom
+	</select>
+</mapper>

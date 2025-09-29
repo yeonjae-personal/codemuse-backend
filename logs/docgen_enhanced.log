@@ -1,0 +1,894 @@
+INFO:     Will watch for changes in these directories: ['/Users/roseline/projects/codemuse-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [67525] using WatchFiles
+INFO:     Started server process [67540]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:63638 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/api/routes.py", line 39, in generate_documents
+    result = await generator.generate_documents(upload_to_rag=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 54, in generate_documents
+    generated_files = self._generate_structured_documents(file_chunks)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 128, in _generate_structured_documents
+    md_content = self.renderer.render_file_document(file_path, chunks, self.source_dir)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_renderer.py", line 41, in render_file_document
+    template = self.env.get_template('file_document.j2')
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: file_document.j2
+🔍 받은 요청: upload_to_rag=False, source_dir=./sample_code
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir='./sample_code' output_dir='./generated_docs' template_dir='./templates' upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: ./sample_code
+   📂 출력: ./generated_docs
+📄 Processing: ./sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: ./sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: ./sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.79초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+❌ 오류 발생: file_document.j2
+INFO:     127.0.0.1:63638 - "POST /api/v1/documents/generate HTTP/1.1" 500 Internal Server Error
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/api/routes.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [67540]
+INFO:     Started server process [67765]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:63742 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63742 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/api/routes.py", line 39, in generate_documents
+    result = await generator.generate_documents(upload_to_rag=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 54, in generate_documents
+    generated_files = self._generate_structured_documents(file_chunks)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 128, in _generate_structured_documents
+    md_content = self.renderer.render_file_document(file_path, chunks, self.source_dir)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_renderer.py", line 41, in render_file_document
+    template = self.env.get_template('file_document.j2')
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: file_document.j2
+🔍 받은 요청: upload_to_rag=False, source_dir=./sample_code
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir='./sample_code' output_dir='./generated_docs' template_dir='./templates' upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: ./sample_code
+   📂 출력: ./generated_docs
+📄 Processing: ./sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: ./sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: ./sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.79초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+❌ 오류 발생: file_document.j2
+INFO:     127.0.0.1:63742 - "POST /api/v1/documents/generate HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:63880 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/api/routes.py", line 39, in generate_documents
+    result = await generator.generate_documents(upload_to_rag=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 54, in generate_documents
+    generated_files = self._generate_structured_documents(file_chunks)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 128, in _generate_structured_documents
+    md_content = self.renderer.render_file_document(file_path, chunks, self.source_dir)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_renderer.py", line 41, in render_file_document
+    template = self.env.get_template('file_document.j2')
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: file_document.j2
+🔍 받은 요청: upload_to_rag=False, source_dir=./sample_code
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir='./sample_code' output_dir='./generated_docs' template_dir='./templates' upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: ./sample_code
+   📂 출력: ./generated_docs
+📄 Processing: ./sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: ./sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: ./sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.54초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+❌ 오류 발생: file_document.j2
+INFO:     127.0.0.1:63880 - "POST /api/v1/documents/generate HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:63880 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63880 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/api/routes.py", line 39, in generate_documents
+    result = await generator.generate_documents(upload_to_rag=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 54, in generate_documents
+    generated_files = self._generate_structured_documents(file_chunks)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 128, in _generate_structured_documents
+    md_content = self.renderer.render_file_document(file_path, chunks, self.source_dir)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_renderer.py", line 41, in render_file_document
+    template = self.env.get_template('file_document.j2')
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: file_document.j2
+🔍 받은 요청: upload_to_rag=False, source_dir=./sample_code
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir='./sample_code' output_dir='./generated_docs' template_dir='./templates' upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: ./sample_code
+   📂 출력: ./generated_docs
+📄 Processing: ./sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: ./sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: ./sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.54초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+❌ 오류 발생: file_document.j2
+INFO:     127.0.0.1:63880 - "POST /api/v1/documents/generate HTTP/1.1" 500 Internal Server Error
+🔍 받은 요청: upload_to_rag=False, source_dir=None
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir=None output_dir=None template_dir=None upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.51초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+   📝 MD 문서 생성 완료: 32개 파일 [⏱️ 0.87초]
+   💾 메타데이터 저장 완료 [⏱️ 0.07초]
+   📊 프로젝트 요약 생성 완료 [⏱️ 0.02초]
+
+⏭️ RAG 업로드 건너뜀 (generate-local 모드)
+
+✅ 전체 문서 생성 완료 [⏱️ 총 1.47초]
+   📈 단계별 시간:
+     1. Chunk 생성: 0.51초 (34.6%)
+     2. 파일 그룹화: 0.00초 (0.0%)
+     3. MD 문서 생성: 0.87초 (59.2%)
+     4. 메타데이터 저장: 0.07초 (4.6%)
+     5. 프로젝트 요약: 0.02초 (1.5%)
+     6. RAG 업로드: 0.00초 (0.0%)
+✅ 응답 준비 완료: docs_created=32
+INFO:     127.0.0.1:63989 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64231 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64433 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64433 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+Traceback (most recent call last):
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/api/routes.py", line 39, in generate_documents
+    result = await generator.generate_documents(upload_to_rag=False)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 54, in generate_documents
+    generated_files = self._generate_structured_documents(file_chunks)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_chunk_generator.py", line 128, in _generate_structured_documents
+    md_content = self.renderer.render_file_document(file_path, chunks, self.source_dir)
+  File "/Users/roseline/projects/codemuse-backend/src/chunker_document_generator/core/template_renderer.py", line 41, in render_file_document
+    template = self.env.get_template('file_document.j2')
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/jinja2/loaders.py", line 218, in get_source
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: file_document.j2
+🔍 받은 요청: upload_to_rag=False, source_dir=./sample_code
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir='./sample_code' output_dir='./generated_docs' template_dir='./jinja2_templates' upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: ./sample_code
+   📂 출력: ./generated_docs
+📄 Processing: ./sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: ./sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: ./sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.70초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+❌ 오류 발생: file_document.j2
+INFO:     127.0.0.1:64433 - "POST /api/v1/documents/generate HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:64950 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65002 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65044 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65139 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65139 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+🔍 받은 요청: upload_to_rag=False, source_dir=./sample_code
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir='./sample_code' output_dir='./generated_docs' template_dir=None upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: ./sample_code
+   📂 출력: ./generated_docs
+📄 Processing: ./sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: ./sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: ./sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.61초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+   📝 MD 문서 생성 완료: 32개 파일 [⏱️ 0.87초]
+   💾 메타데이터 저장 완료 [⏱️ 0.06초]
+   📊 프로젝트 요약 생성 완료 [⏱️ 0.06초]
+
+⏭️ RAG 업로드 건너뜀 (generate-local 모드)
+
+✅ 전체 문서 생성 완료 [⏱️ 총 1.59초]
+   📈 단계별 시간:
+     1. Chunk 생성: 0.61초 (38.3%)
+     2. 파일 그룹화: 0.00초 (0.0%)
+     3. MD 문서 생성: 0.87초 (54.4%)
+     4. 메타데이터 저장: 0.06초 (3.7%)
+     5. 프로젝트 요약: 0.06초 (3.6%)
+     6. RAG 업로드: 0.00초 (0.0%)
+✅ 응답 준비 완료: docs_created=32
+INFO:     127.0.0.1:65139 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65273 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+🔍 받은 요청: upload_to_rag=False, source_dir=./sample_code
+🔍 요청 타입: <class 'src.chunker_document_generator.api.routes.GenerateRequest'>, 내용: source_dir='./sample_code' output_dir='./generated_docs' template_dir=None upload_to_rag=False
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: ./sample_code
+   📂 출력: ./generated_docs
+📄 Processing: ./sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: ./sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: ./sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: ./sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: ./sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: ./sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: ./sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료 [⏱️ 0.57초]
+   📂 파일별 그룹화 완료: 32개 파일 [⏱️ 0.00초]
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+   📝 MD 문서 생성 완료: 32개 파일 [⏱️ 0.76초]
+   💾 메타데이터 저장 완료 [⏱️ 0.06초]
+   📊 프로젝트 요약 생성 완료 [⏱️ 0.06초]
+
+⏭️ RAG 업로드 건너뜀 (generate-local 모드)
+
+✅ 전체 문서 생성 완료 [⏱️ 총 1.45초]
+   📈 단계별 시간:
+     1. Chunk 생성: 0.57초 (39.4%)
+     2. 파일 그룹화: 0.00초 (0.0%)
+     3. MD 문서 생성: 0.76초 (52.6%)
+     4. 메타데이터 저장: 0.06초 (4.1%)
+     5. 프로젝트 요약: 0.06초 (3.9%)
+     6. RAG 업로드: 0.00초 (0.0%)
+✅ 응답 준비 완료: docs_created=32
+INFO:     127.0.0.1:65273 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49218 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/api/routes.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [67765]
+INFO:     Started server process [75710]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/api/routes.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75710]
+INFO:     Started server process [75810]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [75810]
+INFO:     Stopping reloader process [67525]

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ui-dsbd-item-stat-m">
+
+  <select id="findAll" resultType="com.lgcns.svcp.prod.entity.DsbdItemStatEntity">
+    SELECT tdism.lctgr_item_name, tdism.item_code_name
+    ,tdism.item_cnt, tdism.lctgr_item_ratio, tdism.item_code_ratio
+    ,tdism.rgst_user, tdism.rgst_dtm, tdism.upd_user, tdism.upd_dtm
+    FROM tb_dsbd_item_stat_m tdism
+  </select>
+
+</mapper>

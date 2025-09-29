@@ -1,0 +1,66 @@
+# 📄 {{ file_name }}
+
+> **파일 경로**: `{{ relative_path }}`  
+> **생성일**: {{ current_date }}  
+> **Chunk 수**: {{ total_chunks }}개  
+> **언어**: {{ language | title }}{% if framework %} / {{ framework | title }}{% endif %}
+
+---
+
+{% if overview_chunk %}
+## 📋 파일 개요
+
+{% if overview_chunk.docstring %}
+> 🎯 **스타일 목적**  
+> {{ overview_chunk.docstring }}
+
+{% endif %}
+{% if info_cards %}
+{{ info_table }}
+
+{% endif %}
+{% endif %}
+
+{% if style_chunks %}
+## 🎨 스타일 규칙
+
+{% for style_chunk in style_chunks %}
+### <a id="style-{{ style_chunk.name.lower() }}"></a>🎨 `{{ style_chunk.name }}`
+
+{% if style_chunk.docstring %}
+> 📝 **스타일 설명**  
+> {{ style_chunk.docstring }}
+
+{% endif %}
+
+#### 📋 스타일 정보
+
+| 속성 | 값 |
+|------|----|
+| 📍 **라인 범위** | {{ style_chunk.line_range }} |
+{% if style_chunk.tags %}| 🏷️ **태그** | `{{ style_chunk.tags | join(', ') }}` |{% endif %}
+{% if style_chunk.framework %}| 🏗️ **프레임워크** | `{{ style_chunk.framework }}` |{% endif %}
+
+<details>
+<summary>🔍 코드 미리보기</summary>
+
+```{{ style_chunk.language if style_chunk.language else 'css' }}
+{{ style_chunk.content[:600] }}...
+```
+
+**Chunk 정보**
+- 🆔 **ID**: `{{ style_chunk.chunk_id }}`
+- 📊 **토큰**: {{ style_chunk.token_count }}
+
+</details>
+
+---
+
+{% endfor %}
+{% endif %}
+
+{% if chunk_summary %}
+## 🧩 Chunk 요약
+
+{{ chunk_summary }}
+{% endif %}

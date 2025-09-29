@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Group">
+
+	<select id="retrieveOfferGroupMList" resultType="com.lgcns.svcp.prod.online.prod.dto.group.OfferGroupMDto">
+        <![CDATA[
+			SELECT a.obj_uuid
+				, b.obj_name
+				, b.obj_code
+				, a.offer_group_type_code
+				, a.prps_cntn
+				, a.offer_group_ovw_cntn
+				, a.rqst_dept_name
+				, a.rqst_user
+				, a.dplc_trgt_uuid
+				, a.chg_dept_name
+				, a.chg_user
+				, a.rgst_user
+				, a.rgst_dtm
+				, a.upd_user
+				, a.upd_dtm
+			FROM
+				tb_offer_group_m a
+			JOIN tb_item_mpng_d b ON
+				a.obj_uuid = b.obj_uuid
+			ORDER BY a.rgst_dtm DESC
+		]]>
+    </select>
+    
+	<select id="retrieveOfferGroupWithOfferList" resultType="com.lgcns.svcp.prod.online.prod.dto.group.OfferGroupWithOfferDto">
+        	
+			SELECT a.offer_group_uuid
+				, b.obj_code AS offer_group_code
+				, b.obj_name AS offer_group_name
+				, a.offer_uuid
+				, c.obj_code AS offer_code
+				, c.obj_name AS offer_name
+				, a.valid_start_dtm
+				, a.valid_end_dtm
+				, a.rgst_user
+				, a.rgst_dtm
+				, a.upd_user
+				, a.upd_dtm
+			FROM
+				tb_offer_group_rel_d a
+			JOIN tb_item_mpng_d b ON
+				a.offer_group_uuid = b.obj_uuid
+			JOIN tb_item_mpng_d c ON
+				a.offer_uuid = c.obj_uuid
+			WHERE 1 = 1
+			<if test="offerGroupUuid != null">
+            	AND a.offer_group_uuid = #{offerGroupUuid}
+        	</if>
+        	<if test="offerUuid != null">
+            	AND a.offer_uuid = #{offerUuid}
+        	</if>
+        	ORDER BY a.rgst_dtm DESC
+    </select>
+    
+    <select id="selectOfferGroupList" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+			, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_offer_group_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.item_code = 'OG'
+	    	GROUP BY a.obj_uuid
+	    	ORDER BY a.rgst_dtm DESC
+	</select>
+	
+	<select id="selectOfferGroup" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+			, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_offer_group_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.obj_code = #{offerGroupCode}
+	    	GROUP BY a.obj_uuid
+	</select>
+	
+	<select id="selectOfferList" resultType="com.lgcns.svcp.prod.online.prod.dto.common.Item">
+         SELECT a.offer_uuid AS uuid
+				, c.item_code_name AS item_type_nm
+			FROM
+				tb_offer_group_rel_d a
+			JOIN tb_item_mpng_d b ON
+				a.offer_uuid = b.obj_uuid
+			JOIN tb_item_c c ON
+				b.item_code = c.item_code
+			JOIN tb_item_mpng_d d ON
+				a.offer_group_uuid = d.obj_uuid
+			WHERE 1=1
+				AND d.obj_code = #{inputCode}
+				AND a.valid_end_dtm IS NULL
+			ORDER BY
+				c.item_code_name;
+    </select>
+
+</mapper>

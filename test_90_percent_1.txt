@@ -1,0 +1,1740 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   619    0   421  100   198    308    145  0:00:01  0:00:01 --:--:--   454100   619    0   421  100   198    178     83  0:00:02  0:00:02 --:--:--   261100   619    0   421  100   198    125     58  0:00:03  0:00:03 --:--:--   184100   619    0   421  100   198     96     45  0:00:04  0:00:04 --:--:--   141100   619    0   421  100   198     78     36  0:00:05  0:00:05 --:--:--   115100   619    0   421  100   198     66     31  0:00:06  0:00:06 --:--:--     0100   619    0   421  100   198     57     26  0:00:07  0:00:07 --:--:--     0100   619    0   421  100   198     49     23  0:00:08  0:00:08 --:--:--     0100   619    0   421  100   198     44     20  0:00:09  0:00:09 --:--:--     0100   619    0   421  100   198     40     18  0:00:11  0:00:10  0:00:01     0100   619    0   421  100   198     36     17  0:00:11  0:00:11 --:--:--     0100   619    0   421  100   198     33     15  0:00:13  0:00:12  0:00:01     0100   619    0   421  100   198     31     14  0:00:14  0:00:13  0:00:01     0100   619    0   421  100   198     29     13  0:00:15  0:00:14  0:00:01     0event: status
+data: Step 1: Question standardization in progress...
+
+event: step
+data: 1
+
+event: status
+data: Step 2: Keyword extraction in progress...
+
+event: step
+data: 2
+
+event: status
+data: Step 3: RAG search in progress...
+
+event: step
+data: 3
+
+event: status
+data: Step 4: Quality review in progress...
+
+event: step
+data: 4
+
+event: status
+data: Step 5: Final response generation in progress...
+
+event: step
+data: 5
+
+event: standardized_question
+data: 타입 불일치 검출 로직을 수정하려면 어디를 수정해아 하는가?
+
+event: status
+data: Response generation completed
+
+event: started
+data: 
+
+event: model
+data: gpt-3.5-turbo
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 핵
+
+event: token
+data: 심
+
+event: token
+data:  
+
+event: token
+data: 요
+
+event: token
+data: 지
+
+event: token
+data: :
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 
+
+
+event: token
+data: 타
+
+event: token
+data: 입
+
+event: token
+data:  
+
+event: token
+data: 불
+
+event: token
+data: 일
+
+event: token
+data: 치
+
+event: token
+data: (
+
+event: token
+data: t
+
+event: token
+data: y
+
+event: token
+data: p
+
+event: token
+data: e
+
+event: token
+data: _
+
+event: token
+data: m
+
+event: token
+data: i
+
+event: token
+data: s
+
+event: token
+data: m
+
+event: token
+data: a
+
+event: token
+data: t
+
+event: token
+data: c
+
+event: token
+data: h
+
+event: token
+data: )
+
+event: token
+data:  
+
+event: token
+data: 검
+
+event: token
+data: 출
+
+event: token
+data:  
+
+event: token
+data: 로
+
+event: token
+data: 직
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 수
+
+event: token
+data: 정
+
+event: token
+data: 하
+
+event: token
+data: 려
+
+event: token
+data: 면
+
+event: token
+data:  
+
+event: token
+data: `
+
+event: token
+data: I
+
+event: token
+data: s
+
+event: token
+data: s
+
+event: token
+data: u
+
+event: token
+data: e
+
+event: token
+data: D
+
+event: token
+data: e
+
+event: token
+data: t
+
+event: token
+data: e
+
+event: token
+data: c
+
+event: token
+data: t
+
+event: token
+data: o
+
+event: token
+data: r
+
+event: token
+data: `
+
+event: token
+data:  
+
+event: token
+data: 클
+
+event: token
+data: 래
+
+event: token
+data: 스
+
+event: token
+data:  
+
+event: token
+data: 내
+
+event: token
+data: 부
+
+event: token
+data: 의
+
+event: token
+data:  
+
+event: token
+data: `
+
+event: token
+data: d
+
+event: token
+data: e
+
+event: token
+data: t
+
+event: token
+data: e
+
+event: token
+data: c
+
+event: token
+data: t
+
+event: token
+data: _
+
+event: token
+data: t
+
+event: token
+data: y
+
+event: token
+data: p
+
+event: token
+data: e
+
+event: token
+data: _
+
+event: token
+data: m
+
+event: token
+data: i
+
+event: token
+data: s
+
+event: token
+data: m
+
+event: token
+data: a
+
+event: token
+data: t
+
+event: token
+data: c
+
+event: token
+data: h
+
+event: token
+data: `
+
+event: token
+data:  
+
+event: token
+data: 메
+
+event: token
+data: 서
+
+event: token
+data: 드
+
+event: token
+data: 를
+
+event: token
+data:  
+
+event: token
+data: 수
+
+event: token
+data: 정
+
+event: token
+data: 해
+
+event: token
+data: 아
+
+event: token
+data:  
+
+event: token
+data: 합
+
+event: token
+data: 니
+
+event: token
+data: 다
+
+event: token
+data: .
+
+event: token
+data: 
+
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 근
+
+event: token
+data: 거
+
+event: token
+data:  
+
+event: token
+data: 섹
+
+event: token
+data: 션
+
+event: token
+data:  
+
+event: token
+data: 요
+
+event: token
+data: 약
+
+event: token
+data: :
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 
+
+
+event: token
+data: -
+
+event: token
+data:  
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: I
+
+event: token
+data: s
+
+event: token
+data: s
+
+event: token
+data: u
+
+event: token
+data: e
+
+event: token
+data: D
+
+event: token
+data: e
+
+event: token
+data: t
+
+event: token
+data: e
+
+event: token
+data: c
+
+event: token
+data: t
+
+event: token
+data: o
+
+event: token
+data: r
+
+event: token
+data:  
+
+event: token
+data: 클
+
+event: token
+data: 래
+
+event: token
+data: 스
+
+event: token
+data: :
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data:  
+
+event: token
+data: 타
+
+event: token
+data: 입
+
+event: token
+data:  
+
+event: token
+data: 불
+
+event: token
+data: 일
+
+event: token
+data: 치
+
+event: token
+data: (
+
+event: token
+data: t
+
+event: token
+data: y
+
+event: token
+data: p
+
+event: token
+data: e
+
+event: token
+data: _
+
+event: token
+data: m
+
+event: token
+data: i
+
+event: token
+data: s
+
+event: token
+data: m
+
+event: token
+data: a
+
+event: token
+data: t
+
+event: token
+data: c
+
+event: token
+data: h
+
+event: token
+data: )
+
+event: token
+data: 와
+
+event: token
+data:  
+
+event: token
+data: 같
+
+event: token
+data: 은
+
+event: token
+data:  
+
+event: token
+data: 다
+
+event: token
+data: 양
+
+event: token
+data: 한
+
+event: token
+data:  
+
+event: token
+data: 이
+
+event: token
+data: 슈
+
+event: token
+data: 를
+
+event: token
+data:  
+
+event: token
+data: 검
+
+event: token
+data: 출
+
+event: token
+data: 하
+
+event: token
+data: 는
+
+event: token
+data:  
+
+event: token
+data: 역
+
+event: token
+data: 할
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 합
+
+event: token
+data: 니
+
+event: token
+data: 다
+
+event: token
+data: .
+
+event: token
+data: 
+
+
+event: token
+data: -
+
+event: token
+data:  
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: d
+
+event: token
+data: e
+
+event: token
+data: t
+
+event: token
+data: e
+
+event: token
+data: c
+
+event: token
+data: t
+
+event: token
+data: _
+
+event: token
+data: t
+
+event: token
+data: y
+
+event: token
+data: p
+
+event: token
+data: e
+
+event: token
+data: _
+
+event: token
+data: m
+
+event: token
+data: i
+
+event: token
+data: s
+
+event: token
+data: m
+
+event: token
+data: a
+
+event: token
+data: t
+
+event: token
+data: c
+
+event: token
+data: h
+
+event: token
+data:  
+
+event: token
+data: 메
+
+event: token
+data: 서
+
+event: token
+data: 드
+
+event: token
+data: :
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data:  
+
+event: token
+data: 타
+
+event: token
+data: 입
+
+event: token
+data:  
+
+event: token
+data: 불
+
+event: token
+data: 일
+
+event: token
+data: 치
+
+event: token
+data: 를
+
+event: token
+data:  
+
+event: token
+data: 검
+
+event: token
+data: 출
+
+event: token
+data: 하
+
+event: token
+data: 는
+
+event: token
+data:  
+
+event: token
+data: 역
+
+event: token
+data: 할
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 수
+
+event: token
+data: 행
+
+event: token
+data: 하
+
+event: token
+data: 며
+
+event: token
+data:  
+
+event: token
+data: 1
+
+event: token
+data: 5
+
+event: token
+data: 7
+
+event: token
+data: 번
+
+event: token
+data:  
+
+event: token
+data: 줄
+
+event: token
+data: 에
+
+event: token
+data:  
+
+event: token
+data: 위
+
+event: token
+data: 치
+
+event: token
+data: 해
+
+event: token
+data:  
+
+event: token
+data: 있
+
+event: token
+data: 습
+
+event: token
+data: 니
+
+event: token
+data: 다
+
+event: token
+data: .
+
+event: token
+data: 
+
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 조
+
+event: token
+data: 치
+
+event: token
+data: /
+
+event: token
+data: 확
+
+event: token
+data: 장
+
+event: token
+data:  
+
+event: token
+data: 방
+
+event: token
+data: 법
+
+event: token
+data: :
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 
+
+
+event: token
+data: 1
+
+event: token
+data: .
+
+event: token
+data:  
+
+event: token
+data: 📁
+
+event: token
+data:  
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 파
+
+event: token
+data: 일
+
+event: token
+data:  
+
+event: token
+data: 경
+
+event: token
+data: 로
+
+event: token
+data: :
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data:  
+
+event: token
+data: i
+
+event: token
+data: s
+
+event: token
+data: s
+
+event: token
+data: u
+
+event: token
+data: e
+
+event: token
+data: _
+
+event: token
+data: d
+
+event: token
+data: e
+
+event: token
+data: t
+
+event: token
+data: e
+
+event: token
+data: c
+
+event: token
+data: t
+
+event: token
+data: o
+
+event: token
+data: r
+
+event: token
+data: .
+
+event: token
+data: p
+
+event: token
+data: y
+
+event: token
+data: 
+
+
+event: token
+data: 2
+
+event: token
+data: .
+
+event: token
+data:  
+
+event: token
+data: 📍
+
+event: token
+data:  
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: 줄
+
+event: token
+data:  
+
+event: token
+data: 번
+
+event: token
+data: 호
+
+event: token
+data: :
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data:  
+
+event: token
+data: 1
+
+event: token
+data: 5
+
+event: token
+data: 7
+
+event: token
+data: 번
+
+event: token
+data:  
+
+event: token
+data: 줄
+
+event: token
+data: 
+
+
+event: token
+data: 3
+
+event: token
+data: .
+
+event: token
+data:  
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: I
+
+event: token
+data: s
+
+event: token
+data: s
+
+event: token
+data: u
+
+event: token
+data: e
+
+event: token
+data: D
+
+event: token
+data: e
+
+event: token
+data: t
+
+event: token
+data: e
+
+event: token
+data: c
+
+event: token
+data: t
+
+event: token
+data: o
+
+event: token
+data: r
+
+event: token
+data:  
+
+event: token
+data: 클
+
+event: token
+data: 래
+
+event: token
+data: 스
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data:  
+
+event: token
+data: 내
+
+event: token
+data: 부
+
+event: token
+data: 의
+
+event: token
+data:  
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data: d
+
+event: token
+data: e
+
+event: token
+data: t
+
+event: token
+data: e
+
+event: token
+data: c
+
+event: token
+data: t
+
+event: token
+data: _
+
+event: token
+data: t
+
+event: token
+data: y
+
+event: token
+data: p
+
+event: token
+data: e
+
+event: token
+data: _
+
+event: token
+data: m
+
+event: token
+data: i
+
+event: token
+data: s
+
+event: token
+data: m
+
+event: token
+data: a
+
+event: token
+data: t
+
+event: token
+data: c
+
+event: token
+data: h
+
+event: token
+data: *
+
+event: token
+data: *
+
+event: token
+data:  
+
+event: token
+data: 메
+
+event: token
+data: 서
+
+event: token
+data: 드
+
+event: token
+data: 를
+
+event: token
+data:  
+
+event: token
+data: 수
+
+event: token
+data: 정
+
+event: token
+data: 하
+
+event: token
+data: 여
+
+event: token
+data:  
+
+event: token
+data: 타
+
+event: token
+data: 입
+
+event: token
+data:  
+
+event: token
+data: 불
+
+event: token
+data: 일
+
+event: token
+data: 치
+
+event: token
+data: 를
+
+event: token
+data:  
+
+event: token
+data: 보
+
+event: token
+data: 다
+
+event: token
+data:  
+
+event: token
+data: 정
+
+event: token
+data: 확
+
+event: token
+data: 히
+
+event: token
+data:  
+
+event: token
+data: 검
+
+event: token
+data: 출
+
+event: token
+data: 하
+
+event: token
+data: 도
+
+event: token
+data: 록
+
+event: token
+data:  
+
+event: token
+data: 로
+
+event: token
+data: 직
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 개
+
+event: token
+data: 선
+
+event: token
+data: 합
+
+event: token
+data: 니
+
+event: token
+data: 다
+
+event: token
+data: .
+
+event: token
+data: 
+
+
+event: token
+data: 4
+
+event: token
+data: .
+
+event: token
+data: 
+
+
+event: token
+data: 필
+
+event: token
+data: 요
+
+event: token
+data: 에
+
+event: token
+data:  
+
+event: token
+data: 따
+
+event: token
+data: 라
+
+event: token
+data:  
+
+event: token
+data: 타
+
+event: token
+data: 입
+
+event: token
+data:  
+
+event: token
+data: 체
+
+event: token
+data: 크
+
+event: token
+data:  
+
+event: token
+data: 로
+
+event: token
+data: 직
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 추
+
+event: token
+data: 가
+
+event: token
+data: 하
+
+event: token
+data: 거
+
+event: token
+data: 나
+
+event: token
+data:  
+
+event: token
+data: 다
+
+event: token
+data: 른
+
+event: token
+data:  
+
+event: token
+data: 유
+
+event: token
+data: 형
+
+event: token
+data: 의
+
+event: token
+data:  
+
+event: token
+data: 불
+
+event: token
+data: 일
+
+event: token
+data: 치
+
+event: token
+data: 를
+
+event: token
+data:  
+
+event: token
+data: 확
+
+event: token
+data: 인
+
+event: token
+data: 하
+
+event: token
+data: 는
+
+event: token
+data:  
+
+event: token
+data: 부
+
+event: token
+data: 분
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 개
+
+event: token
+data: 선
+
+event: token
+data: 할
+
+event: token
+data:  
+
+event: token
+data: 수
+
+event: token
+data:  
+
+event: token
+data: 있
+
+event: token
+data: 습
+
+event: token
+data: 니
+
+event: token
+data: 다
+
+event: token
+data: .
+
+event: token
+data: 
+
+
+event: token
+data: 5
+
+event: token
+data: .
+
+event: token
+data: 
+
+
+event: token
+data: 수
+
+event: token
+data: 정
+
+event: token
+data:  
+
+event: token
+data: 후
+
+event: token
+data: 에
+
+event: token
+data: 는
+
+event: token
+data:  
+
+event: token
+data: 기
+
+event: token
+data: 존
+
+event: token
+data: 의
+
+event: token
+data:  
+
+event: token
+data: 유
+
+event: token
+data: 닛
+
+event: token
+data:  
+
+event: token
+data: 테
+
+event100 13875    0 13677  100   198    899     13  0:00:15  0:00:15 --:--:--  2813100 13875    0 13677  100   198    899     13  0:00:15  0:00:15 --:--:--  3571
+: token
+data: 스
+
+event: token
+data: 트
+
+event: token
+data: 를
+
+event: token
+data:  
+
+event: token
+data: 통
+
+event: token
+data: 해
+
+event: token
+data:  
+
+event: token
+data: 적
+
+event: token
+data: 절
+
+event: token
+data: 한
+
+event: token
+data:  
+
+event: token
+data: 검
+
+event: token
+data: 증
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 거
+
+event: token
+data: 쳐
+
+event: token
+data:  
+
+event: token
+data: 수
+
+event: token
+data: 정
+
+event: token
+data: 사
+
+event: token
+data: 항
+
+event: token
+data: 이
+
+event: token
+data:  
+
+event: token
+data: 기
+
+event: token
+data: 존
+
+event: token
+data:  
+
+event: token
+data: 로
+
+event: token
+data: 직
+
+event: token
+data: 에
+
+event: token
+data:  
+
+event: token
+data: 영
+
+event: token
+data: 향
+
+event: token
+data: 을
+
+event: token
+data:  
+
+event: token
+data: 미
+
+event: token
+data: 치
+
+event: token
+data: 지
+
+event: token
+data:  
+
+event: token
+data: 않
+
+event: token
+data: 는
+
+event: token
+data: 지
+
+event: token
+data:  
+
+event: token
+data: 확
+
+event: token
+data: 인
+
+event: token
+data: 합
+
+event: token
+data: 니
+
+event: token
+data: 다
+
+event: token
+data: .
+
+event: metrics
+data: {"processing_time": 15.189407110214233, "search_results_count": 8, "quality_score": 0.18761845315939388, "keywords": ["IssueDetector", "detect_type_mismatch", "issue_detector.py", "type_mismatch"]}
+
+event: done
+data: ok
+

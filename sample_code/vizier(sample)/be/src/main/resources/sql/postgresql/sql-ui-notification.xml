@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-notification">
+	<select id="getAllNotifications" resultType="com.lgcns.svcp.prod.ui.prod.dto.notifications.NotificationDto">
+	  SELECT
+	    a.user_noti_uuid   
+	    , a.user_id          
+	    , a.noti_msg_label_id
+	    , a.noti_type        
+	    , a.noti_read_yn     
+	    , a.noti_read_dtm    
+	    , a.link_url         
+	    , a.image_url        
+	    , a.rgst_user        
+	    , a.rgst_dtm         
+	    , a.upd_user         
+	    , a.upd_dtm          
+	  FROM
+	    tb_user_noti_m a
+	  <where>
+	      a.user_id = #{userId}
+	  </where>
+	  ORDER BY
+	  	a.rgst_dtm DESC
+	</select>
+	
+	<insert id="insertNotification">
+	  INSERT INTO tb_user_noti_m (
+	    user_noti_uuid
+	    , user_id
+	    , noti_msg_label_id
+	    , noti_type
+	    , noti_read_yn
+	    , noti_read_dtm
+	    , link_url
+	    , image_url
+	    , rgst_user
+	    , rgst_dtm
+	    , upd_user
+	    , upd_dtm
+	  )
+	  VALUES (
+	    #{userNotiUuid}
+	    , #{userId}
+	    , #{notiMsgLabelId}
+	    , #{notiType}
+	    , #{notiReadYn}
+	    , #{notiReadDtm}::TIMESTAMP
+	    , #{linkUrl}
+	    , #{imageUrl}
+	    , #{rgstUser}
+	    , CURRENT_TIMESTAMP
+	    , #{updUser}
+	    , CURRENT_TIMESTAMP
+	  )
+	</insert>
+	
+	<update id="markAsRead">
+	  UPDATE tb_user_noti_m
+	  <set>
+	    noti_read_yn     = 'Y'
+	    , noti_read_dtm  = CURRENT_TIMESTAMP
+	    , upd_user       = #{updUser}
+	    , upd_dtm        = CURRENT_TIMESTAMP
+	  </set>
+	  WHERE
+	    user_noti_uuid = #{userNotiUuid}
+	</update>
+</mapper>

@@ -1,0 +1,183 @@
+# 🏗️ {{ project_name }} 아키텍처 분석
+
+> **생성일**: {{ current_date }}  
+> **분석 대상**: {{ source_directory }}  
+> **총 파일 수**: {{ total_files }}개  
+> **총 Chunk 수**: {{ total_chunks }}개
+
+---
+
+## 📊 프로젝트 개요
+
+| 속성 | 값 |
+|------|----|
+| **프로젝트명** | {{ project_name }} |
+| **아키텍처** | {{ architecture_type if architecture_type else 'Enterprise Web Application' }} |
+| **프론트엔드** | {{ frontend_stack.frameworks | join(', ') if frontend_stack.frameworks else 'N/A' }} |
+| **백엔드** | {{ backend_stack.frameworks | join(', ') if backend_stack.frameworks else 'N/A' }} |
+| **데이터베이스** | {{ database_stack.entities | length if database_stack.entities else 0 }}개 엔티티 |
+| **배포** | {{ 'Docker + Kubernetes' if deployment_stack.deployment_ready else 'N/A' }} |
+
+## 🎯 비즈니스 도메인
+
+### 핵심 도메인
+{% for domain in business_domains %}
+- **{{ domain.name }}**: {{ domain.description }}
+  - 주요 기능: {{ domain.features | join(', ') if domain.features else 'N/A' }}
+  - 복잡도: {{ domain.complexity }}
+  - 파일 수: {{ domain.file_count }}개
+
+{% endfor %}
+
+### API 서비스
+{% for service in api_services %}
+- **{{ service.name }}**: `{{ service.base_url }}`
+  - 엔드포인트: {{ service.endpoint_count }}개
+  - 인증: {{ service.auth_type }}
+
+{% endfor %}
+
+## 🔄 데이터 플로우
+
+### 프론트엔드 → 백엔드
+{% for flow in data_flows %}
+1. **{{ flow.name }}**
+   - 트리거: {{ flow.trigger }}
+   - API: `{{ flow.api_endpoint }}`
+   - 데이터: {{ flow.data_type }}
+
+{% endfor %}
+
+## 🗄️ 데이터베이스 스키마
+
+### 주요 테이블
+{% for table in database_tables %}
+- **{{ table.name }}**: {{ table.description if table.description else '데이터 테이블' }}
+  - 컬럼: {{ table.column_count if table.column_count else 'N/A' }}개
+  - 관계: {{ table.relationship_count if table.relationship_count else 'N/A' }}개
+
+{% endfor %}
+
+## 🏗️ 기술 스택 상세
+
+### 프론트엔드 스택
+{% if frontend_stack %}
+- **프레임워크**: {{ frontend_stack.frameworks | join(', ') if frontend_stack.frameworks else 'N/A' }}
+- **라이브러리**: {{ frontend_stack.libraries | join(', ') if frontend_stack.libraries else 'N/A' }}
+- **파일 수**: {{ frontend_stack.file_count }}개
+{% else %}
+- **정보 없음**
+{% endif %}
+
+### 백엔드 스택
+{% if backend_stack %}
+- **프레임워크**: {{ backend_stack.frameworks | join(', ') if backend_stack.frameworks else 'N/A' }}
+- **라이브러리**: {{ backend_stack.libraries | join(', ') if backend_stack.libraries else 'N/A' }}
+- **파일 수**: {{ backend_stack.file_count }}개
+{% else %}
+- **정보 없음**
+{% endif %}
+
+### 데이터베이스 스택
+{% if database_stack %}
+- **엔티티 수**: {{ database_stack.entity_count if database_stack.entity_count else 0 }}개
+- **주요 엔티티**: {{ database_stack.entities | join(', ') if database_stack.entities else 'N/A' }}
+- **DB 작업**: {{ database_stack.operations | length if database_stack.operations else 0 }}개
+{% else %}
+- **정보 없음**
+{% endif %}
+
+## 📁 디렉토리 구조
+
+```
+{{ directory_tree }}
+```
+
+## 🔍 코드 품질 분석
+
+### 복잡도 분포
+- **평균 복잡도**: {{ avg_complexity | round(2) }}
+- **최대 복잡도**: {{ max_complexity }}
+- **고복잡도 파일**: {{ complexity_high_count if complexity_high_count else 0 }}개
+
+### 테스트 커버리지
+- **테스트 파일**: {{ test_file_count if test_file_count else 0 }}개
+- **테스트 비율**: {{ test_percentage if test_percentage else 0 }}%
+
+## 🚀 성능 및 확장성
+
+### 성능 지표
+- **총 토큰 수**: {{ total_tokens | format_number if total_tokens else 'N/A' }}
+- **평균 파일 크기**: {{ avg_file_size if avg_file_size else 'N/A' }}KB
+- **메모리 사용량**: {{ memory_usage if memory_usage else 'N/A' }}
+
+### 확장성 고려사항
+- **마이크로서비스 준비도**: {{ microservice_readiness if microservice_readiness else 'N/A' }}
+- **API 게이트웨이**: {{ api_gateway if api_gateway else 'N/A' }}
+- **로드 밸런싱**: {{ load_balancing if load_balancing else 'N/A' }}
+
+## 🔒 보안 및 인증
+
+### 인증 시스템
+- **인증 방식**: {{ auth_method if auth_method else 'N/A' }}
+- **세션 관리**: {{ session_management if session_management else 'N/A' }}
+- **권한 관리**: {{ permission_system if permission_system else 'N/A' }}
+
+### 보안 기능
+- **입력 검증**: {{ input_validation if input_validation else 'N/A' }}
+- **SQL 인젝션 방지**: {{ sql_injection_protection if sql_injection_protection else 'N/A' }}
+- **XSS 방지**: {{ xss_protection if xss_protection else 'N/A' }}
+
+## 📈 모니터링 및 로깅
+
+### 로깅 시스템
+- **로깅 프레임워크**: {{ logging_framework if logging_framework else 'N/A' }}
+- **로그 레벨**: {{ log_levels | join(', ') if log_levels else 'N/A' }}
+- **로그 수집**: {{ log_collection if log_collection else 'N/A' }}
+
+### 모니터링
+- **메트릭 수집**: {{ metrics_collection if metrics_collection else 'N/A' }}
+- **헬스 체크**: {{ health_checks if health_checks else 'N/A' }}
+- **알림 시스템**: {{ alerting_system if alerting_system else 'N/A' }}
+
+## 🛠️ 개발 도구 및 CI/CD
+
+### 개발 도구
+- **빌드 도구**: {{ build_tools | join(', ') if build_tools else 'N/A' }}
+- **패키지 관리**: {{ package_managers | join(', ') if package_managers else 'N/A' }}
+- **코드 품질**: {{ code_quality_tools | join(', ') if code_quality_tools else 'N/A' }}
+
+### CI/CD 파이프라인
+- **자동화 도구**: {{ ci_cd_tools | join(', ') if ci_cd_tools else 'N/A' }}
+- **배포 전략**: {{ deployment_strategy if deployment_strategy else 'N/A' }}
+- **환경 관리**: {{ environment_management if environment_management else 'N/A' }}
+
+## 📋 개선 권장사항
+
+### 코드 품질
+{% for recommendation in code_quality_recommendations %}
+- {{ recommendation }}
+
+{% endfor %}
+
+### 아키텍처 개선
+{% for recommendation in architecture_recommendations %}
+- {{ recommendation }}
+
+{% endfor %}
+
+### 성능 최적화
+{% for recommendation in performance_recommendations %}
+- {{ recommendation }}
+
+{% endfor %}
+
+## 🔗 관련 문서
+
+- [프로젝트 요약](./project_summary.md)
+- [용어집](./vocabulary.json)
+- [Chunk 메타데이터](./chunk_metadata.json)
+
+---
+
+*이 문서는 CodeMuse 시스템에 의해 자동 생성되었습니다.*

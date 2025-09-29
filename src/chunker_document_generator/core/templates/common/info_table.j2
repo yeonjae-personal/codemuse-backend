@@ -1,0 +1,11 @@
+#### 📋 파일 정보
+
+| 속성 | 값 |
+|------|----|
+| 📁 **파일명** | `{{ file_name }}` |
+| 📍 **경로** | `{{ relative_path }}` |
+| 📊 **총 Chunk** | {{ total_chunks }}개 |
+| 🏷️ **언어** | {{ language | title }}{% if framework %} / {{ framework | title }}{% endif %} |
+| 📅 **생성일** | {{ current_date }} |
+{% if file_size %}| 💾 **파일 크기** | {{ file_size }} bytes |{% endif %}
+{% if lines_of_code %}| 📏 **라인 수** | {{ lines_of_code }} lines |{% endif %}

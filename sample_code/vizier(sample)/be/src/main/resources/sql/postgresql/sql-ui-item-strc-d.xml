@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-item-strc-d">
+
+  <insert id="insert">
+    INSERT INTO tb_item_strc_d
+    (base_item_code, trgt_item_code, strc_type_code, valid_start_dtm, valid_end_dtm, rgst_user, rgst_dtm, upd_user, upd_dtm)
+    VALUES (#{baseItemCode}, #{trgtItemCode}, #{strcTypeCode}, CURRENT_TIMESTAMP, #{validEndDtm}, #{rgstUser}, CURRENT_TIMESTAMP, #{updUser}, CURRENT_TIMESTAMP)
+  </insert>
+
+  <delete id="deleteUpperItem">
+    DELETE
+    FROM tb_item_strc_d
+    WHERE
+    trgt_item_code = #{itemCode}
+  </delete>
+
+  <delete id="deleteLowerItem">
+    DELETE
+    FROM tb_item_strc_d
+    WHERE
+    base_item_code = #{itemCode}
+  </delete>
+
+</mapper>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Rule-Field">
+	
+	<select id="retrieveAllFields" resultType="com.lgcns.svcp.prod.ruleengine.entity.FieldEntity">
+		SELECT t.field_uuid
+			, t.field_disp_name
+			, t.field_key_name
+			, t.field_data_type
+			, t.use_yn
+			, t.rgst_user
+			, t.rgst_dtm
+			, t.upd_user
+			, t.upd_dtm
+		FROM tb_field_m t
+		left join tb_cond_m t1 on t.field_uuid = t1.field_uuid
+        WHERE 1 = 1
+        <if test="fieldDispName != null">
+			and lower(t.field_disp_name) like <![CDATA[ CONCAT('%', #{fieldDispName},'%')]]>
+		</if>
+		<if test="fieldKeyName != null">
+			and lower(t.field_key_name) like <![CDATA[ CONCAT('%', #{fieldKeyName},'%')]]>
+		</if>
+        group by t1.field_uuid
+		order by count(t1.field_uuid) desc
+	</select>
+	
+	<insert id ="insert">
+		INSERT INTO tb_field_m
+			(field_uuid, field_disp_name, field_key_name, field_data_type, use_yn, rgst_user, rgst_dtm, upd_user, upd_dtm)
+		VALUES (uuid(), #{fieldDispName}, #{fieldKeyName}, #{fieldDataType}, #{useYn}, #{rgstUser}, now(), #{updUser}, now())
+	</insert>
+	
+	<update id ="update">
+		UPDATE tb_field_m
+		<set>
+			field_disp_name = #{fieldDispName},
+			field_key_name = #{fieldKeyName},
+			field_data_type = #{fieldDataType},
+			use_yn = #{useYn},
+			upd_user = #{updUser},
+			upd_dtm = now()
+		</set>
+		WHERE field_uuid = #{fieldUuid}
+	</update>
+	
+	<select id="getFieldByKey" resultType="com.lgcns.svcp.prod.ruleengine.entity.FieldEntity">
+		SELECT t.field_uuid
+			, t.field_disp_name
+			, t.field_key_name
+			, t.field_data_type
+			, t.use_yn
+			, t.rgst_user
+			, t.rgst_dtm
+			, t.upd_user
+			, t.upd_dtm
+		FROM tb_field_m t
+        WHERE 1 = 1
+		AND t.field_key_name = #{fieldKeyName}
+        AND t.use_yn = 'Y'
+	</select>
+
+	<select id="retrieveRuleInfoDto" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleInfoDto">
+		<![CDATA[
+        SELECT rule_uuid
+        	, rule_name
+		FROM tb_rule_m
+        WHERE 1 = 1
+        AND   use_yn = 'Y'
+        ORDER BY sort_no
+        ]]>
+	</select>
+
+</mapper>

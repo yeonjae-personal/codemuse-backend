@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-component">
+    <select id="retrieveMfM" resultType="com.lgcns.svcp.prod.ui.prod.dto.price.MfMDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				basf_cd,
+				basf_nm,
+				vald_strt_dtm,
+				vald_end_dtm,
+				prod_kd_cd,
+				prod_kd_detl_cd,
+				prod_divs_cd,
+				rat_divs_cd,
+				rat_aply_lv_cd,
+				rat_aply_divs_cd,
+				rat_detl_divs_cd,
+				basf,
+				disp_basf,
+				sus_basf,
+				sus_spcl_rsn_basf,
+				basf_aply_cyvl,
+				basf_aply_cycl_cd,
+				da_calc_divs_cd,
+				rat_aply_kd_cd,
+				dd_dduc_amt,
+				bill_item_lcls_cd,
+				bill_item_mcls_cd,
+				bill_item_cd,
+				ppay_popy_divs_cd,
+				minm_basf,
+				max_minm_bas_rat_aply_kd_cd,
+				basf_calc_aply_base_cd,
+				rat_calc_mthd_cd,
+				sus_chrg_imps_yn,
+				cur_unit_cd,
+				decm_pnt_prss_cd,
+				sus_rat_aply_kd_cd,
+				cntc_amt_infvl,
+				sect_aply_kd_cd,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_mf_m
+			WHERE basf_cd = #{basfCd}
+		]]>
+	</select>
+	
+	<update id = "updateMfM">
+		UPDATE tb_mf_m_tmp
+		<set>
+			<if test="basfNm != null">
+				basf_nm = #{basfNm},
+			</if>
+			<if test="valdStrtDtm != null">
+				vald_strt_dtm = #{valdStrtDtm},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="prodKdCd != null">
+				prod_kd_cd = #{prodKdCd},
+			</if>
+			<if test="prodKdDetlCd != null">
+				prod_kd_detl_cd = #{prodKdDetlCd},
+			</if>
+			<if test="prodDivsCd != null">
+				prod_divs_cd = #{prodDivsCd},
+			</if>
+			<if test="ratDivsCd != null">
+				rat_divs_cd = #{ratDivsCd},
+			</if>
+			<if test="ratAplyLvCd != null">
+				rat_aply_lv_cd = #{ratAplyLvCd},
+			</if>
+			<if test="ratAplyDivsCd != null">
+				rat_aply_divs_cd = #{ratAplyDivsCd},
+			</if>
+			<if test="ratDetlDivsCd != null">
+				rat_detl_divs_cd = #{ratDetlDivsCd},
+			</if>
+			<if test="basf != null">
+				basf = #{basf},
+			</if>
+			<if test="dispBasf != null">
+				disp_basf = #{dispBasf},
+			</if>
+			<if test="susBasf != null">
+				sus_basf = #{susBasf},
+			</if>
+			<if test="susSpclRsnBasf != null">
+				sus_spcl_rsn_basf = #{susSpclRsnBasf},
+			</if>
+			<if test="basfAplyCyvl != null">
+				basf_aply_cyvl = #{basfAplyCyvl},
+			</if>
+			<if test="basfAplyCyclCd != null">
+				basf_aply_cycl_cd = #{basfAplyCyclCd},
+			</if>
+			<if test="daCalcDivsCd != null">
+				da_calc_divs_cd = #{daCalcDivsCd},
+			</if>
+			<if test="ratAplyKdCd != null">
+				rat_aply_kd_cd = #{ratAplyKdCd},
+			</if>
+			<if test="ddDducAmt != null">
+				dd_dduc_amt = #{ddDducAmt},
+			</if>
+			<if test="billItemLclsCd != null">
+				bill_item_lcls_cd = #{billItemLclsCd},
+			</if>
+			<if test="billItemMclsCd != null">
+				bill_item_mcls_cd = #{billItemMclsCd},
+			</if>
+			<if test="billItemCd != null">
+				bill_item_cd = #{billItemCd},
+			</if>
+			<if test="ppayPopyDivsCd != null">
+				ppay_popy_divs_cd = #{ppayPopyDivsCd},
+			</if>
+			<if test="minmBasf != null">
+				minm_basf = #{minmBasf},
+			</if>
+			<if test="maxMinmBasRatAplyKdCd != null">
+				max_minm_bas_rat_aply_kd_cd = #{maxMinmBasRatAplyKdCd},
+			</if>
+			<if test="basfCalcAplyBaseCd != null">
+				basf_calc_aply_base_cd = #{basfCalcAplyBaseCd},
+			</if>
+			<if test="ratCalcMthdCd != null">
+				rat_calc_mthd_cd = #{ratCalcMthdCd},
+			</if>
+			<if test="susChrgImpsYn != null">
+				sus_chrg_imps_yn = #{susChrgImpsYn},
+			</if>
+			<if test="curUnitCd != null">
+				cur_unit_cd = #{curUnitCd},
+			</if>
+			<if test="decmPntPrssCd != null">
+				decm_pnt_prss_cd = #{decmPntPrssCd},
+			</if>
+			<if test="susRatAplyKdCd != null">
+				sus_rat_aply_kd_cd = #{susRatAplyKdCd},
+			</if>
+			<if test="cntcAmtInfvl != null">
+				cntc_amt_infvl = #{cntcAmtInfvl},
+			</if>
+			<if test="sectAplyKdCd != null">
+				sect_aply_kd_cd = #{sectAplyKdCd},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveAlowM" resultType="com.lgcns.svcp.prod.ui.prod.dto.price.AlowMDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				alow_cd,
+				alow_nm,
+				vald_strt_dtm,
+				vald_end_dtm,
+				alow_trgt_grp_cd,
+				urst_yn,
+				ui_deqt_clss_cd,
+				shrn_psbl_yn,
+				deqt_aply_cyvl,
+				deqt_aply_cycl_cd,
+				alow_aply_pot_cd,
+				da_calc_divs_cd,
+				alow_prty,
+				deqtvl,
+				deqt_aply_uval,
+				rat_aply_unit_cd,
+				prod_kd_cd,
+				prod_kd_detl_cd,
+				prod_divs_cd,
+				rat_aply_lv_cd,
+				rat_divs_cd,
+				rat_aply_divs_cd,
+				rat_aply_kd_cd,
+				rat_detl_divs_cd,
+				cur_unit_cd,
+				asgn_cond_divs_cd,
+				asgn_psbl_no_cnt,
+				iocl_divs_cd,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_alow_m
+			WHERE alow_cd = #{alowCd}
+		]]>
+	</select>
+	
+	<update id = "updateAlowM">
+		UPDATE tb_alow_m_tmp
+		<set>
+			<if test="alowNm != null">
+				alow_nm = #{alowNm},
+			</if>
+			<if test="valdStrtDtm != null">
+				vald_strt_dtm = #{valdStrtDtm},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="alowTrgtGrpCd != null">
+				alow_trgt_grp_cd = #{alowTrgtGrpCd},
+			</if>
+			<if test="urstYn != null">
+				urst_yn = #{urstYn},
+			</if>
+			<if test="uiDeqtClssCd != null">
+				ui_deqt_clss_cd = #{uiDeqtClssCd},
+			</if>
+			<if test="shrnPsblYn != null">
+				shrn_psbl_yn = #{shrnPsblYn},
+			</if>
+			<if test="deqtAplyCyvl != null">
+				deqt_aply_cyvl = #{deqtAplyCyvl},
+			</if>
+			<if test="deqtAplyCyclCd != null">
+				deqt_aply_cycl_cd = #{deqtAplyCyclCd},
+			</if>
+			<if test="alowAplyPotCd != null">
+				alow_aply_pot_cd = #{alowAplyPotCd},
+			</if>
+			<if test="daCalcDivsCd != null">
+				da_calc_divs_cd = #{daCalcDivsCd},
+			</if>
+			<if test="alowPrty != null">
+				alow_prty = #{alowPrty},
+			</if>
+			<if test="deqtvl != null">
+				deqtvl = #{deqtvl},
+			</if>
+			<if test="deqtAplyUval != null">
+				deqt_aply_uval = #{deqtAplyUval},
+			</if>
+			<if test="ratAplyUnitCd != null">
+				rat_aply_unit_cd = #{ratAplyUnitCd},
+			</if>
+			<if test="prodKdCd != null">
+				prod_kd_cd = #{prodKdCd},
+			</if>
+			<if test="prodKdDetlCd != null">
+				prod_kd_detl_cd = #{prodKdDetlCd},
+			</if>
+			<if test="prodDivsCd != null">
+				prod_divs_cd = #{prodDivsCd},
+			</if>
+			<if test="ratAplyLvCd != null">
+				rat_aply_lv_cd = #{ratAplyLvCd},
+			</if>
+			<if test="ratDivsCd != null">
+				rat_divs_cd = #{ratDivsCd},
+			</if>
+			<if test="ratAplyDivsCd != null">
+				rat_aply_divs_cd = #{ratAplyDivsCd},
+			</if>
+			<if test="ratAplyKdCd != null">
+				rat_aply_kd_cd = #{ratAplyKdCd},
+			</if>
+			<if test="ratDetlDivsCd != null">
+				rat_detl_divs_cd = #{ratDetlDivsCd},
+			</if>
+			<if test="curUnitCd != null">
+				cur_unit_cd = #{curUnitCd},
+			</if>
+			<if test="asgnCondDivsCd != null">
+				asgn_cond_divs_cd = #{asgnCondDivsCd},
+			</if>
+			<if test="asgnPsblNoCnt != null">
+				asgn_psbl_no_cnt = #{asgnPsblNoCnt},
+			</if>
+			<if test="ioclDivsCd != null">
+				iocl_divs_cd = #{ioclDivsCd},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveRtngDcntM" resultType="com.lgcns.svcp.prod.ui.prod.dto.price.RtngDcntMDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				rtng_dcnt_cd,
+				rtng_dcnt_nm,
+				vald_strt_dtm,
+				vald_end_dtm,
+				prod_kd_cd,
+				prod_kd_detl_cd,
+				prod_divs_cd,
+				asgn_cond_divs_cd,
+				max_perm_cnt,
+				rat_divs_cd,
+				iocl_divs_cd,
+				rat_aply_lv_cd,
+				rat_aply_divs_cd,
+				rat_detl_divs_cd,
+				rtng_dcnt_rat_aply_uval,
+				rat_aply_unit_cd,
+				rtng_dcnt_rat,
+				rat_aply_kd_cd,
+				cur_unit_cd,
+				dcnt_prty_aply_divs_cd,
+				prty,
+				sect_aply_kd_cd,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_rtng_dcnt_m
+			WHERE rtng_dcnt_cd = #{rtngDcntCd}
+		]]>
+	</select>
+	
+	<update id = "updateRtngDcntM">
+		UPDATE tb_rtng_dcnt_m_tmp
+		<set>
+			<if test="rtngDcntNm != null">
+				rtng_dcnt_nm = #{rtngDcntNm},
+			</if>
+			<if test="valdStrtDtm != null">
+				vald_strt_dtm = #{valdStrtDtm},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="prodKdCd != null">
+				prod_kd_cd = #{prodKdCd},
+			</if>
+			<if test="prodKdDetlCd != null">
+				prod_kd_detl_cd = #{prodKdDetlCd},
+			</if>
+			<if test="prodDivsCd != null">
+				prod_divs_cd = #{prodDivsCd},
+			</if>
+			<if test="asgnCondDivsCd != null">
+				asgn_cond_divs_cd = #{asgnCondDivsCd},
+			</if>
+			<if test="maxPermCnt != null">
+				max_perm_cnt = #{maxPermCnt},
+			</if>
+			<if test="ratDivsCd != null">
+				rat_divs_cd = #{ratDivsCd},
+			</if>
+			<if test="ioclDivsCd != null">
+				iocl_divs_cd = #{ioclDivsCd},
+			</if>
+			<if test="ratAplyLvCd != null">
+				rat_aply_lv_cd = #{ratAplyLvCd},
+			</if>
+			<if test="ratAplyDivsCd != null">
+				rat_aply_divs_cd = #{ratAplyDivsCd},
+			</if>
+			<if test="ratDetlDivsCd != null">
+				rat_detl_divs_cd = #{ratDetlDivsCd},
+			</if>
+			<if test="rtngDcntRatAplyUval != null">
+				rtng_dcnt_rat_aply_uval = #{rtngDcntRatAplyUval},
+			</if>
+			<if test="ratAplyUnitCd != null">
+				rat_aply_unit_cd = #{ratAplyUnitCd},
+			</if>
+			<if test="rtngDcntRat != null">
+				rtng_dcnt_rat = #{rtngDcntRat},
+			</if>
+			<if test="ratAplyKdCd != null">
+				rat_aply_kd_cd = #{ratAplyKdCd},
+			</if>
+			<if test="curUnitCd != null">
+				cur_unit_cd = #{curUnitCd},
+			</if>
+			<if test="dcntPrtyAplyDivsCd != null">
+				dcnt_prty_aply_divs_cd = #{dcntPrtyAplyDivsCd},
+			</if>
+			<if test="prty != null">
+				prty = #{prty},
+			</if>
+			<if test="sectAplyKdCd != null">
+				sect_aply_kd_cd = #{sectAplyKdCd},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveUsfeM" resultType="com.lgcns.svcp.prod.ui.prod.dto.price.UsfeMDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				usfe_cd,
+				usfe_nm,
+				vald_strt_dtm,
+				vald_end_dtm,
+				prod_kd_cd,
+				prod_kd_detl_cd,
+				prod_divs_cd,
+				asgn_cond_divs_cd,
+				max_perm_cnt,
+				rat_divs_cd,
+				iocl_divs_cd,
+				rat_aply_lv_cd,
+				rat_aply_divs_cd,
+				rat_detl_divs_cd,
+				init_usfe_aply_uval,
+				init_rat_aply_unit_cd,
+				init_usfe_aply_unit_incl_yn,
+				init_usfe,
+				usfe_aply_uval,
+				rat_aply_unit_cd,
+				use_rat,
+				disp_usfe,
+				rat_aply_kd_cd,
+				ppay_popy_divs_cd,
+				cur_unit_cd,
+				decm_pnt_prss_cd,
+				cntc_amt_infvl,
+				sect_aply_kd_cd,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_usfe_m
+			WHERE usfe_cd = #{usfeCd}
+		]]>
+	</select>
+	
+	<update id = "updateUsfeM">
+		UPDATE tb_usfe_m_tmp
+		<set>
+			<if test="usfeNm != null">
+				usfe_nm = #{usfeNm},
+			</if>
+			<if test="valdStrtDtm != null">
+				vald_strt_dtm = #{valdStrtDtm},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="prodKdCd != null">
+				prod_kd_cd = #{prodKdCd},
+			</if>
+			<if test="prodKdDetlCd != null">
+				prod_kd_detl_cd = #{prodKdDetlCd},
+			</if>
+			<if test="prodDivsCd != null">
+				prod_divs_cd = #{prodDivsCd},
+			</if>
+			<if test="asgnCondDivsCd != null">
+				asgn_cond_divs_cd = #{asgnCondDivsCd},
+			</if>
+			<if test="maxPermCnt != null">
+				max_perm_cnt = #{maxPermCnt},
+			</if>
+			<if test="ratDivsCd != null">
+				rat_divs_cd = #{ratDivsCd},
+			</if>
+			<if test="ioclDivsCd != null">
+				iocl_divs_cd = #{ioclDivsCd},
+			</if>
+			<if test="ratAplyLvCd != null">
+				rat_aply_lv_cd = #{ratAplyLvCd},
+			</if>
+			<if test="ratAplyDivsCd != null">
+				rat_aply_divs_cd = #{ratAplyDivsCd},
+			</if>
+			<if test="ratDetlDivsCd != null">
+				rat_detl_divs_cd = #{ratDetlDivsCd},
+			</if>
+			<if test="initUsfeAplyUval != null">
+				init_usfe_aply_uval = #{initUsfeAplyUval},
+			</if>
+			<if test="initRatAplyUnitCd != null">
+				init_rat_aply_unit_cd = #{initRatAplyUnitCd},
+			</if>
+			<if test="initUsfeAplyUnitInclYn != null">
+				init_usfe_aply_unit_incl_yn = #{initUsfeAplyUnitInclYn},
+			</if>
+			<if test="initUsfe != null">
+				init_usfe = #{initUsfe},
+			</if>
+			<if test="usfeAplyUval != null">
+				usfe_aply_uval = #{usfeAplyUval},
+			</if>
+			<if test="ratAplyUnitCd != null">
+				rat_aply_unit_cd = #{ratAplyUnitCd},
+			</if>
+			<if test="useRat != null">
+				use_rat = #{useRat},
+			</if>
+			<if test="dispUsfe != null">
+				disp_usfe = #{dispUsfe},
+			</if>
+			<if test="ratAplyKdCd != null">
+				rat_aply_kd_cd = #{ratAplyKdCd},
+			</if>
+			<if test="ppayPopyDivsCd != null">
+				ppay_popy_divs_cd = #{ppayPopyDivsCd},
+			</if>
+			<if test="curUnitCd != null">
+				cur_unit_cd = #{curUnitCd},
+			</if>
+			<if test="decmPntPrssCd != null">
+				decm_pnt_prss_cd = #{decmPntPrssCd},
+			</if>
+			<if test="cntcAmtInfvl != null">
+				cntc_amt_infvl = #{cntcAmtInfvl},
+			</if>
+			<if test="sectAplyKdCd != null">
+				sect_aply_kd_cd = #{sectAplyKdCd},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveDcntRatM" resultType="com.lgcns.svcp.prod.ui.prod.dto.price.DcntRatMDto">
+		<![CDATA[
+			SELECT prod_uuid
+				,dcnt_rat_cd
+				,dcnt_rat_nm
+				,vald_strt_dtm
+				,vald_end_dtm
+				,rat_divs_cd
+				,rat_aply_lv_cd
+				,rat_aply_divs_cd
+				,rat_detl_divs_cd
+				,dcnt_rat
+				,dcnt_rat_aply_cyvl
+				,dcnt_rat_aply_cycl_cd
+				,da_calc_divs_cd
+				,rat_aply_kd_cd
+				,bill_item_lcls_cd
+				,bill_item_mcls_cd
+				,bill_item_cd
+				,rat_calc_mthd_cd
+				,cntc_amt_infvl
+				,sect_aply_kd_cd
+				,rgst_usr
+				,rgst_dtm
+				,upd_usr
+				,upd_dtm
+			FROM tb_dcnt_rat_m
+			WHERE dcnt_rat_cd = #{dcntRatCd}
+		]]>
+	</select>
+	
+	<update id = "updateDcntRatM">
+		UPDATE tb_dcnt_rat_m_tmp
+		<set>
+			<if test="dcntRatNm != null">
+				dcnt_rat_nm = #{dcntRatNm},
+			</if>
+			<if test="valdStrtDtm != null">
+				vald_strt_dtm = #{valdStrtDtm},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="ratDivsCd != null">
+				rat_divs_cd = #{ratDivsCd},
+			</if>
+			<if test="ratAplyLvCd != null">
+				rat_aply_lv_cd = #{ratAplyLvCd},
+			</if>
+			<if test="ratAplyDivsCd != null">
+				rat_aply_divs_cd = #{ratAplyDivsCd},
+			</if>
+			<if test="ratDetlDivsCd != null">
+				rat_detl_divs_cd = #{ratDetlDivsCd},
+			</if>
+			<if test="dcntRat != null">
+				dcnt_rat = #{dcntRat},
+			</if>
+			<if test="dcntRatAplyCyvl != null">
+				dcnt_rat_aply_cyvl = #{dcntRatAplyCyvl},
+			</if>
+			<if test="dcntRatAplyCyclCd != null">
+				dcnt_rat_aply_cycl_cd = #{dcntRatAplyCyclCd},
+			</if>
+			<if test="daCalcDivsCd != null">
+				da_calc_divs_cd = #{daCalcDivsCd},
+			</if>
+			<if test="ratAplyKdCd != null">
+				rat_aply_kd_cd = #{ratAplyKdCd},
+			</if>
+			<if test="billItemLclsCd != null">
+				bill_item_lcls_cd = #{billItemLclsCd},
+			</if>
+			<if test="billItemMclsCd != null">
+				bill_item_mcls_cd = #{billItemMclsCd},
+			</if>
+			<if test="billItemCd != null">
+				bill_item_cd = #{billItemCd},
+			</if>
+			<if test="ratCalcMthdCd != null">
+				rat_calc_mthd_cd = #{ratCalcMthdCd},
+			</if>
+			<if test="cntcAmtInfvl != null">
+				cntc_amt_infvl = #{cntcAmtInfvl},
+			</if>
+			<if test="sectAplyKdCd != null">
+				sect_aply_kd_cd = #{sectAplyKdCd},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrievePdspTossLkgeD" resultType="com.lgcns.svcp.prod.ui.prod.dto.price.PdspTossLkgeDDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				pdsp_cd,
+				pdsp_nm,
+				entr_sbgn_grp_cd,
+				prvs_yn,
+				dvic_prvs_yn,
+				dsb_ssb_divs_cd,
+				ip_rqst_need_yn,
+				work_ordr_prss_yn,
+				prvs_sect_crte_yn,
+				task_auto_fnsh_yn,
+				nw_knd_kd_cd,
+				nw_knd_kd_detl_cd,
+				hm_itnt_ctrl_sped,
+				vald_end_dtm,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_pdsp_toss_lkge_d
+			WHERE pdsp_cd = #{pdspCd}
+		]]>
+	</select>
+	
+	<update id = "updatePdspTossLkgeD">
+		UPDATE tb_pdsp_toss_lkge_d
+		<set>
+			<if test="pdspNm != null">
+				pdsp_nm = #{pdspNm},
+			</if>
+			<if test="entrSbgnGrpCd != null">
+				entr_sbgn_grp_cd = #{entrSbgnGrpCd},
+			</if>
+			<if test="prvsYn != null">
+				prvs_yn = #{prvsYn},
+			</if>
+			<if test="dvicPrvsYn != null">
+				dvic_prvs_yn = #{dvicPrvsYn},
+			</if>
+			<if test="dsbSsbDivsCd != null">
+				dsb_ssb_divs_cd = #{dsbSsbDivsCd},
+			</if>
+			<if test="ipRqstNeedYn != null">
+				ip_rqst_need_yn = #{ipRqstNeedYn},
+			</if>
+			<if test="workOrdrPrssYn != null">
+				work_ordr_prss_yn = #{workOrdrPrssYn},
+			</if>
+			<if test="prvsSectCrteYn != null">
+				prvs_sect_crte_yn = #{prvsSectCrteYn},
+			</if>
+			<if test="taskAutoFnshYn != null">
+				task_auto_fnsh_yn = #{taskAutoFnshYn},
+			</if>
+			<if test="nwKndKdCd != null">
+				nw_knd_kd_cd = #{nwKndKdCd},
+			</if>
+			<if test="nwKndKdDetlCd != null">
+				nw_knd_kd_detl_cd = #{nwKndKdDetlCd},
+			</if>
+			<if test="hmItntCtrlSped != null">
+				hm_itnt_ctrl_sped = #{hmItntCtrlSped},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveBlngInfoM" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.BlngInfoMDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				blng_info_cd,
+				blng_info_nm,
+				asgn_cond_divs_cd,
+				prod_aply_lv_cd,
+				rtm_rtng_trgt_divs_cd,
+				agmt_dcnt_rat,
+				strm_kd_divs_cd,
+				prod_bill_mthd_cd,
+				atst_ntag_yn,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_blng_info_m
+			WHERE blng_info_cd = #{blngInfoCd}
+		]]>
+	</select>
+	
+	<update id = "updateBlngInfoM">
+		UPDATE tb_blng_info_m_tmp
+		<set>
+			<if test="blngInfoNm != null">
+				blng_info_nm = #{blngInfoNm},
+			</if>
+			<if test="asgnCondDivsCd != null">
+				asgn_cond_divs_cd = #{asgnCondDivsCd},
+			</if>
+			<if test="prodAplyLvCd != null">
+				prod_aply_lv_cd = #{prodAplyLvCd},
+			</if>
+			<if test="rtmRtngTrgtDivsCd != null">
+				rtm_rtng_trgt_divs_cd = #{rtmRtngTrgtDivsCd},
+			</if>
+			<if test="agmtDcntRat != null">
+				agmt_dcnt_rat = #{agmtDcntRat},
+			</if>
+			<if test="strmKdDivsCd != null">
+				strm_kd_divs_cd = #{strmKdDivsCd},
+			</if>
+			<if test="prodBillMthdCd != null">
+				prod_bill_mthd_cd = #{prodBillMthdCd},
+			</if>
+			<if test="atstNtagYn != null">
+				atst_ntag_yn = #{atstNtagYn},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveSlinInfoM" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.SlinInfoMDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				slin_info_cd,
+				slin_info_nm,
+				slin_dtrb_yn,
+				pdsp_cd,
+				slin_mint_magt,
+				unit_pfls_cd,
+				slin_mgmt_unit_cd,
+				dw_if_kd_cd,
+				vald_end_dtm,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_slin_info_m
+			WHERE slin_info_cd = #{slinInfoCd}
+		]]>
+	</select>
+	
+	<update id = "updateSlinInfoM">
+		UPDATE tb_slin_info_m_tmp
+		<set>
+			<if test="slinInfoNm != null">
+				slin_info_nm = #{slinInfoNm},
+			</if>
+			<if test="slinDtrbYn != null">
+				slin_dtrb_yn = #{slinDtrbYn},
+			</if>
+			<if test="pdspCd != null">
+				pdsp_cd = #{pdspCd},
+			</if>
+			<if test="slinMintMagt != null">
+				slin_mint_magt = #{slinMintMagt},
+			</if>
+			<if test="unitPflsCd != null">
+				unit_pfls_cd = #{unitPflsCd},
+			</if>
+			<if test="slinMgmtUnitCd != null">
+				slin_mgmt_unit_cd = #{slinMgmtUnitCd},
+			</if>
+			<if test="dwIfKdCd != null">
+				dw_if_kd_cd = #{dwIfKdCd},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveSpamInfo" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.SpamInfoDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				spam_cd,
+				spam_nm,
+				thrs_idfy_cd,
+				vald_strt_dtm,
+				vald_end_dtm,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_spam_m
+			WHERE spam_cd = #{spamCd}
+		]]>
+	</select>
+	
+	<update id = "updateSpamInfo">
+		UPDATE tb_spam_m_tmp
+		<set>
+			<if test="spamNm != null">
+				spam_nm = #{spamNm},
+			</if>
+			<if test="thrsIdfyCd != null">
+				thrs_idfy_cd = #{thrsIdfyCd},
+			</if>
+			<if test="valdStrtDtm != null">
+				vald_strt_dtm = #{valdStrtDtm},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id ="retrieveSpamLvwuPlcyDList" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.SpamLvwuPlcyDDto">
+		<![CDATA[
+			SELECT spam_cd,
+				lvwu_plcy_cd,
+				vald_strt_dtm,
+				vald_end_dtm,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_spam_lvwu_plcy_d
+			WHERE spam_cd = #{spamCd}
+		]]>
+	
+	</select>
+	
+	<select id="retrieveQosInfo" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.QosInfoDto">
+		<![CDATA[
+			SELECT prod_uuid,
+				qos_cd,
+				qos_nm,
+				qos_plcy_grp_cd,
+				thrs_idfy_cd,
+				vald_strt_dtm,
+				vald_end_dtm,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_qos_m
+			WHERE qos_cd = #{qosCd}
+		]]>
+	</select>
+	
+	<update id = "updateQosInfo">
+		UPDATE tb_qos_m_tmp
+		<set>
+			<if test="qosNm != null">
+				qos_nm = #{qosNm},
+			</if>
+			<if test="qosPlcyGrpCd != null">
+				qos_plcy_grp_cd = #{qosPlcyGrpCd},
+			</if>
+			<if test="thrsIdfyCd != null">
+				thrs_idfy_cd = #{thrsIdfyCd},
+			</if>
+			<if test="valdStrtDtm != null">
+				vald_strt_dtm = #{valdStrtDtm},
+			</if>
+			<if test="valdEndDtm != null">
+				vald_end_dtm = #{valdEndDtm},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id ="retrieveQosPlcyRelDList" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.QosPlcyRelDDto">
+		<![CDATA[
+			SELECT qos_cd,
+				qos_plcy_cd,
+				vald_strt_dtm,
+				vald_end_dtm,
+				rgst_usr,
+				rgst_dtm,
+				upd_usr,
+				upd_dtm
+			FROM tb_qos_plcy_rel_d
+			WHERE qos_cd = #{qosCd}
+		]]>
+	
+	</select>
+	
+	<select id="retrieveDcntCstcM" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.DcntCstcMDto">
+		<![CDATA[
+			SELECT prod_uuid
+				,dcnt_cstc_cd
+				,dcnt_cstc_nm
+				,dcnt_reg_divs_cd
+				,dcnt_kd_cd
+				,dcnt_kd_detl_cd
+				,prod_kd_detl_cd
+				,dcnt_aply_lv_cd
+				,cust_kd_cd
+				,prod_use_term_mmct
+				,prod_aply_cycl_cd
+				,use_term_aply_divs_cd
+				,dupl_reg_psbl_yn
+				,adj_rsn_cd
+				,pnlt_occr_yn
+				,dcnt_strt_dt_kd_cd
+				,dcnt_grp_kd_cd
+				,entr_mmdd_aply_kd_cd
+				,expy_mmdd_aply_kd_cd
+				,rgst_usr
+				,rgst_dtm
+				,upd_usr
+				,upd_dtm
+			FROM tb_dcnt_cstc_m
+			WHERE dcnt_cstc_cd = #{dcntCstcCd}
+		]]>
+	</select>
+	
+	<update id = "updateDcntCstcM">
+		UPDATE tb_dcnt_cstc_m_tmp
+		<set>
+			<if test="dcntCstcNm != null">
+				dcnt_cstc_nm = #{dcntCstcNm},
+			</if>
+			<if test="dcntRegDivsCd != null">
+				dcnt_reg_divs_cd = #{dcntRegDivsCd},
+			</if>
+			<if test="dcntKdCd != null">
+				dcnt_kd_cd = #{dcntKdCd},
+			</if>
+			<if test="dcntKdDetlCd != null">
+				dcnt_kd_detl_cd = #{dcntKdDetlCd},
+			</if>
+			<if test="prodKdDetlCd != null">
+				prod_kd_detl_cd = #{prodKdDetlCd},
+			</if>
+			<if test="dcntAplyLvCd != null">
+				dcnt_aply_lv_cd = #{dcntAplyLvCd},
+			</if>
+			<if test="custKdCd != null">
+				cust_kd_cd = #{custKdCd},
+			</if>
+			<if test="prodUseTermMmct != null">
+				prod_use_term_mmct = #{prodUseTermMmct},
+			</if>
+			<if test="prodAplyCyclCd != null">
+				prod_aply_cycl_cd = #{prodAplyCyclCd},
+			</if>
+			<if test="useTermAplyDivsCd != null">
+				use_term_aply_divs_cd = #{useTermAplyDivsCd},
+			</if>
+			<if test="duplRegPsblYn != null">
+				dupl_reg_psbl_yn = #{duplRegPsblYn},
+			</if>
+			<if test="adjRsnCd != null">
+				adj_rsn_cd = #{adjRsnCd},
+			</if>
+			<if test="pnltOccrYn != null">
+				pnlt_occr_yn = #{pnltOccrYn},
+			</if>
+			<if test="dcntStrtDtKdCd != null">
+				dcnt_strt_dt_kd_cd = #{dcntStrtDtKdCd},
+			</if>
+			<if test="dcntGrpKdCd != null">
+				dcnt_grp_kd_cd = #{dcntGrpKdCd},
+			</if>
+			<if test="entrMmddAplyKdCd != null">
+				entr_mmdd_aply_kd_cd = #{entrMmddAplyKdCd},
+			</if>
+			<if test="expyMmddAplyKdCd != null">
+				expy_mmdd_aply_kd_cd = #{expyMmddAplyKdCd},
+			</if>
+			<if test="rgstUsr != null">
+				rgst_usr = #{rgstUsr},
+			</if>
+			<if test="rgstDtm != null">
+				rgst_dtm = #{rgstDtm},
+			</if>
+			<if test="updUsr != null">
+				upd_usr = #{updUsr},
+			</if>
+			<if test="updDtm != null">
+				upd_dtm = #{updDtm},
+			</if>
+			upd_dtm = now(),
+			upd_usr = 'UI'
+		</set>
+		where prod_uuid = #{prodUuid}
+
+	</update>
+	
+	<select id="retrieveDcntTrgtInfoM" resultType="com.lgcns.svcp.prod.ui.prod.dto.characteristic.DcntTrgtInfoMDto">
+		<![CDATA[
+			SELECT prod_uuid
+				, dcnt_trgt_info_cd
+				, dcnt_trgt_info_nm
+				, dcnt_trgt_item_sno
+				, vald_strt_dtm
+				, vald_end_dtm
+				, offr_grp_cd
+				, prod_cd
+				, rat_cd
+				, svc_fctr_cd
+				, bill_item_lcls_cd
+				, bill_item_mcls_cd
+				, bill_item_cd
+				, dcnt_trgt_chrg_kd_cd
+				, rgst_usr
+				, rgst_dtm
+				, upd_usr
+				, upd_dtm
+			FROM tb_dcnt_trgt_info_m_tmp
+			WHERE dcnt_trgt_info_cd = #{dcntTrgtInfoCd}
+		]]>
+	</select>
+    
+	<insert id="saveComponentAdditional">
+		INSERT INTO
+			tb_cpnt_add_attr_val_d
+			(
+				obj_uuid,
+				attr_uuid,
+				attr_val,
+				rgst_user,
+				rgst_dtm,
+				upd_user,
+				upd_dtm
+			)
+		VALUES
+		    (
+				#{objUuid},
+				#{attrUuid},
+				#{attrVal},
+				#{rgstUser},
+				#{rgstDtm},
+				#{updUser},
+				#{updDtm}
+			)
+		ON DUPLICATE KEY UPDATE
+			attr_val = VALUES(attr_val)
+			, upd_user = VALUES(upd_user)
+			, upd_dtm = VALUES(upd_dtm)
+	</insert>
+
+	<insert id="insertResourceComponent">
+		INSERT INTO tb_offer_strc_d
+		(
+		 base_uuid,
+		 trgt_uuid,
+		 valid_start_dtm,
+		 valid_end_dtm,
+		 rgst_user,
+		 rgst_dtm,
+		 upd_user,
+		 upd_dtm
+		)
+		VALUES (
+		        #{componentUUID},
+				#{resourceUUID},
+				#{validStartDtm},
+				DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59'),
+				#{rgstUser},
+				#{rgstDtm},
+				#{updUser},
+				#{updDtm}
+			   )
+	</insert>
+
+	<select id="getGeneralAttribute" resultType="com.lgcns.svcp.prod.ui.prod.dto.GeneralAttribute">
+		SELECT t.col_name        as name,
+			   t.field_type_code as type,
+			   t.comm_group_code as groupCode,
+			   t.edit_yn as editYN,
+			   t.sort_no as sortNo
+		FROM tb_gnrl_attr_set_m t
+		WHERE t.col_name IN
+			<foreach collection="properties" open="(" close=")" separator=',' index="index" item="item" nullable="false">
+				#{item}
+			</foreach>
+			<if test="itemCode != null">
+				AND t.item_code = #{itemCode}
+			</if>
+
+	</select>
+
+	<select id="getComponentImpactAnalysis" resultType="com.lgcns.svcp.prod.ui.prod.dto.component.ComponentGeneralDto">
+		<![CDATA[
+		SELECT bsf.obj_uuid AS uuid,
+			   bsf.obj_code AS code,
+			   bsf.obj_name AS name,
+			   bsf.item_code AS itemCode,
+			   itemC.mctgr_item_code AS itemType,
+			   os.valid_start_dtm AS relationStartDate,
+			   os.valid_end_dtm AS relationEndDate,
+			   count(rsc1.obj_uuid) AS numbOfResources
+		FROM app.tb_item_mpng_d bsf
+		    JOIN tb_item_c itemC ON bsf.item_code = itemC.item_code
+
+				 JOIN tb_offer_strc_d os ON bsf.obj_uuid = os.base_uuid
+				 JOIN tb_item_mpng_d rsc ON os.trgt_uuid = rsc.obj_uuid
+				 JOIN tb_offer_strc_d os1 ON bsf.obj_uuid = os1.base_uuid
+				 JOIN tb_item_mpng_d rsc1 ON os1.trgt_uuid = rsc1.obj_uuid
+		WHERE rsc.obj_uuid = #{uuid}
+
+		GROUP BY bsf.obj_uuid, bsf.obj_code, bsf.obj_name
+		]]>
+	</select>
+
+	<select id="getComponentType" resultType="com.lgcns.svcp.prod.ui.prod.enums.ComponentItemCode">
+		SELECT item_code
+		FROM tb_item_mpng_d
+		WHERE obj_uuid = #{componentUUID}
+	</select>
+
+	<select id="getComponentDetailAdditional" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.metadata.AdditionalDetailDto">
+		SELECT 
+	        b.obj_uuid
+	        , a.attr_uuid
+	        , a.item_code
+	        , a.field_type_code
+	        , a.comm_group_code
+	        , a.attr_max_length
+	        , a.required_yn
+	        , a.label_id
+	        , a.disp_tab
+	        , a.adv_search_yn
+	        , a.sort_no
+	        , CASE 
+				WHEN a.field_type_code = 'DM' then (
+													SELECT
+														COALESCE(JSON_ARRAYAGG(attr_val), '[]') AS attr_val
+													FROM
+														tb_multi_code_add_attr_val_d
+													WHERE
+														attr_uuid = a.attr_uuid
+														AND obj_uuid = b.obj_uuid
+													ORDER BY
+														attr_seq
+													)
+				ELSE c.attr_val
+			END AS attr_val
+			, CASE 
+				WHEN a.field_type_code = 'OB' then (
+													SELECT
+														ob_name
+													FROM
+														(SELECT
+															obj_uuid AS ob_code
+															, obj_name AS ob_name 
+															FROM
+																tb_item_mpng_d
+															
+															UNION
+															
+															SELECT
+																matrix_code AS ob_code
+																, matrix_code_name AS ob_name 
+															FROM
+																tb_matrix_m
+														) AS combined
+													WHERE
+														ob_code =  c.attr_val
+													)
+				ELSE NULL
+			END AS ob_name
+		FROM 
+		    tb_add_attr_header_m a
+		JOIN tb_item_mpng_d b
+		    ON b.item_code = a.item_code
+		LEFT JOIN tb_cpnt_add_attr_val_d c 
+		    ON a.attr_uuid = c.attr_uuid
+		    AND c.obj_uuid = b.obj_uuid
+		WHERE 
+			a.use_yn = 'Y'
+			AND  b.obj_uuid = #{objUuid}
+		ORDER BY 
+			a.sort_no
+	</select>
+
+	<select id="getComponentAddResourceGeneral" resultType="com.lgcns.svcp.prod.ui.prod.dto.component.addResource.ComponentAddResourceDto">
+		SELECT distinct
+		rsc.obj_uuid as uuid,
+		rsc.obj_code as code,
+		rsc.obj_name as name,
+		rsc.item_code as itemCode,
+		rsc.valid_start_dtm as startDate,
+		rsc.valid_end_dtm as endDate
+		FROM tb_item_mpng_d rsc
+		LEFT JOIN tb_offer_strc_d os ON rsc.obj_uuid = os.trgt_uuid
+		JOIN tb_item_c ic ON rsc.item_code = ic.item_code
+		WHERE
+		(TIMESTAMP(rsc.valid_end_dtm) > now() OR rsc.valid_end_dtm is null )
+		AND ic.lctgr_item_code = 'R'
+		<if test="componentUUID != null">
+		  	AND rsc.obj_uuid NOT IN (SELECT osd.trgt_uuid FROM tb_offer_strc_d osd WHERE osd.base_uuid = #{componentUUID})
+		  	AND rsc.item_code IN (
+				SELECT tisd.trgt_item_code
+				FROM tb_item_strc_d tisd
+				JOIN tb_item_mpng_d timd ON timd.item_code = tisd.base_item_code
+				WHERE timd.obj_uuid = #{componentUUID}
+			)
+		</if>
+		<if test="componentCreateType != null">
+			AND rsc.item_code IN (
+				SELECT tisd.trgt_item_code
+				FROM tb_item_strc_d tisd
+				WHERE tisd.base_item_code = #{componentCreateType}
+			)
+		</if>
+		<if test="itemCode != null">
+			AND rsc.item_code = #{itemCode}
+		</if>
+		<if test="code != null">
+			AND rsc.obj_code LIKE <![CDATA[ CONCAT('%', TRIM(UPPER(#{code})),'%')]]>
+		</if>
+		<if test="name != null">
+			AND UPPER(rsc.obj_name) LIKE <![CDATA[ CONCAT('%', TRIM(UPPER(#{name})),'%')]]>
+		</if>
+
+	</select>
+
+	<select id="getComponentSearch" resultType="com.lgcns.svcp.prod.ui.prod.dto.component.list.ComponentSearchPagingDto">
+		SELECT
+		itmp.obj_uuid as uuid,
+		itmp.obj_code as code,
+		itmp.obj_name as name,
+		itmp.item_code as itemCode,
+		it.item_type_name as type,
+		it.item_code_name as subType,
+		FROM
+		tb_item_mpng_d itmp
+		LEFT JOIN tb_item_c it ON itmp.item_code = it.item_code
+		LEFT JOIN tb_mctgr_item_c mctgr ON it.mctgr_item_code = mctgr.mctgr_item_code
+		LEFT JOIN tb_lctgr_item_c lctgr ON it.lctgr_item_code = lctgr.lctgr_item_code
+		WHERE 1=1
+		<if test="code != null">
+			AND itmp.obj_code LIKE <![CDATA[ CONCAT('%', #{code},'%')]]>
+		</if>
+		<if test="name != null">
+			AND itmp.obj_name LIKE <![CDATA[ CONCAT('%', #{name},'%')]]>
+		</if>
+		<if test="type != null">
+			AND mctgr.mctgr_item_name = #{type}
+		</if>
+		<if test="subType != null">
+			AND it.item_code_name = #{subType}
+		</if>
+		Order By itmp.upd_dtm, itmp.rgst_dtm DESC
+	</select>
+
+	<select id="getComponentSearchAll" resultType="com.lgcns.svcp.prod.ui.prod.dto.component.list.ComponentSearchRes">
+	    SELECT
+	        itmp.obj_uuid AS uuid,
+	        itmp.obj_code AS code,
+	        itmp.obj_name AS name,
+	        itmp.valid_start_dtm AS startDate,
+	        itmp.valid_end_dtm AS endDate,
+	        itmp.item_code AS itemCode,
+	        item.mctgr_item_code AS itemType,
+	        mctgr.mctgr_item_name AS type,
+	        item.item_code_name AS subType
+	    FROM tb_mctgr_item_c mctgr
+	    JOIN tb_item_c item ON mctgr.mctgr_item_code = item.mctgr_item_code
+	    JOIN tb_item_mpng_d itmp ON item.item_code = itmp.item_code
+	    WHERE mctgr.lctgr_item_code = 'C'
+	    <if test="offerUUID != null">
+	        AND EXISTS (
+	            SELECT 1
+	            FROM tb_offer_strc_d os
+	            WHERE os.trgt_uuid = itmp.obj_uuid
+	            AND os.base_uuid = #{offerUUID}
+	            AND (TIMESTAMP(os.valid_end_dtm) > NOW() OR os.valid_end_dtm IS NULL)
+	        )
+	    </if>
+	    <if test="code != null">
+	        AND itmp.obj_code LIKE CONCAT('%', #{code}, '%')
+	    </if>
+	    <if test="name != null">
+	        AND itmp.obj_name LIKE CONCAT('%', #{name}, '%')
+	    </if>
+	    <if test="type != null">
+	        AND mctgr.mctgr_item_code = #{type}
+	    </if>
+	    <if test="subType != null">
+	        AND item.item_code = #{subType}
+	    </if>
+	    <if test="onlyValidDtm">
+	        AND (itmp.valid_end_dtm IS NULL OR TIMESTAMP(itmp.valid_end_dtm) >= NOW())
+	    </if>
+	    ORDER BY itmp.rgst_dtm DESC, itmp.upd_dtm DESC
+	</select>
+
+	<select id="getAllCurrentResourceByComponentUUID" resultType="com.lgcns.svcp.prod.ui.prod.dto.component.update.ComponentUpdateResourceReq">
+		SELECT DISTINCT
+		    os.base_uuid as componentUUID,
+		    im.obj_uuid as resourceUUID,
+		    os.valid_start_dtm as validStartDtm,
+		    os.valid_end_dtm as validEndDtm
+		FROM tb_item_mpng_d im
+		JOIN tb_offer_strc_d os ON im.obj_uuid = os.trgt_uuid
+		WHERE os.base_uuid = #{objUuid}
+	</select>
+
+	<update id="updateCurrentResourceByComponentUUID">
+		UPDATE tb_offer_strc_d os
+		<set>
+			os.valid_start_dtm = #{validStartDtm},
+			os.valid_end_dtm = DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59'),
+			os.upd_user = #{updUser},
+			os.upd_dtm = #{updDtm}
+		</set>
+		WHERE os.base_uuid = #{componentUUID}
+			AND os.trgt_uuid = #{resourceUUID}
+
+
+	</update>
+
+	<update id="updateComponentResourceRelationDate">
+		UPDATE tb_offer_strc_d os
+		<set>
+			<if test="validEndDtm != null">
+				os.valid_end_dtm = DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59'),
+			</if>
+			upd_user = #{updUser},
+			upd_dtm = #{updDtm}
+		</set>
+		WHERE os.base_uuid = #{objUuid}
+		<if test="validEndDtm != null">
+			AND ((TIMESTAMP(os.valid_end_dtm) > DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59')) OR os.valid_end_dtm IS NULL)
+		</if>
+	</update>
+
+	<update id="updateComponentOfferRelationDate">
+		UPDATE tb_offer_strc_d os
+		<set>
+			<if test="validEndDtm != null">
+				os.valid_end_dtm = DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59'),
+			</if>
+			os.upd_user = #{updUser},
+			os.upd_dtm = #{updDtm}
+		</set>
+		WHERE os.trgt_uuid = #{objUuid}
+		<if test="validEndDtm != null">
+			AND (TIMESTAMP(os.valid_end_dtm) > (DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59')) OR os.valid_end_dtm IS NULL)
+		</if>
+	</update>
+
+	<select id="countAllComponent" resultType="integer">
+		SELECT COUNT(1)
+		FROM tb_item_mpng_d im
+				 JOIN tb_item_c i ON im.item_code = i.item_code
+				 JOIN tb_mctgr_item_c mi ON i.mctgr_item_code = mi.mctgr_item_code
+		WHERE mi.lctgr_item_code = 'C'
+	</select>
+	
+	<select id="retrieveAllTypeComponent" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+		SELECT
+			l.lctgr_item_code AS large_item_code
+			, l.lctgr_item_name AS large_item_name
+			, m.mctgr_item_code AS middle_item_code
+			, m.mctgr_item_name AS middle_item_name
+			, i.item_code      AS item_code
+			, i.item_code_name AS item_name
+			, i.sort_no AS sort_no
+			, m.sort_no AS middle_sort_no
+			, l.sort_no AS large_sort_no
+		FROM
+			tb_item_c i
+		JOIN
+			tb_mctgr_item_c m ON i.mctgr_item_code = m.mctgr_item_code
+	 	JOIN
+	 		tb_lctgr_item_c l ON m.lctgr_item_code = l.lctgr_item_code
+		WHERE
+			l.lctgr_item_code = 'C'
+			AND i.use_yn = 'Y'
+			AND m.use_yn = 'Y'
+			AND l.use_yn = 'Y'
+		ORDER BY
+			l.sort_no
+			, m.sort_no
+			, i.sort_no
+	</select>
+	
+	<resultMap id="retrieveComponentsAdvancedResultMap" type="com.lgcns.svcp.prod.ui.prod.dto.component.search.ComponentSearchRes">
+<!--		<collection property="general"  column="{objUuid=obj_uuid}" select="Ui-item.retrieveGeneral"/>
+		<collection property="additional"  column="{objUuid=obj_uuid}" select="getComponentDetailAdditional"/>-->
+	</resultMap>
+	
+	 <select id="retrieveComponentsAdvanced" resultMap="retrieveComponentsAdvancedResultMap">
+		SELECT 
+			 a.obj_uuid
+	        , a.obj_code
+	        , a.obj_name
+	        , a.item_code
+	        , a.valid_start_dtm
+	        , a.valid_end_dtm
+	        , a.dplc_trgt_uuid
+	        , a.chg_dept_name
+	        , a.chg_user
+	        , a.ovw_cntn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	        , b.lctgr_item_code
+	        , b.mctgr_item_code
+		 FROM
+		 	tb_item_mpng_d a
+		 JOIN
+		 	tb_item_c b  ON a.item_code = b.item_code
+	 	<if test="offerUuid != null">
+		 	LEFT JOIN tb_offer_strc_d c ON a.obj_uuid = c.trgt_uuid
+	 	</if>
+	 	
+		<where>
+			b.lctgr_item_code = 'C'
+			<if test="offerUuid != null">
+				AND c.base_uuid = #{offerUuid}
+			  	AND (TIMESTAMP(c.valid_end_dtm) > NOW() OR c.valid_end_dtm IS NULL)
+			</if>
+			<if test="mctgrItemCode != null and mctgrItemCode != 'ALL'">
+				AND b.mctgr_item_code = #{mctgrItemCode}
+			</if>
+			<if test="itemCode != null and itemCode != 'ALL'">
+				AND a.item_code = #{itemCode}
+			</if>
+			<if test="objCode != null">
+				AND UPPER(a.obj_code) LIKE <![CDATA[ CONCAT('%', UPPER(#{objCode}),'%')]]>
+			</if>
+			<if test="objName != null">
+				AND UPPER(a.obj_name) LIKE <![CDATA[ CONCAT('%', UPPER(#{objName}),'%')]]>
+			</if>
+			
+		    <if test="additional != null and additional.size() > 0">
+		       AND
+		      <foreach collection="additional" item="param"  open="(" separator=") AND (" close=")">
+		       EXISTS (
+		          SELECT 1 FROM tb_add_attr_header_m c
+		          LEFT JOIN tb_cpnt_add_attr_val_d d ON c.attr_uuid = d.attr_uuid AND d.obj_uuid = a.obj_uuid
+		          WHERE c.item_code = a.item_code
+          			AND
+				      	 c.attr_uuid = #{param.fieldName}
+				        <if test="param.fieldValue != null and param.fieldType == 'TF' or param.fieldType == 'TA'">
+				           AND UPPER(d.attr_val) LIKE <![CDATA[ CONCAT('%', UPPER(#{param.fieldValue}),'%')]]>
+				        </if>
+				        <if test="param.fieldValues != null and param.fieldType == 'DL'">
+				          AND d.attr_val IN
+				          	  <foreach collection="param.fieldValues" item="value" open="(" separator="," close=")">
+						        #{value}
+						      </foreach>
+				        </if>
+				        <if test="param.fieldValues != null and param.fieldType == 'DM'">
+				           AND EXISTS (
+					          SELECT 1
+					          FROM tb_multi_code_add_attr_val_d tmcaavd
+					          WHERE tmcaavd.attr_uuid = c.attr_uuid
+					            AND tmcaavd.obj_uuid = a.obj_uuid
+					            AND tmcaavd.attr_val IN
+					            <foreach collection="param.fieldValues" item="val" open="(" separator="," close=")">
+					              #{val}
+					            </foreach>
+					        )
+				        </if>
+				        <if test="param.fieldType == 'DP'">
+				           <if test="param.fieldValueMin != null and param.fieldValueMin != ''">
+					            AND d.attr_val &gt;= #{param.fieldValueMin}
+					        </if>
+					        <if test="param.fieldValueMax != null and param.fieldValueMax != ''">
+					            AND d.attr_val &lt;= #{param.fieldValueMax}
+					        </if>
+				        </if>
+				        <if test="param.fieldType == 'RF' or param.fieldType == 'NF'">
+				          	<if test="param.fieldValueMin != null and param.fieldValueMin != ''">
+					            AND CAST(COALESCE(d.attr_val, '0') AS DECIMAL(12,3)) &gt;= CAST(#{param.fieldValueMin} AS DECIMAL(12,3)) AND d.attr_val IS NOT NULL
+					        </if>
+					        <if test="param.fieldValueMax != null and param.fieldValueMax != ''">
+					            AND CAST(COALESCE(d.attr_val, '0') AS DECIMAL(12,3)) &lt;= CAST(#{param.fieldValueMax} AS DECIMAL(12,3)) AND d.attr_val IS NOT NULL
+					        </if>
+				        </if>
+		        )
+		      </foreach>
+		    </if>
+		</where>
+	  </select>
+</mapper>

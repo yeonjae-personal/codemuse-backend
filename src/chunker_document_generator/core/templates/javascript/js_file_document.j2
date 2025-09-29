@@ -1,0 +1,200 @@
+# 📄 {{ file_name }}
+
+> **파일 경로**: `{{ relative_path }}`  
+> **생성일**: {{ current_date }}  
+> **Chunk 수**: {{ total_chunks }}개  
+> **언어**: {{ language | title }}{% if framework %} / {{ framework | title }}{% endif %}
+
+---
+
+{% if class_chunks or function_chunks or component_chunks %}
+## 📑 목차
+
+{% if class_chunks %}
+### 🏗️ 클래스
+{% for chunk in class_chunks %}
+- [`{{ chunk.name }}`](#class-{{ chunk.name.lower() }}) - 복잡도: {{ chunk.complexity or 0 }}
+{% endfor %}
+
+{% endif %}
+{% if function_chunks %}
+### ⚙️ 함수
+{% for chunk in function_chunks %}
+- [`{{ chunk.name }}`](#function-{{ chunk.name.lower() }}){% if chunk.is_async %} 🔄{% endif %} - 복잡도: {{ chunk.complexity or 0 }}
+{% endfor %}
+
+{% endif %}
+{% if component_chunks %}
+### 🧩 컴포넌트
+{% for chunk in component_chunks %}
+- [`{{ chunk.name }}`](#component-{{ chunk.name.lower() }}) - 타입: {{ chunk.chunk_type }}
+{% endfor %}
+
+{% endif %}
+{% endif %}
+
+{% if overview_chunk %}
+## 📋 파일 개요
+
+{% if overview_chunk.docstring %}
+> 🎯 **파일 목적**  
+> {{ overview_chunk.docstring }}
+
+{% endif %}
+{% if info_cards %}
+{{ info_table }}
+
+{% endif %}
+{% endif %}
+
+{% if class_chunks %}
+## 🏗️ 클래스
+
+{% for class_chunk in class_chunks %}
+### <a id="class-{{ class_chunk.name.lower() }}"></a>🎯 `{{ class_chunk.name }}`
+
+{% if class_chunk.badges %}
+{{ class_chunk.badges }}
+
+{% endif %}
+{% if class_chunk.docstring %}
+> 📝 **클래스 설명**  
+> {{ class_chunk.docstring }}
+
+{% endif %}
+{% if class_chunk.info_table %}
+{{ class_chunk.info_table }}
+
+{% endif %}
+
+<details>
+<summary>🔍 코드 미리보기</summary>
+
+```javascript
+{{ class_chunk.content[:800] }}...
+```
+
+**Chunk 정보**
+- 🆔 **ID**: `{{ class_chunk.chunk_id }}`
+- 📍 **라인**: {{ class_chunk.line_range }}
+- 📊 **토큰**: {{ class_chunk.token_count }}
+- 🏷️ **태그**: `{{ class_chunk.tags_display }}`
+
+</details>
+
+---
+
+{% endfor %}
+{% endif %}
+
+{% if function_chunks %}
+## ⚙️ 함수
+
+{% for func_chunk in function_chunks %}
+### <a id="function-{{ func_chunk.name.lower() }}"></a>🔧 `{{ func_chunk.name }}`
+
+{% if func_chunk.badges %}
+{{ func_chunk.badges }}
+
+{% endif %}
+{% if func_chunk.docstring %}
+> 📖 **함수 설명**  
+> {{ func_chunk.docstring }}
+
+{% endif %}
+{{ func_chunk.info_table }}
+
+{% if func_chunk.signature or func_chunk.parameters or func_chunk.returns %}
+#### 🧩 시그니처 상세
+
+{% if func_chunk.signature %}- **Signature**: `{{ func_chunk.name }}{{ func_chunk.signature }}`{% endif %}
+{% if func_chunk.parameters %}
+- **Parameters**: `{{ func_chunk.parameters | join(', ') }}`
+{% endif %}
+{% if func_chunk.returns %}
+- **Returns**: `{{ func_chunk.returns }}`
+{% endif %}
+{% endif %}
+
+{% if func_chunk.raises %}
+#### ⚠️ Throws
+
+`{{ func_chunk.raises | join('`, `') }}`
+{% endif %}
+
+{% if func_chunk.calls %}
+#### 📞 Calls
+
+`{{ func_chunk.calls | join('`, `') }}`
+{% endif %}
+
+<details>
+<summary>💻 코드 미리보기</summary>
+
+```javascript
+{{ func_chunk.content[:800] }}...
+```
+
+**Chunk 메타데이터**
+- 🆔 **ID**: `{{ func_chunk.chunk_id }}`
+- 🏷️ **태그**: `{{ func_chunk.tags_display }}`
+
+</details>
+
+---
+
+{% endfor %}
+{% endif %}
+
+{% if component_chunks %}
+## 🧩 Vue.js 컴포넌트
+
+{% for comp_chunk in component_chunks %}
+### <a id="component-{{ comp_chunk.name.lower() }}"></a>🎨 `{{ comp_chunk.name }}`
+
+{% if comp_chunk.badges %}
+{{ comp_chunk.badges }}
+
+{% endif %}
+{% if comp_chunk.docstring %}
+> 📝 **컴포넌트 설명**  
+> {{ comp_chunk.docstring }}
+
+{% endif %}
+{% if comp_chunk.info_table %}
+{{ comp_chunk.info_table }}
+
+{% endif %}
+
+#### 📋 컴포넌트 정보
+
+| 속성 | 값 |
+|------|----|
+| 🎨 **타입** | {{ comp_chunk.chunk_type }} |
+| 📍 **라인 범위** | {{ comp_chunk.line_range }} |
+| 🏷️ **태그** | `{{ comp_chunk.tags | join(', ') }}` |
+| 📊 **토큰 수** | {{ comp_chunk.token_count }} |
+
+<details>
+<summary>💻 코드 미리보기</summary>
+
+```{{ comp_chunk.language if comp_chunk.language != 'vue' else 'vue' }}
+{{ comp_chunk.content[:800] }}...
+```
+
+**Chunk 메타데이터**
+- 🆔 **ID**: `{{ comp_chunk.chunk_id }}`
+- 📁 **소스 파일**: `{{ comp_chunk.file_path }}`
+
+</details>
+
+---
+
+{% endfor %}
+{% endif %}
+
+{% if chunk_summary %}
+## 🧩 Chunk 요약
+
+{{ chunk_summary }}
+{% endif %}

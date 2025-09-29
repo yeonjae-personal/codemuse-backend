@@ -1,0 +1,15 @@
+tunnel: codemuse
+credentials-file: /Users/roseline/.cloudflared/f93e3f7f-a6fc-4a22-8cf8-d34a19700cb7.json
+
+ingress:
+  - hostname: codemuse.beauty
+    service: http://localhost:3000   # 프론트엔드
+  - hostname: api.codemuse.beauty
+    service: http://localhost:8006   # Workflow Orchestrator
+  - hostname: rag.codemuse.beauty
+    service: http://localhost:8003   # RAG Engine
+  - hostname: llm.codemuse.beauty
+    service: http://localhost:8004   # LLM Chat Service
+  - hostname: doc.codemuse.beauty
+    service: http://localhost:8001   # Document Generator
+  - service: http_status:404

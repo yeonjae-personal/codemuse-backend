@@ -1,0 +1,41 @@
+## 🔍 기술 스택 감지 결과
+
+### 📊 언어별 분포
+
+| 언어 | 파일 수 | 비율 | 주요 프레임워크 |
+|------|---------|------|----------------|
+{% for lang_stats in language_stats %}
+| {{ lang_stats.language | title }} | {{ lang_stats.file_count }}개 | {{ lang_stats.percentage }}% | {{ lang_stats.frameworks | join(', ') or 'N/A' }} |
+{% endfor %}
+
+### 🏗️ 아키텍처 패턴
+
+{% if architecture_patterns %}
+{% for pattern in architecture_patterns %}
+- **{{ pattern.name }}**: {{ pattern.description }}
+  - 적용 파일: {{ pattern.files | length }}개
+  - 특징: {{ pattern.features | join(', ') }}
+{% endfor %}
+{% endif %}
+
+### 📦 프레임워크별 특화 기능
+
+{% if framework_features %}
+{% for framework, features in framework_features.items() %}
+#### {{ framework | title }}
+{% for feature in features %}
+- {{ feature.name }}: {{ feature.description }}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+### 🔧 개발 도구 및 설정
+
+{% if dev_tools %}
+{% for tool in dev_tools %}
+- **{{ tool.name }}**: {{ tool.description }}
+  - 설정 파일: {{ tool.config_files | join(', ') or 'N/A' }}
+  - 용도: {{ tool.purpose }}
+{% endfor %}
+{% endif %}

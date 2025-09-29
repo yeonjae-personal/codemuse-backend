@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Rule-Rule">
+
+  <select id="selectRuleByUuid" resultType="com.lgcns.svcp.prod.ruleengine.dto.rule.RuleDto">
+    <![CDATA[
+    SELECT rule_name
+    , rule_msg, rgst_dtm
+    FROM tb_rule_m
+    WHERE 1 = 1
+    AND rule_uuid = #{ruleUuid}
+    AND use_yn = 'Y'
+    ]]>
+  </select>
+  
+  <select id="selectRuleByUuidIgnoreCase" resultType="com.lgcns.svcp.prod.ruleengine.dto.rule.RuleDto">
+    <![CDATA[
+    SELECT rule_name
+    , rule_msg, rgst_dtm
+    FROM tb_rule_m
+    WHERE 1 = 1
+    AND rule_uuid = #{ruleUuid}
+    ]]>
+  </select>
+
+  <select id="selectRuleUuids" resultType="string">
+    <![CDATA[
+    SELECT rule_uuid
+    FROM tb_rule_m
+    WHERE 1 = 1
+    AND use_yn = 'Y'
+    ]]>
+  </select>
+
+  	<insert id="insertRule">
+		INSERT INTO tb_rule_m
+    (rule_uuid
+    , rule_name
+    , sort_no
+    , use_yn
+    , chg_dept_name
+    , chg_user
+    , ovw_cntn
+    , rgst_user
+    , rgst_dtm
+    , upd_user
+    , upd_dtm)
+    VALUES
+    (#{ruleUuid}
+    , #{ruleName}
+    , #{sortNo}
+    , #{useYn}
+    , #{chgDeptName}
+    , #{chgUser}
+    , #{ovwCntn}
+    , #{rgstUser}
+    , CURRENT_TIMESTAMP
+    , #{updUser}
+    , CURRENT_TIMESTAMP)
+	</insert>
+
+  <update id="updateRule">
+		UPDATE tb_rule_m
+    <set>
+    rule_name = #{ruleName},
+    ovw_cntn = #{ovwCntn},
+    use_yn = #{useYn},
+    chg_dept_name = #{chgDeptName},
+    chg_user = #{chgUser},
+    upd_user = #{updUser},
+    upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE rule_uuid = #{ruleUuid}
+	</update>
+
+  <update id="updateRuleWithStructure">
+		UPDATE tb_rule_m
+    <set>
+    rule_msg = #{ruleMsg},
+    upd_user = #{updUser},
+    upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE rule_uuid = #{ruleUuid}
+   </update>
+
+  <insert id="insertGroup">
+	INSERT INTO tb_cond_group_m
+    (cond_group_uuid
+    , rule_uuid
+    , hpst_cond_group_uuid
+    , tcls_cond_group_yn
+    , logic_type
+    , sort_no
+    , use_yn
+    , rgst_user
+    , rgst_dtm
+    , upd_user
+    , upd_dtm)
+    VALUES (
+    #{groupUuid}
+    , #{ruleUuid}
+    , #{parentGroupUuid}
+    , #{tclsCondGroupYn}
+    , #{logicType}
+    , #{sortNo}
+    , #{useYn}
+    , #{rgstUser}
+    , CURRENT_TIMESTAMP
+    , #{updUser}
+    , CURRENT_TIMESTAMP)
+</insert>
+
+  <delete id="deleteGroupByRuleUuid">
+	DELETE
+    FROM tb_cond_group_m where rule_uuid = #{uuid} and hpst_cond_group_uuid is null
+	</delete>
+
+  <select id="insertCondition" resultType="map">
+    <![CDATA[
+    INSERT INTO tb_cond_m (
+    cond_uuid
+    , cond_group_uuid
+    , field_uuid
+    , compare_operator
+    , cond_value
+    , sort_no
+    , use_yn
+    , rgst_user
+    , rgst_dtm
+    , upd_user
+    , upd_dtm)
+    VALUES (
+    #{condUuid}
+    , #{groupUuid}
+    , #{fieldUuid}
+    , #{operatorCode}
+    , #{condValue}
+    , #{sortNo}
+    , #{useYn}
+    , #{rgstUser}
+    , CURRENT_TIMESTAMP
+    , #{updUser}
+    , CURRENT_TIMESTAMP)
+    ]]>
+  </select>
+
+  <select id="getFieldUuidByKey" resultType="string">
+    <![CDATA[
+    SELECT field_uuid
+    FROM tb_field_m
+    WHERE 1 = 1
+    AND use_yn = 'Y'
+    AND field_key_name = #{fieldKeyName}
+    ]]>
+  </select>
+
+</mapper>

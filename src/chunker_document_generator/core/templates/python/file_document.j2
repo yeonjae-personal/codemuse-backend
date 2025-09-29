@@ -1,0 +1,248 @@
+# 📄 {{ file_name }}
+
+> **파일 경로**: `{{ relative_path }}`  
+> **생성일**: {{ current_date }}  
+> **Chunk 수**: {{ total_chunks }}개
+
+---
+
+{% if class_chunks or function_chunks %}
+## 📑 목차
+
+{% if class_chunks %}
+### 🏗️ 클래스
+{% for chunk in class_chunks %}
+- [`{{ chunk.name }}`](#class-{{ chunk.name.lower() }}) - 복잡도: {{ chunk.complexity or 0 }}
+{% endfor %}
+
+{% endif %}
+{% if function_chunks %}
+### ⚙️ 함수
+{% for chunk in function_chunks %}
+- [`{{ chunk.name }}`](#function-{{ chunk.name.lower() }}){% if chunk.is_async %} 🔄{% endif %} - 복잡도: {{ chunk.complexity or 0 }}
+{% endfor %}
+
+{% endif %}
+{% endif %}
+
+{% if overview_chunk %}
+## 📋 파일 개요
+
+{% if overview_chunk.docstring %}
+> 🎯 **파일 목적**  
+> {{ overview_chunk.docstring }}
+
+{% endif %}
+{% if info_cards %}
+{{ info_table }}
+
+{% endif %}
+{% endif %}
+
+{% if class_chunks %}
+## 🏗️ 클래스
+
+{% for class_chunk in class_chunks %}
+### <a id="class-{{ class_chunk.name.lower() }}"></a>🎯 `{{ class_chunk.name }}`
+
+{% if class_chunk.badges %}
+{{ class_chunk.badges }}
+
+{% endif %}
+{% if class_chunk.docstring %}
+> 📝 **클래스 설명**  
+> {{ class_chunk.docstring }}
+
+{% endif %}
+{% if class_chunk.info_table %}
+{{ class_chunk.info_table }}
+
+{% endif %}
+{% if class_chunk.methods_table %}
+#### 📋 메서드 목록
+
+{{ class_chunk.methods_table }}
+
+{% endif %}
+
+{% if class_chunk.methods_details %}
+#### 🔧 메서드 상세
+
+{% for m in class_chunk.methods_details %}
+##### `{{ m.name }}`
+{% if m.info_table %}{{ m.info_table }}{% endif %}
+{% if m.signature or m.parameters or m.returns %}
+- **Signature**: {% if m.signature %}`{{ m.name }}{{ m.signature }}`{% else %}`{{ m.name }}()`{% endif %}
+- **Parameters**: {% if m.parameters %}`{{ m.parameters | join(', ') }}`{% else %}N/A{% endif %}
+- **Returns**: `{{ m.returns or 'N/A' }}`
+{% endif %}
+{% if m.calls %}- **Calls**: `{{ m.calls | join('`, `') }}`{% endif %}
+{% if m.raises %}- **Raises**: `{{ m.raises | join('`, `') }}`{% endif %}
+---
+{% endfor %}
+{% endif %}
+<details>
+<summary>🔍 코드 미리보기</summary>
+
+```python
+{{ class_chunk.content[:800] }}...
+```
+
+**Chunk 정보**
+- 🆔 **ID**: `{{ class_chunk.chunk_id }}`
+- 📍 **라인**: {{ class_chunk.line_range }}
+- 📊 **토큰**: {{ class_chunk.token_count }}
+- 🏷️ **태그**: `{{ class_chunk.tags_display }}`
+
+</details>
+
+---
+
+{% endfor %}
+{% endif %}
+
+{% if function_chunks %}
+## ⚙️ 함수
+
+{% for func_chunk in function_chunks %}
+### <a id="function-{{ func_chunk.name.lower() }}"></a>🔧 `{{ func_chunk.name }}`
+
+{% if func_chunk.badges %}
+{{ func_chunk.badges }}
+
+{% endif %}
+{% if func_chunk.docstring %}
+> 📖 **함수 설명**  
+> {{ func_chunk.docstring }}
+
+{% endif %}
+{{ func_chunk.info_table }}
+
+{% if func_chunk.signature or func_chunk.parameters or func_chunk.returns %}
+#### 🧩 시그니처 상세
+
+{% if func_chunk.signature %}- **Signature**: `{{ func_chunk.name }}{{ func_chunk.signature }}`{% endif %}
+{% if func_chunk.parameters %}
+- **Parameters**: `{{ func_chunk.parameters | join(', ') }}`
+{% endif %}
+{% if func_chunk.returns %}
+- **Returns**: `{{ func_chunk.returns }}`
+{% endif %}
+{% endif %}
+
+{% if func_chunk.raises %}
+#### ⚠️ Raises
+
+`{{ func_chunk.raises | join('`, `') }}`
+{% endif %}
+
+{% if func_chunk.calls %}
+#### 📞 Calls
+
+`{{ func_chunk.calls | join('`, `') }}`
+{% endif %}
+
+{% if func_chunk.data_flow_summary %}
+#### 🧭 DATA FLOW
+
+```mermaid
+flowchart LR
+  subgraph {{ relative_path }}:{{ func_chunk.line_range }}
+{% for e in func_chunk.data_flow_summary[:12] %}
+  {{ 'n' ~ loop.index }}["{{ e.src | replace('"','\\"') }}"] --> {{ 'm' ~ loop.index }}["{{ e.dst | replace('"','\\"') }}"]
+{% endfor %}
+  end
+```
+{% endif %}
+
+<details>
+<summary>💻 코드 미리보기</summary>
+
+```python
+{{ func_chunk.content[:800] }}...
+```
+
+**Chunk 메타데이터**
+- 🆔 **ID**: `{{ func_chunk.chunk_id }}`
+- 🏷️ **태그**: `{{ func_chunk.tags_display }}`
+
+</details>
+
+---
+
+{% endfor %}
+{% endif %}
+
+{% if visualizations %}
+## 📊 시각화 및 분석
+
+{% if file_structure_chart %}
+### 🏗️ 파일 구조 플로우
+
+```mermaid
+{{ file_structure_chart }}
+```
+
+{% endif %}
+{% if complexity_chart %}
+### ⚡ 복잡도 분석
+
+```mermaid
+{{ complexity_chart }}
+```
+
+{% endif %}
+{% if function_types_chart %}
+### 🔧 함수 유형 분석
+
+```mermaid
+{{ function_types_chart }}
+```
+
+{% endif %}
+{% if file_sequence %}
+### 🔗 호출 순서 (Sequence)
+
+```mermaid
+{{ file_sequence }}
+```
+
+{% endif %}
+{% if dependency_graph %}
+### 📦 의존성 그래프
+
+```mermaid
+{{ dependency_graph }}
+```
+
+{% endif %}
+{% if tag_cloud %}
+### 🏷️ 태그 클라우드
+
+```mermaid
+{{ tag_cloud }}
+```
+
+{% endif %}
+{% endif %}
+
+{% if performance_metrics %}
+## 📈 퍼포먼스 메트릭스
+
+### 📊 핵심 지표
+
+{{ metrics_table }}
+
+### 🎯 품질 점수
+
+```mermaid
+{{ quality_chart }}
+```
+
+{% endif %}
+
+{% if chunk_summary %}
+## 🧩 Chunk 요약
+
+{{ chunk_summary }}
+{% endif %}

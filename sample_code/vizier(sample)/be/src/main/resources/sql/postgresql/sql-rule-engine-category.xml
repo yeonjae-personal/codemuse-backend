@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Rule-Category">
+
+  <select id="retrieveRuleCategoryDto" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleCategoryTreeDto">
+    <![CDATA[
+    SELECT a.rule_ctgr_uuid
+    , a.rule_ctgr_name
+    , a.hpst_rule_ctgr_uuid
+    , a.tcls_ctgr_yn
+    , a.use_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_rule_ctgr_m a
+    WHERE 1 = 1
+    AND   a.use_yn = 'Y'
+    ]]>
+  </select>
+
+  <select id="getCategory" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleCategoryTreeDto">
+    <![CDATA[
+    SELECT a.rule_ctgr_uuid
+    , a.rule_ctgr_name
+    , a.hpst_rule_ctgr_uuid
+    , a.tcls_ctgr_yn
+    , a.use_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_rule_ctgr_m a
+    WHERE 1 = 1 and a.hpst_rule_ctgr_uuid IS NULL and (lower(a.rule_ctgr_name) LIKE '%' || #{ruleCtgrName} || '%' ESCAPE '\\')
+    and a.use_yn = 'Y'
+    ]]>
+  </select>
+
+  <select id="getCategoryByUuid" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleCategoryTreeDto">
+    <![CDATA[
+    SELECT a.rule_ctgr_uuid
+    , a.rule_ctgr_name
+    , a.hpst_rule_ctgr_uuid
+    , a.tcls_ctgr_yn
+    , a.use_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_rule_ctgr_m a
+    WHERE 1 = 1 and a.rule_ctgr_uuid = #{uuid}
+    ]]>
+  </select>
+
+  <select id="getCategoryBelowByName" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleCategoryTreeDto">
+    <![CDATA[
+    SELECT a.rule_ctgr_uuid
+    , a.rule_ctgr_name
+    , a.hpst_rule_ctgr_uuid
+    , a.tcls_ctgr_yn
+    , a.use_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_rule_ctgr_m a
+    WHERE 1 = 1 and a.hpst_rule_ctgr_uuid IS NOT NULL and lower(a.rule_ctgr_name) LIKE '%' || #{ruleCtgrName} || '%'
+    and a.use_yn = 'Y'
+    ]]>
+  </select>
+
+  <select id="getCategoryBelow" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleCategoryTreeDto">
+    <![CDATA[
+    SELECT a.rule_ctgr_uuid
+    , a.rule_ctgr_name
+    , a.hpst_rule_ctgr_uuid
+    , a.tcls_ctgr_yn
+    , a.use_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_rule_ctgr_m a
+    WHERE 1 = 1 and a.hpst_rule_ctgr_uuid IS NOT NULL and a.use_yn = 'Y'
+    ]]>
+  </select>
+
+  <select id="retrieveRuleCategoryByName" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleCategoryTreeDto">
+    <![CDATA[
+    SELECT a.rule_ctgr_uuid
+    , a.rule_ctgr_name
+    , a.hpst_rule_ctgr_uuid
+    , a.tcls_ctgr_yn
+    , a.use_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_rule_ctgr_m a
+    WHERE 1 = 1 and lower(a.rule_ctgr_name) LIKE '%' || #{ruleCtgrName} || '%'
+    AND a.use_yn = 'Y'
+    ]]>
+  </select>
+
+  <select id="retrieveRuleInfoDto" resultType="com.lgcns.svcp.prod.ruleengine.dto.category.RuleInfoDto">
+    <![CDATA[
+    SELECT rule_uuid
+    , rule_name
+    FROM tb_rule_m
+    WHERE 1 = 1
+    AND   use_yn = 'Y'
+    ORDER BY sort_no
+    ]]>
+  </select>
+
+  <select id="selectAllCategories" resultType="map">
+    <![CDATA[
+    SELECT rule_ctgr_uuid
+    , hpst_rule_ctgr_uuid
+    , rule_ctgr_name
+    FROM tb_rule_ctgr_m
+    ]]>
+  </select>
+
+  <select id="selectRuleUuidsByCategoryIdAndRuleName" resultType="string">
+    SELECT t1.rule_uuid
+    FROM tb_rule_ctgr_rel_d t1
+    inner join tb_rule_m t2 on t1.rule_uuid = t2.rule_uuid
+    WHERE 1 = 1
+    AND rule_ctgr_uuid = #{ruleCtgrUuid}
+    <if test="ruleName != null">
+    and lower(t2.rule_name) LIKE <![CDATA[ '%' || #{ruleName} || '%']]>
+    </if>
+  </select>
+
+  <select id="selectRulesByUuids" resultType="map">
+    SELECT rule_uuid AS "ruleUuid"
+    , rule_name AS "ruleName", ovw_cntn as "ovwCntn", chg_dept_name as "chgDeptName"
+    , rule_msg as "ruleMsg"
+    , chg_user as "chgUser"
+    , rgst_dtm as "rgstDtm"
+    , use_yn as "useYn"
+    FROM tb_rule_m
+    WHERE rule_uuid IN
+    <foreach collection='ruleUuids' item='id' open='(' separator=',' close=")">
+    #{id}
+    </foreach>
+  </select>
+
+  <insert id="insertChildCategory">
+	INSERT INTO tb_rule_ctgr_m
+    (rule_ctgr_uuid, rule_ctgr_name, hpst_rule_ctgr_uuid, tcls_ctgr_yn, use_yn, rgst_user, rgst_dtm, upd_user, upd_dtm)
+    VALUES (gen_random_uuid(), #{ruleCtgrName}, #{hpstRuleCtgrUuid}, #{tclsCtgrYn}, #{useYn}, #{rgstUser}, CURRENT_TIMESTAMP, #{updUser}, CURRENT_TIMESTAMP)
+	</insert>
+
+  <update id="updateChildCategory">
+	UPDATE tb_rule_ctgr_m
+    <set>
+    rule_ctgr_name = #{ruleCtgrName},
+    upd_user = #{updUser},
+    upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE rule_ctgr_uuid = #{ruleCtgrUuid}
+
+	</update>
+
+  <insert id="insertRuleWithCategory">
+	INSERT INTO tb_rule_ctgr_rel_d
+    (rule_ctgr_uuid, rule_uuid, valid_start_dtm, rgst_user, rgst_dtm, upd_user, upd_dtm)
+    VALUES (#{ruleCtgrUuid}, #{ruleUuid}, CURRENT_TIMESTAMP, #{rgstUser}, CURRENT_TIMESTAMP, #{updUser}, CURRENT_TIMESTAMP)
+	</insert>
+
+  <select id="countRuleByCategoryUuid" resultType="integer">
+    SELECT count(*)
+    FROM tb_rule_ctgr_rel_d t
+    WHERE t.rule_ctgr_uuid = #{uuid}
+  </select>
+
+  <select id="checkCategoryParent" resultType="integer">
+    SELECT count(*)
+    FROM tb_rule_ctgr_m t
+    WHERE t.rule_ctgr_uuid = #{uuid} and hpst_rule_ctgr_uuid IS NULL
+  </select>
+
+  <delete id="deleteCategoryBelow">
+	DELETE
+    FROM tb_rule_ctgr_m where rule_ctgr_uuid = #{uuid}
+  </delete>
+
+</mapper>

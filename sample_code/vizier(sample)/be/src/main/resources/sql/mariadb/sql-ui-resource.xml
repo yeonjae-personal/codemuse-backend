@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-resource">
+    
+    <select id="retrieveServiceResM" resultType="com.lgcns.svcp.prod.ui.prod.dto.resource.RawServiceResMDto">
+		<![CDATA[
+        SELECT
+			prod_uuid
+			, svc_fctr_cd
+			, svc_fctr_nm
+			, svc_fctr_clss_cd
+			, svc_fctr_kd_cd
+			, swtc_sbgn_yn
+			, swtc_cd
+			, vald_end_dtm
+			, swtc_prmt_nm
+			, swtc_prmt_del_nm
+			, sa_swtc_prmt_nm
+			, sa_swtc_prmt_del_nm
+			, rgst_usr
+			, rgst_dtm
+			, upd_usr
+			, upd_dtm
+		FROM
+			tb_service_res_m_tmp
+        WHERE prod_uuid = #{prodUuid}
+        ]]>
+	</select>
+	
+	<select id="retrieveBlngResM" resultType="com.lgcns.svcp.prod.ui.prod.dto.resource.RawBlngResMDto">
+		<![CDATA[
+        SELECT
+			prod_uuid
+			, svc_fctr_cd
+			, svc_fctr_nm
+			, svc_fctr_clss_cd
+			, svc_fctr_clss_detl_cd
+			, svc_fctr_lnwl_etc_cd
+			, svc_fctr_call_kd_cd
+			, svc_fctr_call_kd_detl_cd
+			, use_plcy_yn
+			, raw_svc_fctr_cd
+			, svc_fctr_kd_detl_cd
+			, svc_fctr_kd_cd
+			, rtm_sys_aply_yn
+			, vald_end_dtm
+			, rgst_usr
+			, rgst_dtm
+			, upd_usr
+			, upd_dtm
+		FROM
+			tb_blng_res_m_tmp
+        WHERE prod_uuid = #{prodUuid}
+        ]]>
+	</select>
+
+	<select id="getAllItem" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+		SELECT
+			l.lctgr_item_code as largeItemCode,
+			l.lctgr_item_name as largeItemName,
+			m.mctgr_item_code as middleItemCode,
+			m.mctgr_item_name as middleItemName,
+			i.item_code       as itemCode,
+			i.item_code_name  as itemName,
+			i.item_code       as cmcdDetlId,
+			i.item_code_name  as cmcdDetlNm,
+			i.sort_no		  as sortNo,
+			m.sort_no 		  as middle_sort_no,
+			l.sort_no 		  as large_sort_no
+		FROM tb_item_c i
+				 RIGHT JOIN tb_mctgr_item_c m on i.mctgr_item_code = m.mctgr_item_code
+				 RIGHT JOIN tb_lctgr_item_c l on m.lctgr_item_code = l.lctgr_item_code
+		WHERE 1 = 1
+		AND i.use_yn = 'Y'
+		AND m.use_yn = 'Y'
+		AND l.use_yn = 'Y'
+		<if test="lItemCode != null">
+			AND l.lctgr_item_code = #{lItemCode}
+		</if>
+		<if test="mItemCode != null">
+			AND m.mctgr_item_code = #{mItemCode}
+		</if>
+		<if test="itemCode != null">
+			AND i.item_code = #{itemCode}
+		</if>
+		ORDER BY l.sort_no
+				, m.sort_no
+				, i.sort_no
+	</select>
+
+	<select id="getAllItemForResource" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+		<![CDATA[
+		SELECT l.lctgr_item_code as lItemCode,
+			   l.lctgr_item_name as lItemName,
+			   m.mctgr_item_code as mItemCode,
+			   m.mctgr_item_name as mItemName,
+			   i.item_code      as itemCode,
+			   i.item_code_name as itemName
+		FROM tb_item_c i
+				 RIGHT JOIN tb_mctgr_item_c m on i.mctgr_item_code = m.mctgr_item_code
+				 RIGHT JOIN tb_lctgr_item_c l on m.lctgr_item_code = l.lctgr_item_code
+		WHERE m.lctgr_item_code = 'R'
+		]]>
+	</select>
+	
+	<select id="getResourceGeneralForComponentDetail" resultType="com.lgcns.svcp.prod.ui.prod.dto.resource.list.ResourceSearchDto">
+		SELECT DISTINCT
+		im.obj_uuid,
+		im.obj_code,
+		im.obj_name,
+		im.item_code,
+		im.valid_start_dtm,
+		im.valid_end_dtm,
+		os.valid_start_dtm as relationStartDate,
+		os.valid_end_dtm as relationEndDate
+		FROM tb_item_mpng_d im
+		LEFT JOIN tb_offer_strc_d os ON im.obj_uuid = os.trgt_uuid
+		JOIN tb_item_c tic on im.item_code  = tic.item_code 
+		WHERE
+			tic.lctgr_item_code = 'R'
+			<if test="objUuid != null">
+				AND os.base_uuid = #{objUuid}
+			</if>
+			<if test="itemCode != null">
+				AND im.item_code = #{itemCode}
+			</if>
+			<if test="objCode != null">
+				AND im.obj_code LIKE <![CDATA[ CONCAT('%', UPPER(#{objCode}),'%')]]>
+			</if>
+			<if test="objName != null">
+				AND UPPER(im.obj_name) LIKE <![CDATA[ CONCAT('%', TRIM(UPPER(#{objName})),'%')]]>
+			</if>
+			<if test="onlyValidDtm">
+		        AND (im.valid_end_dtm IS NULL OR TIMESTAMP(im.valid_end_dtm) >= NOW())
+		    </if>
+	</select>
+
+	<insert id="saveResourceAdditional">
+		 INSERT INTO tb_rsc_add_attr_val_d (
+	        obj_uuid
+	        , attr_uuid
+	        , attr_val
+	        , rgst_user
+	        , rgst_dtm
+	        , upd_user
+	        , upd_dtm
+	    )
+	    VALUES (
+	        #{objUuid}
+	        , #{attrUuid}
+	        , #{attrVal}
+	        , #{rgstUser}
+	        , #{rgstDtm}
+	        , #{updUser}
+	        , #{updDtm}
+	    )
+		ON DUPLICATE KEY UPDATE
+			attr_val = VALUES(attr_val)
+			, upd_user = VALUES(upd_user)
+			, upd_dtm = VALUES(upd_dtm)
+	</insert>
+
+	<select id="getResourceDetailAdditional" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.metadata.AdditionalDetailDto">
+		SELECT 
+	        b.obj_uuid
+	        , a.attr_uuid
+	        , a.item_code
+	        , a.field_type_code
+	        , a.comm_group_code
+	        , a.required_yn
+	        , a.attr_max_length
+	        , a.label_id
+	        , a.sort_no
+	        , a.disp_tab
+	        , a.adv_search_yn
+	        , CASE 
+				WHEN a.field_type_code = 'DM' then (
+													SELECT
+														COALESCE(JSON_ARRAYAGG(attr_val), '[]') AS attr_val
+													FROM
+														tb_multi_code_add_attr_val_d
+													WHERE
+														attr_uuid = a.attr_uuid
+														AND obj_uuid = b.obj_uuid
+													ORDER BY
+														attr_seq
+													)
+				ELSE c.attr_val
+			END AS attr_val
+			, CASE 
+				WHEN a.field_type_code = 'OB' then (
+													SELECT
+														ob_name
+													FROM
+														(SELECT
+															obj_uuid AS ob_code
+															, obj_name AS ob_name 
+															FROM
+																tb_item_mpng_d
+															
+															UNION
+															
+															SELECT
+																matrix_code AS ob_code
+																, matrix_code_name AS ob_name 
+															FROM
+																tb_matrix_m
+														) AS combined
+													WHERE
+														ob_code =  c.attr_val
+													)
+				ELSE NULL
+			END AS ob_name
+		FROM 
+		    tb_add_attr_header_m a
+		JOIN tb_item_mpng_d b
+		    ON b.item_code = a.item_code
+		LEFT JOIN tb_rsc_add_attr_val_d c 
+		    ON a.attr_uuid = c.attr_uuid
+		    AND c.obj_uuid = b.obj_uuid
+		WHERE 
+			a.use_yn = 'Y'
+			and  b.obj_uuid = #{objUuid}
+		ORDER BY 
+			a.sort_no
+	</select>
+
+	<update id="updateResourceComponentRelationDate">
+		UPDATE tb_offer_strc_d os
+		<set>
+			os.valid_end_dtm = DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59'),
+			os.upd_user = #{updUser},
+			os.upd_dtm = #{updDtm}
+		</set>
+		WHERE os.trgt_uuid = #{objUuid}
+		<if test="validEndDtm != null">
+			AND (TIMESTAMP(os.valid_end_dtm) > DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59') OR os.valid_end_dtm IS NULL)
+		</if>
+	</update>
+
+	<resultMap id="retrieveResourcesAdvancedResultMap" type="com.lgcns.svcp.prod.ui.prod.dto.resource.search.ResoureSearchRes">
+<!--		<collection property="general"  column="{objUuid=obj_uuid}" select="Ui-item.retrieveGeneral"/>
+		<collection property="additional"  column="{objUuid=obj_uuid}" select="getResourceDetailAdditional"/>-->
+	</resultMap>
+	
+	 <select id="retrieveResourcesAdvanced" resultMap="retrieveResourcesAdvancedResultMap">
+		SELECT
+			 a.obj_uuid
+	        , a.obj_code
+	        , a.obj_name
+	        , a.item_code
+	        , a.valid_start_dtm
+	        , a.valid_end_dtm
+	        , a.dplc_trgt_uuid
+	        , a.chg_dept_name
+	        , a.chg_user
+	        , a.ovw_cntn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	        , b.lctgr_item_code
+	        , b.mctgr_item_code
+		 FROM
+		 	tb_item_mpng_d a
+		 JOIN
+		 	tb_item_c b  ON a.item_code = b.item_code
+		<where>
+			b.lctgr_item_code = 'R'
+			<if test="mctgrItemCode != null and mctgrItemCode != 'ALL'">
+				AND b.mctgr_item_code = #{mctgrItemCode}
+			</if>
+			<if test="itemCode != null and itemCode != 'ALL'">
+				AND a.item_code = #{itemCode}
+			</if>
+			<if test="objCode != null">
+				AND UPPER(a.obj_code) LIKE <![CDATA[ CONCAT('%', UPPER(#{objCode}),'%')]]>
+			</if>
+			<if test="objName != null">
+				AND UPPER(a.obj_name) LIKE <![CDATA[ CONCAT('%', UPPER(#{objName}),'%')]]>
+			</if>
+		
+		    <if test="additional != null and additional.size() > 0">
+		       AND
+		      <foreach collection="additional" item="param"  open="(" separator=") AND (" close=")">
+		       EXISTS (
+		          SELECT 1 FROM tb_add_attr_header_m c
+		          LEFT JOIN tb_rsc_add_attr_val_d d ON c.attr_uuid = d.attr_uuid AND d.obj_uuid = a.obj_uuid
+		          WHERE c.item_code = a.item_code
+          			AND
+				      	 c.attr_uuid = #{param.fieldName}
+				        <if test="param.fieldValue != null and param.fieldType == 'TF' or param.fieldType == 'TA'">
+				           AND UPPER(d.attr_val) LIKE <![CDATA[ CONCAT('%', UPPER(#{param.fieldValue}),'%')]]>
+				        </if>
+				        <if test="param.fieldValues != null and param.fieldType == 'DL'">
+				          AND d.attr_val IN
+				          	  <foreach collection="param.fieldValues" item="value" open="(" separator="," close=")">
+						        #{value}
+						      </foreach>
+				        </if>
+				        <if test="param.fieldValues != null and param.fieldType == 'DM'">
+				           AND EXISTS (
+					          SELECT 1
+					          FROM tb_multi_code_add_attr_val_d tmcaavd
+					          WHERE tmcaavd.attr_uuid = c.attr_uuid
+					            AND tmcaavd.obj_uuid = a.obj_uuid
+					            AND tmcaavd.attr_val IN
+					            <foreach collection="param.fieldValues" item="val" open="(" separator="," close=")">
+					              #{val}
+					            </foreach>
+					        )
+				        </if>
+				        <if test="param.fieldType == 'DP'">
+				           <if test="param.fieldValueMin != null and param.fieldValueMin != ''">
+					            AND d.attr_val &gt;= #{param.fieldValueMin}
+					        </if>
+					        <if test="param.fieldValueMax != null and param.fieldValueMax != ''">
+					            AND d.attr_val &lt;= #{param.fieldValueMax}
+					        </if>
+				        </if>
+				        <if test="param.fieldType == 'RF' or param.fieldType == 'NF'">
+				          	<if test="param.fieldValueMin != null and param.fieldValueMin != ''">
+					            AND CAST(COALESCE(d.attr_val, '0') AS DOUBLE) &gt;= CAST(#{param.fieldValueMin} AS DOUBLE) AND d.attr_val IS NOT NULL
+					        </if>
+					        <if test="param.fieldValueMax != null and param.fieldValueMax != ''">
+					            AND CAST(COALESCE(d.attr_val, '0') AS DOUBLE) &lt;= CAST(#{param.fieldValueMax} AS DOUBLE) AND d.attr_val IS NOT NULL
+					        </if>
+				        </if>
+		        )
+		      </foreach>
+		    </if>
+		</where>
+	  </select>
+
+</mapper>

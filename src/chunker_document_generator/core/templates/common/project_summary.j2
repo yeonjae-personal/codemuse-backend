@@ -1,0 +1,118 @@
+# 📊 프로젝트 요약
+
+> **생성일**: {{ current_date }}  
+> **분석 대상**: `{{ project_name }}`  
+> **총 파일 수**: {{ total_files }}개  
+> **총 Chunk 수**: {{ total_chunks }}개
+
+---
+
+## 🎯 개요
+
+이 문서는 **{{ project_name }}** 프로젝트의 전체 구조와 통계를 요약합니다.
+
+## 📝 시스템 개요
+
+{% if project_summary %}{{ project_summary }}{% else %}분석된 코드와 디렉토리 구조를 기반으로 시스템의 목적과 역할을 요약합니다.{% endif %}
+
+- 주요 목적: {{ main_purpose or 'N/A' }}
+- 주요 도메인: {{ main_domain or 'N/A' }}
+- 핵심 기능 요약: {% if core_features %}{{ core_features | join(', ') }}{% else %}N/A{% endif %}
+
+## 📊 전체 통계
+
+| 🎯 메트릭 | 📊 값 |
+|-----------|-------|
+| **총 파일 수** | {{ total_files }} |
+| **총 Chunk 수** | {{ total_chunks }} |
+| **총 토큰 수** | {{ total_tokens | number_format }} |
+| **평균 복잡도** | {{ avg_complexity | round(1) }} |
+| **최대 복잡도** | {{ max_complexity }} |
+
+## 🏗️ 디렉토리 구조
+
+```
+{{ directory_tree }}
+```
+
+## 📈 Chunk 분포
+
+### 타입별 분포
+
+| 🧩 Chunk 타입 | 📊 개수 | 📈 비율 |
+|---------------|--------|--------|
+{% for chunk_type, data in chunk_distribution.items() %}
+| {{ chunk_type }} | {{ data.count }} | {{ data.percentage | round(1) }}% |
+{% endfor %}
+
+### 복잡도 분포
+
+```mermaid
+pie title 복잡도 분포
+{% for level, count in complexity_distribution.items() %}
+    "{{ level }}" : {{ count }}
+{% endfor %}
+```
+
+## 🔝 복잡한 함수 TOP {{ top_complex_functions | length }}
+
+{% if top_complex_functions %}
+| 순위 | 함수명 | 파일 | 복잡도 | 토큰 |
+|------|-------|------|--------|-------|
+{% for func in top_complex_functions %}
+| {{ loop.index }} | `{{ func.name }}` | {{ func.file_name }} | {{ func.complexity }} | {{ func.token_count }} |
+{% endfor %}
+{% else %}
+복잡한 함수가 없습니다.
+{% endif %}
+
+## 🏷️ 인기 태그 TOP {{ popular_tags | length }}
+
+{% if popular_tags %}
+{% for tag, count in popular_tags %}
+- **{{ tag }}**: {{ count }}회
+{% endfor %}
+{% else %}
+태그 정보가 없습니다.
+{% endif %}
+
+## 📁 디렉토리별 상세 정보
+
+{% for dir_info in directories %}
+### 📂 {{ dir_info.name }}
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | {{ dir_info.files }} |
+| **Chunk 수** | {{ dir_info.chunks }} |
+| **상대 경로** | `{{ dir_info.path }}` |
+
+{% endfor %}
+
+## 🧩 주요 모듈별 기능 요약
+
+{% if main_modules %}
+{% for module in main_modules %}
+### {{ module.name }}
+- 설명: {{ module.description or 'N/A' }}
+- 주요 클래스/함수: {% if module.key_components %}{{ module.key_components | join(', ') }}{% else %}N/A{% endif %}
+{% endfor %}
+{% else %}
+모듈 요약 정보가 없습니다.
+{% endif %}
+
+## 🛠️ 코드 품질 인사이트
+
+- 잠재적 리스크 파일: {% if risky_files %}{{ risky_files | join(', ') }}{% else %}N/A{% endif %}
+- 중복 코드 발생 구간: {{ duplicate_code_count or 0 }}곳
+- 테스트 관련 코드 비율: {{ test_code_percentage or 0 }}%
+
+## 🚀 개선 제안
+
+- 리팩토링 우선순위: {% if refactoring_priorities %}{{ refactoring_priorities | join(', ') }}{% else %}N/A{% endif %}
+- 추천 리팩토링 기법: {% if recommended_practices %}{{ recommended_practices | join(', ') }}{% else %}N/A{% endif %}
+- 현대화 가이드라인: {% if modernization_suggestions %}{{ modernization_suggestions | join(', ') }}{% else %}N/A{% endif %}
+
+---
+
+*이 요약은 AST 파싱을 통해 자동 생성되었습니다.*

@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: "svcp-sbui-ingress"
+  namespace: d-svcp-sbui
+  annotations:
+    kubernetes.io/ingress.class: alb
+    alb.ingress.kubernetes.io/load-balancer-name: alb-svcp-sbui
+    alb.ingress.kubernetes.io/scheme: internet-facing
+    alb.ingress.kubernetes.io/subnets: subnet-0f39fe8202620af8c,subnet-07533208c2e555f31
+  labels:
+    app: svcp-sbui
+spec:
+  rules:
+    - http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: "service-svcp-sbui"
+                port:
+                  number: 80
+                  

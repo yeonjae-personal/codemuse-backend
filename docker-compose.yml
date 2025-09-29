@@ -1,0 +1,159 @@
+version: '3.8'
+
+services:
+  # PostgreSQL 데이터베이스
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: codemuse
+      POSTGRES_USER: codemuse
+      POSTGRES_PASSWORD: codemuse_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U codemuse"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Redis 캐시
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Chroma 벡터 데이터베이스
+  # (제거됨) 로컬 임베디드 스토리지 사용으로 별도 Chroma 컨테이너 불필요
+
+  # Document Generator 서비스
+  document-generator:
+    build:
+      context: .
+      dockerfile: docker/services/DocumentGenerator.Dockerfile
+    ports:
+      - "8001:8001"
+    environment:
+      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src
+      - ./sample_code:/app/sample_code
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # RAG Engine 서비스
+  rag-engine:
+    build:
+      context: .
+      dockerfile: docker/services/RAGEngine.Dockerfile
+    ports:
+      - "8003:8003"
+    environment:
+      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
+      - REDIS_URL=redis://redis:6379
+      # VECTOR_DB_URL 사용 안함 (로컬 퍼시스턴트 클라이언트 사용)
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      # 외부 Chroma 의존성 제거
+    volumes:
+      - ./src:/app/src
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8003/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # LLM Chat 서비스
+  llm-chat:
+    build:
+      context: .
+      dockerfile: docker/services/LLMChat.Dockerfile
+    ports:
+      - "8004:8004"
+    environment:
+      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
+      - REDIS_URL=redis://redis:6379
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8004/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Workflow Orchestrator 서비스
+  workflow-orchestrator:
+    build:
+      context: .
+      dockerfile: docker/services/WorkflowOrchestrator.Dockerfile
+    ports:
+      - "8006:8006"
+    environment:
+      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
+      - REDIS_URL=redis://redis:6379
+      - RAG_SERVICE_URL=http://rag-engine:8003
+      - LLM_SERVICE_URL=http://llm-chat:8004
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      document-generator:
+        condition: service_healthy
+      rag-engine:
+        condition: service_healthy
+      llm-chat:
+        condition: service_healthy
+    volumes:
+      - ./src:/app/src
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8006/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx 리버스 프록시
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./docker/nginx/ssl:/etc/nginx/ssl
+    depends_on:
+      - document-generator
+      - rag-engine
+      - llm-chat
+      - workflow-orchestrator
+
+volumes:
+  postgres_data:
+  redis_data:

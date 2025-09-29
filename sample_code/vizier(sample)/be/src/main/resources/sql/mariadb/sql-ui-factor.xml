@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-factor">
+	<select id="searchFactorType" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.factor.FactorTypeDto">
+	    SELECT
+	        a.factor_type_code
+	        , a.factor_type_name
+	        , a.use_yn
+	        , a.sort_no
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_factor_type_c a
+	    <where>
+			<if test="factorTypeCode != null">
+				UPPER(a.factor_type_code) LIKE CONCAT('%', TRIM(UPPER(#{factorTypeCode})),'%')
+			</if>
+			<if test="factorTypeName != null">
+				AND UPPER(a.factor_type_name) LIKE CONCAT('%', TRIM(UPPER(#{factorTypeName})),'%')
+			</if>
+			<if test="useYn != null">
+				AND a.use_yn = UPPER(#{useYn})
+			</if>
+	    </where>
+	    ORDER BY
+	    	a.sort_no
+	</select>
+
+	<select id="searchFactor" resultMap="retrieveFactorResultMap">
+	    SELECT
+	        a.factor_code
+	        , a.factor_name
+	        , a.factor_type_code
+	        , a.use_yn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	        , #{useYn} as use_yn_param
+	    FROM
+	        tb_factor_c a
+	    JOIN
+	    	tb_factor_type_c b ON a.factor_type_code = b.factor_type_code 
+		<where>
+			<if test="factorTypeCode != null">
+				UPPER(a.factor_type_code) LIKE CONCAT('%', TRIM(UPPER(#{factorTypeCode})),'%')
+			</if>
+			<if test="factorTypeName != null">
+				UPPER(b.factor_type_name) LIKE CONCAT('%', TRIM(UPPER(#{factorTypeName})),'%')
+			</if>
+			<if test="factorCode != null">
+				AND UPPER(a.factor_code) LIKE CONCAT('%', TRIM(UPPER(#{factorCode})),'%')
+			</if>
+			<if test="factorName != null">
+				AND UPPER(a.factor_name) LIKE CONCAT('%', TRIM(UPPER(#{factorName})),'%')
+			</if>
+			<if test="useYn != null">
+				AND UPPER(a.use_yn) = UPPER(#{useYn})
+			</if>
+		</where>
+	    ORDER BY
+	    	UPPER(a.factor_name)
+	</select>
+	
+	<resultMap id="retrieveFactorTypeResultMap" type="com.lgcns.svcp.prod.ui.prod.dto.admin.factor.FactorTypeDto">
+    	<association property="factorLst" column="{factorTypeCode=factor_type_code}"  select="retrieveFactorByFactorTypeCode"/>
+	</resultMap>
+	
+	<select id="retrieveFactorType" resultMap="retrieveFactorTypeResultMap">
+        SELECT
+	        a.factor_type_code
+	        , a.factor_type_name
+	        , a.use_yn
+	        , a.sort_no
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_factor_type_c a
+	    WHERE
+	    	a.factor_type_code = #{factorTypeCode}
+	</select>
+	
+	<select id="retrieveFactorByFactorTypeCode" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.factor.FactorDto">
+	    SELECT
+	        a.factor_code
+	        , a.factor_name
+	        , a.factor_type_code
+	        , a.use_yn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_factor_c a
+	    WHERE
+	    	a.factor_type_code = #{factorTypeCode}
+	    ORDER BY
+	    	UPPER(a.factor_name)
+	</select>
+	
+	<update id="updateFactorType">
+	    UPDATE tb_factor_type_c
+	    <set>
+	        , factor_type_name = #{factorTypeName}
+	        , use_yn = #{useYn}
+	        , sort_no = #{sortNo}
+	        , rgst_user = #{rgstUser}
+	        , rgst_dtm = #{rgstDtm}
+	        , upd_user = #{updUser}
+	        , upd_dtm = #{updDtm}
+	    </set>
+	    WHERE
+	        factor_type_code = #{factorTypeCode};
+	</update>
+	
+	<resultMap id="retrieveFactorResultMap" type="com.lgcns.svcp.prod.ui.prod.dto.admin.factor.FactorDto">
+    	<association property="factorValueLst" column="{factorCode=factor_code,useYn=use_yn_param}"  select="retrieveFactorValue"/>
+	</resultMap>
+	
+	<select id="retrieveFactor" resultMap="retrieveFactorResultMap">
+	    SELECT
+	        a.factor_code
+	        , a.factor_name
+	        , a.factor_type_code
+	        , a.use_yn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_factor_c a
+	    WHERE
+	    	a.factor_code = #{factorCode}
+	</select>
+	
+	<select id="retrieveFactorValue" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.factor.FactorValueDto">
+	    SELECT
+	        a.factor_value_code
+	        , a.factor_value_name
+	        , a.value
+	        , a.factor_code
+	        , a.use_yn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_factor_value_c a
+	    WHERE
+	    	a.factor_code = #{factorCode}
+			<if test="useYn != null">
+				AND UPPER(a.use_yn) = UPPER(#{useYn})
+			</if>
+	    ORDER BY 
+	   		UPPER(a.factor_value_name)
+	</select>
+	
+	<insert id="saveFactor">
+	    INSERT INTO tb_factor_c (
+	        factor_code
+	        , factor_name
+	        , factor_type_code
+	        , use_yn
+	        , rgst_user
+	        , rgst_dtm
+	        , upd_user
+	        , upd_dtm
+	    )
+	    VALUES (
+			#{factorCode}
+	        , #{factorName}
+	        , #{factorTypeCode}
+	        , #{useYn}
+	        , #{rgstUser}
+	        , #{rgstDtm}
+	        , #{updUser}
+	        , #{updDtm}
+	    )
+	    ON DUPLICATE KEY UPDATE
+			factor_name = VALUES(factor_name)
+			, use_yn = VALUES(use_yn)
+			, upd_user = VALUES(upd_user)
+			, upd_dtm = VALUES(upd_dtm)
+	</insert>
+	
+	<insert id="saveFactorValue">
+	    INSERT INTO tb_factor_value_c (
+			factor_value_code
+			, factor_value_name
+			, value
+			, factor_code
+			, use_yn
+			, rgst_user
+			, rgst_dtm
+			, upd_user
+			, upd_dtm
+		)
+		VALUES (
+			(SELECT
+				CASE
+				WHEN EXISTS (SELECT 1 FROM tb_factor_value_c b WHERE b.factor_value_code = #{factorValueCode})
+					THEN #{factorValueCode}
+					ELSE CONCAT('FCVL', LPAD(IFNULL(MAX(CAST(RIGHT(a.factor_value_code , 6) AS UNSIGNED)), 0) + 1, 6, '0'))
+				END
+			FROM tb_factor_value_c a
+			WHERE a.factor_value_code LIKE 'FCVL%')
+		    , #{factorValueName}
+		    , #{value}
+		    , #{factorCode}
+		    , #{useYn}
+		    , #{rgstUser}
+		    , #{rgstDtm}
+		    , #{updUser}
+		    , #{updDtm}
+		)
+		ON DUPLICATE KEY UPDATE
+			factor_value_name = VALUES(factor_value_name)
+			, value = VALUES(value)
+			, use_yn = VALUES(use_yn)
+			, upd_user = VALUES(upd_user)
+			, upd_dtm = VALUES(upd_dtm)
+	</insert>
+	
+	<delete id="deleteOldFactorValue">
+        DELETE FROM
+        	tb_factor_value_c
+        WHERE
+        	factor_code = #{factorCode}
+        	AND factor_value_code NOT IN
+	        	<foreach item="item" collection="factorValueLst" open="(" close=")" separator=",">
+		            #{item.factorValueCode}
+		        </foreach>
+    </delete>
+    
+    <select id="generateNextFactorCode" resultType="java.lang.String">
+		SELECT
+		  CONCAT('FCTR', LPAD(IFNULL(MAX(CAST(RIGHT(a.factor_code , 6) AS UNSIGNED)), 0) + 1, 6, '0')) AS next_code
+		FROM
+			tb_factor_c a
+		WHERE
+			a.factor_code LIKE 'FCTR%'
+	</select>
+	
+	<select id="findExistingFactorNames" resultType="string">
+	    SELECT
+	    	a.factor_name
+	    FROM
+	    	tb_factor_c a
+	    WHERE
+	    	UPPER(a.factor_name) IN
+	    <foreach item="name" collection="factorNames" open="(" separator="," close=")">
+	        UPPER(#{name})
+	    </foreach>
+	</select>
+
+</mapper>

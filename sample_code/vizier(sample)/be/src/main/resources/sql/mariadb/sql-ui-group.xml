@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-group">
+<select id="retrieveOffrGrpList" resultType="com.lgcns.svcp.prod.ui.prod.dto.ItemMappingDto">
+  			SELECT 
+			  a.obj_uuid,
+			  a.obj_code,
+			  a.obj_name,
+			  a.item_code,
+			  a.valid_start_dtm,
+			  a.valid_end_dtm
+			FROM 
+			  tb_item_mpng_d a
+			JOIN
+				tb_item_c b ON a.item_code = b.item_code
+			<where>
+				b.lctgr_item_code = 'G'
+			  <if test="itemCode != null">
+		        AND b.item_code = #{itemCode}
+		      </if>
+		      <if test="offrGrpCd != null">
+		        AND UPPER(a.obj_code) LIKE <![CDATA[ CONCAT('%', TRIM(UPPER(#{offrGrpCd})),'%')]]>
+		      </if>
+      	      <if test="offrGrpNm != null">
+		        AND UPPER(a.obj_name) LIKE <![CDATA[ CONCAT('%', TRIM(UPPER(#{offrGrpNm})),'%')]]>
+		      </if>
+  	 	      <if test="childOffrUuid != null">
+	        	AND a.obj_uuid IN (
+					SELECT
+						c.offer_group_uuid
+					FROM
+						tb_offer_group_rel_d c
+					WHERE
+						c.offer_uuid = #{childOffrUuid}
+						<if test="onlyValidDtm">
+							AND (c.valid_end_dtm IS NULL OR TIMESTAMP(c.valid_end_dtm) >= NOW())
+						</if>
+				)
+	        	</if>
+	          <if test="onlyValidDtm">
+		        AND (a.valid_end_dtm IS NULL OR TIMESTAMP(a.valid_end_dtm) >= NOW())
+		      </if>
+		    </where>
+    </select>
+
+	<insert id="insertOfferGroupRel">
+	    INSERT INTO tb_offer_group_rel_d (
+		  offer_group_uuid,
+		  offer_uuid, 
+		  valid_start_dtm, 
+		  valid_end_dtm, 
+		  rgst_user, 
+		  rgst_dtm, 
+		  upd_user, 
+		  upd_dtm
+		)
+		VALUES (
+			#{groupUuid}, 
+			#{offerUuid}, 
+			#{validStartDtm}, 
+			DATE_FORMAT(DATE(#{validEndDtm}) , '%Y-%m-%d 23:59:59'),
+			#{rgstUser},
+			#{rgstDtm},
+			#{updUser},
+			#{updDtm}
+		)
+		ON DUPLICATE KEY UPDATE
+		  valid_end_dtm = VALUES(valid_end_dtm),
+		  upd_user = VALUES(upd_user),
+		  upd_dtm = VALUES(upd_dtm)
+	  </insert>
+	
+	<select id="retrieveAdditional" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.metadata.AdditionalDetailDto">
+			SELECT 
+	        a.attr_uuid
+	        , a.item_code
+	        , a.field_type_code
+	        , a.comm_group_code
+	        , a.sort_no
+	        , a.attr_max_length
+	        , a.required_yn
+	        , a.label_id
+	        , a.disp_tab
+	        , a.adv_search_yn
+		 	, CASE 
+			    WHEN a.field_type_code = 'DM' then (
+													SELECT
+			    										COALESCE(JSON_ARRAYAGG(attr_val), '[]') AS attr_val
+													FROM
+														tb_multi_code_add_attr_val_d
+													WHERE
+														attr_uuid = a.attr_uuid
+														AND obj_uuid = b.obj_uuid
+													ORDER BY
+														attr_seq
+													)
+			    ELSE c.attr_val
+			 END AS attr_val
+			 , CASE 
+				WHEN a.field_type_code = 'OB' then (
+													SELECT
+														ob_name
+													FROM
+														(SELECT
+															obj_uuid AS ob_code
+															, obj_name AS ob_name 
+															FROM
+																tb_item_mpng_d
+															
+															UNION
+															
+															SELECT
+																matrix_code AS ob_code
+																, matrix_code_name AS ob_name 
+															FROM
+																tb_matrix_m
+														) AS combined
+													WHERE
+														ob_code =  c.attr_val
+													)
+				ELSE NULL
+			END AS ob_name
+		FROM 
+		    tb_add_attr_header_m a
+		JOIN tb_item_mpng_d b
+		    ON b.item_code = a.item_code
+		LEFT JOIN tb_offer_group_add_attr_val_d c 
+		    ON a.attr_uuid = c.attr_uuid
+		    AND c.obj_uuid = b.obj_uuid
+		WHERE 
+			a.use_yn = 'Y'
+			and  b.obj_uuid = #{objUuid}
+		ORDER BY 
+			a.sort_no
+	</select>
+	
+	<insert id="saveAdditionalMetadata">
+	    INSERT INTO tb_offer_group_add_attr_val_d (
+			obj_uuid,
+			attr_uuid,
+			attr_val,
+			rgst_user,
+			rgst_dtm,
+			upd_user,
+			upd_dtm
+		)
+		VALUES (
+			#{objUuid}, 
+			#{attrUuid}, 
+			#{attrVal},
+			#{rgstUser},
+			#{rgstDtm},
+			#{updUser},
+			#{updDtm}
+		)
+		ON DUPLICATE KEY UPDATE
+		  attr_val = VALUES(attr_val),
+		  upd_user = VALUES(upd_user),
+		  upd_dtm = VALUES(upd_dtm)
+	  </insert>
+	  
+  	<select id="getItemOffr" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.ItemOffrResDto">
+		SELECT
+		    b.obj_uuid AS offr_uuid
+		    , b.obj_code AS offr_cd
+		    , b.obj_name AS offr_nm
+		    , c.item_code_name AS offr_type
+		    , a.valid_start_dtm
+		    , a.valid_end_dtm
+		    , b.valid_start_dtm AS item_valid_start_dtm
+		    , b.valid_end_dtm AS item_valid_end_dtm
+		FROM
+		    tb_offer_group_rel_d a
+		JOIN
+		    tb_item_mpng_d b
+		    ON a.offer_uuid = b.obj_uuid
+		JOIN
+		    tb_item_c c
+		    ON b.item_code = c.item_code
+		WHERE
+		    a.offer_group_uuid = #{offerGroupUuid}
+		ORDER BY
+		    a.upd_dtm DESC
+		    , a.rgst_dtm DESC
+    </select>
+    
+    <select id="getItemOffrs" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.ItemOffrResDto">
+	    SELECT
+	        b.obj_uuid AS offr_uuid
+	        , b.obj_code AS offr_cd
+	        , b.obj_name AS offr_nm
+	        , c.item_code_name AS offr_type
+	        , a.valid_start_dtm
+	        , a.valid_end_dtm
+	        , b.valid_start_dtm AS item_valid_start_dtm
+	        , b.valid_end_dtm AS item_valid_end_dtm
+	        , a.offer_group_uuid
+	    FROM
+	        tb_offer_group_rel_d a
+	    JOIN
+	        tb_item_mpng_d b
+	        ON a.offer_uuid = b.obj_uuid
+	    JOIN
+	        tb_item_c c
+	        ON b.item_code = c.item_code
+	    WHERE
+	        a.offer_group_uuid IN
+	        <foreach collection="offerGroupUuids" item="uuid" open="(" separator="," close=")">
+	            #{uuid}
+	        </foreach>
+	    ORDER BY
+	        a.upd_dtm DESC
+	        , a.rgst_dtm DESC
+	</select>
+</mapper>

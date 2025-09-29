@@ -1,0 +1,64 @@
+## 🏗️ 프로젝트 스택 정보
+
+### 📊 감지된 기술 스택
+
+| 카테고리 | 기술 | 버전 | 비고 |
+|----------|------|------|------|
+{% for stack in detected_stacks %}
+| {{ stack.category }} | {{ stack.technology }} | {{ stack.version or 'N/A' }} | {{ stack.note or '' }} |
+{% endfor %}
+
+### 🎯 프로젝트 타입
+
+**{{ project_type | title }}** 프로젝트
+{% if framework_info %}
+- **주요 프레임워크**: {{ framework_info | join(', ') }}
+{% endif %}
+
+### 📁 디렉토리 구조 분석
+
+{% if directory_structure %}
+```
+{{ directory_structure }}
+```
+{% endif %}
+
+### 🔧 주요 컴포넌트
+
+{% if main_components %}
+{% for component in main_components %}
+- **{{ component.name }}**: {{ component.description }}
+  - 타입: {{ component.type }}
+  - 파일: `{{ component.file_path }}`
+{% endfor %}
+{% endif %}
+
+### 📦 의존성 정보
+
+{% if dependencies %}
+{% for dep_type, deps in dependencies.items() %}
+#### {{ dep_type | title }}
+{% for dep in deps %}
+- `{{ dep.name }}`{% if dep.version %} ({{ dep.version }}){% endif %}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+
+### 🚀 실행 방법
+
+{% if run_commands %}
+```bash
+{% for command in run_commands %}
+{{ command }}
+{% endfor %}
+```
+{% endif %}
+
+### 📋 개발 환경 설정
+
+{% if dev_setup %}
+{% for step in dev_setup %}
+{{ loop.index }}. {{ step }}
+{% endfor %}
+{% endif %}

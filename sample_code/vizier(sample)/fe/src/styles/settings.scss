@@ -1,0 +1,216 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+.border-green {
+  border: 1px solid #abefc6;
+}
+.border-red {
+  border: 1px solid #fecdca;
+}
+.background-error {
+  background-color: #fef3f2;
+}
+.background-success {
+  background-color: #ecfdf3;
+}
+.font-base {
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+.border-base {
+  border: 1px solid #dce0e5;
+}
+.font-size-base {
+  font-size: 13px;
+  line-height: 19.5px;
+  letter-spacing: 0.25px;
+}
+.text-lighter {
+  color: #6b6d70 !important;
+}
+
+.scrollbar-gutter {
+  scrollbar-gutter: stable both-edges;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #e6e9ed;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #bdc1c7;
+  border-radius: 8px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c7;
+  border-radius: 8px;
+}
+
+.small-scroll::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+.custom-scroll-darker::-webkit-scrollbar-track {
+  background: #dce0e5;
+}
+
+.base-select-content .v-list-item-title {
+  font-size: 13px !important;
+  line-height: 19.5px;
+  letter-spacing: 0.25px;
+  font-family: "Noto Sans KR", sans-serif !important;
+}
+
+.base-select-content {
+  .v-list {
+    box-shadow: 2px 2px 64px 0px #00000014 !important;
+    &::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #e6e9ed;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #bdc1c7;
+      border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #bdc1c7;
+      border-radius: 8px;
+    }
+  }
+}
+
+.select-page-size .v-list-item {
+  text-align: center;
+}
+
+.table-select-pagination {
+  .v-list {
+    box-shadow: 2px 2px 64px 0px #00000014 !important;
+  }
+  .v-list-item {
+    min-height: 30px !important;
+  }
+}
+
+.v-list.v-theme--light.v-list--density-default.v-list--one-line {
+  padding: 0 !important;
+}
+.v-list {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.text-text-base {
+  color: #3a3b3d;
+}
+.text-base {
+  font-size: 15px;
+}
+.text-base-vnb {
+  font-size: 15px;
+}
+
+.shadow-edit-mode {
+  box-shadow: 0px 0px 0px 4px rgba(217, 50, 90, 0.16);
+}
+.v-overlay-container .v-list-item .v-list-item-title {
+  font-size: 13px;
+}
+
+.popover-bottom-left {
+  .v-overlay__content {
+    padding-top: 25px !important;
+  }
+}
+
+.popover-bottom-right {
+  .v-overlay__content {
+    padding-top: 40px !important;
+  }
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.vgl-layout {
+  --vgl-placeholder-bg: none;
+  --vgl-placeholder-opacity: 0;
+  --vgl-placeholder-z-index: -9999;
+}
+
+.vgl-layout .vgl-item--placeholder {
+  display: none !important;
+}
+
+.vgl-item--placeholder {
+  display: none !important;
+}
+
+.v-list-item--disabled {
+  display: none !important;
+}
+.text-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+.preserve-line-breaks {
+  white-space: pre-line;
+}
+.pagination_current-page {
+  border: 1px solid #d9325a !important;
+  background-color: #fee5e7;
+  border-radius: 8px;
+  color: #d9325a !important;
+}
+.btn__pagination-number {
+  min-width: 32px;
+  text-align: center;
+  color: #6b6d70;
+  border: 1px solid transparent;
+}
+
+.dp__tp_inline_btn_top:hover > .dp__tp_btn_in_r {
+  transform: rotate(12deg) scale(1.15) translate(-1px, -2px) !important;
+}
+
+.dp__tp_inline_btn_top:hover .dp__tp_btn_in_l {
+  transform: rotate(-12deg) scale(1.15) translate(1px, -2px) !important;
+}
+
+.v-btn--disabled {
+  background-color: #f0f2f5 !important;
+  color: #bdc1c7 !important;
+  border-width: 0px !important;
+
+  .v-btn__content {
+    opacity: 0.5 !important;
+  }
+}
+
+.v-btn--disabled.v-btn--variant-elevated .v-btn__overlay {
+  opacity: 0 !important;
+}
+
+.zoom-animation {
+  transition: transform 0.25s ease-in-out !important;
+}
+.zoom-animation:hover {
+  transform: scale(1.05) !important;
+}

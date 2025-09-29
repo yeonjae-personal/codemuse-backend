@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-relation">
+    <select id="searchRelationsAdvanced" resultType="com.lgcns.svcp.prod.ui.prod.dto.ItemMappingDto">
+        <include refid="queryRelationsAdvanced"/>
+    </select>
+  
+  <sql id="queryRelationsAdvanced">
+  	SELECT DISTINCT
+            a.obj_uuid,
+            a.obj_code,
+            a.obj_name,
+            a.item_code,
+            a.valid_start_dtm,
+            a.valid_end_dtm,
+            a.dplc_trgt_uuid,
+            a.chg_dept_name,
+            a.chg_user,
+            a.ovw_cntn,
+            a.rgst_user,
+            a.rgst_dtm,
+            a.upd_user,
+            a.upd_dtm
+        FROM
+            tb_item_mpng_d a
+        JOIN
+            tb_item_c b ON a.item_code = b.item_code
+        <where>
+            b.lctgr_item_code = 'B'
+            <if test="mctgrItemCode != null and mctgrItemCode != 'ALL'">
+                AND b.mctgr_item_code = #{mctgrItemCode}
+            </if>
+            <if test="itemCode != null and itemCode != 'ALL'">
+                AND a.item_code = #{itemCode}
+            </if>
+            <if test="objCode != null">
+                AND UPPER(a.obj_code) LIKE '%' || UPPER(#{objCode}) || '%'
+            </if>
+            <if test="objName != null">
+                AND UPPER(a.obj_name) LIKE '%' || UPPER(#{objName}) || '%'
+            </if>
+            <if test="additional != null and additional.size() > 0">
+                AND
+                <foreach collection="additional" item="param" open="(" separator=") AND (" close=")">
+                    EXISTS (
+                        SELECT 1
+                        FROM tb_add_attr_header_m c
+                        LEFT JOIN tb_offer_rel_add_attr_val_d d ON c.attr_uuid = d.attr_uuid AND d.obj_uuid = a.obj_uuid
+                        WHERE c.item_code = a.item_code
+                            AND c.attr_uuid = #{param.fieldName}
+                            <if test="param.fieldValue != null and (param.fieldType == 'TF' or param.fieldType == 'TA')">
+                                AND UPPER(d.attr_val) LIKE '%' || UPPER(#{param.fieldValue}) || '%'
+                            </if>
+                            <if test="param.fieldValues != null and param.fieldType == 'DL'">
+                                AND d.attr_val IN
+                                    <foreach collection="param.fieldValues" item="value" open="(" separator="," close=")">
+                                        #{value}
+                                    </foreach>
+                            </if>
+                            <if test="param.fieldValues != null and param.fieldType == 'DM'">
+                                AND EXISTS (
+                                    SELECT 1
+                                    FROM tb_multi_code_add_attr_val_d tmcaavd
+                                    WHERE tmcaavd.attr_uuid = c.attr_uuid
+                                        AND tmcaavd.obj_uuid = a.obj_uuid
+                                        AND tmcaavd.attr_val IN
+                                        <foreach collection="param.fieldValues" item="val" open="(" separator="," close=")">
+                                            #{val}
+                                        </foreach>
+                                )
+                            </if>
+							<if test="param.fieldType == 'DP'">
+	                            <if test="param.fieldValueMin != null and param.fieldValueMin != ''">
+	                                AND d.attr_val::timestamp >= #{param.fieldValueMin}::timestamp
+	                            </if>
+	                            <if test="param.fieldValueMax != null and param.fieldValueMax != ''">
+	                                AND d.attr_val::timestamp <![CDATA[ <= ]]> #{param.fieldValueMax}::timestamp
+	                            </if>
+	                        </if>
+							<if test="param.fieldType == 'RF' or param.fieldType == 'NF'">
+							    <if test="param.fieldValueMin != null and param.fieldValueMin != ''">
+							        AND d.attr_val ~ '^[0-9]+\.?[0-9]+$'
+							        AND CAST(d.attr_val AS NUMERIC) >= CAST(#{param.fieldValueMin} AS NUMERIC) -- Compare with min value
+							        AND d.attr_val IS NOT NULL -- Ensure attr_val is not null
+							    </if>
+							    <if test="param.fieldValueMax != null and param.fieldValueMax != ''">
+							        AND d.attr_val ~ '^[0-9]+\.?[0-9]+$'
+							        AND CAST(d.attr_val AS NUMERIC) <![CDATA[ <= ]]> CAST(#{param.fieldValueMax} AS NUMERIC) -- Compare with max value
+							        AND d.attr_val IS NOT NULL -- Ensure attr_val is not null
+							    </if>
+							</if>
+                    )
+                </foreach>
+            </if>
+            <if test="onlyValidDtm">
+                AND (a.valid_end_dtm IS NULL OR a.valid_end_dtm >= CURRENT_TIMESTAMP)
+            </if>
+        </where>
+  </sql>
+
+    <insert id="saveRelationAdditional">
+        INSERT INTO tb_offer_rel_add_attr_val_d (
+            obj_uuid,
+            attr_uuid,
+            attr_val,
+            rgst_user,
+            rgst_dtm,
+            upd_user,
+            upd_dtm
+        )
+        VALUES (
+            #{objUuid},
+            #{attrUuid},
+            #{attrVal},
+            #{rgstUser},
+            CURRENT_TIMESTAMP,
+            #{updUser},
+            CURRENT_TIMESTAMP
+        )
+        ON CONFLICT (obj_uuid, attr_uuid)
+        DO UPDATE SET
+            attr_val = EXCLUDED.attr_val,
+            upd_user = EXCLUDED.upd_user,
+            upd_dtm = CURRENT_TIMESTAMP
+    </insert>
+</mapper>

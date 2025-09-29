@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-common">
+
+  <select id="generateNextItemCode" resultType="java.lang.String">
+	SELECT
+	  b.mctgr_item_code || b.item_code || LPAD(COALESCE(MAX(CAST(SUBSTRING(a.obj_code FROM 5) AS INTEGER)) + 1, 1)::TEXT, 6, '0') AS next_code
+	FROM
+		tb_item_mpng_d a
+	RIGHT JOIN
+		tb_item_c b ON a.item_code = b.item_code
+	WHERE
+	  b.item_code = #{itemCode}
+	GROUP BY
+		b.mctgr_item_code
+		, b.item_code
+  </select>
+
+  <select id="getItemCodeByUUID" resultType="string">
+    SELECT item_code
+    FROM tb_item_mpng_d
+    WHERE obj_uuid = #{objUuid}
+  </select>
+
+  <select id="getEndDateByObjUUID" resultType="Date">
+    SELECT
+    im.valid_end_dtm
+    FROM tb_item_mpng_d im
+    WHERE im.obj_uuid = #{objUuid}
+  </select>
+
+  <insert id="insertAdditionalMultiValue">
+    INSERT INTO tb_multi_code_add_attr_val_d (
+    obj_uuid
+    , attr_uuid
+    , attr_seq
+    , attr_val
+    , rgst_user
+    , rgst_dtm
+    , upd_user
+    , upd_dtm
+    )
+    VALUES (
+    #{objUuid}
+    , #{attrUuid}
+    , #{attrSeq}
+    , #{attrVal}
+    , #{rgstUser}
+    , CURRENT_TIMESTAMP
+    , #{updUser}
+    , CURRENT_TIMESTAMP
+    )
+  </insert>
+
+  <delete id="deleteOldAdditionalMultiValue">
+    DELETE
+    FROM tb_multi_code_add_attr_val_d
+    WHERE
+    obj_uuid = #{objUuid}
+    AND attr_uuid = #{attrUuid}
+  </delete>
+
+  <select id="retreiveItemStructure" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.structure.ItemStructureDto">
+    SELECT
+    a.base_item_code
+    , a.trgt_item_code
+    , a.strc_type_code
+    FROM tb_item_strc_d a
+    JOIN tb_item_c b ON a.base_item_code = b.item_code
+    JOIN tb_mctgr_item_c c ON b.mctgr_item_code = c.mctgr_item_code
+    <where>
+    <if test="itemCode != null">
+    a.base_item_code = #{itemCode}
+    </if>
+    <if test="mctgrItemCode != null">
+    AND b.mctgr_item_code = #{mctgrItemCode}
+    </if>
+    AND c.use_yn = 'Y'
+    AND b.use_yn = 'Y'
+    </where>
+    ORDER BY
+    c.sort_no,
+    b.sort_no
+  </select>
+
+  <select id="getUpperItems" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    SELECT
+    b.item_code
+    , b.item_code_name as item_name
+    , a.strc_type_code
+    FROM tb_item_strc_d a
+    INNER JOIN tb_item_c b ON a.base_item_code = b.item_code
+    WHERE a.trgt_item_code = #{itemCode}
+  </select>
+
+  <select id="getLowerItems" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    SELECT
+    b.item_code
+    , b.item_code_name as item_name
+    , a.strc_type_code
+    FROM tb_item_strc_d a
+    INNER JOIN tb_item_c b ON a.trgt_item_code = b.item_code
+    WHERE a.base_item_code = #{itemCode}
+  </select>
+
+</mapper>

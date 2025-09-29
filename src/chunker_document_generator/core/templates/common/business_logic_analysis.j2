@@ -1,0 +1,181 @@
+# 💼 {{ project_name }} 비즈니스 로직 분석
+
+> **생성일**: {{ current_date }}  
+> **분석 대상**: {{ source_directory }}  
+> **총 비즈니스 로직**: {{ total_business_logic }}개
+
+---
+
+## 🎯 핵심 비즈니스 프로세스
+
+{% for process in business_processes %}
+### {{ process.name }}
+- **목적**: {{ process.purpose }}
+- **복잡도**: {{ process.complexity }}
+- **관련 파일**: {{ process.related_files | join(', ') }}
+
+#### 프로세스 플로우
+{% for step in process.steps %}
+{{ loop.index }}. **{{ step.name }}**
+   - 파일: `{{ step.file }}`
+   - 메서드: `{{ step.method }}`
+   - 설명: {{ step.description }}
+
+{% endfor %}
+
+---
+
+{% endfor %}
+
+## 🔗 서비스 간 의존성
+
+### API 의존성
+{% for dependency in api_dependencies %}
+- **{{ dependency.from }}** → **{{ dependency.to }}**
+  - API: `{{ dependency.api }}`
+  - 데이터: {{ dependency.data_type }}
+
+{% endfor %}
+
+### 데이터베이스 의존성
+{% for dependency in db_dependencies %}
+- **{{ dependency.table1 }}** ↔ **{{ dependency.table2 }}**
+  - 관계: {{ dependency.relationship_type }}
+  - 제약: {{ dependency.constraints }}
+
+{% endfor %}
+
+## 🏗️ 아키텍처 패턴
+
+### 사용된 패턴
+{% for pattern in architecture_patterns %}
+- **{{ pattern.name }}**: {{ pattern.description }}
+  - 적용 위치: {{ pattern.applied_locations | join(', ') }}
+  - 장점: {{ pattern.advantages | join(', ') }}
+
+{% endfor %}
+
+## 📊 비즈니스 규칙
+
+### 핵심 규칙
+{% for rule in business_rules %}
+- **{{ rule.name }}**: {{ rule.description }}
+  - 조건: {{ rule.conditions | join(', ') }}
+  - 액션: {{ rule.actions | join(', ') }}
+  - 우선순위: {{ rule.priority }}
+
+{% endfor %}
+
+## 🔄 데이터 플로우
+
+### 입력 → 처리 → 출력
+{% for flow in data_flows %}
+1. **{{ flow.name }}**
+   - 입력: {{ flow.input }}
+   - 처리: {{ flow.processing }}
+   - 출력: {{ flow.output }}
+   - 예외: {{ flow.exceptions | join(', ') if flow.exceptions else 'N/A' }}
+
+{% endfor %}
+
+## 🛡️ 비즈니스 제약사항
+
+### 비즈니스 규칙 제약
+{% for constraint in business_constraints %}
+- **{{ constraint.name }}**: {{ constraint.description }}
+  - 위반 시: {{ constraint.violation_action }}
+  - 검증 위치: {{ constraint.validation_locations | join(', ') }}
+
+{% endfor %}
+
+### 기술적 제약
+{% for constraint in technical_constraints %}
+- **{{ constraint.name }}**: {{ constraint.description }}
+  - 영향: {{ constraint.impact }}
+  - 해결 방안: {{ constraint.solution }}
+
+{% endfor %}
+
+## 📈 성능 요구사항
+
+### 응답 시간
+- **API 응답**: {{ api_response_time if api_response_time else 'N/A' }}ms
+- **데이터베이스 쿼리**: {{ db_query_time if db_query_time else 'N/A' }}ms
+- **페이지 로딩**: {{ page_loading_time if page_loading_time else 'N/A' }}s
+
+### 처리량
+- **동시 사용자**: {{ concurrent_users if concurrent_users else 'N/A' }}명
+- **초당 요청**: {{ requests_per_second if requests_per_second else 'N/A' }}RPS
+- **데이터 처리량**: {{ data_throughput if data_throughput else 'N/A' }}MB/s
+
+## 🔒 보안 요구사항
+
+### 인증 및 인가
+- **인증 방식**: {{ auth_method if auth_method else 'N/A' }}
+- **권한 관리**: {{ permission_management if permission_management else 'N/A' }}
+- **세션 관리**: {{ session_management if session_management else 'N/A' }}
+
+### 데이터 보안
+- **암호화**: {{ encryption if encryption else 'N/A' }}
+- **개인정보 보호**: {{ privacy_protection if privacy_protection else 'N/A' }}
+- **감사 로그**: {{ audit_logging if audit_logging else 'N/A' }}
+
+## 🧪 테스트 전략
+
+### 단위 테스트
+- **커버리지**: {{ unit_test_coverage if unit_test_coverage else 'N/A' }}%
+- **테스트 파일**: {{ unit_test_files if unit_test_files else 0 }}개
+- **자동화**: {{ unit_test_automation if unit_test_automation else 'N/A' }}
+
+### 통합 테스트
+- **API 테스트**: {{ api_test_coverage if api_test_coverage else 'N/A' }}%
+- **데이터베이스 테스트**: {{ db_test_coverage if db_test_coverage else 'N/A' }}%
+- **E2E 테스트**: {{ e2e_test_coverage if e2e_test_coverage else 'N/A' }}%
+
+## 📋 개선 권장사항
+
+### 비즈니스 로직 개선
+{% for recommendation in business_logic_recommendations %}
+- {{ recommendation }}
+
+{% endfor %}
+
+### 성능 최적화
+{% for recommendation in performance_recommendations %}
+- {{ recommendation }}
+
+{% endfor %}
+
+### 보안 강화
+{% for recommendation in security_recommendations %}
+- {{ recommendation }}
+
+{% endfor %}
+
+## 🔍 모니터링 및 로깅
+
+### 비즈니스 메트릭
+- **사용자 활동**: {{ user_activity_metrics | join(', ') if user_activity_metrics else 'N/A' }}
+- **비즈니스 KPI**: {{ business_kpis | join(', ') if business_kpis else 'N/A' }}
+- **오류율**: {{ error_rate if error_rate else 'N/A' }}%
+
+### 로깅 전략
+- **비즈니스 이벤트**: {{ business_event_logging if business_event_logging else 'N/A' }}
+- **성능 메트릭**: {{ performance_metrics if performance_metrics else 'N/A' }}
+- **보안 이벤트**: {{ security_event_logging if security_event_logging else 'N/A' }}
+
+## 🚀 배포 및 운영
+
+### 배포 전략
+- **배포 방식**: {{ deployment_method if deployment_method else 'N/A' }}
+- **롤백 계획**: {{ rollback_plan if rollback_plan else 'N/A' }}
+- **무중단 배포**: {{ zero_downtime_deployment if zero_downtime_deployment else 'N/A' }}
+
+### 운영 모니터링
+- **헬스 체크**: {{ health_checks if health_checks else 'N/A' }}
+- **알림 시스템**: {{ alerting_system if alerting_system else 'N/A' }}
+- **장애 대응**: {{ incident_response if incident_response else 'N/A' }}
+
+---
+
+*이 문서는 CodeMuse 시스템에 의해 자동 생성되었습니다.*

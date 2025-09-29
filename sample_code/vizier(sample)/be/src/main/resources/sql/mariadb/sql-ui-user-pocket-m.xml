@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ui-user-pocket-m">	
+	
+	<select id="findAll" resultType="com.lgcns.svcp.prod.entity.UserPocketEntity">
+		SELECT tupm.user_id, tupm.obj_uuid, tupm.valid_start_dtm, tupm.valid_end_dtm
+			   ,tupm.rgst_user, tupm.rgst_dtm, tupm.upd_user, tupm.upd_dtm
+        FROM tb_user_pocket_m tupm
+	</select>
+	
+	<select id="findProperties" resultType="com.lgcns.svcp.prod.entity.UserPocketEntity">
+		SELECT tupm.user_id, tupm.obj_uuid, tupm.valid_start_dtm, tupm.valid_end_dtm
+			   ,tupm.rgst_user, tupm.rgst_dtm, tupm.upd_user, tupm.upd_dtm
+        FROM tb_user_pocket_m tupm
+        WHERE 1 = 1
+        <if test="uuid != null">
+			and tupm.obj_uuid = #{uuid}
+		</if>
+		<if test="userId != null">
+			and tupm.user_id = #{userId}
+		</if>
+		<if test="validEndDtm">
+			and (tupm.valid_end_dtm IS NULL OR TIMESTAMP(tupm.valid_end_dtm) >= NOW())
+		</if>
+	</select>
+	
+	<insert id ="insert">
+		INSERT INTO tb_user_pocket_m(user_id, obj_uuid, valid_start_dtm, valid_end_dtm, rgst_user, rgst_dtm, upd_user, upd_dtm)
+		VALUES (#{userId}, #{objUuid}, #{validStartDtm}, #{validEndDtm}, #{rgstUser}, now(), #{updUser}, now())
+	</insert>
+	
+	<select id="getAll" resultType="com.lgcns.svcp.prod.entity.external.UserPocketCustomEntity">
+		select tupm.obj_uuid, timd.obj_code, timd.obj_name, togm.offer_group_type_code
+			   ,timd.item_code, tic.lctgr_item_code, tlic.lctgr_item_name, tic.mctgr_item_code, tic.item_code_name sub_type
+			   ,timd.valid_start_dtm item_valid_start_dtm, timd.valid_end_dtm item_valid_end_dtm
+		from tb_user_pocket_m tupm 
+		inner join tb_item_mpng_d timd on timd.obj_uuid = tupm.obj_uuid
+		inner join tb_item_c tic on tic.item_code = timd.item_code
+		inner join tb_lctgr_item_c tlic on tlic.lctgr_item_code = tic.lctgr_item_code
+		left join tb_offer_group_m togm on tupm.obj_uuid = togm.obj_uuid
+		where tupm.user_id = #{userId} and (tupm.valid_end_dtm IS NULL OR TIMESTAMP(tupm.valid_end_dtm) >= NOW())
+	</select>
+	
+	<update id="delete">
+		UPDATE tb_user_pocket_m tupm
+		<set>
+			tupm.valid_end_dtm = #{validEndDtm}
+		</set>
+		where tupm.obj_uuid = #{uuid} and tupm.user_id = #{userId}
+	</update>
+</mapper>

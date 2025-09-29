@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Rule-Condition">
+
+	<select id="selectConditionGroupsByRuleId" parameterType="string" resultType="com.lgcns.svcp.prod.ruleengine.dto.condition.ConditionGroupDto">
+		<![CDATA[
+        SELECT cond_group_uuid
+        	, hpst_cond_group_uuid
+        	, sort_no
+        	, logic_type
+  		FROM tb_cond_group_m
+  		WHERE 1 = 1
+  		AND rule_uuid = #{ruleUuid}
+        AND use_yn = 'Y'
+        ]]>
+	</select>
+
+	<select id="selectConditionsByRuleId" parameterType="string" resultType="com.lgcns.svcp.prod.ruleengine.dto.condition.ConditionDto">
+		<![CDATA[
+         SELECT c.cond_group_uuid
+            , c.cond_uuid
+			, f.field_key_name AS key_name
+    		, f.field_disp_name AS disp_name
+    		, f.field_data_type
+    		, f.field_uuid
+    		, c.sort_no
+    		, c.compare_operator AS operator
+    		, c.cond_value AS value
+  		FROM tb_cond_m c
+  		JOIN tb_cond_group_m g
+  		ON c.cond_group_uuid = g.cond_group_uuid
+  		JOIN tb_field_m f
+  		ON c.field_uuid = f.field_uuid
+  		WHERE g.rule_uuid = #{ruleUuid}
+  		order by c.sort_no asc
+        ]]>
+	</select>
+	
+	<select id="getListGroupUuidByRule" resultType="string">
+		SELECT cond_group_uuid
+  		FROM tb_cond_group_m
+  		WHERE rule_uuid = #{ruleUuid}
+	</select>
+	
+	<delete id="deleteGroupByRuleUuid">
+       DELETE
+       FROM tb_cond_group_m where rule_uuid = #{uuid}
+    </delete>
+    
+    <delete id="deleteConditionByGroupUuid">
+       DELETE
+       FROM tb_cond_m where cond_group_uuid = #{uuid}
+    </delete>
+	
+</mapper>

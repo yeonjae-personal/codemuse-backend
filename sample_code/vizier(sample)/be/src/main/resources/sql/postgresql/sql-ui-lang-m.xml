@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ui-lang-m">
+
+  <select id="findAll" resultType="com.lgcns.svcp.prod.ui.prod.dto.label.LanguageItemDto">
+    select a.lang_code, a.region_code, a.lang_name
+    FROM tb_lang_m a where use_yn = 'Y'
+    order by sort_no ASC
+  </select>
+  
+</mapper>

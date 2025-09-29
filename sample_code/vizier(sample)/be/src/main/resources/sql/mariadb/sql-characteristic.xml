@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Characteristic">
+    <select id="selectSalesList" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+	    	, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.item_code = 'SI'
+	    	GROUP BY a.obj_uuid
+	    	ORDER BY a.rgst_dtm DESC
+	</select>
+	
+	<select id="selectSales" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+			, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.obj_code = #{salesCode}
+	    	GROUP BY a.obj_uuid
+	</select>
+	
+	<select id="selectBillingList" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+			, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.item_code = 'BI'
+	    	GROUP BY a.obj_uuid
+	    	ORDER BY a.rgst_dtm DESC
+	</select>
+	
+	<select id="selectBilling" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+			, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.obj_code = #{blngCode}
+	    	GROUP BY a.obj_uuid
+	</select>
+	
+	<select id="selectDiscountConfigList" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+			, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.item_code = 'DI'
+	    	GROUP BY a.obj_uuid
+	    	ORDER BY a.rgst_dtm DESC
+	</select>
+	
+	<select id="selectDiscountConfig" resultType="java.util.LinkedHashMap">
+	    SELECT a.obj_uuid
+			, a.obj_code
+			, a.obj_name
+			, a.dplc_trgt_uuid
+			, a.ovw_cntn
+			, a.valid_start_dtm
+			, a.valid_end_dtm
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+	      <foreach collection="additionalColumns" item="column" separator="," open = ",">
+	        MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+	      </foreach>
+		    FROM tb_item_mpng_d a
+		    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+            LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+            WHERE a.obj_code = #{dcCfgrtCode}
+	    	GROUP BY a.obj_uuid
+	</select>
+	
+	
+</mapper>

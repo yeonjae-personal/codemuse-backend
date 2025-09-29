@@ -1,0 +1,96 @@
+### <a id="function-{{ chunk.name.lower() }}"></a>🔧 `{{ chunk.name }}`
+
+{% if chunk.docstring %}
+> 📖 **함수 설명**  
+> {{ chunk.docstring }}
+
+{% endif %}
+{% if chunk.complexity %}
+![복잡도](https://img.shields.io/badge/복잡도-{{ chunk.complexity }}-{% if chunk.complexity <= 3 %}green{% elif chunk.complexity <= 7 %}yellow{% else %}red{% endif %})
+{% endif %}
+
+#### 📋 함수 정보
+
+| 속성 | 값 |
+|------|----|
+{% if chunk.complexity %}| ⚡ **복잡도** | {{ chunk.complexity }} |{% endif %}
+| 📍 **라인 범위** | {{ chunk.line_range }} |
+{% if chunk.signature %}| 🧾 **시그니처** | `{{ chunk.name }}{{ chunk.signature }}` |{% endif %}
+{% if chunk.tags %}| 🏷️ **태그** | `{{ chunk.tags | join(', ') }}`{% if chunk.docstring %}, `{{ chunk.docstring.split(' ')[0:3] | join(' ') | replace(':', '') | replace('.', '') }}`{% endif %} |{% endif %}
+{% if chunk.decorators %}| 🎨 **데코레이터** | `{{ chunk.decorators | join(', ') }}` |{% endif %}
+{% if chunk.is_async %}| ⚡ **비동기** | Yes |{% endif %}
+{% if chunk.dependencies %}| 📦 **의존성** | `{{ chunk.dependencies | join(', ') }}` |{% endif %}
+
+{% if chunk.docstring %}
+#### 📚 상세 독스트링
+
+```
+{{ chunk.docstring }}
+```
+
+{% endif %}
+#### 💻 핵심 구현 코드
+
+```python
+{% if chunk.content|length > 1000 %}
+{{ chunk.content[:1000] }}...
+
+🔍 **코드 요약**: 총 {{ chunk.content|length }}자 중 핵심 1000자만 표시
+{% else %}
+{{ chunk.content }}
+{% endif %}
+```
+
+{% if chunk.parameters or chunk.returns %}
+#### 🧩 시그니처 상세
+
+{% if chunk.parameters %}**Parameters**: `{{ chunk.parameters | join(', ') }}`{% endif %}
+{% if chunk.returns %}
+
+**Returns**: `{{ chunk.returns }}`
+{% endif %}
+{% endif %}
+
+{% if chunk.raises %}
+#### ⚠️ Raises
+
+`{{ chunk.raises | join('`, `') }}`
+{% endif %}
+
+{% if chunk.calls %}
+#### 📞 Calls
+
+`{{ chunk.calls | join('`, `') }}`
+{% endif %}
+
+{% if chunk.data_flow_summary %}
+#### 🧭 DATA FLOW
+
+```mermaid
+flowchart LR
+  subgraph {{ chunk.file_path }}:{{ chunk.line_range }}
+{% for e in chunk.data_flow_summary[:12] %}
+  {{ 'n' ~ loop.index }}["{{ e.src | replace('"','\\"') }}"] --> {{ 'm' ~ loop.index }}["{{ e.dst | replace('"','\\"') }}"]
+{% endfor %}
+  end
+```
+{% endif %}
+
+#### 🔍 코드 분석
+
+{% if chunk.docstring %}
+**핵심 기능**: {{ chunk.docstring.split('.')[0] if chunk.docstring.split('.') else '기능 설명 없음' }}
+
+{% endif %}
+{% if chunk.complexity %}
+**복잡도 분석**: 
+- 복잡도 점수: {{ chunk.complexity }}
+- 분류: {% if chunk.complexity <= 3 %}🟢 낮음 (단순한 로직){% elif chunk.complexity <= 7 %}🟡 보통 (적당한 복잡성){% elif chunk.complexity <= 15 %}🟠 높음 (복잡한 로직){% else %}🔴 매우 높음 (리팩토링 권장){% endif %}
+
+{% endif %}
+**Chunk 메타데이터**
+- 🆔 **ID**: `{{ chunk.chunk_id }}`
+- 📁 **소스 파일**: `{{ chunk.file_path }}`
+- 📊 **토큰 수**: {{ chunk.content|length // 4 }} (추정)
+
+---

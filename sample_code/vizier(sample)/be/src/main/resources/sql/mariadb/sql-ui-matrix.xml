@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-matrix">
+	<select id="searchMatrix" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.matrix.SearchMatrixResDto">
+		SELECT 
+		    a.matrix_code
+		    , a.matrix_code_name
+		    , a.use_yn
+		    , GROUP_CONCAT(DISTINCT c.factor_name 
+		                 ORDER BY b.seq_no 
+		                 SEPARATOR ', ') AS factor_codes
+		FROM 
+		    tb_matrix_m a
+		LEFT JOIN 
+		    tb_matrix_d b 
+		    ON a.matrix_code = b.matrix_code
+		LEFT JOIN
+		    tb_factor_c c 
+		    ON c.factor_code = b.factor_code 
+		<where>
+			<if test="matrixCodeName != null">
+				UPPER(a.matrix_code_name) LIKE CONCAT('%', TRIM(UPPER(#{matrixCodeName})),'%')
+			</if>
+		</where>
+		GROUP BY 
+		    a.matrix_code
+		ORDER BY
+			a.upd_dtm DESC
+	</select>
+	
+	<resultMap id="retrieveMatrixBuilderResultMap" type="com.lgcns.svcp.prod.ui.prod.dto.admin.matrix.builder.BuilderFactorDto">
+    	<association property="factorValues" column="{matrixCode=matrix_code,factorCode=factor_code}"  select="retrieveFactorValueByFactorAndMatrix"/>
+	</resultMap>
+	
+	<select id="retrieveMatrixBuilder" resultMap="retrieveMatrixBuilderResultMap">
+		SELECT
+			a.seq_no
+			, b.factor_code
+			, b.factor_name
+			, a.matrix_code
+		FROM
+			tb_matrix_d a
+		JOIN
+			tb_factor_c b ON b.factor_code = a.factor_code
+		WHERE
+			a.matrix_code = #{matrixCode}
+		ORDER BY
+			a.seq_no
+	</select>
+	
+	<select id="retrieveFactorValueByFactorAndMatrix" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.matrix.builder.BuilderFactorValueDto">
+		SELECT DISTINCT
+			a.factor_code
+			, a.factor_value_code
+			, a.factor_value_name
+			, CASE 
+			    WHEN b.factor_value_code IS NULL THEN FALSE
+			    ELSE TRUE
+			END AS is_in_use
+		FROM
+			tb_factor_value_c a
+		LEFT JOIN
+			tb_matrix_measure_d b ON a.factor_code = b.factor_code
+			AND a.factor_value_code = b.factor_value_code 
+			AND b.matrix_code = #{matrixCode}
+		WHERE
+			a.factor_code = #{factorCode}
+			AND NOT (b.factor_value_code IS NULL AND a.use_yn = 'N')
+		ORDER BY
+			a.factor_value_name
+	</select>
+	
+	
+	<resultMap id="retrieveMatrixResultMap" type="com.lgcns.svcp.prod.ui.prod.dto.admin.matrix.MatrixMeasureMDto">
+    	<association property="measureDDtos" column="{matrixCode=matrix_code,rowId=row_id}"  select="retrieveMatrixCol"/>
+	</resultMap>
+	
+	<select id="retrieveMatrix" resultMap="retrieveMatrixResultMap">
+		SELECT
+		    a.matrix_code
+		    , a.row_id
+		    , a.matrix_num_value
+		FROM
+		    tb_matrix_measure_m a
+		WHERE
+			a.matrix_code = #{matrixCode}
+	</select>
+	
+	<select id="retrieveMatrixCol" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.matrix.MatrixMeasureDDto">
+		SELECT
+			a.factor_code
+			, b.factor_value_code
+			, b.row_id
+			, b.matrix_code
+		    , c.factor_value_name
+		FROM
+			tb_matrix_d a
+		JOIN
+			tb_matrix_measure_d b ON a.matrix_code = b.matrix_code
+			AND a.factor_code = b.factor_code
+		JOIN
+			tb_factor_value_c c ON b.factor_value_code = c.factor_value_code
+		WHERE
+			a.matrix_code = #{matrixCode}
+			AND b.row_id = #{rowId}
+		ORDER BY
+			a.seq_no
+	</select>
+	
+	<insert id="insertMatrixM">
+	    INSERT INTO tb_matrix_m (
+	        matrix_code
+	        , matrix_code_name
+	        , use_yn
+	        , rgst_user
+	        , rgst_dtm
+	        , upd_user
+	        , upd_dtm
+	    )
+	    VALUES (
+	        #{matrixCode}
+	        , #{matrixCodeName}
+	        , #{useYn}
+	        , #{rgstUser}
+	        , #{rgstDtm}
+	        , #{updUser}
+	        , #{updDtm}
+	    )
+	</insert>
+	
+	<insert id="insertMatrixD">
+	    INSERT INTO tb_matrix_d (
+	        matrix_code
+	        , factor_code
+	        , seq_no
+	        , rgst_user
+	        , rgst_dtm
+	        , upd_user
+	        , upd_dtm
+	    )
+	    VALUES (
+	        #{matrixCode}
+	        , #{factorCode}
+	        , #{seqNo}
+	        , #{rgstUser}
+	        , #{rgstDtm}
+	        , #{updUser}
+	        , #{updDtm}
+	    )
+	</insert>
+	
+	<insert id="insertMatrixMeasureM">
+	    INSERT INTO tb_matrix_measure_m (
+	        matrix_code
+	        , row_id
+	        , matrix_num_value
+	        , rgst_user
+	        , rgst_dtm
+	        , upd_user
+	        , upd_dtm
+	    )
+	    VALUES (
+	        #{matrixCode}
+	        , #{rowId}
+	        , #{matrixNumValue}
+	        , #{rgstUser}
+	        , #{rgstDtm}
+	        , #{updUser}
+	        , #{updDtm}
+	    )
+	</insert>
+	
+	<insert id="insertMatrixMeasureD">
+	    INSERT INTO tb_matrix_measure_d (
+	        matrix_code
+	        , row_id
+	        , factor_code
+	        , factor_value_code
+	        , rgst_user
+	        , rgst_dtm
+	        , upd_user
+	        , upd_dtm
+	    )
+	    VALUES (
+	        #{matrixCode}
+	        , #{rowId}
+	        , #{factorCode}
+	        , #{factorValueCode}
+	        , #{rgstUser}
+	        , #{rgstDtm}
+	        , #{updUser}
+	        , #{updDtm}
+	    )
+	</insert>
+	
+	<delete id="deleteMatrixD">
+	    DELETE FROM
+	        tb_matrix_d
+	    WHERE
+	        matrix_code = #{matrixCode}
+	</delete>
+
+	<delete id="deleteMatrixMeasureM">
+	    DELETE FROM
+	        tb_matrix_measure_m
+	    WHERE
+	        matrix_code = #{matrixCode}
+	</delete>
+
+	<delete id="deleteMatrixMeasureD">
+	    DELETE FROM
+	        tb_matrix_measure_d
+	    WHERE
+	        matrix_code = #{matrixCode}
+	</delete>
+	
+	<update id="updateMatrixM">
+	    UPDATE tb_matrix_m
+	    <set>
+	        matrix_code_name = #{matrixCodeName}
+	        , use_yn = #{useYn}
+	        , upd_user = #{updUser}
+	        , upd_dtm = #{updDtm}
+	    </set>
+	    WHERE
+	        matrix_code = #{matrixCode}
+	</update>
+	
+	<select id="generateNextMatrixCode" resultType="java.lang.String">
+		SELECT
+		  CONCAT('MATX', LPAD(IFNULL(MAX(CAST(RIGHT(a.matrix_code , 6) AS UNSIGNED)), 0) + 1, 6, '0')) AS next_code
+		FROM
+			tb_matrix_m a
+		WHERE
+			a.matrix_code LIKE 'MATX%'
+	</select>
+
+</mapper>

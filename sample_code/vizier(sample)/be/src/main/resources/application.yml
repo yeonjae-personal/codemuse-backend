@@ -1,0 +1,29 @@
+spring:
+  profiles:
+      default: local
+  output:
+    ansi:
+      enabled: never
+  datasource:
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 5
+  messages:
+    basename: messages/message-common
+    encoding: UTF-8
+
+# Swagger configuration
+springdoc:
+  swagger-ui:
+    groups-order: ASC
+    tags-sorter: alpha
+    operations-sorter: alpha
+    display-request-duration: true
+    doc-expansion: none
+  packages-to-scan: com.lgcns
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG

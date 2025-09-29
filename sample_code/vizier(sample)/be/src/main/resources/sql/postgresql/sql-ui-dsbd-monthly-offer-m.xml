@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ui-dsbd-monthly-offer-m">
+
+  <select id="findAll" resultType="com.lgcns.svcp.prod.entity.DsbdMonthlyOfferEntity">
+    SELECT tdmom.year_month, tdmom.offer_type_name
+    ,tdmom.offer_cnt, tdmom.rgst_user, tdmom.rgst_dtm
+    ,tdmom.upd_user, tdmom.upd_dtm
+    FROM tb_dsbd_monthly_offer_m tdmom
+  </select>
+
+</mapper>

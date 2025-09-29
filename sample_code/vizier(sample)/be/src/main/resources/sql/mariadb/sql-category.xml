@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Category">
+	
+	<select id="retrieveCtgrNodeMByCtgrNodeUuid" resultType="com.lgcns.svcp.prod.online.prod.dto.category.CtgrNodeMDto">
+		<![CDATA[
+        SELECT ctgr_node_uuid
+			, ctgr_tab_uuid
+			, ctgr_node_name
+			, hpst_ctgr_node_uuid
+			, tcls_ctgr_yn
+			, rgst_user
+			, rgst_dtm
+			, upd_user
+			, upd_dtm
+        FROM tb_ctgr_node_m
+        WHERE 1 = 1
+        AND   ctgr_node_uuid = #{ctgrNodeUuid}
+        ]]>
+	</select>
+
+
+	<select id="retrieveCtgrNodeMList" resultType="com.lgcns.svcp.prod.online.prod.dto.category.CtgrNodeMDto">
+        <![CDATA[
+		SELECT ctgr_node_uuid
+			, ctgr_tab_uuid
+			, ctgr_node_name
+			, hpst_ctgr_node_uuid
+			, tcls_ctgr_yn
+			, rgst_user
+			, rgst_dtm
+			, upd_user
+			, upd_dtm
+	  	FROM tb_ctgr_node_m
+		WHERE 1 = 1
+		ORDER BY rgst_dtm DESC
+		]]>
+    </select>
+    
+    <select id="retrieveCtgrNodeMByObjUuid" resultType="com.lgcns.svcp.prod.online.prod.dto.category.CtgrNodeMDto">
+		<![CDATA[
+        SELECT a.ctgr_node_uuid
+			, a.ctgr_tab_uuid
+			, a.ctgr_node_name
+			, a.hpst_ctgr_node_uuid
+			, a.tcls_ctgr_yn
+			, a.rgst_user
+			, a.rgst_dtm
+			, a.upd_user
+			, a.upd_dtm
+		FROM
+			tb_ctgr_node_m a
+		JOIN tb_ctgr_item_rel_d b ON
+			a.ctgr_node_uuid = b.ctgr_node_uuid
+		WHERE 1 = 1
+		AND	  b.obj_uuid = #{objUuid}
+        ]]>
+	</select>
+
+</mapper>

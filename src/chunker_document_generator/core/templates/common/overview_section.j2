@@ -1,0 +1,18 @@
+## 📋 {{ chunk.name }}
+
+> **파일**: `{{ chunk.file_path }}`
+
+{% if chunk.docstring %}
+> 🎯 **파일 목적**  
+> {{ chunk.docstring }}
+
+{% endif %}
+{{ chunk.content }}
+
+**파일 메타데이터**
+- 🆔 **ID**: `{{ chunk.chunk_id }}`
+- 📍 **라인 범위**: {{ chunk.line_range }}
+{% if chunk.dependencies %}- 📦 **의존성**: `{{ chunk.dependencies | join(', ') }}`{% endif %}
+{% if chunk.tags %}- 🏷️ **태그**: `{{ chunk.tags | join(', ') }}`{% endif %}
+
+---

@@ -1,0 +1,1852 @@
+INFO:     Will watch for changes in these directories: ['/Users/roseline/projects/codemuse-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8001 (Press CTRL+C to quit)
+INFO:     Started reloader process [90700] using WatchFiles
+INFO:     Started server process [90716]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:59749 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59929 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+   📄 models.md: 21/21 섹션 업로드
+   📄 json_processor.md: 7/7 섹션 업로드
+   📄 parser.md: 7/7 섹션 업로드
+   📄 exceptions.md: 15/15 섹션 업로드
+   📄 advanced_analyzer.md: 7/7 섹션 업로드
+   📄 rule_analyzer.md: 7/7 섹션 업로드
+   📄 metrics_generator.md: 7/7 섹션 업로드
+   📄 condition_analyzer.md: 7/7 섹션 업로드
+   📄 issue_detector.md: 8/8 섹션 업로드
+   📄 logic_flow.md: 7/7 섹션 업로드
+   📄 streaming_formatter.md: 7/7 섹션 업로드
+   📄 text_formatter.md: 7/7 섹션 업로드
+   📄 option_validator.md: 7/7 섹션 업로드
+   📄 formatting_options.md: 9/9 섹션 업로드
+   📄 korean_templates.md: 7/7 섹션 업로드
+   📄 english_templates.md: 7/7 섹션 업로드
+   📄 custom_templates.md: 7/7 섹션 업로드
+   📄 logging.md: 14/14 섹션 업로드
+   📄 config_manager.md: 10/10 섹션 업로드
+   📄 constants.md: 4/4 섹션 업로드
+   📄 language.md: 9/9 섹션 업로드
+   📄 validation.md: 7/7 섹션 업로드
+   📄 stream_manager.md: 7/7 섹션 업로드
+   📄 stream_generator.md: 7/7 섹션 업로드
+   📄 stream_models.md: 11/11 섹션 업로드
+   📄 chunk_builder.md: 7/7 섹션 업로드
+   📄 progress_tracker.md: 7/7 섹션 업로드
+   📄 http_streaming.md: 7/7 섹션 업로드
+   📄 sse.md: 7/7 섹션 업로드
+   📄 validator.md: 7/7 섹션 업로드
+   📄 prompt_service.md: 7/7 섹션 업로드
+   📄 orchestrator.md: 7/7 섹션 업로드
+   📊 프로젝트 요약: 5/5 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     127.0.0.1:59929 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90716]
+INFO:     Started server process [96121]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96121]
+INFO:     Started server process [96163]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96163]
+INFO:     Started server process [96276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96276]
+INFO:     Started server process [98488]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98488]
+INFO:     Started server process [98874]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98874]
+INFO:     Started server process [403]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [403]
+INFO:     Started server process [1444]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1444]
+INFO:     Started server process [1974]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1974]
+INFO:     Started server process [2364]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2364]
+INFO:     Started server process [2562]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2562]
+INFO:     Started server process [3813]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3813]
+INFO:     Started server process [5562]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5562]
+INFO:     Started server process [5660]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5660]
+INFO:     Started server process [5723]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5723]
+INFO:     Started server process [6934]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49411 - "OPTIONS /api/v1/documents/generate HTTP/1.1" 200 OK
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+   📄 models.md: 21/21 섹션 업로드
+   📄 json_processor.md: 7/7 섹션 업로드
+   📄 parser.md: 7/7 섹션 업로드
+   📄 exceptions.md: 15/15 섹션 업로드
+   📄 advanced_analyzer.md: 7/7 섹션 업로드
+   📄 rule_analyzer.md: 7/7 섹션 업로드
+   📄 metrics_generator.md: 7/7 섹션 업로드
+   📄 condition_analyzer.md: 7/7 섹션 업로드
+   📄 issue_detector.md: 8/8 섹션 업로드
+   📄 logic_flow.md: 7/7 섹션 업로드
+   📄 streaming_formatter.md: 7/7 섹션 업로드
+   📄 text_formatter.md: 7/7 섹션 업로드
+   📄 option_validator.md: 7/7 섹션 업로드
+   📄 formatting_options.md: 9/9 섹션 업로드
+   📄 korean_templates.md: 7/7 섹션 업로드
+   📄 english_templates.md: 7/7 섹션 업로드
+   📄 custom_templates.md: 7/7 섹션 업로드
+   📄 logging.md: 14/14 섹션 업로드
+   📄 config_manager.md: 10/10 섹션 업로드
+   📄 constants.md: 4/4 섹션 업로드
+   📄 language.md: 9/9 섹션 업로드
+   📄 validation.md: 7/7 섹션 업로드
+   📄 stream_manager.md: 7/7 섹션 업로드
+   📄 stream_generator.md: 7/7 섹션 업로드
+   📄 stream_models.md: 11/11 섹션 업로드
+   📄 chunk_builder.md: 7/7 섹션 업로드
+   📄 progress_tracker.md: 7/7 섹션 업로드
+   📄 http_streaming.md: 7/7 섹션 업로드
+   📄 sse.md: 7/7 섹션 업로드
+   📄 validator.md: 7/7 섹션 업로드
+   📄 prompt_service.md: 7/7 섹션 업로드
+   📄 orchestrator.md: 7/7 섹션 업로드
+   📊 프로젝트 요약: 5/5 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     127.0.0.1:49411 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6934]
+INFO:     Started server process [12507]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12507]
+INFO:     Started server process [12724]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12724]
+INFO:     Started server process [13068]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13068]
+INFO:     Started server process [94806]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [94806]
+INFO:     Started server process [95090]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95090]
+INFO:     Started server process [95468]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95468]
+INFO:     Started server process [95574]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55895 - "GET /health HTTP/1.1" 200 OK
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 models.md: 0/21 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 json_processor.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 parser.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 exceptions.md: 0/15 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 advanced_analyzer.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 rule_analyzer.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 metrics_generator.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 condition_analyzer.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 issue_detector.md: 0/8 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 logic_flow.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 streaming_formatter.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 text_formatter.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+   📄 option_validator.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: 
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 formatting_options.md: 0/9 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 korean_templates.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 english_templates.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 custom_templates.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 logging.md: 0/14 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 config_manager.md: 0/10 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 constants.md: 0/4 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 language.md: 0/9 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 validation.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 stream_manager.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 stream_generator.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 stream_models.md: 0/11 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 chunk_builder.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 progress_tracker.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 http_streaming.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 sse.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95574]
+
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 validator.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📄 prompt_service.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+   📄 orchestrator.md: 0/7 섹션 업로드
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Operation timed out]
+     ❌ RAG 업로드 예외: Cannot connect to host localhost:8003 ssl:default [Connection refused]
+   📊 프로젝트 요약: 0/5 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     Started server process [46211]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46211]
+INFO:     Started server process [46319]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+   📄 models.md: 21/21 섹션 업로드
+   📄 json_processor.md: 7/7 섹션 업로드
+   📄 parser.md: 7/7 섹션 업로드
+   📄 exceptions.md: 15/15 섹션 업로드
+   📄 advanced_analyzer.md: 7/7 섹션 업로드
+   📄 rule_analyzer.md: 7/7 섹션 업로드
+   📄 metrics_generator.md: 7/7 섹션 업로드
+   📄 condition_analyzer.md: 7/7 섹션 업로드
+   📄 issue_detector.md: 8/8 섹션 업로드
+   📄 logic_flow.md: 7/7 섹션 업로드
+   📄 streaming_formatter.md: 7/7 섹션 업로드
+   📄 text_formatter.md: 7/7 섹션 업로드
+   📄 option_validator.md: 7/7 섹션 업로드
+   📄 formatting_options.md: 9/9 섹션 업로드
+   📄 korean_templates.md: 7/7 섹션 업로드
+   📄 english_templates.md: 7/7 섹션 업로드
+   📄 custom_templates.md: 7/7 섹션 업로드
+   📄 logging.md: 14/14 섹션 업로드
+   📄 config_manager.md: 10/10 섹션 업로드
+   📄 constants.md: 4/4 섹션 업로드
+   📄 language.md: 9/9 섹션 업로드
+   📄 validation.md: 7/7 섹션 업로드
+   📄 stream_manager.md: 7/7 섹션 업로드
+   📄 stream_generator.md: 7/7 섹션 업로드
+   📄 stream_models.md: 11/11 섹션 업로드
+   📄 chunk_builder.md: 7/7 섹션 업로드
+   📄 progress_tracker.md: 7/7 섹션 업로드
+   📄 http_streaming.md: 7/7 섹션 업로드
+   📄 sse.md: 7/7 섹션 업로드
+   📄 validator.md: 7/7 섹션 업로드
+   📄 prompt_service.md: 7/7 섹션 업로드
+   📄 orchestrator.md: 7/7 섹션 업로드
+   📊 프로젝트 요약: 5/5 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     127.0.0.1:54791 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46319]
+INFO:     Started server process [50839]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [50839]
+INFO:     Started server process [66177]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [66177]
+INFO:     Started server process [77656]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [77656]
+INFO:     Started server process [77775]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [77775]
+INFO:     Started server process [79066]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79066]
+INFO:     Started server process [80055]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [80055]
+INFO:     Started server process [80193]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for connections to close. (CTRL+C to force quit)
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+   📄 models.md: 21/21 섹션 업로드
+   📄 json_processor.md: 7/7 섹션 업로드
+   📄 parser.md: 7/7 섹션 업로드
+   📄 exceptions.md: 15/15 섹션 업로드
+   📄 advanced_analyzer.md: 7/7 섹션 업로드
+   📄 rule_analyzer.md: 7/7 섹션 업로드
+   📄 metrics_generator.md: 7/7 섹션 업로드
+   📄 condition_analyzer.md: 7/7 섹션 업로드
+   📄 issue_detector.md: 8/8 섹션 업로드
+   📄 logic_flow.md: 7/7 섹션 업로드
+   📄 streaming_formatter.md: 7/7 섹션 업로드
+   📄 text_formatter.md: 7/7 섹션 업로드
+   📄 option_validator.md: 7/7 섹션 업로드
+   📄 formatting_options.md: 9/9 섹션 업로드
+   📄 korean_templates.md: 7/7 섹션 업로드
+   📄 english_templates.md: 7/7 섹션 업로드
+   📄 custom_templates.md: 7/7 섹션 업로드
+     ❌ RAG 업로드 예외: [Errno None] Can not write request body for http://localhost:8003/api/v1/documents
+   📄 logging.md: 13/14 섹션 업로드
+   📄 config_manager.md: 10/10 섹션 업로드
+   📄 constants.md: 4/4 섹션 업로드
+   📄 language.md: 9/9 섹션 업로드
+   📄 validation.md: 7/7 섹션 업로드
+   📄 stream_manager.md: 7/7 섹션 업로드
+   📄 stream_generator.md: 7/7 섹션 업로드
+   📄 stream_models.md: 11/11 섹션 업로드
+   📄 chunk_builder.md: 7/7 섹션 업로드
+   📄 progress_tracker.md: 7/7 섹션 업로드
+   📄 http_streaming.md: 7/7 섹션 업로드
+   📄 sse.md: 7/7 섹션 업로드
+   📄 validator.md: 7/7 섹션 업로드
+   📄 prompt_service.md: 7/7 섹션 업로드
+   📄 orchestrator.md: 7/7 섹션 업로드
+   📊 프로젝트 요약: 5/5 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     127.0.0.1:50233 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [80193]
+INFO:     Started server process [83456]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py', 'src/chunker_document_generator/core/template_chunk_generator.py', 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [83456]
+INFO:     Started server process [86735]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [86735]
+INFO:     Started server process [86943]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [86943]
+INFO:     Started server process [90037]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90037]
+INFO:     Started server process [90828]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90828]
+INFO:     Started server process [91351]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [91351]
+INFO:     Started server process [29804]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29804]
+INFO:     Started server process [29985]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29985]
+INFO:     Started server process [30333]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30333]
+INFO:     Started server process [33438]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33438]
+INFO:     Started server process [97470]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97470]
+INFO:     Started server process [97734]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py', 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97734]
+INFO:     Started server process [98085]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py', 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98085]
+INFO:     Started server process [98175]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98175]
+INFO:     Started server process [99738]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [99738]
+INFO:     Started server process [6440]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+   📄 models.md: 21/21 섹션 업로드
+   📄 json_processor.md: 7/7 섹션 업로드
+   📄 parser.md: 7/7 섹션 업로드
+   📄 exceptions.md: 15/15 섹션 업로드
+   📄 advanced_analyzer.md: 7/7 섹션 업로드
+   📄 rule_analyzer.md: 7/7 섹션 업로드
+   📄 metrics_generator.md: 7/7 섹션 업로드
+   📄 condition_analyzer.md: 7/7 섹션 업로드
+   📄 issue_detector.md: 8/8 섹션 업로드
+   📄 logic_flow.md: 8/8 섹션 업로드
+   📄 streaming_formatter.md: 7/7 섹션 업로드
+   📄 text_formatter.md: 7/7 섹션 업로드
+   📄 option_validator.md: 7/7 섹션 업로드
+   📄 formatting_options.md: 9/9 섹션 업로드
+   📄 korean_templates.md: 7/7 섹션 업로드
+   📄 english_templates.md: 7/7 섹션 업로드
+   📄 custom_templates.md: 7/7 섹션 업로드
+   📄 logging.md: 15/15 섹션 업로드
+   📄 config_manager.md: 11/11 섹션 업로드
+   📄 constants.md: 4/4 섹션 업로드
+   📄 language.md: 9/9 섹션 업로드
+   📄 validation.md: 7/7 섹션 업로드
+   📄 stream_manager.md: 7/7 섹션 업로드
+   📄 stream_generator.md: 7/7 섹션 업로드
+   📄 stream_models.md: 11/11 섹션 업로드
+   📄 chunk_builder.md: 7/7 섹션 업로드
+   📄 progress_tracker.md: 7/7 섹션 업로드
+   📄 http_streaming.md: 7/7 섹션 업로드
+   📄 sse.md: 7/7 섹션 업로드
+   📄 validator.md: 7/7 섹션 업로드
+   📄 prompt_service.md: 7/7 섹션 업로드
+   📄 orchestrator.md: 7/7 섹션 업로드
+   📊 프로젝트 요약: 8/8 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     127.0.0.1:55699 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6440]
+INFO:     Started server process [12656]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+   📄 models.md: 21/21 섹션 업로드
+   📄 json_processor.md: 7/7 섹션 업로드
+   📄 parser.md: 7/7 섹션 업로드
+   📄 exceptions.md: 15/15 섹션 업로드
+   📄 advanced_analyzer.md: 7/7 섹션 업로드
+   📄 rule_analyzer.md: 7/7 섹션 업로드
+   📄 metrics_generator.md: 7/7 섹션 업로드
+   📄 condition_analyzer.md: 7/7 섹션 업로드
+   📄 issue_detector.md: 8/8 섹션 업로드
+   📄 logic_flow.md: 8/8 섹션 업로드
+   📄 streaming_formatter.md: 7/7 섹션 업로드
+   📄 text_formatter.md: 7/7 섹션 업로드
+   📄 option_validator.md: 7/7 섹션 업로드
+   📄 formatting_options.md: 9/9 섹션 업로드
+   📄 korean_templates.md: 7/7 섹션 업로드
+   📄 english_templates.md: 7/7 섹션 업로드
+   📄 custom_templates.md: 7/7 섹션 업로드
+   📄 logging.md: 15/15 섹션 업로드
+   📄 config_manager.md: 11/11 섹션 업로드
+   📄 constants.md: 4/4 섹션 업로드
+   📄 language.md: 9/9 섹션 업로드
+   📄 validation.md: 7/7 섹션 업로드
+   📄 stream_manager.md: 7/7 섹션 업로드
+   📄 stream_generator.md: 7/7 섹션 업로드
+   📄 stream_models.md: 11/11 섹션 업로드
+   📄 chunk_builder.md: 7/7 섹션 업로드
+   📄 progress_tracker.md: 7/7 섹션 업로드
+   📄 http_streaming.md: 7/7 섹션 업로드
+   📄 sse.md: 7/7 섹션 업로드
+   📄 validator.md: 7/7 섹션 업로드
+   📄 prompt_service.md: 7/7 섹션 업로드
+   📄 orchestrator.md: 7/7 섹션 업로드
+   📊 프로젝트 요약: 8/8 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     127.0.0.1:59680 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12656]
+INFO:     Started server process [23239]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+🚀 템플릿 기반 Chunk 문서 생성 시작...
+   📂 소스: /Users/roseline/projects/codemuse-backend/sample_code
+   📂 출력: /Users/roseline/projects/codemuse-backend/generated_docs
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/json_processor.py
+   ✅ Generated 23 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/parser.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/exceptions.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/advanced_analyzer.py
+   ✅ Generated 20 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/rule_analyzer.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/metrics_generator.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/condition_analyzer.py
+   ✅ Generated 28 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/issue_detector.py
+   ✅ Generated 30 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/analyzers/logic_flow.py
+   ✅ Generated 2 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/streaming_formatter.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/text_formatter.py
+   ✅ Generated 8 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/option_validator.py
+   ✅ Generated 13 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/options/formatting_options.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/korean_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/english_templates.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/formatters/templates/custom_templates.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/logging.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/config/config_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/constants.py
+   ✅ Generated 1 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/language.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/shared/utils/validation.py
+   ✅ Generated 16 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_manager.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_generator.py
+   ✅ Generated 14 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/stream_models.py
+   ✅ Generated 21 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/chunk_builder.py
+   ✅ Generated 12 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/utils/progress_tracker.py
+   ✅ Generated 19 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/http_streaming.py
+   ✅ Generated 9 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/rule_analyzer/streaming/protocols/sse.py
+   ✅ Generated 11 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/validator.py
+   ✅ Generated 15 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/prompt_service.py
+   ✅ Generated 18 chunks
+📄 Processing: /Users/roseline/projects/codemuse-backend/sample_code/prompt_manager/service/orchestrator.py
+   ✅ Generated 12 chunks
+
+🎯 총 462 개의 chunk 생성 완료
+   🎯 총 462개의 chunk 생성 완료
+   ✅ rule_analyzer/models.md
+   ✅ rule_analyzer/json_processor.md
+   ✅ rule_analyzer/parser.md
+   ✅ rule_analyzer/exceptions.md
+   ✅ rule_analyzer/analyzers/advanced_analyzer.md
+   ✅ rule_analyzer/analyzers/rule_analyzer.md
+   ✅ rule_analyzer/analyzers/metrics_generator.md
+   ✅ rule_analyzer/analyzers/condition_analyzer.md
+   ✅ rule_analyzer/analyzers/issue_detector.md
+   ✅ rule_analyzer/analyzers/logic_flow.md
+   ✅ rule_analyzer/formatters/streaming_formatter.md
+   ✅ rule_analyzer/formatters/text_formatter.md
+   ✅ rule_analyzer/formatters/options/option_validator.md
+   ✅ rule_analyzer/formatters/options/formatting_options.md
+   ✅ rule_analyzer/formatters/templates/korean_templates.md
+   ✅ rule_analyzer/formatters/templates/english_templates.md
+   ✅ rule_analyzer/formatters/templates/custom_templates.md
+   ✅ rule_analyzer/shared/logging.md
+   ✅ rule_analyzer/shared/config/config_manager.md
+   ✅ rule_analyzer/shared/utils/constants.md
+   ✅ rule_analyzer/shared/utils/language.md
+   ✅ rule_analyzer/shared/utils/validation.md
+   ✅ rule_analyzer/streaming/stream_manager.md
+   ✅ rule_analyzer/streaming/stream_generator.md
+   ✅ rule_analyzer/streaming/stream_models.md
+   ✅ rule_analyzer/streaming/utils/chunk_builder.md
+   ✅ rule_analyzer/streaming/utils/progress_tracker.md
+   ✅ rule_analyzer/streaming/protocols/http_streaming.md
+   ✅ rule_analyzer/streaming/protocols/sse.md
+   ✅ prompt_manager/service/validator.md
+   ✅ prompt_manager/service/prompt_service.md
+   ✅ prompt_manager/service/orchestrator.md
+✅ 생성 완료:
+   📄 32개 파일
+   🧩 462개 chunk
+   📊 메타데이터: chunk_metadata.json
+   📈 프로젝트 요약: project_summary.md
+
+🔄 RAG 업로드 시작...
+   📄 models.md: 21/21 섹션 업로드
+   📄 json_processor.md: 7/7 섹션 업로드
+   📄 parser.md: 7/7 섹션 업로드
+   📄 exceptions.md: 15/15 섹션 업로드
+   📄 advanced_analyzer.md: 7/7 섹션 업로드
+   📄 rule_analyzer.md: 7/7 섹션 업로드
+   📄 metrics_generator.md: 7/7 섹션 업로드
+   📄 condition_analyzer.md: 7/7 섹션 업로드
+   📄 issue_detector.md: 8/8 섹션 업로드
+   📄 logic_flow.md: 8/8 섹션 업로드
+   📄 streaming_formatter.md: 7/7 섹션 업로드
+   📄 text_formatter.md: 7/7 섹션 업로드
+   📄 option_validator.md: 7/7 섹션 업로드
+   📄 formatting_options.md: 9/9 섹션 업로드
+   📄 korean_templates.md: 7/7 섹션 업로드
+   📄 english_templates.md: 7/7 섹션 업로드
+   📄 custom_templates.md: 7/7 섹션 업로드
+   📄 logging.md: 15/15 섹션 업로드
+   📄 config_manager.md: 11/11 섹션 업로드
+   📄 constants.md: 4/4 섹션 업로드
+   📄 language.md: 9/9 섹션 업로드
+   📄 validation.md: 7/7 섹션 업로드
+   📄 stream_manager.md: 7/7 섹션 업로드
+   📄 stream_generator.md: 7/7 섹션 업로드
+   📄 stream_models.md: 11/11 섹션 업로드
+   📄 chunk_builder.md: 7/7 섹션 업로드
+   📄 progress_tracker.md: 7/7 섹션 업로드
+   📄 http_streaming.md: 7/7 섹션 업로드
+   📄 sse.md: 7/7 섹션 업로드
+   📄 validator.md: 7/7 섹션 업로드
+   📄 prompt_service.md: 7/7 섹션 업로드
+   📄 orchestrator.md: 7/7 섹션 업로드
+   📊 프로젝트 요약: 8/8 섹션 업로드
+✅ RAG 업로드 완료: 33개 파일 처리
+INFO:     127.0.0.1:61642 - "POST /api/v1/documents/generate HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23239]
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Started server process [26953]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26953]
+INFO:     Started server process [50280]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [50280]
+INFO:     Started server process [52575]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [52575]
+INFO:     Stopping reloader process [90700]

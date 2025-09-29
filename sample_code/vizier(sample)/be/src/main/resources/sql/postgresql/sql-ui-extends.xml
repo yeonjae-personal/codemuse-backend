@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-extends">
+
+    <select id="getTargetLeader" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.OffrGrpResDto">
+        SELECT DISTINCT
+        a.obj_uuid AS offer_group_uuid
+        , a.obj_code AS offer_group_code
+        , a.obj_name AS offer_group_name
+        , #{onlyValidDtm} AS only_valid_dtm
+        FROM tb_item_mpng_d a
+        JOIN tb_offer_group_rel_d b ON a.obj_uuid = b.offer_group_uuid
+        JOIN tb_offer_dpdc_rel_d c ON a.obj_uuid = c.base_uuid
+        WHERE
+        b.offer_uuid = #{offerUuid}
+    </select>
+    
+    <select id="getTargetLeaderGridViewRelation" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.OffrGrpResDto">
+        SELECT DISTINCT
+        a.obj_uuid AS offer_group_uuid
+        , a.obj_code AS offer_group_code
+        , a.obj_name AS offer_group_name
+        FROM tb_item_mpng_d a
+        JOIN tb_offer_group_rel_d b ON a.obj_uuid = b.offer_group_uuid
+        JOIN tb_offer_dpdc_rel_d c ON a.obj_uuid = c.base_uuid
+        WHERE
+        b.offer_uuid = #{offerUuid}
+    </select>
+
+    <select id="getTargetFollower" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.OffrGrpResDto">
+        SELECT DISTINCT
+        a.obj_uuid AS offer_group_uuid
+        , a.obj_code AS offer_group_code
+        , a.obj_name AS offer_group_name
+        , #{onlyValidDtm} AS only_valid_dtm
+        , b.offer_uuid
+        FROM tb_item_mpng_d a
+        JOIN tb_offer_group_rel_d b ON a.obj_uuid = b.offer_group_uuid
+        JOIN tb_offer_dpdc_rel_d c ON a.obj_uuid = c.trgt_uuid
+        WHERE
+        b.offer_uuid = #{offerUuid}
+    </select>
+
+    <select id="getBaseUuids" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.OfferDpdcRelDto">
+        SELECT
+        a.base_uuid
+        , a.trgt_uuid
+        , a.dpdc_rel_uuid
+        , a.valid_start_dtm
+        , a.valid_end_dtm
+        FROM tb_offer_dpdc_rel_d a
+        WHERE
+        a.trgt_uuid IN
+        <foreach collection='referenceUuids' item='uuid' open='(' separator=',' close=")">
+            #{uuid}
+        </foreach>
+    </select>
+
+    <select id="getTargetUuids" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.OfferDpdcRelDto">
+        SELECT
+        a.base_uuid
+        , a.trgt_uuid
+        , a.dpdc_rel_uuid
+        , a.valid_start_dtm
+        , a.valid_end_dtm
+        FROM tb_offer_dpdc_rel_d a
+        WHERE
+        a.base_uuid IN
+        <foreach collection='referenceUuids' item='uuid' open='(' separator=',' close=")">
+            #{uuid}
+        </foreach>
+    </select>
+
+    <select id="getLeaderView" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.RelationViewResDto">
+        SELECT
+        d.obj_uuid AS dpdc_rel_uuid,
+        d.obj_code AS dpdc_rel_code,
+        d.obj_name AS dpdc_rel_name,
+        d.valid_start_dtm AS relationValidStartDate,
+        d.valid_end_dtm AS relationValidEndDate,
+        b.obj_uuid AS target_uuid,
+        b.obj_code AS target_code,
+        b.obj_name AS target_name,
+        b.item_code,
+        e.item_code_name,
+        CASE
+        WHEN e.lctgr_item_code = 'G' THEN b.obj_uuid
+        ELSE NULL
+        END AS offer_group_uuid,
+        a.valid_start_dtm,
+        a.valid_end_dtm,
+        b.valid_start_dtm AS item_valid_start_dtm,
+        b.valid_end_dtm AS item_valid_end_dtm,
+        a.base_uuid AS reference_uuid,
+        g.lctgr_item_name,
+        a.trgt_uuid AS parent_uuid
+        FROM tb_offer_dpdc_rel_d a
+        JOIN tb_item_mpng_d b ON a.base_uuid = b.obj_uuid
+        JOIN tb_item_mpng_d d ON a.dpdc_rel_uuid = d.obj_uuid
+        JOIN tb_item_c e ON b.item_code = e.item_code
+        JOIN tb_mctgr_item_c f ON e.mctgr_item_code = f.mctgr_item_code
+        JOIN tb_lctgr_item_c g ON f.lctgr_item_code = g.lctgr_item_code
+        <where>
+            <if test="onlyValidDtm">
+                AND (a.valid_end_dtm IS NULL OR a.valid_end_dtm >= CURRENT_TIMESTAMP)
+                AND (b.valid_end_dtm IS NULL OR b.valid_end_dtm >= CURRENT_TIMESTAMP)
+            </if>
+            AND (a.trgt_uuid = #{targetUuid}
+            <if test="includeGroup">
+                OR a.trgt_uuid in (
+                SELECT DISTINCT
+                a.offer_group_uuid
+                FROM tb_offer_group_rel_d a
+                JOIN tb_offer_dpdc_rel_d b ON a.offer_group_uuid = b.trgt_uuid
+                WHERE
+                a.offer_uuid = #{targetUuid}
+                <if test="onlyValidDtm">
+                    AND (a.valid_end_dtm IS NULL OR a.valid_end_dtm >= CURRENT_TIMESTAMP)
+                    AND (b.valid_end_dtm IS NULL OR b.valid_end_dtm >= CURRENT_TIMESTAMP)
+                </if>
+                )
+            </if>
+            )
+        </where>
+    </select>
+
+    <select id="getFollowerView" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.RelationViewResDto">
+        SELECT
+        d.obj_uuid AS dpdc_rel_uuid,
+        d.obj_code AS dpdc_rel_code,
+        d.obj_name AS dpdc_rel_name,
+        d.valid_start_dtm AS relationValidStartDate,
+        d.valid_end_dtm AS relationValidEndDate,
+        b.obj_uuid AS target_uuid,
+        b.obj_code AS target_code,
+        b.obj_name AS target_name,
+        b.item_code,
+        e.item_code_name,
+        CASE
+        WHEN e.lctgr_item_code = 'G' THEN b.obj_uuid
+        ELSE NULL
+        END AS offer_group_uuid,
+        a.valid_start_dtm,
+        a.valid_end_dtm,
+        b.valid_start_dtm AS item_valid_start_dtm,
+        b.valid_end_dtm AS item_valid_end_dtm,
+        a.trgt_uuid AS reference_uuid,
+        g.lctgr_item_name,
+        a.base_uuid AS parent_uuid
+        FROM tb_offer_dpdc_rel_d a
+        JOIN tb_item_mpng_d b ON a.trgt_uuid = b.obj_uuid
+        JOIN tb_item_mpng_d d ON a.dpdc_rel_uuid = d.obj_uuid
+        JOIN tb_item_c e ON b.item_code = e.item_code
+        JOIN tb_mctgr_item_c f ON e.mctgr_item_code = f.mctgr_item_code
+        JOIN tb_lctgr_item_c g ON f.lctgr_item_code = g.lctgr_item_code
+        <where>
+            <if test="onlyValidDtm">
+                AND (a.valid_end_dtm IS NULL OR a.valid_end_dtm >= CURRENT_TIMESTAMP)
+                AND (b.valid_end_dtm IS NULL OR b.valid_end_dtm >= CURRENT_TIMESTAMP)
+            </if>
+            AND (a.base_uuid = #{targetUuid}
+            <if test="includeGroup">
+                OR a.base_uuid in (
+                SELECT DISTINCT
+                a.offer_group_uuid
+                FROM tb_offer_group_rel_d a
+                JOIN tb_offer_dpdc_rel_d b ON a.offer_group_uuid = b.base_uuid
+                WHERE
+                a.offer_uuid = #{targetUuid}
+                <if test="onlyValidDtm">
+                    AND (a.valid_end_dtm IS NULL OR a.valid_end_dtm >= CURRENT_TIMESTAMP)
+                    AND (b.valid_end_dtm IS NULL OR b.valid_end_dtm >= CURRENT_TIMESTAMP)
+                </if>
+                )
+            </if>
+            )
+        </where>
+    </select>
+    
+    <select id="getFollowerViewGridView" resultType="com.lgcns.svcp.prod.ui.prod.dto.extend.RelationGridViewEntity">
+        SELECT
+        h.obj_code as leader_code,
+        h.obj_name as leader_name,
+        m.obj_code AS follower_code_group,
+        m.obj_name AS follower_name_group,
+        b.obj_code AS follower_code,
+        b.obj_name AS follower_name,
+        d.obj_code AS relation_code,
+        d.obj_name AS relation_name,
+        a.valid_start_dtm AS relation_start_date,
+        a.valid_end_dtm AS relation_end_date,
+        n.obj_code AS group_code,
+        n.obj_name AS group_name,
+        i.valid_start_dtm as group_start_date,
+        i.valid_end_dtm as group_end_date,
+        k.lctgr_item_code as large_item_code,
+        b.valid_start_dtm,
+        b.valid_end_dtm,
+        b.item_code,
+        e.item_code_name,
+        CASE
+        WHEN e.lctgr_item_code = 'G' THEN b.obj_uuid
+        ELSE NULL
+        END AS offer_group_uuid,
+        a.valid_start_dtm,
+        a.valid_end_dtm,
+        a.trgt_uuid AS reference_uuid,
+        a.base_uuid AS parent_uuid
+        FROM tb_offer_dpdc_rel_d a
+        JOIN tb_item_mpng_d b ON a.trgt_uuid = b.obj_uuid
+        JOIN tb_item_mpng_d d ON a.dpdc_rel_uuid = d.obj_uuid
+        JOIN tb_item_mpng_d h ON a.base_uuid = h.obj_uuid
+        JOIN tb_item_c k ON h.item_code = k.item_code
+        JOIN tb_item_c e ON b.item_code = e.item_code
+        JOIN tb_mctgr_item_c f ON e.mctgr_item_code = f.mctgr_item_code
+        JOIN tb_lctgr_item_c g ON f.lctgr_item_code = g.lctgr_item_code 
+        AND a.base_uuid IN
+	    <foreach item='uuid' collection='objUuids' open='(' separator=',' close=")">
+	      #{uuid}
+	    </foreach>
+        left join tb_offer_group_rel_d i on b.obj_uuid = i.offer_group_uuid
+        LEFT JOIN tb_item_mpng_d m ON i.offer_uuid = m.obj_uuid
+    	LEFT JOIN tb_item_mpng_d n ON i.offer_group_uuid = n.obj_uuid
+    	where 1 = 1
+    	<if test="offerCode != null">
+	        AND (LOWER(b.obj_code) LIKE '%' || LOWER(#{offerCode}) || '%' AND offer_group_uuid is null) OR (LOWER(h.obj_code) LIKE '%' || LOWER(#{offerCode}) || '%' AND k.lctgr_item_code = 'O')
+	        OR (LOWER(m.obj_code) LIKE '%' || LOWER(#{offerCode}) || '%' and offer_group_uuid is not null)
+	    </if>
+	    <if test="offerName != null">
+	        AND (LOWER(b.obj_name) LIKE '%' || LOWER(#{offerName}) || '%' AND offer_group_uuid is null) OR (LOWER(h.obj_name) LIKE '%' || LOWER(#{offerName}) || '%' AND k.lctgr_item_code = 'O')
+	        OR (LOWER(m.obj_name) LIKE '%' || LOWER(#{offerName}) || '%' AND offer_group_uuid is not null)
+	    </if>
+	    <if test="groupCode != null">
+	        AND (LOWER(h.obj_code) LIKE '%' || LOWER(#{groupCode}) || '%' AND k.lctgr_item_code = 'G') OR (LOWER(n.obj_code) LIKE '%' || LOWER(#{groupCode}) || '%')
+	    </if>
+	    <if test="groupName != null">
+	        AND (LOWER(h.obj_name) LIKE '%' || LOWER(#{groupName}) || '%' AND k.lctgr_item_code = 'G') OR (LOWER(n.obj_name) LIKE '%' || LOWER(#{groupName}) || '%')
+	    </if>
+	    <if test="relationCode != null">
+	        AND LOWER(d.obj_code) LIKE '%' || LOWER(#{relationCode}) || '%'
+	    </if>
+	    <if test="relationName != null">
+	        AND LOWER(d.obj_name) LIKE '%' || LOWER(#{relationName}) || '%'
+	    </if>
+	    <if test="searchByCode != null">
+	        AND (LOWER(h.obj_code) LIKE '%' || LOWER(#{searchByCode}) || '%') OR (LOWER(b.obj_code) LIKE '%' || LOWER(#{searchByCode}) || '%')
+	        OR (LOWER(d.obj_code) LIKE '%' || LOWER(#{searchByCode}) || '%') OR (LOWER(n.obj_code) LIKE '%' || LOWER(#{searchByCode}) || '%')
+	        OR (LOWER(m.obj_code) LIKE '%' || LOWER(#{searchByCode}) || '%')
+	    </if>
+	    <if test="searchByName != null">
+	        AND (LOWER(h.obj_name) LIKE '%' || LOWER(#{searchByName}) || '%') OR (LOWER(b.obj_name) LIKE '%' || LOWER(#{searchByName}) || '%')
+	        OR (LOWER(d.obj_name) LIKE '%' || LOWER(#{searchByName}) || '%') OR (LOWER(n.obj_name) LIKE '%' || LOWER(#{searchByName}) || '%')
+	        OR (LOWER(m.obj_name) LIKE '%' || LOWER(#{searchByName}) || '%')
+	    </if>
+    </select>
+
+    <insert id="insertOfferDpdc">
+        INSERT INTO tb_offer_dpdc_rel_d (
+            base_uuid,
+            trgt_uuid,
+            dpdc_rel_uuid,
+            valid_start_dtm,
+            valid_end_dtm,
+            rgst_user,
+            rgst_dtm,
+            upd_user,
+            upd_dtm
+        )
+        VALUES (
+            #{baseUuid},
+            #{trgtUuid},
+            #{dpdcRelUuid},
+            #{validStartDtm}::TIMESTAMP,
+            #{validEndDtm}::TIMESTAMP,
+            #{rgstUser},
+            CURRENT_TIMESTAMP,
+            #{updUser},
+            CURRENT_TIMESTAMP
+        );
+    </insert>
+
+    <update id="updateOfferDpdc">
+        UPDATE tb_offer_dpdc_rel_d
+        <set>
+            valid_start_dtm = #{validStartDtm}::TIMESTAMP,
+            valid_end_dtm = #{validEndDtm}::TIMESTAMP,
+            upd_user = #{updUser},
+            upd_dtm = CURRENT_TIMESTAMP
+        </set>
+        WHERE base_uuid = #{baseUuid}
+        AND trgt_uuid = #{trgtUuid}
+        AND dpdc_rel_uuid = #{dpdcRelUuid}
+    </update>
+
+    <select id="retrieveAdditional" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.metadata.AdditionalDetailDto">
+        SELECT
+        a.attr_uuid
+        , a.item_code
+        , a.field_type_code
+        , a.comm_group_code
+        , a.attr_ref_table_name
+        , a.sort_no
+        , a.attr_max_length
+        , a.required_yn
+        , a.label_id
+        , a.disp_tab
+        , a.adv_search_yn
+        , CASE
+        WHEN a.field_type_code = 'DM' then (
+        SELECT
+        coalesce(JSONB_AGG(attr_val order by attr_seq)::text, '[]') AS attr_val
+        FROM tb_multi_code_add_attr_val_d
+        WHERE
+        attr_uuid = a.attr_uuid
+        AND obj_uuid = b.obj_uuid
+        )
+        ELSE c.attr_val
+        END AS attr_val
+        , CASE
+        WHEN a.field_type_code = 'OB' then (
+        SELECT
+        ob_name
+        FROM
+        (SELECT
+        obj_uuid AS ob_code
+        , obj_name AS ob_name
+        FROM tb_item_mpng_d
+        UNION
+        SELECT
+        matrix_code AS ob_code
+        , matrix_code_name AS ob_name
+        FROM tb_matrix_m
+        ) AS combined
+        WHERE
+        ob_code = c.attr_val
+        )
+        ELSE NULL
+        END AS ob_name
+        FROM tb_add_attr_header_m a
+        JOIN tb_item_mpng_d b
+        ON b.item_code = a.item_code
+        LEFT JOIN tb_offer_rel_add_attr_val_d c
+        ON a.attr_uuid = c.attr_uuid
+        AND c.obj_uuid = b.obj_uuid
+        WHERE
+        a.use_yn = 'Y'
+        and b.obj_uuid = #{objUuid}
+        ORDER BY
+        a.sort_no
+    </select>
+
+</mapper>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ui-cust-valid-m">
+
+  <select id="findByProperties" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.AttributeDto">
+		<![CDATA[
+		select t1.valid_code, t2.attr_uuid, t1.valid_cntn ,t1.seq_no, t2.cond_type,
+		t2.action_item_code ,c1.item_code_name,
+		t2.attr_no ,c2.label_id, c2.field_type_code, t2.text_cntn, c2.comm_group_code,
+		t2.range_start_val, t2.range_end_val, t2.range_start_dtm, t2.range_end_dtm, t2.valid_start_dtm, t2.valid_end_dtm,
+		c1.lctgr_item_code as large_item_code, c2.item_code as itemCodeAction
+		FROM tb_cust_valid_m t1
+		inner join tb_cust_valid_val_d t2 on t1.valid_code = t2.valid_code
+		inner join tb_item_c c1 on t2.action_item_code = c1.item_code
+		inner join tb_add_attr_header_m c2 on t2.attr_uuid = c2.attr_uuid
+		where 1= 1 and (t1.valid_end_dtm IS NULL OR TO_CHAR(t1.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS') > TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'))
+		AND c2.use_yn = 'Y'
+		]]><if test="itemCode != null">
+			and t2.action_item_code = #{itemCode}
+		</if>
+		<if test="attrUuid != null">
+			and t2.attr_uuid = #{attrUuid}
+		</if>
+    </select>
+
+  <select id="findByPropertiesByValidCode" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.AttributeDto">
+		<![CDATA[
+		select t1.valid_code, t2.attr_uuid, t1.valid_cntn ,t1.seq_no, t2.cond_type,
+		t2.action_item_code ,c1.item_code_name,
+		t2.attr_no ,c2.label_id, c2.field_type_code, t2.text_cntn, c2.comm_group_code,
+		t2.range_start_val, t2.range_end_val, t2.range_start_dtm, t2.range_end_dtm, t2.valid_start_dtm, t2.valid_end_dtm,
+		c1.lctgr_item_code as large_item_code, c2.item_code as itemCodeAction, c2.required_yn
+		FROM tb_cust_valid_m t1
+		inner join tb_cust_valid_val_d t2 on t1.valid_code = t2.valid_code
+		inner join tb_item_c c1 on t2.action_item_code = c1.item_code
+		inner join tb_add_attr_header_m c2 on t2.attr_uuid = c2.attr_uuid
+		where 1= 1 and (t2.valid_end_dtm IS NULL OR TO_CHAR(t2.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS') > TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'))
+		and t1.valid_code IN
+		]]><foreach collection= 'validCodes' index= 'index' item= 'item' open= '(' separator= ',' close= ')' >
+		#{item}
+		</foreach>
+    </select>
+
+  <select id="findByPropertiesAdmin" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.AttributeDto">
+		<![CDATA[
+		select t1.valid_code, t2.attr_uuid, t1.valid_cntn ,t1.seq_no, t2.cond_type,
+		t2.action_item_code ,c1.item_code_name,
+		t2.attr_no ,c2.label_id, c2.field_type_code, t2.text_cntn, c2.comm_group_code,
+		t2.range_start_val, t2.range_end_val, t2.range_start_dtm, t2.range_end_dtm, t2.valid_start_dtm, t2.valid_end_dtm,
+		c1.lctgr_item_code as large_item_code, c2.item_code as itemCodeAction, c2.required_yn, c2.attr_max_length, c2.use_yn
+		FROM tb_cust_valid_m t1
+		left join tb_cust_valid_val_d t2 on t1.valid_code = t2.valid_code
+		left join tb_item_c c1 on t2.action_item_code = c1.item_code
+		left join tb_add_attr_header_m c2 on t2.attr_uuid = c2.attr_uuid
+		where 1 = 1
+		]]><if test="itemCode != null">
+			and t1.cond_item_code = #{itemCode}
+		</if>
+    </select>
+
+  <select id="findById" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.CellBoxDto">
+    select t1.valid_code, t1.valid_cntn, t1.seq_no, t1.cond_item_code, t1.valid_start_dtm, t1.valid_end_dtm, t1.valid_end_dtm as valid_end_dtm_origin
+    FROM tb_cust_valid_m t1
+    where t1.valid_code = #{validCode}
+  </select>
+
+  <select id="findByCondItemCodeAndSeqNo" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.CellBoxDto">
+		<![CDATA[
+		select t1.valid_code, t1.valid_cntn, t1.seq_no, t1.cond_item_code, t1.valid_start_dtm, t1.valid_end_dtm, t1.valid_end_dtm as valid_end_dtm_origin
+		FROM tb_cust_valid_m t1
+		where t1.cond_item_code = #{condItemCode} and t1.seq_no = #{seqNo} and (t1.valid_end_dtm IS NULL OR TO_CHAR(t1.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS') > TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'))
+		]]>
+    </select>
+
+  <select id="findCellBoxCreate" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.CellBoxDto">
+    select t1.valid_code, t1.valid_cntn, t1.seq_no, t1.cond_item_code, t1.valid_end_dtm, TO_CHAR(t1.valid_start_dtm, 'YYYY-MM-DD') as validStartDtm
+    FROM tb_cust_valid_m t1
+    where t1.valid_code = #{validCode}
+  </select>
+
+  <select id="findCellBoxEnd" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.CellBoxDto">
+    select t1.valid_code, t1.valid_cntn, t1.seq_no, t1.cond_item_code, TO_CHAR(t1.valid_end_dtm, 'YYYY-MM-DD') as validEndDtm, t1.valid_start_dtm, t1.valid_end_dtm as valid_end_dtm_origin
+    FROM tb_cust_valid_m t1
+    where t1.valid_code = #{validCode} AND t1.valid_end_dtm IS NOT NULL
+  </select>
+
+  <insert id="insert">
+    INSERT INTO tb_cust_valid_m
+    (valid_code, cond_item_code, seq_no, valid_cntn, valid_start_dtm, valid_end_dtm, rgst_user, rgst_dtm, upd_user, upd_dtm)
+    VALUES (#{validCode}, #{condItemCode}, #{seqNo}, #{validCntn}, TO_TIMESTAMP(#{validStartDtm}, 'YYYY-MM-DD HH24:MI:SS'), TO_TIMESTAMP(#{validEndDtm}, 'YYYY-MM-DD HH24:MI:SS'), #{rgstUser}, CURRENT_TIMESTAMP, #{updUser}, CURRENT_TIMESTAMP)
+  </insert>
+
+  <update id="update">
+    UPDATE tb_cust_valid_m
+    <set>
+    seq_no = #{seqNo},
+    valid_cntn = #{validCntn},
+    valid_start_dtm = TO_TIMESTAMP(#{validStartDtm}, 'YYYY-MM-DD HH24:MI:SS'),
+    valid_end_dtm = TO_TIMESTAMP(#{validEndDtm}, 'YYYY-MM-DD HH24:MI:SS'),
+    upd_user = #{updUser},
+    upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE valid_code = #{validCode}
+  </update>
+
+  <select id="findValidCodes" resultType="java.lang.String">
+    SELECT valid_code
+    FROM tb_cust_valid_m
+    order by valid_code desc
+  </select>
+
+  <select id="getData" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.AttributeDto">
+		<![CDATA[
+		select t1.valid_code, t1.valid_cntn ,t1.seq_no, t1.rgst_user, t1.rgst_dtm, t1.upd_user, t1.upd_dtm
+		FROM tb_cust_valid_m t1
+		left join tb_item_c c1 on t1.cond_item_code = c1.item_code
+		where 1 = 1 and (t1.valid_cntn is null or t1.valid_cntn = '') and (t1.valid_end_dtm IS NULL OR TO_CHAR(t1.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS') > TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'))
+		]]><if test="largeItemCode != null">
+			and c1.lctgr_item_code = #{largeItemCode}
+		</if>
+		<if test="middleItemCode != null">
+			and c1.mctgr_item_code = #{middleItemCode}
+		</if>
+		<if test="itemCode != null">
+			and c1.item_code = #{itemCode}
+		</if><![CDATA[
+		order by t1.seq_no asc
+		]]>
+    </select>
+
+  <select id="findInListViewWithTypeAction" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.AttributeDto">
+		<![CDATA[
+		select t1.valid_code, t1.seq_no, t1.rgst_user, t1.rgst_dtm, t1.upd_user, t1.upd_dtm
+		FROM tb_cust_valid_m t1
+		inner join tb_cust_valid_val_d t2 on t1.valid_code = t2.valid_code
+		inner join tb_item_c c1 on t2.action_item_code = c1.item_code
+		inner join tb_add_attr_header_m c2 on t2.attr_uuid = c2.attr_uuid
+		where 1= 1 and (t1.valid_cntn is null or t1.valid_cntn = '') and (t1.valid_end_dtm IS NULL OR TO_CHAR(t1.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS') > TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'))
+		and t2.cond_type = 'A' and c2.use_yn = 'Y'
+		]]><if test="largeItemCode != null">
+			and c1.lctgr_item_code = #{largeItemCode}
+		</if>
+		<if test="middleItemCode != null">
+			and c1.mctgr_item_code = #{middleItemCode}
+		</if>
+		<if test="itemCode != null">
+			and t2.action_item_code = #{itemCode}
+		</if><![CDATA[
+		group by t1.valid_code
+		order by t1.seq_no asc
+		]]>
+    </select>
+
+  <select id="getCommGroupCode" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.AttributeDto">
+    select t1.comm_group_code
+    FROM tb_add_attr_header_m t1
+    where t1.attr_uuid = #{attrUuid}
+  </select>
+
+  <select id="getSecondItem" resultType="com.lgcns.svcp.prod.entity.MiddleItemEntity">
+    select t5.lctgr_item_code, t5.lctgr_item_name, t6.lctgr_item_code as largeItemCodeTrgt, t6.lctgr_item_name as largeItemNameTrgt,
+    t2.mctgr_item_code, t3.mctgr_item_name, t2.item_code, t2.item_code_name, t3.sort_no as middle_sort, t2.sort_no as item_sort
+    FROM tb_item_strc_d t1
+    join tb_item_c t2 on t1.trgt_item_code = t2.item_code
+    inner join tb_mctgr_item_c t3 on t3.mctgr_item_code = t2.mctgr_item_code
+    inner join tb_lctgr_item_c t6 on t6.lctgr_item_code = t2.lctgr_item_code
+    join tb_item_c t4 on t4.item_code = t1.base_item_code
+    inner join tb_lctgr_item_c t5 on t5.lctgr_item_code = t4.lctgr_item_code
+    where t1.base_item_code = #{itemCode} and t2.use_yn = 'Y' and t4.use_yn = 'Y'
+  </select>
+
+  <select id="getItem" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    select t1.lctgr_item_code as large_item_code, t3.lctgr_item_name as large_item_name, t2.mctgr_item_code as middle_item_code, t2.mctgr_item_name as middle_item_name,
+    t1.item_code, t1.item_code_name as item_name
+    FROM tb_item_c t1
+    inner join tb_mctgr_item_c t2 on t1.mctgr_item_code = t2.mctgr_item_code
+    inner join tb_lctgr_item_c t3 on t1.lctgr_item_code = t3.lctgr_item_code
+    where t1.item_code = #{itemCode} and t1.use_yn = 'Y'
+  </select>
+
+  <select id="getMiddle" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    SELECT mctgr_item_name as middle_item_name
+    FROM tb_mctgr_item_c m
+    WHERE mctgr_item_code = #{itemCode}	and use_yn = 'Y'
+  </select>
+
+  <select id="findSeqByCondItemCode" resultType="int">
+		<![CDATA[
+		SELECT seq_no
+		FROM tb_cust_valid_m t
+		WHERE t.cond_item_code = #{condItemCode} and (t.valid_end_dtm IS NULL OR TO_CHAR(t.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS') > TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'))
+		order by seq_no desc
+		]]>
+    </select>
+
+  <select id="findByItemCode" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.CellBoxDto">
+    select t1.valid_code, t1.seq_no
+    FROM tb_cust_valid_m t1
+    where t1.cond_item_code = #{condItemCode}
+  </select>
+
+  <select id="findByItemCodeValid" resultType="com.lgcns.svcp.prod.ui.prod.dto.customvalidation.CellBoxDto">
+		<![CDATA[
+		select * FROM tb_cust_valid_m t1
+		where t1.cond_item_code = #{condItemCode} and (t1.valid_end_dtm IS NULL OR TO_CHAR(t1.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS') > TO_CHAR(CURRENT_TIMESTAMP, 'YYYY-MM-DD HH24:MI:SS'))
+		]]>
+    </select>
+
+</mapper>

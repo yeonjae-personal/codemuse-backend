@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Common">
+
+  <select id="selectAdditionalColumns" resultType="com.lgcns.svcp.prod.online.prod.dto.common.AdditionalColumnsDto">
+    SELECT a.attr_uuid
+    , b.label_name as attr_name
+    , a.sort_no
+    FROM tb_add_attr_header_m a
+    JOIN tb_multi_lang_label_m b
+    ON a.label_id = b.label_id
+    WHERE 1=1
+    and a.item_code = #{itemCode}
+    AND b.lang_code = 'en'
+    ORDER BY a.sort_no
+  </select>
+
+</mapper>

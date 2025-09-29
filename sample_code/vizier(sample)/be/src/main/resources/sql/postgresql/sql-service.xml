@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Service">
+
+  <select id="selectAdditionalList" resultType="java.util.LinkedHashMap">
+    SELECT a.obj_uuid
+    , a.obj_code
+    , a.obj_name
+    , a.dplc_trgt_uuid
+    , a.ovw_cntn
+    , a.valid_start_dtm
+    , a.valid_end_dtm
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    <foreach collection='additionalColumns' item='column' separator=',' open = ",">
+    MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+    </foreach>
+    FROM tb_item_mpng_d a
+    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+    LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+    WHERE a.item_code = 'AD'
+    GROUP BY a.obj_uuid
+    ORDER BY a.rgst_dtm DESC
+  </select>
+
+  <select id="selectAdditional" resultType="java.util.LinkedHashMap">
+    SELECT a.obj_uuid
+    , a.obj_code
+    , a.obj_name
+    , a.dplc_trgt_uuid
+    , a.ovw_cntn
+    , a.valid_start_dtm
+    , a.valid_end_dtm
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    <foreach collection='additionalColumns' item='column' separator=',' open = ",">
+    MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+    </foreach>
+    FROM tb_item_mpng_d a
+    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+    LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+    WHERE a.obj_code = #{addSvcCode}
+    GROUP BY a.obj_uuid
+  </select>
+
+  <select id="selectMessageList" resultType="java.util.LinkedHashMap">
+    SELECT a.obj_uuid
+    , a.obj_code
+    , a.obj_name
+    , a.dplc_trgt_uuid
+    , a.ovw_cntn
+    , a.valid_start_dtm
+    , a.valid_end_dtm
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    <foreach collection='additionalColumns' item='column' separator=',' open = ",">
+    MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+    </foreach>
+    FROM tb_item_mpng_d a
+    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+    LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+    WHERE a.item_code = 'MS'
+    GROUP BY a.obj_uuid
+    ORDER BY a.rgst_dtm DESC
+  </select>
+
+  <select id="selectMessage" resultType="java.util.LinkedHashMap">
+    SELECT a.obj_uuid
+    , a.obj_code
+    , a.obj_name
+    , a.dplc_trgt_uuid
+    , a.ovw_cntn
+    , a.valid_start_dtm
+    , a.valid_end_dtm
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    <foreach collection='additionalColumns' item='column' separator=',' open = ",">
+    MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+    </foreach>
+    FROM tb_item_mpng_d a
+    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+    LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+    WHERE a.obj_code = #{msgSvcCode}
+    GROUP BY a.obj_uuid
+  </select>
+
+  <select id="selectVoiceList" resultType="java.util.LinkedHashMap">
+    SELECT a.obj_uuid
+    , a.obj_code
+    , a.obj_name
+    , a.dplc_trgt_uuid
+    , a.ovw_cntn
+    , a.valid_start_dtm
+    , a.valid_end_dtm
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    <foreach collection='additionalColumns' item='column' separator=',' open = ",">
+    MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+    </foreach>
+    FROM tb_item_mpng_d a
+    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+    LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+    WHERE a.item_code = 'VO'
+    GROUP BY a.obj_uuid
+    ORDER BY a.rgst_dtm DESC
+  </select>
+
+  <select id="selectVoice" resultType="java.util.LinkedHashMap">
+    SELECT a.obj_uuid
+    , a.obj_code
+    , a.obj_name
+    , a.dplc_trgt_uuid
+    , a.ovw_cntn
+    , a.valid_start_dtm
+    , a.valid_end_dtm
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    <foreach collection='additionalColumns' item='column' separator=',' open = ",">
+    MAX(CASE WHEN b.attr_uuid = '${column.attrUuid}' THEN c.attr_val END) AS '${column.attrName}'
+    </foreach>
+    FROM tb_item_mpng_d a
+    LEFT JOIN tb_cpnt_add_attr_val_d c ON a.obj_uuid = c.obj_uuid
+    LEFT JOIN tb_add_attr_header_m b ON c.attr_uuid  = b.attr_uuid
+    WHERE a.obj_code = #{vicSvcCode}
+    GROUP BY a.obj_uuid
+  </select>
+
+</mapper>

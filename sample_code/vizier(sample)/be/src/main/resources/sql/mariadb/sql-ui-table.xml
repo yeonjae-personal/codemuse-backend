@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright (c) 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-table">
+	<select id="searchTableType" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.TableStrcTypeDto">
+		SELECT
+	        a.table_type_code
+	        , a.table_type_name
+	        , a.use_yn
+	        , a.sort_no
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_table_strc_typy_c a 
+		<where>
+			<if test="tableTypeCode != null">
+				a.table_type_code = #{tableTypeCode}
+			</if>
+			<if test="tableTypeName != null">
+				AND UPPER(a.table_type_name) LIKE CONCAT('%', TRIM(UPPER(#{tableTypeName})),'%')
+			</if>
+			<if test="useYn != null">
+				AND a.use_yn = #{useYn}
+			</if>
+		</where>
+		ORDER BY
+			a.sort_no
+	</select>
+	
+	<select id="searchTableStrc" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.TableStrcDto">
+		SELECT
+	        a.table_name
+	        , a.table_type_code
+	        , a.table_dscr
+	        , a.use_yn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_table_strc_c a
+		<where>
+			<if test="tableTypeCode != null">
+				a.table_type_code = #{tableTypeCode}
+			</if>
+			<if test="tableName != null">
+				AND UPPER(a.table_name) LIKE CONCAT('%', TRIM(UPPER(#{tableName})),'%')
+			</if>
+			<if test="useYn != null">
+				AND a.use_yn = #{useYn}
+			</if>
+		</where>
+		ORDER BY
+			UPPER(a.table_name)
+	</select>
+	
+	<update id="updateTableStrcType">
+	    UPDATE tb_table_strc_typy_c
+	    <set>
+	        table_type_name = #{tableTypeName}
+	        , use_yn = #{useYn}
+	        , sort_no = #{sortNo}
+	        , upd_user = #{updUser}
+	        , upd_dtm = #{updDtm}
+	    </set>
+	    WHERE
+	        table_type_code = #{tableTypeCode};
+	</update>
+	
+	<select id="retrieveTableHeader" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.TableColumnDto">
+	    SELECT
+	        a.table_name
+	        , a.column_name
+	        , a.column_type
+	        , a.comm_group_code
+	        , a.attr_max_length
+	        , a.column_key_yn
+	        , a.required_yn
+	        , CASE 
+			    WHEN b.COLUMN_COMMENT IS NULL THEN a.column_comment
+			    ELSE b.COLUMN_COMMENT
+			END AS column_comment
+	        , a.sort_no
+	        , a.use_yn
+	        , a.rgst_user
+	        , a.rgst_dtm
+	        , a.upd_user
+	        , a.upd_dtm
+	    FROM
+	        tb_table_column_m a
+	    JOIN
+	    	INFORMATION_SCHEMA.columns b ON b.COLUMN_NAME = a.column_name AND b.TABLE_NAME = a.table_name
+   		<where>
+   			b.TABLE_SCHEMA = DATABASE()
+   			AND a.use_yn = 'Y'
+			<if test="tableName != null">
+				AND a.table_name = #{tableName}
+			</if>
+		</where>
+		ORDER BY
+			a.sort_no
+	</select>
+	
+	<select id="retrieveTableData" resultType="java.util.LinkedHashMap">
+	    SELECT
+	        <foreach collection="selectColumns" item="col" separator=",">
+			    ${col}
+			</foreach>
+	    FROM
+	        ${tableName}
+   		<where>
+	   		<if test="fieldSearchs != null and fieldSearchs.size() > 0">
+	   			<foreach collection="fieldSearchs" item="field"  open="(" separator=") AND (" close=")">
+		   			<trim prefixOverrides="AND |OR ">
+						<if test="field.fieldValue != null and field.fieldType == 'TF' or field.fieldType == 'TA'">
+				           AND UPPER(${field.fieldName}) LIKE CONCAT('%', UPPER(#{field.fieldValue}),'%')
+				        </if>
+				        <if test="field.fieldValues != null and field.fieldType == 'DL'">
+				          AND ${field.fieldName} IN
+				          	  <foreach collection="field.fieldValues" item="value" open="(" separator="," close=")">
+						        #{value}
+						      </foreach>
+				        </if>
+				        <if test="field.fieldType == 'DP'">
+				           <if test="field.fieldValueMin != null and field.fieldValueMin != ''">
+					            AND ${field.fieldName} &gt;= #{field.fieldValueMin}
+					        </if>
+					        <if test="field.fieldValueMax != null and field.fieldValueMax != ''">
+					            AND ${field.fieldName} &lt;= #{field.fieldValueMax}
+					        </if>
+				        </if>
+				        <if test="field.fieldType == 'RF' or field.fieldType == 'NF'">
+				          	<if test="field.fieldValueMin != null and field.fieldValueMin != ''">
+					            AND CAST(COALESCE(${field.fieldName}, '0') AS DOUBLE) &gt;= CAST(#{field.fieldValueMin} AS DOUBLE) AND ${field.fieldName} IS NOT NULL
+					        </if>
+					        <if test="field.fieldValueMax != null and field.fieldValueMax != ''">
+					            AND CAST(COALESCE(${field.fieldName}, '0') AS DOUBLE) &lt;= CAST(#{field.fieldValueMax} AS DOUBLE) AND ${field.fieldName} IS NOT NULL
+					        </if>
+				        </if>
+				        <if test="field.fieldValues != null and field.fieldValues.size() > 0 and field.fieldType == 'DM'">
+						  AND (
+						    <foreach collection="field.fieldValues" item="value" separator=" OR ">
+						      JSON_CONTAINS(${field.fieldName}, CONCAT('\"', #{value}, '\"'))
+						    </foreach>
+						  )
+						</if>
+			        </trim>
+				</foreach>
+			</if>
+		</where>
+		<if test="orderByClause != null and orderByClause != ''">
+            ORDER BY
+            	${orderByClause}
+        </if>
+	</select>
+
+	<delete id="deleteTableData">
+		DELETE FROM ${tableName}
+	    WHERE
+	    <foreach collection="columnPrimaryKeys" index="key" item="value" separator=" AND ">
+	        ${key} = #{value}
+	    </foreach>
+	</delete>
+
+	<update id="updateTableData">
+	    UPDATE ${tableName}
+	    <set>
+	        <foreach collection="columnData" index="key" item="value" separator=",">
+	            ${key} = #{value}
+	        </foreach>
+     	    , upd_user = #{updUser}
+	        , upd_dtm = #{updDtm}
+	    </set>
+	    WHERE
+	    <foreach collection="columnPrimaryKeys" index="key" item="value" separator=" AND ">
+	        ${key} = #{value}
+	    </foreach>
+	</update>
+
+	<insert id="insertTableData">
+	    INSERT INTO ${tableName}
+	    <trim prefix="(" suffix=")" suffixOverrides=",">
+	    	<foreach collection="columnPrimaryKeys" index="key" item="value" separator=",">
+	            ${key}
+	        </foreach>
+	        ,
+	        <foreach collection="columnData" index="key" item="value" separator=",">
+	            ${key}
+	        </foreach>
+	        , rgst_user
+			, rgst_dtm
+			, upd_user
+			, upd_dtm
+	    </trim>
+	    VALUES
+	    <trim prefix="(" suffix=")" suffixOverrides=",">
+	        <foreach collection="columnPrimaryKeys"  index="key" item="value" separator=",">
+	             #{value}
+	        </foreach>
+	        ,
+	        <foreach collection="columnData" index="item" item="value" separator=",">
+	             #{value}
+	        </foreach>
+	        , #{rgstUser}
+	        , #{rgstDtm}
+	        , #{updUser}
+			, #{updDtm}
+	    </trim>
+	</insert>
+
+</mapper>

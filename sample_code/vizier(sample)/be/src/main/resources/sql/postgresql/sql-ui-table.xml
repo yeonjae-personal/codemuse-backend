@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-table">
+
+  <select id="searchTableType" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.TableStrcTypeDto">
+    SELECT
+    a.table_type_code
+    , a.table_type_name
+    , a.use_yn
+    , a.sort_no
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_table_strc_typy_c a
+    <where>
+    <if test="tableTypeCode != null">
+    a.table_type_code = #{tableTypeCode}
+    </if>
+    <if test="tableTypeName != null">
+    AND UPPER(a.table_type_name) LIKE '%' || UPPER(#{tableTypeName}) || '%'
+    </if>
+    <if test="useYn != null">
+    AND a.use_yn = #{useYn}
+    </if>
+    </where>
+    ORDER BY
+    a.sort_no
+  </select>
+
+  <select id="searchTableStrc" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.TableStrcDto">
+    SELECT
+    a.table_name
+    , a.table_type_code
+    , a.table_dscr
+    , a.use_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    FROM tb_table_strc_c a
+    <where>
+    <if test="tableTypeCode != null">
+    a.table_type_code = #{tableTypeCode}
+    </if>
+    <if test="tableName != null">
+    AND UPPER(a.table_name) LIKE '%' || UPPER(#{tableName}) || '%'
+    </if>
+    <if test="useYn != null">
+    AND a.use_yn = #{useYn}
+    </if>
+    </where>
+    ORDER BY
+    UPPER(a.table_name)
+  </select>
+
+  <update id="updateTableStrcType">
+    UPDATE tb_table_strc_typy_c
+    <set>
+    table_type_name = #{tableTypeName}
+    , use_yn = #{useYn}
+    , sort_no = #{sortNo}
+    , upd_user = #{updUser}
+    , upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE
+    table_type_code = #{tableTypeCode};
+  </update>
+
+  <select id="retrieveTableHeader" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.TableColumnDto">
+    SELECT
+		a.table_name,
+		a.column_name,
+		a.column_type,
+		a.comm_group_code,
+		a.attr_max_length,
+		a.column_key_yn,
+		a.required_yn,
+		COALESCE(d.description, a.column_comment) AS column_comment,
+		a.sort_no,
+		a.use_yn,
+		a.rgst_user,
+		a.rgst_dtm,
+		a.upd_user,
+		a.upd_dtm
+	FROM tb_table_column_m a
+	JOIN information_schema.columns b
+		ON b.column_name = a.column_name
+		AND b.table_name = a.table_name
+		AND b.table_schema = current_schema()
+	LEFT JOIN pg_catalog.pg_description d
+		ON d.objsubid = b.ordinal_position
+		AND d.objoid = (
+		  SELECT c.oid
+		  FROM pg_catalog.pg_class c
+		  JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+		  WHERE c.relname = b.table_name
+			AND n.nspname = b.table_schema
+		)
+	WHERE a.use_yn = 'Y'
+	<if test="tableName != null">
+	AND a.table_name = #{tableName}
+	</if>
+	ORDER BY a.sort_no
+  </select>
+
+	<select id="retrieveTableData" resultType="java.util.LinkedHashMap">
+	  SELECT
+	  <foreach collection="selectColumns" item="col" separator=",">
+	    ${col}
+	  </foreach>
+	  FROM
+	    ${tableName}
+	  <where>
+	    <if test="fieldSearchs != null and fieldSearchs.size() > 0">
+	      <foreach collection="fieldSearchs" item="field" open="(" separator=") AND (" close=")">
+	        <trim prefixOverrides="AND |OR ">
+	          
+	          <if test="field.fieldValue != null and (field.fieldType == 'TF' or field.fieldType == 'TA')">
+	            AND UPPER(${field.fieldName}) LIKE '%' || UPPER(#{field.fieldValue}) || '%'
+	          </if>
+	          
+	          <if test="field.fieldValues != null and field.fieldType == 'DL'">
+	            AND ${field.fieldName} IN
+	            <foreach collection="field.fieldValues" item="value" open="(" separator="," close=")">
+	              #{value}
+	            </foreach>
+	          </if>
+	          
+	          <if test="field.fieldType == 'DP'">
+	            <if test="field.fieldValueMin != null and field.fieldValueMin != ''">
+	              AND ${field.fieldName} >= #{field.fieldValueMin}
+	            </if>
+	            <if test="field.fieldValueMax != null and field.fieldValueMax != ''">
+	              AND ${field.fieldName} <![CDATA[ <= ]]> #{field.fieldValueMax}
+	            </if>
+	          </if>
+	          
+	          <if test="field.fieldType == 'RF' or field.fieldType == 'NF'">
+	            <if test="field.fieldValueMin != null and field.fieldValueMin != ''">
+	              AND CAST(COALESCE(${field.fieldName}, '0') AS DOUBLE PRECISION) >= CAST(#{field.fieldValueMin} AS DOUBLE PRECISION)
+	              AND ${field.fieldName} IS NOT NULL
+	            </if>
+	            <if test="field.fieldValueMax != null and field.fieldValueMax != ''">
+	              AND CAST(COALESCE(${field.fieldName}, '0') AS DOUBLE PRECISION) <![CDATA[ <= ]]> CAST(#{field.fieldValueMax} AS DOUBLE PRECISION)
+	              AND ${field.fieldName} IS NOT NULL
+	            </if>
+	          </if>
+	          
+	          <if test="field.fieldValues != null and field.fieldValues.size() > 0 and field.fieldType == 'DM'">
+	            AND (
+	              <foreach collection="field.fieldValues" item="value" separator=" OR ">
+	                ${field.fieldName} LIKE CONCAT('%\"', #{value}, '\"%')
+	              </foreach>
+	            )
+	          </if>
+	          
+	        </trim>
+	      </foreach>
+	    </if>
+	  </where>
+	  
+	  ORDER BY
+		  <if test="orderByClause != null and orderByClause != ''">
+		    ${orderByClause},
+		  </if>
+	  rgst_dtm
+	</select>
+
+  <delete id="deleteTableData">
+    DELETE FROM ${tableName}
+    WHERE
+    <foreach collection='columnPrimaryKeys' index='key' item='value' separator=" AND ">
+    ${key} = #{value}
+    </foreach>
+  </delete>
+
+  <update id="updateTableData">
+    UPDATE ${tableName}
+    <set>
+    <foreach collection='columnData' index='key' item='value' separator=",">
+    ${key} = #{value}
+    </foreach>
+    , upd_user = #{updUser}
+    , upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE
+    <foreach collection='columnPrimaryKeys' index='key' item='value' separator=" AND ">
+    ${key} = #{value}
+    </foreach>
+  </update>
+
+  <insert id="insertTableData">
+    INSERT INTO ${tableName}
+    <trim prefix='(' suffix=')' suffixOverrides=",">
+    <foreach collection='columnPrimaryKeys' index='key' item='value' separator=",">
+    ${key}
+    </foreach>
+    ,
+    <foreach collection='columnData' index='key' item='value' separator=",">
+    ${key}
+    </foreach>
+    , rgst_user
+    , rgst_dtm
+    , upd_user
+    , upd_dtm
+    </trim>
+    VALUES
+    <trim prefix='(' suffix=')' suffixOverrides=",">
+    <foreach collection='columnPrimaryKeys'  index='key' item='value' separator=",">
+    #{value}
+    </foreach>
+    ,
+    <foreach collection='columnData' index='item' item='value' separator=",">
+    #{value}
+    </foreach>
+    , #{rgstUser}
+    , CURRENT_TIMESTAMP
+    , #{updUser}
+    , CURRENT_TIMESTAMP
+    </trim>
+  </insert>
+
+
+	<select id="getColumnsByTables" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.TableColumnDto">
+	    SELECT
+	        table_name AS tableName
+	        , column_name AS columnName
+	        , column_type AS columnType
+	        , comm_group_code AS commGroupCode
+	        , attr_max_length AS attrMaxLength
+	        , column_key_yn AS columnKeyYn
+	        , required_yn AS requiredYn
+	        , column_comment AS columnComment
+	        , sort_no AS sortNo
+	        , use_yn AS useYn
+	    FROM
+	        tb_table_column_m
+	    WHERE
+	        table_name IN
+	        <foreach collection="targetTableNames" item="name" open="(" separator="," close=")">
+	            #{name}
+	        </foreach>
+	        AND sort_no IN (1, 2)
+	    ORDER BY
+	        sort_no DESC
+	</select>
+
+	<select id="getTableColumnKeyValues" resultType="com.lgcns.svcp.prod.ui.prod.dto.admin.table.ref.TableColumnKeyValue">
+		SELECT
+	        #{tableName} AS tableName
+	        , ${cmcdDetlId} AS cmcdDetlId
+	        , ${cmcdDetlNm} AS cmcdDetlNm
+	    FROM
+	        ${tableName}
+	</select>
+</mapper>

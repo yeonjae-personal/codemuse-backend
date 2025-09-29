@@ -1,0 +1,694 @@
+INFO:     Will watch for changes in these directories: ['/Users/roseline/projects/codemuse-backend']
+INFO:     Uvicorn running on http://0.0.0.0:8004 (Press CTRL+C to quit)
+INFO:     Started reloader process [90699] using WatchFiles
+INFO:     Started server process [90717]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:59747 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90717]
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Started server process [96153]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96153]
+INFO:     Started server process [96284]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96284]
+INFO:     Started server process [98498]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98498]
+INFO:     Started server process [98875]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98875]
+INFO:     Started server process [421]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [421]
+INFO:     Started server process [1446]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1446]
+INFO:     Started server process [1976]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1976]
+INFO:     Started server process [2367]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2367]
+INFO:     Started server process [2561]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2561]
+INFO:     Started server process [3815]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3815]
+INFO:     Started server process [5564]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5564]
+INFO:     Started server process [5661]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5661]
+INFO:     Started server process [5725]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/llm_chat_service/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5725]
+INFO:     Started server process [6945]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:50432 - "OPTIONS /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50432 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50432 - "GET /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50439 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 46자
+INFO:     127.0.0.1:50439 - "POST /api/v1/chat/sessions/40f344aa-8943-4708-8d62-09a3057735ad/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50456 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 499자
+INFO:     127.0.0.1:50456 - "POST /api/v1/chat/sessions/e068301d-79fc-4375-ae96-5ff914b047c6/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6945]
+INFO:     Started server process [12506]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12506]
+INFO:     Started server process [12727]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12727]
+INFO:     Started server process [13070]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51975 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 94자
+INFO:     127.0.0.1:51977 - "POST /api/v1/chat/sessions/3435dd43-aa1f-4a86-8909-d558bfe97386/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52751 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 42자
+INFO:     127.0.0.1:52751 - "POST /api/v1/chat/sessions/21b3977a-2a6f-4ece-b9a3-7cb11a9b6c2a/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52782 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+❌ OpenAI API 호출 실패: Connection error.
+INFO:     127.0.0.1:52782 - "POST /api/v1/chat/sessions/c58d6b1d-a84c-4bd2-abf0-bd0d086e94a6/messages HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:53751 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 46자
+INFO:     127.0.0.1:53751 - "POST /api/v1/chat/sessions/1ce4503d-0e90-4d11-8bf0-51fe2458761e/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53781 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 217자
+INFO:     127.0.0.1:53781 - "POST /api/v1/chat/sessions/c4aaef26-6867-4c0d-b518-376ddbe3cdab/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [13070]
+INFO:     Started server process [94807]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [94807]
+INFO:     Started server process [95092]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95092]
+INFO:     Started server process [95469]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95469]
+INFO:     Started server process [95577]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55922 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58672 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+❌ OpenAI API 호출 실패: Connection error.
+INFO:     127.0.0.1:58672 - "POST /api/v1/chat/sessions/dd540e4d-f3dc-46a2-84f0-d0bcde0ffaef/messages HTTP/1.1" 502 Bad Gateway
+INFO:     127.0.0.1:58819 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+❌ OpenAI API 호출 실패: Connection error.
+INFO:     127.0.0.1:58819 - "POST /api/v1/chat/sessions/6e245f30-ef28-461c-9690-300655516f9c/messages HTTP/1.1" 502 Bad Gateway
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95577]
+INFO:     Started server process [46212]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46212]
+INFO:     Started server process [46320]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:55835 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 46자
+INFO:     127.0.0.1:55835 - "POST /api/v1/chat/sessions/f5e5bded-4fca-4ef6-9af2-776c0051588f/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55862 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 471자
+INFO:     127.0.0.1:55862 - "POST /api/v1/chat/sessions/327024e4-f134-4329-8693-6d86fa248c57/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46320]
+INFO:     Started server process [50840]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [50840]
+INFO:     Started server process [66179]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [66179]
+INFO:     Started server process [77657]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [77657]
+INFO:     Started server process [77774]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [77774]
+INFO:     Started server process [79081]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [79081]
+INFO:     Started server process [80057]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [80057]
+INFO:     Started server process [80194]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [80194]
+INFO:     Started server process [82227]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:51156 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 46자
+INFO:     127.0.0.1:51156 - "POST /api/v1/chat/sessions/0598474a-528b-4162-83ab-25f820520350/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51180 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 375자
+INFO:     127.0.0.1:51180 - "POST /api/v1/chat/sessions/cd628964-fc80-4450-ac8f-75563b21ef31/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51227 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 647자
+INFO:     127.0.0.1:51227 - "POST /api/v1/chat/sessions/dea90e10-efca-4d42-a98a-4a0642c6a408/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52090 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 48자
+INFO:     127.0.0.1:52090 - "POST /api/v1/chat/sessions/9d6aff2b-01fb-4577-be1b-58f04424c517/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52109 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 376자
+INFO:     127.0.0.1:52109 - "POST /api/v1/chat/sessions/e573a1fb-4b7c-4b00-80cb-94f81072fe7b/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52146 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 708자
+INFO:     127.0.0.1:52146 - "POST /api/v1/chat/sessions/d35fef95-ce64-44b6-94ce-b0fc06ac1f83/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py', 'src/rag_engine/app.py', 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [82227]
+INFO:     Started server process [86736]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [86736]
+INFO:     Started server process [86942]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52461 - "OPTIONS /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52461 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52461 - "GET /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52468 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 57자
+INFO:     127.0.0.1:52468 - "POST /api/v1/chat/sessions/59f4f342-205e-4b94-bb2a-0aa8713353a9/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52492 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 273자
+INFO:     127.0.0.1:52492 - "POST /api/v1/chat/sessions/1d44c876-ef9a-473d-8433-de2f246f1081/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52530 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 432자
+INFO:     127.0.0.1:52530 - "POST /api/v1/chat/sessions/0b0f074f-9453-42ee-b0d5-1b2d09e986f5/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53213 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 32자
+INFO:     127.0.0.1:53213 - "POST /api/v1/chat/sessions/39f819c1-df4f-4dce-8055-5c1755f21a28/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53227 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 368자
+INFO:     127.0.0.1:53227 - "POST /api/v1/chat/sessions/6659bef5-3ad7-4d08-b455-1b0bd66fae1f/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53272 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 703자
+INFO:     127.0.0.1:53272 - "POST /api/v1/chat/sessions/c4636120-012e-4d0a-b8e7-27eb09d4f796/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [86942]
+INFO:     Started server process [90039]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53571 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 57자
+INFO:     127.0.0.1:53571 - "POST /api/v1/chat/sessions/0b3239fb-8536-4afe-b1e9-01768a991ada/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53595 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 257자
+INFO:     127.0.0.1:53595 - "POST /api/v1/chat/sessions/8ac61543-14ca-4d18-9c9d-e28fcf476a53/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53632 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 498자
+INFO:     127.0.0.1:53632 - "POST /api/v1/chat/sessions/2968e184-85f3-473f-910a-4bec9fe3aa0a/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90039]
+INFO:     Started server process [90829]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:53780 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 35자
+INFO:     127.0.0.1:53780 - "POST /api/v1/chat/sessions/a71d8e63-4305-44c1-8b96-84e773276035/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53809 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 261자
+INFO:     127.0.0.1:53809 - "POST /api/v1/chat/sessions/aebea6a7-291a-4611-b6e0-14772266064e/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53840 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 610자
+INFO:     127.0.0.1:53840 - "POST /api/v1/chat/sessions/ac5923d9-0aa4-4b99-b26f-f393baa96f89/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/chunk_workflow_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90829]
+INFO:     Started server process [91353]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:54349 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 99자
+INFO:     127.0.0.1:54349 - "POST /api/v1/chat/sessions/1b5b8718-ad18-4fff-8013-abcb8cc92e6b/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54384 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 352자
+INFO:     127.0.0.1:54384 - "POST /api/v1/chat/sessions/db8e17e7-035c-4961-b9e2-b3e72c6ccf5a/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54419 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 760자
+INFO:     127.0.0.1:54419 - "POST /api/v1/chat/sessions/99ed6a0b-7dc3-43c0-9092-6edf5f65bf38/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [91353]
+INFO:     Started server process [29809]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29809]
+INFO:     Started server process [29986]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29986]
+INFO:     Started server process [30335]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/ast_chunker.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30335]
+INFO:     Started server process [33440]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [33440]
+INFO:     Started server process [97472]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97472]
+INFO:     Started server process [97736]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py', 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97736]
+INFO:     Started server process [98087]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py', 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98087]
+INFO:     Started server process [98177]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [98177]
+INFO:     Started server process [99745]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [99745]
+INFO:     Started server process [6442]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57060 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 39자
+INFO:     127.0.0.1:57060 - "POST /api/v1/chat/sessions/919a5002-8b6a-42fa-a57a-e6850238a124/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57080 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 356자
+INFO:     127.0.0.1:57080 - "POST /api/v1/chat/sessions/b021576c-977a-4e79-955c-470ed966615f/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57124 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 561자
+INFO:     127.0.0.1:57124 - "POST /api/v1/chat/sessions/aad109b5-8a8f-460c-9108-7d36098b906c/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57194 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 68자
+INFO:     127.0.0.1:57194 - "POST /api/v1/chat/sessions/1d140cc6-30c6-4eec-9c8e-d934dcad80a6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57210 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 385자
+INFO:     127.0.0.1:57210 - "POST /api/v1/chat/sessions/fc784699-3116-479a-8104-fdb134898df8/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57260 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 812자
+INFO:     127.0.0.1:57260 - "POST /api/v1/chat/sessions/08502a0a-753f-4533-b5fc-c2aa37fcefab/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57352 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 38자
+INFO:     127.0.0.1:57352 - "POST /api/v1/chat/sessions/474cfdeb-de5a-4823-8edc-f1941cdc678e/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57368 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 321자
+INFO:     127.0.0.1:57368 - "POST /api/v1/chat/sessions/24c1dd47-ffd2-4925-ae56-7e127ef10f44/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57421 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 845자
+INFO:     127.0.0.1:57421 - "POST /api/v1/chat/sessions/b2ab2e7a-6e48-401d-b42c-eba12c564cdf/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_chunk_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6442]
+INFO:     Started server process [12655]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58374 - "OPTIONS /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58374 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58374 - "GET /api/v1/chat/sessions HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58378 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 72자
+INFO:     127.0.0.1:58378 - "POST /api/v1/chat/sessions/5243521b-e698-46d3-9ba8-1d92d3f5b2c6/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58408 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 320자
+INFO:     127.0.0.1:58408 - "POST /api/v1/chat/sessions/50e40285-ee6d-4a36-8b2c-93688cbfc6b9/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58454 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 555자
+INFO:     127.0.0.1:58454 - "POST /api/v1/chat/sessions/dc4027e4-3553-4702-af55-7f7ea8c3d0e2/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60607 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 42자
+INFO:     127.0.0.1:60607 - "POST /api/v1/chat/sessions/c305e669-6c95-44ca-964f-39f91dadb287/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60631 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 339자
+INFO:     127.0.0.1:60631 - "POST /api/v1/chat/sessions/a082b0ec-a325-4709-a02f-1b9ee4c02180/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60680 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 664자
+INFO:     127.0.0.1:60680 - "POST /api/v1/chat/sessions/6d36f632-a336-4701-a492-330418cafb8f/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60742 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 71자
+INFO:     127.0.0.1:60742 - "POST /api/v1/chat/sessions/53a06581-377a-456d-948b-837ad0f7ad09/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60763 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 348자
+INFO:     127.0.0.1:60763 - "POST /api/v1/chat/sessions/12f9a821-b27a-484a-89ae-2f7645076bff/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60804 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 625자
+INFO:     127.0.0.1:60804 - "POST /api/v1/chat/sessions/9a35f252-ec10-4313-bcad-34c27f9d6534/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60911 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 74자
+INFO:     127.0.0.1:60911 - "POST /api/v1/chat/sessions/cbcd1c84-a024-4b47-ae37-1a3d8af97a0f/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60939 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 372자
+INFO:     127.0.0.1:60939 - "POST /api/v1/chat/sessions/5b65c23e-ccc0-48a5-a216-061e66f29c69/messages HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60981 - "POST /api/v1/chat/sessions HTTP/1.1" 200 OK
+🔍 OpenAI API 호출 시작: model=gpt-4, messages=2개
+✅ OpenAI API 호출 성공
+✅ 응답 생성 완료: 646자
+INFO:     127.0.0.1:60981 - "POST /api/v1/chat/sessions/a6b1f39a-c315-43c0-b07b-5d1fc97a6b75/messages HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [12655]
+INFO:     Started server process [23240]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23240]
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Started server process [26950]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26950]
+INFO:     Started server process [50281]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'src/chunker_document_generator/core/template_renderer.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [50281]
+INFO:     Started server process [52565]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [52565]
+INFO:     Stopping reloader process [90699]

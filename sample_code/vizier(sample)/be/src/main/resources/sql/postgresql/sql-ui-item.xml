@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Ui-item">
+
+  <insert id="insertItemMapping">
+     INSERT INTO tb_item_mpng_d (
+        obj_uuid,
+        obj_code,
+        obj_name,
+        item_code,
+        valid_start_dtm,
+        valid_end_dtm,
+        dplc_trgt_uuid,
+        chg_dept_name,
+        chg_user,
+        ovw_cntn,
+        rgst_user,
+        rgst_dtm,
+        upd_user,
+        upd_dtm
+    )
+    VALUES (
+        #{objUuid},
+        #{objCode},
+        #{objName},
+        #{itemCode},
+        <choose>
+            <when test="validStartDtm != null">
+                #{validStartDtm}::TIMESTAMP
+            </when>
+            <otherwise>
+                CURRENT_TIMESTAMP
+            </otherwise>
+        </choose>,
+        #{validEndDtm}::TIMESTAMP,
+        #{dplcTrgtUuid},
+        #{chgDeptName},
+        #{chgUser},
+        #{ovwCntn},
+        #{rgstUser},
+        CURRENT_TIMESTAMP,
+        #{updUser},
+        CURRENT_TIMESTAMP
+    );
+  </insert>
+
+  <update id="updateItemMapping">
+    UPDATE tb_item_mpng_d
+    <set>
+        obj_name = #{objName},
+        valid_end_dtm = #{validEndDtm}::TIMESTAMP,
+        ovw_cntn = #{ovwCntn},
+        upd_user = #{updUser},
+        upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE obj_uuid = #{objUuid}
+  </update>
+
+  <select id="retrieveItemCodeInfoByUuid" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.ItemCodeInfo">
+    SELECT
+    a.obj_uuid
+    , b.item_code
+    , b.mctgr_item_code
+    , b.lctgr_item_code
+    FROM tb_item_mpng_d a
+    JOIN tb_item_c b ON a.item_code = b.item_code
+    WHERE
+    a.obj_uuid  = #{objUuid}
+  </select>
+
+  <select id="getMiddleItem" resultType="com.lgcns.svcp.prod.entity.MiddleItemEntity">
+    SELECT
+    tic.lctgr_item_code, tic.mctgr_item_code
+    ,tic.item_code, tic.item_code_name, tic.sort_no
+    ,tic.rgst_user, tic.rgst_dtm, tic.upd_user, tic.upd_dtm
+    FROM tb_item_c tic
+    WHERE 1 = 1
+    <if test="largeItemCode != null">
+    AND lctgr_item_code = #{largeItemCode}
+    </if>
+    <if test="itemCode != null">
+    AND item_code = #{itemCode}
+    </if>
+    and tic.use_yn = 'Y'
+    order by tic.sort_no asc
+  </select>
+  
+  <select id="getItemByItemCode" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    SELECT
+    tic.lctgr_item_code, tic.mctgr_item_code
+    ,tic.item_code, tic.item_code_name as item_name, tic.sort_no
+    ,tic.rgst_user, tic.rgst_dtm, tic.upd_user, tic.upd_dtm
+    FROM tb_item_c tic
+    WHERE tic.item_code = #{itemCode} and tic.use_yn = 'Y'
+   </select>
+
+  <select id="getLargeItem" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.LargeItemDto">
+    SELECT
+    tlic.lctgr_item_code as code, tlic.lctgr_item_name as name
+    FROM tb_lctgr_item_c tlic
+  </select>
+
+  <select id="getLargeItemByCode" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.LargeItemDto">
+    SELECT
+    tlic.lctgr_item_code as code, tlic.lctgr_item_name as name, tlic.sort_no
+    FROM tb_lctgr_item_c tlic where tlic.lctgr_item_code = #{code}
+  </select>
+
+  <select id="retrieveGenerals" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.metadata.GeneralDetailDto">
+    SELECT
+    a.col_name
+    , a.field_type_code
+    , a.edit_yn
+    , a.sort_no
+    , a.use_yn
+    , a.attr_max_length
+    , a.required_yn
+    , a.label_id
+    , CASE a.col_name
+    WHEN 'item_code' THEN b.item_code
+    WHEN 'obj_code' THEN b.obj_code
+    WHEN 'obj_name' THEN b.obj_name
+    WHEN 'valid_end_dtm' THEN TO_CHAR(b.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS')
+    WHEN 'ovw_cntn' THEN b.ovw_cntn
+    WHEN 'chg_dept_name' THEN b.chg_dept_name
+    WHEN 'chg_user' THEN b.chg_user
+    ELSE null
+    END AS attr_val
+    , c.label_name
+    , b.obj_uuid
+    FROM tb_gnrl_attr_header_m a
+    LEFT JOIN tb_item_mpng_d b ON b.obj_uuid IN
+    <foreach item='uuid' collection='objUuids' open='(' separator=',' close=")">
+    #{uuid}
+    </foreach>
+    LEFT JOIN tb_multi_lang_label_m c ON a.label_id = c.label_id AND c.lang_code = COALESCE(#{langCode}, 'en')
+    WHERE
+    a.use_yn = 'Y'
+  </select>
+
+  <select id="retrieveGeneral" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.metadata.GeneralDetailDto">
+    SELECT
+    a.col_name
+    , a.field_type_code
+    , a.edit_yn
+    , a.sort_no
+    , a.use_yn
+    , a.attr_max_length
+    , a.required_yn
+    , a.label_id
+    , CASE a.col_name
+    <if test="itemCode != null">
+    WHEN 'item_code' THEN #{itemCode}
+    </if>
+    <if test="itemCode == null">
+    WHEN 'item_code' THEN b.item_code
+    </if>
+    WHEN 'obj_code' THEN b.obj_code
+    WHEN 'obj_name' THEN b.obj_name
+    WHEN 'valid_end_dtm' THEN TO_CHAR(b.valid_end_dtm, 'YYYY-MM-DD HH24:MI:SS')
+    WHEN 'ovw_cntn' THEN b.ovw_cntn
+    WHEN 'chg_dept_name' THEN b.chg_dept_name
+    WHEN 'chg_user' THEN b.chg_user
+    ELSE null
+    END AS attr_val
+    , c.label_name, c.label_dscr
+    FROM tb_gnrl_attr_header_m a
+    LEFT JOIN tb_item_mpng_d b ON b.obj_uuid = #{objUuid}
+    LEFT JOIN tb_multi_lang_label_m c ON a.label_id = c.label_id AND c.lang_code = COALESCE(#{langCode}, 'en')
+    WHERE
+    a.use_yn = 'Y'
+    UNION
+    SELECT
+    'item_large_code' AS col_name
+    , 'HD' AS field_type_code
+    , 'N' AS edit_yn
+    , '0' AS sort_no
+    , null AS use_yn
+    , null AS attr_max_length
+    , 'Y' AS required_yn
+    , 'type' AS label_id
+    , b.mctgr_item_code  AS attr_val
+    , null AS label_name, null AS label_dscr
+    FROM tb_item_mpng_d a
+    RIGHT JOIN tb_item_c b ON a.item_code = b.item_code
+    WHERE
+    a.obj_uuid = #{objUuid}
+    OR b.item_code = #{itemCode}
+    <if test="objUuid != null">
+    UNION
+    SELECT
+    'obj_uuid' AS col_name
+    , 'HD' AS field_type_code
+    , null AS edit_yn
+    , '0' AS sort_no
+    , null AS use_yn
+    , null AS attr_max_length
+    , null AS required_yn
+    , null AS label_id
+    , a.obj_uuid  AS attr_val
+    , null AS label_name, null AS label_dscr
+    FROM tb_item_mpng_d a
+    WHERE
+    a.obj_uuid = #{objUuid}
+    UNION
+    SELECT
+    'rgst_dtm' AS col_name
+    , 'HD' AS field_type_code
+    , null AS edit_yn
+    , '0' AS sort_no
+    , null AS use_yn
+    , null AS attr_max_length
+    , null AS required_yn
+    , null AS label_id
+    , TO_CHAR(a.rgst_dtm, 'YYYY-MM-DD HH24:MI:SS')  AS attr_val
+    , null AS label_name, null AS label_dscr
+    FROM tb_item_mpng_d a
+    WHERE
+    a.obj_uuid = #{objUuid}
+    UNION
+    SELECT
+    'item_code_name' AS col_name
+    , 'HD' AS field_type_code
+    , null AS edit_yn
+    , '0' AS sort_no
+    , null AS use_yn
+    , null AS attr_max_length
+    , null AS required_yn
+    , null AS label_id
+    , b.item_code_name  AS attr_val
+    , null AS label_name, null AS label_dscr
+    FROM tb_item_mpng_d a
+    JOIN tb_item_c b ON a.item_code = b.item_code
+    WHERE
+    a.obj_uuid = #{objUuid}
+    </if>
+    <if test="itemCode != null">
+    UNION
+    SELECT
+    'item_code_name' AS col_name
+    , 'HD' AS field_type_code
+    , null AS edit_yn
+    , '0' AS sort_no
+    , null AS use_yn
+    , null AS attr_max_length
+    , null AS required_yn
+    , null AS label_id
+    , a.item_code_name  AS attr_val
+    , null AS label_name, null AS label_dscr
+    FROM tb_item_c a
+    WHERE
+    a.item_code = #{itemCode}
+    </if>
+    ORDER BY
+    sort_no
+  </select>
+
+  <select id="retrieveAdditional" resultType="com.lgcns.svcp.prod.ui.prod.dto.common.metadata.AdditionalDetailDto">
+    SELECT
+    a.attr_uuid
+    , a.item_code
+    , a.field_type_code
+    , a.comm_group_code
+    , a.attr_ref_table_name
+    , a.sort_no
+    , a.use_yn
+    , a.attr_max_length
+    , a.required_yn
+    , a.label_id
+    , a.disp_tab
+    , a.adv_search_yn
+    , a.rgst_user
+    , a.rgst_dtm
+    , a.upd_user
+    , a.upd_dtm
+    , b.label_name
+    , b.label_dscr
+    FROM tb_add_attr_header_m a
+    LEFT JOIN tb_multi_lang_label_m b ON a.label_id = b.label_id AND b.lang_code = COALESCE(#{langCode}, 'en')
+    WHERE
+    a.use_yn = 'Y'
+    AND  a.item_code = #{itemCode}
+    ORDER BY
+    a.sort_no
+  </select>
+
+  <select id="getListAttributeInAdmin" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    select t1.lctgr_item_code as large_item_code, t3.lctgr_item_name as large_item_name, t3.sort_no as large_sort_no,
+    t2.mctgr_item_code as middle_item_code, t2.mctgr_item_name as middle_item_name, t2.sort_no as middle_sort_no,
+    t1.item_code, t1.item_code_name as item_name, t1.use_yn, t1.sort_no
+    FROM tb_item_c t1
+    inner join tb_mctgr_item_c t2 on t1.mctgr_item_code = t2.mctgr_item_code
+    inner join tb_lctgr_item_c t3 on t1.lctgr_item_code = t3.lctgr_item_code
+  </select>
+
+  <select id="getItemGeneralAttribute" resultType="com.lgcns.svcp.prod.ui.prod.dto.attribute.AttributeGeneralDto">
+    select t2.lctgr_item_code as large_item_code, t2.lctgr_item_name as large_item_name,
+    t3.mctgr_item_code as middle_item_code, t3.mctgr_item_name as middle_item_name,
+    t1.item_code, t1.item_code_name as item_name, t1.use_yn, t1.sort_no
+    FROM tb_item_c t1
+    inner join tb_lctgr_item_c t2 on t1.lctgr_item_code = t2.lctgr_item_code
+    inner join tb_mctgr_item_c t3 on t3.mctgr_item_code = t1.mctgr_item_code
+    where t1.item_code = #{itemCode}
+  </select>
+
+  <select id="getUpperOrLowerItems" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    SELECT
+    t.item_code
+    , t.item_code_name as item_name
+    FROM tb_item_c t
+    WHERE t.lctgr_item_code = #{code} and t.use_yn = 'Y'
+  </select>
+
+  <insert id="insert">
+    INSERT INTO tb_item_c
+    (lctgr_item_code, mctgr_item_code, item_code, item_code_name, use_yn, sort_no, rgst_user, rgst_dtm, upd_user, upd_dtm)
+    VALUES (#{lctgrItemCode}, #{mctgrItemCode}, #{itemCode}, #{itemCodeName}, #{useYn}, #{sortNo}, #{rgstUser}, CURRENT_TIMESTAMP, #{updUser}, CURRENT_TIMESTAMP)
+  </insert>
+
+  <update id="update">
+    UPDATE tb_item_c
+    <set>
+    lctgr_item_code = #{lctgrItemCode},
+    mctgr_item_code = #{mctgrItemCode},
+    item_code = #{itemCode},
+    item_code_name = #{itemCodeName},
+    use_yn = #{useYn},
+    upd_user = #{updUser},
+    upd_dtm = CURRENT_TIMESTAMP
+    </set>
+    WHERE lctgr_item_code = #{lctgrItemCode} and mctgr_item_code = #{mctgrItemCode} and item_code = #{itemCode}
+  </update>
+
+  <select id="getMiddleItemIgnoreComponent" resultType="com.lgcns.svcp.prod.ui.prod.dto.item.Item">
+    SELECT t.mctgr_item_code as item_code, t.mctgr_item_name as item_name
+    FROM tb_mctgr_item_c t
+    WHERE lctgr_item_code = #{largeItemCode}
+  </select>
+
+  <select id="findMaxItemSortNo" resultType="int">
+    SELECT t.sort_no
+    FROM tb_item_c t where t.lctgr_item_code = #{largeItemCode} and t.mctgr_item_code = #{middleItemCode}
+    order by t.sort_no DESC
+  </select>
+
+  <select id="countByItem" resultType="int">
+    SELECT t.sort_no
+    FROM tb_item_c t where t.lctgr_item_code = #{largeItemCode} and t.mctgr_item_code = #{middleItemCode}
+    order by t.sort_no DESC
+  </select>
+
+  <select id="checkExistItemCode" resultType="int">
+    SELECT count(*)
+    FROM tb_item_c t where lower(item_code) = #{itemCode}
+  </select>
+
+  <select id="checkExistItemName" resultType="int">
+    SELECT count(*)
+    FROM tb_item_c t where lower(item_code_name) = #{itemName}
+  </select>
+
+</mapper>
