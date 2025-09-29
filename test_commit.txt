@@ -1,2 +1,0 @@
-# Test commit for automation script removal
-# Second test commit after hook removal
