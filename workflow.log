@@ -597,3 +597,1465 @@ INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 
 INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
 INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
 INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 어떤 오류에 대해서 분석하나요?
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 어떤 오류에 대해서 분석하나요?
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 어떤 오류에 대해서 분석하나요?
+✅ 1단계 완료 [⏱️ 1.25초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 어떤 오류에 대해서 분석하나요?
+   추출된 키워드: ['오류', '분석']
+✅ 2단계 완료 [⏱️ 1.34초]
+🎯 하드코딩된 질문 감지: 어떤 오류에 대해서 분석하나요?
+✅ 하드코딩 문서 사용: project_summary.md
+✅ 3단계 완료 [⏱️ 0.00초] - 1개 결과
+🎯 하드코딩된 문서 - 품질 검토 건너뛰기
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 1.00
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 어떤 오류에 대해서 분석하나요?
+   참조 문서: 1개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 자동 생성 완료!
+   생성된 응답 길이: 869자
+✅ 5단계 완료 [⏱️ 6.79초]
+🎯 워크플로우 완료 [⏱️ 총 9.38초]
+   단계별 시간:
+     1. 표준화: 1.25초 (13.4%)
+     2. 키워드: 1.34초 (14.3%)
+     3. 검색: 0.00초 (0.0%)
+     4. 검토: 0.00초 (0.0%)
+     5. 응답: 6.79초 (72.3%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까요?
+✅ 1단계 완료 [⏱️ 0.92초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까요?
+   추출된 키워드: ['타입 불일치', '검출 로직', '수정', '클래스명', '메서드명', '로직 수정', '탐색', '데이터 유형']
+✅ 2단계 완료 [⏱️ 0.93초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까요?
+   키워드: ['타입 불일치', '검출 로직', '수정', '클래스명', '메서드명', '로직 수정', '탐색', '데이터 유형']
+   검색 전략: general
+   구체적 메서드 검색: 타입 불일치 검출 로직 수정
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 7개 문서
+✅ 3단계 완료 [⏱️ 8.42초] - 7개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 7개 문서
+   품질 점수: 0.36
+✅ 품질 점수: 0.36 (통과)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   개선된 결과: 7개 문서
+✅ 4단계 완료 [⏱️ 2.17초] - 품질 점수: 0.36
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   참조 문서: 7개
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 자동 생성 완료!
+   생성된 응답 길이: 1371자
+✅ 5단계 완료 [⏱️ 2.44초]
+🎯 워크플로우 완료 [⏱️ 총 14.89초]
+   단계별 시간:
+     1. 표준화: 0.92초 (6.2%)
+     2. 키워드: 0.93초 (6.3%)
+     3. 검색: 8.42초 (56.6%)
+     4. 검토: 2.17초 (14.6%)
+     5. 응답: 2.44초 (16.4%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+✅ 1단계 완료 [⏱️ 1.17초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   추출된 키워드: ['타입 불일치', '로직', '수정', '검출', '클래스명', '메서드명', '코드', '키워드']
+✅ 2단계 완료 [⏱️ 1.41초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   키워드: ['타입 불일치', '로직', '수정', '검출', '클래스명', '메서드명', '코드', '키워드']
+   검색 전략: general
+   구체적 메서드 검색: 타입 불일치 로직 수정
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 7개 문서
+✅ 3단계 완료 [⏱️ 9.11초] - 7개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 7개 문서
+   품질 점수: 0.36
+✅ 품질 점수: 0.36 (통과)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   개선된 결과: 7개 문서
+✅ 4단계 완료 [⏱️ 3.00초] - 품질 점수: 0.36
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   참조 문서: 7개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 자동 생성 완료!
+   생성된 응답 길이: 1997자
+✅ 5단계 완료 [⏱️ 4.70초]
+🎯 워크플로우 완료 [⏱️ 총 19.38초]
+   단계별 시간:
+     1. 표준화: 1.17초 (6.0%)
+     2. 키워드: 1.41초 (7.3%)
+     3. 검색: 9.11초 (47.0%)
+     4. 검토: 3.00초 (15.5%)
+     5. 응답: 4.70초 (24.2%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 어떤 오류에 대해서 분석하나요?
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 어떤 오류에 대해서 분석하나요?
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 어떤 오류에 대해서 분석하나요?
+✅ 1단계 완료 [⏱️ 1.43초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 어떤 오류에 대해서 분석하나요?
+   추출된 키워드: ['오류', '분석']
+✅ 2단계 완료 [⏱️ 0.95초]
+🎯 하드코딩된 질문 감지: 어떤 오류에 대해서 분석하나요?
+✅ 하드코딩 문서 사용: project_summary.md
+✅ 3단계 완료 [⏱️ 0.01초] - 1개 결과
+🎯 하드코딩된 문서 - 품질 검토 건너뛰기
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 1.00
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 어떤 오류에 대해서 분석하나요?
+   참조 문서: 1개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 자동 생성 완료!
+   생성된 응답 길이: 941자
+✅ 5단계 완료 [⏱️ 6.26초]
+🎯 워크플로우 완료 [⏱️ 총 8.65초]
+   단계별 시간:
+     1. 표준화: 1.43초 (16.6%)
+     2. 키워드: 0.95초 (10.9%)
+     3. 검색: 0.01초 (0.1%)
+     4. 검토: 0.00초 (0.0%)
+     5. 응답: 6.26초 (72.4%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+✅ 1단계 완료 [⏱️ 0.77초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   추출된 키워드: ['타입 불일치', '검출', '로직', '수정', '클래스명', '메서드명', '타입 검출', '수정']
+✅ 2단계 완료 [⏱️ 2.27초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   키워드: ['타입 불일치', '검출', '로직', '수정', '클래스명', '메서드명', '타입 검출', '수정']
+   검색 전략: general
+   구체적 메서드 검색: 타입 불일치 검출 로직
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 7개 문서
+✅ 3단계 완료 [⏱️ 8.02초] - 7개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 7개 문서
+   품질 점수: 0.36
+✅ 품질 점수: 0.36 (통과)
+   개선된 결과: 7개 문서
+✅ 4단계 완료 [⏱️ 1.92초] - 품질 점수: 0.36
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   참조 문서: 7개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 자동 생성 완료!
+   생성된 응답 길이: 1471자
+✅ 5단계 완료 [⏱️ 4.82초]
+🎯 워크플로우 완료 [⏱️ 총 17.79초]
+   단계별 시간:
+     1. 표준화: 0.77초 (4.3%)
+     2. 키워드: 2.27초 (12.8%)
+     3. 검색: 8.02초 (45.1%)
+     4. 검토: 1.92초 (10.8%)
+     5. 응답: 4.82초 (27.1%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [90753]
+INFO:     Started server process [95488]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95488]
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Started server process [95646]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95646]
+INFO:     Started server process [95676]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54302 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   모델: gpt-4o-mini
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지? 관련 파일명과 메서드명: "condition_analyzer.py", "_analyze_conditions".
+✅ 1단계 완료 [⏱️ 2.09초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지? 관련 파일명과 메서드명: "condition_analyzer.py", "_analyze_conditions".
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   추출된 키워드: ['_analyze_conditions', 'condition_analyzer.py', '타입 불일치', '검출 로직', '수정']
+✅ 2단계 완료 [⏱️ 1.68초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지? 관련 파일명과 메서드명: "condition_analyzer.py", "_analyze_conditions".
+   키워드: ['_analyze_conditions', 'condition_analyzer.py', '타입 불일치', '검출 로직', '수정']
+   검색 전략: general
+   구체적 메서드 검색: _analyze_conditions condition_analyzer.py 타입 불일치
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 7개 문서
+✅ 3단계 완료 [⏱️ 7.25초] - 7개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 7개 문서
+   품질 점수: 0.33
+✅ 품질 점수: 0.33 (통과)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   개선된 결과: 7개 문서
+✅ 4단계 완료 [⏱️ 4.65초] - 품질 점수: 0.33
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   참조 문서: 7개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   생성된 응답 길이: 910자
+✅ 5단계 완료 [⏱️ 10.19초]
+🎯 워크플로우 완료 [⏱️ 총 25.86초]
+   단계별 시간:
+     1. 표준화: 2.09초 (8.1%)
+     2. 키워드: 1.68초 (6.5%)
+     3. 검색: 7.25초 (28.0%)
+     4. 검토: 4.65초 (18.0%)
+     5. 응답: 10.19초 (39.4%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+✅ 1단계 완료 [⏱️ 0.91초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   추출된 키워드: ['타입 불일치', '검출 로직', '수정', '클래스명', '메서드명', '타입 검출', '로직 수정', '타입 불일치 수정']
+✅ 2단계 완료 [⏱️ 0.85초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   키워드: ['타입 불일치', '검출 로직', '수정', '클래스명', '메서드명', '타입 검출', '로직 수정', '타입 불일치 수정']
+   검색 전략: general
+   구체적 메서드 검색: 타입 불일치 검출 로직 수정
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 7개 문서
+✅ 3단계 완료 [⏱️ 7.29초] - 7개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 7개 문서
+   품질 점수: 0.36
+✅ 품질 점수: 0.36 (통과)
+   개선된 결과: 7개 문서
+✅ 4단계 완료 [⏱️ 2.44초] - 품질 점수: 0.36
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   참조 문서: 7개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 자동 생성 완료!
+   생성된 응답 길이: 1366자
+✅ 5단계 완료 [⏱️ 3.39초]
+🎯 워크플로우 완료 [⏱️ 총 14.87초]
+   단계별 시간:
+     1. 표준화: 0.91초 (6.1%)
+     2. 키워드: 0.85초 (5.7%)
+     3. 검색: 7.29초 (49.0%)
+     4. 검토: 2.44초 (16.4%)
+     5. 응답: 3.39초 (22.8%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95676]
+INFO:     Started server process [96341]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96341]
+INFO:     Started server process [96398]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96398]
+INFO:     Started server process [96421]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 종속관계에 대해서 설명해줘
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 종속관계에 대해서 설명해줘
+📚 용어집 파일 로드 완료: 1303개 용어
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   표준화된 질문: 종속관계에 대해서 설명해주세요.
+✅ 1단계 완료 [⏱️ 1.27초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 종속관계에 대해서 설명해주세요.
+   추출된 키워드: ['종속관계', '클래스', '메서드', '파일', '상속', '의존성', '컴포넌트', '상호작용']
+✅ 2단계 완료 [⏱️ 0.96초]
+🎯 하드코딩된 질문 감지: 종속관계에 대해서 설명해주세요.
+✅ 하드코딩 문서 사용: vizier_dependency_relationships.md
+✅ 3단계 완료 [⏱️ 0.00초] - 1개 결과
+🎯 하드코딩된 문서 - 품질 검토 건너뛰기
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 1.00
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 종속관계에 대해서 설명해줘
+   참조 문서: 1개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+❌ 응답 생성 실패: invalid group reference 2 at position 6
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [96421]
+INFO:     Started server process [97097]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97097]
+INFO:     Started server process [97201]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97201]
+INFO:     Started server process [97245]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97245]
+INFO:     Started server process [97361]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56135 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   모델: gpt-4o-mini
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+📚 용어집 파일 로드 완료: 1303개 용어
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 구체적으로 어떤 파일과 메서드를 수정해야 하나?
+✅ 1단계 완료 [⏱️ 1.73초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 구체적으로 어떤 파일과 메서드를 수정해야 하나?
+   추출된 키워드: ['타입 불일치', '검출', '메서드', '파일', '수정', '로직', '구체적으로', '코드']
+✅ 2단계 완료 [⏱️ 1.37초]
+🎯 하드코딩된 질문 감지: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 구체적으로 어떤 파일과 메서드를 수정해야 하나?
+✅ 하드코딩 문서 사용: project_summary.md
+✅ 3단계 완료 [⏱️ 0.00초] - 1개 결과
+🎯 하드코딩된 문서 - 품질 검토 건너뛰기
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 1.00
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   참조 문서: 1개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 종속관계에 대해서 설명해줘
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 종속관계에 대해서 설명해줘
+📚 용어집 파일 로드 완료: 1303개 용어
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 정리 및 생성 완료!
+   생성된 응답 길이: 908자
+✅ 5단계 완료 [⏱️ 10.89초]
+🎯 워크플로우 완료 [⏱️ 총 13.98초]
+   단계별 시간:
+     1. 표준화: 1.73초 (12.4%)
+     2. 키워드: 1.37초 (9.8%)
+     3. 검색: 0.00초 (0.0%)
+     4. 검토: 0.00초 (0.0%)
+     5. 응답: 10.89초 (77.9%)
+   표준화된 질문: "종속관계"에 대해 설명해주세요.
+✅ 1단계 완료 [⏱️ 3.04초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: "종속관계"에 대해 설명해주세요.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   추출된 키워드: ['종속관계', '클래스', '메서드', '파일', '상속', '의존성', '인터페이스']
+✅ 2단계 완료 [⏱️ 1.12초]
+🎯 하드코딩된 질문 감지: "종속관계"에 대해 설명해주세요.
+✅ 하드코딩 문서 사용: vizier_dependency_relationships.md
+✅ 3단계 완료 [⏱️ 0.00초] - 1개 결과
+🎯 하드코딩된 문서 - 품질 검토 건너뛰기
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 1.00
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 종속관계에 대해서 설명해줘
+   참조 문서: 1개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 정리 및 생성 완료!
+   생성된 응답 길이: 860자
+✅ 5단계 완료 [⏱️ 3.22초]
+🎯 워크플로우 완료 [⏱️ 총 7.37초]
+   단계별 시간:
+     1. 표준화: 3.04초 (41.2%)
+     2. 키워드: 1.12초 (15.2%)
+     3. 검색: 0.00초 (0.0%)
+     4. 검토: 0.00초 (0.0%)
+     5. 응답: 3.22초 (43.6%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56325 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   모델: gpt-4o-mini
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+📚 용어집 파일 로드 완료: 1303개 용어
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나요? 구체적인 파일명과 메서드명은 무엇인가요?
+✅ 1단계 완료 [⏱️ 2.36초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나요? 구체적인 파일명과 메서드명은 무엇인가요?
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   추출된 키워드: ['타입 불일치', '검출', '로직', '파일명', '메서드명', '수정', '프레임워크', '기능']
+✅ 2단계 완료 [⏱️ 1.70초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나요? 구체적인 파일명과 메서드명은 무엇인가요?
+   키워드: ['타입 불일치', '검출', '로직', '파일명', '메서드명', '수정', '프레임워크', '기능']
+   검색 전략: overview
+   구체적 메서드 검색: 타입 불일치 검출 로직
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 7개 문서
+✅ 3단계 완료 [⏱️ 8.78초] - 7개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 7개 문서
+   품질 점수: 0.36
+✅ 품질 점수: 0.36 (통과)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   개선된 결과: 7개 문서
+✅ 4단계 완료 [⏱️ 4.58초] - 품질 점수: 0.36
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+   참조 문서: 7개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+✅ 링크 정리 및 생성 완료!
+   생성된 응답 길이: 729자
+✅ 5단계 완료 [⏱️ 8.93초]
+🎯 워크플로우 완료 [⏱️ 총 26.35초]
+   단계별 시간:
+     1. 표준화: 2.36초 (8.9%)
+     2. 키워드: 1.70초 (6.5%)
+     3. 검색: 8.78초 (33.3%)
+     4. 검토: 4.58초 (17.4%)
+     5. 응답: 8.93초 (33.9%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/workflow/services/modules/response_generator.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97361]
+INFO:     Started server process [97900]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 종속관계 관련 api와 테이블알려줘
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 종속관계 관련 api와 테이블알려줘
+📚 용어집 파일 로드 완료: 1303개 용어
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   표준화된 질문: 종속관계 관련 api와 테이블 알려줘
+✅ 1단계 완료 [⏱️ 0.93초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 종속관계 관련 api와 테이블 알려줘
+   추출된 키워드: ['종속관계', 'api', '테이블']
+✅ 2단계 완료 [⏱️ 0.98초]
+🎯 하드코딩된 질문 감지: 종속관계 관련 api와 테이블 알려줘
+✅ 하드코딩 문서 사용: vizier_dependency_relationships.md
+✅ 3단계 완료 [⏱️ 0.00초] - 1개 결과
+🎯 하드코딩된 문서 - 품질 검토 건너뛰기
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 1.00
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 종속관계 관련 api와 테이블알려줘
+   참조 문서: 1개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 정리 및 생성 완료!
+   생성된 응답 길이: 1160자
+✅ 5단계 완료 [⏱️ 5.52초]
+🎯 워크플로우 완료 [⏱️ 총 7.43초]
+   단계별 시간:
+     1. 표준화: 0.93초 (12.5%)
+     2. 키워드: 0.98초 (13.3%)
+     3. 검색: 0.00초 (0.0%)
+     4. 검토: 0.00초 (0.0%)
+     5. 응답: 5.52초 (74.2%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 상품구조에 대해서 설명해
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 상품구조에 대해서 설명해
+📚 용어집 파일 로드 완료: 1303개 용어
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 상품구조에 대해서 설명해줘줘
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 상품구조에 대해서 설명해줘줘
+📚 용어집 파일 로드 완료: 1303개 용어
+   표준화된 질문: 상품구조에 대해서 설명해주세요.
+✅ 1단계 완료 [⏱️ 0.84초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 상품구조에 대해서 설명해주세요.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   표준화된 질문: 상품구조에 대해 설명해주세요.
+✅ 1단계 완료 [⏱️ 1.72초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 상품구조에 대해 설명해주세요.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   추출된 키워드: ['상품구조', '클래스명', '메서드명', '파일명']
+✅ 2단계 완료 [⏱️ 1.55초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 상품구조에 대해서 설명해주세요.
+   키워드: ['상품구조', '클래스명', '메서드명', '파일명']
+   검색 전략: overview
+   구체적 메서드 검색: 상품구조 클래스명 메서드명
+   추출된 키워드: ['상품구조', '설명', '클래스명', '메서드명', '파일명', '기술 용어', '일반 용어']
+✅ 2단계 완료 [⏱️ 1.41초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 상품구조에 대해 설명해주세요.
+   키워드: ['상품구조', '설명', '클래스명', '메서드명', '파일명', '기술 용어', '일반 용어']
+   검색 전략: overview
+   구체적 메서드 검색: 상품구조 설명 클래스명
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   기술스택 검색: 상품구조에 대해서 설명해주세요. 상품구조 클래스명 메서드명 파일명 python fastapi vue
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   기술스택 검색: 상품구조에 대해 설명해주세요. 상품구조 설명 클래스명 메서드명 파일명 기술 용어 일반 용어 python fastapi vue
+   검색 결과: 5개 문서
+✅ 3단계 완료 [⏱️ 12.74초] - 5개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 5개 문서
+   품질 점수: 0.14
+✅ 품질 점수: 0.14 (통과)
+   개선된 결과: 5개 문서
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 0.14
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 상품구조에 대해서 설명해
+   참조 문서: 5개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 정리 및 생성 완료!
+   생성된 응답 길이: 630자
+✅ 5단계 완료 [⏱️ 2.41초]
+🎯 워크플로우 완료 [⏱️ 총 17.54초]
+   단계별 시간:
+     1. 표준화: 0.84초 (4.8%)
+     2. 키워드: 1.55초 (8.8%)
+     3. 검색: 12.74초 (72.6%)
+     4. 검토: 0.00초 (0.0%)
+     5. 응답: 2.41초 (13.8%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 5개 문서
+✅ 3단계 완료 [⏱️ 17.54초] - 5개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 5개 문서
+   품질 점수: 0.13
+✅ 품질 점수: 0.13 (통과)
+   개선된 결과: 5개 문서
+✅ 4단계 완료 [⏱️ 0.00초] - 품질 점수: 0.13
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 상품구조에 대해서 설명해줘줘
+   참조 문서: 5개
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 정리 및 생성 완료!
+   생성된 응답 길이: 401자
+✅ 5단계 완료 [⏱️ 2.52초]
+🎯 워크플로우 완료 [⏱️ 총 23.18초]
+   단계별 시간:
+     1. 표준화: 1.72초 (7.4%)
+     2. 키워드: 1.41초 (6.1%)
+     3. 검색: 17.54초 (75.6%)
+     4. 검토: 0.00초 (0.0%)
+     5. 응답: 2.52초 (10.9%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [97900]
+INFO:     Started server process [99206]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [99206]
+INFO:     Started server process [99391]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [99391]
+INFO:     Started server process [99661]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [99661]
+INFO:     Started server process [99812]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'src/rag_engine/app.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [99812]
+INFO:     Started server process [264]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:4430:d0f6:cef9:6076:184:743e:d6d6:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "OPTIONS /workflow/stream HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "POST /workflow/stream HTTP/1.1" 200 OK
+🚀 최적화된 워크플로우 시작
+   원본 질문: 종속관계 테이블 알려줘
+   모델: gpt-3.5-turbo
+   RAG 사용: True
+🧠 1단계: 질문 표준화 시작...
+   원본 질문: 종속관계 테이블 알려줘
+📚 용어집 파일 로드 완료: 1303개 용어
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+   표준화된 질문: 의도를 유지한 채 적절한 검색 키워드로 변환해주세요.
+✅ 1단계 완료 [⏱️ 1.39초]
+🔍 2단계: 키워드 추출 시작...
+   표준화된 질문: 의도를 유지한 채 적절한 검색 키워드로 변환해주세요.
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   추출된 키워드: ['의도', '검색 키워드', '변환', '클래스명', '메서드명', '파일명', '기술 용어', '일반 용어']
+✅ 2단계 완료 [⏱️ 1.36초]
+🔍 3단계: RAG 검색 시작...
+   검색 쿼리: 의도를 유지한 채 적절한 검색 키워드로 변환해주세요.
+   키워드: ['의도', '검색 키워드', '변환', '클래스명', '메서드명', '파일명', '기술 용어', '일반 용어']
+   검색 전략: general
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+   검색 결과: 7개 문서
+✅ 3단계 완료 [⏱️ 3.13초] - 7개 결과
+🔍 4단계: 품질 검토 시작...
+   검토 대상: 7개 문서
+   품질 점수: 0.23
+✅ 품질 점수: 0.23 (통과)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+   개선된 결과: 7개 문서
+✅ 4단계 완료 [⏱️ 4.05초] - 품질 점수: 0.23
+🤖 5단계: 최종 응답 생성 시작...
+   원본 질문: 종속관계 테이블 알려줘
+   참조 문서: 7개
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+🔗 링크 정리 및 생성 중...
+🔗 링크가 없어서 자동 생성합니다...
+✅ 링크 정리 및 생성 완료!
+   생성된 응답 길이: 1038자
+✅ 5단계 완료 [⏱️ 3.83초]
+🎯 워크플로우 완료 [⏱️ 총 13.77초]
+   단계별 시간:
+     1. 표준화: 1.39초 (10.1%)
+     2. 키워드: 1.36초 (9.9%)
+     3. 검색: 3.13초 (22.7%)
+     4. 검토: 4.05초 (29.4%)
+     5. 응답: 3.83초 (27.8%)
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:4430:d0f6:cef9:6076:184:743e:d6d6:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:4430:d0f6:cef9:6076:184:743e:d6d6:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:4430:d0f6:cef9:6076:184:743e:d6d6:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:800a:22de:1c20:6b7c:80d7:fe86:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     106.101.139.213:0 - "GET /health HTTP/1.1" 200 OK

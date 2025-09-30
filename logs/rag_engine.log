@@ -21719,3 +21719,1746 @@ INFO:     127.0.0.1:65485 - "GET /health HTTP/1.1" 200 OK
 INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
 INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
 INFO:     127.0.0.1:65519 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49197 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49236 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49280 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49323 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49363 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49401 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49433 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49472 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49509 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49539 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49575 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49608 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49644 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49683 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49714 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49762 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49789 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49830 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49864 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49898 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49936 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49976 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50013 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50045 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50081 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50121 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50155 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50189 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50222 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50258 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50285 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50323 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50353 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50388 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50420 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50460 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50499 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50533 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50577 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50606 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50636 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50663 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50698 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50736 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50773 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50806 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50847 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50888 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50937 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50983 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치 검출 로직 수정'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:51020 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98+%EA%B2%80%EC%B6%9C+%EB%A1%9C%EC%A7%81+%EC%88%98%EC%A0%95&limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51022 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치'
+✅ 2개 매칭 결과 발견
+INFO:     127.0.0.1:51024 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '검출 로직'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:51031 - "GET /api/v1/code/search?query=%EA%B2%80%EC%B6%9C+%EB%A1%9C%EC%A7%81&limit=2 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:51033 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까요? 타입 불일치 검출 로직 수정' (limit: 2)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/4):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:51049 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51067 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까요? 타입 불일치 검출 로직 수정 클래스명 메서드명' (limit: 5)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디에서 수정해아할까... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 5/15):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.233)
+  3. rule_analyzer.md (폴더: analyzers, 점수: 0.133)
+  4. issue_detector.md (폴더: analyzers, 점수: 0.133)
+  5. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 5개 결과 반환
+INFO:     127.0.0.1:51076 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51102 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51134 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51167 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51207 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51236 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51269 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51308 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51338 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51380 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51410 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51445 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51480 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51510 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51551 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51575 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51617 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51653 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51696 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51738 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51777 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51809 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51849 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51889 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51923 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51955 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52002 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52052 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52070 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52108 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치 로직 수정'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:52135 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98+%EB%A1%9C%EC%A7%81+%EC%88%98%EC%A0%95&limit=5 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치'
+✅ 2개 매칭 결과 발견
+INFO:     127.0.0.1:52137 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '로직'
+✅ 4개 매칭 결과 발견
+INFO:     127.0.0.1:52139 - "GET /api/v1/code/search?query=%EB%A1%9C%EC%A7%81&limit=2 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:52142 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52154 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지? 타입 불일치 로직 수정' (limit: 2)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/4):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:52168 - "POST /api/v1/search HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지? 타입 불일치 로직 수정 검출 클래스명' (limit: 5)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 5/15):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.233)
+  3. rule_analyzer.md (폴더: analyzers, 점수: 0.133)
+  4. issue_detector.md (폴더: analyzers, 점수: 0.133)
+  5. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 5개 결과 반환
+INFO:     127.0.0.1:52183 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52191 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52226 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52260 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52290 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52332 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52370 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52399 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52430 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52460 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52490 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52520 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52563 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52591 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52625 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52661 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52693 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52729 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52765 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52804 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52834 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52865 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52902 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52937 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52974 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53015 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53058 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53110 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53150 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53184 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53227 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53257 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53302 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53342 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53358 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53377 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53389 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53410 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53420 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53439 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53467 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53481 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53485 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53501 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치 검출 로직'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:53516 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98+%EA%B2%80%EC%B6%9C+%EB%A1%9C%EC%A7%81&limit=5 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치'
+✅ 2개 매칭 결과 발견
+INFO:     127.0.0.1:53518 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '검출'
+✅ 3개 매칭 결과 발견
+INFO:     127.0.0.1:53520 - "GET /api/v1/code/search?query=%EA%B2%80%EC%B6%9C&limit=2 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:53522 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53527 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지? 타입 불일치 검출 로직' (limit: 2)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/4):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:53534 - "POST /api/v1/search HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지? 타입 불일치 검출 로직 수정 클래스명' (limit: 5)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 5/15):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.233)
+  3. rule_analyzer.md (폴더: analyzers, 점수: 0.133)
+  4. issue_detector.md (폴더: analyzers, 점수: 0.133)
+  5. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 5개 결과 반환
+INFO:     127.0.0.1:53542 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53544 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53555 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53569 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53581 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53609 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53648 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53681 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53720 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53752 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53794 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53829 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53870 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53899 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53936 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53978 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54008 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54046 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54086 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54131 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54171 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54215 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54257 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54289 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54344 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '_analyze_conditions condition_analyzer.py 타입 불일치'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:54346 - "GET /api/v1/code/search?query=_analyze_conditions+condition_analyzer.py+%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98&limit=5 HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '_analyze_conditions'
+✅ 2개 매칭 결과 발견
+INFO:     127.0.0.1:54350 - "GET /api/v1/code/search?query=_analyze_conditions&limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54352 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'condition_analyzer.py'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:54354 - "GET /api/v1/code/search?query=condition_analyzer.py&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'condition_analyzer.py'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:54356 - "GET /api/v1/code/search?query=condition_analyzer.py&limit=1 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:54362 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지? 관련 파일명과 메서드명: "condition_analyzer.py", "_analyze_conditions". _analyze_conditions condition_analyzer.py 타입 불일치' (limit: 2)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/5):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:54377 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지? 관련 파일명과 메서드명: "condition_analyzer.py", "_analyze_conditions". _analyze_conditions condition_analyzer.py 타입 불일치 검출 로직 수정' (limit: 5)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디서 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 5/15):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.233)
+  3. rule_analyzer.md (폴더: analyzers, 점수: 0.133)
+  4. issue_detector.md (폴더: analyzers, 점수: 0.113)
+  5. advanced_analyzer.md (폴더: analyzers, 점수: 0.083)
+✅ 검색 완료: 5개 결과 반환
+INFO:     127.0.0.1:54391 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54395 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54434 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54468 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54506 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치 검출 로직 수정'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:54534 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98+%EA%B2%80%EC%B6%9C+%EB%A1%9C%EC%A7%81+%EC%88%98%EC%A0%95&limit=5 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치'
+✅ 2개 매칭 결과 발견
+INFO:     127.0.0.1:54542 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '검출 로직'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:54544 - "GET /api/v1/code/search?query=%EA%B2%80%EC%B6%9C+%EB%A1%9C%EC%A7%81&limit=2 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:54548 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54553 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지? 타입 불일치 검출 로직 수정' (limit: 2)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/4):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:54568 - "POST /api/v1/search HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지? 타입 불일치 검출 로직 수정 클래스명 메서드명' (limit: 5)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 5/15):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.233)
+  3. rule_analyzer.md (폴더: analyzers, 점수: 0.133)
+  4. issue_detector.md (폴더: analyzers, 점수: 0.133)
+  5. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 5개 결과 반환
+INFO:     127.0.0.1:54581 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54593 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54637 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54672 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54706 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54741 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54773 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54811 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54843 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54875 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54914 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54951 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54989 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55033 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55076 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55112 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55145 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55189 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55235 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55274 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55313 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55353 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55384 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55425 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55456 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55497 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55536 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55575 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55610 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55647 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55678 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55688 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55717 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55726 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55747 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55753 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55779 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55785 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55820 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55826 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55852 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55858 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55887 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55896 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55918 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55931 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55956 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55966 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55987 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55993 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56004 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56022 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56028 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56038 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56056 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56063 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56075 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56095 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56103 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56113 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56133 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56144 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56152 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56174 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56180 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56189 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56213 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56221 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56233 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56259 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56265 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56273 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56297 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56303 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56309 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56338 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56346 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56355 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치 검출 로직'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:56365 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98+%EA%B2%80%EC%B6%9C+%EB%A1%9C%EC%A7%81&limit=5 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '타입 불일치'
+✅ 2개 매칭 결과 발견
+INFO:     127.0.0.1:56367 - "GET /api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '검출'
+✅ 3개 매칭 결과 발견
+INFO:     127.0.0.1:56373 - "GET /api/v1/code/search?query=%EA%B2%80%EC%B6%9C&limit=2 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:56375 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56386 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56398 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나요? 구체적인 파일명과 메서드명은 무엇인가요? 타입 불일치 검출 로직' (limit: 2)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/4):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:56400 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56406 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나요? 구체적인 파일명과 메서드명은 무엇인가요? 타입 불일치 검출 로직 파일명 메서드명' (limit: 5)
+🔍 임베딩 API 호출: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데, 어디서 수정하면 되나... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 5/15):
+  1. issue_detector.md (폴더: analyzers, 점수: 0.283)
+  2. issue_detector.md (폴더: analyzers, 점수: 0.233)
+  3. rule_analyzer.md (폴더: analyzers, 점수: 0.133)
+  4. issue_detector.md (폴더: analyzers, 점수: 0.133)
+  5. issue_detector.md (폴더: analyzers, 점수: 0.113)
+✅ 검색 완료: 5개 결과 반환
+INFO:     127.0.0.1:56421 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56432 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56438 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56450 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56475 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56483 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56491 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56513 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56523 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56531 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56555 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56564 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56570 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56593 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56599 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56605 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56629 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56635 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56641 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56659 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56667 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56677 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56697 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56703 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56713 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56733 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56739 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56749 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56771 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56777 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56788 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56815 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56817 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56830 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56852 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56856 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56864 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56888 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56890 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56896 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56922 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56924 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56930 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56956 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56960 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56970 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57001 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57005 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57013 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57039 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57041 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57047 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57073 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57075 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57081 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57099 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57105 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57111 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57131 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57139 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57145 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57165 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57173 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57179 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57199 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57207 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57213 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57238 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57244 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57257 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57283 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57289 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57295 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57324 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57334 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57342 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57361 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57367 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57377 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57396 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57402 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57412 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57430 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57436 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57446 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57475 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57483 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '상품구조 클래스명 메서드명'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57485 - "GET /api/v1/code/search?query=%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0+%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85+%EB%A9%94%EC%84%9C%EB%93%9C%EB%AA%85&limit=5 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '상품구조'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57489 - "GET /api/v1/code/search?query=%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '클래스명'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57491 - "GET /api/v1/code/search?query=%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85&limit=2 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '상품구조에 대해서 설명해주세요. 상품구조 클래스명 메서드명'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57493 - "GET /api/v1/code/search?query=%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0%EC%97%90+%EB%8C%80%ED%95%B4%EC%84%9C+%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.+%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0+%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85+%EB%A9%94%EC%84%9C%EB%93%9C%EB%AA%85&limit=3 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 상품구조에 대해서 설명해주세요. 상품구조 클래스명 메서드명... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:57496 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '상품구조 설명 클래스명'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57504 - "GET /api/v1/code/search?query=%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0+%EC%84%A4%EB%AA%85+%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85&limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57506 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '상품구조에 대해서 설명해주세요. 상품구조 클래스명 메서드명' (limit: 2)
+🔍 임베딩 API 호출: 상품구조에 대해서 설명해주세요. 상품구조 클래스명 메서드명 개요... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/6):
+  1. constants.md (폴더: utils, 점수: 0.033)
+  2. exceptions.md (폴더: rule_analyzer, 점수: 0.033)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:57519 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '상품구조'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57521 - "GET /api/v1/code/search?query=%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0&limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57528 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57540 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '상품구조에 대해서 설명해주세요. 상품구조 클래스명 메서드명 파일명 python fastapi vue' (limit: 1)
+🔍 임베딩 API 호출: 상품구조에 대해서 설명해주세요. 상품구조 클래스명 메서드명 파일명 python fastap... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 1/3):
+  1. parser.md (폴더: rule_analyzer, 점수: 0.133)
+✅ 검색 완료: 1개 결과 반환
+INFO:     127.0.0.1:57544 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: '설명'
+✅ 2개 매칭 결과 발견
+INFO:     127.0.0.1:57546 - "GET /api/v1/code/search?query=%EC%84%A4%EB%AA%85&limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57554 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'fastapi'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57564 - "GET /api/v1/code/search?query=fastapi&limit=0 HTTP/1.1" 200 OK
+🔍 소스코드 검색: '상품구조에 대해 설명해주세요. 상품구조 설명 클래스명'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57566 - "GET /api/v1/code/search?query=%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0%EC%97%90+%EB%8C%80%ED%95%B4+%EC%84%A4%EB%AA%85%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94.+%EC%83%81%ED%92%88%EA%B5%AC%EC%A1%B0+%EC%84%A4%EB%AA%85+%ED%81%B4%EB%9E%98%EC%8A%A4%EB%AA%85&limit=3 HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'vue'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57568 - "GET /api/v1/code/search?query=vue&limit=0 HTTP/1.1" 200 OK
+🔍 임베딩 API 호출: 상품구조에 대해 설명해주세요. 상품구조 설명 클래스명... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+INFO:     127.0.0.1:57570 - "POST /api/v1/search/docstrings HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'python'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57572 - "GET /api/v1/code/search?query=python&limit=0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57578 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57584 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '상품구조에 대해 설명해주세요. 상품구조 설명 클래스명' (limit: 2)
+🔍 임베딩 API 호출: 상품구조에 대해 설명해주세요. 상품구조 설명 클래스명 개요... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 2/6):
+  1. metrics_generator.md (폴더: analyzers, 점수: 0.033)
+  2. option_validator.md (폴더: options, 점수: 0.033)
+✅ 검색 완료: 2개 결과 반환
+INFO:     127.0.0.1:57586 - "POST /api/v1/search HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'docker'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57588 - "GET /api/v1/code/search?query=docker&limit=0 HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57594 - "GET /health HTTP/1.1" 200 OK
+🔍 하이브리드 검색 요청: '상품구조에 대해 설명해주세요. 상품구조 설명 클래스명 메서드명 파일명 기술 용어 일반 용어 python fastapi vue' (limit: 1)
+🔍 임베딩 API 호출: 상품구조에 대해 설명해주세요. 상품구조 설명 클래스명 메서드명 파일명 기술 용어 일반 용어... (키: sk-proj-qKCbQLv1jOXs...)
+OpenAI 임베딩 오류: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+📊 하이브리드 검색 결과 분석 (필터 적용 후 1/3):
+  1. logic_flow.md (폴더: analyzers, 점수: 0.033)
+✅ 검색 완료: 1개 결과 반환
+INFO:     127.0.0.1:57609 - "POST /api/v1/search HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57620 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57630 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57640 - "GET /health HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'fastapi'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57654 - "GET /api/v1/code/search?query=fastapi&limit=0 HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'vue'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57656 - "GET /api/v1/code/search?query=vue&limit=0 HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'python'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57658 - "GET /api/v1/code/search?query=python&limit=0 HTTP/1.1" 200 OK
+🔍 소스코드 검색: 'docker'
+✅ 0개 매칭 결과 발견
+INFO:     127.0.0.1:57660 - "GET /api/v1/code/search?query=docker&limit=0 HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57670 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57678 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57684 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57704 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57712 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57718 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57739 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57747 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57754 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57776 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57782 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57788 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57811 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57819 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57825 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57846 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57855 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57861 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57881 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57889 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57895 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57915 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57919 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57929 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57949 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57955 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57965 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57985 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57989 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57999 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58022 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58024 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58034 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58054 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58058 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58068 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58088 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58096 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58106 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58132 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58135 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58146 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /api/v1/documents/folders HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58177 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58179 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /documents HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58193 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58223 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58225 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58239 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /documents HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58266 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58268 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58281 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58297 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58308 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58310 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58320 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58342 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58345 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58355 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58389 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58391 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58403 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58430 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58434 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58447 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58482 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58484 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58492 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58514 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58516 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58529 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58544 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58550 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58557 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58567 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58586 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58592 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58602 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58626 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58631 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58641 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58662 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58664 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58677 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58702 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58706 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58720 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58740 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58742 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58747 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58760 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58779 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58783 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58793 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58817 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58820 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58829 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58853 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58856 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58865 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58887 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58890 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58899 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58924 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58930 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58942 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58965 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58967 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58979 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59003 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59005 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59015 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59026 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59041 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59043 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59053 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59076 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59080 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59090 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59115 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59118 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59130 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59151 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59157 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59168 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59189 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59195 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59199 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59209 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59228 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59234 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59245 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59263 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59269 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59279 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59297 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59303 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59313 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59341 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59343 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59352 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59375 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59378 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59390 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59409 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59415 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59424 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59447 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59455 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59462 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59483 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59491 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59497 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59499 - "GET /api/v1/files/list HTTP/1.1" 500 Internal Server Error
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59520 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59528 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     2001:e60:9167:42be:2de6:5b41:5541:fed2:0 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59539 - "GET /health HTTP/1.1" 200 OK

@@ -180,52 +180,19 @@ class ResponseGenerator:
         if "답변:" in response:
             response = response.split("답변:")[-1].strip()
         
-        # 링크가 없는 경우 자동 생성
+        # 링크 정리 및 생성
         import re
+        print("🔗 링크 정리 및 생성 중...")
+        
+        # 1. 복잡한 링크를 간단한 링크로 변환
+        response = self._simplify_complex_links(response)
+        
+        # 2. 링크가 없는 경우 자동 생성
         if not re.search(r'\[.*\]\(.*\)', response):
             print("🔗 링크가 없어서 자동 생성합니다...")
-            
-            # 클래스명 링크 생성 - 실제 문서 ID 사용 (프론트엔드에서 변환)
-            response = re.sub(
-                r'\b(IssueDetector)\b',
-                r'[\1](sample_code/rule_analyzer/analyzers/issue_detector.py/<a id="class-issuedetector"></a>🎯 `issuedetector`)',
-                response
-            )
-            
-            # 파일명 링크 생성 - 실제 문서 ID 사용 (프론트엔드에서 변환)
-            response = re.sub(
-                r'\b(issue_detector\.py)\b',
-                r'[\1](sample_code/rule_analyzer/analyzers/issue_detector.py/<a id="class-issuedetector"></a>🎯 `issuedetector`)',
-                response
-            )
-            
-            # 메서드명 링크 생성 - 실제 문서 ID 사용 (프론트엔드에서 변환)
-            response = re.sub(
-                r'\b(detect_type_mismatch)\b',
-                r'[\1()](sample_code/rule_analyzer/analyzers/issue_detector.py/<a id="class-issuedetector"></a>🎯 `issuedetector`)',
-                response
-            )
-            
-            # FieldAnalysis 관련 링크 생성
-            response = re.sub(
-                r'\b(FieldAnalysis)\b',
-                r'[\1](class_\1)',
-                response
-            )
-            
-            response = re.sub(
-                r'\b(field_analyzer\.py)\b',
-                r'[\1](file_\1)',
-                response
-            )
-            
-            response = re.sub(
-                r'\b(analyze_field)\b',
-                r'[\1()](func_\1_80)',
-                response
-            )
-            
-            print("✅ 링크 자동 생성 완료!")
+            response = self._generate_simple_links(response)
+        
+        print("✅ 링크 정리 및 생성 완료!")
         
         # 빈 줄 정리
         lines = response.split('\n')
@@ -236,3 +203,93 @@ class ResponseGenerator:
                 cleaned_lines.append(line)
         
         return '\n'.join(cleaned_lines)
+    
+    def _generate_simple_links(self, response: str) -> str:
+        """간단하고 깔끔한 링크 생성"""
+        import re
+        
+        # Rule Analyzer 관련 링크
+        response = re.sub(
+            r'\b(IssueDetector)\b',
+            r'[\1](sample_code/rule_analyzer/analyzers/issue_detector.py)',
+            response
+        )
+        
+        response = re.sub(
+            r'\b(issue_detector\.py)\b',
+            r'[\1](sample_code/rule_analyzer/analyzers/issue_detector.py)',
+            response
+        )
+        
+        response = re.sub(
+            r'\b(detect_type_mismatch)\b',
+            r'[\1()](sample_code/rule_analyzer/analyzers/issue_detector.py)',
+            response
+        )
+        
+        response = re.sub(
+            r'\b(FieldAnalysis)\b',
+            r'[\1](sample_code/rule_analyzer/analyzers/field_analyzer.py)',
+            response
+        )
+        
+        response = re.sub(
+            r'\b(field_analyzer\.py)\b',
+            r'[\1](sample_code/rule_analyzer/analyzers/field_analyzer.py)',
+            response
+        )
+        
+        response = re.sub(
+            r'\b(analyze_field)\b',
+            r'[\1()](sample_code/rule_analyzer/analyzers/field_analyzer.py)',
+            response
+        )
+        
+        # Vizier 프로젝트 관련 링크
+        response = re.sub(
+            r'\b(ProductRelationshipService)\b',
+            r'[\1](sample_code/vizier(sample)/be/src/main/java/com/vizier/service/ProductRelationshipService.java)',
+            response
+        )
+        
+        response = re.sub(
+            r'\b(DependencyAnalysisService)\b',
+            r'[\1](sample_code/vizier(sample)/be/src/main/java/com/vizier/service/DependencyAnalysisService.java)',
+            response
+        )
+        
+        response = re.sub(
+            r'\b(ImpactAnalysisResponseDto)\b',
+            r'[\1](sample_code/vizier(sample)/be/src/main/java/com/vizier/dto/ImpactAnalysisResponseDto.java)',
+            response
+        )
+        
+        return response
+    
+    def _simplify_complex_links(self, response: str) -> str:
+        """복잡한 링크를 간단한 링크로 변환"""
+        import re
+        
+        # 복잡한 링크를 간단한 링크로 변환
+        # 패턴: [텍스트](경로/파일.py/복잡한부분) -> [텍스트](파일.py)
+        response = re.sub(
+            r'\[([^\]]+)\]\([^)]*?/([^/]+\.py)(?:/[^)]*)?\)', 
+            r'[\1](\2)', 
+            response
+        )
+        
+        # HTML 태그가 포함된 링크 정리
+        response = re.sub(
+            r'\[([^\]]+)\]\([^)]*?<a[^>]*>[^<]*</a>[^)]*\)', 
+            r'[\1](\1)', 
+            response
+        )
+        
+        # 이모지가 포함된 링크 정리
+        response = re.sub(
+            r'\[([^\]]+)\]\([^)]*?[🎯🔧][^)]*\)', 
+            r'[\1](\1)', 
+            response
+        )
+        
+        return response

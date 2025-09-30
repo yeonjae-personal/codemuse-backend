@@ -1037,92 +1037,51 @@ async def search_source_code(query: str, limit: int = 10):
 
 @app.get("/api/v1/files/list")
 async def list_md_files():
-    """MD 파일 리스트 조회 (사람용 브라우징) - 계층적 폴더 구조"""
+    """MD 파일 리스트 조회 (사람용 브라우징) - 간단한 구조"""
     try:
         generated_docs_path = "generated_docs"
         if not os.path.exists(generated_docs_path):
             return {
-                "tree": {},
+                "files": [],
                 "total_files": 0,
-                "total_folders": 0
+                "folders": []
             }
         
-        def build_tree_structure():
-            """계층적 트리 구조 생성"""
-            tree = {}
-            total_files = 0
-            
-            for root, dirs, filenames in os.walk(generated_docs_path):
-                for filename in filenames:
-                    if filename.endswith('.md'):
-                        file_path = os.path.join(root, filename)
-                        relative_path = os.path.relpath(file_path, generated_docs_path)
-                        
-                        # 파일 정보
-                        stat = os.stat(file_path)
-                        file_size = stat.st_size
-                        
-                        file_info = {
-                            "type": "file",
-                            "id": filename.replace('.md', ''),
-                            "name": filename,
-                            "path": relative_path,
-                            "size": file_size,
-                            "size_readable": f"{file_size / 1024:.1f} KB" if file_size > 1024 else f"{file_size} bytes",
-                            "created_at": stat.st_ctime,
-                            "modified_at": stat.st_mtime
-                        }
-                        
-                        # 경로를 분할하여 트리에 삽입
-                        path_parts = relative_path.split(os.sep)
-                        current_node = tree
-                        
-                        # 폴더 경로 생성
-                        for i, part in enumerate(path_parts[:-1]):  # 마지막 파일명 제외
-                            if part not in current_node:
-                                current_node[part] = {
-                                    "type": "folder",
-                                    "name": part,
-                                    "path": "/".join(path_parts[:i+1]),
-                                    "children": {},
-                                    "file_count": 0
-                                }
-                            current_node = current_node[part]["children"]
-                        
-                        # 파일 추가
-                        file_key = path_parts[-1].replace('.md', '')
-                        current_node[file_key] = file_info
-                        total_files += 1
-                        
-                        # 상위 폴더들의 파일 카운트 증가
-                        temp_node = tree
-                        for part in path_parts[:-1]:
-                            if part in temp_node and "file_count" in temp_node[part]:
-                                temp_node[part]["file_count"] += 1
-                            temp_node = temp_node[part]["children"] if part in temp_node else {}
-            
-            return tree, total_files
+        files = []
+        folders = set()
         
-        def count_folders(node):
-            """폴더 개수 계산"""
-            count = 0
-            for key, value in node.items():
-                if isinstance(value, dict) and value.get("type") == "folder":
-                    count += 1
-                    count += count_folders(value.get("children", {}))
-            return count
-        
-        tree, total_files = build_tree_structure()
-        total_folders = count_folders(tree)
+        for root, dirs, filenames in os.walk(generated_docs_path):
+            for filename in filenames:
+                if filename.endswith('.md'):
+                    file_path = os.path.join(root, filename)
+                    relative_path = os.path.relpath(file_path, generated_docs_path)
+                    
+                    # 파일 정보
+                    stat = os.stat(file_path)
+                    file_size = stat.st_size
+                    
+                    # 폴더 경로 추출
+                    path_parts = relative_path.split(os.sep)
+                    folder_path = "/".join(path_parts[:-1]) if len(path_parts) > 1 else "루트"
+                    folders.add(folder_path)
+                    
+                    file_info = {
+                        "id": filename.replace('.md', ''),
+                        "name": filename,
+                        "path": relative_path,
+                        "folder": folder_path,
+                        "size": file_size,
+                        "size_readable": f"{file_size / 1024:.1f} KB" if file_size > 1024 else f"{file_size} bytes",
+                        "created_at": stat.st_ctime,
+                        "modified_at": stat.st_mtime
+                    }
+                    
+                    files.append(file_info)
         
         return {
-            "tree": tree,
-            "total_files": total_files,
-            "total_folders": total_folders,
-            "structure_info": {
-                "root_files": len([k for k, v in tree.items() if v.get("type") == "file"]),
-                "root_folders": len([k for k, v in tree.items() if v.get("type") == "folder"])
-            }
+            "files": files,
+            "total_files": len(files),
+            "folders": sorted(list(folders))
         }
         
     except Exception as e:
