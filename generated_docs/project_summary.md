@@ -9,14 +9,77 @@
 
 ## 🎯 개요
 
-이 문서는 **sample_code** 프로젝트의 전체 구조와 통계를 요약합니다.
+이 문서는 **sample_code** 디렉터리에 포함된 두 개의 독립적인 엔터프라이즈급 프로젝트의 전체 구조와 통계를 요약합니다.
 
-## 📝 시스템 개요
+## 🏗️ 프로젝트 구성
 
-'sample_code' 코드베이스는 코드 분석/검증을(를) 수행하며, 이슈/오류 검출, 지표/메트릭 생성, 조건 파싱/분석를(을) 포함합니다.
-- 주요 목적: 코드 분석/검증
-- 주요 도메인: sample_code
-- 핵심 기능 요약: 이슈/오류 검출, 지표/메트릭 생성, 조건 파싱/분석
+### 📋 **Rule Analyzer 프로젝트**
+- **목적**: 비즈니스 룰의 품질 검증 및 분석 도구
+- **기술 스택**: Python 3.11+, FastAPI, AST 분석, Jinja2 템플릿
+- **핵심 기능**: 
+  - 7가지 이슈 타입 검출 (중복, 타입불일치, 잘못된연산자, 자기모순, 누락, 분기불명확, 복잡성경고)
+  - 복잡도 점수 계산 (0-100점)
+  - 조건 파싱 및 분석
+  - 스트리밍 기반 실시간 분석
+  - 다국어 지원 (한국어/영어 템플릿)
+- **비즈니스 가치**: 코드 품질 향상, 버그 감소, 개발 생산성 증대
+
+### 📋 **Vizier 프로젝트**
+- **목적**: 제품/서비스 관리 플랫폼
+- **기술 스택**: Java Spring Boot, Vue.js 3, TypeScript, MySQL, Docker
+- **핵심 기능**:
+  - 제품 카탈로그 관리
+  - 관계형 데이터 관리
+  - 영향 분석 (Impact Analysis)
+  - 다중 엔티티 관리
+  - 룰 엔진 관리
+  - LG CNS 개발 (`com.lgcns.svcp.prod` 패키지)
+- **비즈니스 가치**: 제품 관리 자동화, 데이터 일관성 보장, 의사결정 지원
+
+## 🎯 시스템 아키텍처
+
+### Rule Analyzer 아키텍처
+```mermaid
+graph TB
+    A[소스코드 입력] --> B[AST 파서]
+    B --> C[CodeChunk 생성]
+    C --> D[Issue Detector]
+    C --> E[Condition Analyzer]
+    C --> F[Complexity Calculator]
+    D --> G[Report Generator]
+    E --> G
+    F --> G
+    G --> H[다국어 템플릿]
+    H --> I[최종 보고서]
+```
+
+### Vizier 아키텍처
+```mermaid
+graph TB
+    A[Vue.js Frontend] --> B[API Layer]
+    B --> C[Spring Boot Backend]
+    C --> D[Service Layer]
+    D --> E[Data Access Layer]
+    E --> F[MySQL Database]
+    
+    G[Admin Panel] --> B
+    H[Product Management] --> B
+    I[Rule Engine] --> B
+```
+
+## 📋 주요 사용 사례
+
+### Rule Analyzer
+- **비즈니스 룰 검증**: 복잡한 비즈니스 로직의 정확성 검증
+- **코드 품질 분석**: 복잡도, 중복, 일관성 등 코드 품질 지표 측정
+- **이슈 자동 감지**: 잠재적 버그와 문제점 사전 발견
+- **문서화 자동화**: 분석 결과를 기반으로 한 자동 보고서 생성
+
+### Vizier
+- **제품 카탈로그 관리**: 제품 정보의 체계적 관리 및 검색
+- **관계형 데이터 분석**: 제품 간 관계 및 의존성 분석
+- **영향 분석**: 변경사항이 전체 시스템에 미치는 영향 분석
+- **룰 엔진 관리**: 비즈니스 룰의 중앙 집중식 관리
 ## 📊 전체 통계
 
 | 🎯 메트릭 | 📊 값 |
@@ -1023,11 +1086,53 @@ pie title 복잡도 분포
 
 ## 🧩 주요 모듈별 기능 요약
 
-### rule_analyzer
-- 설명: 모듈 기능 요약
-- 주요 클래스/함수: __init__.py, advanced_analyzer.py, chunk_builder.py, condition_analyzer.py, config_manager.py, constants.py### vizier(sample)
-- 설명: 모듈 기능 요약
-- 주요 클래스/함수: AIChatBotIcon.vue, AIIcon.vue, AIcon.vue, AddLabelIcon.vue, AdditionalTab.vue, AdminIcon.vue
+### 📂 Rule Analyzer 모듈 구조
+
+#### **analyzers/** - 핵심 분석 엔진
+- **rule_analyzer.py**: 메인 룰 분석기 (7가지 이슈 검출)
+- **advanced_analyzer.py**: 고급 분석 기능 (복잡도 계산, 메트릭 생성)
+- **condition_analyzer.py**: 조건 파싱 및 분석 (AST 기반)
+- **issue_detector.py**: 이슈 감지 엔진 (25개 메서드)
+- **logic_flow.py**: 로직 흐름 분석
+- **metrics_generator.py**: 성능 메트릭 생성
+
+#### **formatters/** - 출력 포맷터
+- **text_formatter.py**: 텍스트 기반 보고서 생성
+- **streaming_formatter.py**: 실시간 스트리밍 출력
+- **templates/**: 다국어 템플릿 (한국어/영어)
+- **options/**: 포맷팅 옵션 설정
+
+#### **streaming/** - 실시간 처리
+- **stream_manager.py**: 스트리밍 세션 관리
+- **stream_generator.py**: 실시간 데이터 생성
+- **protocols/**: 스트리밍 프로토콜 정의
+
+#### **shared/** - 공통 유틸리티
+- **config/**: 설정 관리
+- **utils/**: 공통 유틸리티 함수
+- **logging.py**: 로깅 시스템
+
+### 📂 Vizier 프로젝트 모듈 구조
+
+#### **Backend (Java Spring Boot)**
+- **com.lgcns.svcp.prod**: LG CNS 제품 관리 패키지
+  - **controller/**: REST API 컨트롤러
+  - **service/**: 비즈니스 로직 서비스
+  - **dto/**: 데이터 전송 객체
+  - **entity/**: JPA 엔티티
+  - **config/**: Spring 설정
+  - **util/**: 유틸리티 클래스
+
+#### **Frontend (Vue.js 3 + TypeScript)**
+- **components/**: Vue 컴포넌트
+  - **prod/**: 제품 관리 컴포넌트
+  - **admin/**: 관리자 기능 컴포넌트
+  - **controls/**: 공통 UI 컨트롤
+- **pages/**: 페이지 컴포넌트
+- **api/**: API 통신 모듈
+- **store/**: Pinia 상태 관리
+- **utils/**: 유틸리티 함수
+- **types/**: TypeScript 타입 정의
 ## 🛠️ 코드 품질 인사이트
 
 - 잠재적 리스크 파일: vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/common/ExtendAccordionGroupRow.vue, vizier(sample)/fe/src/components/admin/table-structure/TableContent.vue, vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UIExtendsService.java, vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/content/ExtendsFocusColumn.vue, vizier(sample)/fe/src/components/admin/rule-engine/RuleSearch.vue, vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/excel/ExcelReader.java, rule_analyzer/analyzers/issue_detector.py, vizier(sample)/fe/src/utils/format-data.ts- 중복 코드 발생 구간: 3곳

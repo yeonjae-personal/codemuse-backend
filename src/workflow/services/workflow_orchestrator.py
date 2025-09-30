@@ -14,6 +14,7 @@ from .modules import (
 )
 from .shared import LLMClient, RAGClient
 from .shared.models import WorkflowRequest, WorkflowResponse
+from .hardcoded_responses import HardcodedResponseService
 
 
 class WorkflowOrchestrator:
@@ -30,6 +31,9 @@ class WorkflowOrchestrator:
         self.rag_searcher = RAGSearcher(self.rag_client)
         self.quality_reviewer = QualityReviewer(self.llm_client)
         self.response_generator = ResponseGenerator(self.llm_client)
+        
+        # 하드코딩 응답 서비스 초기화
+        self.hardcoded_service = HardcodedResponseService()
     
     async def process_workflow(self, request: WorkflowRequest, status_callback=None) -> WorkflowResponse:
         """
@@ -93,17 +97,39 @@ class WorkflowOrchestrator:
             
             print(f"✅ 2단계 완료 [⏱️ {step2_time:.2f}초]")
             
-            # 3단계: RAG 검색
+            # 3단계: RAG 검색 또는 하드코딩 응답
             if status_callback:
                 await status_callback("Step 3: RAG search in progress...", "3")
             step3_start = time.time()
-            if request.use_rag:
+            
+            # 하드코딩된 질문인지 확인
+            if request.use_rag and self.hardcoded_service.is_hardcoded_question(standardized_query):
+                print(f"🎯 하드코딩된 질문 감지: {standardized_query}")
+                hardcoded_result = self.hardcoded_service.get_hardcoded_document(standardized_query)
+                
+                if hardcoded_result and hardcoded_result["success"]:
+                    # 하드코딩된 문서를 검색 결과로 사용
+                    search_results = [{
+                        "content": hardcoded_result["content"],
+                        "metadata": hardcoded_result["metadata"]
+                    }]
+                    print(f"✅ 하드코딩 문서 사용: {hardcoded_result['metadata']['document']}")
+                else:
+                    # 하드코딩 실패 시 RAG 검색으로 fallback
+                    print("⚠️ 하드코딩 실패, RAG 검색으로 fallback")
+                    search_result = await self.rag_searcher.search(
+                        standardized_query, keywords, limit=10
+                    )
+                    search_results = search_result.get("results", [])
+            elif request.use_rag:
+                # 기존 RAG 검색
                 search_result = await self.rag_searcher.search(
                     standardized_query, keywords, limit=10
                 )
                 search_results = search_result.get("results", [])
             else:
                 search_results = []
+            
             step3_time = time.time() - step3_start
             
             print(f"✅ 3단계 완료 [⏱️ {step3_time:.2f}초] - {len(search_results)}개 결과")
@@ -112,7 +138,18 @@ class WorkflowOrchestrator:
             if status_callback:
                 await status_callback("Step 4: Quality review in progress...", "4")
             step4_start = time.time()
-            if search_results:
+            
+            # 하드코딩된 문서인지 확인
+            is_hardcoded = (search_results and 
+                          len(search_results) == 1 and 
+                          search_results[0].get('metadata', {}).get('source') == 'hardcoded')
+            
+            if is_hardcoded:
+                # 하드코딩된 문서는 품질 검토 건너뛰기
+                print("🎯 하드코딩된 문서 - 품질 검토 건너뛰기")
+                reviewed_results = search_results
+                quality_score = 1.0  # 하드코딩된 문서는 최고 품질로 처리
+            elif search_results:
                 quality_result = await self.quality_reviewer.review(
                     search_results, request.query, request.model
                 )
