@@ -1,94 +1,42 @@
-# 📊 프로젝트 요약
+# 📊 분석 대상 프로젝트 요약
 
-> **생성일**: 2025-09-26  
-> **분석 대상**: `sample_code`  
-> **총 파일 수**: 676개  
-> **총 Chunk 수**: 2667개
+> **생성일**: 2025-10-01  
+> **⚠️ 주의**: `sample_code`는 폴더명이며 프로젝트명이 아닙니다!  
+> **실제 프로젝트**: 2개 (Rule Analyzer + Vizier)  
+> **총 파일 수**: 1583개  
+> **총 Chunk 수**: 6861개
 
 ---
 
 ## 🎯 개요
 
-이 문서는 **sample_code** 디렉터리에 포함된 두 개의 독립적인 엔터프라이즈급 프로젝트의 전체 구조와 통계를 요약합니다.
+이 문서는 CodeMuse로 분석 중인 **2개 프로젝트**의 전체 구조와 통계를 요약합니다.
 
-## 🏗️ 프로젝트 구성
+## 📝 분석 대상 프로젝트
 
-### 📋 **Rule Analyzer 프로젝트**
-- **목적**: 비즈니스 룰의 품질 검증 및 분석 도구
-- **기술 스택**: Python 3.11+, FastAPI, AST 분석, Jinja2 템플릿
-- **핵심 기능**: 
-  - 7가지 이슈 타입 검출 (중복, 타입불일치, 잘못된연산자, 자기모순, 누락, 분기불명확, 복잡성경고)
-  - 복잡도 점수 계산 (0-100점)
-  - 조건 파싱 및 분석
-  - 스트리밍 기반 실시간 분석
-  - 다국어 지원 (한국어/영어 템플릿)
-- **비즈니스 가치**: 코드 품질 향상, 버그 감소, 개발 생산성 증대
+CodeMuse는 현재 다음 **2개 프로젝트**를 분석하고 있습니다:
 
-### 📋 **Vizier 프로젝트**
-- **목적**: 제품/서비스 관리 플랫폼
-- **기술 스택**: Java Spring Boot, Vue.js 3, TypeScript, MySQL, Docker
-- **핵심 기능**:
-  - 제품 카탈로그 관리
-  - 관계형 데이터 관리
-  - 영향 분석 (Impact Analysis)
-  - 다중 엔티티 관리
-  - 룰 엔진 관리
-  - LG CNS 개발 (`com.lgcns.svcp.prod` 패키지)
-- **비즈니스 가치**: 제품 관리 자동화, 데이터 일관성 보장, 의사결정 지원
+### **1. Rule Analyzer (규칙 분석기)**
+- **유형**: Python 기반 코드 분석 도구
+- **경로**: `sample_code/rule_analyzer/`
+- **주요 기능**: 이슈/오류 검출, 조건 파싱/분석, 메트릭 생성
 
-## 🎯 시스템 아키텍처
+### **2. Vizier (비지어)**
+- **유형**: Java/Vue.js 제품 관리 플랫폼
+- **경로**: `sample_code/vizier(sample)/`
+- **주요 기능**: 제품 관계 관리, 종속관계(Leader-Follower) 관리, 영향 분석
 
-### Rule Analyzer 아키텍처
-```mermaid
-graph TB
-    A[소스코드 입력] --> B[AST 파서]
-    B --> C[CodeChunk 생성]
-    C --> D[Issue Detector]
-    C --> E[Condition Analyzer]
-    C --> F[Complexity Calculator]
-    D --> G[Report Generator]
-    E --> G
-    F --> G
-    G --> H[다국어 템플릿]
-    H --> I[최종 보고서]
-```
+**⚠️ 중요**: `sample_code`는 테스트용 폴더명이며, 실제 프로젝트는 위의 2개입니다.
 
-### Vizier 아키텍처
-```mermaid
-graph TB
-    A[Vue.js Frontend] --> B[API Layer]
-    B --> C[Spring Boot Backend]
-    C --> D[Service Layer]
-    D --> E[Data Access Layer]
-    E --> F[MySQL Database]
-    
-    G[Admin Panel] --> B
-    H[Product Management] --> B
-    I[Rule Engine] --> B
-```
-
-## 📋 주요 사용 사례
-
-### Rule Analyzer
-- **비즈니스 룰 검증**: 복잡한 비즈니스 로직의 정확성 검증
-- **코드 품질 분석**: 복잡도, 중복, 일관성 등 코드 품질 지표 측정
-- **이슈 자동 감지**: 잠재적 버그와 문제점 사전 발견
-- **문서화 자동화**: 분석 결과를 기반으로 한 자동 보고서 생성
-
-### Vizier
-- **제품 카탈로그 관리**: 제품 정보의 체계적 관리 및 검색
-- **관계형 데이터 분석**: 제품 간 관계 및 의존성 분석
-- **영향 분석**: 변경사항이 전체 시스템에 미치는 영향 분석
-- **룰 엔진 관리**: 비즈니스 룰의 중앙 집중식 관리
 ## 📊 전체 통계
 
 | 🎯 메트릭 | 📊 값 |
 |-----------|-------|
-| **총 파일 수** | 676 |
-| **총 Chunk 수** | 2667 |
-| **총 토큰 수** | 327,727 |
-| **평균 복잡도** | 9.1 |
-| **최대 복잡도** | 249 |
+| **총 파일 수** | 1583 |
+| **총 Chunk 수** | 6861 |
+| **총 토큰 수** | 715,082 |
+| **평균 복잡도** | 12.7 |
+| **최대 복잡도** | 1158 |
 
 ## 🏗️ 디렉토리 구조
 
@@ -106,7 +54,9 @@ sample_code/
       ├── protocols/
       ├── utils/
   ├── vizier(sample)/
-    ├── be/
+    ├── vizier-be-prod-develop/
+      ├── gradle/
+        ├── wrapper/
       ├── src/
         ├── main/
           ├── java/
@@ -114,45 +64,163 @@ sample_code/
               ├── lgcns/
                 ├── svcp/
                   ├── prod/
+                    ├── advice/
+                    ├── auth/
+                      ├── service/
                     ├── config/
+                    ├── constant/
+                    ├── context/
                     ├── dataaccess/
                       ├── impl/
                     ├── entity/
                       ├── external/
+                    ├── enums/
+                    ├── exception/
+                    ├── filters/
+                    ├── i18n/
+                    ├── interceptor/
+                    ├── mapper/
+                      ├── ruleengine/
                     ├── online/
                       ├── prod/
                         ├── controller/
                         ├── dto/
+                          ├── category/
+                          ├── characteristic/
+                          ├── common/
+                          ├── component/
+                            ├── benefit/
+                            ├── characteristic/
+                            ├── price/
+                            ├── service/
+                          ├── group/
+                          ├── offer/
+                          ├── resource/
                         ├── service/
+                        ├── util/
+                    ├── properties/
+                    ├── ruleengine/
+                      ├── controller/
+                      ├── dto/
+                        ├── category/
+                        ├── condition/
+                        ├── field/
+                        ├── rule/
+                      ├── entity/
+                      ├── service/
+                      ├── wrapper/
+                    ├── tomcatError/
+                      ├── controller/
                     ├── ui/
                       ├── prod/
                         ├── controller/
+                          ├── admin/
                         ├── dto/
+                          ├── admin/
+                            ├── factor/
+                            ├── matrix/
+                              ├── builder/
+                            ├── table/
+                              ├── ref/
                           ├── analysis/
                             ├── download/
+                          ├── attribute/
+                          ├── bulkupload/
+                          ├── category/
+                            ├── detail/
+                            ├── tab/
+                            ├── update/
+                          ├── characteristic/
+                          ├── common/
+                            ├── metadata/
+                            ├── search/
+                            ├── structure/
+                          ├── component/
+                            ├── addResource/
+                            ├── list/
+                            ├── search/
+                            ├── update/
+                          ├── customvalidation/
+                            ├── history/
+                          ├── dashboard/
+                            ├── request/
+                            ├── response/
+                          ├── export/
                           ├── extend/
+                          ├── group/
+                            ├── search/
+                          ├── history/
+                            ├── detail/
+                            ├── save/
+                          ├── item/
+                            ├── detail/
+                          ├── label/
                           ├── multiEntity/
                             ├── create/
                             ├── detail/
                             ├── rel/
                             ├── search/
+                          ├── notifications/
+                          ├── offer/
+                            ├── detail/
+                            ├── duplicate/
+                            ├── list/
+                              ├── dto/
+                            ├── search/
+                            ├── structure/
+                              ├── listAddComponent/
+                              ├── update/
+                          ├── price/
+                          ├── publish/
+                            ├── aprv/
+                            ├── item/
+                            ├── packages/
+                          ├── resource/
+                            ├── create/
+                            ├── list/
+                            ├── search/
+                            ├── update/
+                          ├── userpocket/
+                        ├── enums/
+                          ├── entity/
+                          ├── item/
+                          ├── publish/
                         ├── service/
+                          ├── admin/
+                          ├── customexcel/
+                            ├── impl/
+                          ├── dashboard/
+                            ├── impl/
+                          ├── impl/
+                        ├── util/
                     ├── util/
                       ├── excel/
                         ├── annotation/
                       ├── paging/
+                    ├── validator/
+                      ├── annotation/
           ├── resources/
+            ├── META-INF/
+              ├── spring/
             ├── messages/
             ├── sql/
               ├── mariadb/
               ├── postgresql/
-    ├── fe/
+    ├── vizier-fe-all-develop/
+      ├── .__mf__temp/
+        ├── host/
       ├── nginx/
       ├── public/
         ├── files/
         ├── img/
       ├── src/
         ├── api/
+          ├── admin/
+            ├── factor/
+            ├── matrix/
+            ├── path/
+            ├── rule-engine/
+            ├── tableStructure/
           ├── prod/
             ├── path/
         ├── assets/
@@ -178,8 +246,31 @@ sample_code/
           ├── controls/
             ├── examples/
           ├── prod/
+            ├── catalog/
+              ├── component/
+                ├── create/
+              ├── impact-analysis/
+                ├── target-search/
+                ├── view/
+                  ├── GridDisplayMode/
+              ├── offer/
+                ├── component/
+              ├── resource/
+            ├── category/
+              ├── tree-view/
+                ├── CardTree/
+                ├── TreeView/
+                ├── tabs/
+            ├── chatbot/
             ├── common/
+            ├── dashboard/
+              ├── recently-worked/
+              ├── subscriber-top-10/
             ├── extends/
+              ├── create/
+              ├── mutil-entity/
+                ├── search/
+                  ├── tabs/
               ├── relation/
                 ├── manager/
                   ├── form/
@@ -188,14 +279,20 @@ sample_code/
                     ├── content/
                     ├── search/
                 ├── search/
+              ├── search/
             ├── icons/
             ├── layout/
+            ├── publish/
+              ├── common/
+              ├── step/
             ├── shared/
         ├── composables/
         ├── constants/
+          ├── admin/
         ├── enums/
         ├── events/
         ├── interfaces/
+          ├── admin/
           ├── prod/
         ├── layouts/
         ├── mocks/
@@ -213,13 +310,70 @@ sample_code/
           ├── user/
           ├── voca/
         ├── pages/
+          ├── admin/
+            ├── factor/
+            ├── subs/
+              ├── attribute/
+                ├── item-edit/
+                ├── items-view/
+              ├── code/
+              ├── common/
+              ├── custom-validation/
+              ├── domain/
+              ├── label/
+              ├── matrix/
+              ├── menu/
+              ├── message/
+              ├── org/
+              ├── permission/
+                ├── group/
+              ├── screen/
+              ├── term/
+              ├── user/
+              ├── vocab/
+            ├── types/
+          ├── code/
+            ├── subs/
+          ├── controls/
+          ├── domain/
+            ├── subs/
+          ├── functions/
+            ├── notice/
+              ├── subs/
+            ├── subs/
+              ├── common/
+          ├── orgInfo/
+            ├── subs/
           ├── prod/
             ├── functions/
+              ├── catalog/
+                ├── component/
+                ├── impact-analysis/
+                ├── offer/
+                ├── resource/
+              ├── category/
+                ├── tree-view/
+              ├── dashboard/
               ├── extends/
+                ├── create/
+                ├── group/
+                ├── mutil-entity/
                 ├── relation/
+                ├── search/
+              ├── publish/
+          ├── solution/
+            ├── popup/
+          ├── syssms/
+            ├── subs/
+          ├── userinfo/
+            ├── subs/
+          ├── vocap/
+            ├── subs/
         ├── plugins/
         ├── router/
         ├── store/
+          ├── admin/
+          ├── catalog/
         ├── styles/
         ├── types/
           ├── catalog/
@@ -238,25 +392,26 @@ sample_code/
 
 | 🧩 Chunk 타입 | 📊 개수 | 📈 비율 |
 |---------------|--------|--------|
-| overview | 676 | 25.3% |
-| class | 150 | 5.6% |
-| method | 319 | 12.0% |
-| function | 65 | 2.4% |
+| overview | 1583 | 23.1% |
+| class | 605 | 8.8% |
+| method | 319 | 4.6% |
+| function | 82 | 1.2% |
 | async_function | 4 | 0.1% |
-| package | 93 | 3.5% |
-| interface | 2 | 0.1% |
-| template | 355 | 13.3% |
-| style | 125 | 4.7% |
-| arrow_function | 878 | 32.9% |
+| template | 663 | 9.7% |
+| style | 332 | 4.8% |
+| arrow_function | 2585 | 37.7% |
+| package | 618 | 9.0% |
+| enum | 26 | 0.4% |
+| interface | 44 | 0.6% |
 
 ### 복잡도 분포
 
 ```mermaid
 pie title 복잡도 분포
-    "낮음(1-3)" : 531
-    "보통(4-7)" : 388
-    "높음(8-15)" : 278
-    "매우높음(16+)" : 163
+    "낮음(1-3)" : 1137
+    "보통(4-7)" : 1006
+    "높음(8-15)" : 834
+    "매우높음(16+)" : 630
 ```
 
 ## 🔝 복잡한 함수 TOP 10
@@ -270,32 +425,32 @@ pie title 복잡도 분포
 | 5 | `handleClick` | SubMenuCommon.vue | 29 | 79 |
 | 6 | `_analyze_structure` | rule_analyzer.py | 27 | 961 |
 | 7 | `fetchAndSaveTranslations` | fetch-i18n.ts | 26 | 71 |
-| 8 | `DFSDetectCycle` | extend-utils.ts | 24 | 80 |
-| 9 | `_check_number_field_ambiguity` | issue_detector.py | 22 | 1278 |
-| 10 | `_parse_condition_tree` | condition_analyzer.py | 20 | 645 |
+| 8 | `handleImageUpload` | UploadUserImageEditMode.vue | 26 | 74 |
+| 9 | `DFSDetectCycle` | extend-utils.ts | 24 | 80 |
+| 10 | `_check_number_field_ambiguity` | issue_detector.py | 22 | 1278 |
 
 ## 🏷️ 인기 태그 TOP 20
 
-- **vue**: 972회
-- **javascript**: 934회
-- **arrow_function**: 878회
-- **typescript**: 364회
-- **vue.js 컴포넌트**: 355회
-- **template**: 355회
-- **html**: 355회
-- **java**: 276회
-- **class**: 243회
-- **typescript 파일**: 182회
+- **javascript**: 2660회
+- **arrow_function**: 2585회
+- **vue**: 2053회
+- **java**: 1851회
+- **class**: 1225회
+- **vue.js 컴포넌트**: 663회
+- **template**: 663회
+- **html**: 663회
+- **package**: 618회
+- **import**: 618회
+- **typescript**: 505회
+- **style**: 332회
+- **css**: 332회
+- **typescript 파일**: 252회
 - **public_method**: 152회
 - **private_method**: 145회
-- **style**: 125회
-- **css**: 125회
-- **package**: 93회
-- **import**: 93회
+- **spring**: 131회
+- **service**: 125회
+- **spring-boot**: 96회
 - **getter**: 65회
-- **function**: 46회
-- **sample_code**: 40회
-- **rule_analyzer**: 40회
 
 ## 📁 디렉토리별 상세 정보
 
@@ -387,760 +542,2238 @@ pie title 복잡도 분포
 | **Chunk 수** | 21 |
 | **상대 경로** | `rule_analyzer/streaming/protocols` |
 
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 17 |
-| **Chunk 수** | 51 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 3 |
-| **Chunk 수** | 9 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis/download
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis/download` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 2 |
-| **Chunk 수** | 6 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/search
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 2 |
-| **Chunk 수** | 6 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/search` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 3 |
-| **Chunk 수** | 9 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/rel
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 4 |
-| **Chunk 수** | 12 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/rel` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/create
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/create` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/controller
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 4 |
-| **Chunk 수** | 12 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/controller` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/service
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 4 |
-| **Chunk 수** | 12 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/service` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 8 |
-| **Chunk 수** | 24 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/excel
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 7 |
-| **Chunk 수** | 21 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/excel` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/excel/annotation
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 2 |
-| **Chunk 수** | 4 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/excel/annotation` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/paging
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 2 |
-| **Chunk 수** | 5 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/paging` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/config
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 7 |
-| **Chunk 수** | 21 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/config` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/entity
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 17 |
-| **Chunk 수** | 51 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/entity` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/entity/external
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 2 |
-| **Chunk 수** | 6 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/entity/external` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/dataaccess
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/dataaccess` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/dataaccess/impl
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/dataaccess/impl` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/online/prod/dto
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 2 |
-| **Chunk 수** | 6 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/online/prod/dto` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/online/prod/controller
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/online/prod/controller` |
-
-### 📂 vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/online/prod/service
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/online/prod/service` |
-
-### 📂 vizier(sample)/fe
+### 📂 vizier(sample)/vizier-fe-all-develop
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 5 |
 | **Chunk 수** | 5 |
-| **상대 경로** | `vizier(sample)/fe` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop` |
 
-### 📂 vizier(sample)/fe/tests/unit
+### 📂 vizier(sample)/vizier-fe-all-develop/.__mf__temp/host
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 1 |
-| **상대 경로** | `vizier(sample)/fe/tests/unit` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/.__mf__temp/host` |
 
-### 📂 vizier(sample)/fe/tests/setup
+### 📂 vizier(sample)/vizier-fe-all-develop/tests/unit
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 1 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/tests/unit` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/tests/setup
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/fe/tests/setup` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/tests/setup` |
 
-### 📂 vizier(sample)/fe/tests/e2e
+### 📂 vizier(sample)/vizier-fe-all-develop/tests/e2e
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/tests/e2e` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/tests/e2e` |
 
-### 📂 vizier(sample)/fe/public
+### 📂 vizier(sample)/vizier-fe-all-develop/public
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 8 |
-| **상대 경로** | `vizier(sample)/fe/public` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/public` |
 
-### 📂 vizier(sample)/fe/src
+### 📂 vizier(sample)/vizier-fe-all-develop/src
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 6 |
 | **Chunk 수** | 9 |
-| **상대 경로** | `vizier(sample)/fe/src` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src` |
 
-### 📂 vizier(sample)/fe/src/mocks
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 3 |
 | **Chunk 수** | 5 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks` |
 
-### 📂 vizier(sample)/fe/src/mocks/prod
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/prod
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/prod` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/prod` |
 
-### 📂 vizier(sample)/fe/src/mocks/prod/extends
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/prod/extends
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 1 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/prod/extends` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/extends` |
 
-### 📂 vizier(sample)/fe/src/mocks/prod/category
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/prod/category
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/prod/category` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/category` |
 
-### 📂 vizier(sample)/fe/src/mocks/prod/catalog
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 4 |
-| **Chunk 수** | 4 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/prod/catalog` |
-
-### 📂 vizier(sample)/fe/src/mocks/prod/catalog/data
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/prod/catalog
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 4 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/prod/catalog/data` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/catalog` |
 
-### 📂 vizier(sample)/fe/src/mocks/prod/impact-analysis
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/prod/catalog/data
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 4 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/catalog/data` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/prod/impact-analysis
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 6 |
 | **Chunk 수** | 6 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/prod/impact-analysis` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/impact-analysis` |
 
-### 📂 vizier(sample)/fe/src/mocks/smg
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/smg
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/smg` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/smg` |
 
-### 📂 vizier(sample)/fe/src/mocks/voca
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/voca
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/voca` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/voca` |
 
-### 📂 vizier(sample)/fe/src/mocks/org
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/org
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/org` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/org` |
 
-### 📂 vizier(sample)/fe/src/mocks/user
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 2 |
-| **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/user` |
-
-### 📂 vizier(sample)/fe/src/mocks/cmcd
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/user
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/cmcd` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/user` |
 
-### 📂 vizier(sample)/fe/src/mocks/screen
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/cmcd
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/cmcd` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/screen
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 4 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/screen` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/screen` |
 
-### 📂 vizier(sample)/fe/src/mocks/domain
+### 📂 vizier(sample)/vizier-fe-all-develop/src/mocks/domain
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 3 |
-| **상대 경로** | `vizier(sample)/fe/src/mocks/domain` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/mocks/domain` |
 
-### 📂 vizier(sample)/fe/src/types
+### 📂 vizier(sample)/vizier-fe-all-develop/src/types
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 4 |
-| **상대 경로** | `vizier(sample)/fe/src/types` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/types` |
 
-### 📂 vizier(sample)/fe/src/types/catalog/component
+### 📂 vizier(sample)/vizier-fe-all-develop/src/types/catalog/component
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 1 |
-| **상대 경로** | `vizier(sample)/fe/src/types/catalog/component` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/types/catalog/component` |
 
-### 📂 vizier(sample)/fe/src/composables
+### 📂 vizier(sample)/vizier-fe-all-develop/src/composables
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 9 |
 | **Chunk 수** | 24 |
-| **상대 경로** | `vizier(sample)/fe/src/composables` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/composables` |
 
-### 📂 vizier(sample)/fe/src/plugins
+### 📂 vizier(sample)/vizier-fe-all-develop/src/plugins
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/src/plugins` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/plugins` |
 
-### 📂 vizier(sample)/fe/src/constants
+### 📂 vizier(sample)/vizier-fe-all-develop/src/constants
 
 | 속성 | 값 |
 |------|-----|
-| **파일 수** | 14 |
-| **Chunk 수** | 15 |
-| **상대 경로** | `vizier(sample)/fe/src/constants` |
+| **파일 수** | 16 |
+| **Chunk 수** | 19 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/constants` |
 
-### 📂 vizier(sample)/fe/src/enums
+### 📂 vizier(sample)/vizier-fe-all-develop/src/constants/admin
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 9 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/constants/admin` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/enums
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 8 |
 | **Chunk 수** | 8 |
-| **상대 경로** | `vizier(sample)/fe/src/enums` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/enums` |
 
-### 📂 vizier(sample)/fe/src/utils
+### 📂 vizier(sample)/vizier-fe-all-develop/src/utils
 
 | 속성 | 값 |
 |------|-----|
-| **파일 수** | 11 |
-| **Chunk 수** | 64 |
-| **상대 경로** | `vizier(sample)/fe/src/utils` |
+| **파일 수** | 12 |
+| **Chunk 수** | 68 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/utils` |
 
-### 📂 vizier(sample)/fe/src/components/prod/extends/relation/search
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/search
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 12 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/extends/relation/search` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/search` |
 
-### 📂 vizier(sample)/fe/src/components/prod/extends/relation/manager
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 16 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/extends/relation/manager` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager` |
 
-### 📂 vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/content
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/content
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 3 |
 | **Chunk 수** | 30 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/content` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/content` |
 
-### 📂 vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/search
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/search
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 3 |
 | **Chunk 수** | 19 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/search` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/search` |
 
-### 📂 vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/common
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/common
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 37 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/common` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/common` |
 
-### 📂 vizier(sample)/fe/src/components/prod/extends/relation/manager/form
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/form
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 16 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/extends/relation/manager/form` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/form` |
 
-### 📂 vizier(sample)/fe/src/components/prod/layout
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/mutil-entity/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 6 |
+| **Chunk 수** | 54 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/mutil-entity/search` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/mutil-entity/search/tabs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 28 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/mutil-entity/search/tabs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 46 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/search` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/create
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 8 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/create` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 9 |
+| **Chunk 수** | 61 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/tabs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 14 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/tabs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/TreeView
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 38 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/TreeView` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/CardTree
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 14 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/CardTree` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/chatbot
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 56 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/chatbot` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/layout
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 20 |
 | **Chunk 수** | 101 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/layout` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout` |
 
-### 📂 vizier(sample)/fe/src/components/prod/shared
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 11 |
+| **Chunk 수** | 101 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/component
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/component` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 62 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component/create
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component/create` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 17 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/view
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 14 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/view` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/view/GridDisplayMode
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 22 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/view/GridDisplayMode` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/target-search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 10 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/target-search` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/resource
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 6 |
+| **Chunk 수** | 48 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/resource` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/shared
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 17 |
 | **Chunk 수** | 180 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/shared` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared` |
 
-### 📂 vizier(sample)/fe/src/components/prod/common
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 13 |
+| **Chunk 수** | 77 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/subscriber-top-10
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/subscriber-top-10` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/recently-worked
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/recently-worked` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/common
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 35 |
 | **Chunk 수** | 166 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/common` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/common` |
 
-### 📂 vizier(sample)/fe/src/components/prod/icons
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/publish
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 61 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/publish` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/publish/step
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 34 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/publish/step` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/publish/common
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/publish/common` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/prod/icons
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 173 |
 | **Chunk 수** | 347 |
-| **상대 경로** | `vizier(sample)/fe/src/components/prod/icons` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/prod/icons` |
 
-### 📂 vizier(sample)/fe/src/components/admin/rule-engine
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 8 |
 | **Chunk 수** | 64 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/rule-engine` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine` |
 
-### 📂 vizier(sample)/fe/src/components/admin/rule-engine/rule-structure
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/rule-structure
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 7 |
 | **Chunk 수** | 23 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/rule-engine/rule-structure` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/rule-structure` |
 
-### 📂 vizier(sample)/fe/src/components/admin/rule-engine/rule-structure/icon
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/rule-structure/icon
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 6 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/rule-engine/rule-structure/icon` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/rule-structure/icon` |
 
-### 📂 vizier(sample)/fe/src/components/admin/matrix-structure
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 62 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/matrix-structure` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure` |
 
-### 📂 vizier(sample)/fe/src/components/admin/matrix-structure/common
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure/common
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 17 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/matrix-structure/common` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure/common` |
 
-### 📂 vizier(sample)/fe/src/components/admin/table-structure
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/table-structure
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 60 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/table-structure` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/table-structure` |
 
-### 📂 vizier(sample)/fe/src/components/admin/table-structure/tab
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/table-structure/tab
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 12 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/table-structure/tab` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/table-structure/tab` |
 
-### 📂 vizier(sample)/fe/src/components/admin/factor-management
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 44 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/factor-management` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management` |
 
-### 📂 vizier(sample)/fe/src/components/admin/factor-management/common
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/common
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 3 |
 | **Chunk 수** | 18 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/factor-management/common` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/common` |
 
-### 📂 vizier(sample)/fe/src/components/admin/factor-management/factor-types
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/factor-types
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 2 |
 | **Chunk 수** | 19 |
-| **상대 경로** | `vizier(sample)/fe/src/components/admin/factor-management/factor-types` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/factor-types` |
 
-### 📂 vizier(sample)/fe/src/components/controls
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/controls
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 28 |
 | **Chunk 수** | 120 |
-| **상대 경로** | `vizier(sample)/fe/src/components/controls` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/controls` |
 
-### 📂 vizier(sample)/fe/src/components/controls/examples
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/controls/examples
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 20 |
 | **Chunk 수** | 31 |
-| **상대 경로** | `vizier(sample)/fe/src/components/controls/examples` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/controls/examples` |
 
-### 📂 vizier(sample)/fe/src/components/Description
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 5 |
-| **상대 경로** | `vizier(sample)/fe/src/components/Description` |
-
-### 📂 vizier(sample)/fe/src/components/Description/subs
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/Description
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 5 |
-| **상대 경로** | `vizier(sample)/fe/src/components/Description/subs` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/Description` |
 
-### 📂 vizier(sample)/fe/src/components/bulk-upload
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/Description/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/Description/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/components/bulk-upload
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 8 |
 | **Chunk 수** | 21 |
-| **상대 경로** | `vizier(sample)/fe/src/components/bulk-upload` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/components/bulk-upload` |
 
-### 📂 vizier(sample)/fe/src/layouts
+### 📂 vizier(sample)/vizier-fe-all-develop/src/layouts
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 3 |
 | **Chunk 수** | 15 |
-| **상대 경로** | `vizier(sample)/fe/src/layouts` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/layouts` |
 
-### 📂 vizier(sample)/fe/src/api/prod
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 15 |
-| **Chunk 수** | 121 |
-| **상대 경로** | `vizier(sample)/fe/src/api/prod` |
-
-### 📂 vizier(sample)/fe/src/api/prod/path
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/prod
 
 | 속성 | 값 |
 |------|-----|
-| **파일 수** | 1 |
-| **Chunk 수** | 1 |
-| **상대 경로** | `vizier(sample)/fe/src/api/prod/path` |
+| **파일 수** | 17 |
+| **Chunk 수** | 128 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/prod` |
 
-### 📂 vizier(sample)/fe/src/events
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/prod/path
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 1 |
-| **상대 경로** | `vizier(sample)/fe/src/events` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/prod/path` |
 
-### 📂 vizier(sample)/fe/src/views
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/admin
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/admin` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/admin/tableStructure
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 7 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/admin/tableStructure` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/admin/path
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 1 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/admin/path` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/admin/factor
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/admin/factor` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/admin/rule-engine
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 16 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/admin/rule-engine` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/api/admin/matrix
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 7 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/api/admin/matrix` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/events
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 1 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/events` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/views
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 3 |
 | **Chunk 수** | 6 |
-| **상대 경로** | `vizier(sample)/fe/src/views` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/views` |
 
-### 📂 vizier(sample)/fe/src/pages
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/src/pages` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages` |
 
-### 📂 vizier(sample)/fe/src/pages/prod/functions
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 16 |
-| **상대 경로** | `vizier(sample)/fe/src/pages/prod/functions` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions` |
 
-### 📂 vizier(sample)/fe/src/pages/prod/functions/extends/relation
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/relation
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 4 |
 | **Chunk 수** | 17 |
-| **상대 경로** | `vizier(sample)/fe/src/pages/prod/functions/extends/relation` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/relation` |
 
-### 📂 vizier(sample)/fe/src/interfaces
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/group
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 24 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/group` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/mutil-entity
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/mutil-entity` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/search
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
-| **Chunk 수** | 1 |
-| **상대 경로** | `vizier(sample)/fe/src/interfaces` |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/search` |
 
-### 📂 vizier(sample)/fe/src/interfaces/prod
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/create
 
 | 속성 | 값 |
 |------|-----|
-| **파일 수** | 18 |
+| **파일 수** | 1 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/create` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/category/tree-view
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/category/tree-view` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/offer
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 63 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/offer` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/component
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
 | **Chunk 수** | 18 |
-| **상대 경로** | `vizier(sample)/fe/src/interfaces/prod` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/component` |
 
-### 📂 vizier(sample)/fe/src/store
-
-| 속성 | 값 |
-|------|-----|
-| **파일 수** | 33 |
-| **Chunk 수** | 130 |
-| **상대 경로** | `vizier(sample)/fe/src/store` |
-
-### 📂 vizier(sample)/fe/src/router
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/impact-analysis
 
 | 속성 | 값 |
 |------|-----|
 | **파일 수** | 1 |
 | **Chunk 수** | 2 |
-| **상대 경로** | `vizier(sample)/fe/src/router` |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/impact-analysis` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/resource
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/resource` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/dashboard
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 4 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/dashboard` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/publish
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/publish` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 16 |
+| **Chunk 수** | 98 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/types
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 4 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/types` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 20 |
+| **Chunk 수** | 135 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 39 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 13 |
+| **Chunk 수** | 45 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/items-view
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/items-view` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/org
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 38 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/org` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/term
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 19 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/term` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/code
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 10 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/code` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/label
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 23 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/label` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/message
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 7 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/message` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/user
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/user` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/vocab
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/vocab` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/common
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 7 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/common` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/screen
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 50 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/screen` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/menu
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 8 |
+| **Chunk 수** | 75 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/menu` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/permission
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 8 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/permission` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/permission/group
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 27 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/permission/group` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/domain
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 29 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/domain` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/matrix
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/matrix` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/admin/factor
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/admin/factor` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/code
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/code` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/code/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 24 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/code/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/solution
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 8 |
+| **Chunk 수** | 145 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/solution` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 62 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/vocap
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/vocap` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/vocap/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 49 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/vocap/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/controls
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 20 |
+| **Chunk 수** | 53 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/controls` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/syssms
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/syssms` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/syssms/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 19 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/syssms/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/userinfo
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/userinfo` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/userinfo/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 27 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/userinfo/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/functions
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 58 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/functions` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 19 |
+| **Chunk 수** | 187 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs/common
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 1 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs/common` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/functions/notice
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/functions/notice` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/functions/notice/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/functions/notice/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/orgInfo
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/orgInfo` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/orgInfo/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 30 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/orgInfo/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/domain
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/domain` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/pages/domain/subs
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/pages/domain/subs` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/interfaces
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 1 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/interfaces` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/interfaces/prod
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 20 |
+| **Chunk 수** | 20 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/interfaces/prod` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/interfaces/admin
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/interfaces/admin` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/store
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 40 |
+| **Chunk 수** | 199 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/store` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/store/catalog
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 4 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/store/catalog` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/store/admin
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 19 |
+| **Chunk 수** | 93 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/store/admin` |
+
+### 📂 vizier(sample)/vizier-fe-all-develop/src/router
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 2 |
+| **상대 경로** | `vizier(sample)/vizier-fe-all-develop/src/router` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/filters
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/filters` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/userpocket
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/userpocket` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 21 |
+| **Chunk 수** | 63 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/search` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/duplicate
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/duplicate` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/detail
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/detail` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list/dto
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list/dto` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/update
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/update` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/listAddComponent
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/listAddComponent` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 17 |
+| **Chunk 수** | 51 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/bulkupload
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/bulkupload` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis/download
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis/download` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/characteristic
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 20 |
+| **Chunk 수** | 60 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/characteristic` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/attribute
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 9 |
+| **Chunk 수** | 27 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/attribute` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 8 |
+| **Chunk 수** | 24 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/update
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/update` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/tab
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/tab` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/detail
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/detail` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/group
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/group` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/group/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/group/search` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/search` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/rel
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/rel` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/create
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/create` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/factor
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/factor` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/table
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 9 |
+| **Chunk 수** | 27 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/table` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/table/ref
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/table/ref` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/matrix
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/matrix` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/matrix/builder
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/matrix/builder` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/label
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 6 |
+| **Chunk 수** | 18 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/label` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/update
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/update` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/search` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/list
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/list` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 13 |
+| **Chunk 수** | 39 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/response
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/response` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/request
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/request` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 13 |
+| **Chunk 수** | 39 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/search` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/structure
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/structure` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/metadata
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/metadata` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/aprv
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/aprv` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/item
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/item` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/packages
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 8 |
+| **Chunk 수** | 24 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/packages` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/price
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 12 |
+| **Chunk 수** | 36 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/price` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item/detail
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item/detail` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/detail
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 9 |
+| **Chunk 수** | 27 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/detail` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/save
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/save` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 9 |
+| **Chunk 수** | 27 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 10 |
+| **Chunk 수** | 29 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/update
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/update` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/search
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/search` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/list
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/list` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/create
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/create` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/notifications
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/notifications` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 22 |
+| **Chunk 수** | 66 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/history
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/history` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/util
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/util` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 11 |
+| **Chunk 수** | 33 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/entity
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/entity` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/publish
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/publish` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/item
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/item` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 21 |
+| **Chunk 수** | 63 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/admin
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/admin` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 19 |
+| **Chunk 수** | 57 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/impl
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 6 |
+| **Chunk 수** | 18 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/impl` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 10 |
+| **Chunk 수** | 30 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/impl
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 10 |
+| **Chunk 수** | 30 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/impl` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/admin
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/admin` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/impl
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/impl` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 2 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/category
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/category` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/field
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/field` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/rule
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/rule` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/condition
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/condition` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/wrapper
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/wrapper` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/entity
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/entity` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/controller
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/controller` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/service
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/service` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/context
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/context` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/validator
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/validator` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/validator/annotation
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 2 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/validator/annotation` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 8 |
+| **Chunk 수** | 24 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/excel
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/excel` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/excel/annotation
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 4 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/excel/annotation` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/paging
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 5 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/paging` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/config
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/config` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/auth/service
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/auth/service` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 17 |
+| **Chunk 수** | 51 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/external
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/external` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/enums
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 2 |
+| **Chunk 수** | 6 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/enums` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 20 |
+| **Chunk 수** | 60 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/ruleengine
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/ruleengine` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/advice
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/advice` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/dataaccess
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/dataaccess` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/dataaccess/impl
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/dataaccess/impl` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/constant
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/constant` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/properties
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/properties` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/offer
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 6 |
+| **Chunk 수** | 18 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/offer` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/characteristic
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 13 |
+| **Chunk 수** | 39 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/characteristic` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/category
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/category` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/group
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 8 |
+| **Chunk 수** | 24 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/group` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/service
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 6 |
+| **Chunk 수** | 18 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/service` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/benefit
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 4 |
+| **Chunk 수** | 12 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/benefit` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/common
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 5 |
+| **Chunk 수** | 15 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/common` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/resource
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/resource` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/util
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/util` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 7 |
+| **Chunk 수** | 21 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 8 |
+| **Chunk 수** | 24 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/i18n
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/i18n` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/tomcatError/controller
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/tomcatError/controller` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/exception
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 1 |
+| **Chunk 수** | 3 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/exception` |
+
+### 📂 vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/interceptor
+
+| 속성 | 값 |
+|------|-----|
+| **파일 수** | 3 |
+| **Chunk 수** | 9 |
+| **상대 경로** | `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/interceptor` |
 
 
 ## 🧩 주요 모듈별 기능 요약
 
-### 📂 Rule Analyzer 모듈 구조
-
-#### **analyzers/** - 핵심 분석 엔진
-- **rule_analyzer.py**: 메인 룰 분석기 (7가지 이슈 검출)
-- **advanced_analyzer.py**: 고급 분석 기능 (복잡도 계산, 메트릭 생성)
-- **condition_analyzer.py**: 조건 파싱 및 분석 (AST 기반)
-- **issue_detector.py**: 이슈 감지 엔진 (25개 메서드)
-- **logic_flow.py**: 로직 흐름 분석
-- **metrics_generator.py**: 성능 메트릭 생성
-
-#### **formatters/** - 출력 포맷터
-- **text_formatter.py**: 텍스트 기반 보고서 생성
-- **streaming_formatter.py**: 실시간 스트리밍 출력
-- **templates/**: 다국어 템플릿 (한국어/영어)
-- **options/**: 포맷팅 옵션 설정
-
-#### **streaming/** - 실시간 처리
-- **stream_manager.py**: 스트리밍 세션 관리
-- **stream_generator.py**: 실시간 데이터 생성
-- **protocols/**: 스트리밍 프로토콜 정의
-
-#### **shared/** - 공통 유틸리티
-- **config/**: 설정 관리
-- **utils/**: 공통 유틸리티 함수
-- **logging.py**: 로깅 시스템
-
-### 📂 Vizier 프로젝트 모듈 구조
-
-#### **Backend (Java Spring Boot)**
-- **com.lgcns.svcp.prod**: LG CNS 제품 관리 패키지
-  - **controller/**: REST API 컨트롤러
-  - **service/**: 비즈니스 로직 서비스
-  - **dto/**: 데이터 전송 객체
-  - **entity/**: JPA 엔티티
-  - **config/**: Spring 설정
-  - **util/**: 유틸리티 클래스
-
-#### **Frontend (Vue.js 3 + TypeScript)**
-- **components/**: Vue 컴포넌트
-  - **prod/**: 제품 관리 컴포넌트
-  - **admin/**: 관리자 기능 컴포넌트
-  - **controls/**: 공통 UI 컨트롤
-- **pages/**: 페이지 컴포넌트
-- **api/**: API 통신 모듈
-- **store/**: Pinia 상태 관리
-- **utils/**: 유틸리티 함수
-- **types/**: TypeScript 타입 정의
+### rule_analyzer
+- 설명: 모듈 기능 요약
+- 주요 클래스/함수: __init__.py, advanced_analyzer.py, chunk_builder.py, condition_analyzer.py, config_manager.py, constants.py### vizier(sample)
+- 설명: 모듈 기능 요약
+- 주요 클래스/함수: AIChatBotIcon.vue, AIIcon.vue, AIcon.vue, AccordionPage.vue, ActionButtons.vue, ActionSearch.vue
 ## 🛠️ 코드 품질 인사이트
 
-- 잠재적 리스크 파일: vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/common/ExtendAccordionGroupRow.vue, vizier(sample)/fe/src/components/admin/table-structure/TableContent.vue, vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UIExtendsService.java, vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/content/ExtendsFocusColumn.vue, vizier(sample)/fe/src/components/admin/rule-engine/RuleSearch.vue, vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/util/excel/ExcelReader.java, rule_analyzer/analyzers/issue_detector.py, vizier(sample)/fe/src/utils/format-data.ts- 중복 코드 발생 구간: 3곳
+- 잠재적 리스크 파일: vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/impl/UiCustomValidationServiceImpl.java, vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiComponentService.java, vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup/OrderEventDetlPopup.vue, vizier(sample)/vizier-fe-all-develop/src/pages/solution/FuncMgmtPage.vue, vizier(sample)/vizier-fe-all-develop/src/components/prod/chatbot/ChatBot.vue, vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiOfferService.java, vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UIPublishService.java, vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/service/RuleService.java- 중복 코드 발생 구간: 3곳
 - 테스트 관련 코드 비율: 0%
 
 ## 🚀 개선 제안
 
-- 리팩토링 우선순위: vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/common/ExtendAccordionGroupRow.vue, vizier(sample)/fe/src/components/admin/table-structure/TableContent.vue, vizier(sample)/be/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UIExtendsService.java, vizier(sample)/fe/src/components/prod/extends/relation/manager/relation-viewer/content/ExtendsFocusColumn.vue, vizier(sample)/fe/src/components/admin/rule-engine/RuleSearch.vue- 추천 리팩토링 기법: 큰 함수 분리(SRP), 타입 힌트/정적 분석 강화, 단위 테스트 추가, 복잡도 높은 분기 단순화, 핵심 경로 우선 리팩토링- 현대화 가이드라인: CI 도입 및 자동 테스트, 로깅/옵저버빌리티 강화, 설정의 환경변수화/보안 비밀 분리
+- 리팩토링 우선순위: vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/impl/UiCustomValidationServiceImpl.java, vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiComponentService.java, vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup/OrderEventDetlPopup.vue, vizier(sample)/vizier-fe-all-develop/src/pages/solution/FuncMgmtPage.vue, vizier(sample)/vizier-fe-all-develop/src/components/prod/chatbot/ChatBot.vue- 추천 리팩토링 기법: 큰 함수 분리(SRP), 타입 힌트/정적 분석 강화, 단위 테스트 추가, 복잡도 높은 분기 단순화, 핵심 경로 우선 리팩토링- 현대화 가이드라인: CI 도입 및 자동 테스트, 로깅/옵저버빌리티 강화, 설정의 환경변수화/보안 비밀 분리
 ---
 
 *이 요약은 AST 파싱을 통해 자동 생성되었습니다.*

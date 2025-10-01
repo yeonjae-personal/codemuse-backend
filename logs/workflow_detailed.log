@@ -1,0 +1,294 @@
+2025-10-01 16:19:45,124 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 16:19:57,241 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 16:19:57,241 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 16:19:57,475 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:19:59,973 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/a5888e58-a577-44b7-8cb7-717f22dffd8c/messages "HTTP/1.1 200 OK"
+2025-10-01 16:19:59,974 - workflow.question_standardizer - INFO -    표준화된 질문: "어떤 프로젝트의 소스코드인가요?"
+2025-10-01 16:20:00,024 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:00,865 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/0b16c07c-da93-4255-8d54-fb2c8c867f63/messages "HTTP/1.1 200 OK"
+2025-10-01 16:20:00,866 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 16:20:00,866 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 16:20:00,866 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 16:20:00,866 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 16:20:00,867 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 16:20:00,867 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 84269자
+2025-10-01 16:20:00,913 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:01,329 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/ce721b31-abfb-4b98-b704-900b69db05a1/messages "HTTP/1.1 502 Bad Gateway"
+2025-10-01 16:20:01,334 - workflow.response_generator - INFO -    생성된 응답 길이: 11자
+2025-10-01 16:20:26,958 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 16:20:29,884 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 16:20:29,885 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 16:20:30,044 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:31,117 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/80ec822c-fb69-4c96-86c8-ecbb493c5a41/messages "HTTP/1.1 200 OK"
+2025-10-01 16:20:31,118 - workflow.question_standardizer - INFO -    표준화된 질문: "프로젝트 소스는 무엇인가요?"
+2025-10-01 16:20:31,164 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:32,460 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/b09ab4d9-ab4d-4964-af9d-eae1a2781e1d/messages "HTTP/1.1 200 OK"
+2025-10-01 16:20:32,462 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 16:20:32,462 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 16:20:32,462 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 16:20:32,462 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 16:20:32,463 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 16:20:32,463 - workflow.response_generator - WARNING -    ⚠️ 컨텍스트가 너무 김 (84269자) - 10000자로 자름
+2025-10-01 16:20:32,463 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 10020자
+2025-10-01 16:20:32,537 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:35,825 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/670338d6-644f-41fa-ac6c-59f1dcec95c8/messages "HTTP/1.1 200 OK"
+2025-10-01 16:20:35,828 - workflow.response_generator - INFO -    생성된 응답 길이: 407자
+2025-10-01 16:20:42,946 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 16:20:42,946 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 16:20:42,997 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:43,764 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/ec2d3bfb-f4c4-4cba-ae90-f5d6838e2f92/messages "HTTP/1.1 200 OK"
+2025-10-01 16:20:43,765 - workflow.question_standardizer - INFO -    표준화된 질문: "프로젝트 소스에 어느 클래스들이 포함되어 있나요?"
+2025-10-01 16:20:43,818 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:44,509 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/f2be80f7-7a9d-486c-af56-608753d4a49a/messages "HTTP/1.1 200 OK"
+2025-10-01 16:20:44,511 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 16:20:44,511 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 16:20:44,511 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 16:20:44,511 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 16:20:44,512 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 16:20:44,512 - workflow.response_generator - WARNING -    ⚠️ 컨텍스트가 너무 김 (84269자) - 10000자로 자름
+2025-10-01 16:20:44,512 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 10020자
+2025-10-01 16:20:44,563 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:20:47,890 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/cca15253-7996-4456-9313-f52de71197dc/messages "HTTP/1.1 200 OK"
+2025-10-01 16:20:47,893 - workflow.response_generator - INFO -    생성된 응답 길이: 643자
+2025-10-01 16:21:10,487 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 16:21:10,487 - workflow.question_standardizer - INFO -    원본 질문: 종속관계 관련 api와 테이블 알려줘
+2025-10-01 16:21:10,532 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:21:11,219 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/84e3b482-f7f3-44a6-b763-550e346c8b1e/messages "HTTP/1.1 200 OK"
+2025-10-01 16:21:11,220 - workflow.question_standardizer - INFO -    표준화된 질문: "종속관계 API와 테이블 정보"
+2025-10-01 16:21:11,268 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:21:11,791 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/fbbf774b-34d5-44fc-a4ac-9b690d5fb0cd/messages "HTTP/1.1 200 OK"
+2025-10-01 16:21:11,794 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 16:21:11,794 - workflow.response_generator - INFO -    원본 질문: 종속관계 관련 api와 테이블 알려줘
+2025-10-01 16:21:11,794 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 16:21:11,794 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 16:21:11,794 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 16:21:11,794 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 6926자
+2025-10-01 16:21:11,846 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 16:21:15,552 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/a88acc78-f498-484f-a2b4-d5ae7f3141f8/messages "HTTP/1.1 200 OK"
+2025-10-01 16:21:15,554 - workflow.response_generator - INFO -    생성된 응답 길이: 886자
+2025-10-01 16:21:33,955 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 16:21:48,543 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:38:48,011 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:38:48,012 - workflow.question_standardizer - INFO -    원본 질문: 종속관계가 뭐야?
+2025-10-01 17:38:48,387 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:38:50,349 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/94fbbf93-2be9-420c-a9e9-52e8e79c9ec6/messages "HTTP/1.1 200 OK"
+2025-10-01 17:38:50,350 - workflow.question_standardizer - INFO -    표준화된 질문: "종속관계"에 대한 정보는 무엇인가요?
+2025-10-01 17:38:50,401 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:38:52,401 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/1d763f5a-8853-4e5f-9618-aa6c71857491/messages "HTTP/1.1 200 OK"
+2025-10-01 17:38:52,404 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:38:52,404 - workflow.response_generator - INFO -    원본 질문: 종속관계가 뭐야?
+2025-10-01 17:38:52,404 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:38:52,405 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:38:52,406 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:38:52,407 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 7279자
+2025-10-01 17:38:52,467 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:38:57,603 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/1906ede8-3a37-4776-8e5d-0deac100c108/messages "HTTP/1.1 200 OK"
+2025-10-01 17:38:57,615 - workflow.response_generator - INFO -    생성된 응답 길이: 784자
+2025-10-01 17:41:56,677 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:41:56,678 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:41:56,750 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:41:58,119 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/cae448b0-1c43-456f-84ad-931ce294baf4/messages "HTTP/1.1 200 OK"
+2025-10-01 17:41:58,119 - workflow.question_standardizer - INFO -    표준화된 질문: "소스 소속 프로젝트는 무엇인가요?"
+2025-10-01 17:41:58,164 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:41:59,371 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/3762bf9a-7332-4f74-a564-496dac0d445d/messages "HTTP/1.1 200 OK"
+2025-10-01 17:41:59,379 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:41:59,379 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:41:59,379 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:41:59,379 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:41:59,383 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:41:59,383 - workflow.response_generator - WARNING -    ⚠️ 컨텍스트가 너무 김 (84269자) - 10000자로 자름
+2025-10-01 17:41:59,384 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 10020자
+2025-10-01 17:41:59,436 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:42:04,796 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/dcb76064-ba5f-4a4e-8df1-b76bd379a6f5/messages "HTTP/1.1 200 OK"
+2025-10-01 17:42:04,798 - workflow.response_generator - INFO -    생성된 응답 길이: 562자
+2025-10-01 17:49:04,326 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:49:14,199 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:49:14,199 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:49:14,512 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:49:15,936 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/23dab934-840b-4945-abbf-78e02511795c/messages "HTTP/1.1 200 OK"
+2025-10-01 17:49:15,937 - workflow.question_standardizer - INFO -    표준화된 질문: "분석 대상 프로젝트명과 목적"
+2025-10-01 17:49:15,989 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:49:17,592 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/f4e0fc9b-56f5-4a8c-ab78-468850c9dace/messages "HTTP/1.1 200 OK"
+2025-10-01 17:49:17,595 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:49:17,595 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:49:17,595 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:49:17,596 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:49:17,597 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:49:17,598 - workflow.response_generator - WARNING -    ⚠️ 컨텍스트가 너무 김 (84269자) - 10000자로 자름
+2025-10-01 17:49:17,598 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 10020자
+2025-10-01 17:49:17,652 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:49:21,524 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/f78f943b-368b-46f1-b309-3fa82e0e0e00/messages "HTTP/1.1 200 OK"
+2025-10-01 17:49:21,526 - workflow.response_generator - INFO -    생성된 응답 길이: 634자
+2025-10-01 17:49:24,825 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:49:55,826 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:49:55,826 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:49:56,041 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:49:57,350 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/f4e89fb2-fdb0-41b3-8f9c-dd9c0283f434/messages "HTTP/1.1 200 OK"
+2025-10-01 17:49:57,351 - workflow.question_standardizer - INFO -    표준화된 질문: "어떤 프로젝트의 소스코드인가요?"
+2025-10-01 17:49:57,403 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:49:58,783 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/d1c02bbc-b8ab-4c43-aeff-d4befbe3f952/messages "HTTP/1.1 200 OK"
+2025-10-01 17:49:58,785 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:49:58,785 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:49:58,786 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:49:58,786 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:49:58,787 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:49:58,788 - workflow.response_generator - WARNING -    ⚠️ 컨텍스트가 너무 김 (84269자) - 10000자로 자름
+2025-10-01 17:49:58,788 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 10020자
+2025-10-01 17:49:58,839 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:50:02,465 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/1381cb32-8b5e-4988-b6cc-b2fb0ef18b8f/messages "HTTP/1.1 200 OK"
+2025-10-01 17:50:02,469 - workflow.response_generator - INFO -    생성된 응답 길이: 656자
+2025-10-01 17:50:06,093 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:51:55,957 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:51:55,958 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:51:56,214 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:51:57,555 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/101db4f1-ba5d-44b0-bb49-8965b09d2ae0/messages "HTTP/1.1 200 OK"
+2025-10-01 17:51:57,556 - workflow.question_standardizer - INFO -    표준화된 질문: "어떤 프로젝트의 소스코드인가요?"
+2025-10-01 17:51:57,605 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:51:58,246 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/76b0082a-401a-4eae-98ac-57a95ba39fc4/messages "HTTP/1.1 200 OK"
+2025-10-01 17:51:58,249 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:51:58,249 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:51:58,249 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:51:58,249 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:51:58,250 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:51:58,250 - workflow.response_generator - WARNING -    ⚠️ 컨텍스트가 너무 김 (84269자) - 10000자로 자름
+2025-10-01 17:51:58,250 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 10020자
+2025-10-01 17:51:58,295 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:52:02,288 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/8e1f92cc-0ef8-436d-ac34-4c26b7a54e80/messages "HTTP/1.1 200 OK"
+2025-10-01 17:52:02,293 - workflow.response_generator - INFO -    생성된 응답 길이: 712자
+2025-10-01 17:53:25,829 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:53:37,558 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:53:37,558 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:53:37,710 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:53:38,885 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/913fee33-3f29-4d6e-9945-20956390cf79/messages "HTTP/1.1 200 OK"
+2025-10-01 17:53:38,886 - workflow.question_standardizer - INFO -    표준화된 질문: "분석 대상 프로젝트의 명칭 및 목적 정보"
+2025-10-01 17:53:38,938 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:53:39,659 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/71218f23-8256-4ae7-a500-033abc673f3b/messages "HTTP/1.1 200 OK"
+2025-10-01 17:53:39,662 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:53:39,662 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:53:39,662 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:53:39,662 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:53:39,663 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:53:39,663 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 1447자
+2025-10-01 17:53:39,715 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:53:42,705 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/11abf1d9-a37b-4537-84ef-db3c599a1234/messages "HTTP/1.1 200 OK"
+2025-10-01 17:53:42,709 - workflow.response_generator - INFO -    생성된 응답 길이: 527자
+2025-10-01 17:55:58,731 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:55:58,732 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:55:58,795 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:55:59,530 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/7c771e57-6270-4335-997b-014b05b4cd52/messages "HTTP/1.1 200 OK"
+2025-10-01 17:55:59,533 - workflow.question_standardizer - INFO -    표준화된 질문: "해당 소스코드는 어떤 프로젝트에 속하는가요?"
+2025-10-01 17:55:59,597 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:56:00,885 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/94fa7346-85f0-4017-8f3e-4b7fe5e5d0af/messages "HTTP/1.1 200 OK"
+2025-10-01 17:56:00,888 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:56:00,888 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:56:00,888 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:56:00,888 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:56:00,888 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:56:00,889 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2853자
+2025-10-01 17:56:00,942 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:56:04,681 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/38a6a325-8ce3-4bc6-b077-1149ab3ea44e/messages "HTTP/1.1 200 OK"
+2025-10-01 17:56:04,683 - workflow.response_generator - INFO -    생성된 응답 길이: 626자
+2025-10-01 17:56:44,907 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:56:51,872 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:57:05,319 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:57:10,176 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:57:10,177 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:57:10,319 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:57:11,921 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/0d43635b-02e5-430f-91df-809a7f90c9bc/messages "HTTP/1.1 200 OK"
+2025-10-01 17:57:11,922 - workflow.question_standardizer - INFO -    표준화된 질문: "해당 코드베이스는 어떤 프로젝트의 소스인가요?"
+2025-10-01 17:57:11,969 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:57:13,253 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/00459d68-c67d-4051-b05f-049b3b3566e1/messages "HTTP/1.1 200 OK"
+2025-10-01 17:57:13,255 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "해당 코드베이스는 어떤 프로젝트의 소스인가요?"
+2025-10-01 17:57:13,255 - workflow.hardcoded - INFO -    ✅ 하드코딩 패턴 매칭: 프로젝트 (키워드: 프로젝트)
+2025-10-01 17:57:13,255 - workflow.hardcoded - INFO - 📖 하드코딩 문서 검색: "해당 코드베이스는 어떤 프로젝트의 소스인가요?"
+2025-10-01 17:57:13,256 - workflow.hardcoded - INFO -    🎯 패턴 매칭: 프로젝트, 문서: project_overview.md
+2025-10-01 17:57:13,256 - workflow.hardcoded - INFO -    📂 문서 경로: /Users/roseline/projects/codemuse-backend/generated_docs/project_overview.md
+2025-10-01 17:57:13,257 - workflow.hardcoded - INFO -    📄 파일 존재: True
+2025-10-01 17:57:13,257 - workflow.hardcoded - INFO -    ✅ 하드코딩 문서 로드 성공: 2841자
+2025-10-01 17:57:13,258 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:57:13,258 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:57:13,258 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:57:13,258 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:57:13,258 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:57:13,258 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2853자
+2025-10-01 17:57:13,309 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:57:17,362 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/b9d2917e-5460-4113-a66b-e5ce8cbea465/messages "HTTP/1.1 200 OK"
+2025-10-01 17:57:17,366 - workflow.response_generator - INFO -    생성된 응답 길이: 843자
+2025-10-01 17:57:26,590 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 17:57:26,590 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:57:26,635 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:57:27,762 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/f6ddea1c-cf78-4af9-bcd4-4d88b86640c1/messages "HTTP/1.1 200 OK"
+2025-10-01 17:57:27,764 - workflow.question_standardizer - INFO -    표준화된 질문: "분석 대상 프로젝트명과 목적"
+2025-10-01 17:57:27,824 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:57:28,804 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/832464e7-b5e9-4361-a1bc-069b833f1cea/messages "HTTP/1.1 200 OK"
+2025-10-01 17:57:28,807 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "분석 대상 프로젝트명과 목적"
+2025-10-01 17:57:28,807 - workflow.hardcoded - INFO -    ✅ 하드코딩 패턴 매칭: 프로젝트 (키워드: 프로젝트)
+2025-10-01 17:57:28,807 - workflow.hardcoded - INFO - 📖 하드코딩 문서 검색: "분석 대상 프로젝트명과 목적"
+2025-10-01 17:57:28,808 - workflow.hardcoded - INFO -    🎯 패턴 매칭: 프로젝트, 문서: project_overview.md
+2025-10-01 17:57:28,808 - workflow.hardcoded - INFO -    📂 문서 경로: /Users/roseline/projects/codemuse-backend/generated_docs/project_overview.md
+2025-10-01 17:57:28,809 - workflow.hardcoded - INFO -    📄 파일 존재: True
+2025-10-01 17:57:28,810 - workflow.hardcoded - INFO -    ✅ 하드코딩 문서 로드 성공: 2841자
+2025-10-01 17:57:28,810 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 17:57:28,810 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 17:57:28,811 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 17:57:28,811 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 17:57:28,811 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 17:57:28,811 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2853자
+2025-10-01 17:57:28,865 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 17:57:32,498 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/408d5649-3662-4cc9-b160-3611ebd3e492/messages "HTTP/1.1 200 OK"
+2025-10-01 17:57:32,500 - workflow.response_generator - INFO -    생성된 응답 길이: 821자
+2025-10-01 17:57:53,570 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 17:57:57,324 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 18:11:29,908 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 18:11:57,146 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 18:12:12,483 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 18:12:15,872 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 18:12:28,209 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 18:13:10,185 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-01 18:15:13,072 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 18:15:13,073 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 18:15:13,495 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 18:15:15,314 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/0773a622-9abd-410b-8cd1-61f484ecd7a1/messages "HTTP/1.1 200 OK"
+2025-10-01 18:15:15,315 - workflow.question_standardizer - INFO -    표준화된 질문: "소스 코드 분석 대상 프로젝트와 목적은 무엇인가요?"
+2025-10-01 18:15:15,394 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 18:15:16,274 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/160f9c76-8f35-4ea6-a27b-9c37b9049757/messages "HTTP/1.1 200 OK"
+2025-10-01 18:15:16,277 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "소스 코드 분석 대상 프로젝트와 목적은 무엇인가요?"
+2025-10-01 18:15:16,277 - workflow.hardcoded - INFO -    ✅ 하드코딩 패턴 매칭: 프로젝트 (키워드: 프로젝트)
+2025-10-01 18:15:16,277 - workflow.hardcoded - INFO - 📖 하드코딩 문서 검색: "소스 코드 분석 대상 프로젝트와 목적은 무엇인가요?"
+2025-10-01 18:15:16,278 - workflow.hardcoded - INFO -    🎯 패턴 매칭: 프로젝트, 문서: project_overview.md
+2025-10-01 18:15:16,278 - workflow.hardcoded - INFO -    📂 문서 경로: /Users/roseline/projects/codemuse-backend/generated_docs/project_overview.md
+2025-10-01 18:15:16,278 - workflow.hardcoded - INFO -    📄 파일 존재: True
+2025-10-01 18:15:16,279 - workflow.hardcoded - INFO -    ✅ 하드코딩 문서 로드 성공: 2840자
+2025-10-01 18:15:16,279 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 18:15:16,279 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 18:15:16,279 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 18:15:16,279 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 18:15:16,279 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 18:15:16,280 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2852자
+2025-10-01 18:15:16,336 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 18:15:20,184 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/0214dd97-fa17-489c-a2c3-60673b6051f1/messages "HTTP/1.1 200 OK"
+2025-10-01 18:15:20,190 - workflow.response_generator - INFO -    생성된 응답 길이: 542자
+2025-10-01 18:15:28,409 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-01 18:15:28,409 - workflow.question_standardizer - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 18:15:28,454 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 18:15:29,204 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/4cf2d014-4cfc-499f-98d9-4f74afb84d2b/messages "HTTP/1.1 200 OK"
+2025-10-01 18:15:29,206 - workflow.question_standardizer - INFO -    표준화된 질문: "해당 소스는 어떤 프로젝트에 속하나요?"
+2025-10-01 18:15:29,257 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 18:15:30,384 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/2f99b6bc-4194-4524-9f7d-44ebce0f12cc/messages "HTTP/1.1 200 OK"
+2025-10-01 18:15:30,384 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "해당 소스는 어떤 프로젝트에 속하나요?"
+2025-10-01 18:15:30,385 - workflow.hardcoded - INFO -    ✅ 하드코딩 패턴 매칭: 프로젝트 (키워드: 프로젝트)
+2025-10-01 18:15:30,385 - workflow.hardcoded - INFO - 📖 하드코딩 문서 검색: "해당 소스는 어떤 프로젝트에 속하나요?"
+2025-10-01 18:15:30,385 - workflow.hardcoded - INFO -    🎯 패턴 매칭: 프로젝트, 문서: project_overview.md
+2025-10-01 18:15:30,385 - workflow.hardcoded - INFO -    📂 문서 경로: /Users/roseline/projects/codemuse-backend/generated_docs/project_overview.md
+2025-10-01 18:15:30,385 - workflow.hardcoded - INFO -    📄 파일 존재: True
+2025-10-01 18:15:30,386 - workflow.hardcoded - INFO -    ✅ 하드코딩 문서 로드 성공: 2840자
+2025-10-01 18:15:30,386 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-01 18:15:30,386 - workflow.response_generator - INFO -    원본 질문: 어떤 프로젝트에 대한 소스인가요?
+2025-10-01 18:15:30,386 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-01 18:15:30,386 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-01 18:15:30,386 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-01 18:15:30,386 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2852자
+2025-10-01 18:15:30,467 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-01 18:15:34,816 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/aa68101a-bfc2-4a11-93e0-a136b9140ddd/messages "HTTP/1.1 200 OK"
+2025-10-01 18:15:34,819 - workflow.response_generator - INFO -    생성된 응답 길이: 797자
+2025-10-01 18:15:58,266 - workflow - INFO - 🚀 Workflow Orchestrator 시작

@@ -1,7 +1,7 @@
 # 📄 streaming_formatter.py
 
 > **파일 경로**: `rule_analyzer/formatters/streaming_formatter.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 13개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `options` • `logging` | ⚡ **총 복잡도**: 21 |
+| 📦 **의존성**: `logging` • `typing` • `options` | ⚡ **총 복잡도**: 21 |
 | 📊 **총 토큰 수**: 2,540 |  |
 
 
@@ -155,7 +155,7 @@ class StreamingFormatter:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c36ca13c2b6c`
+- 🆔 **ID**: `4bf95f7516d4`
 - 📍 **라인**: 13-23
 - 📊 **토큰**: 70
 - 🏷️ **태그**: `class`
@@ -191,24 +191,29 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant _create_completion_chunk as _create_completion_chunk
-  participant __init__ as __init__
-  participant _create_error_chunk as _create_error_chunk
-  participant get_critical_issues as get_critical_issues
-  participant enumerate as enumerate
-  participant FormattingOptions as FormattingOptions
-  participant debug as debug
-  participant hasattr as hasattr
   participant isoformat as isoformat
-  participant get_chunk_count as get_chunk_count
-  participant append as append
+  participant len as len
+  participant _create_basic_info_chunk as _create_basic_info_chunk
+  participant _create_quality_chunk as _create_quality_chunk
+  participant _create_issues_chunks as _create_issues_chunks
+  participant getattr as getattr
+  participant hasattr as hasattr
   participant format_for_streaming as format_for_streaming
-  __init__->>FormattingOptions: call
+  participant getLogger as getLogger
+  participant _create_header_chunk as _create_header_chunk
+  participant enumerate as enumerate
+  participant append as append
   format_for_streaming->>append: call
   format_for_streaming->>hasattr: call
-  format_for_streaming->>debug: call
-  get_chunk_count->>hasattr: call
-  get_chunk_count->>debug: call
+  format_for_streaming->>_create_header_chunk: call
+  format_for_streaming->>_create_basic_info_chunk: call
+  _create_header_chunk->>getattr: call
+  _create_basic_info_chunk->>hasattr: call
+  _create_basic_info_chunk->>len: call
+  _create_issues_chunks->>enumerate: call
+  _create_issues_chunks->>append: call
+  _create_issues_chunks->>hasattr: call
+  _create_issues_chunks->>isoformat: call
 ```
 
 

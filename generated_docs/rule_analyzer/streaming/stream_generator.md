@@ -1,7 +1,7 @@
 # 📄 stream_generator.py
 
 > **파일 경로**: `rule_analyzer/streaming/stream_generator.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 14개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `stream_models` • `typing` • `utils` • `asyncio` • `logging` • `datetime` 외 1개 | ⚡ **총 복잡도**: 23 |
+| 📦 **의존성**: `typing` • `utils` • `asyncio` • `logging` • `stream_models` • `datetime` 외 1개 | ⚡ **총 복잡도**: 23 |
 | 📊 **총 토큰 수**: 2,805 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -164,7 +164,7 @@ class StreamGenerator:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `27c07ae45222`
+- 🆔 **ID**: `da6e26294383`
 - 📍 **라인**: 36-46
 - 📊 **토큰**: 56
 - 🏷️ **태그**: `class`
@@ -200,33 +200,33 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant _get_timestamp as _get_timestamp
-  participant _create_completion_chunk as _create_completion_chunk
-  participant __init__ as __init__
-  participant _create_issue_chunk as _create_issue_chunk
-  participant _create_error_chunk as _create_error_chunk
-  participant now as now
-  participant generate_stream as generate_stream
-  participant _get_total_items as _get_total_items
-  participant hasattr as hasattr
   participant isoformat as isoformat
+  participant generate_stream as generate_stream
+  participant len as len
+  participant _create_issue_chunk as _create_issue_chunk
   participant _create_basic_info_chunk as _create_basic_info_chunk
-  participant _create_structure_chunk as _create_structure_chunk
+  participant _get_total_items as _get_total_items
+  participant _create_quality_chunk as _create_quality_chunk
+  participant now as now
+  participant getattr as getattr
+  participant StreamingChunk as StreamingChunk
+  participant hasattr as hasattr
+  participant getLogger as getLogger
   generate_stream->>_create_basic_info_chunk: call
   generate_stream->>hasattr: call
-  generate_stream->>_create_completion_chunk: call
-  _create_basic_info_chunk->>_get_timestamp: call
+  _create_basic_info_chunk->>StreamingChunk: call
+  _create_basic_info_chunk->>len: call
   _create_basic_info_chunk->>_get_total_items: call
+  _create_issue_chunk->>getattr: call
   _create_issue_chunk->>hasattr: call
+  _create_issue_chunk->>StreamingChunk: call
   _create_issue_chunk->>isoformat: call
   _create_issue_chunk->>_get_total_items: call
-  _create_structure_chunk->>_get_timestamp: call
-  _create_structure_chunk->>_get_total_items: call
-  _create_completion_chunk->>_get_total_items: call
-  _create_error_chunk->>_get_timestamp: call
-  _get_timestamp->>isoformat: call
-  _get_timestamp->>now: call
+  _create_quality_chunk->>StreamingChunk: call
+  _create_quality_chunk->>getattr: call
+  _create_quality_chunk->>_get_total_items: call
   _get_total_items->>hasattr: call
+  _get_total_items->>len: call
 ```
 
 

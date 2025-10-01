@@ -1,7 +1,7 @@
 # 📄 http_streaming.py
 
 > **파일 경로**: `rule_analyzer/streaming/protocols/http_streaming.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 9개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `stream_models` • `logging` | ⚡ **총 복잡도**: 15 |
+| 📦 **의존성**: `logging` • `stream_models` • `typing` | ⚡ **총 복잡도**: 15 |
 | 📊 **총 토큰 수**: 1,236 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -119,7 +119,7 @@ class HTTPStreamingProtocol:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d26e5fcede49`
+- 🆔 **ID**: `dcbf2c868a4e`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 68
 - 🏷️ **태그**: `class`
@@ -155,24 +155,25 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant len as len
-  participant __init__ as __init__
-  participant _format_chunk as _format_chunk
-  participant getLogger as getLogger
+  participant get as get
   participant is_complete as is_complete
-  participant stream_response as stream_response
-  participant _format_progress as _format_progress
   participant get_response_headers as get_response_headers
   participant error as error
-  participant get as get
-  participant format as format
+  participant len as len
+  participant create_error_response as create_error_response
+  participant stream_response as stream_response
+  participant getLogger as getLogger
   participant StreamingOptions as StreamingOptions
-  __init__->>getLogger: call
-  __init__->>StreamingOptions: call
+  participant encode as encode
+  participant _format_progress as _format_progress
+  participant _format_chunk as _format_chunk
   stream_response->>_format_chunk: call
   stream_response->>is_complete: call
   stream_response->>error: call
   stream_response->>_format_progress: call
+  create_error_response->>get: call
+  create_error_response->>len: call
+  create_error_response->>encode: call
 ```
 
 

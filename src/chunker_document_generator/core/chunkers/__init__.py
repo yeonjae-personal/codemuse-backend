@@ -3,6 +3,7 @@
 """
 
 import os
+import logging
 from typing import List, Dict, Any, Optional, Tuple
 from .base_chunker import BaseChunker, CodeChunk
 from .python_chunker import ASTChunker as PythonChunker
@@ -10,6 +11,9 @@ from .javascript_chunker import JavaScriptChunker
 from .java_chunker import JavaChunker
 from .enterprise_chunker import EnterpriseChunker
 from ..project_detector import ProjectDetector
+
+# 로거 설정
+logger = logging.getLogger("chunker_document_generator")
 
 
 class ChunkerFactory:
@@ -114,20 +118,20 @@ class MultiLanguageChunker:
         self.factory = ChunkerFactory(project_root)
         self.project_analysis = self.factory.get_project_analysis()
         
-        print(f"🔍 프로젝트 분석 결과:")
-        print(f"   📁 프로젝트 타입: {self.project_analysis['project_type']}")
-        print(f"   🏗️ 프레임워크: {self.project_analysis['framework_info']}")
-        print(f"   ⚙️ 감지된 설정: {self.project_analysis['detected_configs']}")
+        logger.info(f"🔍 프로젝트 분석 결과:")
+        logger.info(f"   📁 프로젝트 타입: {self.project_analysis['project_type']}")
+        logger.info(f"   🏗️ 프레임워크: {self.project_analysis['framework_info']}")
+        logger.info(f"   ⚙️ 감지된 설정: {self.project_analysis['detected_configs']}")
     
     def chunk_file(self, file_path: str) -> List[CodeChunk]:
         """파일을 처리하여 코드 청크들을 생성 (프로젝트 구조 기반)"""
         chunker, language, framework = self.factory.get_chunker(file_path)
         
         if not chunker:
-            print(f"⚠️ 지원하지 않는 파일 형식: {file_path}")
+            logger.warning(f"⚠️ 지원하지 않는 파일 형식: {file_path}")
             return []
         
-        print(f"📄 Processing: {file_path} [{language}" + (f"/{framework}" if framework else "") + "]")
+        logger.info(f"📄 Processing: {file_path} [{language}" + (f"/{framework}" if framework else "") + "]")
         
         chunks = chunker.chunk_file(file_path)
         
@@ -136,7 +140,7 @@ class MultiLanguageChunker:
             if framework:
                 chunk.framework = framework
         
-        print(f"   ✅ Generated {len(chunks)} chunks")
+        logger.info(f"   ✅ Generated {len(chunks)} chunks")
         return chunks
     
     def chunk_directory(self, directory_path: str) -> List[CodeChunk]:

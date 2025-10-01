@@ -1,7 +1,7 @@
 # 📄 korean_templates.py
 
 > **파일 경로**: `rule_analyzer/formatters/templates/korean_templates.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 9개
 
 ---
@@ -147,7 +147,7 @@ class KoreanTemplates:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `867ae9856d2f`
+- 🆔 **ID**: `c22bf0f03ace`
 - 📍 **라인**: 12-22
 - 📊 **토큰**: 238
 - 🏷️ **태그**: `class`
@@ -182,16 +182,16 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get_complexity_emoji as get_complexity_emoji
-  participant _get_simple_template as _get_simple_template
   participant get as get
-  participant get_template as get_template
-  participant get_severity_emoji as get_severity_emoji
-  participant get_emoji as get_emoji
   participant lower as lower
-  participant _get_detailed_template as _get_detailed_template
   participant _get_normal_template as _get_normal_template
   participant update as update
+  participant get_template as get_template
+  participant _get_detailed_template as _get_detailed_template
+  participant _get_simple_template as _get_simple_template
+  participant get_severity_emoji as get_severity_emoji
+  participant get_complexity_emoji as get_complexity_emoji
+  participant get_emoji as get_emoji
   get_template->>_get_simple_template: call
   get_template->>_get_detailed_template: call
   get_template->>_get_normal_template: call

@@ -1,7 +1,7 @@
 # 📄 language.py
 
 > **파일 경로**: `rule_analyzer/shared/utils/language.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 16개
 
 ---
@@ -18,7 +18,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `re` • `typing` • `enum` • `logging` | ⚡ **총 복잡도**: 28 |
+| 📦 **의존성**: `logging` • `re` • `typing` • `enum` | ⚡ **총 복잡도**: 28 |
 | 📊 **총 토큰 수**: 2,624 |  |
 
 
@@ -56,7 +56,7 @@ class LanguageDetector:...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fd4ea2d3cc3d`
+- 🆔 **ID**: `1c93714be55d`
 - 📍 **라인**: 13-23
 - 📊 **토큰**: 54
 - 🏷️ **태그**: `class, enum`
@@ -143,7 +143,7 @@ class LanguageDetector:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a2d1bfb2b16f`
+- 🆔 **ID**: `eeaf96d5970c`
 - 📍 **라인**: 23-33
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class`
@@ -276,7 +276,7 @@ class LanguageSupport:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `88bbec1d9168`
+- 🆔 **ID**: `44f464215936`
 - 📍 **라인**: 215-225
 - 📊 **토큰**: 461
 - 🏷️ **태그**: `class`
@@ -311,21 +311,22 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant strip as strip
-  participant __init__ as __init__
-  participant max as max
-  participant get_language_name as get_language_name
-  participant min as min
-  participant get_supported_languages as get_supported_languages
-  participant debug as debug
-  participant get_text_direction as get_text_direction
-  participant get_language_info as get_language_info
-  participant detect_language as detect_language
-  participant get_currency_symbol as get_currency_symbol
+  participant get as get
+  participant list as list
+  participant len as len
+  participant items as items
+  participant is_rtl_language as is_rtl_language
   participant format_number as format_number
-  detect_language->>strip: call
-  detect_language->>max: call
-  detect_language->>debug: call
+  participant strip as strip
+  participant getLogger as getLogger
+  participant __init__ as __init__
+  participant get_currency_symbol as get_currency_symbol
+  participant min as min
+  participant debug as debug
+  __init__->>getLogger: call
+  format_number->>get: call
+  get_currency_symbol->>get: call
+  is_rtl_language->>get: call
 ```
 
 

@@ -5,8 +5,11 @@
 
 import asyncio
 import time
+import logging
 from typing import Dict, Any, Optional
 from pydantic import BaseModel
+
+logger = logging.getLogger("workflow.chunk_service")
 from .workflow_orchestrator import WorkflowOrchestrator
 from .shared.models import WorkflowRequest, WorkflowResponse
 
@@ -68,6 +71,7 @@ class ChunkWorkflowService:
             }
             
         except Exception as e:
+            logger.error(f"워크플로우 처리 오류: {e}", exc_info=True)
             return {
                 "success": False,
                 "response": "워크플로우 처리 중 오류가 발생했습니다.",

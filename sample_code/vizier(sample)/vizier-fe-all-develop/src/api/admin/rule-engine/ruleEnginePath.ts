@@ -1,0 +1,9 @@
+export const API_RULE_ENGINE_LIST_RULE = "prod/rule-engine/categories/tree";
+export const API_RULE_ENGINE_CATEGORY = "prod/rule-engine/categories";
+export const API_RULE_ENGINE_RULE = "prod/rule-engine/rule";
+export const API_RULE_ENGINE_RULE_FIELD = "prod/rule-engine/field";
+export const API_GET_RULE_STRUCTURE = "prod/rule-engine/condition";
+export const API_TEST_RULE_STRUCTURE = "prod/rule-engine/rule/test";
+export const API_SAVE_RULE_STRUCTURE = "prod/rule-engine/rule/structure";
+export const API_RULE_VALIDATION = "rules/validate-json";
+export const API_GENERATE_HTML_REPORT = "rules/generate-ai-html-report";

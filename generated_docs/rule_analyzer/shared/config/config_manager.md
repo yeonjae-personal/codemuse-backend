@@ -1,7 +1,7 @@
 # 📄 config_manager.py
 
 > **파일 경로**: `rule_analyzer/shared/config/config_manager.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 19개
 
 ---
@@ -20,7 +20,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `logging` • `json` • `pathlib` | ⚡ **총 복잡도**: 38 |
+| 📦 **의존성**: `pathlib` • `json` • `logging` • `typing` | ⚡ **총 복잡도**: 38 |
 | 📊 **총 토큰 수**: 2,558 |  |
 
 
@@ -195,7 +195,7 @@ class ConfigManager:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8baeec02bd99`
+- 🆔 **ID**: `3c2d143791fa`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 65
 - 🏷️ **태그**: `class, manager`
@@ -267,7 +267,7 @@ def get_config(key: str, default: Any = None) -> Any:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `4abfc4ef8803`
+- 🆔 **ID**: `9b8a1b9086a7`
 - 🏷️ **태그**: `getter`
 
 </details>
@@ -334,7 +334,7 @@ def set_config(key: str, value: Any) -> bool:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `8378376d9910`
+- 🆔 **ID**: `72884c072f88`
 - 🏷️ **태그**: `setter`
 
 </details>
@@ -368,23 +368,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant __init__ as __init__
-  participant get_config as get_config
-  participant reset_to_default as reset_to_default
-  participant has_section as has_section
-  participant _merge_config as _merge_config
-  participant save_config as save_config
-  participant debug as debug
-  participant has_key as has_key
-  participant isinstance as isinstance
-  participant append as append
+  participant get as get
+  participant mkdir as mkdir
+  participant len as len
+  participant items as items
+  participant load_config as load_config
+  participant get_all as get_all
+  participant exists as exists
+  participant set_config as set_config
   participant export_config as export_config
-  participant dump as dump
-  save_config->>dump: call
-  reset_to_default->>save_config: call
-  _merge_config->>isinstance: call
-  _merge_config->>_merge_config: call
-  export_config->>dump: call
+  participant validate_config as validate_config
+  participant set as set
+  participant Path as Path
+  set_config->>set: call
+  load_config->>exists: call
+  validate_config->>get: call
+  validate_config->>len: call
+  export_config->>Path: call
+  export_config->>mkdir: call
 ```
 
 

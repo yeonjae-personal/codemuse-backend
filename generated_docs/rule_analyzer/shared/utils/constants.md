@@ -1,7 +1,7 @@
 # 📄 constants.py
 
 > **파일 경로**: `rule_analyzer/shared/utils/constants.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 1개
 
 ---

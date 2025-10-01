@@ -13,9 +13,11 @@ _SRC_DIR = os.path.dirname(_BASE_DIR)
 if _SRC_DIR not in sys.path:
     sys.path.append(_SRC_DIR)
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from fastapi.exceptions import RequestValidationError
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel, ValidationError
 from typing import List, Optional
 import chromadb
 from chromadb.config import Settings
@@ -56,6 +58,32 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# 유효성 검사 오류 핸들러 추가
+@app.exception_handler(RequestValidationError)
+async def validation_exception_handler(request: Request, exc: RequestValidationError):
+    print(f"❌ 유효성 검사 오류 발생:")
+    print(f"  - URL: {request.url}")
+    print(f"  - Method: {request.method}")
+    print(f"  - Headers: {dict(request.headers)}")
+    
+    # 요청 본문 읽기
+    try:
+        body = await request.body()
+        print(f"  - Body: {body.decode('utf-8')}")
+    except Exception as e:
+        print(f"  - Body 읽기 실패: {e}")
+    
+    print(f"  - 오류 상세: {exc.errors()}")
+    
+    return JSONResponse(
+        status_code=422,
+        content={
+            "detail": "유효성 검사 오류",
+            "errors": exc.errors(),
+            "body": body.decode('utf-8') if 'body' in locals() else None
+        }
+    )
+
 class SearchRequest(BaseModel):
     query: str
     limit: int = 5
@@ -74,6 +102,11 @@ class DocumentRequest(BaseModel):
     id: Optional[str] = None
     content: str
     metadata: Optional[dict] = None
+    skip_index_update: Optional[bool] = False  # BM25 인덱스 업데이트 스킵 (배치 처리용)
+
+class BatchDocumentRequest(BaseModel):
+    documents: List[DocumentRequest]
+    update_index_after: Optional[bool] = True  # 배치 완료 후 인덱스 업데이트 여부
 
 def korean_tokenize(text: str) -> List[str]:
     """한국어 토크나이징 (간단한 공백 기반)"""
@@ -188,47 +221,134 @@ def pair_boost(content: str, label: str) -> float:
         return 0.0
 
 class OpenAIEmbeddingFunction:
-    """ChromaDB 호환 OpenAI 임베딩 함수"""
+    """ChromaDB 호환 OpenAI 임베딩 함수 (배치 처리 + 캐싱 최적화)"""
     
     _MODEL_NAME = "text-embedding-3-small"
     _DIMENSION = 1536
+    _BATCH_SIZE = 100  # OpenAI 배치 처리 크기
+    
+    def __init__(self):
+        """임베딩 캐시 초기화"""
+        self._cache = {}  # 텍스트 해시 -> 임베딩 벡터
+        self._cache_enabled = os.getenv("EMBEDDING_CACHE_ENABLED", "true").lower() == "true"
+        self._cache_hits = 0
+        self._cache_misses = 0
 
     def name(self) -> str:
         """ChromaDB가 임베딩 함수 호환성을 비교할 때 사용하는 이름"""
         return f"openai:{self._MODEL_NAME}"
+    
+    def _get_cache_key(self, text: str) -> str:
+        """캐시 키 생성 (텍스트의 해시값)"""
+        import hashlib
+        return hashlib.sha256(text.encode('utf-8')).hexdigest()
+    
+    def get_cache_stats(self) -> dict:
+        """캐시 통계 반환"""
+        total_requests = self._cache_hits + self._cache_misses
+        hit_rate = (self._cache_hits / total_requests * 100) if total_requests > 0 else 0
+        return {
+            "cache_size": len(self._cache),
+            "cache_hits": self._cache_hits,
+            "cache_misses": self._cache_misses,
+            "hit_rate_percent": round(hit_rate, 2)
+        }
+    
+    def clear_cache(self):
+        """캐시 초기화"""
+        self._cache.clear()
+        self._cache_hits = 0
+        self._cache_misses = 0
+        print("✅ 임베딩 캐시 초기화 완료")
 
     def __call__(self, input: List[str]) -> List[List[float]]:
-        """ChromaDB 인터페이스에 맞는 임베딩 함수"""
-        embeddings = []
-        for text in input:
-            try:
-                # 전처리된 텍스트 사용
-                processed_text = preprocess_korean_text(text)
-                
-                print(f"🔍 임베딩 API 호출: {processed_text[:50]}... (키: {openai.api_key[:20]}...)")
-                response = openai.embeddings.create(
-                    model=self._MODEL_NAME,
-                    input=processed_text
-                )
-                print(f"✅ 임베딩 API 성공: {len(response.data[0].embedding)}차원")
-                emb = response.data[0].embedding
-                # 안전 장치: 임베딩 길이 보정
-                if len(emb) != self._DIMENSION:
-                    if len(emb) > self._DIMENSION:
-                        emb = emb[: self._DIMENSION]
-                    else:
-                        emb = emb + [0.0] * (self._DIMENSION - len(emb))
-                embeddings.append(emb)
-            except Exception as e:
-                print(f"OpenAI 임베딩 오류: {e}")
-                # 폴백: 결정적 난수 기반 1536차원 벡터 생성
-                import hashlib, random
-                seed = int(hashlib.sha256(processed_text.encode()).hexdigest(), 16) % (2**32)
-                rnd = random.Random(seed)
-                emb = [rnd.random() for _ in range(self._DIMENSION)]
-                embeddings.append(emb)
+        """ChromaDB 인터페이스에 맞는 임베딩 함수 (배치 처리 + 캐싱)"""
+        if not input:
+            return []
         
-        return embeddings
+        # 전처리
+        processed_texts = [preprocess_korean_text(text) for text in input]
+        embeddings = []
+        texts_to_embed = []
+        cache_indices = []  # 캐시된 항목의 인덱스
+        
+        # 1단계: 캐시 확인
+        if self._cache_enabled:
+            for idx, text in enumerate(processed_texts):
+                cache_key = self._get_cache_key(text)
+                if cache_key in self._cache:
+                    embeddings.append(self._cache[cache_key])
+                    cache_indices.append(idx)
+                    self._cache_hits += 1
+                else:
+                    texts_to_embed.append((idx, text))
+                    self._cache_misses += 1
+            
+            if self._cache_hits > 0 or self._cache_misses > 0:
+                stats = self.get_cache_stats()
+                print(f"💾 캐시 통계: {stats['cache_hits']} 히트 / {stats['cache_misses']} 미스 (적중률: {stats['hit_rate_percent']}%)")
+        else:
+            texts_to_embed = list(enumerate(processed_texts))
+        
+        # 2단계: 캐시 미스 항목만 임베딩 생성
+        if texts_to_embed:
+            new_embeddings = []
+            batch_texts = [text for _, text in texts_to_embed]
+            
+            # 배치 단위로 처리
+            for i in range(0, len(batch_texts), self._BATCH_SIZE):
+                batch = batch_texts[i:i + self._BATCH_SIZE]
+                try:
+                    print(f"🔍 임베딩 배치 API 호출: {len(batch)}개 텍스트 (배치 {i//self._BATCH_SIZE + 1})")
+                    response = openai.embeddings.create(
+                        model=self._MODEL_NAME,
+                        input=batch  # 배치로 전송
+                    )
+                    print(f"✅ 임베딩 배치 성공: {len(response.data)}개, {len(response.data[0].embedding)}차원")
+                    
+                    # 배치 결과 처리 및 캐싱
+                    for j, data in enumerate(response.data):
+                        emb = data.embedding
+                        # 안전 장치: 임베딩 길이 보정
+                        if len(emb) != self._DIMENSION:
+                            if len(emb) > self._DIMENSION:
+                                emb = emb[: self._DIMENSION]
+                            else:
+                                emb = emb + [0.0] * (self._DIMENSION - len(emb))
+                        new_embeddings.append(emb)
+                        
+                        # 캐싱
+                        if self._cache_enabled:
+                            text_idx = i + j
+                            if text_idx < len(batch_texts):
+                                cache_key = self._get_cache_key(batch_texts[text_idx])
+                                self._cache[cache_key] = emb
+                        
+                except Exception as e:
+                    print(f"❌ OpenAI 임베딩 배치 오류: {e}")
+                    # 폴백: 결정적 난수 기반 1536차원 벡터 생성
+                    import hashlib, random
+                    for text in batch:
+                        seed = int(hashlib.sha256(text.encode()).hexdigest(), 16) % (2**32)
+                        rnd = random.Random(seed)
+                        emb = [rnd.random() for _ in range(self._DIMENSION)]
+                        new_embeddings.append(emb)
+            
+            # 3단계: 결과 병합 (원래 순서 유지)
+            result_embeddings = [None] * len(processed_texts)
+            
+            # 캐시된 임베딩 배치
+            for idx in cache_indices:
+                result_embeddings[idx] = embeddings[cache_indices.index(idx)]
+            
+            # 새로 생성된 임베딩 배치
+            for i, (idx, _) in enumerate(texts_to_embed):
+                result_embeddings[idx] = new_embeddings[i]
+            
+            return result_embeddings
+        else:
+            # 모두 캐시에서 처리됨
+            return embeddings
 
 def get_openai_embedding(text: str) -> List[float]:
     """단일 텍스트용 임베딩 함수 (하위 호환성)"""
@@ -438,14 +558,43 @@ async def health():
     try:
         # 컬렉션 상태 확인
         count = collection.count()
+        cache_stats = embedding_function.get_cache_stats()
         return {
             "status": "healthy", 
             "service": "RAG Engine",
             "storage": "ChromaDB",
-            "documents_count": count
+            "documents_count": count,
+            "embedding_cache": cache_stats
         }
     except Exception as e:
         return {"status": "unhealthy", "error": str(e)}
+
+@app.post("/api/v1/cache/clear")
+async def clear_embedding_cache():
+    """임베딩 캐시 초기화"""
+    try:
+        old_stats = embedding_function.get_cache_stats()
+        embedding_function.clear_cache()
+        return {
+            "status": "success",
+            "message": "임베딩 캐시가 초기화되었습니다",
+            "previous_cache_size": old_stats["cache_size"],
+            "previous_hit_rate": old_stats["hit_rate_percent"]
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"캐시 초기화 중 오류 발생: {str(e)}")
+
+@app.get("/api/v1/cache/stats")
+async def get_cache_stats():
+    """임베딩 캐시 통계 조회"""
+    try:
+        stats = embedding_function.get_cache_stats()
+        return {
+            "status": "success",
+            "cache_stats": stats
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"캐시 통계 조회 중 오류 발생: {str(e)}")
 
 def _get_folder_priority(metadata):
     """폴더별 우선순위 점수 계산"""
@@ -510,6 +659,7 @@ async def search_documents(request: SearchRequest):
         # 1) 필터 적용
         def apply_filters(items: List[dict]) -> List[dict]:
             filtered = items
+            
             # chunk_type_filter (파이프 구분자 지원)
             if request.chunk_type_filter:
                 allow_types = [t.strip().lower() for t in str(request.chunk_type_filter).split('|') if t.strip()]
@@ -1199,8 +1349,9 @@ async def add_document(request: DocumentRequest):
                 except Exception as inner:
                     raise HTTPException(status_code=500, detail=f"독스트링 upsert 실패: {inner}")
         
-        # BM25 인덱스 업데이트
-        update_bm25_index()
+        # BM25 인덱스 업데이트 (배치 처리 시 스킵 가능)
+        if not request.skip_index_update:
+            update_bm25_index()
         
         return {
             "status": "success",
@@ -1217,6 +1368,11 @@ async def add_document(request: DocumentRequest):
 async def upload_documents(request: DocumentRequest):
     """문서 업로드 (프론트엔드 호환용)"""
     try:
+        print(f"📤 문서 업로드 요청 받음:")
+        print(f"  - ID: {request.id}")
+        print(f"  - Content 길이: {len(request.content) if request.content else 0}")
+        print(f"  - Metadata: {request.metadata}")
+        
         result = await add_document(request)
         # 프론트엔드 호환 응답 형식으로 변환
         return {
@@ -1229,9 +1385,119 @@ async def upload_documents(request: DocumentRequest):
         print(f"❌ 문서 업로드 오류: {str(e)}")
         raise HTTPException(status_code=500, detail=f"문서 업로드 중 오류: {str(e)}")
 
+@app.post("/api/v1/documents/batch")
+async def batch_upload_documents(request: BatchDocumentRequest):
+    """배치 문서 업로드 (대량 문서 처리 최적화)"""
+    import time
+    start_time = time.time()
+    
+    try:
+        print(f"📦 배치 업로드 시작: {len(request.documents)}개 문서")
+        
+        # 배치 데이터 준비
+        doc_ids = []
+        contents = []
+        metadatas = []
+        docstring_ids = []
+        docstring_contents = []
+        docstring_metadatas = []
+        
+        for doc_request in request.documents:
+            # 문서 ID 생성
+            doc_id = doc_request.id or str(uuid.uuid4())
+            doc_ids.append(doc_id)
+            contents.append(doc_request.content)
+            
+            # 메타데이터 준비
+            metadata = doc_request.metadata or {}
+            if "tags" in metadata and isinstance(metadata["tags"], list):
+                metadata["tags"] = ", ".join(metadata["tags"])
+            metadata.update({
+                "created_at": datetime.now().isoformat(),
+                "source": metadata.get("source", "unknown")
+            })
+            metadatas.append(metadata)
+            
+            # 독스트링 처리
+            docstring = metadata.get("docstring")
+            if docstring and docstring.strip():
+                docstring_ids.append(f"docstring_{doc_id}")
+                docstring_contents.append(docstring)
+                docstring_metadatas.append({
+                    "parent_id": doc_id,
+                    "chunk_type": metadata.get("chunk_type", "unknown"),
+                    "name": metadata.get("name", "unknown"),
+                    "filename": metadata.get("filename", "unknown"),
+                    "project": metadata.get("project", "unknown"),
+                    "source": metadata.get("source", "unknown"),
+                    "created_at": datetime.now().isoformat()
+                })
+        
+        # 배치 업서트 (ChromaDB는 자동으로 임베딩을 배치 처리)
+        print(f"  🔄 메인 문서 배치 저장 중...")
+        try:
+            collection.upsert(
+                documents=contents,
+                metadatas=metadatas,
+                ids=doc_ids
+            )
+            print(f"  ✅ {len(doc_ids)}개 문서 저장 완료")
+        except Exception as e:
+            print(f"  ❌ 배치 업서트 실패, 개별 처리로 폴백: {e}")
+            # 폴백: 개별 처리
+            success_count = 0
+            for i, doc_id in enumerate(doc_ids):
+                try:
+                    collection.upsert(
+                        documents=[contents[i]],
+                        metadatas=[metadatas[i]],
+                        ids=[doc_id]
+                    )
+                    success_count += 1
+                except Exception as inner_e:
+                    print(f"    ❌ 문서 {doc_id} 저장 실패: {inner_e}")
+            print(f"  ✅ {success_count}/{len(doc_ids)}개 문서 개별 저장 완료")
+        
+        # 독스트링 배치 업서트
+        if docstring_ids:
+            print(f"  🔄 독스트링 배치 저장 중: {len(docstring_ids)}개")
+            try:
+                docstring_collection.upsert(
+                    documents=docstring_contents,
+                    metadatas=docstring_metadatas,
+                    ids=docstring_ids
+                )
+                print(f"  ✅ {len(docstring_ids)}개 독스트링 저장 완료")
+            except Exception as e:
+                print(f"  ⚠️ 독스트링 배치 저장 실패: {e}")
+        
+        # 배치 완료 후 BM25 인덱스 업데이트 (1회만)
+        if request.update_index_after:
+            print(f"  🔄 BM25 인덱스 업데이트 중...")
+            update_bm25_index()
+            print(f"  ✅ BM25 인덱스 업데이트 완료")
+        
+        elapsed_time = time.time() - start_time
+        print(f"✅ 배치 업로드 완료: {len(doc_ids)}개 문서, {elapsed_time:.2f}초 소요")
+        
+        return {
+            "status": "success",
+            "message": f"{len(doc_ids)}개 문서 배치 업로드 완료",
+            "uploaded_count": len(doc_ids),
+            "docstring_count": len(docstring_ids),
+            "total_documents": collection.count(),
+            "elapsed_time": elapsed_time
+        }
+        
+    except Exception as e:
+        print(f"❌ 배치 업로드 오류: {str(e)}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"배치 업로드 중 오류 발생: {str(e)}")
+
 @app.delete("/api/v1/documents/{doc_id}")
 async def delete_document(doc_id: str):
-    """문서 삭제"""
+    """문서 삭제 (보호된 문서 제외)"""
     try:
         # 문서 존재 확인
         existing = collection.get(ids=[doc_id])
@@ -1263,8 +1529,11 @@ async def clear_all_documents():
         # 모든 문서 ID 가져오기
         all_docs = collection.get()
         deleted_count = 0
+        
         if all_docs['ids']:
-            print(f"🗑️ 삭제할 문서 ID 수: {len(all_docs['ids'])}")
+            print(f"🗑️ 삭제할 문서: {len(all_docs['ids'])}개")
+            
+            # 모든 문서 삭제
             collection.delete(ids=all_docs['ids'])
             deleted_count = len(all_docs['ids'])
         
@@ -1279,14 +1548,14 @@ async def clear_all_documents():
         # 독스트링 컬렉션도 재생성 (완전 초기화)
         try:
             client.delete_collection("codemuse_docstrings")
-            docstring_collection = client.create_collection(
+            new_docstring_collection = client.create_collection(
                 name="codemuse_docstrings",
                 metadata={"description": "CodeMuse 독스트링 저장소 (OpenAI 임베딩 1536차원)"},
                 embedding_function=embedding_function
             )
             print("✅ 독스트링 컬렉션 재생성 완료")
             # 전역 변수 업데이트
-            globals()['docstring_collection'] = docstring_collection
+            globals()['docstring_collection'] = new_docstring_collection
         except Exception as docstring_error:
             print(f"⚠️ 독스트링 컬렉션 재생성 실패: {docstring_error}")
         
@@ -1318,21 +1587,21 @@ async def clear_all_documents():
                         # 기존 컬렉션 삭제
                         client.delete_collection("codemuse_documents")
                         # 새 컬렉션 생성
-                        collection = client.create_collection(
+                        new_collection = client.create_collection(
                             name="codemuse_documents",
                             metadata={"description": "CodeMuse 문서 저장소 (OpenAI 임베딩 1536차원)"},
                             embedding_function=embedding_function
                         )
                         print("✅ 컬렉션 재생성 완료")
+                        # 전역 변수 업데이트
+                        globals()['collection'] = new_collection
                         final_count = 0
                     except Exception as recreate_error:
                         print(f"❌ 컬렉션 재생성 실패: {recreate_error}")
-                        # 전역 변수 업데이트
-                        globals()['collection'] = collection
         
         return {
             "status": "success",
-            "message": f"모든 문서 삭제 완료 (삭제된 문서: {deleted_count}개, 독스트링: {docstring_count}개)",
+            "message": f"문서 삭제 완료 (삭제된 문서: {deleted_count}개, 독스트링: {docstring_count}개)",
             "total_documents": final_count,
             "deleted_documents": deleted_count,
             "deleted_docstrings": docstring_count

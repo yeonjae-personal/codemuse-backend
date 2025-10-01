@@ -4,7 +4,35 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 import json
 import os
+import sys
 from typing import Dict, Any, Optional
+from pathlib import Path
+
+# 상위 디렉터리를 path에 추가하여 shared 모듈 import 가능하게 함
+_CURRENT_DIR = Path(__file__).parent
+_SRC_DIR = _CURRENT_DIR.parent
+if str(_SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(_SRC_DIR))
+
+# 로깅 설정 - logger 모듈을 직접 import
+import logging
+from pathlib import Path as _Path
+
+# 로그 파일 경로 설정 (프로젝트 루트 기준)
+_PROJECT_ROOT = _SRC_DIR.parent
+_LOG_FILE = _PROJECT_ROOT / "logs" / "workflow_detailed.log"
+_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+# 로거 설정
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler(str(_LOG_FILE))
+    ]
+)
+logger = logging.getLogger("workflow")
 
 # 환경 변수에서 서비스 URL 가져오기
 LLM_SERVICE_URL = os.getenv("LLM_SERVICE_URL", "http://localhost:8004")
@@ -14,6 +42,8 @@ RAG_SERVICE_URL = os.getenv("RAG_SERVICE_URL", "http://localhost:8003")
 from .services.chunk_workflow_service import ChunkWorkflowService, ChunkWorkflowRequest
 
 app = FastAPI(title="Workflow Orchestrator", version="1.0.0")
+
+logger.info("🚀 Workflow Orchestrator 시작")
 
 # CORS 설정
 app.add_middleware(
@@ -120,7 +150,7 @@ async def process_workflow_stream(request: WorkflowRequest):
         return StreamingResponse(generator(), headers=headers, media_type="text/event-stream")
     
     except Exception as e:
-        print(f"❌ 스트리밍 워크플로우 오류: {str(e)}")
+        logger.error(f"❌ 스트리밍 워크플로우 오류: {str(e)}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":

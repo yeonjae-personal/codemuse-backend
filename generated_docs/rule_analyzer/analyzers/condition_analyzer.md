@@ -1,7 +1,7 @@
 # 📄 condition_analyzer.py
 
 > **파일 경로**: `rule_analyzer/analyzers/condition_analyzer.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 28개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `re` • `typing` • `models` • `logging` • `exceptions` | ⚡ **총 복잡도**: 159 |
+| 📦 **의존성**: `models` • `exceptions` • `typing` • `re` • `logging` | ⚡ **총 복잡도**: 159 |
 | 📊 **총 토큰 수**: 9,417 |  |
 
 
@@ -298,7 +298,7 @@ class ConditionAnalyzer:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `3897052b58ca`
+- 🆔 **ID**: `52ad50ec3a0d`
 - 📍 **라인**: 19-29
 - 📊 **토큰**: 107
 - 🏷️ **태그**: `class`
@@ -336,22 +336,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant __init__ as __init__
-  participant analyze_condition as analyze_condition
-  participant max as max
-  participant process_condition as process_condition
-  participant is_valid_type as is_valid_type
+  participant get as get
+  participant is_valid_operator as is_valid_operator
+  participant list as list
+  participant len as len
+  participant items as items
+  participant analyze_recursive as analyze_recursive
+  participant warning as warning
+  participant _count_logical_operators as _count_logical_operators
+  participant infer_field_types as infer_field_types
+  participant RuleCondition as RuleCondition
+  participant _get_condition_field as _get_condition_field
   participant _calculate_complexity_sc as _calculate_complexity_score
-  participant debug as debug
-  participant hasattr as hasattr
-  participant float as float
-  participant _extract_condition_detai as _extract_condition_details
-  participant _infer_type_from_value as _infer_type_from_value
-  participant get_field_type as get_field_type
-  _infer_type_from_value->>float: call
-  _extract_condition_details->>_extract_condition_details: call
-  is_valid_type->>get_field_type: call
-  is_valid_type->>_infer_type_from_value: call
+  _calculate_complexity_score->>len: call
+  _calculate_complexity_score->>_count_logical_operators: call
+  _calculate_complexity_score->>items: call
+  _count_logical_operators->>_count_logical_operators: call
+  _count_logical_operators->>items: call
+  is_valid_operator->>get: call
 ```
 
 

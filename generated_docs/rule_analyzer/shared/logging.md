@@ -1,7 +1,7 @@
 # 📄 logging.py
 
 > **파일 경로**: `rule_analyzer/shared/logging.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 9개
 
 ---
@@ -23,7 +23,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `config` • `pathlib` • `typing` • `sys` • `logging` | ⚡ **총 복잡도**: 28 |
+| 📦 **의존성**: `pathlib` • `typing` • `config` • `logging` • `sys` | ⚡ **총 복잡도**: 28 |
 | 📊 **총 토큰 수**: 1,716 |  |
 
 
@@ -126,7 +126,7 @@ def setup_logging(
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `7e59fe82bab0`
+- 🆔 **ID**: `ded6220c76d1`
 - 🏷️ **태그**: ``
 
 </details>
@@ -191,7 +191,7 @@ def get_logger(name: str = "raas_rule_analyzer") -> logging.Logger:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `c6c506b3b184`
+- 🆔 **ID**: `8b0c008225e0`
 - 🏷️ **태그**: `getter`
 
 </details>
@@ -277,7 +277,7 @@ def set_log_level(name: str, level: str) -> bool:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `d2eeb8ffbafb`
+- 🆔 **ID**: `90c3e906f8f0`
 - 🏷️ **태그**: `setter`
 
 </details>
@@ -379,7 +379,7 @@ def add_file_handler(
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `1c7476a8928a`
+- 🆔 **ID**: `baac9c38eebe`
 - 🏷️ **태그**: `processing`
 
 </details>
@@ -471,7 +471,7 @@ def remove_file_handler(logger: logging.Logger, log_file: str) -> bool:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `f54410bc105f`
+- 🆔 **ID**: `b050eb4ee2b5`
 - 🏷️ **태그**: `processing, deletion`
 
 </details>
@@ -541,7 +541,7 @@ def get_logging_config() -> Dict[str, Any]:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `5c30e13583b9`
+- 🆔 **ID**: `be334258ab69`
 - 🏷️ **태그**: `getter`
 
 </details>
@@ -631,7 +631,7 @@ def _parse_size_string(size_string: str) -> int:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `190283b78fc0`
+- 🆔 **ID**: `396597fb1c5f`
 - 🏷️ **태그**: ``
 
 </details>
@@ -685,7 +685,7 @@ def get_default_logger() -> logging.Logger:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `5e0ed2cbeac1`
+- 🆔 **ID**: `cc191c8f514b`
 - 🏷️ **태그**: `getter`
 
 </details>
@@ -716,23 +716,18 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant strip as strip
-  participant get_config as get_config
+  participant mkdir as mkdir
+  participant len as len
   participant StreamHandler as StreamHandler
-  participant setup_logging as setup_logging
-  participant set_log_level as set_log_level
-  participant float as float
-  participant remove_file_handler as remove_file_handler
   participant upper as upper
-  participant get_logging_config as get_logging_config
+  participant setLevel as setLevel
+  participant removeHandler as removeHandler
   participant endswith as endswith
-  participant isinstance as isinstance
-  participant append as append
-  setup_logging->>StreamHandler: call
-  set_log_level->>upper: call
-  remove_file_handler->>isinstance: call
-  remove_file_handler->>append: call
-  get_logging_config->>get_config: call
+  participant get_logging_config as get_logging_config
+  participant getattr as getattr
+  participant strip as strip
+  participant Path as Path
+  participant get_logger as get_logger
 ```
 
 

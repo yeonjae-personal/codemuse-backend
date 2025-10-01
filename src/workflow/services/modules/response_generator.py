@@ -5,6 +5,9 @@
 
 from typing import Dict, Any, List
 from ..shared.llm_client import LLMClient
+import logging
+
+logger = logging.getLogger("workflow.response_generator")
 
 
 class ResponseGenerator:
@@ -27,9 +30,9 @@ class ResponseGenerator:
             최종 응답
         """
         try:
-            print(f"🤖 5단계: 최종 응답 생성 시작...")
-            print(f"   원본 질문: {original_query}")
-            print(f"   참조 문서: {len(reviewed_results)}개")
+            logger.info(f"🤖 5단계: 최종 응답 생성 시작")
+            logger.info(f"   원본 질문: {original_query}")
+            logger.info(f"   참조 문서: {len(reviewed_results)}개")
             
             # 컨텍스트 준비
             context = self._prepare_context(reviewed_results)
@@ -47,7 +50,7 @@ class ResponseGenerator:
             # 응답 후처리
             processed_response = self._post_process_response(response)
             
-            print(f"   생성된 응답 길이: {len(processed_response)}자")
+            logger.info(f"   생성된 응답 길이: {len(processed_response)}자")
             
             return {
                 "success": True,
@@ -59,7 +62,7 @@ class ResponseGenerator:
             }
             
         except Exception as e:
-            print(f"❌ 응답 생성 실패: {e}")
+            logger.error(f"❌ 응답 생성 실패: {e}", exc_info=True)
             return {
                 "success": False,
                 "error": str(e),
@@ -70,7 +73,10 @@ class ResponseGenerator:
     def _prepare_context(self, results: List[Dict]) -> str:
         """컨텍스트 준비"""
         
+        logger.info(f"📦 컨텍스트 준비 시작: {len(results)}개 결과")
+        
         if not results:
+            logger.warning("⚠️ 검색 결과가 없습니다")
             return "관련 정보를 찾을 수 없습니다."
         
         # 품질 검증 - 90% 정확도 달성을 위해 관대하게 처리
@@ -79,11 +85,15 @@ class ResponseGenerator:
             if self._is_high_quality_result(result):
                 quality_results.append(result)
         
+        logger.info(f"   품질 필터 통과: {len(quality_results)}개")
+        
         # 품질 결과가 없어도 기본 결과를 사용 (90% 정확도 달성을 위해)
         if not quality_results and results:
             quality_results = results[:3]  # 상위 3개 결과 사용
+            logger.info(f"   품질 필터 없음 - 상위 {len(quality_results)}개 사용")
         
         if not quality_results:
+            logger.warning("⚠️ 품질 결과가 없습니다")
             return "관련성이 높은 정보를 찾을 수 없습니다. 더 구체적인 질문을 시도해보세요."
         
         context_parts = []
@@ -91,6 +101,8 @@ class ResponseGenerator:
         for i, result in enumerate(quality_results[:3], 1):  # 상위 3개만 사용
             content = result.get('content', '')
             metadata = result.get('metadata', {})
+            
+            logger.debug(f"   📄 결과 {i}: content 길이={len(content)}, metadata={list(metadata.keys())}")
             
             # 소스 정보
             source_info = ""
@@ -106,7 +118,16 @@ class ResponseGenerator:
             # 내용 추가
             context_parts.append(f"## 참조 자료 {i}{source_info}\n{content}\n")
         
-        return "\n".join(context_parts)
+        final_context = "\n".join(context_parts)
+        
+        # 컨텍스트 길이 제한 (최대 10,000자)
+        MAX_CONTEXT_LENGTH = 10000
+        if len(final_context) > MAX_CONTEXT_LENGTH:
+            logger.warning(f"   ⚠️ 컨텍스트가 너무 김 ({len(final_context)}자) - {MAX_CONTEXT_LENGTH}자로 자름")
+            final_context = final_context[:MAX_CONTEXT_LENGTH] + "\n\n...(내용이 길어 일부만 표시)"
+        
+        logger.info(f"   ✅ 최종 컨텍스트 길이: {len(final_context)}자")
+        return final_context
     
     def _is_high_quality_result(self, result: Dict) -> bool:
         """고품질 결과인지 검증 (범용적 접근)"""
@@ -182,17 +203,17 @@ class ResponseGenerator:
         
         # 링크 정리 및 생성
         import re
-        print("🔗 링크 정리 및 생성 중...")
+        logger.debug("🔗 링크 정리 및 생성 중...")
         
         # 1. 복잡한 링크를 간단한 링크로 변환
         response = self._simplify_complex_links(response)
         
         # 2. 링크가 없는 경우 자동 생성
         if not re.search(r'\[.*\]\(.*\)', response):
-            print("🔗 링크가 없어서 자동 생성합니다...")
+            logger.debug("🔗 링크가 없어서 자동 생성합니다...")
             response = self._generate_simple_links(response)
         
-        print("✅ 링크 정리 및 생성 완료!")
+        logger.debug("✅ 링크 정리 및 생성 완료!")
         
         # 빈 줄 정리
         lines = response.split('\n')

@@ -1,7 +1,7 @@
 # 📄 issue_detector.py
 
 > **파일 경로**: `rule_analyzer/analyzers/issue_detector.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 30개
 
 ---
@@ -17,7 +17,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `models` • `logging` • `condition_analyzer` • `exceptions` | ⚡ **총 복잡도**: 202 |
+| 📦 **의존성**: `models` • `exceptions` • `typing` • `condition_analyzer` • `logging` | ⚡ **총 복잡도**: 202 |
 | 📊 **총 토큰 수**: 10,807 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -41,7 +41,7 @@ class IssueDetector:...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2e6d6af45e4a`
+- 🆔 **ID**: `db586ccb1026`
 - 📍 **라인**: 22-32
 - 📊 **토큰**: 35
 - 🏷️ **태그**: `class`
@@ -340,7 +340,7 @@ class IssueDetector:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f4b08ad9ef33`
+- 🆔 **ID**: `66a4a9f6b73c`
 - 📍 **라인**: 28-38
 - 📊 **토큰**: 168
 - 🏷️ **태그**: `class`
@@ -378,24 +378,21 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant _detect_field_missing_ed as _detect_field_missing_edge_cases
-  participant _remove_duplicate_issues as _remove_duplicate_issues
-  participant __init__ as __init__
-  participant max as max
-  participant _check_redundant_pattern as _check_redundant_pattern
-  participant min as min
-  participant detect_duplicate_conditi as detect_duplicate_conditions
-  participant detect_type_mismatch as detect_type_mismatch
+  participant get as get
+  participant check_duplicates as check_duplicates
+  participant len as len
+  participant ConditionIssue as ConditionIssue
+  participant items as items
+  participant detect_all_issues as detect_all_issues
+  participant list as list
+  participant _is_numeric_value as _is_numeric_value
   participant _detect_field_redundant_ as _detect_field_redundant_conditions
-  participant _is_numeric_field as _is_numeric_field
-  participant enumerate as enumerate
-  participant is_valid_type as is_valid_type
-  detect_duplicate_conditions->>enumerate: call
-  detect_type_mismatch->>enumerate: call
-  detect_type_mismatch->>is_valid_type: call
-  _detect_field_redundant_conditions->>enumerate: call
-  _detect_field_redundant_conditions->>_check_redundant_pattern: call
-  _detect_field_missing_edge_cases->>min: call
+  participant detect_complexity_warnin as detect_complexity_warnings
+  participant getattr as getattr
+  participant _count_field_conditions as _count_field_conditions
+  detect_complexity_warnings->>ConditionIssue: call
+  _count_field_conditions->>_count_field_conditions: call
+  _count_field_conditions->>get: call
 ```
 
 

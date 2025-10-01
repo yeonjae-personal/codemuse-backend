@@ -1,7 +1,7 @@
 # 📄 exceptions.py
 
 > **파일 경로**: `rule_analyzer/exceptions.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 11개
 
 ---
@@ -58,7 +58,7 @@ class RuleParsingError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bd2062fc3a23`
+- 🆔 **ID**: `34ad6b043e4f`
 - 📍 **라인**: 8-18
 - 📊 **토큰**: 34
 - 🏷️ **태그**: `class, exception`
@@ -94,7 +94,7 @@ class ConditionAnalysisError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b29d24a0f6a8`
+- 🆔 **ID**: `23e70da9b425`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, exception`
@@ -130,7 +130,7 @@ class IssueDetectionError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `53a368b50421`
+- 🆔 **ID**: `6b33435260d9`
 - 📍 **라인**: 20-30
 - 📊 **토큰**: 33
 - 🏷️ **태그**: `class, exception`
@@ -166,7 +166,7 @@ class AdvancedAnalysisError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `414627dfc13f`
+- 🆔 **ID**: `75e8d11f4884`
 - 📍 **라인**: 26-36
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, exception`
@@ -202,7 +202,7 @@ class ValidationError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2f87ed599020`
+- 🆔 **ID**: `65dd933492c0`
 - 📍 **라인**: 32-42
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, exception`
@@ -238,7 +238,7 @@ class JSONProcessingError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fc641ff3df1c`
+- 🆔 **ID**: `73fb18e8107e`
 - 📍 **라인**: 38-48
 - 📊 **토큰**: 28
 - 🏷️ **태그**: `class, exception`
@@ -274,7 +274,7 @@ class ConfigurationError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `64e2177e4fc0`
+- 🆔 **ID**: `02fe6c312f4a`
 - 📍 **라인**: 44-54
 - 📊 **토큰**: 27
 - 🏷️ **태그**: `class, exception`
@@ -310,7 +310,7 @@ class DataTypeError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `57a3388d3189`
+- 🆔 **ID**: `a15940548655`
 - 📍 **라인**: 50-60
 - 📊 **토큰**: 27
 - 🏷️ **태그**: `class, exception`
@@ -346,7 +346,7 @@ class LogicError(RuleAnalyzerError):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `28b5c1211fbd`
+- 🆔 **ID**: `fcfdef79b995`
 - 📍 **라인**: 56-66
 - 📊 **토큰**: 29
 - 🏷️ **태그**: `class, exception`
@@ -380,7 +380,7 @@ class LogicError(RuleAnalyzerError):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b61ad0d1d17e`
+- 🆔 **ID**: `afc335e32165`
 - 📍 **라인**: 62-72
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, exception`

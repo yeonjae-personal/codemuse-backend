@@ -6,9 +6,12 @@
 import asyncio
 import httpx
 import json
+import logging
 from typing import Dict, Any, Optional
 from ..shared.llm_client import LLMClient
 from ..vocabulary_extractor import vocabulary_extractor
+
+logger = logging.getLogger("workflow.question_standardizer")
 
 
 class QuestionStandardizer:
@@ -29,8 +32,8 @@ class QuestionStandardizer:
             표준화 결과
         """
         try:
-            print(f"🧠 1단계: 질문 표준화 시작...")
-            print(f"   원본 질문: {user_query}")
+            logger.info(f"🧠 1단계: 질문 표준화 시작")
+            logger.info(f"   원본 질문: {user_query}")
             
             # 표준화 프롬프트 구성
             prompt = self._build_standardization_prompt(user_query)
@@ -43,7 +46,7 @@ class QuestionStandardizer:
             )
             
             standardized_query = response.strip()
-            print(f"   표준화된 질문: {standardized_query}")
+            logger.info(f"   표준화된 질문: {standardized_query}")
             
             return {
                 "success": True,
@@ -53,7 +56,7 @@ class QuestionStandardizer:
             }
             
         except Exception as e:
-            print(f"❌ 질문 표준화 실패: {e}")
+            logger.error(f"❌ 질문 표준화 실패: {e}", exc_info=True)
             return {
                 "success": False,
                 "error": str(e),
@@ -78,41 +81,56 @@ class QuestionStandardizer:
                 "framework_terms": vocabulary.get("framework_terms", [])[:15]
             }
             
-            prompt = f"""당신은 CodeMuse 코드베이스 전문가입니다. 
-사용자 질문을 분석하여 적절한 검색 키워드로 변환하세요.
+            prompt = f"""당신은 RAG 검색을 위한 질문 표준화 전문가입니다.
+사용자 질문을 검색에 최적화된 형태로 변환하세요.
 
 📌 원본 질문:
 {user_query}
 
-📌 사용 가능한 용어집:
+📌 프로젝트 용어집:
 {json.dumps(key_vocabulary, ensure_ascii=False, indent=2)}
 
-🎯 변환 규칙:
-1. **질문 유형 파악**:
-   - "기술스택" → "프로젝트 구조, 언어, 프레임워크"
-   - "어디서 수정" → "구체적 파일명과 메서드명"
-   - "어떻게 작동" → "관련 클래스와 메서드"
-   - "구조는" → "모듈과 아키텍처"
+🎯 표준화 규칙:
 
-2. **키워드 추출**:
-   - 원본 질문의 핵심 키워드 유지
-   - 용어집에서 관련 용어 추가
-   - 불필요한 변환 금지
+1. **핵심 의도 유지**:
+   - 원본 질문의 요청 의도를 그대로 유지
+   - "알려줘/설명해줘" → "정보" 또는 "설명"으로 간결하게 변환
+   - "어디서 수정" → "수정 위치" 또는 "파일 위치"
+   - "어떻게 작동" → "동작 원리" 또는 "구현 방식"
 
-3. **의도 보존**: 원래 질문의 핵심 의도와 목적을 그대로 유지
+2. **키워드 정제**:
+   - 용어집에 있는 정확한 용어로 매핑
+   - 검색에 방해되는 조사/어미 제거
+   - 중복 의미 제거 (예: "관련 api" → "API")
 
-📌 출력 지침:
-- 원본 질문의 의도를 그대로 유지
-- 관련 키워드만 추가
-- 1-2문장으로 간결하게 작성
-- 설명 없이 질문만 출력
+3. **검색 최적화**:
+   - 명사형 키워드 중심으로 구성
+   - 불필요한 문장 구조 제거
+   - 핵심 개념을 명확히 표현
+
+4. **범위 보존**:
+   - 원본의 검색 범위를 축소하지 않음
+   - "관련"이라는 표현은 유지
+
+📌 출력 형식:
+- 검색 키워드로 적합한 간결한 문장
+- 원본 의도를 정확히 반영
+- 1문장으로 작성
+- 설명 없이 표준화된 질문만 출력
+
+📌 예시:
+- "종속관계 관련 api와 테이블 알려줘" → "종속관계 관련 API와 테이블 정보"
+- "이슈 탐지 어떻게 작동해?" → "이슈 탐지 동작 원리"
+- "어디서 수정해야 해?" → "수정 위치 및 파일"
+- "어떤 프로젝트에 대한 소스인가요?" → "분석 대상 프로젝트명과 목적"
+- "이 코드는 어떤 프로젝트야?" → "프로젝트 이름과 도메인"
 
 📌 표준화된 질문:"""
             
             return prompt.strip()
             
         except Exception as e:
-            print(f"❌ 용어집 로드 실패: {e}")
+            logger.error(f"❌ 용어집 로드 실패: {e}", exc_info=True)
             # 폴백: 기본 프롬프트 사용
             return f"""
 다음 사용자 질문을 개발/코딩 용어집을 사용하여 표준화된 형태로 변환해주세요.

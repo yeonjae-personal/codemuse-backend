@@ -1,7 +1,7 @@
 # 📄 advanced_analyzer.py
 
 > **파일 경로**: `rule_analyzer/analyzers/advanced_analyzer.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 20개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `exceptions` • `typing` • `models` • `logging` | ⚡ **총 복잡도**: 68 |
+| 📦 **의존성**: `models` • `logging` • `exceptions` • `typing` | ⚡ **총 복잡도**: 68 |
 | 📊 **총 토큰 수**: 4,042 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -214,7 +214,7 @@ class AdvancedAnalyzer:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bee539d933bd`
+- 🆔 **ID**: `cc52bd634884`
 - 📍 **라인**: 25-35
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class`
@@ -251,27 +251,21 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
+  participant _calculate_performance_m as _calculate_performance_metrics
+  participant len as len
+  participant items as items
   participant _calculate_consistency_s as _calculate_consistency_score
-  participant __init__ as __init__
-  participant max as max
-  participant min as min
-  participant _analyze_fields as _analyze_fields
-  participant count_recursive as count_recursive
-  participant _calculate_values_range as _calculate_values_range
   participant PerformanceMetrics as PerformanceMetrics
-  participant _calculate_completeness_ as _calculate_completeness_score
-  participant _evaluate_quality_metric as _evaluate_quality_metrics
+  participant sum as sum
   participant _detect_potential_dead_c as _detect_potential_dead_code
+  participant _calculate_branch_covera as _calculate_branch_coverage
+  participant perform_advanced_analysi as perform_advanced_analysis
+  participant FieldAnalysis as FieldAnalysis
   participant _calculate_field_complex as _calculate_field_complexity
-  _analyze_fields->>_calculate_values_range: call
-  _analyze_fields->>_calculate_field_complexity: call
-  _evaluate_quality_metrics->>_calculate_completeness_score: call
-  _evaluate_quality_metrics->>_calculate_consistency_score: call
-  _calculate_values_range->>min: call
-  _calculate_values_range->>max: call
-  _calculate_field_complexity->>min: call
-  _calculate_completeness_score->>max: call
-  _calculate_consistency_score->>max: call
+  participant getLogger as getLogger
+  perform_advanced_analysis->>_calculate_performance_metrics: call
+  _calculate_performance_metrics->>PerformanceMetrics: call
+  _calculate_consistency_score->>len: call
 ```
 
 

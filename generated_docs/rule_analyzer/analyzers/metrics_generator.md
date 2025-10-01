@@ -1,7 +1,7 @@
 # 📄 metrics_generator.py
 
 > **파일 경로**: `rule_analyzer/analyzers/metrics_generator.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 11개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `exceptions` • `typing` • `models` • `logging` | ⚡ **총 복잡도**: 28 |
+| 📦 **의존성**: `models` • `logging` • `exceptions` • `typing` | ⚡ **총 복잡도**: 28 |
 | 📊 **총 토큰 수**: 2,204 |  |
 
 
@@ -133,7 +133,7 @@ class MetricsGenerator:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `edcac18462b6`
+- 🆔 **ID**: `9f6b6eccdf68`
 - 📍 **라인**: 19-29
 - 📊 **토큰**: 28
 - 🏷️ **태그**: `class`
@@ -170,25 +170,27 @@ pie title 함수 유형 분포
 ```mermaid
 sequenceDiagram
   participant generate_performance_met as generate_performance_metrics
+  participant isinstance as isinstance
   participant len as len
-  participant __init__ as __init__
+  participant _generate_optimization_s as _generate_optimization_suggestions
+  participant error as error
+  participant max as max
+  participant int as int
+  participant generate_quality_metrics as generate_quality_metrics
+  participant _identify_bottleneck_con as _identify_bottleneck_conditions
   participant getLogger as getLogger
   participant _calculate_maintainabili as _calculate_maintainability_score
   participant _calculate_consistency_s as _calculate_consistency_score
-  participant int as int
-  participant max as max
-  participant error as error
-  participant generate_quality_metrics as generate_quality_metrics
-  participant _generate_optimization_s as _generate_optimization_suggestions
-  participant isinstance as isinstance
-  __init__->>getLogger: call
   generate_performance_metrics->>len: call
   generate_performance_metrics->>_generate_optimization_suggestions: call
+  generate_performance_metrics->>_identify_bottleneck_conditions: call
   generate_performance_metrics->>error: call
   generate_quality_metrics->>_calculate_maintainability_score: call
   generate_quality_metrics->>_calculate_consistency_score: call
   generate_quality_metrics->>int: call
   _generate_optimization_suggestions->>len: call
+  _identify_bottleneck_conditions->>isinstance: call
+  _identify_bottleneck_conditions->>len: call
   _calculate_maintainability_score->>len: call
   _calculate_maintainability_score->>max: call
   _calculate_consistency_score->>max: call

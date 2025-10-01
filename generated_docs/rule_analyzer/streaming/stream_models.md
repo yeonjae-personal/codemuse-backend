@@ -1,7 +1,7 @@
 # 📄 stream_models.py
 
 > **파일 경로**: `rule_analyzer/streaming/stream_models.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 21개
 
 ---
@@ -20,7 +20,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `pydantic` • `enum` • `datetime` | ⚡ **총 복잡도**: 19 |
+| 📦 **의존성**: `typing` • `datetime` • `enum` • `pydantic` | ⚡ **총 복잡도**: 19 |
 | 📊 **총 토큰 수**: 2,704 |  |
 
 
@@ -59,7 +59,7 @@ class StreamingStatus(str, Enum):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4c1b6e8fcc08`
+- 🆔 **ID**: `6de39b2b2338`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 141
 - 🏷️ **태그**: `class, enum`
@@ -100,7 +100,7 @@ class StreamingChunk(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `414fc4d38932`
+- 🆔 **ID**: `dff05c824962`
 - 📍 **라인**: 25-35
 - 📊 **토큰**: 109
 - 🏷️ **태그**: `class, enum`
@@ -215,7 +215,7 @@ class StreamingChunk(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `273d892fb4b0`
+- 🆔 **ID**: `e2e263d1e293`
 - 📍 **라인**: 36-46
 - 📊 **토큰**: 330
 - 🏷️ **태그**: `class, pydantic`
@@ -313,7 +313,7 @@ class StreamingOptions(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c947933c68bb`
+- 🆔 **ID**: `d0d787d9908d`
 - 📍 **라인**: 97-107
 - 📊 **토큰**: 438
 - 🏷️ **태그**: `class, pydantic`
@@ -442,7 +442,7 @@ class StreamingSession(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `de514ed1a734`
+- 🆔 **ID**: `b558d9879fe5`
 - 📍 **라인**: 216-226
 - 📊 **토큰**: 377
 - 🏷️ **태그**: `class, pydantic`
@@ -475,19 +475,20 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
+  participant get as get
+  participant is_completed as is_completed
+  participant isoformat as isoformat
+  participant fromisoformat as fromisoformat
+  participant mark_completed as mark_completed
+  participant to_dict as to_dict
   participant now as now
   participant is_complete as is_complete
-  participant should_include_field as should_include_field
-  participant get_available_options as get_available_options
   participant total_seconds as total_seconds
-  participant get_progress_percentage as get_progress_percentage
-  participant float as float
-  participant dict as dict
-  participant mark_completed as mark_completed
-  participant isoformat as isoformat
-  participant update_progress as update_progress
-  participant is_error as is_error
+  participant is_progress_update as is_progress_update
+  participant to_summary as to_summary
+  participant get_effective_chunk_dela as get_effective_chunk_delay
   mark_completed->>isoformat: call
+  mark_completed->>fromisoformat: call
   mark_completed->>total_seconds: call
   mark_completed->>now: call
 ```

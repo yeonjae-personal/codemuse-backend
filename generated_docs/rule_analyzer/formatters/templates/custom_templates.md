@@ -1,7 +1,7 @@
 # 📄 custom_templates.py
 
 > **파일 경로**: `rule_analyzer/formatters/templates/custom_templates.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 15개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `json` • `typing` • `re` • `logging` • `options` | ⚡ **총 복잡도**: 36 |
+| 📦 **의존성**: `typing` • `options` • `re` • `logging` • `json` | ⚡ **총 복잡도**: 36 |
 | 📊 **총 토큰 수**: 2,668 |  |
 
 
@@ -173,7 +173,7 @@ class CustomTemplateManager:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `3617b6c195fe`
+- 🆔 **ID**: `811c203ba551`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 62
 - 🏷️ **태그**: `class, manager`
@@ -209,24 +209,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
+  participant list as list
+  participant clear as clear
+  participant items as items
+  participant len as len
   participant load_custom_template as load_custom_template
-  participant __init__ as __init__
-  participant get_custom_template as get_custom_template
+  participant dumps as dumps
   participant _add_detailed_fields as _add_detailed_fields
   participant list_custom_templates as list_custom_templates
+  participant _translate_to_english as _translate_to_english
   participant _apply_template_variatio as _apply_template_variations
-  participant type as type
-  participant remove_custom_template as remove_custom_template
-  participant _validate_template_struc as _validate_template_structure
-  participant clear_custom_templates as clear_custom_templates
-  participant _validate_placeholders as _validate_placeholders
-  participant isinstance as isinstance
-  load_custom_template->>_validate_template_structure: call
-  get_custom_template->>_apply_template_variations: call
-  _validate_template_structure->>isinstance: call
-  _validate_template_structure->>_validate_placeholders: call
-  _validate_template_structure->>type: call
+  participant loads as loads
+  participant getLogger as getLogger
+  load_custom_template->>loads: call
+  list_custom_templates->>list: call
+  _apply_template_variations->>_translate_to_english: call
   _apply_template_variations->>_add_detailed_fields: call
+  _add_detailed_fields->>items: call
+  _translate_to_english->>items: call
 ```
 
 

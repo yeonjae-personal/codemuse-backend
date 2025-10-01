@@ -1,7 +1,7 @@
 # 📄 parser.py
 
 > **파일 경로**: `rule_analyzer/parser.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 15개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `json` • `typing` • `models` • `logging` • `exceptions` • `uuid` | ⚡ **총 복잡도**: 65 |
+| 📦 **의존성**: `models` • `exceptions` • `typing` • `logging` • `json` • `uuid` | ⚡ **총 복잡도**: 65 |
 | 📊 **총 토큰 수**: 3,299 |  |
 
 
@@ -179,7 +179,7 @@ class RuleParser:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `9b7d0cc6af26`
+- 🆔 **ID**: `5524d2250e31`
 - 📍 **라인**: 18-28
 - 📊 **토큰**: 77
 - 🏷️ **태그**: `class`
@@ -216,23 +216,21 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant __init__ as __init__
-  participant RuleParsingError as RuleParsingError
-  participant validate_rule_structure as validate_rule_structure
-  participant enumerate as enumerate
-  participant hasattr as hasattr
-  participant uuid4 as uuid4
-  participant isinstance as isinstance
-  participant _parse_condition_dict as _parse_condition_dict
-  participant append as append
+  participant get as get
+  participant len as len
   participant warning as warning
+  participant RuleCondition as RuleCondition
+  participant uuid4 as uuid4
+  participant getattr as getattr
+  participant _parse_condition_dict as _parse_condition_dict
+  participant Rule as Rule
+  participant hasattr as hasattr
   participant loads as loads
-  participant _parse_single_condition as _parse_single_condition
-  _parse_single_condition->>isinstance: call
-  _parse_single_condition->>_parse_condition_dict: call
-  _parse_single_condition->>warning: call
+  participant getLogger as getLogger
+  participant enumerate as enumerate
+  _parse_condition_dict->>get: call
+  _parse_condition_dict->>RuleCondition: call
   _parse_condition_dict->>uuid4: call
-  validate_rule_structure->>append: call
 ```
 
 

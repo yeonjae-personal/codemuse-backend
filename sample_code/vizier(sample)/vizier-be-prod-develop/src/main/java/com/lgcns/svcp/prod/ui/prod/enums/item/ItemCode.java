@@ -1,0 +1,30 @@
+package com.lgcns.svcp.prod.ui.prod.enums.item;
+
+public enum ItemCode {
+    AW,
+    RD,
+    BI,
+    DI,
+    DT,
+    LB,
+    QS,
+    SI,
+    SP,
+    DR,
+    OC,
+    RC,
+    UC,
+    AD,
+    MS,
+    VO,
+    AO,
+    DV,
+    DC,
+    PP,
+    BE,
+    RE,
+    SE,
+    DP,
+    OG,
+    OR
+}

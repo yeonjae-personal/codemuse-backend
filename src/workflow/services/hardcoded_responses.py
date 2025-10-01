@@ -4,8 +4,11 @@
 """
 
 import os
+import logging
 from typing import Optional, Dict, Any
 from pathlib import Path
+
+logger = logging.getLogger("workflow.hardcoded")
 
 
 class HardcodedResponseService:
@@ -20,9 +23,9 @@ class HardcodedResponseService:
         self.question_patterns = {
             # 프로젝트 관련 질문
             "프로젝트": {
-                "keywords": ["프로젝트", "어떤", "소스", "코드", "다루고"],
-                "document": "project_summary.md",
-                "description": "프로젝트 전체 개요 및 구조"
+                "keywords": ["프로젝트", "어떤", "소스", "코드", "다루고", "분석", "대상"],
+                "document": "project_overview.md",
+                "description": "분석 대상 프로젝트: Vizier (비지어)"
             },
             # 종속관계 관련 질문
             "종속관계": {
@@ -50,10 +53,15 @@ class HardcodedResponseService:
         """
         query_lower = standardized_query.lower()
         
+        logger.info(f"🔍 하드코딩 질문 확인: {standardized_query}")
+        
         for pattern_name, pattern_info in self.question_patterns.items():
             for keyword in pattern_info["keywords"]:
                 if keyword.lower() in query_lower:
+                    logger.info(f"   ✅ 하드코딩 패턴 매칭: {pattern_name} (키워드: {keyword})")
                     return True
+        
+        logger.info(f"   ❌ 하드코딩 패턴 없음 - 일반 RAG 검색 사용")
         return False
     
     def get_hardcoded_document(self, standardized_query: str) -> Optional[Dict[str, Any]]:
@@ -68,15 +76,23 @@ class HardcodedResponseService:
         """
         query_lower = standardized_query.lower()
         
+        logger.info(f"📖 하드코딩 문서 검색: {standardized_query}")
+        
         for pattern_name, pattern_info in self.question_patterns.items():
             for keyword in pattern_info["keywords"]:
                 if keyword.lower() in query_lower:
                     document_path = self.generated_docs_path / pattern_info["document"]
                     
+                    logger.info(f"   🎯 패턴 매칭: {pattern_name}, 문서: {pattern_info['document']}")
+                    logger.info(f"   📂 문서 경로: {document_path}")
+                    logger.info(f"   📄 파일 존재: {document_path.exists()}")
+                    
                     if document_path.exists():
                         try:
                             with open(document_path, 'r', encoding='utf-8') as f:
                                 content = f.read()
+                            
+                            logger.info(f"   ✅ 하드코딩 문서 로드 성공: {len(content)}자")
                             
                             return {
                                 "success": True,
@@ -90,12 +106,13 @@ class HardcodedResponseService:
                                 "search_results_count": 1
                             }
                         except Exception as e:
-                            print(f"❌ 하드코딩 문서 읽기 실패: {e}")
+                            logger.error(f"❌ 하드코딩 문서 읽기 실패: {e}", exc_info=True)
                             return None
                     else:
-                        print(f"❌ 하드코딩 문서 없음: {document_path}")
+                        logger.warning(f"❌ 하드코딩 문서 없음: {document_path}")
                         return None
         
+        logger.info("   ℹ️ 하드코딩 문서 없음 - 일반 RAG 검색 사용")
         return None
     
     def get_question_type(self, standardized_query: str) -> Optional[str]:

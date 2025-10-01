@@ -1,0 +1,35 @@
+# 📄 ResourceDetail.vue
+
+> **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/resource/ResourceDetail.vue`  
+> **생성일**: 2025-10-01  
+> **Chunk 수**: 14개  
+> **언어**: Javascript / Vue
+---
+
+
+
+
+
+## 📋 파일 개요
+
+| | |
+|--|--|
+| 📦 **의존성**: `@/api/prod/commonApi` • `@/components/prod/icons/WarningIcon.vue` • `@/components/prod/shared/HistoryTab.vue` • `moment-timezone` • `@/components/prod/shared/AdditionalTab.vue` • `lodash-es/cloneDeep` 외 13개 | ⚡ **총 복잡도**: 90 |
+| 📊 **총 토큰 수**: 1,769 |  |
+
+
+
+
+
+
+## 🧩 Chunk 요약
+
+이 파일은 총 **14개의 chunk**로 구성되어 있으며, **1,769개의 토큰**을 포함합니다.
+
+| 🧩 Chunk 타입 | 📊 개수 | ⚡ 평균 복잡도 | 📝 총 토큰 | 📈 비율 |
+|---------------|--------|-------------|----------|--------|
+| 📋 파일 개요 | 1 | 0.0 | 1,500 | 84.8% |
+| template | 1 | 0.0 | 0 | 0.0% |
+| arrow_function | 11 | 8.2 | 269 | 15.2% |
+| style | 1 | 0.0 | 0 | 0.0% |
+

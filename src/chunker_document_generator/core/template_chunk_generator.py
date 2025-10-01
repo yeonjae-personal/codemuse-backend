@@ -5,7 +5,9 @@
 import os
 import json
 import re
+import asyncio
 import aiohttp
+import logging
 from typing import List, Dict, Any
 from dataclasses import asdict
 
@@ -13,10 +15,15 @@ try:
     from .ast_chunker import CodeChunk, chunk_directory
     from .template_renderer import ChunkTemplateRenderer
     from .chunkers import MultiLanguageChunker
+    from .core_document_generator import CoreDocumentGenerator
 except ImportError:
     from ast_chunker import CodeChunk, chunk_directory
     from template_renderer import ChunkTemplateRenderer
     from chunkers import MultiLanguageChunker
+    from core_document_generator import CoreDocumentGenerator
+
+# 로거 설정
+logger = logging.getLogger("chunker_document_generator")
 
 
 class TemplateChunkGenerator:
@@ -38,53 +45,64 @@ class TemplateChunkGenerator:
         import time
         total_start = time.time()
         
-        print(f"🚀 템플릿 기반 Chunk 문서 생성 시작...")
-        print(f"   📂 소스: {self.source_dir}")
-        print(f"   📂 출력: {self.output_dir}")
+        logger.info(f"🚀 템플릿 기반 Chunk 문서 생성 시작...")
+        logger.info(f"   📂 소스: {self.source_dir}")
+        logger.info(f"   📂 출력: {self.output_dir}")
         
         # 1. Chunk 생성 (다중 언어 지원)
         step1_start = time.time()
         all_chunks = self.multi_chunker.chunk_directory(self.source_dir)
         step1_time = time.time() - step1_start
-        print(f"   🎯 총 {len(all_chunks)}개의 chunk 생성 완료 [⏱️ {step1_time:.2f}초]")
+        logger.info(f"   🎯 총 {len(all_chunks)}개의 chunk 생성 완료 [⏱️ {step1_time:.2f}초]")
         
         # 프로젝트 분석 결과 출력
         project_summary = self.multi_chunker.get_project_summary(all_chunks)
-        print(f"   📊 프로젝트 분석:")
-        print(f"      - 타입: {project_summary['project_analysis']['project_type']}")
-        print(f"      - 프레임워크: {project_summary['project_analysis']['framework_info']}")
-        print(f"      - 언어 분포: {project_summary['language_distribution']}")
-        print(f"      - 프레임워크 분포: {project_summary['framework_distribution']}")
+        logger.info(f"   📊 프로젝트 분석:")
+        logger.info(f"      - 타입: {project_summary['project_analysis']['project_type']}")
+        logger.info(f"      - 프레임워크: {project_summary['project_analysis']['framework_info']}")
+        logger.info(f"      - 언어 분포: {project_summary['language_distribution']}")
+        logger.info(f"      - 프레임워크 분포: {project_summary['framework_distribution']}")
         
         # 2. 파일별 그룹화
         step2_start = time.time()
         file_chunks = self._group_chunks_by_file(all_chunks)
         step2_time = time.time() - step2_start
-        print(f"   📂 파일별 그룹화 완료: {len(file_chunks)}개 파일 [⏱️ {step2_time:.2f}초]")
+        logger.info(f"   📂 파일별 그룹화 완료: {len(file_chunks)}개 파일 [⏱️ {step2_time:.2f}초]")
         
         # 3. 구조화된 문서 생성
         step3_start = time.time()
         generated_files = self._generate_structured_documents(file_chunks)
         step3_time = time.time() - step3_start
-        print(f"   📝 MD 문서 생성 완료: {len(generated_files)}개 파일 [⏱️ {step3_time:.2f}초]")
+        logger.info(f"   📝 MD 문서 생성 완료: {len(generated_files)}개 파일 [⏱️ {step3_time:.2f}초]")
         
         # 4. Chunk 메타데이터 저장
         step4_start = time.time()
         metadata_file = self._save_chunk_metadata(all_chunks)
         step4_time = time.time() - step4_start
-        print(f"   💾 메타데이터 저장 완료 [⏱️ {step4_time:.2f}초]")
+        logger.info(f"   💾 메타데이터 저장 완료 [⏱️ {step4_time:.2f}초]")
         
         # 5. 프로젝트 요약 생성
         step5_start = time.time()
         summary_file = self._generate_project_summary(all_chunks, file_chunks)
         step5_time = time.time() - step5_start
-        print(f"   📊 프로젝트 요약 생성 완료 [⏱️ {step5_time:.2f}초]")
+        logger.info(f"   📊 프로젝트 요약 생성 완료 [⏱️ {step5_time:.2f}초]")
         
         # 6. 용어집 생성
         step6_start = time.time()
         vocabulary_file = self._generate_vocabulary(all_chunks)
         step6_time = time.time() - step6_start
-        print(f"   📚 용어집 생성 완료 [⏱️ {step6_time:.2f}초]")
+        logger.info(f"   📚 용어집 생성 완료 [⏱️ {step6_time:.2f}초]")
+        
+        # 6.5. 핵심 문서 생성 (project_overview.md, project_summary.md 업데이트 등)
+        step6_5_start = time.time()
+        core_generator = CoreDocumentGenerator(self.source_dir, self.output_dir)
+        core_docs = core_generator.generate_core_documents({
+            'total_files': len(file_chunks),
+            'total_chunks': len(all_chunks),
+            'project_summary': project_summary
+        })
+        step6_5_time = time.time() - step6_5_start
+        logger.info(f"   📋 핵심 문서 생성 완료 [⏱️ {step6_5_time:.2f}초]")
         
         # 7. 엔터프라이즈 아키텍처 분석 (엔터프라이즈 애플리케이션인 경우)
         step7_start = time.time()
@@ -95,7 +113,7 @@ class TemplateChunkGenerator:
             business_logic_file = self._generate_business_logic_analysis(all_chunks)
         step7_time = time.time() - step7_start
         if architecture_file:
-            print(f"   🏗️ 엔터프라이즈 아키텍처 분석 완료 [⏱️ {step7_time:.2f}초]")
+            logger.info(f"   🏗️ 엔터프라이즈 아키텍처 분석 완료 [⏱️ {step7_time:.2f}초]")
         
         result = {
             "source_dir": self.source_dir,
@@ -107,30 +125,33 @@ class TemplateChunkGenerator:
             "project_summary_file": summary_file,
             "vocabulary_file": vocabulary_file,
             "architecture_file": architecture_file,
-            "business_logic_file": business_logic_file
+            "business_logic_file": business_logic_file,
+            "core_documents": core_docs
         }
         
         step6_time = 0.0
         if upload_to_rag:
             # 🎯 RAG에 MD 문서들을 섹션별로 분할하여 업로드
             step6_start = time.time()
-            print(f"\n🔄 RAG 업로드 시작...")
+            logger.info(f"\n🔄 RAG 업로드 시작...")
             rag_upload_result = await self._upload_md_sections_to_rag(all_chunks, generated_files, summary_file)
             result["rag_upload_result"] = rag_upload_result
             step6_time = time.time() - step6_start
-            print(f"   📤 RAG 업로드 완료 [⏱️ {step6_time:.2f}초]")
+            logger.info(f"   📤 RAG 업로드 완료 [⏱️ {step6_time:.2f}초]")
         else:
-            print("\n⏭️ RAG 업로드 건너뜀 (generate-local 모드)")
+            logger.info("\n⏭️ RAG 업로드 건너뜀 (generate-local 모드)")
         
         total_time = time.time() - total_start
-        print(f"\n✅ 전체 문서 생성 완료 [⏱️ 총 {total_time:.2f}초]")
-        print(f"   📈 단계별 시간:")
-        print(f"     1. Chunk 생성: {step1_time:.2f}초 ({step1_time/total_time*100:.1f}%)")
-        print(f"     2. 파일 그룹화: {step2_time:.2f}초 ({step2_time/total_time*100:.1f}%)")
-        print(f"     3. MD 문서 생성: {step3_time:.2f}초 ({step3_time/total_time*100:.1f}%)")
-        print(f"     4. 메타데이터 저장: {step4_time:.2f}초 ({step4_time/total_time*100:.1f}%)")
-        print(f"     5. 프로젝트 요약: {step5_time:.2f}초 ({step5_time/total_time*100:.1f}%)")
-        print(f"     6. RAG 업로드: {step6_time:.2f}초 ({(step6_time/total_time*100 if total_time>0 else 0):.1f}%)")
+        logger.info(f"\n✅ 전체 문서 생성 완료 [⏱️ 총 {total_time:.2f}초]")
+        logger.info(f"   📈 단계별 시간:")
+        logger.info(f"     1. Chunk 생성: {step1_time:.2f}초 ({step1_time/total_time*100:.1f}%)")
+        logger.info(f"     2. 파일 그룹화: {step2_time:.2f}초 ({step2_time/total_time*100:.1f}%)")
+        logger.info(f"     3. MD 문서 생성: {step3_time:.2f}초 ({step3_time/total_time*100:.1f}%)")
+        logger.info(f"     4. 메타데이터 저장: {step4_time:.2f}초 ({step4_time/total_time*100:.1f}%)")
+        logger.info(f"     5. 프로젝트 요약: {step5_time:.2f}초 ({step5_time/total_time*100:.1f}%)")
+        logger.info(f"     6. 용어집 생성: {step6_time:.2f}초 ({step6_time/total_time*100:.1f}%)")
+        logger.info(f"     6.5. 핵심 문서: {step6_5_time:.2f}초 ({step6_5_time/total_time*100:.1f}%)")
+        logger.info(f"     7. RAG 업로드: {step6_time:.2f}초 ({(step6_time/total_time*100 if total_time>0 else 0):.1f}%)")
         
         return result
     
@@ -665,52 +686,163 @@ class TemplateChunkGenerator:
                     vocabulary["technical_terms"].append(dep)
 
     async def _upload_md_sections_to_rag(self, all_chunks: List[CodeChunk], generated_files: List[str], summary_file: str) -> Dict[str, Any]:
-        """생성된 MD 파일들을 섹션별로 분할하여 RAG에 업로드"""
+        """생성된 MD 파일들을 섹션별로 분할하여 RAG에 배치 업로드 (최적화)"""
+        import time
+        start_time = time.time()
         
         rag_base_url = os.getenv("RAG_SERVICE_URL", "http://localhost:8003")
-        upload_results = []
+        
+        logger.info(f"🔄 {len(generated_files)}개 MD 파일을 RAG에 배치 업로드 시작...")
         
         try:
+            # 1단계: 모든 섹션 수집 (병렬 처리)
+            all_sections = []
+            
             async with aiohttp.ClientSession() as session:
-                # 1. 개별 MD 파일들을 섹션별로 분할하여 업로드
+                # 파일별로 섹션 추출 (병렬 처리)
+                tasks = []
                 for md_file_path in generated_files:
-                    file_upload_result = await self._upload_single_md_file_sections(
-                        session, rag_base_url, md_file_path, all_chunks
-                    )
-                    upload_results.append(file_upload_result)
+                    tasks.append(self._extract_sections_from_md(md_file_path, all_chunks))
                 
-                # 2. 프로젝트 요약 파일 섹션별 업로드
-                summary_upload_result = await self._upload_project_summary_sections(
-                    session, rag_base_url, summary_file
-                )
-                upload_results.append(summary_upload_result)
+                # 병렬로 모든 파일의 섹션 추출
+                file_sections_list = await asyncio.gather(*tasks, return_exceptions=True)
+                
+                for i, result in enumerate(file_sections_list):
+                    if isinstance(result, Exception):
+                        logger.error(f"❌ 파일 {generated_files[i]} 섹션 추출 실패: {result}")
+                    else:
+                        all_sections.extend(result)
+                        logger.info(f"  ✅ {os.path.basename(generated_files[i])}: {len(result)}개 섹션 추출")
+                
+                # 프로젝트 요약 섹션 추가
+                if summary_file:
+                    summary_sections = await self._extract_project_summary_sections(summary_file)
+                    all_sections.extend(summary_sections)
+                    logger.info(f"  ✅ 프로젝트 요약: {len(summary_sections)}개 섹션 추출")
+                
+                logger.info(f"📦 총 {len(all_sections)}개 섹션 수집 완료")
+                
+                # 2단계: 배치 업로드 (100개씩 묶어서 전송)
+                batch_size = 100
+                total_uploaded = 0
+                
+                for i in range(0, len(all_sections), batch_size):
+                    batch = all_sections[i:i + batch_size]
+                    batch_num = i // batch_size + 1
+                    total_batches = (len(all_sections) + batch_size - 1) // batch_size
+                    
+                    logger.info(f"📤 배치 {batch_num}/{total_batches} 업로드 중 ({len(batch)}개 섹션)...")
+                    
+                    # 배치 업로드 데이터 준비
+                    documents = []
+                    for section in batch:
+                        meta = section.get("metadata", {})
+                        stable_id = f"{meta.get('project','')}/{meta.get('source_file','')}/{meta.get('section_title','')}".lower()
+                        
+                        documents.append({
+                            "id": stable_id,
+                            "content": section["content"],
+                            "metadata": meta,
+                            "skip_index_update": True  # 배치 처리 중에는 인덱스 업데이트 스킵
+                        })
+                    
+                    # 배치 API 호출
+                    try:
+                        async with session.post(
+                            f"{rag_base_url}/api/v1/documents/batch",
+                            json={
+                                "documents": documents,
+                                "update_index_after": False  # 마지막에 한번만 업데이트
+                            },
+                            timeout=aiohttp.ClientTimeout(total=300)  # 5분 타임아웃
+                        ) as response:
+                            if response.status == 200:
+                                result = await response.json()
+                                uploaded = result.get("uploaded_count", 0)
+                                total_uploaded += uploaded
+                                logger.info(f"  ✅ 배치 {batch_num} 업로드 완료: {uploaded}개")
+                            else:
+                                error_text = await response.text()
+                                logger.error(f"  ❌ 배치 {batch_num} 업로드 실패 (HTTP {response.status}): {error_text}")
+                    except Exception as e:
+                        logger.error(f"  ❌ 배치 {batch_num} 업로드 예외: {e}")
+                
+                # 3단계: 최종 인덱스 업데이트 (1회만)
+                logger.info("🔄 BM25 인덱스 최종 업데이트 중...")
+                try:
+                    async with session.post(
+                        f"{rag_base_url}/api/v1/documents/batch",
+                        json={
+                            "documents": [],  # 빈 배치
+                            "update_index_after": True  # 인덱스만 업데이트
+                        },
+                        timeout=aiohttp.ClientTimeout(total=60)
+                    ) as response:
+                        if response.status == 200:
+                            logger.info("  ✅ BM25 인덱스 업데이트 완료")
+                        else:
+                            logger.warning(f"  ⚠️ 인덱스 업데이트 실패 (HTTP {response.status})")
+                except Exception as e:
+                    logger.warning(f"  ⚠️ 인덱스 업데이트 예외: {e}")
             
-            # 총 업로드된 섹션 수 계산
-            total_sections = sum(detail.get("sections_uploaded", 0) for detail in upload_results)
-            successful_files = sum(1 for detail in upload_results if detail.get("success", False))
-            
-            print(f"✅ RAG 업로드 완료: {successful_files}/{len(upload_results)}개 파일 처리")
-            print(f"   📊 총 업로드된 섹션: {total_sections}개")
+            elapsed_time = time.time() - start_time
+            logger.info(f"✅ RAG 배치 업로드 완료: {total_uploaded}/{len(all_sections)}개 섹션, {elapsed_time:.2f}초 소요")
             
             return {
                 "success": True,
-                "uploaded_files": len(upload_results),
-                "successful_files": successful_files,
-                "total_sections": total_sections,
-                "details": upload_results
+                "total_sections": len(all_sections),
+                "uploaded_sections": total_uploaded,
+                "elapsed_time": elapsed_time
             }
             
         except Exception as e:
-            print(f"❌ RAG 업로드 실패: {e}")
+            logger.error(f"❌ RAG 배치 업로드 실패: {e}")
+            import traceback
+            traceback.print_exc()
             return {
                 "success": False,
-                "error": str(e),
-                "details": []
+                "error": str(e)
             }
+    
+    async def _extract_sections_from_md(self, md_file_path: str, all_chunks: List[CodeChunk]) -> List[Dict[str, Any]]:
+        """MD 파일에서 섹션 추출 (배치 업로드용)"""
+        try:
+            # MD 파일 읽기
+            with open(md_file_path, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            # 파일명에서 Python 파일 경로 추출
+            relative_path = os.path.relpath(md_file_path, self.output_dir)
+            python_file = os.path.join(self.source_dir, relative_path.replace('.md', '.py'))
+            
+            # 해당 파일의 chunk들 찾기
+            file_chunks = [chunk for chunk in all_chunks if chunk.file_path == python_file]
+            
+            # MD 파일을 섹션별로 분할
+            sections = self._split_md_into_sections(content, file_chunks, md_file_path)
+            
+            return sections
+            
+        except Exception as e:
+            logger.error(f"섹션 추출 실패 {md_file_path}: {e}")
+            return []
+    
+    async def _extract_project_summary_sections(self, summary_file: str) -> List[Dict[str, Any]]:
+        """프로젝트 요약 파일에서 섹션 추출"""
+        try:
+            with open(summary_file, 'r', encoding='utf-8') as f:
+                content = f.read()
+            
+            sections = self._split_project_summary_into_sections(content)
+            return sections
+            
+        except Exception as e:
+            logger.error(f"프로젝트 요약 섹션 추출 실패: {e}")
+            return []
     
     async def _upload_single_md_file_sections(self, session: aiohttp.ClientSession, rag_base_url: str, 
                                             md_file_path: str, all_chunks: List[CodeChunk]) -> Dict[str, Any]:
-        """단일 MD 파일을 섹션별로 분할하여 RAG에 업로드"""
+        """단일 MD 파일을 섹션별로 분할하여 RAG에 업로드 (레거시, 호환성용)"""
         
         try:
             # MD 파일 읽기
@@ -1093,12 +1225,12 @@ class TemplateChunkGenerator:
                     return True
                 else:
                     error_text = await response.text()
-                    print(f"     ❌ RAG 업로드 실패 (HTTP {response.status}): {error_text}")
-                    print(f"     📝 실패한 섹션 ID: {section.get('metadata', {}).get('id_hint', 'unknown')}")
+                    logger.error(f"     ❌ RAG 업로드 실패 (HTTP {response.status}): {error_text}")
+                    logger.error(f"     📝 실패한 섹션 ID: {section.get('metadata', {}).get('id_hint', 'unknown')}")
                     return False
                     
         except Exception as e:
-            print(f"     ❌ RAG 업로드 예외: {e}")
+            logger.error(f"     ❌ RAG 업로드 예외: {e}")
             return False
 
 
@@ -1110,44 +1242,44 @@ async def generate_template_chunk_documents(source_dir: str, output_dir: str, te
 
 
 async def upload_generated_documents_to_rag(source_dir: str, output_dir: str, template_dir: str = None) -> Dict[str, Any]:
-    """이미 생성된 MD 문서를 RAG에만 업로드 (단독 실행)"""
+    """이미 생성된 MD 문서를 RAG에 배치 업로드 (최적화된 방식)"""
     try:
+        logger.info("🚀 최적화된 RAG 배치 업로드 시작")
+        
         # 청크 재구성 (섹션 매핑을 위해 필요)
         all_chunks = chunk_directory(source_dir, max_tokens=600)
+        logger.info(f"  ✅ 청크 재구성 완료: {len(all_chunks)}개")
 
-        # 업로드 대상 MD 파일 수집
+        # 업로드 대상 MD 파일 수집 (project_summary.md 제외)
         md_files = []
         for root, dirs, files in os.walk(output_dir):
             for f in files:
                 if f.endswith('.md') and f != 'project_summary.md':
                     md_files.append(os.path.join(root, f))
+        
+        logger.info(f"  ✅ 업로드 대상 MD 파일: {len(md_files)}개")
 
         summary_file = os.path.join(output_dir, 'project_summary.md')
         if not os.path.exists(summary_file):
             summary_file = None
+            logger.info("  ℹ️  프로젝트 요약 파일 없음")
+        else:
+            logger.info("  ✅ 프로젝트 요약 파일 발견")
 
         renderer = TemplateChunkGenerator(source_dir, output_dir, template_dir)
 
-        rag_base_url = os.getenv("RAG_SERVICE_URL", "http://localhost:8003")
-        upload_details = []
-        import aiohttp
-        async with aiohttp.ClientSession() as session:
-            # 1) 개별 파일 업로드
-            for md in md_files:
-                file_result = await renderer._upload_single_md_file_sections(session, rag_base_url, md, all_chunks)
-                upload_details.append(file_result)
-            # 2) 프로젝트 요약 업로드
-            if summary_file:
-                summary_result = await renderer._upload_project_summary_sections(session, rag_base_url, summary_file)
-                upload_details.append(summary_result)
-
-        return {
-            "success": True,
-            "uploaded_files": len(upload_details),
-            "details": upload_details
-        }
+        # 최적화된 배치 업로드 실행
+        result = await renderer._upload_md_sections_to_rag(all_chunks, md_files, summary_file)
+        
+        logger.info(f"✅ RAG 배치 업로드 완료: {result}")
+        
+        return result
+        
     except Exception as e:
-        return {"success": False, "error": str(e), "details": []}
+        logger.error(f"❌ RAG 업로드 실패: {e}")
+        import traceback
+        traceback.print_exc()
+        return {"success": False, "error": str(e)}
 
 
 if __name__ == "__main__":

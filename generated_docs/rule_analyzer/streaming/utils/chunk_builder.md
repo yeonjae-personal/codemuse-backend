@@ -1,7 +1,7 @@
 # 📄 chunk_builder.py
 
 > **파일 경로**: `rule_analyzer/streaming/utils/chunk_builder.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 12개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `stream_models` • `logging` | ⚡ **총 복잡도**: 33 |
+| 📦 **의존성**: `logging` • `stream_models` • `typing` | ⚡ **총 복잡도**: 33 |
 | 📊 **총 토큰 수**: 2,052 |  |
 
 
@@ -146,7 +146,7 @@ class ChunkBuilder:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `3db237f9ca86`
+- 🆔 **ID**: `f0f6ffa16906`
 - 📍 **라인**: 13-23
 - 📊 **토큰**: 74
 - 🏷️ **태그**: `class`
@@ -182,21 +182,32 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant __init__ as __init__
-  participant max as max
-  participant min as min
-  participant optimize_chunk_size as optimize_chunk_size
-  participant enumerate as enumerate
-  participant build_progress_chunk as build_progress_chunk
-  participant isinstance as isinstance
-  participant append as append
-  participant build_completion_chunk as build_completion_chunk
-  participant merge_small_chunks as merge_small_chunks
-  participant join as join
+  participant len as len
   participant items as items
+  participant build_structured_chunks as build_structured_chunks
+  participant merge_small_chunks as merge_small_chunks
+  participant build_text_chunks as build_text_chunks
+  participant StreamingChunk as StreamingChunk
+  participant _dict_to_text as _dict_to_text
+  participant optimize_chunk_size as optimize_chunk_size
+  participant getLogger as getLogger
+  participant enumerate as enumerate
+  participant append as append
+  participant join as join
+  build_text_chunks->>len: call
+  build_text_chunks->>StreamingChunk: call
+  build_text_chunks->>append: call
+  build_text_chunks->>join: call
+  build_structured_chunks->>_dict_to_text: call
+  build_structured_chunks->>build_text_chunks: call
+  build_structured_chunks->>enumerate: call
+  build_structured_chunks->>len: call
+  build_structured_chunks->>append: call
   merge_small_chunks->>append: call
-  optimize_chunk_size->>max: call
-  optimize_chunk_size->>min: call
+  merge_small_chunks->>len: call
+  _dict_to_text->>items: call
+  _dict_to_text->>join: call
+  _dict_to_text->>append: call
 ```
 
 

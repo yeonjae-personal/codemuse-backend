@@ -3,9 +3,13 @@ from pydantic import BaseModel
 from typing import Optional, Dict, Any
 import os
 import asyncio
+import logging
 from datetime import datetime
 
 from ..core.template_chunk_generator import generate_template_chunk_documents, TemplateChunkGenerator, upload_generated_documents_to_rag
+
+# 로거 설정
+logger = logging.getLogger("chunker_document_generator")
 
 router = APIRouter(prefix="/api/v1/documents", tags=["document-generator"])
 
@@ -24,27 +28,32 @@ class GenerateRequest(BaseModel):
 @router.post("/generate")
 async def generate_documents(request: GenerateRequest) -> Dict[str, Any]:
     try:
-        print(f"🔍 받은 요청: upload_to_rag={request.upload_to_rag}, source_dir={request.source_dir}")
-        print(f"🔍 요청 타입: {type(request)}, 내용: {request}")
+        logger.info(f"🔍 받은 요청: upload_to_rag={request.upload_to_rag}, source_dir={request.source_dir}")
+        logger.info(f"🔍 요청 타입: {type(request)}, 내용: {request}")
+        
         base_dir = os.getcwd()
         source_dir = request.source_dir or os.path.join(base_dir, "sample_code")
         output_dir = request.output_dir or os.path.join(base_dir, "generated_docs")
         template_dir = request.template_dir or os.path.join(base_dir, "src", "chunker_document_generator", "core", "templates")
 
         if not os.path.exists(source_dir):
+            logger.error(f"❌ 소스 디렉토리 없음: {source_dir}")
             raise HTTPException(status_code=400, detail=f"source_dir not found: {source_dir}")
 
         if request.upload_to_rag is False:
             # RAG 업로드만 건너뛰고 로컬 생성
+            logger.info("📝 로컬 MD 생성 모드 (RAG 업로드 건너뜀)")
             generator = TemplateChunkGenerator(source_dir, output_dir, template_dir)
             result = await generator.generate_documents(upload_to_rag=False)
         else:
             # 긴 작업을 백그라운드로 실행하고 즉시 응답
+            logger.info("📝 로컬 생성 + 백그라운드 RAG 업로드 모드")
             generator = TemplateChunkGenerator(source_dir, output_dir, template_dir)
             # 먼저 로컬 생성만 수행
             result = await generator.generate_documents(upload_to_rag=False)
             
             # RAG 업로드는 백그라운드로 실행 (응답 속도 개선)
+            logger.info("🔄 백그라운드 RAG 업로드 시작")
             asyncio.create_task(upload_generated_documents_to_rag(source_dir, output_dir, template_dir))
             
             # 즉시 응답 (RAG 업로드는 백그라운드에서 진행)
@@ -56,14 +65,14 @@ async def generate_documents(request: GenerateRequest) -> Dict[str, Any]:
         result["documents_processed"] = result.get("total_files", 0)
         result["md_files_count"] = len(result.get("generated_files", []))
         
-        print(f"✅ 응답 준비 완료: docs_created={result.get('docs_created')}")
+        logger.info(f"✅ 응답 준비 완료: docs_created={result.get('docs_created')}, md_files_count={result.get('md_files_count')}")
         return {"status": "success", "result": result}
     except HTTPException:
         raise
     except Exception as e:
-        print(f"❌ 오류 발생: {e}")
+        logger.error(f"❌ 오류 발생: {e}")
         import traceback
-        traceback.print_exc()
+        logger.error(f"❌ 스택 트레이스: {traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=f"문서 생성 중 오류: {str(e)}")
 
 class UploadOnlyRequest(BaseModel):

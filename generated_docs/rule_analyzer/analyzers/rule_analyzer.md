@@ -1,7 +1,7 @@
 # 📄 rule_analyzer.py
 
 > **파일 경로**: `rule_analyzer/analyzers/rule_analyzer.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 14개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `advanced_analyzer` • `typing` • `issue_detector` • `asyncio` • `models` • `logging` 외 3개 | ⚡ **총 복잡도**: 74 |
+| 📦 **의존성**: `models` • `exceptions` • `advanced_analyzer` • `typing` • `asyncio` • `condition_analyzer` 외 3개 | ⚡ **총 복잡도**: 74 |
 | 📊 **총 토큰 수**: 4,445 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -160,7 +160,7 @@ class RuleAnalyzer:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e15017fd679f`
+- 🆔 **ID**: `dde745918d92`
 - 📍 **라인**: 31-41
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class`
@@ -198,23 +198,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant IssueDetector as IssueDetector
-  participant __init__ as __init__
-  participant max as max
-  participant min as min
-  participant ReportMetadata as ReportMetadata
+  participant get as get
+  participant len as len
+  participant _create_report_metadata as _create_report_metadata
+  participant set_event_loop as set_event_loop
+  participant StructureInfo as StructureInfo
+  participant analyze_rule_sync as analyze_rule_sync
+  participant _generate_summary as _generate_summary
   participant ConditionAnalyzer as ConditionAnalyzer
-  participant analyze_rule as analyze_rule
+  participant getattr as getattr
+  participant timestamp as timestamp
+  participant set as set
   participant hasattr as hasattr
-  participant _analyze_structure as _analyze_structure
-  participant run_until_complete as run_until_complete
-  participant get_rule_statistics as get_rule_statistics
-  participant calculate_condition_comp as calculate_condition_complexity
-  __init__->>ConditionAnalyzer: call
-  __init__->>IssueDetector: call
-  analyze_rule->>_analyze_structure: call
-  _analyze_structure->>max: call
-  get_rule_statistics->>_analyze_structure: call
+  analyze_rule_sync->>set_event_loop: call
+  _generate_summary->>len: call
+  _generate_summary->>get: call
+  _generate_summary->>getattr: call
+  _create_report_metadata->>get: call
+  _create_report_metadata->>getattr: call
 ```
 
 

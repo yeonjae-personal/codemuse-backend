@@ -1,7 +1,7 @@
 # 📄 option_validator.py
 
 > **파일 경로**: `rule_analyzer/formatters/options/option_validator.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 13개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `formatting_options` • `typing` • `json` | ⚡ **총 복잡도**: 30 |
+| 📦 **의존성**: `json` • `formatting_options` • `typing` | ⚡ **총 복잡도**: 30 |
 | 📊 **총 토큰 수**: 1,648 |  |
 
 
@@ -151,7 +151,7 @@ class FormattingOptionValidator:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `934e3d1f212d`
+- 🆔 **ID**: `80f170c59965`
 - 📍 **라인**: 12-22
 - 📊 **토큰**: 35
 - 🏷️ **태그**: `class`
@@ -187,25 +187,20 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant __init__ as __init__
-  participant get_validation_summary as get_validation_summary
-  participant _validate_custom_setting as _validate_custom_settings
-  participant get_warnings as get_warnings
-  participant _validate_field_values as _validate_field_values
-  participant type as type
+  participant get as get
   participant _validate_required_field as _validate_required_fields
-  participant isinstance as isinstance
-  participant _validate_field_combinat as _validate_field_combinations
-  participant DetailLevel as DetailLevel
-  participant append as append
-  participant has_warnings as has_warnings
-  _validate_required_fields->>append: call
-  _validate_field_values->>DetailLevel: call
-  _validate_field_values->>append: call
-  _validate_field_values->>isinstance: call
-  _validate_field_combinations->>append: call
-  _validate_custom_settings->>isinstance: call
-  _validate_custom_settings->>append: call
+  participant list as list
+  participant clear as clear
+  participant items as items
+  participant len as len
+  participant _validate_field_types as _validate_field_types
+  participant _validate_field_values as _validate_field_values
+  participant Language as Language
+  participant set as set
+  participant loads as loads
+  participant get_warnings as get_warnings
+  _validate_field_types->>items: call
+  _validate_field_values->>Language: call
 ```
 
 

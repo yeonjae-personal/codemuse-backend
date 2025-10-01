@@ -1,7 +1,7 @@
 # 📄 sse.py
 
 > **파일 경로**: `rule_analyzer/streaming/protocols/sse.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 11개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `stream_models` • `json` • `typing` • `logging` • `datetime` | ⚡ **총 복잡도**: 22 |
+| 📦 **의존성**: `typing` • `logging` • `json` • `stream_models` • `datetime` | ⚡ **총 복잡도**: 22 |
 | 📊 **총 토큰 수**: 1,665 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -137,7 +137,7 @@ class SSEProtocol:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c5d2cd3f734e`
+- 🆔 **ID**: `ee9626545eef`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 68
 - 🏷️ **태그**: `class`
@@ -174,28 +174,22 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant __init__ as __init__
-  participant is_complete as is_complete
-  participant now as now
-  participant get_progress_percentage as get_progress_percentage
-  participant _format_progress_event as _format_progress_event
   participant isoformat as isoformat
+  participant create_retry_event as create_retry_event
+  participant now as now
+  participant dumps as dumps
+  participant is_complete as is_complete
+  participant get_response_headers as get_response_headers
   participant create_heartbeat_event as create_heartbeat_event
-  participant _format_sse_event as _format_sse_event
+  participant getLogger as getLogger
+  participant StreamingOptions as StreamingOptions
   participant append as append
-  participant _get_current_timestamp as _get_current_timestamp
-  participant stream_events as stream_events
   participant join as join
-  stream_events->>_format_sse_event: call
-  stream_events->>is_complete: call
-  stream_events->>_format_progress_event: call
-  _format_sse_event->>append: call
-  _format_progress_event->>append: call
-  _format_progress_event->>get_progress_percentage: call
-  _get_current_timestamp->>isoformat: call
-  _get_current_timestamp->>now: call
+  participant __init__ as __init__
+  __init__->>getLogger: call
+  __init__->>StreamingOptions: call
   create_heartbeat_event->>join: call
-  create_heartbeat_event->>_get_current_timestamp: call
+  create_heartbeat_event->>dumps: call
 ```
 
 

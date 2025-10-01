@@ -1,7 +1,7 @@
 # 📄 stream_manager.py
 
 > **파일 경로**: `rule_analyzer/streaming/stream_manager.py`  
-> **생성일**: 2025-09-26  
+> **생성일**: 2025-10-01  
 > **Chunk 수**: 19개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `concurrent` • `stream_models` • `typing` • `asyncio` • `stream_generator` • `logging` 외 2개 | ⚡ **총 복잡도**: 50 |
+| 📦 **의존성**: `typing` • `stream_generator` • `asyncio` • `logging` • `stream_models` • `uuid` 외 2개 | ⚡ **총 복잡도**: 50 |
 | 📊 **총 토큰 수**: 2,851 | 🔄 **비동기 함수**: 12개 |
 
 
@@ -209,7 +209,7 @@ class StreamManager:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `64d1912a3cb5`
+- 🆔 **ID**: `37a6ecf06f20`
 - 📍 **라인**: 22-32
 - 📊 **토큰**: 67
 - 🏷️ **태그**: `class, manager`
@@ -245,28 +245,20 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant cancel as cancel
-  participant __init__ as __init__
-  participant is_complete as is_complete
-  participant _complete_session as _complete_session
-  participant now as now
-  participant cleanup_old_sessions as cleanup_old_sessions
-  participant get_stream as get_stream
-  participant cancel_session as cancel_session
+  participant list_active_sessions as list_active_sessions
+  participant isoformat as isoformat
   participant generate_stream as generate_stream
+  participant len as len
+  participant items as items
+  participant list as list
+  participant sleep as sleep
   participant resume_session as resume_session
-  participant _stop_heartbeat as _stop_heartbeat
-  participant shutdown as shutdown
-  get_stream->>generate_stream: call
-  get_stream->>is_complete: call
-  cancel_session->>_complete_session: call
-  cancel_session->>now: call
-  cleanup_old_sessions->>now: call
-  shutdown->>shutdown: call
-  shutdown->>cancel: call
-  _complete_session->>_stop_heartbeat: call
-  _complete_session->>now: call
-  _stop_heartbeat->>cancel: call
+  participant _start_heartbeat as _start_heartbeat
+  participant start_streaming as start_streaming
+  participant timedelta as timedelta
+  participant RuntimeError as RuntimeError
+  start_streaming->>len: call
+  start_streaming->>RuntimeError: call
 ```
 
 
