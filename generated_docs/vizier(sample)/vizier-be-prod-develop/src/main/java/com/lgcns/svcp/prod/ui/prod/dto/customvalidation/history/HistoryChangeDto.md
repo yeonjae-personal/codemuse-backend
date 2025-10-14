@@ -1,7 +1,7 @@
 # 📄 HistoryChangeDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/history/HistoryChangeDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class HistoryChangeDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5d5ba0b7106d`
+- 🆔 **ID**: `8768a55a67ef`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

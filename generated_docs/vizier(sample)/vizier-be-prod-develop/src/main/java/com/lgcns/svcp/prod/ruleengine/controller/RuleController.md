@@ -1,7 +1,7 @@
 # 📄 RuleController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/controller/RuleController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -73,7 +73,7 @@ public class RuleController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `7c73698a40d7`
+- 🆔 **ID**: `2abaedc9bfc6`
 - 📍 **라인**: 27-27
 - 📊 **토큰**: 61
 - 🏷️ **태그**: `class, java, autowired, getmapping, postmapping...`

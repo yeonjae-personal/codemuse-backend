@@ -1,7 +1,7 @@
 # 📄 notificationApi.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/api/prod/notificationApi.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/http-common` • `./path` | ⚡ **총 복잡도**: 6 |
+| 📦 **의존성**: `./path` • `@/utils/http-common` | ⚡ **총 복잡도**: 6 |
 | 📊 **총 토큰 수**: 64 |  |
 
 

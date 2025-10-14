@@ -1,7 +1,7 @@
 # 📄 relationSearch.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/relationSearch.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/userInfor` • `lodash-es` • `@/utils/format-data` • `@/constants/offer` • `@/constants/impactAnalysis` • `@/enums/columnTypes` | ⚡ **총 복잡도**: 25 |
+| 📦 **의존성**: `@/constants/offer` • `@/constants/userInfor` • `lodash-es` • `@/enums/columnTypes` • `@/utils/format-data` • `@/constants/impactAnalysis` | ⚡ **총 복잡도**: 25 |
 | 📊 **총 토큰 수**: 554 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 DsbdRecentWorkMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/DsbdRecentWorkMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -52,7 +52,7 @@ public interface DsbdRecentWorkMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ec0711bb1a8f`
+- 🆔 **ID**: `bb71a951ce38`
 - 📊 **토큰**: 62
 
 </details>

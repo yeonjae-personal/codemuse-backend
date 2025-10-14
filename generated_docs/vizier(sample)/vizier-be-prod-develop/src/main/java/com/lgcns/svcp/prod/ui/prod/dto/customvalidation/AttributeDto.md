@@ -1,7 +1,7 @@
 # 📄 AttributeDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/AttributeDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -88,7 +88,7 @@ public class AttributeDto extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0d528e7b9805`
+- 🆔 **ID**: `0ab041e6bb86`
 - 📍 **라인**: 15-15
 - 📊 **토큰**: 111
 - 🏷️ **태그**: `class, java`

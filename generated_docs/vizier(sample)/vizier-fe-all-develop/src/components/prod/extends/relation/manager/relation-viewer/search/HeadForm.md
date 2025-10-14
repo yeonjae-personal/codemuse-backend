@@ -1,7 +1,7 @@
 # 📄 HeadForm.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/search/HeadForm.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 13개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useRedirect` • `@/enums` • `@/types/common` • `@/enums/redirect` • `@/api/prod/path` • `vue-i18n` 외 2개 | ⚡ **총 복잡도**: 154 |
+| 📦 **의존성**: `vue-i18n` • `@/api/prod/path` • `@/enums` • `@/composables/useRedirect` • `@/composables/useDownloadFIle` • `@/enums/redirect` 외 2개 | ⚡ **총 복잡도**: 154 |
 | 📊 **총 토큰 수**: 1,451 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 text_formatter.py
 
 > **파일 경로**: `rule_analyzer/formatters/text_formatter.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `options` • `templates` • `re` • `logging` | ⚡ **총 복잡도**: 37 |
+| 📦 **의존성**: `templates` • `re` • `typing` • `options` • `logging` | ⚡ **총 복잡도**: 37 |
 | 📊 **총 토큰 수**: 2,371 |  |
 
 
@@ -110,7 +110,7 @@ class TextFormatter:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4637b89ace4d`
+- 🆔 **ID**: `aa201ae43f5b`
 - 📍 **라인**: 16-26
 - 📊 **토큰**: 52
 - 🏷️ **태그**: `class`
@@ -148,23 +148,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant sub as sub
-  participant items as items
-  participant CustomTemplateManager as CustomTemplateManager
   participant _apply_template as _apply_template
+  participant debug as debug
   participant _remove_emojis_from_line as _remove_emojis_from_lines
-  participant EnglishTemplates as EnglishTemplates
-  participant _add_emojis_to_lines as _add_emojis_to_lines
-  participant strip as strip
-  participant hasattr as hasattr
+  participant KoreanTemplates as KoreanTemplates
   participant getLogger as getLogger
+  participant _add_emojis_to_lines as _add_emojis_to_lines
+  participant str as str
+  participant format as format
   participant enumerate as enumerate
-  participant to_summary as to_summary
-  _apply_template->>hasattr: call
+  participant strip as strip
+  participant format_summary as format_summary
+  participant FormattingOptions as FormattingOptions
+  format->>_apply_template: call
+  format->>debug: call
+  _apply_template->>format: call
   _apply_template->>enumerate: call
-  _add_emojis_to_lines->>items: call
-  _remove_emojis_from_lines->>sub: call
   _remove_emojis_from_lines->>strip: call
+  format_summary->>str: call
 ```
 
 

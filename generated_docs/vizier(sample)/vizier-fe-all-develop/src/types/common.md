@@ -1,7 +1,7 @@
 # 📄 common.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/types/common.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -17,7 +17,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/interfaces/prod/menu` • `@/interfaces/admin/label-management` | ⚡ **총 복잡도**: 67 |
+| 📦 **의존성**: `@/interfaces/admin/label-management` • `@/interfaces/prod/menu` • `@/enums` | ⚡ **총 복잡도**: 67 |
 | 📊 **총 토큰 수**: 806 |  |
 
 
@@ -63,7 +63,7 @@ export class BaseSearchPaneParamClass implements BaseSearchPaneParam {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5617dc24d2b4`
+- 🆔 **ID**: `e4cb053fc590`
 - 📍 **라인**: 218-241
 - 📊 **토큰**: 67
 - 🏷️ **태그**: `class, javascript`
@@ -121,7 +121,7 @@ export class BaseItemSearchPaneDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5647989e2908`
+- 🆔 **ID**: `53f6e91d2253`
 - 📍 **라인**: 243-287
 - 📊 **토큰**: 106
 - 🏷️ **태그**: `class, javascript`

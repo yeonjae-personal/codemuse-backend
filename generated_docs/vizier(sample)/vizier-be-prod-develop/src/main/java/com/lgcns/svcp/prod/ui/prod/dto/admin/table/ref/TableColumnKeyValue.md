@@ -1,7 +1,7 @@
 # 📄 TableColumnKeyValue.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/table/ref/TableColumnKeyValue.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class TableColumnKeyValue {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `cc578a8f9367`
+- 🆔 **ID**: `e7de0762f7e8`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 23
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 sse.py
 
 > **파일 경로**: `rule_analyzer/streaming/protocols/sse.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `logging` • `json` • `stream_models` • `datetime` | ⚡ **총 복잡도**: 22 |
+| 📦 **의존성**: `json` • `typing` • `datetime` • `stream_models` • `logging` | ⚡ **총 복잡도**: 22 |
 | 📊 **총 토큰 수**: 1,665 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -137,7 +137,7 @@ class SSEProtocol:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ee9626545eef`
+- 🆔 **ID**: `c5d2cd3f734e`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 68
 - 🏷️ **태그**: `class`
@@ -174,21 +174,25 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant isoformat as isoformat
-  participant create_retry_event as create_retry_event
-  participant now as now
   participant dumps as dumps
-  participant is_complete as is_complete
-  participant get_response_headers as get_response_headers
-  participant create_heartbeat_event as create_heartbeat_event
-  participant getLogger as getLogger
   participant StreamingOptions as StreamingOptions
-  participant append as append
-  participant join as join
-  participant __init__ as __init__
-  __init__->>getLogger: call
-  __init__->>StreamingOptions: call
-  create_heartbeat_event->>join: call
+  participant getLogger as getLogger
+  participant str as str
+  participant now as now
+  participant create_heartbeat_event as create_heartbeat_event
+  participant _format_error_event as _format_error_event
+  participant _format_sse_event as _format_sse_event
+  participant isoformat as isoformat
+  participant stream_events as stream_events
+  participant is_complete as is_complete
+  participant error as error
+  stream_events->>_format_sse_event: call
+  stream_events->>is_complete: call
+  stream_events->>error: call
+  stream_events->>_format_error_event: call
+  _format_sse_event->>str: call
+  _format_sse_event->>dumps: call
+  _format_error_event->>dumps: call
   create_heartbeat_event->>dumps: call
 ```
 

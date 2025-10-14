@@ -1,7 +1,7 @@
 # 📄 UiAttributeManagementController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UiAttributeManagementController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -68,7 +68,7 @@ public class UiAttributeManagementController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `19351d588f8f`
+- 🆔 **ID**: `1d646d444110`
 - 📍 **라인**: 32-32
 - 📊 **토큰**: 85
 - 🏷️ **태그**: `class, java, getmapping, postmapping, requestparam...`

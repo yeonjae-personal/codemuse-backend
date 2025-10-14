@@ -1,7 +1,7 @@
 # 📄 ProductStructureTree.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/ProductStructureTree.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/assets/icons/plus.svg` • `@/constants/` | ⚡ **총 복잡도**: 6 |
+| 📦 **의존성**: `@/assets/icons/plus.svg` • `@/constants/` • `@/enums` | ⚡ **총 복잡도**: 6 |
 | 📊 **총 토큰 수**: 500 |  |
 
 

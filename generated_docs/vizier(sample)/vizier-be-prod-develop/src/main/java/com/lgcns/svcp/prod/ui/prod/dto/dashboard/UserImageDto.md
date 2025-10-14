@@ -1,7 +1,7 @@
 # 📄 UserImageDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/UserImageDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class UserImageDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1db54615a722`
+- 🆔 **ID**: `a6050fb34014`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

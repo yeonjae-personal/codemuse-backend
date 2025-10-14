@@ -1,7 +1,7 @@
 # 📄 PricePlanAndComponentDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/offer/PricePlanAndComponentDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -14,7 +14,7 @@
 - **도메인**: offer
 - **목적**: PricePlanAndComponentDto 데이터 전송 객체
 - **복잡도**: 4
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/offer/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/offer/*
 - **라인**: 9
 
 
@@ -64,7 +64,7 @@ public class PricePlanAndComponentDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `3eb59caaba6e`
+- 🆔 **ID**: `d937105f76ed`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 29
 - 🏷️ **태그**: `class, java`

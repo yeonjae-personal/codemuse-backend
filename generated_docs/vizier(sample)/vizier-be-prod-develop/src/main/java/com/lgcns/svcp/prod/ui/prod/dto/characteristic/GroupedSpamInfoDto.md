@@ -1,7 +1,7 @@
 # 📄 GroupedSpamInfoDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/characteristic/GroupedSpamInfoDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -68,7 +68,7 @@ public class GroupedSpamInfoDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `058e1ad62dd3`
+- 🆔 **ID**: `da0f39ac52ac`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 97
 - 🏷️ **태그**: `class, java`

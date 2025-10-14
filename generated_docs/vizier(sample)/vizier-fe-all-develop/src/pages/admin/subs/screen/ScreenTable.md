@@ -1,7 +1,7 @@
 # 📄 ScreenTable.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/screen/ScreenTable.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 15개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `lodash-es/clone` • `@/constants/admin/admin` • `@/enums` • `@/store` • `@/utils/config-path` 외 5개 | ⚡ **총 복잡도**: 144 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/http-common` • `@/utils/config-path` • `@/constants/admin/admin` • `@/enums` 외 5개 | ⚡ **총 복잡도**: 144 |
 | 📊 **총 토큰 수**: 1,542 |  |
 
 

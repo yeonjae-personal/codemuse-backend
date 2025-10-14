@@ -1,7 +1,7 @@
 # 📄 CustomValidationPagingResponse.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/CustomValidationPagingResponse.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class CustomValidationPagingResponse {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4a26b056e067`
+- 🆔 **ID**: `8c16260223ec`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 29
 - 🏷️ **태그**: `class, java`

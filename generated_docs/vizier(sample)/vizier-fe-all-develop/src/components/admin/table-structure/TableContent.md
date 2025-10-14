@@ -1,7 +1,7 @@
 # 📄 TableContent.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/table-structure/TableContent.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 32개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@vueuse/core` • `@/constants/index` • `@/components/prod/icons/FalseIcon.vue` • `@/store/admin/tableStructure.store` • `@/enums` 외 12개 | ⚡ **총 복잡도**: 280 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/icons/TrueIcon.vue` • `@/api/admin/path` • `@/components/prod/icons/RemoveRowIcon.vue` • `@/constants/index` 외 12개 | ⚡ **총 복잡도**: 280 |
 | 📊 **총 토큰 수**: 4,532 |  |
 
 

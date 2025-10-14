@@ -1,7 +1,7 @@
 # 📄 DsbdViewEntity.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/DsbdViewEntity.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -56,7 +56,7 @@ public class DsbdViewEntity extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `484c91193334`
+- 🆔 **ID**: `7bda9f0935fe`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 25
 - 🏷️ **태그**: `class, java`

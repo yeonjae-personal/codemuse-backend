@@ -1,7 +1,7 @@
 # 📄 ResourceItemCode.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/ResourceItemCode.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -39,7 +39,7 @@ public enum ResourceItemCode {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1f86496dd128`
+- 🆔 **ID**: `eb15c1e3b7b2`
 - 📍 **라인**: 3-3
 
 </details>

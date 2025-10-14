@@ -1,7 +1,7 @@
 # 📄 PubRqstTaskLDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/packages/PubRqstTaskLDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -53,7 +53,7 @@ public class PubRqstTaskLDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f1ef98a7abf7`
+- 🆔 **ID**: `980ef47413a2`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java`

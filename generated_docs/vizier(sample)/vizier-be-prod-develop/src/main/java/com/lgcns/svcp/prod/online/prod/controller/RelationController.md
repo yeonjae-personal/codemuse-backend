@@ -1,7 +1,7 @@
 # 📄 RelationController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/RelationController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class RelationController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0821b040907d`
+- 🆔 **ID**: `4d9755a06126`
 - 📍 **라인**: 27-27
 - 📊 **토큰**: 141
 - 🏷️ **태그**: `class, java, autowired, getmapping, param...`

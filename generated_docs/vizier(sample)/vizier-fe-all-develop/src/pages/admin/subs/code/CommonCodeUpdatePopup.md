@@ -1,7 +1,7 @@
 # 📄 CommonCodeUpdatePopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/code/CommonCodeUpdatePopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useInputValidation` • `@/constants/index` • `@/store` • `@/utils/common-ordr` • `vue-i18n` • `@/constants/admin/code` 외 3개 | ⚡ **총 복잡도**: 84 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/common-ordr` • `@/utils/http-common` • `@/constants/index` • `@/composables/useFormValidation` 외 3개 | ⚡ **총 복잡도**: 84 |
 | 📊 **총 토큰 수**: 1,168 |  |
 
 

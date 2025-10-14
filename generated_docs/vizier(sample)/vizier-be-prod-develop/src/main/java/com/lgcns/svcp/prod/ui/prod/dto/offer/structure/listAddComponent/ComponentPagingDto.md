@@ -1,7 +1,7 @@
 # 📄 ComponentPagingDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/listAddComponent/ComponentPagingDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -14,7 +14,7 @@
 - **도메인**: offer
 - **목적**: ComponentPagingDto 데이터 전송 객체
 - **복잡도**: 10
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/listAddComponent/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/listAddComponent/*
 - **라인**: 10
 
 
@@ -70,7 +70,7 @@ public class ComponentPagingDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b416eea55323`
+- 🆔 **ID**: `c299880c7c6a`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, java`

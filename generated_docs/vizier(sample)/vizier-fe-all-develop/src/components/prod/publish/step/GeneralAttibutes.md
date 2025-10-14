@@ -1,7 +1,7 @@
 # 📄 GeneralAttibutes.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/publish/step/GeneralAttibutes.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useInputValidation` • `@/constants/index` • `../../layout/DetailPaneRow.vue` • `@/enums` • `@/utils/format-data` • `@/composables/useGroupCode` 외 3개 | ⚡ **총 복잡도**: 46 |
+| 📦 **의존성**: `../../layout/DetailPane.vue` • `@/constants/index` • `@/enums` • `moment-timezone` • `../../layout/DetailPaneRow.vue` • `@/composables/useGroupCode` 외 3개 | ⚡ **총 복잡도**: 46 |
 | 📊 **총 토큰 수**: 821 |  |
 
 

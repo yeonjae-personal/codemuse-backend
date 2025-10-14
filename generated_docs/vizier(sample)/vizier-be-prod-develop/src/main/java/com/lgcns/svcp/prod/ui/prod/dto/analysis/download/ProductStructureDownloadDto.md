@@ -1,7 +1,7 @@
 # 📄 ProductStructureDownloadDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/analysis/download/ProductStructureDownloadDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -68,7 +68,7 @@ public class ProductStructureDownloadDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `54cd27e92b12`
+- 🆔 **ID**: `26e8e137e613`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 71
 - 🏷️ **태그**: `class, java, value, spring-boot`

@@ -1,7 +1,7 @@
 # 📄 UiCategoryController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UiCategoryController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -63,7 +63,7 @@ public class UiCategoryController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1c185092aeb1`
+- 🆔 **ID**: `c87c3231d94c`
 - 📍 **라인**: 35-35
 - 📊 **토큰**: 407
 - 🏷️ **태그**: `class, java, getmapping, postmapping, requestparam...`

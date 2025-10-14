@@ -1,7 +1,7 @@
 # 📄 BaseEntity.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/BaseEntity.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ee1150288146`
+- 🆔 **ID**: `e4d7634b2a8f`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

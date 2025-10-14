@@ -1,7 +1,7 @@
 # 📄 condition_analyzer.py
 
 > **파일 경로**: `rule_analyzer/analyzers/condition_analyzer.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 28개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `models` • `exceptions` • `typing` • `re` • `logging` | ⚡ **총 복잡도**: 159 |
+| 📦 **의존성**: `logging` • `re` • `typing` • `models` • `exceptions` | ⚡ **총 복잡도**: 159 |
 | 📊 **총 토큰 수**: 9,417 |  |
 
 
@@ -298,7 +298,7 @@ class ConditionAnalyzer:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `52ad50ec3a0d`
+- 🆔 **ID**: `3897052b58ca`
 - 📍 **라인**: 19-29
 - 📊 **토큰**: 107
 - 🏷️ **태그**: `class`
@@ -336,24 +336,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant is_valid_operator as is_valid_operator
-  participant list as list
-  participant len as len
-  participant items as items
-  participant analyze_recursive as analyze_recursive
-  participant warning as warning
-  participant _count_logical_operators as _count_logical_operators
+  participant _count_all_conditions as _count_all_conditions
+  participant _analyze_original_struct as _analyze_original_structure
+  participant _is_date_string as _is_date_string
   participant infer_field_types as infer_field_types
-  participant RuleCondition as RuleCondition
-  participant _get_condition_field as _get_condition_field
-  participant _calculate_complexity_sc as _calculate_complexity_score
-  _calculate_complexity_score->>len: call
-  _calculate_complexity_score->>_count_logical_operators: call
-  _calculate_complexity_score->>items: call
+  participant len as len
+  participant is_ambiguous as is_ambiguous
+  participant _count_logical_operators as _count_logical_operators
+  participant _parse_condition_tree as _parse_condition_tree
+  participant set as set
+  participant _count_field_conditions as _count_field_conditions
+  participant debug as debug
+  participant _calculate_depth as _calculate_depth
+  _parse_condition_tree->>debug: call
+  infer_field_types->>debug: call
+  _calculate_depth->>_calculate_depth: call
+  _count_all_conditions->>_count_all_conditions: call
+  _count_field_conditions->>_count_field_conditions: call
   _count_logical_operators->>_count_logical_operators: call
-  _count_logical_operators->>items: call
-  is_valid_operator->>get: call
 ```
 
 

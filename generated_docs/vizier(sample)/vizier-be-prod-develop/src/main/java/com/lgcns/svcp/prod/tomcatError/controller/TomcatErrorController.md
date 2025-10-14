@@ -1,7 +1,7 @@
 # 📄 TomcatErrorController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/tomcatError/controller/TomcatErrorController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class TomcatErrorController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `181c1aaf74ac`
+- 🆔 **ID**: `e510b409387b`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 21
 - 🏷️ **태그**: `class, java, getmapping, spring-boot`

@@ -1,7 +1,7 @@
 # 📄 UserImageMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/UserImageMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class UserImageMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `85e61451826c`
+- 🆔 **ID**: `c0c7ca2e8ff8`
 - 📍 **라인**: 15-15
 - 📊 **토큰**: 26
 - 🏷️ **태그**: `class, java`

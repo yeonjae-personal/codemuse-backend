@@ -1,7 +1,7 @@
 # 📄 SamplePage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/SamplePage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-community/styles/ag-theme-alpine.css` • `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `@/utils/common-ordr` | 📊 **총 토큰 수**: 237 |
+| 📦 **의존성**: `@/utils/common-ordr` • `ag-grid-community/styles/ag-grid.css` • `ag-grid-community/styles/ag-theme-alpine.css` • `ag-grid-vue3` | 📊 **총 토큰 수**: 237 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 UploadLabelPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/label/UploadLabelPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/file` • `@/constants/index` • `@/store/admin/label.store` • `@/enums` • `@/constants/admin/label` • `@/store` 외 3개 | 📊 **총 토큰 수**: 729 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/enums` • `@/api/prod/labelApi` • `@/store/admin/label.store` • `@/utils/fetch-i18n` 외 3개 | 📊 **총 토큰 수**: 729 |
 
 
 

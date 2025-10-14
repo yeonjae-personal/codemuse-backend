@@ -1,7 +1,7 @@
 # 📄 EntrInfoPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/functions/EntrInfoPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `ag-grid-community/styles/ag-theme-alpine.css` | ⚡ **총 복잡도**: 3 |
+| 📦 **의존성**: `ag-grid-community/styles/ag-theme-alpine.css` • `ag-grid-community/styles/ag-grid.css` • `ag-grid-vue3` | ⚡ **총 복잡도**: 3 |
 | 📊 **총 토큰 수**: 795 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 CategoryController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/CategoryController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -70,7 +70,7 @@ public class CategoryController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `858fcdbd24b5`
+- 🆔 **ID**: `4c154367b487`
 - 📍 **라인**: 33-33
 - 📊 **토큰**: 280
 - 🏷️ **태그**: `class, java, autowired, getmapping, pathvariable...`

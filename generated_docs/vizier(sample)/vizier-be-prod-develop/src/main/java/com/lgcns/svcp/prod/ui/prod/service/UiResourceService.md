@@ -1,7 +1,7 @@
 # 📄 UiResourceService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiResourceService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -63,7 +63,7 @@ public class UiResourceService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `068b8544b4b3`
+- 🆔 **ID**: `4e9aa9d49ee0`
 - 📍 **라인**: 65-65
 - 📊 **토큰**: 718
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

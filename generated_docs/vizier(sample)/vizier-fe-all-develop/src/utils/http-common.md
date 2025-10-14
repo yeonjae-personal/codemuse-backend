@@ -1,7 +1,7 @@
 # 📄 http-common.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/utils/http-common.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `axios` • `@/i18n` • `@/utils/format-data` • `@/api/prod/path` • `vue3-cookies` • `qs` | 📊 **총 토큰 수**: 420 |
+| 📦 **의존성**: `qs` • `vue3-cookies` • `@/utils/format-data` • `@/i18n` • `@/api/prod/path` • `axios` | 📊 **총 토큰 수**: 420 |
 
 
 

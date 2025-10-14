@@ -1,7 +1,7 @@
 # 📄 DefaultLayout.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/layouts/DefaultLayout.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfModal.vue` • `@/store` • `lodash-es/isEmpty` | 📊 **총 토큰 수**: 223 |
+| 📦 **의존성**: `@/store` • `lodash-es/isEmpty` • `@/components/controls/CfModal.vue` | 📊 **총 토큰 수**: 223 |
 
 
 

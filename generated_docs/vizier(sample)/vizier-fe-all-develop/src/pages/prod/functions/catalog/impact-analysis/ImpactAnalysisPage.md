@@ -1,7 +1,7 @@
 # 📄 ImpactAnalysisPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/impact-analysis/ImpactAnalysisPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/catalog/impact-analysis/TargetSearch.vue` • `@/api/prod/impactAnalysisApi` • `@/components/prod/catalog/impact-analysis/OneView.vue` • `@/constants/index` | 📊 **총 토큰 수**: 66 |
+| 📦 **의존성**: `@/api/prod/impactAnalysisApi` • `@/components/prod/catalog/impact-analysis/OneView.vue` • `@/components/prod/catalog/impact-analysis/TargetSearch.vue` • `@/constants/index` | 📊 **총 토큰 수**: 66 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 UiUserImageServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/impl/UiUserImageServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class UiUserImageServiceImpl implements UiUserImageService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b738c40451a8`
+- 🆔 **ID**: `7810969e193a`
 - 📍 **라인**: 31-31
 - 📊 **토큰**: 321
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

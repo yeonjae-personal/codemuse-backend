@@ -1,7 +1,7 @@
 # 📄 AttributeType.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/AttributeType.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/DeleteIcon.vue` • `@/composables/useInputValidation` • `@/store/cmcd.store` • `@/components/prod/icons/ExpireIcon.vue` • `@/components/prod/common/BaseMultiSelect.vue` • `@/store` 외 12개 | ⚡ **총 복잡도**: 72 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/common/BaseDateTimePicker.vue` • `@/components/prod/common/BaseMultiSelect.vue` • `@/store/cmcd.store` • `@/components/prod/common/BasePopover.vue` 외 12개 | ⚡ **총 복잡도**: 72 |
 | 📊 **총 토큰 수**: 1,486 |  |
 
 

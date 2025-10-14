@@ -1,7 +1,7 @@
 # 📄 FactorDetail.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/FactorDetail.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/admin/factor.store` • `lodash-es/cloneDeep` • `@/constants/index` • `@/components/prod/layout/DetailPaneRow.vue` • `@/enums` • `@/store` 외 4개 | ⚡ **총 복잡도**: 132 |
+| 📦 **의존성**: `@/store` • `@/store/admin/factor.store` • `vue-i18n` • `@/components/prod/icons/TrashIcon.vue` • `@/enums` • `lodash-es/cloneDeep` 외 4개 | ⚡ **총 복잡도**: 132 |
 | 📊 **총 토큰 수**: 1,692 |  |
 
 

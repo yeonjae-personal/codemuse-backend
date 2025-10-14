@@ -1,7 +1,7 @@
 # 📄 UserPocketDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/userpocket/UserPocketDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -56,7 +56,7 @@ public class UserPocketDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `37c3d5cb7a08`
+- 🆔 **ID**: `eb6a06815fcd`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 32
 - 🏷️ **태그**: `class, java`

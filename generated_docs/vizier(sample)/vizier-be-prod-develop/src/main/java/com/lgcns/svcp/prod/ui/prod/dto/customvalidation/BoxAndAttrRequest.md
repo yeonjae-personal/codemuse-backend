@@ -1,7 +1,7 @@
 # 📄 BoxAndAttrRequest.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/BoxAndAttrRequest.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -63,7 +63,7 @@ public class BoxAndAttrRequest {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `035aae792814`
+- 🆔 **ID**: `05f8343fa521`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 30
 - 🏷️ **태그**: `class, java, valid, spring-boot`

@@ -292,3 +292,100 @@
 2025-10-01 18:15:34,816 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/aa68101a-bfc2-4a11-93e0-a136b9140ddd/messages "HTTP/1.1 200 OK"
 2025-10-01 18:15:34,819 - workflow.response_generator - INFO -    생성된 응답 길이: 797자
 2025-10-01 18:15:58,266 - workflow - INFO - 🚀 Workflow Orchestrator 시작
+2025-10-13 15:22:36,067 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-13 15:22:36,072 - workflow.question_standardizer - INFO -    원본 질문: 어떤 오류에 대해서 분석하나요?
+2025-10-13 15:22:36,947 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 15:22:40,939 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/9a240bac-0eab-40b4-bf00-0d5964d8af53/messages "HTTP/1.1 200 OK"
+2025-10-13 15:22:40,940 - workflow.question_standardizer - INFO -    표준화된 질문: "어떤 오류 분석이 필요한가요?"
+2025-10-13 15:22:40,986 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 15:22:43,431 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/8f45e470-0774-4373-b88d-82dfd4d450dd/messages "HTTP/1.1 200 OK"
+2025-10-13 15:22:43,434 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "어떤 오류 분석이 필요한가요?"
+2025-10-13 15:22:43,434 - workflow.hardcoded - INFO -    ✅ 하드코딩 패턴 매칭: 프로젝트 (키워드: 어떤)
+2025-10-13 15:22:43,435 - workflow.hardcoded - INFO - 📖 하드코딩 문서 검색: "어떤 오류 분석이 필요한가요?"
+2025-10-13 15:22:43,435 - workflow.hardcoded - INFO -    🎯 패턴 매칭: 프로젝트, 문서: project_overview.md
+2025-10-13 15:22:43,435 - workflow.hardcoded - INFO -    📂 문서 경로: /Users/roseline/projects/codemuse-backend/generated_docs/project_overview.md
+2025-10-13 15:22:43,436 - workflow.hardcoded - INFO -    📄 파일 존재: True
+2025-10-13 15:22:43,437 - workflow.hardcoded - INFO -    ✅ 하드코딩 문서 로드 성공: 2840자
+2025-10-13 15:22:43,437 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-13 15:22:43,437 - workflow.response_generator - INFO -    원본 질문: 어떤 오류에 대해서 분석하나요?
+2025-10-13 15:22:43,437 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-13 15:22:43,437 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-13 15:22:43,438 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-13 15:22:43,439 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2852자
+2025-10-13 15:22:43,485 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 15:22:47,673 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/9d1fe256-a42d-41fa-b4f8-c2f79b189c27/messages "HTTP/1.1 200 OK"
+2025-10-13 15:22:47,677 - workflow.response_generator - INFO -    생성된 응답 길이: 548자
+2025-10-13 16:04:51,606 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-13 16:04:51,611 - workflow.question_standardizer - INFO -    원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+2025-10-13 16:04:51,749 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:04:53,176 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/47720b0c-cc42-4cee-8093-fe3596f2875f/messages "HTTP/1.1 200 OK"
+2025-10-13 16:04:53,177 - workflow.question_standardizer - INFO -    표준화된 질문: "타입 불일치 검출 로직을 수정하려면 어디를 수정해야 하나요?"
+2025-10-13 16:04:53,221 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:04:55,232 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/93821224-13d0-4683-9f02-06f2d0d13f0b/messages "HTTP/1.1 200 OK"
+2025-10-13 16:04:55,234 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "타입 불일치 검출 로직을 수정하려면 어디를 수정해야 하나요?"
+2025-10-13 16:04:55,235 - workflow.hardcoded - INFO -    ❌ 하드코딩 패턴 없음 - 일반 RAG 검색 사용
+2025-10-13 16:04:55,391 - httpx - INFO - HTTP Request: GET http://localhost:8003/api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98+%EA%B2%80%EC%B6%9C+%EB%A1%9C%EC%A7%81&limit=5 "HTTP/1.1 200 OK"
+2025-10-13 16:04:55,446 - httpx - INFO - HTTP Request: GET http://localhost:8003/api/v1/code/search?query=%ED%83%80%EC%9E%85+%EB%B6%88%EC%9D%BC%EC%B9%98&limit=2 "HTTP/1.1 200 OK"
+2025-10-13 16:04:55,496 - httpx - INFO - HTTP Request: GET http://localhost:8003/api/v1/code/search?query=%EA%B2%80%EC%B6%9C&limit=2 "HTTP/1.1 200 OK"
+2025-10-13 16:04:56,106 - httpx - INFO - HTTP Request: POST http://localhost:8003/api/v1/search/docstrings "HTTP/1.1 200 OK"
+2025-10-13 16:04:56,636 - httpx - INFO - HTTP Request: POST http://localhost:8003/api/v1/search "HTTP/1.1 200 OK"
+2025-10-13 16:04:57,387 - httpx - INFO - HTTP Request: POST http://localhost:8003/api/v1/search "HTTP/1.1 200 OK"
+2025-10-13 16:04:57,429 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:04:59,784 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/fe36d4ae-1167-4195-84d4-0299ad143b2a/messages "HTTP/1.1 200 OK"
+2025-10-13 16:04:59,833 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:05:03,194 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/9f84d405-f895-4070-82a9-357bbf91c048/messages "HTTP/1.1 200 OK"
+2025-10-13 16:05:03,197 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-13 16:05:03,197 - workflow.response_generator - INFO -    원본 질문: 타입 불일치(type_mismatch) 검출 로직을 수정하고 싶은데 어디를 수정하면 되지?
+2025-10-13 16:05:03,197 - workflow.response_generator - INFO -    참조 문서: 7개
+2025-10-13 16:05:03,198 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 7개 결과
+2025-10-13 16:05:03,199 - workflow.response_generator - INFO -    품질 필터 통과: 7개
+2025-10-13 16:05:03,199 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 744자
+2025-10-13 16:05:03,251 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:05:05,996 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/f10511e1-3fd9-40e9-855b-ea4a19868534/messages "HTTP/1.1 200 OK"
+2025-10-13 16:05:05,999 - workflow.response_generator - INFO -    생성된 응답 길이: 867자
+2025-10-13 16:15:26,614 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-13 16:15:26,615 - workflow.question_standardizer - INFO -    원본 질문: vizier 소스파일이 몇개야?
+2025-10-13 16:15:26,690 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:15:27,611 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/26cf3e27-7f62-4fef-a6c8-a5a2be03eeb8/messages "HTTP/1.1 200 OK"
+2025-10-13 16:15:27,614 - workflow.question_standardizer - INFO -    표준화된 질문: "vizier 소스파일은 몇 개인가요?"
+2025-10-13 16:15:27,666 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:15:29,414 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/051e239e-988e-4939-b664-023cd9bac59f/messages "HTTP/1.1 200 OK"
+2025-10-13 16:15:29,416 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "vizier 소스파일은 몇 개인가요?"
+2025-10-13 16:15:29,416 - workflow.hardcoded - INFO -    ✅ 하드코딩 패턴 매칭: 프로젝트 (키워드: 소스)
+2025-10-13 16:15:29,416 - workflow.hardcoded - INFO - 📖 하드코딩 문서 검색: "vizier 소스파일은 몇 개인가요?"
+2025-10-13 16:15:29,416 - workflow.hardcoded - INFO -    🎯 패턴 매칭: 프로젝트, 문서: project_overview.md
+2025-10-13 16:15:29,420 - workflow.hardcoded - INFO -    📂 문서 경로: /Users/roseline/projects/codemuse-backend/generated_docs/project_overview.md
+2025-10-13 16:15:29,424 - workflow.hardcoded - INFO -    📄 파일 존재: True
+2025-10-13 16:15:29,425 - workflow.hardcoded - INFO -    ✅ 하드코딩 문서 로드 성공: 2840자
+2025-10-13 16:15:29,425 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-13 16:15:29,426 - workflow.response_generator - INFO -    원본 질문: vizier 소스파일이 몇개야?
+2025-10-13 16:15:29,426 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-13 16:15:29,426 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-13 16:15:29,427 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-13 16:15:29,427 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2852자
+2025-10-13 16:15:29,479 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:15:34,224 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/961d0733-2579-4380-a9f4-b10a2ad08f34/messages "HTTP/1.1 200 OK"
+2025-10-13 16:15:34,226 - workflow.response_generator - INFO -    생성된 응답 길이: 640자
+2025-10-13 16:16:53,858 - workflow.question_standardizer - INFO - 🧠 1단계: 질문 표준화 시작
+2025-10-13 16:16:53,859 - workflow.question_standardizer - INFO -    원본 질문: 종속관계에 대해서 설명해줘
+2025-10-13 16:16:53,912 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:16:55,991 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/91892fea-fd95-4d64-9289-66ceb9c2a273/messages "HTTP/1.1 200 OK"
+2025-10-13 16:16:55,992 - workflow.question_standardizer - INFO -    표준화된 질문: "종속관계 설명"
+2025-10-13 16:16:56,037 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:16:57,410 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/6fca6668-5fc3-446e-99bf-ef97c0cfddb4/messages "HTTP/1.1 200 OK"
+2025-10-13 16:16:57,412 - workflow.hardcoded - INFO - 🔍 하드코딩 질문 확인: "종속관계 설명"
+2025-10-13 16:16:57,412 - workflow.hardcoded - INFO -    ✅ 하드코딩 패턴 매칭: 종속관계 (키워드: 종속관계)
+2025-10-13 16:16:57,413 - workflow.hardcoded - INFO - 📖 하드코딩 문서 검색: "종속관계 설명"
+2025-10-13 16:16:57,413 - workflow.hardcoded - INFO -    🎯 패턴 매칭: 종속관계, 문서: vizier_dependency_relationships.md
+2025-10-13 16:16:57,414 - workflow.hardcoded - INFO -    📂 문서 경로: /Users/roseline/projects/codemuse-backend/generated_docs/vizier_dependency_relationships.md
+2025-10-13 16:16:57,414 - workflow.hardcoded - INFO -    📄 파일 존재: True
+2025-10-13 16:16:57,415 - workflow.hardcoded - INFO -    ✅ 하드코딩 문서 로드 성공: 2551자
+2025-10-13 16:16:57,416 - workflow.response_generator - INFO - 🤖 5단계: 최종 응답 생성 시작
+2025-10-13 16:16:57,416 - workflow.response_generator - INFO -    원본 질문: 종속관계에 대해서 설명해줘
+2025-10-13 16:16:57,416 - workflow.response_generator - INFO -    참조 문서: 1개
+2025-10-13 16:16:57,416 - workflow.response_generator - INFO - 📦 컨텍스트 준비 시작: 1개 결과
+2025-10-13 16:16:57,416 - workflow.response_generator - INFO -    품질 필터 통과: 1개
+2025-10-13 16:16:57,416 - workflow.response_generator - INFO -    ✅ 최종 컨텍스트 길이: 2563자
+2025-10-13 16:16:57,472 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions "HTTP/1.1 200 OK"
+2025-10-13 16:17:01,703 - httpx - INFO - HTTP Request: POST http://localhost:8004/api/v1/chat/sessions/77bfcaeb-c090-4348-bb85-d52c591c9fba/messages "HTTP/1.1 200 OK"
+2025-10-13 16:17:01,705 - workflow.response_generator - INFO -    생성된 응답 길이: 796자

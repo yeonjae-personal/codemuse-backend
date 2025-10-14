@@ -1,7 +1,7 @@
 # 📄 HeaderTab.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/HeaderTab.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `grid-layout-plus` • `@/enums/redirect` | ⚡ **총 복잡도**: 9 |
+| 📦 **의존성**: `@/enums/redirect` • `grid-layout-plus` | ⚡ **총 복잡도**: 9 |
 | 📊 **총 토큰 수**: 355 |  |
 
 

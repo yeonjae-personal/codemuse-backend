@@ -1,7 +1,7 @@
 # 📄 MetadataMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/MetadataMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -46,7 +46,7 @@ public interface MetadataMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1a21b85f21f0`
+- 🆔 **ID**: `61b313c47bbb`
 - 📊 **토큰**: 20
 
 </details>

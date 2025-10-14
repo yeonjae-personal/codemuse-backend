@@ -1,7 +1,7 @@
 # 📄 CategoryTreeDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/CategoryTreeDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -64,7 +64,7 @@ public class CategoryTreeDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `38a0f889fc6b`
+- 🆔 **ID**: `4665d921635d`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 51
 - 🏷️ **태그**: `class, java`

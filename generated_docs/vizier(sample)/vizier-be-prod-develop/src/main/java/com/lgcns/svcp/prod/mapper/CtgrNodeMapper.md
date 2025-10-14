@@ -1,7 +1,7 @@
 # 📄 CtgrNodeMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/CtgrNodeMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -44,7 +44,7 @@ public interface CtgrNodeMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5bfab5eea496`
+- 🆔 **ID**: `520c52b4a633`
 - 📊 **토큰**: 8
 
 </details>

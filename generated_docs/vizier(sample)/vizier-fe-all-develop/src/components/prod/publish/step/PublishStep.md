@@ -1,7 +1,7 @@
 # 📄 PublishStep.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/publish/step/PublishStep.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/utils/format-data` • `@/composables/useGroupCode` • `moment-timezone` • `@/utils/date-time-format` • `../../layout/DetailPane.vue` 외 2개 | ⚡ **총 복잡도**: 6 |
+| 📦 **의존성**: `@/utils/date-time-format` • `vue-i18n` • `../../layout/DetailPane.vue` • `@/constants/index` • `moment-timezone` • `@/composables/useGroupCode` 외 2개 | ⚡ **총 복잡도**: 6 |
 | 📊 **총 토큰 수**: 662 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 impact-analysis-utils.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/utils/impact-analysis-utils.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/extendsManager` • `@/constants/offer` • `@/constants/` | ⚡ **총 복잡도**: 61 |
+| 📦 **의존성**: `@/constants/` • `@/constants/offer` • `@/constants/extendsManager` | ⚡ **총 복잡도**: 61 |
 | 📊 **총 토큰 수**: 287 |  |
 
 

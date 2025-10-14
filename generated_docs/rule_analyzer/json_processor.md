@@ -1,7 +1,7 @@
 # 📄 json_processor.py
 
 > **파일 경로**: `rule_analyzer/json_processor.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 23개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `models` • `typing` • `logging` • `parser` • `json` • `analyzers` 외 2개 | ⚡ **총 복잡도**: 64 |
+| 📦 **의존성**: `analyzers` • `time` • `json` • `typing` • `datetime` • `parser` 외 2개 | ⚡ **총 복잡도**: 64 |
 | 📊 **총 토큰 수**: 6,821 | 🔄 **비동기 함수**: 8개 |
 
 
@@ -257,7 +257,7 @@ class RuleJsonProcessor:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `693999342e50`
+- 🆔 **ID**: `89a0210bbbaf`
 - 📍 **라인**: 23-33
 - 📊 **토큰**: 122
 - 🏷️ **태그**: `class`
@@ -293,23 +293,25 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant isoformat as isoformat
+  participant parse as parse
+  participant _process_action_async as _process_action_async
   participant len as len
-  participant _analyze_batch_rules as _analyze_batch_rules
-  participant detect_all_issues as detect_all_issues
-  participant _process_rule_array as _process_rule_array
   participant infer_field_types as infer_field_types
-  participant analyze_rule_sync as analyze_rule_sync
+  participant _count_issues_by_type as _count_issues_by_type
+  participant generate_performance_met as generate_performance_metrics
+  participant _analyze_single_rule_asy as _analyze_single_rule_async
+  participant _analyze_batch_rules_asy as _analyze_batch_rules_async
+  participant loads as loads
   participant parse_rule_conditions as parse_rule_conditions
-  participant _process_wrapper_format_ as _process_wrapper_format_async
-  participant now as now
-  participant getattr as getattr
-  _process_rule_array->>len: call
-  _process_rule_array->>analyze_rule_sync: call
-  _analyze_batch_rules->>get: call
-  _analyze_batch_rules->>len: call
-  _analyze_batch_rules->>analyze_rule_sync: call
+  participant getLogger as getLogger
+  participant _detect_issues as _detect_issues
+  _process_action_async->>_analyze_single_rule_async: call
+  _process_action_async->>_analyze_batch_rules_async: call
+  _analyze_single_rule_async->>parse: call
+  _analyze_batch_rules_async->>len: call
+  _detect_issues->>parse: call
+  _detect_issues->>len: call
+  _detect_issues->>_count_issues_by_type: call
 ```
 
 

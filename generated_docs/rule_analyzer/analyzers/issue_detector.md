@@ -1,7 +1,7 @@
 # 📄 issue_detector.py
 
 > **파일 경로**: `rule_analyzer/analyzers/issue_detector.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 30개
 
 ---
@@ -17,7 +17,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `models` • `exceptions` • `typing` • `condition_analyzer` • `logging` | ⚡ **총 복잡도**: 202 |
+| 📦 **의존성**: `logging` • `condition_analyzer` • `typing` • `models` • `exceptions` | ⚡ **총 복잡도**: 202 |
 | 📊 **총 토큰 수**: 10,807 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -41,7 +41,7 @@ class IssueDetector:...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `db586ccb1026`
+- 🆔 **ID**: `2e6d6af45e4a`
 - 📍 **라인**: 22-32
 - 📊 **토큰**: 35
 - 🏷️ **태그**: `class`
@@ -340,7 +340,7 @@ class IssueDetector:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `66a4a9f6b73c`
+- 🆔 **ID**: `f4b08ad9ef33`
 - 📍 **라인**: 28-38
 - 📊 **토큰**: 168
 - 🏷️ **태그**: `class`
@@ -378,21 +378,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant check_duplicates as check_duplicates
+  participant _get_disp_name as _get_disp_name
+  participant detect_duplicate_conditi as detect_duplicate_conditions
+  participant _extract_field_condition as _extract_field_conditions_recursive
   participant len as len
-  participant ConditionIssue as ConditionIssue
-  participant items as items
-  participant detect_all_issues as detect_all_issues
-  participant list as list
-  participant _is_numeric_value as _is_numeric_value
-  participant _detect_field_redundant_ as _detect_field_redundant_conditions
-  participant detect_complexity_warnin as detect_complexity_warnings
-  participant getattr as getattr
+  participant _remove_duplicate_issues as _remove_duplicate_issues
+  participant _check_number_field_miss as _check_number_field_missing_ranges
+  participant range as range
+  participant set as set
   participant _count_field_conditions as _count_field_conditions
-  detect_complexity_warnings->>ConditionIssue: call
+  participant debug as debug
+  participant any as any
+  participant _calculate_depth as _calculate_depth
+  _check_number_field_missing_ranges->>set: call
+  _check_number_field_missing_ranges->>any: call
+  _check_number_field_missing_ranges->>range: call
+  _calculate_depth->>_calculate_depth: call
   _count_field_conditions->>_count_field_conditions: call
-  _count_field_conditions->>get: call
+  _extract_field_conditions_recursive->>_extract_field_conditions_recursive: call
 ```
 
 

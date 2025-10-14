@@ -1,7 +1,7 @@
 # 📄 CreateSystemModal.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs/CreateSystemModal.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `axios` • `@/utils/common-util` • `@/store` • `@/components/controls/CfDatetimePicker.vue` | ⚡ **총 복잡도**: 128 |
+| 📦 **의존성**: `@/store` • `axios` • `@/components/controls/CfDatetimePicker.vue` • `@/utils/common-util` | ⚡ **총 복잡도**: 128 |
 | 📊 **총 토큰 수**: 1,021 |  |
 
 

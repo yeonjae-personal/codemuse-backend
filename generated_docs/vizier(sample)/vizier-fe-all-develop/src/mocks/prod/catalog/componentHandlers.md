@@ -1,7 +1,7 @@
 # 📄 componentHandlers.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/catalog/componentHandlers.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./data/component` • `@/constants` • `msw` | 📊 **총 토큰 수**: 42 |
+| 📦 **의존성**: `@/constants` • `msw` • `./data/component` | 📊 **총 토큰 수**: 42 |
 
 
 

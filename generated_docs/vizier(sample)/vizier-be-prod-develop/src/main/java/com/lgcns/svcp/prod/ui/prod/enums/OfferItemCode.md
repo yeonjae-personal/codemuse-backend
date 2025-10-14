@@ -1,7 +1,7 @@
 # 📄 OfferItemCode.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/OfferItemCode.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -41,7 +41,7 @@ public enum OfferItemCode {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0c04469380e4`
+- 🆔 **ID**: `5d654792df2b`
 - 📍 **라인**: 3-3
 
 </details>

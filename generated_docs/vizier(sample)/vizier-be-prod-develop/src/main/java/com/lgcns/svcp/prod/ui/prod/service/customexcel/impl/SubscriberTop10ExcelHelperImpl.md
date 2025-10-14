@@ -1,7 +1,7 @@
 # 📄 SubscriberTop10ExcelHelperImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/impl/SubscriberTop10ExcelHelperImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class SubscriberTop10ExcelHelperImpl extends ExcelHelperImpl implements S
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `05c70b382537`
+- 🆔 **ID**: `8710dcafd6f2`
 - 📍 **라인**: 28-28
 - 📊 **토큰**: 163
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

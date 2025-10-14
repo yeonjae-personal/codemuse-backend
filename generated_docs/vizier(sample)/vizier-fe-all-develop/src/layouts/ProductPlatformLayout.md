@@ -1,7 +1,7 @@
 # 📄 ProductPlatformLayout.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/layouts/ProductPlatformLayout.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@vueuse/core` • `@/constants/index` • `@/store` • `lodash-es` • `@/enums/redirect` • `@/utils/extend-utils` 외 1개 | ⚡ **총 복잡도**: 26 |
+| 📦 **의존성**: `@/store` • `@vueuse/core` • `lodash-es` • `@/constants/index` • `@/utils/extend-utils` • `@/enums/redirect` 외 1개 | ⚡ **총 복잡도**: 26 |
 | 📊 **총 토큰 수**: 996 |  |
 
 

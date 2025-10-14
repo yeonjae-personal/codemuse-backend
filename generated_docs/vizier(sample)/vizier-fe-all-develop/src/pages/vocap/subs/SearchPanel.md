@@ -1,7 +1,7 @@
 # 📄 SearchPanel.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/vocap/subs/SearchPanel.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-community/styles/ag-grid.css` • `ag-grid-community/styles/ag-theme-alpine.css` | ⚡ **총 복잡도**: 7 |
+| 📦 **의존성**: `ag-grid-community/styles/ag-theme-alpine.css` • `ag-grid-community/styles/ag-grid.css` | ⚡ **총 복잡도**: 7 |
 | 📊 **총 토큰 수**: 259 |  |
 
 

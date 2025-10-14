@@ -1,7 +1,7 @@
 # 📄 ItemStructureDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/structure/ItemStructureDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class ItemStructureDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `278c599fcc9b`
+- 🆔 **ID**: `672e94eec3e1`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

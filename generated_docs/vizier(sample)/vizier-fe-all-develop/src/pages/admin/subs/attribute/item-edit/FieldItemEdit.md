@@ -1,7 +1,7 @@
 # 📄 FieldItemEdit.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit/FieldItemEdit.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/DotGridIcon.vue` • `@/components/prod/common/BaseInputText.vue` • `@/components/prod/icons/TrashIcon.vue` • `vue-i18n` • `@/interfaces/prod` • `@/components/prod/common/BaseSelectScroll.vue` | ⚡ **총 복잡도**: 20 |
+| 📦 **의존성**: `@/components/prod/common/BaseInputText.vue` • `vue-i18n` • `@/components/prod/icons/TrashIcon.vue` • `@/components/prod/icons/DotGridIcon.vue` • `@/components/prod/common/BaseSelectScroll.vue` • `@/interfaces/prod` | ⚡ **총 복잡도**: 20 |
 | 📊 **총 토큰 수**: 1,134 |  |
 
 

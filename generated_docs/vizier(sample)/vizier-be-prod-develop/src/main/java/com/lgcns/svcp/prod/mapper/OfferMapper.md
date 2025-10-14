@@ -1,7 +1,7 @@
 # 📄 OfferMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/OfferMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public interface OfferMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c281de643529`
+- 🆔 **ID**: `4f53e1a0c36c`
 - 📊 **토큰**: 29
 
 </details>

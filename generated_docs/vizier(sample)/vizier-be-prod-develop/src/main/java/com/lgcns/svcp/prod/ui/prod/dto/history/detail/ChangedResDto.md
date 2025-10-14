@@ -1,7 +1,7 @@
 # 📄 ChangedResDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/detail/ChangedResDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class ChangedResDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a1a9f47ef5b0`
+- 🆔 **ID**: `f84c71241367`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 20
 - 🏷️ **태그**: `class, java`

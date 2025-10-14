@@ -1,7 +1,7 @@
 # 📄 ApiLog.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/ApiLog.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ApiLog`
-- **도메인**: user
+- **도메인**: general
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 11
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/*
 - **라인**: 9
 
 
@@ -68,7 +68,7 @@ public class ApiLog {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2f708c2967cd`
+- 🆔 **ID**: `25b2bd710b6a`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 32
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 GroupOfferDuplicate.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/group/GroupOfferDuplicate.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./GroupDetailDuplicate.vue` • `@/store` • `./GroupList.vue` • `@/enums/redirect` | 📊 **총 토큰 수**: 61 |
+| 📦 **의존성**: `./GroupDetailDuplicate.vue` • `@/enums/redirect` • `./GroupList.vue` • `@/store` | 📊 **총 토큰 수**: 61 |
 
 
 

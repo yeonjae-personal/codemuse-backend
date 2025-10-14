@@ -1,7 +1,7 @@
 # 📄 BaseInputText.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/common/BaseInputText.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/extend-utils` • `../icons/RequiredIcon.vue` • `vue-i18n` | ⚡ **총 복잡도**: 3 |
+| 📦 **의존성**: `@/utils/extend-utils` • `vue-i18n` • `../icons/RequiredIcon.vue` | ⚡ **총 복잡도**: 3 |
 | 📊 **총 토큰 수**: 828 |  |
 
 

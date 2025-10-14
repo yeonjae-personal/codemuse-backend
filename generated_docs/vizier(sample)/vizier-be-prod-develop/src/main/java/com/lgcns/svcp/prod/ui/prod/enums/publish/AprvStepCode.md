@@ -1,7 +1,7 @@
 # 📄 AprvStepCode.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/publish/AprvStepCode.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public enum AprvStepCode {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5aadb6dde90e`
+- 🆔 **ID**: `3e14c6d40d8a`
 - 📍 **라인**: 3-3
 
 </details>

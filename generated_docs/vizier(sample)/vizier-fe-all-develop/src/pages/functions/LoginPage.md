@@ -1,7 +1,7 @@
 # 📄 LoginPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/functions/LoginPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -22,7 +22,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfButton.vue` • `@/components/prod/icons/FalseIcon.vue` • `@/store` • `@/components/controls/CfInput.vue` • `@/components/prod/icons/TrueIcon.vue` • `@/utils/common-util` | ⚡ **총 복잡도**: 39 |
+| 📦 **의존성**: `@/store` • `@/components/prod/icons/TrueIcon.vue` • `@/components/controls/CfButton.vue` • `@/utils/common-util` • `@/components/prod/icons/FalseIcon.vue` • `@/components/controls/CfInput.vue` | ⚡ **총 복잡도**: 39 |
 | 📊 **총 토큰 수**: 668 |  |
 
 

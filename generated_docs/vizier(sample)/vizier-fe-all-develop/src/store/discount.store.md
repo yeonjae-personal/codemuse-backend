@@ -1,7 +1,7 @@
 # 📄 discount.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/discount.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `lodash-es/cloneDeep` • `@/constants/` | ⚡ **총 복잡도**: 56 |
+| 📦 **의존성**: `@/enums` • `@/constants/` • `lodash-es/cloneDeep` | ⚡ **총 복잡도**: 56 |
 | 📊 **총 토큰 수**: 663 |  |
 
 

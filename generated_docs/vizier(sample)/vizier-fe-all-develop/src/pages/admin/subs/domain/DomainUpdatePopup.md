@@ -1,7 +1,7 @@
 # 📄 DomainUpdatePopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/domain/DomainUpdatePopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/composables/useInputValidation` • `@/constants/index` • `@/pages/admin/subs/term/TermAnalysisPopup.vue` • `@/utils/http-common` • `@/utils/common-ordr` 외 4개 | ⚡ **총 복잡도**: 85 |
+| 📦 **의존성**: `@/utils/common-ordr` • `vue-i18n` • `@/interfaces/admin/admin` • `@/utils/http-common` • `@/pages/admin/subs/term/TermAnalysisPopup.vue` • `lodash-es/cloneDeep` 외 4개 | ⚡ **총 복잡도**: 85 |
 | 📊 **총 토큰 수**: 1,169 |  |
 
 

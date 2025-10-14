@@ -1,7 +1,7 @@
 # 📄 ModalPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/controls/ModalPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./BadgePage.vue` • `@/components/controls/CfButton.vue` • `@/store` • `@/components/Description/index.vue` • `@/components/controls/examples/CfModalExample` • `vue-prism-component` | ⚡ **총 복잡도**: 8 |
+| 📦 **의존성**: `@/store` • `@/components/Description/index.vue` • `@/components/controls/CfButton.vue` • `./BadgePage.vue` • `@/components/controls/examples/CfModalExample` • `vue-prism-component` | ⚡ **총 복잡도**: 8 |
 | 📊 **총 토큰 수**: 113 |  |
 
 

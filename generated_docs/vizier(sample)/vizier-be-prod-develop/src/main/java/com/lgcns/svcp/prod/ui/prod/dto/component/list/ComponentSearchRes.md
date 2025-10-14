@@ -1,7 +1,7 @@
 # 📄 ComponentSearchRes.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/list/ComponentSearchRes.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentSearchRes`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 11
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/list/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/list/*
 - **라인**: 6
 
 
@@ -67,7 +67,7 @@ public class ComponentSearchRes {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ae15f6faca84`
+- 🆔 **ID**: `7b13ff0789b8`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 32
 - 🏷️ **태그**: `class, java`

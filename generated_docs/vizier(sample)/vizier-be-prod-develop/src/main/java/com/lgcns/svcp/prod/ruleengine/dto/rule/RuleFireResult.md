@@ -1,7 +1,7 @@
 # 📄 RuleFireResult.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/rule/RuleFireResult.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -56,7 +56,7 @@ public class RuleFireResult {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ca2b5e4f4c2f`
+- 🆔 **ID**: `0384f68cf46a`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 33
 - 🏷️ **태그**: `class, java`

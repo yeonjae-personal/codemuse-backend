@@ -1,7 +1,7 @@
 # 📄 AuditInterceptor.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/interceptor/AuditInterceptor.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class AuditInterceptor implements Interceptor {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a56c5107d769`
+- 🆔 **ID**: `00dad9e7e920`
 - 📍 **라인**: 23-23
 - 📊 **토큰**: 485
 - 🏷️ **태그**: `class, java`

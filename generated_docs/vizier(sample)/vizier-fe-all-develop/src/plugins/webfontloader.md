@@ -1,7 +1,7 @@
 # 📄 webfontloader.js
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/plugins/webfontloader.js`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Javascript
 ---
@@ -53,7 +53,7 @@ export async function loadFonts () {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `73d7d311b95a`
+- 🆔 **ID**: `d956c1043bad`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 UserInterceptor.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/interceptor/UserInterceptor.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class UserInterceptor implements HandlerInterceptor {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b6a9499660ad`
+- 🆔 **ID**: `def9fbab7437`
 - 📍 **라인**: 15-15
 - 📊 **토큰**: 83
 - 🏷️ **태그**: `class, java`

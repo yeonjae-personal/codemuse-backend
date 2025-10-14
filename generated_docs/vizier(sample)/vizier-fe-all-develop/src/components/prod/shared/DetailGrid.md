@@ -1,7 +1,7 @@
 # 📄 DetailGrid.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/DetailGrid.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/component` • `@/composables/useGroupCode` • `vue-i18n` • `@/constants/impactAnalysis` • `@/store/userPocket.store` • `@/enums/columnTypes` | ⚡ **총 복잡도**: 25 |
+| 📦 **의존성**: `vue-i18n` • `@/store/userPocket.store` • `@/constants/component` • `@/composables/useGroupCode` • `@/enums/columnTypes` • `@/constants/impactAnalysis` | ⚡ **총 복잡도**: 25 |
 | 📊 **총 토큰 수**: 662 |  |
 
 

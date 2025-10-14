@@ -1,7 +1,7 @@
 # 📄 BentoGridItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/BentoGridItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -19,7 +19,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `../dashboard/UploadUserImage.vue` • `../icons/DetailIcon.vue` • `../dashboard/recently-worked/RecentlyWorkedItem.vue` • `../dashboard/UploadUserImageEditMode.vue` • `../icons/UserImageIcon.vue` • `../icons/RecentlyWorkedIcon.vue` 외 10개 | ⚡ **총 복잡도**: 32 |
+| 📦 **의존성**: `../dashboard/MonthlyReportUsersChart.vue` • `../dashboard/UploadUserImageEditMode.vue` • `../icons/SubscriberTop10Icon.vue` • `vue-i18n` • `../dashboard/recently-worked/RecentlyWorkedDetail.vue` • `../icons/DetailIcon.vue` 외 10개 | ⚡ **총 복잡도**: 32 |
 | 📊 **총 토큰 수**: 902 |  |
 
 
@@ -55,7 +55,7 @@ function openEditDialog() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `f1456f4e629d`
+- 🆔 **ID**: `a3921be0cd21`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

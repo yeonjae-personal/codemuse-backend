@@ -1,7 +1,7 @@
 # 📄 OneView.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/OneView.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/store` • `@/types/common` • `@/constants/` • `@/api/prod/path` • `vue-i18n` 외 2개 | ⚡ **총 복잡도**: 22 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/enums` • `@/interfaces/prod/ImpactAnalysisInterface` • `@/constants/` • `@/composables/useDownloadFIle` 외 2개 | ⚡ **총 복잡도**: 22 |
 | 📊 **총 토큰 수**: 527 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 UserProfile.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/UserProfile.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `vue-i18n` | 📊 **총 토큰 수**: 448 |
+| 📦 **의존성**: `vue-i18n` • `@/enums` | 📊 **총 토큰 수**: 448 |
 
 
 

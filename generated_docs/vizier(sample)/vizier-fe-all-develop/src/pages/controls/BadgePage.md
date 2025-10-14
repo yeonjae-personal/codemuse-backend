@@ -1,7 +1,7 @@
 # 📄 BadgePage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/controls/BadgePage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/Description/index.vue` • `@/components/controls/CfBadge.vue` • `@/components/controls/examples/CfBadgeExample` • `vue-prism-component` | 📊 **총 토큰 수**: 90 |
+| 📦 **의존성**: `@/components/controls/examples/CfBadgeExample` • `@/components/Description/index.vue` • `@/components/controls/CfBadge.vue` • `vue-prism-component` | 📊 **총 토큰 수**: 90 |
 
 
 

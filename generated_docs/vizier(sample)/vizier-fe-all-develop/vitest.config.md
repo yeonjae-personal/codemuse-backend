@@ -1,7 +1,7 @@
 # 📄 vitest.config.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/vitest.config.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./vite.config` • `vite` • `node:url` • `./package.json` • `vitest/config` | 📊 **총 토큰 수**: 89 |
+| 📦 **의존성**: `./vite.config` • `node:url` • `./package.json` • `vite` • `vitest/config` | 📊 **총 토큰 수**: 89 |
 
 
 

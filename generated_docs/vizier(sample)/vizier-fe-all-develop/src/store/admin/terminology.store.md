@@ -1,7 +1,7 @@
 # 📄 terminology.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/admin/terminology.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/api/admin/adminApi` • `@vueuse/core` • `@/constants/index` • `@/interfaces/admin/admin` | ⚡ **총 복잡도**: 2 |
+| 📦 **의존성**: `@vueuse/core` • `@/api/admin/adminApi` • `lodash-es/cloneDeep` • `@/constants/index` • `@/interfaces/admin/admin` | ⚡ **총 복잡도**: 2 |
 | 📊 **총 토큰 수**: 291 |  |
 
 

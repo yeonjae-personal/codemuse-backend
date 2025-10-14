@@ -1,7 +1,7 @@
 # 📄 UiComponentController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UiComponentController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -20,10 +20,10 @@
 ## 💼 비즈니스 로직
 
 ### `UiComponentController`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: UiComponentController API 엔드포인트 제공
 - **복잡도**: 86
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/*
 - **라인**: 40
 
 
@@ -84,7 +84,7 @@ public class UiComponentController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `16184edb7b5c`
+- 🆔 **ID**: `abfe0b52bd9e`
 - 📍 **라인**: 40-40
 - 📊 **토큰**: 329
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

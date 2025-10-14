@@ -1,7 +1,7 @@
 # 📄 QosInfoDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/characteristic/QosInfoDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class QosInfoDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0abcf62353a7`
+- 🆔 **ID**: `a418edf1f111`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 44
 - 🏷️ **태그**: `class, java`

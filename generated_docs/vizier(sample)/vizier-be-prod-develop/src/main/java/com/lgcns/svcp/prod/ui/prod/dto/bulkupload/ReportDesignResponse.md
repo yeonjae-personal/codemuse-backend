@@ -1,7 +1,7 @@
 # 📄 ReportDesignResponse.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/bulkupload/ReportDesignResponse.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -52,7 +52,7 @@ public class ReportDesignResponse {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e5b5069918d6`
+- 🆔 **ID**: `64af5173a3db`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 20
 - 🏷️ **태그**: `class, java`

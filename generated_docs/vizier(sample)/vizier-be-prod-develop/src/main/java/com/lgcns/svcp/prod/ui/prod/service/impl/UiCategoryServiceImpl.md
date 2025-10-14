@@ -1,7 +1,7 @@
 # 📄 UiCategoryServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/impl/UiCategoryServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -75,7 +75,7 @@ public class UiCategoryServiceImpl implements UiCategoryService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `7125c4cbcd10`
+- 🆔 **ID**: `a5c8d195f538`
 - 📍 **라인**: 41-41
 - 📊 **토큰**: 360
 - 🏷️ **태그**: `class, java, transactional, param, spring-boot`

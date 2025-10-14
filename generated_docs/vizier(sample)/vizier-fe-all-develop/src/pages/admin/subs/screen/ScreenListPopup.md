@@ -1,7 +1,7 @@
 # 📄 ScreenListPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/screen/ScreenListPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/enums` • `@/store` • `vue-i18n` • `@/utils/http-common` • `@/pages/admin/subs/DataTableCustom.vue` | ⚡ **총 복잡도**: 95 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/http-common` • `@/enums` • `@/pages/admin/subs/DataTableCustom.vue` • `@/constants/index` | ⚡ **총 복잡도**: 95 |
 | 📊 **총 토큰 수**: 1,229 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 UiFactorService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/admin/UiFactorService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class UiFactorService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5c8c961f723a`
+- 🆔 **ID**: `063608234a62`
 - 📍 **라인**: 32-32
 - 📊 **토큰**: 284
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

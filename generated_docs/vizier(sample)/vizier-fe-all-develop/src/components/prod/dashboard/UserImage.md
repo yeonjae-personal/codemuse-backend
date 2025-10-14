@@ -1,7 +1,7 @@
 # 📄 UserImage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/UserImage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -25,7 +25,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `keen-slider/keen-slider.min.css` • `keen-slider` • `@/api/prod/path` • `@/store/userImagesStore` • `@/utils/http-common` | ⚡ **총 복잡도**: 44 |
+| 📦 **의존성**: `keen-slider/keen-slider.min.css` • `@/utils/http-common` • `@/api/prod/path` • `@/store/userImagesStore` • `keen-slider` | ⚡ **총 복잡도**: 44 |
 | 📊 **총 토큰 수**: 1,220 |  |
 
 
@@ -57,7 +57,7 @@ function goToPrevSlide() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `5ca9db9d0891`
+- 🆔 **ID**: `7a1835cbbefb`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -88,7 +88,7 @@ function goToNextSlide() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `d05e00b3fe74`
+- 🆔 **ID**: `bebea5ed4a4e`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

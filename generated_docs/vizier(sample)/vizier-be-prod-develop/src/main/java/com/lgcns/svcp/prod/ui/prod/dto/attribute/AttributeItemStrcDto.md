@@ -1,7 +1,7 @@
 # 📄 AttributeItemStrcDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/attribute/AttributeItemStrcDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class AttributeItemStrcDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `498e8c6c3108`
+- 🆔 **ID**: `f41e077c8e1b`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java`

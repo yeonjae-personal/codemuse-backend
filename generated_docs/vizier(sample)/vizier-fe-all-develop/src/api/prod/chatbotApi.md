@@ -1,7 +1,7 @@
 # 📄 chatbotApi.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/api/prod/chatbotApi.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `axios` • `@/api/prod/path` | ⚡ **총 복잡도**: 47 |
+| 📦 **의존성**: `@/api/prod/path` • `axios` | ⚡ **총 복잡도**: 47 |
 | 📊 **총 토큰 수**: 274 |  |
 
 

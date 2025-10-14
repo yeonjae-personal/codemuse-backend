@@ -1,7 +1,7 @@
 # 📄 ItemReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item/ItemReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class ItemReq {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `45b421dccfdc`
+- 🆔 **ID**: `0ebc7e34ddcf`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 20
 - 🏷️ **태그**: `class, java`

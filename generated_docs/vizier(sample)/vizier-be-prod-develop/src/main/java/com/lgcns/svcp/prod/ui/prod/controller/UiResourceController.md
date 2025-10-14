@@ -1,7 +1,7 @@
 # 📄 UiResourceController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UiResourceController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -68,7 +68,7 @@ public class UiResourceController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c1640d54e250`
+- 🆔 **ID**: `2791cfc53893`
 - 📍 **라인**: 36-36
 - 📊 **토큰**: 222
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

@@ -1,7 +1,7 @@
 # 📄 SpamLvwuPlcyDDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/characteristic/SpamLvwuPlcyDDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class SpamLvwuPlcyDDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `08a6ee1f565a`
+- 🆔 **ID**: `6857f24a5513`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 29
 - 🏷️ **태그**: `class, java`

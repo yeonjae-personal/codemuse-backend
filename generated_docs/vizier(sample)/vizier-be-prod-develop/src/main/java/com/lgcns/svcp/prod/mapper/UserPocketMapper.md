@@ -1,7 +1,7 @@
 # 📄 UserPocketMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/UserPocketMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public interface UserPocketMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f385fa4264e7`
+- 🆔 **ID**: `50434ca2fc5f`
 - 📊 **토큰**: 38
 
 </details>

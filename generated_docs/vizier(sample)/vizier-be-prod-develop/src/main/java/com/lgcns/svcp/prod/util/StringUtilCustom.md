@@ -1,7 +1,7 @@
 # 📄 StringUtilCustom.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/StringUtilCustom.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -80,7 +80,7 @@ public class StringUtilCustom extends StringUtils {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b9a16aa910b2`
+- 🆔 **ID**: `e33b87260982`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 286
 - 🏷️ **태그**: `class, java`

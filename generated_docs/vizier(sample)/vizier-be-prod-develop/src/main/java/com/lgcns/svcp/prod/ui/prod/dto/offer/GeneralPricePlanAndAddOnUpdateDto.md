@@ -1,7 +1,7 @@
 # 📄 GeneralPricePlanAndAddOnUpdateDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/GeneralPricePlanAndAddOnUpdateDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class GeneralPricePlanAndAddOnUpdateDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a93164dbdb26`
+- 🆔 **ID**: `5b982cbd108b`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 44
 - 🏷️ **태그**: `class, java`

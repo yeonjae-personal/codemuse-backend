@@ -1,7 +1,7 @@
 # 📄 ErrorResponseBody.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/advice/ErrorResponseBody.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -53,7 +53,7 @@ public class ErrorResponseBody implements Serializable{
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4957d65c07c5`
+- 🆔 **ID**: `8320e9b41926`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 25
 - 🏷️ **태그**: `class, java`

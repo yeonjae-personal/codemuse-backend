@@ -1,7 +1,7 @@
 # 📄 UserPocketRequest.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/userpocket/UserPocketRequest.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class UserPocketRequest {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `9e0559fb7b9d`
+- 🆔 **ID**: `9fee7b868a24`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 9
 - 🏷️ **태그**: `class, java`

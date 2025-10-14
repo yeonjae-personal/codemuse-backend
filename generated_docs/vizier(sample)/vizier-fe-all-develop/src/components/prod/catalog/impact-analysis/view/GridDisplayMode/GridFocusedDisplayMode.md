@@ -1,7 +1,7 @@
 # 📄 GridFocusedDisplayMode.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/view/GridDisplayMode/GridFocusedDisplayMode.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/BLinearIcon.vue` • `lodash-es/cloneDeep` • `@/components/prod/icons/RLinearIcon.vue` • `@/api/prod/offerApi` • `@/composables/useDragUserPocket` • `@/store` 외 4개 | ⚡ **총 복잡도**: 98 |
+| 📦 **의존성**: `@/store` • `@/components/prod/icons/SLinearIcon.vue` • `@/composables/useDragUserPocket` • `@/store/userPocket.store` • `@/components/prod/icons/BLinearIcon.vue` • `lodash-es/cloneDeep` 외 4개 | ⚡ **총 복잡도**: 98 |
 | 📊 **총 토큰 수**: 1,238 |  |
 
 

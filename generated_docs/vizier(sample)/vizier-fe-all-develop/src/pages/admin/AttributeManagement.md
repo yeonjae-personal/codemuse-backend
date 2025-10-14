@@ -1,7 +1,7 @@
 # 📄 AttributeManagement.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/AttributeManagement.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/layout/FourColumns.vue` • `@/store/admin/attributeManagement.store` • `./subs/attribute/ItemsView.vue` • `./subs/attribute/item-edit/AttributeCodeSearch.vue` • `./subs/attribute/item-edit/LabelSearch.vue` • `./subs/attribute/ItemEdit.vue` | 📊 **총 토큰 수**: 64 |
+| 📦 **의존성**: `./subs/attribute/item-edit/LabelSearch.vue` • `./subs/attribute/item-edit/AttributeCodeSearch.vue` • `@/components/prod/layout/FourColumns.vue` • `@/store/admin/attributeManagement.store` • `./subs/attribute/ItemsView.vue` • `./subs/attribute/ItemEdit.vue` | 📊 **총 토큰 수**: 64 |
 
 
 

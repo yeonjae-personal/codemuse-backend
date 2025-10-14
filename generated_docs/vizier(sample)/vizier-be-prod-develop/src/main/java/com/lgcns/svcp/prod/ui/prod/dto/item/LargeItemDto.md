@@ -1,7 +1,7 @@
 # 📄 LargeItemDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item/LargeItemDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class LargeItemDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `745ee7403afa`
+- 🆔 **ID**: `4eb840fed300`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

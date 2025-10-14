@@ -1,7 +1,7 @@
 # 📄 GroupedDcntMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/GroupedDcntMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -71,7 +71,7 @@ public class GroupedDcntMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ceeb078c759a`
+- 🆔 **ID**: `d936d6a38dd4`
 - 📍 **라인**: 5-5
 - 📊 **토큰**: 134
 - 🏷️ **태그**: `class, java`

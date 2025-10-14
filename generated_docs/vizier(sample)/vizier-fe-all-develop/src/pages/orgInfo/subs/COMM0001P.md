@@ -1,7 +1,7 @@
 # 📄 COMM0001P.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/orgInfo/subs/COMM0001P.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-community/styles/ag-grid.css` • `@/pages/orgInfo/type` • `@/pages/orgInfo/subs/OrgInfoTable.vue` • `@/types/common` • `@/pages/orgInfo/subs/OrgInfoSearch.vue` • `ag-grid-community/styles/ag-theme-alpine.css` 외 2개 | ⚡ **총 복잡도**: 37 |
+| 📦 **의존성**: `../OrgUtils` • `@/pages/orgInfo/subs/OrgInfoSearch.vue` • `@/pages/orgInfo/type` • `@/utils/http-common` • `ag-grid-community/styles/ag-theme-alpine.css` • `ag-grid-community/styles/ag-grid.css` 외 2개 | ⚡ **총 복잡도**: 37 |
 | 📊 **총 토큰 수**: 398 |  |
 
 

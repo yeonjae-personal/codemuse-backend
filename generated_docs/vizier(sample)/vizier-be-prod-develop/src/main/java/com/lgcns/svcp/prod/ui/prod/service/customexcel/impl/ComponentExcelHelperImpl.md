@@ -1,7 +1,7 @@
 # 📄 ComponentExcelHelperImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/impl/ComponentExcelHelperImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentExcelHelperImpl`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 226
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/impl/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/impl/*
 - **라인**: 41
 
 
@@ -80,7 +80,7 @@ public class ComponentExcelHelperImpl extends ExcelHelperImpl implements Compone
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `67ca716d0f88`
+- 🆔 **ID**: `e4e07dc04da9`
 - 📍 **라인**: 41-41
 - 📊 **토큰**: 796
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

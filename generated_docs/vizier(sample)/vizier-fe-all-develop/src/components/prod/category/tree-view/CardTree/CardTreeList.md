@@ -1,7 +1,7 @@
 # 📄 CardTreeList.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/CardTree/CardTreeList.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/composables/useDragUserPocket` • `@/store/category.store` • `vue-draggable-plus` • `@/store/userPocket.store` • `lodash-es/chunk` | ⚡ **총 복잡도**: 16 |
+| 📦 **의존성**: `@/composables/useDragUserPocket` • `lodash-es/chunk` • `@/store/userPocket.store` • `lodash-es/cloneDeep` • `vue-draggable-plus` • `@/store/category.store` | ⚡ **총 복잡도**: 16 |
 | 📊 **총 토큰 수**: 455 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 S3TemplateUtil.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/S3TemplateUtil.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -74,7 +74,7 @@ public class S3TemplateUtil {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `dc0d152cdc67`
+- 🆔 **ID**: `dcef5c70a812`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 63
 - 🏷️ **태그**: `class, java, value, spring-boot`

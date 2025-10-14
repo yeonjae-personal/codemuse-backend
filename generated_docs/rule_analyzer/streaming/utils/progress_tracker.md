@@ -1,7 +1,7 @@
 # 📄 progress_tracker.py
 
 > **파일 경로**: `rule_analyzer/streaming/utils/progress_tracker.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 19개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `logging` • `stream_models` • `typing` • `datetime` | ⚡ **총 복잡도**: 34 |
+| 📦 **의존성**: `datetime` • `stream_models` • `typing` • `logging` | ⚡ **총 복잡도**: 34 |
 | 📊 **총 토큰 수**: 2,417 |  |
 
 
@@ -209,7 +209,7 @@ class ProgressTracker:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1d7ed745cc88`
+- 🆔 **ID**: `d7a4875982b6`
 - 📍 **라인**: 15-25
 - 📊 **토큰**: 72
 - 🏷️ **태그**: `class`
@@ -245,21 +245,23 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant isoformat as isoformat
-  participant _calculate_final_statist as _calculate_final_statistics
   participant len as len
-  participant get_estimated_remaining_ as get_estimated_remaining_time
+  participant get_processed_chunks as get_processed_chunks
+  participant get_processing_speed as get_processing_speed
+  participant get_progress_history as get_progress_history
   participant timedelta as timedelta
-  participant now as now
-  participant sum as sum
-  participant is_complete as is_complete
-  participant reset as reset
   participant total_seconds as total_seconds
+  participant _update_estimated_comple as _update_estimated_completion_time
   participant getLogger as getLogger
-  participant append as append
-  get_estimated_remaining_time->>now: call
-  _calculate_final_statistics->>total_seconds: call
-  _calculate_final_statistics->>now: call
+  participant start_tracking as start_tracking
+  participant get_current_progress as get_current_progress
+  participant is_error as is_error
+  participant now as now
+  start_tracking->>now: call
+  get_processing_speed->>len: call
+  _update_estimated_completion_time->>total_seconds: call
+  _update_estimated_completion_time->>now: call
+  _update_estimated_completion_time->>timedelta: call
 ```
 
 

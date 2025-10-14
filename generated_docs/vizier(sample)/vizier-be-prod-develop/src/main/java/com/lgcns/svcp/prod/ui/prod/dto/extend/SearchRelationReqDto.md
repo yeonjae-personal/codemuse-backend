@@ -1,7 +1,7 @@
 # 📄 SearchRelationReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend/SearchRelationReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class SearchRelationReqDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4626b8afa68c`
+- 🆔 **ID**: `fc8d146ab9f2`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 13
 - 🏷️ **태그**: `class, java`

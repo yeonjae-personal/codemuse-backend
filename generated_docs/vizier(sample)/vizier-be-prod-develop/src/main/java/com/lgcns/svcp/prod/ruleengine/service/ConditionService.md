@@ -1,7 +1,7 @@
 # 📄 ConditionService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/service/ConditionService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class ConditionService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `89df49ad2355`
+- 🆔 **ID**: `8f8a352c7fe0`
 - 📍 **라인**: 20-20
 - 📊 **토큰**: 224
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

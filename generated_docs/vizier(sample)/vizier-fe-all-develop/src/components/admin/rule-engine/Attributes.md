@@ -1,7 +1,7 @@
 # 📄 Attributes.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/Attributes.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useInputValidation` • `@/components/prod/layout/DetailPaneRow.vue` • `@/store/admin/ruleEngine.store` • `@/components/prod/common/BaseInputText.vue` • `vue-i18n` • `@/components/prod/common/BaseTextArea.vue` 외 1개 | ⚡ **총 복잡도**: 7 |
+| 📦 **의존성**: `@/components/prod/common/BaseInputText.vue` • `vue-i18n` • `@/components/prod/layout/DetailPaneRow.vue` • `@/components/prod/common/BaseTextArea.vue` • `@/store/admin/ruleEngine.store` • `@/components/prod/layout/DetailPane.vue` 외 1개 | ⚡ **총 복잡도**: 7 |
 | 📊 **총 토큰 수**: 398 |  |
 
 

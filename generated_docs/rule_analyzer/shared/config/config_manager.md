@@ -1,7 +1,7 @@
 # 📄 config_manager.py
 
 > **파일 경로**: `rule_analyzer/shared/config/config_manager.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 19개
 
 ---
@@ -20,7 +20,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `pathlib` • `json` • `logging` • `typing` | ⚡ **총 복잡도**: 38 |
+| 📦 **의존성**: `pathlib` • `json` • `typing` • `logging` | ⚡ **총 복잡도**: 38 |
 | 📊 **총 토큰 수**: 2,558 |  |
 
 
@@ -195,7 +195,7 @@ class ConfigManager:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `3c2d143791fa`
+- 🆔 **ID**: `8baeec02bd99`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 65
 - 🏷️ **태그**: `class, manager`
@@ -267,7 +267,7 @@ def get_config(key: str, default: Any = None) -> Any:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `9b8a1b9086a7`
+- 🆔 **ID**: `4abfc4ef8803`
 - 🏷️ **태그**: `getter`
 
 </details>
@@ -334,7 +334,7 @@ def set_config(key: str, value: Any) -> bool:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `72884c072f88`
+- 🆔 **ID**: `8378376d9910`
 - 🏷️ **태그**: `setter`
 
 </details>
@@ -368,24 +368,27 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant mkdir as mkdir
   participant len as len
-  participant items as items
-  participant load_config as load_config
   participant get_all as get_all
-  participant exists as exists
-  participant set_config as set_config
-  participant export_config as export_config
-  participant validate_config as validate_config
-  participant set as set
   participant Path as Path
+  participant mkdir as mkdir
+  participant export_config as export_config
+  participant save_config as save_config
+  participant set as set
+  participant has_key as has_key
+  participant open as open
+  participant load_config as load_config
+  participant set_config as set_config
+  participant debug as debug
   set_config->>set: call
-  load_config->>exists: call
-  validate_config->>get: call
-  validate_config->>len: call
+  load_config->>save_config: call
+  load_config->>open: call
+  save_config->>mkdir: call
+  save_config->>open: call
+  set->>debug: call
   export_config->>Path: call
   export_config->>mkdir: call
+  export_config->>open: call
 ```
 
 

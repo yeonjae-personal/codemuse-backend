@@ -1,7 +1,7 @@
 # 📄 ItemEdit.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/ItemEdit.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 13개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./item-edit/TreeViewEdit.vue` • `lodash-es/cloneDeep` • `./item-edit/TreeViewDetail.vue` • `./item-edit/GeneralEdit.vue` • `./item-edit/GeneralDetail.vue` • `./item-edit/AdditionalDetail.vue` 외 9개 | ⚡ **총 복잡도**: 82 |
+| 📦 **의존성**: `./item-edit/GeneralDetail.vue` • `vue-i18n` • `@/constants/admin/attribute` • `./item-edit/AdditionalEdit.vue` • `./item-edit/TreeViewDetail.vue` • `@/components/prod/common/BaseTabs.vue` 외 9개 | ⚡ **총 복잡도**: 82 |
 | 📊 **총 토큰 수**: 845 |  |
 
 

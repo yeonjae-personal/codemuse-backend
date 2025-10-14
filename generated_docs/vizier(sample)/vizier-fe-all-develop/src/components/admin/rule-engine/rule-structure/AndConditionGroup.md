@@ -1,7 +1,7 @@
 # 📄 AndConditionGroup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/rule-structure/AndConditionGroup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `./SingleConnectionLine.vue` • `@/store/admin/ruleEngine.store` • `./ConditionItem.vue` • `@/store` • `vue-i18n` 외 2개 | 📊 **총 토큰 수**: 494 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `./OrConditionGroup.vue` • `lodash-es/cloneDeep` • `@/store/admin/ruleEngine.store` • `uuid` 외 2개 | 📊 **총 토큰 수**: 494 |
 
 
 

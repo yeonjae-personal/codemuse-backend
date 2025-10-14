@@ -1,7 +1,7 @@
 # 📄 GroupedAlowMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/price/GroupedAlowMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -71,7 +71,7 @@ public class GroupedAlowMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `497069374805`
+- 🆔 **ID**: `60c965f057df`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 146
 - 🏷️ **태그**: `class, java`

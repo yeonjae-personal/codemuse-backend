@@ -1,7 +1,7 @@
 # 📄 GeneralDetail.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit/GeneralDetail.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/layout/DetailPaneRow.vue` • `@/store/admin/attributeManagement.store` • `@/components/prod/common/BaseCanvas.vue` • `vue-i18n` • `@/components/prod/layout/DetailPane.vue` | 📊 **총 토큰 수**: 536 |
+| 📦 **의존성**: `vue-i18n` • `@/store/admin/attributeManagement.store` • `@/components/prod/common/BaseCanvas.vue` • `@/components/prod/layout/DetailPaneRow.vue` • `@/components/prod/layout/DetailPane.vue` | 📊 **총 토큰 수**: 536 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 UiDashboardServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/impl/UiDashboardServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -64,7 +64,7 @@ public class UiDashboardServiceImpl implements UiDashboardService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `76b1f4a460c1`
+- 🆔 **ID**: `051538f2bc4f`
 - 📍 **라인**: 42-42
 - 📊 **토큰**: 343
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

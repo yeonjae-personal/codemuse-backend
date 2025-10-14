@@ -1,7 +1,7 @@
 # 📄 index.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/router/index.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store` • `@/layouts/DefaultLayout.vue` • `vue3-cookies` • `vue-router` • `@/layouts/ProductPlatformLayout.vue` | ⚡ **총 복잡도**: 13 |
+| 📦 **의존성**: `@/store` • `@/layouts/DefaultLayout.vue` • `@/layouts/ProductPlatformLayout.vue` • `vue3-cookies` • `vue-router` | ⚡ **총 복잡도**: 13 |
 | 📊 **총 토큰 수**: 291 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 ExtendsAccordion.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/relation-viewer/common/ExtendsAccordion.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/interfaces/prod` • `@/constants/index` • `@/utils/format-data` | ⚡ **총 복잡도**: 53 |
+| 📦 **의존성**: `@/constants/index` • `@/utils/format-data` • `@/interfaces/prod` | ⚡ **총 복잡도**: 53 |
 | 📊 **총 토큰 수**: 983 |  |
 
 

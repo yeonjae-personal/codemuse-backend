@@ -1,7 +1,7 @@
 # 📄 BlngInfoMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/characteristic/BlngInfoMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -60,7 +60,7 @@ public class BlngInfoMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `af7f767e5093`
+- 🆔 **ID**: `9303ea45e226`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 47
 - 🏷️ **태그**: `class, java`

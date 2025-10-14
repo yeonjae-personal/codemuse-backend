@@ -1,7 +1,7 @@
 # 📄 ValidationView.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/ValidationView.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `keen-slider/keen-slider.min.css` • `keen-slider` • `@/components/prod/icons/CustomValidationNextIcon.vue` • `@/store/admin/customValidation.store` • `./ValidationViewItem.vue` • `@/components/prod/icons/CustomValidationPrevIcon.vue` | ⚡ **총 복잡도**: 19 |
+| 📦 **의존성**: `keen-slider/keen-slider.min.css` • `./ValidationViewItem.vue` • `@/components/prod/icons/CustomValidationNextIcon.vue` • `@/store/admin/customValidation.store` • `keen-slider` • `@/components/prod/icons/CustomValidationPrevIcon.vue` | ⚡ **총 복잡도**: 19 |
 | 📊 **총 토큰 수**: 636 |  |
 
 

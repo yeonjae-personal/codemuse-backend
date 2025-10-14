@@ -1,7 +1,7 @@
 # 📄 PredicateWithTracking.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/wrapper/PredicateWithTracking.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -43,7 +43,7 @@ public interface PredicateWithTracking {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a5c86e02e78c`
+- 🆔 **ID**: `1cc831f7cff7`
 - 📊 **토큰**: 12
 
 </details>

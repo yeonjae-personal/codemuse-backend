@@ -1,7 +1,7 @@
 # 📄 MultiEntityGeneralTab.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/mutil-entity/search/tabs/MultiEntityGeneralTab.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 19개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useInputValidation` • `@/constants/index` • `@/enums` • `@/utils/format-data` • `@/constants/extendsManager` • `@/composables/useGroupCode` 외 3개 | ⚡ **총 복잡도**: 182 |
+| 📦 **의존성**: `vue-i18n` • `@/constants/index` • `@/enums` • `moment-timezone` • `@/composables/useGroupCode` • `@/enums/columnTypes` 외 3개 | ⚡ **총 복잡도**: 182 |
 | 📊 **총 토큰 수**: 1,772 |  |
 
 

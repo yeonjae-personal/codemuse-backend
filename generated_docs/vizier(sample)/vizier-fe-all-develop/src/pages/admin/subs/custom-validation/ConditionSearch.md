@@ -1,7 +1,7 @@
 # 📄 ConditionSearch.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/ConditionSearch.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/componentApi` • `lodash-es/uniqBy` • `@/store` • `@/components/prod/common/NoData.vue` • `@/enums/customValidation` • `@/types/catalog/component/ComponentSearch` 외 7개 | ⚡ **총 복잡도**: 94 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/api/prod/componentApi` • `@/api/prod/customValidationApi` • `@/utils/http-common` • `@/components/prod/common/NoData.vue` 외 7개 | ⚡ **총 복잡도**: 94 |
 | 📊 **총 토큰 수**: 1,544 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 UIRelationController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UIRelationController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class UIRelationController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `59f492c2c880`
+- 🆔 **ID**: `da858c9d9680`
 - 📍 **라인**: 25-25
 - 📊 **토큰**: 94
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

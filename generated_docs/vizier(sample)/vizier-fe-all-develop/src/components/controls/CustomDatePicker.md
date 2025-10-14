@@ -1,7 +1,7 @@
 # 📄 CustomDatePicker.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/controls/CustomDatePicker.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `keen-slider/keen-slider.min.css` • `v-calendar/style.css` • `v-calendar` • `../prod/dashboard/EventType.vue` • `keen-slider` • `@/store` 외 7개 | ⚡ **총 복잡도**: 79 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `keen-slider/keen-slider.min.css` • `@/utils/http-common` • `@/store/calendarStore` • `../prod/icons/CalendarPrevIcon.vue` 외 7개 | ⚡ **총 복잡도**: 79 |
 | 📊 **총 토큰 수**: 2,231 |  |
 
 

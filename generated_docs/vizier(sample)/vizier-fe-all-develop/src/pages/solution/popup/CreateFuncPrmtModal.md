@@ -1,7 +1,7 @@
 # 📄 CreateFuncPrmtModal.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup/CreateFuncPrmtModal.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `axios` • `@/store` • `@/pages/solution/SearchOrderPage.vue` | ⚡ **총 복잡도**: 122 |
+| 📦 **의존성**: `@/store` • `axios` • `@/pages/solution/SearchOrderPage.vue` | ⚡ **총 복잡도**: 122 |
 | 📊 **총 토큰 수**: 1,010 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 MatrixBuilder.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure/MatrixBuilder.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/store/admin/matrixStructure.store` • `grid-layout-plus` • `@/enums` • `@/store` • `@/components/prod/icons/TrashIcon.vue` 외 1개 | ⚡ **총 복잡도**: 111 |
+| 📦 **의존성**: `@/store/admin/matrixStructure.store` • `vue-i18n` • `@/store` • `@/components/prod/icons/TrashIcon.vue` • `grid-layout-plus` • `lodash-es/cloneDeep` 외 1개 | ⚡ **총 복잡도**: 111 |
 | 📊 **총 토큰 수**: 1,159 |  |
 
 

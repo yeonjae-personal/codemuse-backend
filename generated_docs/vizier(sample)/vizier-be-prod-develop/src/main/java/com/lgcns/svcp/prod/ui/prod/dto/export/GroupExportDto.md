@@ -1,7 +1,7 @@
 # 📄 GroupExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export/GroupExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class GroupExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5e91f5f8ec9b`
+- 🆔 **ID**: `2b98eaba8f39`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

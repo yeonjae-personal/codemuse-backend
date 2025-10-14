@@ -1,7 +1,7 @@
 # 📄 OfferStructureDetailReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/OfferStructureDetailReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -48,7 +48,7 @@ public class OfferStructureDetailReq {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f647eed2b7b9`
+- 🆔 **ID**: `96a11bf4706d`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

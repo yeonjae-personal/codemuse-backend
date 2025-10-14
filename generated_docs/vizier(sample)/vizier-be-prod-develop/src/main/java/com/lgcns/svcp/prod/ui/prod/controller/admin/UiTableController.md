@@ -1,7 +1,7 @@
 # 📄 UiTableController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/admin/UiTableController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -66,7 +66,7 @@ public class UiTableController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d5791a6d1924`
+- 🆔 **ID**: `735f836751ab`
 - 📍 **라인**: 32-32
 - 📊 **토큰**: 248
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

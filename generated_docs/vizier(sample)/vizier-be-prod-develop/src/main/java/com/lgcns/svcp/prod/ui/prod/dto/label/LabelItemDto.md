@@ -1,7 +1,7 @@
 # 📄 LabelItemDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/label/LabelItemDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class LabelItemDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e09fbead5e50`
+- 🆔 **ID**: `bc1ee83f7ef0`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 23
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 ScreenPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/screen/ScreenPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/admin/subs/TableAnalysis.vue` • `@/composables/useInputValidation` • `@/store/cmcd.store` • `@/constants/index` • `@/constants/admin/admin` • `@/store` 외 4개 | ⚡ **총 복잡도**: 181 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/pages/admin/subs/TableAnalysis.vue` • `@/utils/http-common` • `@/store/cmcd.store` • `@/constants/admin/admin` 외 4개 | ⚡ **총 복잡도**: 181 |
 | 📊 **총 토큰 수**: 2,189 |  |
 
 

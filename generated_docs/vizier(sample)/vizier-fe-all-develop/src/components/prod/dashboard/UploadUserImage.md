@@ -1,7 +1,7 @@
 # 📄 UploadUserImage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/UploadUserImage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -27,7 +27,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `keen-slider/keen-slider.min.css` • `keen-slider` • `../icons/UserImageIconDetail.vue` • `vuetify/components` • `@/api/prod/path` • `../icons/UpdateIcon.vue` 외 3개 | ⚡ **총 복잡도**: 25 |
+| 📦 **의존성**: `vue-i18n` • `keen-slider/keen-slider.min.css` • `@/utils/http-common` • `vuetify/components` • `@/api/prod/path` • `../icons/UserImageIconDetail.vue` 외 3개 | ⚡ **총 복잡도**: 25 |
 | 📊 **총 토큰 수**: 1,536 |  |
 
 
@@ -59,7 +59,7 @@ function closeDialog() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `f59ae595d4c1`
+- 🆔 **ID**: `40a8c9ff0fb3`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -90,7 +90,7 @@ function editImage() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `5fe6da7259e2`
+- 🆔 **ID**: `28216dd24576`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -121,7 +121,7 @@ function goToPrevSlide() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `35d3e1b5bebc`
+- 🆔 **ID**: `3843adf9d037`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -152,7 +152,7 @@ function goToNextSlide() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `1c09790b40dd`
+- 🆔 **ID**: `802038c39536`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

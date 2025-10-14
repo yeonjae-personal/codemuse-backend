@@ -1,7 +1,7 @@
 # 📄 RuleTestInput.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/rule/RuleTestInput.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class RuleTestInput {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `7330341cca19`
+- 🆔 **ID**: `f5ce512e9681`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 18
 - 🏷️ **태그**: `class, java`

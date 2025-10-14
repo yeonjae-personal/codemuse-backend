@@ -1,7 +1,7 @@
 # 📄 SearchOrderPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/SearchOrderPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 19개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `@/pages/functions/subs/CreateSeachOrderModal.vue` • `@/components/controls/CfDropdown.vue` • `@/store/global.store` • `axios` 외 4개 | ⚡ **총 복잡도**: 297 |
+| 📦 **의존성**: `ag-grid-vue3` • `@/utils/common-util` • `@/pages/functions/subs/CreateSeachOrderModal.vue` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/store/global.store` • `@/components/controls/CfDropdown.vue` 외 4개 | ⚡ **총 복잡도**: 297 |
 | 📊 **총 토큰 수**: 2,319 |  |
 
 

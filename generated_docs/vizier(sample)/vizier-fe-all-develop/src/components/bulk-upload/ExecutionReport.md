@@ -1,7 +1,7 @@
 # 📄 ExecutionReport.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/bulk-upload/ExecutionReport.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/constants/index` • `vue-i18n` • `@/types/common` | 📊 **총 토큰 수**: 205 |
+| 📦 **의존성**: `@/constants/index` • `vue-i18n` • `@/types/common` • `@/enums` | 📊 **총 토큰 수**: 205 |
 
 
 

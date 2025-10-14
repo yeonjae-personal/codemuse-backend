@@ -1,7 +1,7 @@
 # 📄 EqipTrmMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/EqipTrmMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -73,7 +73,7 @@ public class EqipTrmMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d45a247198f0`
+- 🆔 **ID**: `7a8e3d09f83a`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 86
 - 🏷️ **태그**: `class, java`

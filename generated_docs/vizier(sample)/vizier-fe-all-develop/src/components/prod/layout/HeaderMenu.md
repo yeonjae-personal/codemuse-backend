@@ -1,7 +1,7 @@
 # 📄 HeaderMenu.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/HeaderMenu.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -19,7 +19,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/socket` • `@/constants/index` • `@/composables/useRedirect` • `@/enums` • `@/store` • `@/constants/userInfor` 외 6개 | ⚡ **총 복잡도**: 38 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/icons/UserIcon.vue` • `@/components/prod/icons/SettingIcon.vue` • `@/interfaces/admin/label-management` • `@/constants/userInfor` 외 6개 | ⚡ **총 복잡도**: 38 |
 | 📊 **총 토큰 수**: 851 |  |
 
 

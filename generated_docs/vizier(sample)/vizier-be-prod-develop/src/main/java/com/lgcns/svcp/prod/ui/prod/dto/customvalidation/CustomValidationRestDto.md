@@ -1,7 +1,7 @@
 # 📄 CustomValidationRestDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/CustomValidationRestDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -48,7 +48,7 @@ public class CustomValidationRestDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `808eb0f45d94`
+- 🆔 **ID**: `37678157b668`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 12
 - 🏷️ **태그**: `class, java`

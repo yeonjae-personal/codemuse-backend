@@ -1,7 +1,7 @@
 # 📄 ItemOffrResDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend/ItemOffrResDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -56,7 +56,7 @@ public class ItemOffrResDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e102034ca015`
+- 🆔 **ID**: `7ee1777f1f70`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 35
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 SpamDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/SpamDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `SpamDto`
-- **도메인**: user
+- **도메인**: product_online
 - **목적**: SpamDto 데이터 전송 객체
 - **복잡도**: 2
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/*
 - **라인**: 3
 
 
@@ -58,7 +58,7 @@ public class SpamDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `de1574c66936`
+- 🆔 **ID**: `0724f9b38f1f`
 - 📍 **라인**: 3-3
 - 📊 **토큰**: 5
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 publishManager.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/publishManager.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/interfaces/prod/publishInterface` • `lodash-es` • `@/utils/format-data` | 📊 **총 토큰 수**: 924 |
+| 📦 **의존성**: `@/interfaces/prod/publishInterface` • `@/utils/format-data` • `lodash-es` • `@/enums` | 📊 **총 토큰 수**: 924 |
 
 
 

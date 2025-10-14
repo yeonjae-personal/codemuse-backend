@@ -1,7 +1,7 @@
 # 📄 UiUserPocketController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UiUserPocketController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -66,7 +66,7 @@ public class UiUserPocketController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d2a85a1abb75`
+- 🆔 **ID**: `2c63c0b86867`
 - 📍 **라인**: 35-35
 - 📊 **토큰**: 82
 - 🏷️ **태그**: `class, java, getmapping, postmapping, deletemapping...`

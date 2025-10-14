@@ -1,7 +1,7 @@
 # 📄 UserImageRequest.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/request/UserImageRequest.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -63,7 +63,7 @@ public class UserImageRequest {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `48d4897c214b`
+- 🆔 **ID**: `d3a3c1184050`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 46
 - 🏷️ **태그**: `class, java`

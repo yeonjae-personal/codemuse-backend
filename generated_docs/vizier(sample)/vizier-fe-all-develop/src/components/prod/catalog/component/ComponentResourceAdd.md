@@ -1,7 +1,7 @@
 # 📄 ComponentResourceAdd.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component/ComponentResourceAdd.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/interfaces/prod/resource` • `lodash-es/cloneDeep` • `@/composables/useDragUserPocket` • `@/enums` • `@/utils/format-data` 외 6개 | ⚡ **총 복잡도**: 61 |
+| 📦 **의존성**: `vue-i18n` • `@/composables/useDragUserPocket` • `@/constants/offer` • `@/store/userPocket.store` • `../../shared/SearchPane.vue` • `lodash-es/cloneDeep` 외 6개 | ⚡ **총 복잡도**: 61 |
 | 📊 **총 토큰 수**: 1,044 |  |
 
 

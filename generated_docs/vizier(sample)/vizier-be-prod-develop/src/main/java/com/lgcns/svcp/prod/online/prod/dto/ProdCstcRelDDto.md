@@ -1,7 +1,7 @@
 # 📄 ProdCstcRelDDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/ProdCstcRelDDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -63,7 +63,7 @@ public class ProdCstcRelDDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d13dc8f77f86`
+- 🆔 **ID**: `b75b317a5729`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 49
 - 🏷️ **태그**: `class, java`

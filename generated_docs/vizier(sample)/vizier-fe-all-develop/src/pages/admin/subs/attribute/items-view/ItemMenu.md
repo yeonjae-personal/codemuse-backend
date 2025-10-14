@@ -1,7 +1,7 @@
 # 📄 ItemMenu.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/items-view/ItemMenu.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/common/BasePopover.vue` • `vue-i18n` • `@/components/prod/icons/PlusSmallIcon.vue` | ⚡ **총 복잡도**: 18 |
+| 📦 **의존성**: `vue-i18n` • `@/components/prod/icons/PlusSmallIcon.vue` • `@/components/prod/common/BasePopover.vue` | ⚡ **총 복잡도**: 18 |
 | 📊 **총 토큰 수**: 580 |  |
 
 

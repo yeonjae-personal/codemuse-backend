@@ -1,7 +1,7 @@
 # 📄 BentoGridList.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/BentoGridList.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -20,7 +20,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `./WidgetItem.vue` • `vue-draggable-plus` • `vue-i18n` • `lodash-es/throttle` | ⚡ **총 복잡도**: 24 |
+| 📦 **의존성**: `vue-i18n` • `@/composables/useDragUserPocket` • `lodash-es/throttle` • `./WidgetItem.vue` • `vue-draggable-plus` | ⚡ **총 복잡도**: 24 |
 | 📊 **총 토큰 수**: 555 |  |
 
 
@@ -54,7 +54,7 @@ function syncMousePosition(event) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `859a61376987`
+- 🆔 **ID**: `4c430e9e516f`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -89,7 +89,7 @@ function dragEnd() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `a99a66d744ae`
+- 🆔 **ID**: `6bcc850dea1f`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

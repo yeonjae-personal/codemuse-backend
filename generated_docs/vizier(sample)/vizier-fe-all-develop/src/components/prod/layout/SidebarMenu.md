@@ -1,7 +1,7 @@
 # 📄 SidebarMenu.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/SidebarMenu.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -26,7 +26,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@vueuse/core` • `@/interfaces/prod/menu` • `@/store` • `@/utils/config-path` • `@/enums/redirect` • `vue-router` | ⚡ **총 복잡도**: 119 |
+| 📦 **의존성**: `@/store` • `@vueuse/core` • `@/interfaces/prod/menu` • `@/utils/config-path` • `vue-router` • `@/enums/redirect` | ⚡ **총 복잡도**: 119 |
 | 📊 **총 토큰 수**: 1,263 |  |
 
 
@@ -58,7 +58,7 @@ function isActive(item: any) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `ea7cae5601b0`
+- 🆔 **ID**: `a2fdf1fe2d64`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -115,7 +115,7 @@ function handleHover(item: any, id: any) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `1b55aa001420`
+- 🆔 **ID**: `9b1d791e94c8`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -148,7 +148,7 @@ function handleLeave() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `4e3ebcb5e5d0`
+- 🆔 **ID**: `263c6c0034f3`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -184,7 +184,7 @@ function handleIn() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `2fd64bcd4e3b`
+- 🆔 **ID**: `0091c185d14d`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -232,7 +232,7 @@ function handleClick(item: any) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `67a716e99238`
+- 🆔 **ID**: `ac30fc0d6f81`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -263,7 +263,7 @@ function handleHideSubmenu(idParent: any) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `b98b44537602`
+- 🆔 **ID**: `429cd4761970`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -310,7 +310,7 @@ function checkMenu(menu: any, path: any, root: any, parent?: any) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `9c0d87e2099a`
+- 🆔 **ID**: `e9ed1ffb7de5`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -355,7 +355,7 @@ function initMenu() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `a9bb4dcb31e1`
+- 🆔 **ID**: `3e99d4a7a4ad`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

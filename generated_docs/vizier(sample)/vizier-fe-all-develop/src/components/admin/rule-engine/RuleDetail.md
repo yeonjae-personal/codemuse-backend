@@ -1,7 +1,7 @@
 # 📄 RuleDetail.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/RuleDetail.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/store/admin/ruleEngine.store` • `@/enums` • `@/store` • `@/interfaces/admin/rule-engine` • `vue-i18n` 외 2개 | ⚡ **총 복잡도**: 53 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/interfaces/admin/rule-engine` • `@/enums` • `./Attributes.vue` • `lodash-es/cloneDeep` 외 2개 | ⚡ **총 복잡도**: 53 |
 | 📊 **총 토큰 수**: 568 |  |
 
 

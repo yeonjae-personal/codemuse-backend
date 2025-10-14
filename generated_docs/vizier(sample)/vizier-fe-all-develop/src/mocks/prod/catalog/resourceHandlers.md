@@ -1,7 +1,7 @@
 # 📄 resourceHandlers.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/catalog/resourceHandlers.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./data/resources` • `@/constants` • `msw` | 📊 **총 토큰 수**: 44 |
+| 📦 **의존성**: `@/constants` • `msw` • `./data/resources` | 📊 **총 토큰 수**: 44 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 ManagerGroupDetail.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/ManagerGroupDetail.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/enums` • `@/components/prod/shared/HistoryTab.vue` • `@/components/prod/shared/GeneralTab.vue` • `@/components/prod/shared/AdditionalTab.vue` • `@/constants/offer` 외 2개 | ⚡ **총 복잡도**: 6 |
+| 📦 **의존성**: `vue-i18n` • `@/components/prod/shared/OfferTab.vue` • `@/constants/offer` • `@/components/prod/shared/HistoryTab.vue` • `@/enums` • `@/components/prod/shared/AdditionalTab.vue` 외 2개 | ⚡ **총 복잡도**: 6 |
 | 📊 **총 토큰 수**: 450 |  |
 
 

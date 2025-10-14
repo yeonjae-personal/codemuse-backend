@@ -1,7 +1,7 @@
 # 📄 CreateFuncModal.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup/CreateFuncModal.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `axios` • `@/store` • `@/pages/solution/SearchOrderPage.vue` • `@/components/controls/CfDatetimePicker.vue` | ⚡ **총 복잡도**: 193 |
+| 📦 **의존성**: `@/store` • `axios` • `@/components/controls/CfDatetimePicker.vue` • `@/pages/solution/SearchOrderPage.vue` | ⚡ **총 복잡도**: 193 |
 | 📊 **총 토큰 수**: 1,778 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 RelationSearchPane.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/RelationSearchPane.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 12개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/components/prod/extends/relation/manager/relation-viewer/common/ExtendsAccordion.vue` • `@/composables/useDragUserPocket` • `@/constants/index` • `@/enums` • `@/utils/format-data` 외 3개 | ⚡ **총 복잡도**: 75 |
+| 📦 **의존성**: `@/api/prod/extendsApi` • `@/composables/useDragUserPocket` • `@/store/userPocket.store` • `@/components/prod/extends/relation/manager/relation-viewer/common/ExtendsAccordion.vue` • `@/enums` • `@/api/prod/commonApi` 외 3개 | ⚡ **총 복잡도**: 75 |
 | 📊 **총 토큰 수**: 740 |  |
 
 

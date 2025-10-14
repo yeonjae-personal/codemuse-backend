@@ -1,7 +1,7 @@
 # 📄 attributeManagement.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/admin/attributeManagement.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 25개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/isEqual` • `lodash-es/cloneDeep` • `../snackbar.store` • `../cmcd.store` • `@/constants/userInfor` • `@/api/prod/labelApi` 외 3개 | ⚡ **총 복잡도**: 206 |
+| 📦 **의존성**: `vue-i18n` • `@/constants/offer` • `../cmcd.store` • `lodash-es/cloneDeep` • `@/api/prod/labelApi` • `@/constants/userInfor` 외 3개 | ⚡ **총 복잡도**: 206 |
 | 📊 **총 토큰 수**: 3,355 |  |
 
 

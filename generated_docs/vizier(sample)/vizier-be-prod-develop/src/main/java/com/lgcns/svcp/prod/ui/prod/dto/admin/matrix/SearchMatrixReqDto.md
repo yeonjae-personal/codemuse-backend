@@ -1,7 +1,7 @@
 # 📄 SearchMatrixReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/matrix/SearchMatrixReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class SearchMatrixReqDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a5d28bd6b222`
+- 🆔 **ID**: `ee59244c49cf`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 10
 - 🏷️ **태그**: `class, java`

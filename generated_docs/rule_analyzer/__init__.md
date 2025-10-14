@@ -1,7 +1,7 @@
 # 📄 __init__.py
 
 > **파일 경로**: `rule_analyzer/__init__.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개
 
 ---
@@ -21,7 +21,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `models` • `importlib` • `exceptions` • `analyzers` • `typing` • `parser` 외 1개 | ⚡ **총 복잡도**: 12 |
+| 📦 **의존성**: `analyzers` • `json_processor` • `typing` • `parser` • `importlib` • `models` 외 1개 | ⚡ **총 복잡도**: 12 |
 | 📊 **총 토큰 수**: 1,509 | 🔄 **비동기 함수**: 3개 |
 
 
@@ -99,7 +99,7 @@ def analyze_rule_json(json_input: Union[str, list, dict]) -> str:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `680e8230bc21`
+- 🆔 **ID**: `f7bfcf6da457`
 - 🏷️ **태그**: ``
 
 </details>
@@ -176,7 +176,7 @@ async def analyze_rule_json_async(json_input: Union[str, list, dict]) -> str:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `55e180499ebd`
+- 🆔 **ID**: `98b43d36be3a`
 - 🏷️ **태그**: `async`
 
 </details>
@@ -266,7 +266,7 @@ def analyze_rule(rule_data: Union[dict, list]) -> ValidationResult:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `419c059d4e16`
+- 🆔 **ID**: `3ad83a348219`
 - 🏷️ **태그**: ``
 
 </details>
@@ -356,7 +356,7 @@ async def analyze_rule_async(rule_data: Union[dict, list]) -> ValidationResult:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `cff22a6e5707`
+- 🆔 **ID**: `c851b18643dc`
 - 🏷️ **태그**: `async`
 
 </details>
@@ -452,7 +452,7 @@ def analyze_rules(rule_data: Union[dict, list]) -> List[ValidationResult]:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `61d1baa93cdc`
+- 🆔 **ID**: `a7a152f995fe`
 - 🏷️ **태그**: ``
 
 </details>
@@ -548,7 +548,7 @@ async def analyze_rules_async(rule_data: Union[dict, list]) -> List[ValidationRe
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `566bd36f8585`
+- 🆔 **ID**: `5a5b84e715c0`
 - 🏷️ **태그**: `async`
 
 </details>
@@ -579,28 +579,34 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant process_json_input as process_json_input
-  participant parse_multiple as parse_multiple
-  participant RuleAnalyzer as RuleAnalyzer
-  participant isinstance as isinstance
-  participant process_json_input_async as process_json_input_async
-  participant analyze_rule_json as analyze_rule_json
-  participant analyze_rules as analyze_rules
   participant parse as parse
-  participant analyze_rule as analyze_rule
-  participant RuleJsonProcessor as RuleJsonProcessor
-  participant append as append
+  participant analyze_rule_json_async as analyze_rule_json_async
+  participant isinstance as isinstance
   participant analyze_rule_sync as analyze_rule_sync
-  analyze_rule_json->>RuleJsonProcessor: call
-  analyze_rule_json->>process_json_input: call
+  participant analyze_rules_async as analyze_rules_async
+  participant json as json
+  participant analyze_rule as analyze_rule
+  participant RuleAnalyzer as RuleAnalyzer
+  participant analyze_rule_async as analyze_rule_async
+  participant append as append
+  participant parse_multiple as parse_multiple
+  participant RuleParser as RuleParser
+  analyze_rule_json_async->>json: call
+  analyze_rule->>RuleParser: call
   analyze_rule->>RuleAnalyzer: call
   analyze_rule->>isinstance: call
   analyze_rule->>analyze_rule_sync: call
   analyze_rule->>parse: call
-  analyze_rules->>RuleAnalyzer: call
-  analyze_rules->>isinstance: call
-  analyze_rules->>parse_multiple: call
-  analyze_rules->>analyze_rule_sync: call
+  analyze_rule_async->>RuleParser: call
+  analyze_rule_async->>RuleAnalyzer: call
+  analyze_rule_async->>isinstance: call
+  analyze_rule_async->>parse: call
+  analyze_rule_async->>analyze_rule: call
+  analyze_rules_async->>RuleParser: call
+  analyze_rules_async->>RuleAnalyzer: call
+  analyze_rules_async->>isinstance: call
+  analyze_rules_async->>parse_multiple: call
+  analyze_rules_async->>append: call
 ```
 
 

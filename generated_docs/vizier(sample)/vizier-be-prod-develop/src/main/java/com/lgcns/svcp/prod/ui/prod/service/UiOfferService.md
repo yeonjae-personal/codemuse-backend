@@ -1,7 +1,7 @@
 # 📄 UiOfferService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiOfferService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -66,7 +66,7 @@ public class UiOfferService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `291bfe269764`
+- 🆔 **ID**: `7876037f29f8`
 - 📍 **라인**: 73-73
 - 📊 **토큰**: 1181
 - 🏷️ **태그**: `class, java, autowired, transactional, spring-boot`

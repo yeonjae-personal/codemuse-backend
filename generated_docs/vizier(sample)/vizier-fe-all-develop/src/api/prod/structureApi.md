@@ -1,7 +1,7 @@
 # 📄 structureApi.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/api/prod/structureApi.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/interfaces/prod/offer` • `@/utils/http-common` • `@/api/prod/path` | ⚡ **총 복잡도**: 6 |
+| 📦 **의존성**: `@/api/prod/path` • `@/utils/http-common` • `@/interfaces/prod/offer` | ⚡ **총 복잡도**: 6 |
 | 📊 **총 토큰 수**: 98 |  |
 
 

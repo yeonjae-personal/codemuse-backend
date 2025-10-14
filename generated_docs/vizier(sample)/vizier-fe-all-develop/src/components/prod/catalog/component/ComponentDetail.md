@@ -1,7 +1,7 @@
 # 📄 ComponentDetail.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component/ComponentDetail.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 19개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `lodash-es/cloneDeep` • `@/constants/index` • `@/constants/userInfor` • `@/components/prod/shared/HistoryTab.vue` • `lodash-es` 외 12개 | ⚡ **총 복잡도**: 115 |
+| 📦 **의존성**: `vue-i18n` • `../../shared/ResourceTab.vue` • `vuetify/lib/components/index.mjs` • `@/constants/offer` • `@/components/prod/shared/HistoryTab.vue` • `@/constants/component` 외 12개 | ⚡ **총 복잡도**: 115 |
 | 📊 **총 토큰 수**: 2,355 |  |
 
 

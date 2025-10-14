@@ -1,7 +1,7 @@
 # 📄 RegisteredRuleInfo.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/rule/RegisteredRuleInfo.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -73,7 +73,7 @@ public class RegisteredRuleInfo {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `23d0a5b796d5`
+- 🆔 **ID**: `a47b49175039`
 - 📍 **라인**: 5-5
 - 📊 **토큰**: 68
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 RuleCategoryService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/service/RuleCategoryService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -64,7 +64,7 @@ public class RuleCategoryService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a81798d1121d`
+- 🆔 **ID**: `6ed3cb1f6d0a`
 - 📍 **라인**: 22-22
 - 📊 **토큰**: 488
 - 🏷️ **태그**: `class, java, autowired, param, spring-boot`

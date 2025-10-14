@@ -1,7 +1,7 @@
 # 📄 DiscountGeneralDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list/dto/DiscountGeneralDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class DiscountGeneralDto extends OfferGeneralDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bf31ab0fe8d7`
+- 🆔 **ID**: `874a3c07368d`
 - 📍 **라인**: 14-14
 - 📊 **토큰**: 25
 - 🏷️ **태그**: `class, java`

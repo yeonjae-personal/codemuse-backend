@@ -1,7 +1,7 @@
 # 📄 OfferController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/OfferController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class OfferController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1a8c03aa3231`
+- 🆔 **ID**: `c507a571b605`
 - 📍 **라인**: 30-30
 - 📊 **토큰**: 335
 - 🏷️ **태그**: `class, java, autowired, getmapping, pathvariable...`

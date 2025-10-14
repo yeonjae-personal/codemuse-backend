@@ -1,7 +1,7 @@
 # 📄 mockServiceWorker.js
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/public/mockServiceWorker.js`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Javascript
 ---
@@ -74,7 +74,7 @@ async function handleRequest(event, requestId) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `e79a7184f6db`
+- 🆔 **ID**: `02d1d2cab042`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -131,7 +131,7 @@ async function resolveMainClient(event) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `3292f9165607`
+- 🆔 **ID**: `71e0c5a73a90`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -180,7 +180,7 @@ async function getResponse(event, client, requestId) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `fa6d74b48856`
+- 🆔 **ID**: `75c9486b0d00`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -231,7 +231,7 @@ async function getResponse(event, client, requestId) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `ad5e48624eb3`
+- 🆔 **ID**: `3ef225620482`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -280,7 +280,7 @@ function sendToClient(client, message, transferrables = []) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `535595135eba`
+- 🆔 **ID**: `80cb85630468`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -329,7 +329,7 @@ function respondWithMock(response) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `5cc06327d102`
+- 🆔 **ID**: `c2c8fbd9bea9`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -377,7 +377,7 @@ async function serializeRequest(request) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `44aed24801d4`
+- 🆔 **ID**: `b0474d3ca502`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

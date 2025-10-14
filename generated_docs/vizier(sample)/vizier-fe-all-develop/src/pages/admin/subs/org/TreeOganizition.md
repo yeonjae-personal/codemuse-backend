@@ -1,7 +1,7 @@
 # 📄 TreeOganizition.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/org/TreeOganizition.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./OrgUtils.ts` • `@/store/cmcd.store` • `@/constants/admin/admin` • `@/enums` • `./OrgInfoPopup.vue` • `@/components/prod/icons/ExpandIcon.vue` 외 5개 | ⚡ **총 복잡도**: 74 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `./OrgUtils.ts` • `@/store/cmcd.store` • `@/constants/admin/admin` • `@/enums` 외 5개 | ⚡ **총 복잡도**: 74 |
 | 📊 **총 토큰 수**: 1,268 |  |
 
 

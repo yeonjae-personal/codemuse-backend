@@ -1,7 +1,7 @@
 # 📄 MenuForm.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/menu/MenuForm.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/impactAnalysis` • `@/store` • `vue-i18n` • `@/components/prod/common/SearchAndRefreshButton.vue` | ⚡ **총 복잡도**: 37 |
+| 📦 **의존성**: `@/store` • `@/components/prod/common/SearchAndRefreshButton.vue` • `vue-i18n` • `@/constants/impactAnalysis` | ⚡ **총 복잡도**: 37 |
 | 📊 **총 토큰 수**: 315 |  |
 
 

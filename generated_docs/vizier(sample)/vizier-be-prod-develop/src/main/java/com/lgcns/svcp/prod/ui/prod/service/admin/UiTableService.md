@@ -1,7 +1,7 @@
 # 📄 UiTableService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/admin/UiTableService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class UiTableService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d5c4ae6ef39e`
+- 🆔 **ID**: `4de39b0236fa`
 - 📍 **라인**: 47-47
 - 📊 **토큰**: 1149
 - 🏷️ **태그**: `class, java`

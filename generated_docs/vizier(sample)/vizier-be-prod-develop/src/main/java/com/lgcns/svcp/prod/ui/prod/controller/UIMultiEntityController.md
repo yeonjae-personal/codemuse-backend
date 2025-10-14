@@ -1,7 +1,7 @@
 # 📄 UIMultiEntityController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UIMultiEntityController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -28,10 +28,10 @@
 ## 💼 비즈니스 로직
 
 ### `UIMultiEntityController`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: UIMultiEntityController API 엔드포인트 제공
 - **복잡도**: 60
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/*
 - **라인**: 33
 
 
@@ -91,7 +91,7 @@ public class UIMultiEntityController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `556c141b1523`
+- 🆔 **ID**: `affe5fb48dec`
 - 📍 **라인**: 33-33
 - 📊 **토큰**: 256
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

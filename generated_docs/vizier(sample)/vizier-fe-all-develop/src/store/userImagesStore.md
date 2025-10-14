@@ -1,7 +1,7 @@
 # 📄 userImagesStore.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/userImagesStore.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Typescript
 ---
@@ -59,7 +59,7 @@
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `db1be2c0779a`
+- 🆔 **ID**: `78bee6bc36b0`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -97,7 +97,7 @@
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `eab63d7e2487`
+- 🆔 **ID**: `d34f3f1b323a`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

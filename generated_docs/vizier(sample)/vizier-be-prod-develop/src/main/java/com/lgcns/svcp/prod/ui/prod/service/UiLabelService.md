@@ -1,7 +1,7 @@
 # 📄 UiLabelService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiLabelService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public interface UiLabelService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `403e1d98607e`
+- 🆔 **ID**: `0df1f0ad1f85`
 - 📊 **토큰**: 33
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 AddOfferPane.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/search/AddOfferPane.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/composables/useRedirect` • `@/enums` • `@/components/prod/icons/OpenInNewIcon.vue` • `vue-i18n` • `@/interfaces/prod` 외 1개 | ⚡ **총 복잡도**: 16 |
+| 📦 **의존성**: `vue-i18n` • `@/composables/useDragUserPocket` • `@/enums` • `@/composables/useRedirect` • `@/interfaces/prod` • `@/components/prod/icons/OpenInNewIcon.vue` 외 1개 | ⚡ **총 복잡도**: 16 |
 | 📊 **총 토큰 수**: 344 |  |
 
 

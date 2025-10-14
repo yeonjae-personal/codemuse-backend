@@ -1,7 +1,7 @@
 # 📄 AppConfig.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/config/AppConfig.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class AppConfig {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f257c53cc145`
+- 🆔 **ID**: `3f6b8b985cc1`
 - 📍 **라인**: 16-16
 - 📊 **토큰**: 83
 - 🏷️ **태그**: `class, java, bean, spring-boot`

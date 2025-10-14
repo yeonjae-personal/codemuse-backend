@@ -1,7 +1,7 @@
 # 📄 MultiEntityAddResource.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/mutil-entity/search/MultiEntityAddResource.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/composables/useDragUserPocket` • `@/composables/useRedirect` • `@/constants/multiEntity` • `@/enums` • `@/components/prod/icons/OpenInNewIcon.vue` 외 6개 | ⚡ **총 복잡도**: 21 |
+| 📦 **의존성**: `vue-i18n` • `@/composables/useDragUserPocket` • `@/components/prod/shared/SearchPane.vue` • `@/composables/useRedirect` • `@/enums` • `@/api/prod/commonApi` 외 6개 | ⚡ **총 복잡도**: 21 |
 | 📊 **총 토큰 수**: 490 |  |
 
 

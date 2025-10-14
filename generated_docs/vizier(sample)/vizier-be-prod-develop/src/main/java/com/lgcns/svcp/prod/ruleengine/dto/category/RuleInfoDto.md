@@ -1,7 +1,7 @@
 # 📄 RuleInfoDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/category/RuleInfoDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class RuleInfoDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `46ed5f3f3826`
+- 🆔 **ID**: `dd8e258564fa`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 73
 - 🏷️ **태그**: `class, java`

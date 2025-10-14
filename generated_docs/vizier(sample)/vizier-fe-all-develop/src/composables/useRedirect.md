@@ -1,7 +1,7 @@
 # 📄 useRedirect.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/composables/useRedirect.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `lodash-es/cloneDeep` • `@/interfaces/admin/attribute-management` • `@/interfaces/prod/menu` • `@/store/admin/matrixStructure.store` • `@/store/admin/tableStructure.store` 외 12개 | ⚡ **총 복잡도**: 29 |
+| 📦 **의존성**: `@/enums/redirect` • `@/store/admin/matrixStructure.store` • `@/constants/offer` • `@/interfaces/admin/attribute-management` • `@/interfaces/admin/label-management` • `@/interfaces/prod/menu` 외 12개 | ⚡ **총 복잡도**: 29 |
 | 📊 **총 토큰 수**: 2,036 |  |
 
 

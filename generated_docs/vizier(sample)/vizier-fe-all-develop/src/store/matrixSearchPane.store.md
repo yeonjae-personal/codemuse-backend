@@ -1,7 +1,7 @@
 # 📄 matrixSearchPane.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/matrixSearchPane.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---

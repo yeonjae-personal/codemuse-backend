@@ -1,7 +1,7 @@
 # 📄 CreateSeachOrderModal.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs/CreateSeachOrderModal.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `axios` • `@/store` • `@/utils/common-util` | ⚡ **총 복잡도**: 74 |
+| 📦 **의존성**: `@/store` • `axios` • `@/utils/common-util` | ⚡ **총 복잡도**: 74 |
 | 📊 **총 토큰 수**: 759 |  |
 
 

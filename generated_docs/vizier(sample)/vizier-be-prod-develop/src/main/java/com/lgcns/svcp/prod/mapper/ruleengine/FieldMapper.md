@@ -1,7 +1,7 @@
 # 📄 FieldMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/ruleengine/FieldMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -46,7 +46,7 @@ public interface FieldMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `79221ff5e028`
+- 🆔 **ID**: `1383699656bd`
 - 📊 **토큰**: 14
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 TableTypeDetails.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/table-structure/TableTypeDetails.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 12개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/store/admin/tableStructure.store` • `@/enums` • `@/store` • `@/components/admin/table-structure/tab/TableGeneralTab.vue` • `vue-i18n` 외 2개 | ⚡ **총 복잡도**: 69 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `vuetify/lib/components/index.mjs` • `@/components/admin/table-structure/tab/TableTab.vue` • `@/enums` • `@/store/admin/tableStructure.store` 외 2개 | ⚡ **총 복잡도**: 69 |
 | 📊 **총 토큰 수**: 780 |  |
 
 

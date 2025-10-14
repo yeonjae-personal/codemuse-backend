@@ -1,7 +1,7 @@
 # 📄 ItemReportData.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/bulkupload/ItemReportData.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class ItemReportData {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0e8aad2dae87`
+- 🆔 **ID**: `599e31d838f1`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 26
 - 🏷️ **태그**: `class, java`

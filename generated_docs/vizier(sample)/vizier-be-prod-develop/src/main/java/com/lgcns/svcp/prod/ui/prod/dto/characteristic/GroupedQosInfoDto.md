@@ -1,7 +1,7 @@
 # 📄 GroupedQosInfoDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/characteristic/GroupedQosInfoDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -70,7 +70,7 @@ public class GroupedQosInfoDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5064e5ccca6e`
+- 🆔 **ID**: `91ca96924ada`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 103
 - 🏷️ **태그**: `class, java`

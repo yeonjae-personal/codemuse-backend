@@ -1,7 +1,7 @@
 # 📄 DsbdRecentlyWorkEntity.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/DsbdRecentlyWorkEntity.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class DsbdRecentlyWorkEntity extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1e6d4f8b7029`
+- 🆔 **ID**: `5d13db0f8692`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class, java`

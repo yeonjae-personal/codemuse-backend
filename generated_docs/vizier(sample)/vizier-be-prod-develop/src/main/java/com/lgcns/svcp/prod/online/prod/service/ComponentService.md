@@ -1,7 +1,7 @@
 # 📄 ComponentService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service/ComponentService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentService`
-- **도메인**: user
+- **도메인**: product_online
 - **목적**: ComponentService 비즈니스 로직 처리
 - **복잡도**: 313
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service/*
 - **라인**: 35
 
 
@@ -78,7 +78,7 @@ public class ComponentService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a6a4396173b4`
+- 🆔 **ID**: `bac574c2fabf`
 - 📍 **라인**: 35-35
 - 📊 **토큰**: 1000
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

@@ -1,7 +1,7 @@
 # 📄 App.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/App.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./api/prod/bulkUploadApi` • `./types/common` • `./utils/date-time-format` • `./utils/fetch-i18n` • `lodash-es/capitalize` • `./types/bulk-upload` 외 4개 | 📊 **총 토큰 수**: 421 |
+| 📦 **의존성**: `vue-i18n` • `./types/bulk-upload` • `./composables/useApp` • `lodash-es/capitalize` • `./utils/date-time-format` • `./utils/fetch-i18n` 외 4개 | 📊 **총 토큰 수**: 421 |
 
 
 

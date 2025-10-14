@@ -1,7 +1,7 @@
 # 📄 AuthService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/auth/service/AuthService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -52,7 +52,7 @@ public class AuthService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2be647cb2e1b`
+- 🆔 **ID**: `f38356f188e9`
 - 📍 **라인**: 7-7
 - 📊 **토큰**: 20
 - 🏷️ **태그**: `class, java`

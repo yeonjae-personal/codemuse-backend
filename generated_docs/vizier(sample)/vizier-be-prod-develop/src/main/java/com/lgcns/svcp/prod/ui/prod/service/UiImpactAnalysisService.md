@@ -1,7 +1,7 @@
 # 📄 UiImpactAnalysisService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiImpactAnalysisService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class UiImpactAnalysisService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2fc58e789b58`
+- 🆔 **ID**: `920dc09fcb69`
 - 📍 **라인**: 29-29
 - 📊 **토큰**: 185
 - 🏷️ **태그**: `class, java`

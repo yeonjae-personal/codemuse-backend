@@ -1,7 +1,7 @@
 # 📄 MultiEntityTab.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/MultiEntityTab.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 15개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/composables/useRedirect` • `@/constants/index` • `@/components/prod/icons/CheckVerified.vue` • `@/store` • `@/components/prod/icons/HourglassIcon.vue` 외 10개 | ⚡ **총 복잡도**: 169 |
+| 📦 **의존성**: `@/api/prod/extendsApi` • `vue-i18n` • `@/store` • `@/components/prod/icons/TrashIcon.vue` • `@/components/prod/icons/HourglassIcon.vue` • `@/constants/index` 외 10개 | ⚡ **총 복잡도**: 169 |
 | 📊 **총 토큰 수**: 1,655 |  |
 
 

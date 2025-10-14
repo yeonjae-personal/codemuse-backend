@@ -1,7 +1,7 @@
 # 📄 LItemCode.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/item/LItemCode.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -41,7 +41,7 @@ public enum LItemCode {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a371d4a6c616`
+- 🆔 **ID**: `335165f415e7`
 - 📍 **라인**: 3-3
 
 </details>

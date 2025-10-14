@@ -1,7 +1,7 @@
 # 📄 UiLabelServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/impl/UiLabelServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -60,7 +60,7 @@ public class UiLabelServiceImpl implements UiLabelService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1177b0fa5d4f`
+- 🆔 **ID**: `9a0925add439`
 - 📍 **라인**: 43-43
 - 📊 **토큰**: 1039
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

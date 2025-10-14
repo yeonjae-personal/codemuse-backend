@@ -1,7 +1,7 @@
 # 📄 UIGroupService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UIGroupService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class UIGroupService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d435ada07c83`
+- 🆔 **ID**: `0c9fc0a3ac27`
 - 📍 **라인**: 56-56
 - 📊 **토큰**: 660
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

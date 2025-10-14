@@ -1,7 +1,7 @@
 # 📄 SearchTableDataReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/table/SearchTableDataReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class SearchTableDataReqDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a0677d97a73e`
+- 🆔 **ID**: `58dc94e3acd9`
 - 📍 **라인**: 14-14
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

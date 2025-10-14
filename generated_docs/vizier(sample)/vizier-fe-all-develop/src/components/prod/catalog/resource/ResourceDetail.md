@@ -1,7 +1,7 @@
 # 📄 ResourceDetail.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/resource/ResourceDetail.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/components/prod/icons/WarningIcon.vue` • `@/components/prod/shared/HistoryTab.vue` • `moment-timezone` • `@/components/prod/shared/AdditionalTab.vue` • `lodash-es/cloneDeep` 외 13개 | ⚡ **총 복잡도**: 90 |
+| 📦 **의존성**: `vuetify/lib/components/index.mjs` • `@/components/prod/shared/HistoryTab.vue` • `@/constants/userInfor` • `moment-timezone` • `@/components/prod/shared/GeneralTab.vue` • `@/enums/columnTypes` 외 13개 | ⚡ **총 복잡도**: 90 |
 | 📊 **총 토큰 수**: 1,769 |  |
 
 

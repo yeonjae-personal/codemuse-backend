@@ -1,7 +1,7 @@
 # 📄 SearchMatrixResDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/matrix/SearchMatrixResDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class SearchMatrixResDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `96d5a8d1b079`
+- 🆔 **ID**: `d336add9dbe0`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 39
 - 🏷️ **태그**: `class, java`

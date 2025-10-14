@@ -1,7 +1,7 @@
 # 📄 CtgrTabEntity.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/CtgrTabEntity.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class CtgrTabEntity extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8f8252a7c85e`
+- 🆔 **ID**: `a3ec6c55d889`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java`

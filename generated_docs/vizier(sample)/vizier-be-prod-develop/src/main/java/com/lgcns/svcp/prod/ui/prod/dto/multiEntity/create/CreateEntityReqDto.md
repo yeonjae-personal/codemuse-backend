@@ -1,7 +1,7 @@
 # 📄 CreateEntityReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/create/CreateEntityReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -19,10 +19,10 @@
 ## 💼 비즈니스 로직
 
 ### `CreateEntityReqDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: CreateEntityReqDto 데이터 모델 정의
 - **복잡도**: 19
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/create/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/create/*
 - **라인**: 11
 
 
@@ -90,7 +90,7 @@ public class CreateEntityReqDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `46ca31e0e05a`
+- 🆔 **ID**: `a923fcc7be0c`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 58
 - 🏷️ **태그**: `class, java`

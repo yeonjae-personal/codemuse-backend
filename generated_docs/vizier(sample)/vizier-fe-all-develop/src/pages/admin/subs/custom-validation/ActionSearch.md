@@ -1,7 +1,7 @@
 # 📄 ActionSearch.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/ActionSearch.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store` • `@/enums/customValidation` • `lodash-es/get` • `@/api/prod/path` • `vue-i18n` • `@/store/admin/customValidation.store` 외 3개 | ⚡ **총 복잡도**: 49 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/http-common` • `@/components/prod/common/BaseSelectScroll.vue` • `@/enums/customValidation` • `@/store/admin/customValidation.store` 외 3개 | ⚡ **총 복잡도**: 49 |
 | 📊 **총 토큰 수**: 767 |  |
 
 

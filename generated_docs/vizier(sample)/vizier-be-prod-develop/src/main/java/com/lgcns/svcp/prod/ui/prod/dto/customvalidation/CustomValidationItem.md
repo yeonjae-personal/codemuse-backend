@@ -1,7 +1,7 @@
 # 📄 CustomValidationItem.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/CustomValidationItem.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class CustomValidationItem {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c711311fe2e4`
+- 🆔 **ID**: `d14c87995462`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

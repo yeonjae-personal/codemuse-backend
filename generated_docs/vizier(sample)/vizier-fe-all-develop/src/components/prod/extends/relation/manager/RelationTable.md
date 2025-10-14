@@ -1,7 +1,7 @@
 # 📄 RelationTable.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/relation/manager/RelationTable.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/store` • `@/types/common` • `@/utils/format-data` • `vue-i18n` | 📊 **총 토큰 수**: 656 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/constants/index` • `@/utils/format-data` • `@/types/common` | 📊 **총 토큰 수**: 656 |
 
 
 

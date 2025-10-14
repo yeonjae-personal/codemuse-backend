@@ -1,7 +1,7 @@
 # 📄 CharacteristicService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service/CharacteristicService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -64,7 +64,7 @@ public class CharacteristicService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fc0d107bcdb8`
+- 🆔 **ID**: `d28efe527873`
 - 📍 **라인**: 25-25
 - 📊 **토큰**: 295
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

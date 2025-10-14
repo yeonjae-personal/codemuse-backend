@@ -1,7 +1,7 @@
 # 📄 MetadataServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/impl/MetadataServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class MetadataServiceImpl implements MetadataService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f37e05a5a8db`
+- 🆔 **ID**: `35e2ffe2735b`
 - 📍 **라인**: 19-19
 - 📊 **토큰**: 47
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 MfMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/price/MfMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -73,7 +73,7 @@ public class MfMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `91895a631122`
+- 🆔 **ID**: `aa345f0b7584`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 125
 - 🏷️ **태그**: `class, java`

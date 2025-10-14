@@ -1,7 +1,7 @@
 # 📄 AvatarPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/controls/AvatarPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/examples/CfAvatarExample` • `@/components/Description/index.vue` • `@/components/controls/CfAvatar.vue` • `vue-prism-component` | 📊 **총 토큰 수**: 84 |
+| 📦 **의존성**: `@/components/controls/examples/CfAvatarExample` • `@/components/controls/CfAvatar.vue` • `@/components/Description/index.vue` • `vue-prism-component` | 📊 **총 토큰 수**: 84 |
 
 
 

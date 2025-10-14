@@ -1,7 +1,7 @@
 # 📄 EntityScope.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/entity/EntityScope.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -38,7 +38,7 @@ public enum EntityScope {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `12fd5daa7124`
+- 🆔 **ID**: `95f2608cd6ca`
 - 📍 **라인**: 3-3
 
 </details>

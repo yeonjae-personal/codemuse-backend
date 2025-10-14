@@ -1,7 +1,7 @@
 # 📄 ApiLoggingInterceptor.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/interceptor/ApiLoggingInterceptor.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -66,7 +66,7 @@ public class ApiLoggingInterceptor implements HandlerInterceptor {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `86a0162bf49c`
+- 🆔 **ID**: `9233b43f375c`
 - 📍 **라인**: 24-24
 - 📊 **토큰**: 186
 - 🏷️ **태그**: `class, java, autowired, value, spring-boot`

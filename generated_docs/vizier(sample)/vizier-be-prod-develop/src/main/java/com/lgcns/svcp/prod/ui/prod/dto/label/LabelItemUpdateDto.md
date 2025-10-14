@@ -1,7 +1,7 @@
 # 📄 LabelItemUpdateDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/label/LabelItemUpdateDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -56,7 +56,7 @@ public class LabelItemUpdateDto extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bf461decd93f`
+- 🆔 **ID**: `1e7a52ec8259`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 25
 - 🏷️ **태그**: `class, java`

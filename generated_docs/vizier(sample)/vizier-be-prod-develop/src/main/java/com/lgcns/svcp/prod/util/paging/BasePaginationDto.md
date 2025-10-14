@@ -1,7 +1,7 @@
 # 📄 BasePaginationDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/paging/BasePaginationDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -92,7 +92,7 @@ public class BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f3ddc9907165`
+- 🆔 **ID**: `a2291649f217`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 215
 - 🏷️ **태그**: `class, java`

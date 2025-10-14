@@ -1,7 +1,7 @@
 # 📄 __init__.py
 
 > **파일 경로**: `rule_analyzer/formatters/__init__.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개
 
 ---
@@ -94,7 +94,7 @@ def format_analysis_result(validation_result, options: FormattingOptions = None)
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `e6db282afe8f`
+- 🆔 **ID**: `b93c9e89feb3`
 - 🏷️ **태그**: ``
 
 </details>
@@ -152,7 +152,7 @@ def get_formatting_options() -> dict:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `d1a607d30908`
+- 🆔 **ID**: `83b9ac889465`
 - 🏷️ **태그**: `getter`
 
 </details>
@@ -220,7 +220,7 @@ def validate_formatting_options(options: dict) -> tuple[bool, list[str]]:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `3901fedf1721`
+- 🆔 **ID**: `96e51b92c99c`
 - 🏷️ **태그**: `validation`
 
 </details>
@@ -250,15 +250,15 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
+  participant get_formatting_options as get_formatting_options
+  participant TextFormatter as TextFormatter
   participant FormattingOptions as FormattingOptions
   participant FormattingOptionValidato as FormattingOptionValidator
-  participant validate_formatting_opti as validate_formatting_options
-  participant format_analysis_result as format_analysis_result
-  participant validate as validate
-  participant TextFormatter as TextFormatter
   participant format as format
   participant get_available_options as get_available_options
-  participant get_formatting_options as get_formatting_options
+  participant validate as validate
+  participant validate_formatting_opti as validate_formatting_options
+  participant format_analysis_result as format_analysis_result
   format_analysis_result->>TextFormatter: call
   format_analysis_result->>format: call
   format_analysis_result->>FormattingOptions: call

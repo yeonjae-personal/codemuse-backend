@@ -1,7 +1,7 @@
 # 📄 treeViewHandlers.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/category/treeViewHandlers.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./tree-view` • `@/constants` • `msw` | 📊 **총 토큰 수**: 251 |
+| 📦 **의존성**: `@/constants` • `msw` • `./tree-view` | 📊 **총 토큰 수**: 251 |
 
 
 

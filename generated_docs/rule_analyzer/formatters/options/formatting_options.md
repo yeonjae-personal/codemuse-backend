@@ -1,7 +1,7 @@
 # 📄 formatting_options.py
 
 > **파일 경로**: `rule_analyzer/formatters/options/formatting_options.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개
 
 ---
@@ -54,7 +54,7 @@ class Language(str, Enum):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8ac027b9c10b`
+- 🆔 **ID**: `aae84b951166`
 - 📍 **라인**: 13-23
 - 📊 **토큰**: 85
 - 🏷️ **태그**: `class, enum`
@@ -91,7 +91,7 @@ class FormattingOptions(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `417918793904`
+- 🆔 **ID**: `37505ffaa9d8`
 - 📍 **라인**: 21-31
 - 📊 **토큰**: 61
 - 🏷️ **태그**: `class, enum`
@@ -205,7 +205,7 @@ class FormattingOptions(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f202522f315f`
+- 🆔 **ID**: `c2f60cbf7bc9`
 - 📍 **라인**: 28-38
 - 📊 **토큰**: 444
 - 🏷️ **태그**: `class, pydantic`
@@ -238,12 +238,12 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant should_include_field as should_include_field
   participant get_template_key as get_template_key
+  participant should_include_field as should_include_field
+  participant get as get
   participant is_simple_level as is_simple_level
-  participant get_available_options as get_available_options
   participant is_detailed_level as is_detailed_level
+  participant get_available_options as get_available_options
   should_include_field->>get: call
 ```
 

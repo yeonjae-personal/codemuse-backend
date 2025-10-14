@@ -1,7 +1,7 @@
 # 📄 COMMV001M.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/vocap/COMMV001M.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-community/styles/ag-grid.css` • `@/pages/vocap/type` • `@/pages/vocap/subs/VocapTable.vue` • `@/utils/http-common` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/pages/vocap/subs/SearchPanel.vue` | ⚡ **총 복잡도**: 17 |
+| 📦 **의존성**: `@/pages/vocap/subs/SearchPanel.vue` • `@/utils/http-common` • `ag-grid-community/styles/ag-theme-alpine.css` • `ag-grid-community/styles/ag-grid.css` • `@/pages/vocap/type` • `@/pages/vocap/subs/VocapTable.vue` | ⚡ **총 복잡도**: 17 |
 | 📊 **총 토큰 수**: 201 |  |
 
 

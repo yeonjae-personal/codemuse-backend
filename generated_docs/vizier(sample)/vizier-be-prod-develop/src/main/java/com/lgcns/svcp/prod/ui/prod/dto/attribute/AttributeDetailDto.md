@@ -1,7 +1,7 @@
 # 📄 AttributeDetailDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/attribute/AttributeDetailDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class AttributeDetailDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5d43f8c4500a`
+- 🆔 **ID**: `b1b7db18b7de`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java, valid, spring-boot`

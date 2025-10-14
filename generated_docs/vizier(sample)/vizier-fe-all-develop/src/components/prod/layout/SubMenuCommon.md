@@ -1,7 +1,7 @@
 # 📄 SubMenuCommon.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/SubMenuCommon.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -19,7 +19,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/config-path` • `@/store` • `vue-router` • `lodash-es/clone` | ⚡ **총 복잡도**: 29 |
+| 📦 **의존성**: `@/store` • `lodash-es/clone` • `@/utils/config-path` • `vue-router` | ⚡ **총 복잡도**: 29 |
 | 📊 **총 토큰 수**: 565 |  |
 
 
@@ -71,7 +71,7 @@ function handleClick(item: any, parent?: any) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `eae3c0f58507`
+- 🆔 **ID**: `1d5cd02b502c`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

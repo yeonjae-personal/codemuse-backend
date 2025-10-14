@@ -1,7 +1,7 @@
 # 📄 FuncMgmtPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/FuncMgmtPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 23개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `axios` • `@/store` • `./popup/CreateFuncPrmtModal.vue` • `@/utils/common-ordr` 외 4개 | ⚡ **총 복잡도**: 509 |
+| 📦 **의존성**: `@/store` • `@/utils/common-ordr` • `ag-grid-vue3` • `@/utils/common-util` • `./popup/CreateFuncModal.vue` • `ag-grid-community/styles/ag-theme-alpine.css` 외 4개 | ⚡ **총 복잡도**: 509 |
 | 📊 **총 토큰 수**: 3,675 |  |
 
 

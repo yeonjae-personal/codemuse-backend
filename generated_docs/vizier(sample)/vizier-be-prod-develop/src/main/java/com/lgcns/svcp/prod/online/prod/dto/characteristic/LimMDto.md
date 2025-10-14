@@ -1,7 +1,7 @@
 # 📄 LimMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/characteristic/LimMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class LimMDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bb26c710366b`
+- 🆔 **ID**: `e0fec00098a1`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 34
 - 🏷️ **태그**: `class, java`

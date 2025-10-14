@@ -1,7 +1,7 @@
 # 📄 FactorSearch.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/FactorSearch.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/admin/factor.store` • `@/store/admin/matrixStructure.store` • `@/enums` • `@/store` • `vue-i18n` • `@/components/prod/shared/SearchPane.vue` | ⚡ **총 복잡도**: 54 |
+| 📦 **의존성**: `@/store` • `@/store/admin/factor.store` • `@/store/admin/matrixStructure.store` • `vue-i18n` • `@/components/prod/shared/SearchPane.vue` • `@/enums` | ⚡ **총 복잡도**: 54 |
 | 📊 **총 토큰 수**: 480 |  |
 
 

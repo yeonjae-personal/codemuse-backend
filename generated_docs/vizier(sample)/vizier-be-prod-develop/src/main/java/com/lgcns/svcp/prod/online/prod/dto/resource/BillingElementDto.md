@@ -1,7 +1,7 @@
 # 📄 BillingElementDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/resource/BillingElementDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class BillingElementDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `30cfe7662371`
+- 🆔 **ID**: `c9d6854b2435`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 53
 - 🏷️ **태그**: `class, java`

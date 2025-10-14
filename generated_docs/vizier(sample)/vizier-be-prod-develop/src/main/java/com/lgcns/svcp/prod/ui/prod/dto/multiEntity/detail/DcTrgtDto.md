@@ -1,7 +1,7 @@
 # 📄 DcTrgtDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail/DcTrgtDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `DcTrgtDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: DcTrgtDto 데이터 전송 객체
 - **복잡도**: 12
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail/*
 - **라인**: 10
 
 
@@ -71,7 +71,7 @@ public class DcTrgtDto extends MultiEntityDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `3846d3bee2c1`
+- 🆔 **ID**: `dc495a9ad414`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 37
 - 🏷️ **태그**: `class, java`

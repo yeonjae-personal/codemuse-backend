@@ -1,7 +1,7 @@
 # 📄 ListChanged.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/detail/ListChanged.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -48,7 +48,7 @@ public class ListChanged {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `dd0906d8e3ab`
+- 🆔 **ID**: `122af5d4f33a`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

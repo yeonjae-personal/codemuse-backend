@@ -1,7 +1,7 @@
 # 📄 GroupedSlinInfoMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/characteristic/GroupedSlinInfoMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -70,7 +70,7 @@ public class GroupedSlinInfoMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `55fd6bc138a4`
+- 🆔 **ID**: `48a54aa94d8c`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 80
 - 🏷️ **태그**: `class, java`

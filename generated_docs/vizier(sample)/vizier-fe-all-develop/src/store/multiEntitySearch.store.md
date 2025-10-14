@@ -1,7 +1,7 @@
 # 📄 multiEntitySearch.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/multiEntitySearch.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/resourceApi` • `lodash-es/cloneDeep` • `@/interfaces/prod/component` • `@/utils/format-data` • `@/constants/extendsManager` • `@/constants/offer` 외 2개 | ⚡ **총 복잡도**: 69 |
+| 📦 **의존성**: `@/constants/offer` • `@/api/prod/resourceApi` • `@/interfaces/prod/component` • `lodash-es/cloneDeep` • `@/enums/columnTypes` • `@/utils/format-data` 외 2개 | ⚡ **총 복잡도**: 69 |
 | 📊 **총 토큰 수**: 1,325 |  |
 
 

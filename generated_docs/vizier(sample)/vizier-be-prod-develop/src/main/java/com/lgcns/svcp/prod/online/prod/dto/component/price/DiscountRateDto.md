@@ -1,7 +1,7 @@
 # 📄 DiscountRateDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price/DiscountRateDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -14,7 +14,7 @@
 - **도메인**: price
 - **목적**: DiscountRateDto 데이터 전송 객체
 - **복잡도**: 14
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price/*
 - **라인**: 10
 
 
@@ -71,7 +71,7 @@ public class DiscountRateDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `cfeb989f0698`
+- 🆔 **ID**: `d6bd0c97229d`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class, java`

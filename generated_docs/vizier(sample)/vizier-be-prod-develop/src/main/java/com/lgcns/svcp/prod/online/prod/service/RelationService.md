@@ -1,7 +1,7 @@
 # 📄 RelationService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service/RelationService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -64,7 +64,7 @@ public class RelationService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8cc8c2160dea`
+- 🆔 **ID**: `2ca438c05103`
 - 📍 **라인**: 14-14
 - 📊 **토큰**: 93
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

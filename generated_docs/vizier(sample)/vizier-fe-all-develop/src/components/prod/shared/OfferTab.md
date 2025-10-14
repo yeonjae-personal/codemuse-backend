@@ -1,7 +1,7 @@
 # 📄 OfferTab.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/OfferTab.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 12개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/composables/useRedirect` • `@/components/prod/icons/CheckVerified.vue` • `@/components/prod/icons/HourglassIcon.vue` • `@/store` • `@/types/common` 외 9개 | ⚡ **총 복잡도**: 143 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/composables/useDragUserPocket` • `@/components/prod/icons/TrashIcon.vue` • `@/components/prod/icons/HourglassIcon.vue` • `@/components/prod/icons/CheckVerified.vue` 외 9개 | ⚡ **총 복잡도**: 143 |
 | 📊 **총 토큰 수**: 1,412 |  |
 
 

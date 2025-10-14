@@ -1,7 +1,7 @@
 # 📄 UIExtendsController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UIExtendsController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -66,7 +66,7 @@ public class UIExtendsController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f015d60a0161`
+- 🆔 **ID**: `8249b466e1ff`
 - 📍 **라인**: 33-33
 - 📊 **토큰**: 323
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

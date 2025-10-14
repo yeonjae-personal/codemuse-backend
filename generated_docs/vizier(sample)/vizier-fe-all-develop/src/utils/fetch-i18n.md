@@ -1,7 +1,7 @@
 # 📄 fetch-i18n.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/utils/fetch-i18n.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Typescript
 ---
@@ -18,7 +18,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/labelApi` • `@/i18n` | ⚡ **총 복잡도**: 42 |
+| 📦 **의존성**: `@/i18n` • `@/api/prod/labelApi` | ⚡ **총 복잡도**: 42 |
 | 📊 **총 토큰 수**: 503 |  |
 
 
@@ -71,7 +71,7 @@ export async function fetchAndSaveTranslations() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `fbe9de607e3a`
+- 🆔 **ID**: `893f3fc4865c`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -104,7 +104,7 @@ function applyTranslations(translations: MultiLanguageTranslations) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `06cfd3936170`
+- 🆔 **ID**: `bb99a8c5cbec`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -143,7 +143,7 @@ export function updateLabelI18n(data, labelId = "") {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `eec6373a2345`
+- 🆔 **ID**: `c5e40c032882`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

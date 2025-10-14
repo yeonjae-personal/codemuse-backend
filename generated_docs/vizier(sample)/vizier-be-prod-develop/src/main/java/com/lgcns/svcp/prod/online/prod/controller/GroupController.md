@@ -1,7 +1,7 @@
 # 📄 GroupController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/GroupController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class GroupController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `22f8f3603f31`
+- 🆔 **ID**: `bdc2ba4c3901`
 - 📍 **라인**: 27-27
 - 📊 **토큰**: 164
 - 🏷️ **태그**: `class, java, autowired, getmapping, pathvariable...`

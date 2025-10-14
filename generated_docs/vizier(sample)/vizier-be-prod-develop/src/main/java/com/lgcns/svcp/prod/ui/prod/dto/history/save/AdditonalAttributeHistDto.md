@@ -1,7 +1,7 @@
 # 📄 AdditonalAttributeHistDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/save/AdditonalAttributeHistDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class AdditonalAttributeHistDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `eefad54a3182`
+- 🆔 **ID**: `52ec2435fcb9`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 25
 - 🏷️ **태그**: `class, java`

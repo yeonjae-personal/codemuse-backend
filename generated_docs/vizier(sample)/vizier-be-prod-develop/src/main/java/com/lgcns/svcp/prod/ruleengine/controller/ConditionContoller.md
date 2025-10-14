@@ -1,7 +1,7 @@
 # 📄 ConditionContoller.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/controller/ConditionContoller.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -64,7 +64,7 @@ public class ConditionContoller {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b8a1906b64b4`
+- 🆔 **ID**: `7715cee96d88`
 - 📍 **라인**: 25-25
 - 📊 **토큰**: 37
 - 🏷️ **태그**: `class, java, autowired, getmapping, requestparam...`

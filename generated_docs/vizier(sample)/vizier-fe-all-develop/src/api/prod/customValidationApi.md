@@ -1,7 +1,7 @@
 # 📄 customValidationApi.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/api/prod/customValidationApi.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/http-common` • `@/api/prod/path` • `@/interfaces/prod/custom-validation` • `@/interfaces/prod/HistoryCustomValidation` | ⚡ **총 복잡도**: 9 |
+| 📦 **의존성**: `@/api/prod/path` • `@/interfaces/prod/HistoryCustomValidation` • `@/interfaces/prod/custom-validation` • `@/utils/http-common` | ⚡ **총 복잡도**: 9 |
 | 📊 **총 토큰 수**: 122 |  |
 
 

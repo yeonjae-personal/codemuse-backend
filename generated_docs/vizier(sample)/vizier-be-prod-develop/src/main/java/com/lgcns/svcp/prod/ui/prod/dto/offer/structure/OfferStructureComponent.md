@@ -1,7 +1,7 @@
 # 📄 OfferStructureComponent.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/OfferStructureComponent.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -14,7 +14,7 @@
 - **도메인**: offer
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 14
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/structure/*
 - **라인**: 8
 
 
@@ -70,7 +70,7 @@ public class OfferStructureComponent {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `41aa3c6ea58e`
+- 🆔 **ID**: `86fdc3987bda`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class, java`

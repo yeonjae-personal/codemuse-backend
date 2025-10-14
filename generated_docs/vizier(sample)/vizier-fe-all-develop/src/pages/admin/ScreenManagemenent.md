@@ -1,7 +1,7 @@
 # 📄 ScreenManagemenent.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/ScreenManagemenent.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/admin/subs/screen/ScreenTable.vue` • `@/pages/admin/subs/screen/UrlTable.vue` | ⚡ **총 복잡도**: 3 |
+| 📦 **의존성**: `@/pages/admin/subs/screen/UrlTable.vue` • `@/pages/admin/subs/screen/ScreenTable.vue` | ⚡ **총 복잡도**: 3 |
 | 📊 **총 토큰 수**: 152 |  |
 
 

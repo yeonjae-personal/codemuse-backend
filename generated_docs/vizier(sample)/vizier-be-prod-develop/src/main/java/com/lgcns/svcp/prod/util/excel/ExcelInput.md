@@ -1,7 +1,7 @@
 # 📄 ExcelInput.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/excel/ExcelInput.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -81,7 +81,7 @@ public class ExcelInput {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fba26e262a73`
+- 🆔 **ID**: `a969e921b26f`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 122
 - 🏷️ **태그**: `class, java`

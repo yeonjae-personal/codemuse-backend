@@ -1,7 +1,7 @@
 # 📄 TableHeader.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/bulk-upload/TableHeader.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/types/common` • `@/components/prod/icons/FalseIcon.vue` • `@/components/prod/icons/TrueIcon.vue` | 📊 **총 토큰 수**: 490 |
+| 📦 **의존성**: `@/components/prod/icons/TrueIcon.vue` • `@/types/common` • `@/components/prod/icons/FalseIcon.vue` | 📊 **총 토큰 수**: 490 |
 
 
 

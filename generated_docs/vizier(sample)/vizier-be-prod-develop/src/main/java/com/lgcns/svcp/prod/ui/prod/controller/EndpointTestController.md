@@ -1,7 +1,7 @@
 # 📄 EndpointTestController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/EndpointTestController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class EndpointTestController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `9e597975dac5`
+- 🆔 **ID**: `8b09ccfe03be`
 - 📍 **라인**: 16-16
 - 📊 **토큰**: 46
 - 🏷️ **태그**: `class, java, postmapping, requestbody, spring-boot`

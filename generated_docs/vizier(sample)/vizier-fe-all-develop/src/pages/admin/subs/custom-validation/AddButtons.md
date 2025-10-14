@@ -1,7 +1,7 @@
 # 📄 AddButtons.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/AddButtons.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/admin/customValidation.store` • `@/components/prod/icons/PlusSmallIcon.vue` | ⚡ **총 복잡도**: 6 |
+| 📦 **의존성**: `@/components/prod/icons/PlusSmallIcon.vue` • `@/store/admin/customValidation.store` | ⚡ **총 복잡도**: 6 |
 | 📊 **총 토큰 수**: 165 |  |
 
 

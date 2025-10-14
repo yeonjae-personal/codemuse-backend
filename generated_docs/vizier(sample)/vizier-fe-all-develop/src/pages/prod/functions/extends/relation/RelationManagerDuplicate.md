@@ -1,7 +1,7 @@
 # 📄 RelationManagerDuplicate.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/relation/RelationManagerDuplicate.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/enums` • `@/enums/redirect` • `@/components/prod/shared/GroupSearchPane.vue` • `@/components/prod/shared/OfferSearchPane.vue` | ⚡ **총 복잡도**: 24 |
+| 📦 **의존성**: `@/components/prod/shared/GroupSearchPane.vue` • `@/enums` • `@/components/prod/shared/OfferSearchPane.vue` • `@/api/prod/commonApi` • `@/enums/redirect` | ⚡ **총 복잡도**: 24 |
 | 📊 **총 토큰 수**: 355 |  |
 
 

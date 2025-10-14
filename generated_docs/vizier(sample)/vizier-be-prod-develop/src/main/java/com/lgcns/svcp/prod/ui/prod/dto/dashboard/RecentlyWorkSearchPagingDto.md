@@ -1,7 +1,7 @@
 # 📄 RecentlyWorkSearchPagingDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/RecentlyWorkSearchPagingDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class RecentlyWorkSearchPagingDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `77270230aa6b`
+- 🆔 **ID**: `8fbdcf1999fe`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 34
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 UiSubscriberTop10Service.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/UiSubscriberTop10Service.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -44,7 +44,7 @@ public interface UiSubscriberTop10Service {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `985c06fde989`
+- 🆔 **ID**: `b8d46b363452`
 - 📊 **토큰**: 23
 
 </details>

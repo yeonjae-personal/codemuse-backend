@@ -1,7 +1,7 @@
 # 📄 BusinessException.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/exception/BusinessException.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class BusinessException extends RuntimeException {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `70a571010178`
+- 🆔 **ID**: `2f8671f8c08e`
 - 📍 **라인**: 7-7
 - 📊 **토큰**: 13
 - 🏷️ **태그**: `class, java`

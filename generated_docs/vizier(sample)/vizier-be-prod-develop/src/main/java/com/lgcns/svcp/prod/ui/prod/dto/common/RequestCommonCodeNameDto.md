@@ -1,7 +1,7 @@
 # 📄 RequestCommonCodeNameDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/RequestCommonCodeNameDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class RequestCommonCodeNameDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `851a79f0fe66`
+- 🆔 **ID**: `41d4b1f46330`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

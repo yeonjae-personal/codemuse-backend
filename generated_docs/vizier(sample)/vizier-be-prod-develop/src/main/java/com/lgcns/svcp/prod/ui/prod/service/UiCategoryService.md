@@ -1,7 +1,7 @@
 # 📄 UiCategoryService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiCategoryService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public interface UiCategoryService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f6c9bf79ae73`
+- 🆔 **ID**: `8555363afda2`
 - 📊 **토큰**: 36
 
 </details>

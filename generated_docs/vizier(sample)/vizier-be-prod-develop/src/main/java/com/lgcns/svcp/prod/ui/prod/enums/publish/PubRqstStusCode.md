@@ -1,7 +1,7 @@
 # 📄 PubRqstStusCode.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/publish/PubRqstStusCode.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public enum PubRqstStusCode {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f34588e53006`
+- 🆔 **ID**: `eda85135da22`
 - 📍 **라인**: 3-3
 
 </details>

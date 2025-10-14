@@ -1,7 +1,7 @@
 # 📄 UiDashboardService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/UiDashboardService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public interface UiDashboardService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8a85e5a42e3f`
+- 🆔 **ID**: `195534ff5224`
 - 📊 **토큰**: 25
 
 </details>

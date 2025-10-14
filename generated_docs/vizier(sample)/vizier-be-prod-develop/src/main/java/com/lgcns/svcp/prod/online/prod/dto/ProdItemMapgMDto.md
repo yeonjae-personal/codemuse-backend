@@ -1,7 +1,7 @@
 # 📄 ProdItemMapgMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/ProdItemMapgMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -60,7 +60,7 @@ public class ProdItemMapgMDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `7a51f7503a9f`
+- 🆔 **ID**: `f224a9886a8b`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class, java`

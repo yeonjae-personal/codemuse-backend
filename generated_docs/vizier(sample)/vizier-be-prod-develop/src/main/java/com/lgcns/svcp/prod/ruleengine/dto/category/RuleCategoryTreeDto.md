@@ -1,7 +1,7 @@
 # 📄 RuleCategoryTreeDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/category/RuleCategoryTreeDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class RuleCategoryTreeDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c97eec2e4387`
+- 🆔 **ID**: `53ddaa0939a6`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 42
 - 🏷️ **태그**: `class, java`

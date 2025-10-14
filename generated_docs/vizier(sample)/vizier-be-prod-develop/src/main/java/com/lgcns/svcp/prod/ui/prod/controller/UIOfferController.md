@@ -1,7 +1,7 @@
 # 📄 UIOfferController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UIOfferController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class UIOfferController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b93a1165ca3a`
+- 🆔 **ID**: `4463b1356006`
 - 📍 **라인**: 38-38
 - 📊 **토큰**: 362
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

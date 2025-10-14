@@ -1,7 +1,7 @@
 # 📄 extend-utils.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/utils/extend-utils.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Typescript
 ---
@@ -83,7 +83,7 @@ export function DFSDetectCycle(edges) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `895a9c3e6845`
+- 🆔 **ID**: `1f81f584e5c3`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -124,7 +124,7 @@ export function DFSDetectCycle(edges) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `f7864e6bbc76`
+- 🆔 **ID**: `9d40e3e54d00`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -165,7 +165,7 @@ export function checkDuplicateEdges(edges) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `4ff3108287cd`
+- 🆔 **ID**: `ac470ecabe86`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -196,7 +196,7 @@ export function checkNumberIsInteger(number) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `90dba602a4fe`
+- 🆔 **ID**: `e20ef93d24a4`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 SearchPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/search/SearchPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/enums` • `@/store` • `vue-i18n` • `@/components/prod/extends/search/GroupAndOfferPane.vue` • `@/constants/extendsManager` | ⚡ **총 복잡도**: 17 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/extends/search/GroupAndOfferPane.vue` • `@/enums` • `@/api/prod/commonApi` • `@/constants/extendsManager` | ⚡ **총 복잡도**: 17 |
 | 📊 **총 토큰 수**: 246 |  |
 
 

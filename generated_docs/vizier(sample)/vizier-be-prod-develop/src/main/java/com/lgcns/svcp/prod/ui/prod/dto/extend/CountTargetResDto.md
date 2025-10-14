@@ -1,7 +1,7 @@
 # 📄 CountTargetResDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend/CountTargetResDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -48,7 +48,7 @@ public class CountTargetResDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `aeef52584055`
+- 🆔 **ID**: `6ee04a15369d`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

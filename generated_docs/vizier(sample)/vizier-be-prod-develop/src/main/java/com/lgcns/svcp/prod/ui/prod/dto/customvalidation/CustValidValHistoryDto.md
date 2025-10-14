@@ -1,7 +1,7 @@
 # 📄 CustValidValHistoryDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/CustValidValHistoryDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -58,7 +58,7 @@ public class CustValidValHistoryDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `75b614425870`
+- 🆔 **ID**: `c1e5376184a4`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 38
 - 🏷️ **태그**: `class, java`

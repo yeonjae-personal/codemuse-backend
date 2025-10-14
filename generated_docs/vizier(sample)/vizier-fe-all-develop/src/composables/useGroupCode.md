@@ -1,7 +1,7 @@
 # 📄 useGroupCode.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/composables/useGroupCode.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/component` • `@/utils/format-data` • `vue-i18n` • `@/utils/http-common` • `@/enums/columnTypes` | ⚡ **총 복잡도**: 27 |
+| 📦 **의존성**: `vue-i18n` • `@/utils/http-common` • `@/constants/component` • `@/enums/columnTypes` • `@/utils/format-data` | ⚡ **총 복잡도**: 27 |
 | 📊 **총 토큰 수**: 345 |  |
 
 

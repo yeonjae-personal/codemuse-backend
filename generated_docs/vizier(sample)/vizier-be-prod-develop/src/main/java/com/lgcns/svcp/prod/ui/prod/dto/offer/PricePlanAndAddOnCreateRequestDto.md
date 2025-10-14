@@ -1,7 +1,7 @@
 # 📄 PricePlanAndAddOnCreateRequestDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/PricePlanAndAddOnCreateRequestDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class PricePlanAndAddOnCreateRequestDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e50e1365cef0`
+- 🆔 **ID**: `81770b356978`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

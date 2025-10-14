@@ -1,7 +1,7 @@
 # 📄 RawServiceResMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/RawServiceResMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `RawServiceResMDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: RawServiceResMDto 비즈니스 로직 처리
 - **복잡도**: 18
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/*
 - **라인**: 6
 
 
@@ -74,7 +74,7 @@ public class RawServiceResMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c9b1a7218d7e`
+- 🆔 **ID**: `b21760eb30ac`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 53
 - 🏷️ **태그**: `class, java`

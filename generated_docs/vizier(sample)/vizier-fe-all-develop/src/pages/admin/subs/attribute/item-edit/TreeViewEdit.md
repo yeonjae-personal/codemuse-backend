@@ -1,7 +1,7 @@
 # 📄 TreeViewEdit.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit/TreeViewEdit.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/admin/attributeManagement.store` • `@/composables/useInputValidation` • `vue-i18n` • `@/components/prod/common/BaseInputText.vue` | 📊 **총 토큰 수**: 273 |
+| 📦 **의존성**: `@/components/prod/common/BaseInputText.vue` • `vue-i18n` • `@/store/admin/attributeManagement.store` • `@/composables/useInputValidation` | 📊 **총 토큰 수**: 273 |
 
 
 

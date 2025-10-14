@@ -1,7 +1,7 @@
 # 📄 COMMS001M.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/syssms/COMMS001M.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/syssms/subs/SysSmsTable.vue` • `./type` • `ag-grid-community/styles/ag-grid.css` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/pages/syssms/subs/SysSmsSearch.vue` • `@/utils/http-common` | ⚡ **총 복잡도**: 16 |
+| 📦 **의존성**: `@/utils/http-common` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/pages/syssms/subs/SysSmsTable.vue` • `./type` • `ag-grid-community/styles/ag-grid.css` • `@/pages/syssms/subs/SysSmsSearch.vue` | ⚡ **총 복잡도**: 16 |
 | 📊 **총 토큰 수**: 205 |  |
 
 

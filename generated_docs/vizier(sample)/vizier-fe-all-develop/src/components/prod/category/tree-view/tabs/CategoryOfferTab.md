@@ -1,7 +1,7 @@
 # 📄 CategoryOfferTab.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/tabs/CategoryOfferTab.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/constants/index` • `@/composables/useRedirect` • `@/store` • `@/utils/impact-analysis-utils` • `@/utils/format-data` 외 4개 | ⚡ **총 복잡도**: 60 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/composables/useDragUserPocket` • `@/store/userPocket.store` • `@/utils/impact-analysis-utils` • `@/composables/useRedirect` 외 4개 | ⚡ **총 복잡도**: 60 |
 | 📊 **총 토큰 수**: 528 |  |
 
 

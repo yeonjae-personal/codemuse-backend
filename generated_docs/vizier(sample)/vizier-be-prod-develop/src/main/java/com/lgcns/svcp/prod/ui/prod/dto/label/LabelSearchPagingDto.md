@@ -1,7 +1,7 @@
 # 📄 LabelSearchPagingDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/label/LabelSearchPagingDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class LabelSearchPagingDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8eee0b3c00e2`
+- 🆔 **ID**: `495e6efd384b`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 22
 - 🏷️ **태그**: `class, java`

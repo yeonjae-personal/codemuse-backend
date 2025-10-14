@@ -1,7 +1,7 @@
 # 📄 RuleInsertRequest.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/dto/rule/RuleInsertRequest.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class RuleInsertRequest {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e8bd6aad566d`
+- 🆔 **ID**: `dc1b96c0ad7f`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

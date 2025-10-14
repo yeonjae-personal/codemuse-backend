@@ -1,7 +1,7 @@
 # 📄 FactorGeneralTab.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/factor-types/FactorGeneralTab.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/store/admin/factor.store` • `@/components/prod/layout/DetailPaneRow.vue` • `@/components/prod/layout/DetailPane.vue` | ⚡ **총 복잡도**: 3 |
+| 📦 **의존성**: `@/store/admin/factor.store` • `@/components/prod/layout/DetailPane.vue` • `@/components/prod/layout/DetailPaneRow.vue` • `@/enums` | ⚡ **총 복잡도**: 3 |
 | 📊 **총 토큰 수**: 180 |  |
 
 

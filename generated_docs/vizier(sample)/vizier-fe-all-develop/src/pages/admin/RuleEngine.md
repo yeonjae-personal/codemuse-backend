@@ -1,7 +1,7 @@
 # 📄 RuleEngine.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/RuleEngine.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/admin/rule-engine/RuleDetail.vue` • `@/components/admin/rule-engine/RuleReport.vue` • `@/store/admin/ruleEngine.store` • `@/components/admin/rule-engine/TestInput.vue` • `@/components/admin/rule-engine/RuleSearch.vue` • `@/components/admin/rule-engine/FieldList.vue` 외 1개 | 📊 **총 토큰 수**: 132 |
+| 📦 **의존성**: `@/components/admin/rule-engine/TestInput.vue` • `@/components/admin/rule-engine/rule-structure/RuleStructure.vue` • `@/components/admin/rule-engine/FieldList.vue` • `@/components/admin/rule-engine/RuleDetail.vue` • `@/components/admin/rule-engine/RuleReport.vue` • `@/store/admin/ruleEngine.store` 외 1개 | 📊 **총 토큰 수**: 132 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 LabelExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/label/LabelExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -56,7 +56,7 @@ public class LabelExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `eb0b4dea1e10`
+- 🆔 **ID**: `f46055fe625c`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 20
 - 🏷️ **태그**: `class, java`

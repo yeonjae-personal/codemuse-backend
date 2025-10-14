@@ -1,7 +1,7 @@
 # 📄 UsageFeeAndResourceDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price/UsageFeeAndResourceDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -14,7 +14,7 @@
 - **도메인**: price
 - **목적**: UsageFeeAndResourceDto 데이터 전송 객체
 - **복잡도**: 4
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/price/*
 - **라인**: 9
 
 
@@ -60,7 +60,7 @@ public class UsageFeeAndResourceDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5137bfd77c69`
+- 🆔 **ID**: `e3099cabbe14`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 13
 - 🏷️ **태그**: `class, java`

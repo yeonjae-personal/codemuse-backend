@@ -1,7 +1,7 @@
 # 📄 TargetReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend/TargetReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class TargetReqDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c73d5fa37e23`
+- 🆔 **ID**: `b7e5da425e23`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

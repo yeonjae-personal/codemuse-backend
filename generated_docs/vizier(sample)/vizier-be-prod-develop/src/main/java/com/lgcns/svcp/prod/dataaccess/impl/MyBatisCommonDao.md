@@ -1,7 +1,7 @@
 # 📄 MyBatisCommonDao.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/dataaccess/impl/MyBatisCommonDao.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -79,7 +79,7 @@ public class MyBatisCommonDao extends SqlSessionDaoSupport implements CommonDao 
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `11cdd1d16f7a`
+- 🆔 **ID**: `25710d5db31b`
 - 📍 **라인**: 24-24
 - 📊 **토큰**: 353
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

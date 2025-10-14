@@ -1,7 +1,7 @@
 # 📄 AprvFlowTmptMSearchReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/aprv/AprvFlowTmptMSearchReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -52,7 +52,7 @@ public class AprvFlowTmptMSearchReqDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `cd6c08b3c282`
+- 🆔 **ID**: `62163423ec75`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 16
 - 🏷️ **태그**: `class, java`

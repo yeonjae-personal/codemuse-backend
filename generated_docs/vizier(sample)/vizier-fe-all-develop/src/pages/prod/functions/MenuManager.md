@@ -1,7 +1,7 @@
 # 📄 MenuManager.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/MenuManager.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -21,7 +21,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `vuetify/labs/VTreeview` • `@/components/prod/layout/BaseForm.vue` • `@/store` | ⚡ **총 복잡도**: 11 |
+| 📦 **의존성**: `@/store` • `@/components/prod/layout/BaseForm.vue` • `vuetify/labs/VTreeview` | ⚡ **총 복잡도**: 11 |
 | 📊 **총 토큰 수**: 180 |  |
 
 
@@ -58,7 +58,7 @@ async function setSelectedMenuItem(elem) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `3967aba6189a`
+- 🆔 **ID**: `9f6db3729ce2`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -89,7 +89,7 @@ function addMenuListItem() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `851337ca4457`
+- 🆔 **ID**: `190945097566`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -120,7 +120,7 @@ function setDialogStatus(dialogStatus) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `6d486ef5fe7a`
+- 🆔 **ID**: `6e5d0d464182`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

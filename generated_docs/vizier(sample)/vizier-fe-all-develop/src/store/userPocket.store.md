@@ -1,7 +1,7 @@
 # 📄 userPocket.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/userPocket.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./snackbar.store` • `@/utils/extend-utils` • `moment-timezone` • `@/api/prod/path` • `vue-i18n` • `@/utils/http-common` | ⚡ **총 복잡도**: 93 |
+| 📦 **의존성**: `vue-i18n` • `./snackbar.store` • `@/utils/http-common` • `moment-timezone` • `@/utils/extend-utils` • `@/api/prod/path` | ⚡ **총 복잡도**: 93 |
 | 📊 **총 토큰 수**: 1,100 |  |
 
 

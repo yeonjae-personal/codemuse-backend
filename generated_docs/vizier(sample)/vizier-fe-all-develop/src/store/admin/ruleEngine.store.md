@@ -1,7 +1,7 @@
 # 📄 ruleEngine.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/admin/ruleEngine.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `../snackbar.store` • `@/constants/userInfor` • `@/interfaces/admin/rule-field` • `uuid` • `@/constants/admin/rule-engine` 외 1개 | ⚡ **총 복잡도**: 19 |
+| 📦 **의존성**: `@/interfaces/admin/rule-field` • `lodash-es/cloneDeep` • `@/constants/userInfor` • `../snackbar.store` • `lodash-es/head` • `uuid` 외 1개 | ⚡ **총 복잡도**: 19 |
 | 📊 **총 토큰 수**: 2,719 |  |
 
 

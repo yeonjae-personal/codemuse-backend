@@ -1,7 +1,7 @@
 # 📄 GroupStructureExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export/GroupStructureExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class GroupStructureExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f7efeb78b27f`
+- 🆔 **ID**: `cef4f2d1ae2a`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class, java, value, spring-boot`

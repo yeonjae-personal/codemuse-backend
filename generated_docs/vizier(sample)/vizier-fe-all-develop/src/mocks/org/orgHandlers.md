@@ -1,7 +1,7 @@
 # 📄 orgHandlers.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/mocks/org/orgHandlers.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `../../constants` • `axios` • `./data` • `msw` | 📊 **총 토큰 수**: 207 |
+| 📦 **의존성**: `../../constants` • `msw` • `axios` • `./data` | 📊 **총 토큰 수**: 207 |
 
 
 

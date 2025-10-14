@@ -1,7 +1,7 @@
 # 📄 AttributeUpperLowerItemsDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/attribute/AttributeUpperLowerItemsDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class AttributeUpperLowerItemsDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6d3116e2ec8c`
+- 🆔 **ID**: `268471fc8e53`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

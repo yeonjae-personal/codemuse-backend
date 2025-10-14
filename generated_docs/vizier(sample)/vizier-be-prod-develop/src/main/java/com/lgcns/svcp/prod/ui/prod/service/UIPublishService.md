@@ -1,7 +1,7 @@
 # 📄 UIPublishService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UIPublishService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class UIPublishService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d48bea7e32ad`
+- 🆔 **ID**: `024f850d85ff`
 - 📍 **라인**: 54-54
 - 📊 **토큰**: 1121
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

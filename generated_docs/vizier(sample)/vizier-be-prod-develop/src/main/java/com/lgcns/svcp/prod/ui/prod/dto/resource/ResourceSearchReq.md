@@ -1,7 +1,7 @@
 # 📄 ResourceSearchReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/ResourceSearchReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class ResourceSearchReq extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e6b2530ed3e5`
+- 🆔 **ID**: `f284c06567e3`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 22
 - 🏷️ **태그**: `class, java`

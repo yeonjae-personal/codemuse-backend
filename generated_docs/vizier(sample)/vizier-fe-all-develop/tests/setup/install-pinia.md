@@ -1,7 +1,7 @@
 # 📄 install-pinia.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/tests/setup/install-pinia.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@vue/test-utils` • `vitest` • `vue` • `@pinia/testing` | ⚡ **총 복잡도**: 11 |
+| 📦 **의존성**: `@pinia/testing` • `lodash-es/cloneDeep` • `vitest` • `vue` • `@vue/test-utils` | ⚡ **총 복잡도**: 11 |
 | 📊 **총 토큰 수**: 88 |  |
 
 
@@ -58,7 +58,7 @@ export function installPinia(options?: Partial<TestingOptions>) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `f430185650f3`
+- 🆔 **ID**: `d793db97cdbb`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

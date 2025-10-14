@@ -1,7 +1,7 @@
 # 📄 ChngDataStusCode.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/publish/ChngDataStusCode.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -39,7 +39,7 @@ public enum ChngDataStusCode {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `79067e7770a8`
+- 🆔 **ID**: `0d98e193c9f9`
 - 📍 **라인**: 3-3
 
 </details>

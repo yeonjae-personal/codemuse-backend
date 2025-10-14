@@ -1,7 +1,7 @@
 # 📄 DsbdUserSetMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/DsbdUserSetMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -43,7 +43,7 @@ public interface DsbdUserSetMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c39985b1f6b5`
+- 🆔 **ID**: `4ceffde05a25`
 - 📊 **토큰**: 5
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 ToggleVisibility.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/ToggleVisibility.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/api/prod/componentApi` • `@/composables/useRedirect` • `@/enums` • `@/components/prod/icons/CheckVerified.vue` • `@/components/prod/icons/HourglassIcon.vue` 외 8개 | ⚡ **총 복잡도**: 112 |
+| 📦 **의존성**: `vue-i18n` • `@/api/prod/componentApi` • `@/composables/useDragUserPocket` • `@/constants/offer` • `@/components/prod/icons/TrashIcon.vue` • `@/components/prod/icons/CheckVerified.vue` 외 8개 | ⚡ **총 복잡도**: 112 |
 | 📊 **총 토큰 수**: 1,309 |  |
 
 

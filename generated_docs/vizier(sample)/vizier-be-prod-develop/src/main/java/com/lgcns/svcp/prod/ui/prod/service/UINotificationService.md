@@ -1,7 +1,7 @@
 # 📄 UINotificationService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UINotificationService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class UINotificationService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `63a6250a6342`
+- 🆔 **ID**: `1b72e9ea650a`
 - 📍 **라인**: 20-20
 - 📊 **토큰**: 74
 - 🏷️ **태그**: `class, java`

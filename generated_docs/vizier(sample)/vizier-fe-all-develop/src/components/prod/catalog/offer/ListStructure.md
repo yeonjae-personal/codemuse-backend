@@ -1,7 +1,7 @@
 # 📄 ListStructure.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/ListStructure.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/interfaces/prod/component` • `@/composables/useDragUserPocket` • `@/api/prod/componentApi` • `@/enums` • `@/utils/impact-analysis-utils` 외 8개 | ⚡ **총 복잡도**: 117 |
+| 📦 **의존성**: `vue-i18n` • `@/api/prod/componentApi` • `@/composables/useDragUserPocket` • `@/constants/offer` • `@/store/userPocket.store` • `@/utils/impact-analysis-utils` 외 8개 | ⚡ **총 복잡도**: 117 |
 | 📊 **총 토큰 수**: 1,488 |  |
 
 

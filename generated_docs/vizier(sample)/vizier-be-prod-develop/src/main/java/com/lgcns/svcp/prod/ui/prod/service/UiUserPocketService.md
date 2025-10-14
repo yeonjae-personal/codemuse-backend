@@ -1,7 +1,7 @@
 # 📄 UiUserPocketService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiUserPocketService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -45,7 +45,7 @@ public interface UiUserPocketService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `38f7f23ddd6f`
+- 🆔 **ID**: `0ed8710b097b`
 - 📊 **토큰**: 18
 
 </details>

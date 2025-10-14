@@ -1,7 +1,7 @@
 # 📄 MatrixSearch.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure/MatrixSearch.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/store/admin/matrixStructure.store` • `@/constants/index` • `@/enums` • `vue-i18n` • `uuid` 외 1개 | ⚡ **총 복잡도**: 183 |
+| 📦 **의존성**: `@/store/admin/matrixStructure.store` • `vue-i18n` • `@/composables/useDragUserPocket` • `@/constants/index` • `@/enums` • `@/enums/columnTypes` 외 1개 | ⚡ **총 복잡도**: 183 |
 | 📊 **총 토큰 수**: 1,249 |  |
 
 

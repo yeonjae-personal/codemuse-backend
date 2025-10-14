@@ -1,7 +1,7 @@
 # 📄 OfferExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export/OfferExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class OfferExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f485ec429446`
+- 🆔 **ID**: `1553fd0472dd`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

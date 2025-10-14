@@ -1,7 +1,7 @@
 # 📄 MultiLangLabelEntity.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/MultiLangLabelEntity.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class MultiLangLabelEntity extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d4d09eac3547`
+- 🆔 **ID**: `808c7d5fd6fa`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 25
 - 🏷️ **태그**: `class, java`

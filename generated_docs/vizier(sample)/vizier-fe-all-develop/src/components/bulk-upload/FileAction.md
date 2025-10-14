@@ -1,7 +1,7 @@
 # 📄 FileAction.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/bulk-upload/FileAction.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `vue-i18n` • `@/constants/index` | 📊 **총 토큰 수**: 128 |
+| 📦 **의존성**: `vue-i18n` • `@/enums` • `@/constants/index` | 📊 **총 토큰 수**: 128 |
 
 
 

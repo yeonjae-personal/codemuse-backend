@@ -1,7 +1,7 @@
 # 📄 stream_models.py
 
 > **파일 경로**: `rule_analyzer/streaming/stream_models.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 21개
 
 ---
@@ -20,7 +20,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `datetime` • `enum` • `pydantic` | ⚡ **총 복잡도**: 19 |
+| 📦 **의존성**: `typing` • `enum` • `pydantic` • `datetime` | ⚡ **총 복잡도**: 19 |
 | 📊 **총 토큰 수**: 2,704 |  |
 
 
@@ -59,7 +59,7 @@ class StreamingStatus(str, Enum):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6de39b2b2338`
+- 🆔 **ID**: `4c1b6e8fcc08`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 141
 - 🏷️ **태그**: `class, enum`
@@ -100,7 +100,7 @@ class StreamingChunk(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `dff05c824962`
+- 🆔 **ID**: `414fc4d38932`
 - 📍 **라인**: 25-35
 - 📊 **토큰**: 109
 - 🏷️ **태그**: `class, enum`
@@ -215,7 +215,7 @@ class StreamingChunk(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e2e263d1e293`
+- 🆔 **ID**: `273d892fb4b0`
 - 📍 **라인**: 36-46
 - 📊 **토큰**: 330
 - 🏷️ **태그**: `class, pydantic`
@@ -313,7 +313,7 @@ class StreamingOptions(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d0d787d9908d`
+- 🆔 **ID**: `c947933c68bb`
 - 📍 **라인**: 97-107
 - 📊 **토큰**: 438
 - 🏷️ **태그**: `class, pydantic`
@@ -442,7 +442,7 @@ class StreamingSession(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b558d9879fe5`
+- 🆔 **ID**: `de514ed1a734`
 - 📍 **라인**: 216-226
 - 📊 **토큰**: 377
 - 🏷️ **태그**: `class, pydantic`
@@ -475,22 +475,23 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant is_completed as is_completed
-  participant isoformat as isoformat
-  participant fromisoformat as fromisoformat
-  participant mark_completed as mark_completed
+  participant dict as dict
   participant to_dict as to_dict
-  participant now as now
-  participant is_complete as is_complete
   participant total_seconds as total_seconds
   participant is_progress_update as is_progress_update
-  participant to_summary as to_summary
+  participant float as float
+  participant is_completed as is_completed
+  participant is_error as is_error
+  participant now as now
+  participant mark_error as mark_error
   participant get_effective_chunk_dela as get_effective_chunk_delay
-  mark_completed->>isoformat: call
-  mark_completed->>fromisoformat: call
+  participant mark_completed as mark_completed
+  participant get as get
+  to_dict->>dict: call
+  get_effective_chunk_delay->>float: call
   mark_completed->>total_seconds: call
   mark_completed->>now: call
+  mark_error->>now: call
 ```
 
 

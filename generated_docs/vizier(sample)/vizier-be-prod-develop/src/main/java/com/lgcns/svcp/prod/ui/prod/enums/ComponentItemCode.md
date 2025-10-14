@@ -1,7 +1,7 @@
 # 📄 ComponentItemCode.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/enums/ComponentItemCode.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -52,7 +52,7 @@ public enum ComponentItemCode {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4212756af4bd`
+- 🆔 **ID**: `ad75e8015dd2`
 - 📍 **라인**: 3-3
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 ComponentGeneralDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/ComponentGeneralDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentGeneralDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: ComponentGeneralDto 데이터 전송 객체
 - **복잡도**: 13
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/*
 - **라인**: 6
 
 
@@ -69,7 +69,7 @@ public class ComponentGeneralDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `dc6b075c488c`
+- 🆔 **ID**: `591dda8ba9a2`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 38
 - 🏷️ **태그**: `class, java`

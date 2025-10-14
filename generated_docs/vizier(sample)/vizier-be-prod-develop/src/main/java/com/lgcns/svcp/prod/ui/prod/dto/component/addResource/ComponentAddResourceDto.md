@@ -1,7 +1,7 @@
 # 📄 ComponentAddResourceDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource/ComponentAddResourceDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentAddResourceDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: ComponentAddResourceDto 데이터 전송 객체
 - **복잡도**: 14
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource/*
 - **라인**: 10
 
 
@@ -73,7 +73,7 @@ public class ComponentAddResourceDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0fb2d70ce946`
+- 🆔 **ID**: `932658ea8a98`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 43
 - 🏷️ **태그**: `class, java`

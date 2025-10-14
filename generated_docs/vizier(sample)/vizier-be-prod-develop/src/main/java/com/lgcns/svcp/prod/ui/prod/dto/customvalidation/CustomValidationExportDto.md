@@ -1,7 +1,7 @@
 # 📄 CustomValidationExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/CustomValidationExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -71,7 +71,7 @@ public class CustomValidationExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `855959dfabbb`
+- 🆔 **ID**: `0be2e7478473`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 60
 - 🏷️ **태그**: `class, java, value, spring-boot`

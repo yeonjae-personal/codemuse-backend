@@ -1,7 +1,7 @@
 # 📄 ItemVolumeGroupDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/ItemVolumeGroupDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class ItemVolumeGroupDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `83f558d00466`
+- 🆔 **ID**: `984ab25a59e5`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 21
 - 🏷️ **태그**: `class, java`

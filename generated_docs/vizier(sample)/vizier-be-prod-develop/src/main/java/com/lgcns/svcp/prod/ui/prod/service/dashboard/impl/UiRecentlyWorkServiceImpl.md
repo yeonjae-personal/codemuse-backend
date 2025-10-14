@@ -1,7 +1,7 @@
 # 📄 UiRecentlyWorkServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/impl/UiRecentlyWorkServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -58,7 +58,7 @@ public class UiRecentlyWorkServiceImpl implements UiRecentlyWorkService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8aae9ba6441e`
+- 🆔 **ID**: `2c35eb69604a`
 - 📍 **라인**: 37-37
 - 📊 **토큰**: 446
 - 🏷️ **태그**: `class, java`

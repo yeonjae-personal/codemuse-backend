@@ -1,7 +1,7 @@
 # 📄 SysSmsTable.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/syssms/subs/SysSmsTable.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `@/store/global.store` • `ag-grid-community/styles/ag-theme-alpine.css` • `vue-i18n` • `@/pages/syssms/subs/COMMS001P.vue` | ⚡ **총 복잡도**: 31 |
+| 📦 **의존성**: `vue-i18n` • `ag-grid-vue3` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/store/global.store` • `@/pages/syssms/subs/COMMS001P.vue` • `ag-grid-community/styles/ag-grid.css` | ⚡ **총 복잡도**: 31 |
 | 📊 **총 토큰 수**: 541 |  |
 
 

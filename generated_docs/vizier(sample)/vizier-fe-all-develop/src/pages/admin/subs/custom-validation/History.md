@@ -1,7 +1,7 @@
 # 📄 History.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/History.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/isEqual` • `@/store/admin/historyCustomValidation.store` • `@/composables/useGroupCode` • `vue-i18n` • `@/interfaces/prod/HistoryCustomValidation` • `@/store/admin/customValidation.store` | ⚡ **총 복잡도**: 9 |
+| 📦 **의존성**: `vue-i18n` • `@/composables/useGroupCode` • `@/store/admin/customValidation.store` • `@/store/admin/historyCustomValidation.store` • `lodash-es/isEqual` • `@/interfaces/prod/HistoryCustomValidation` | ⚡ **총 복잡도**: 9 |
 | 📊 **총 토큰 수**: 1,113 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 ComponentController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/ComponentController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentController`
-- **도메인**: user
+- **도메인**: product_online
 - **목적**: ComponentController API 엔드포인트 제공
 - **복잡도**: 147
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/*
 - **라인**: 29
 
 
@@ -74,7 +74,7 @@ public class ComponentController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `48dc2a205c8c`
+- 🆔 **ID**: `57672eed8501`
 - 📍 **라인**: 29-29
 - 📊 **토큰**: 729
 - 🏷️ **태그**: `class, java, autowired, getmapping, pathvariable...`

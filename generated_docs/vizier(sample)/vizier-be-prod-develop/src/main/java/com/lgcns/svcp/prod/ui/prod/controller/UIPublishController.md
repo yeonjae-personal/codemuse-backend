@@ -1,7 +1,7 @@
 # 📄 UIPublishController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UIPublishController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class UIPublishController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `813e47465038`
+- 🆔 **ID**: `cbb7a165c998`
 - 📍 **라인**: 29-29
 - 📊 **토큰**: 377
 - 🏷️ **태그**: `class, java, getmapping, postmapping, putmapping...`

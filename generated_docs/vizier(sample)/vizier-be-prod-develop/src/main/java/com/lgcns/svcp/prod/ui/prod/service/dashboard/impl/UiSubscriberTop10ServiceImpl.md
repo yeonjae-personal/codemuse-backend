@@ -1,7 +1,7 @@
 # 📄 UiSubscriberTop10ServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/impl/UiSubscriberTop10ServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class UiSubscriberTop10ServiceImpl implements UiSubscriberTop10Service {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8aedaeac8b44`
+- 🆔 **ID**: `4eac98bb898d`
 - 📍 **라인**: 36-36
 - 📊 **토큰**: 437
 - 🏷️ **태그**: `class, java`

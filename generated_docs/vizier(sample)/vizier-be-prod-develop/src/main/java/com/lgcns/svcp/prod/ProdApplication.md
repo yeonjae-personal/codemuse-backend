@@ -1,7 +1,7 @@
 # 📄 ProdApplication.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ProdApplication.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class ProdApplication {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2b835f701d75`
+- 🆔 **ID**: `97efc69e562f`
 - 📍 **라인**: 7-7
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

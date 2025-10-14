@@ -1,7 +1,7 @@
 # 📄 SaleCpnyDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail/SaleCpnyDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `SaleCpnyDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: SaleCpnyDto 데이터 전송 객체
 - **복잡도**: 4
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/detail/*
 - **라인**: 10
 
 
@@ -63,7 +63,7 @@ public class SaleCpnyDto extends MultiEntityDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `18ec710f1012`
+- 🆔 **ID**: `f97859599ee0`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 13
 - 🏷️ **태그**: `class, java`

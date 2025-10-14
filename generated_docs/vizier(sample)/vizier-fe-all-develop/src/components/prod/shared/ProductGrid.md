@@ -1,7 +1,7 @@
 # 📄 ProductGrid.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/ProductGrid.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `lodash-es/cloneDeep` • `@/constants/index` • `@/composables/useGroupCode` • `@/constants/impactAnalysis` • `@/store/userPocket.store` 외 2개 | ⚡ **총 복잡도**: 1 |
+| 📦 **의존성**: `@/store/userPocket.store` • `lodash-es/union` • `lodash-es/cloneDeep` • `@/enums/columnTypes` • `@/api/prod/commonApi` • `@/composables/useGroupCode` 외 2개 | ⚡ **총 복잡도**: 1 |
 | 📊 **총 토큰 수**: 341 |  |
 
 

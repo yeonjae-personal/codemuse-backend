@@ -1,7 +1,7 @@
 # 📄 ItemMappingDetailDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item/detail/ItemMappingDetailDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class ItemMappingDetailDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f563fc107271`
+- 🆔 **ID**: `936bf1153fd0`
 - 📍 **라인**: 16-16
 - 📊 **토큰**: 175
 - 🏷️ **태그**: `class, java`

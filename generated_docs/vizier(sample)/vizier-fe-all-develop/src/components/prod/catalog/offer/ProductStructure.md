@@ -1,7 +1,7 @@
 # 📄 ProductStructure.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/ProductStructure.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 25개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/enums` • `@/constants/userInfor` • `@/utils/config-path` • `@/utils/format-data` • `@/enums/redirect` 외 9개 | ⚡ **총 복잡도**: 256 |
+| 📦 **의존성**: `@/enums/redirect` • `vue-i18n` • `@/constants/offer` • `@/enums/component` • `@/utils/config-path` • `@/enums` 외 9개 | ⚡ **총 복잡도**: 256 |
 | 📊 **총 토큰 수**: 2,767 |  |
 
 

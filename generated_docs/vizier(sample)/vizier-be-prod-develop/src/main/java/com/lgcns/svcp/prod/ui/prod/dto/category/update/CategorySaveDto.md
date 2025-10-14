@@ -1,7 +1,7 @@
 # 📄 CategorySaveDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/update/CategorySaveDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class CategorySaveDto extends CatgMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `40a4f1b9863a`
+- 🆔 **ID**: `14b6b30d8c90`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 13
 - 🏷️ **태그**: `class, java`

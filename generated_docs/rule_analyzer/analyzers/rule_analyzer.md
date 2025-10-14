@@ -1,7 +1,7 @@
 # 📄 rule_analyzer.py
 
 > **파일 경로**: `rule_analyzer/analyzers/rule_analyzer.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `models` • `exceptions` • `advanced_analyzer` • `typing` • `asyncio` • `condition_analyzer` 외 3개 | ⚡ **총 복잡도**: 74 |
+| 📦 **의존성**: `condition_analyzer` • `exceptions` • `advanced_analyzer` • `issue_detector` • `typing` • `datetime` 외 3개 | ⚡ **총 복잡도**: 74 |
 | 📊 **총 토큰 수**: 4,445 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -160,7 +160,7 @@ class RuleAnalyzer:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `dde745918d92`
+- 🆔 **ID**: `e15017fd679f`
 - 📍 **라인**: 31-41
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class`
@@ -198,24 +198,21 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
+  participant validate_rule as validate_rule
   participant len as len
-  participant _create_report_metadata as _create_report_metadata
-  participant set_event_loop as set_event_loop
-  participant StructureInfo as StructureInfo
-  participant analyze_rule_sync as analyze_rule_sync
-  participant _generate_summary as _generate_summary
-  participant ConditionAnalyzer as ConditionAnalyzer
-  participant getattr as getattr
-  participant timestamp as timestamp
+  participant _calculate_complexity as _calculate_complexity
+  participant _count_issues_by_type as _count_issues_by_type
   participant set as set
-  participant hasattr as hasattr
-  analyze_rule_sync->>set_event_loop: call
-  _generate_summary->>len: call
-  _generate_summary->>get: call
-  _generate_summary->>getattr: call
-  _create_report_metadata->>get: call
-  _create_report_metadata->>getattr: call
+  participant run_until_complete as run_until_complete
+  participant _create_report_metadata as _create_report_metadata
+  participant min as min
+  participant timestamp as timestamp
+  participant set_event_loop as set_event_loop
+  participant getLogger as getLogger
+  participant ConditionAnalyzer as ConditionAnalyzer
+  _calculate_complexity->>min: call
+  _calculate_complexity->>len: call
+  validate_rule->>len: call
 ```
 
 

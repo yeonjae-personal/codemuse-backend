@@ -1,7 +1,7 @@
 # 📄 ChngDataListL.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/ChngDataListL.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -63,7 +63,7 @@ public class ChngDataListL {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0fa871ad0a83`
+- 🆔 **ID**: `38c7886ed636`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 73
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 RequestContextHolder.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/context/RequestContextHolder.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -75,7 +75,7 @@ public class RequestContextHolder {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `06afe738065c`
+- 🆔 **ID**: `731a4064703e`
 - 📍 **라인**: 3-3
 - 📊 **토큰**: 130
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 OfferSearchReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list/OfferSearchReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -58,7 +58,7 @@ public class OfferSearchReq {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `752445b4fbfe`
+- 🆔 **ID**: `6bc008af60a8`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class, java`

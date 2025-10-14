@@ -1,7 +1,7 @@
 # 📄 OfferStructureExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export/OfferStructureExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class OfferStructureExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f13056d61850`
+- 🆔 **ID**: `55a6bf75ed6c`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class, java, value, spring-boot`

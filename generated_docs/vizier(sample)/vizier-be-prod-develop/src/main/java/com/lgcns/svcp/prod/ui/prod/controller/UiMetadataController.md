@@ -1,7 +1,7 @@
 # 📄 UiMetadataController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UiMetadataController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -60,7 +60,7 @@ public class UiMetadataController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4d0f225b53da`
+- 🆔 **ID**: `7018fc39bddd`
 - 📍 **라인**: 26-26
 - 📊 **토큰**: 51
 - 🏷️ **태그**: `class, java, getmapping, requestparam, spring-boot`

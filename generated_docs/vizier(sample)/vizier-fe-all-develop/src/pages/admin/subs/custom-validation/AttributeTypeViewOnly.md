@@ -1,7 +1,7 @@
 # 📄 AttributeTypeViewOnly.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/AttributeTypeViewOnly.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/cmcd.store` • `@/components/prod/common/BaseDateTimePicker.vue` • `./CustomDataList.vue` • `@/enums/customValidation` • `@/store/admin/customValidation.store` • `@/interfaces/admin/admin` | ⚡ **총 복잡도**: 15 |
+| 📦 **의존성**: `@/components/prod/common/BaseDateTimePicker.vue` • `@/store/cmcd.store` • `./CustomDataList.vue` • `@/enums/customValidation` • `@/store/admin/customValidation.store` • `@/interfaces/admin/admin` | ⚡ **총 복잡도**: 15 |
 | 📊 **총 토큰 수**: 668 |  |
 
 

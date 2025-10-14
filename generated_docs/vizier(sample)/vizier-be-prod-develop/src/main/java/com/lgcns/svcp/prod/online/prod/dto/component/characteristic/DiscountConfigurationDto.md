@@ -1,7 +1,7 @@
 # 📄 DiscountConfigurationDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/DiscountConfigurationDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `DiscountConfigurationDto`
-- **도메인**: user
+- **도메인**: product_online
 - **목적**: DiscountConfigurationDto 데이터 전송 객체
 - **복잡도**: 20
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/*
 - **라인**: 10
 
 
@@ -76,7 +76,7 @@ public class DiscountConfigurationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `697137aaa752`
+- 🆔 **ID**: `cbb0f502becc`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 59
 - 🏷️ **태그**: `class, java`

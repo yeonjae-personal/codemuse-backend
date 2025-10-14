@@ -1,7 +1,7 @@
 # 📄 AdditionalAndResourceDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/service/AdditionalAndResourceDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `AdditionalAndResourceDto`
-- **도메인**: user
+- **도메인**: product_online
 - **목적**: AdditionalAndResourceDto 데이터 전송 객체
 - **복잡도**: 4
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/service/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/service/*
 - **라인**: 9
 
 
@@ -60,7 +60,7 @@ public class AdditionalAndResourceDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1c573e8a93d4`
+- 🆔 **ID**: `d059bd24f750`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 13
 - 🏷️ **태그**: `class, java`

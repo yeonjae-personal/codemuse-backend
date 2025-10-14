@@ -1,7 +1,7 @@
 # 📄 TreeViewChart.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/TreeView/TreeViewChart.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 25개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/constants/userInfor` • `@/store` • `@/components/prod/icons/SimplePlusIcon.vue` • `@/components/prod/icons/TrashIcon.vue` • `@/store/category.store` 외 3개 | ⚡ **총 복잡도**: 211 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/icons/TrashIcon.vue` • `@/components/prod/icons/SimplePlusIcon.vue` • `@/constants/offer` • `@/constants/userInfor` 외 3개 | ⚡ **총 복잡도**: 211 |
 | 📊 **총 토큰 수**: 2,165 |  |
 
 

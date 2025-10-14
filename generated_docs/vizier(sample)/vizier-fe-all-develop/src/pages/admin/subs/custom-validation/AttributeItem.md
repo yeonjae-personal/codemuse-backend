@@ -1,7 +1,7 @@
 # 📄 AttributeItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/AttributeItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums/customValidation` • `@/store/admin/customValidation.store` • `@/composables/useDragUserPocket` • `@/constants/index` | ⚡ **총 복잡도**: 17 |
+| 📦 **의존성**: `@/enums/customValidation` • `@/composables/useDragUserPocket` • `@/store/admin/customValidation.store` • `@/constants/index` | ⚡ **총 복잡도**: 17 |
 | 📊 **총 토큰 수**: 563 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 AdditionalColumnsDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/common/AdditionalColumnsDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class AdditionalColumnsDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `86aa576f3876`
+- 🆔 **ID**: `33595c521f80`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

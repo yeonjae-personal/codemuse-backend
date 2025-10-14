@@ -1,7 +1,7 @@
 # 📄 ResourceCreateComponent.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/resource/ResourceCreateComponent.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/store` • `@/constants/` • `../../shared/MultiEntityTab.vue` • `@/enums/redirect` • `@/components/prod/shared/GeneralTab.vue` 외 7개 | ⚡ **총 복잡도**: 45 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `vuetify/lib/components/index.mjs` • `@/constants/offer` • `@/enums/component` • `../../shared/MultiEntityTab.vue` 외 7개 | ⚡ **총 복잡도**: 45 |
 | 📊 **총 토큰 수**: 1,059 |  |
 
 

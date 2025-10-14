@@ -1,7 +1,7 @@
 # 📄 ComponentItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/common/ComponentItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/BlurBlue.vue` • `@/enums` • `@/components/prod/icons/BlurPurple.vue` • `@/utils/format-data` • `@/interfaces/prod` | 📊 **총 토큰 수**: 840 |
+| 📦 **의존성**: `@/components/prod/icons/BlurPurple.vue` • `@/enums` • `@/components/prod/icons/BlurBlue.vue` • `@/interfaces/prod` • `@/utils/format-data` | 📊 **총 토큰 수**: 840 |
 
 
 

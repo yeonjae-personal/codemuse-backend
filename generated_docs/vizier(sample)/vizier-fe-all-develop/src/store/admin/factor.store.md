@@ -1,7 +1,7 @@
 # 📄 factor.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/admin/factor.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/constants/index` • `@/types/common` | 📊 **총 토큰 수**: 603 |
+| 📦 **의존성**: `lodash-es/cloneDeep` • `@/types/common` • `@/constants/index` | 📊 **총 토큰 수**: 603 |
 
 
 

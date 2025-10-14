@@ -1,7 +1,7 @@
 # 📄 SaleCnbyProdDDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/group/SaleCnbyProdDDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class SaleCnbyProdDDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bef391399ae9`
+- 🆔 **ID**: `84c6d5e264e7`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 37
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 UploadFilePopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/bulk-upload/UploadFilePopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/file` • `@/constants/index` • `@/enums` • `@/constants/admin/label` • `@/store` • `vue-i18n` | 📊 **총 토큰 수**: 650 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/enums` • `@/constants/index` • `@/constants/admin/label` • `@/utils/file` | 📊 **총 토큰 수**: 650 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 BaseTabs.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/common/BaseTabs.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/interfaces/prod` • `@/constants/offer` • `@/constants/publish` | ⚡ **총 복잡도**: 11 |
+| 📦 **의존성**: `@/constants/publish` • `@/constants/offer` • `@/interfaces/prod` | ⚡ **총 복잡도**: 11 |
 | 📊 **총 토큰 수**: 655 |  |
 
 

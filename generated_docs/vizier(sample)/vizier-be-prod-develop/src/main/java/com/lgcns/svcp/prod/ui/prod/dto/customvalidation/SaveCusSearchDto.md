@@ -1,7 +1,7 @@
 # 📄 SaveCusSearchDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/SaveCusSearchDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class SaveCusSearchDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6ad5d384b5a1`
+- 🆔 **ID**: `9ad547715a62`
 - 📍 **라인**: 14-14
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class, java, valid, spring-boot`

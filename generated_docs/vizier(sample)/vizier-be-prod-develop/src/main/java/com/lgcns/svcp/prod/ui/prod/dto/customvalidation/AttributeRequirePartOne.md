@@ -1,7 +1,7 @@
 # 📄 AttributeRequirePartOne.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/AttributeRequirePartOne.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class AttributeRequirePartOne {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d8ff000751d9`
+- 🆔 **ID**: `ba25b5b413c9`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

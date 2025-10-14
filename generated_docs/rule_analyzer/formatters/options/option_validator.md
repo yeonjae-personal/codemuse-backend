@@ -1,7 +1,7 @@
 # 📄 option_validator.py
 
 > **파일 경로**: `rule_analyzer/formatters/options/option_validator.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 13개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `json` • `formatting_options` • `typing` | ⚡ **총 복잡도**: 30 |
+| 📦 **의존성**: `json` • `typing` • `formatting_options` | ⚡ **총 복잡도**: 30 |
 | 📊 **총 토큰 수**: 1,648 |  |
 
 
@@ -151,7 +151,7 @@ class FormattingOptionValidator:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `80f170c59965`
+- 🆔 **ID**: `934e3d1f212d`
 - 📍 **라인**: 12-22
 - 📊 **토큰**: 35
 - 🏷️ **태그**: `class`
@@ -187,20 +187,21 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant _validate_required_field as _validate_required_fields
-  participant list as list
-  participant clear as clear
-  participant items as items
   participant len as len
-  participant _validate_field_types as _validate_field_types
-  participant _validate_field_values as _validate_field_values
-  participant Language as Language
   participant set as set
+  participant _validate_field_types as _validate_field_types
+  participant any as any
+  participant get_validation_summary as get_validation_summary
   participant loads as loads
+  participant _validate_custom_setting as _validate_custom_settings
+  participant str as str
+  participant has_warnings as has_warnings
+  participant _validate_field_values as _validate_field_values
+  participant get as get
   participant get_warnings as get_warnings
-  _validate_field_types->>items: call
-  _validate_field_values->>Language: call
+  _validate_custom_settings->>set: call
+  has_warnings->>len: call
+  get_validation_summary->>len: call
 ```
 
 

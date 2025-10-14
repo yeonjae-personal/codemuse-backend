@@ -1,7 +1,7 @@
 # 📄 DtexPlcyMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/characteristic/DtexPlcyMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class DtexPlcyMDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `7dbe70c16fb3`
+- 🆔 **ID**: `32ca6600d33b`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 58
 - 🏷️ **태그**: `class, java`

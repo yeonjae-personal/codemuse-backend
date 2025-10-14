@@ -1,7 +1,7 @@
 # 📄 CreateEvetItemModal.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs/CreateEvetItemModal.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/solution/OrderEventPage.vue` • `axios` • `@/store` • `@/pages/solution/SystemPage.vue` • `@/assets/search.png` | ⚡ **총 복잡도**: 216 |
+| 📦 **의존성**: `@/store` • `@/pages/solution/SystemPage.vue` • `@/assets/search.png` • `@/pages/solution/OrderEventPage.vue` • `axios` | ⚡ **총 복잡도**: 216 |
 | 📊 **총 토큰 수**: 2,299 |  |
 
 

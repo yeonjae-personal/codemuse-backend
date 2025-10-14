@@ -1,7 +1,7 @@
 # 📄 SpamLvwuPlcyRelDDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/characteristic/SpamLvwuPlcyRelDDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class SpamLvwuPlcyRelDDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `850cceee858f`
+- 🆔 **ID**: `fd691b98da23`
 - 📍 **라인**: 7-7
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, java`

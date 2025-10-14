@@ -1,7 +1,7 @@
 # 📄 UiFactorController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/admin/UiFactorController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -66,7 +66,7 @@ public class UiFactorController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c1de4afb3efb`
+- 🆔 **ID**: `666ec4fe8039`
 - 📍 **라인**: 26-26
 - 📊 **토큰**: 233
 - 🏷️ **태그**: `class, java, getmapping, putmapping, requestparam...`

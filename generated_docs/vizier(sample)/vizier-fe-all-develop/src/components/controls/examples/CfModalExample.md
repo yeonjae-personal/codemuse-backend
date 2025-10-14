@@ -1,7 +1,7 @@
 # 📄 CfModalExample.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/controls/examples/CfModalExample.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfButton.vue` • `@/store` • `./BadgePage.vue` | ⚡ **총 복잡도**: 8 |
+| 📦 **의존성**: `@/store` • `./BadgePage.vue` • `@/components/controls/CfButton.vue` | ⚡ **총 복잡도**: 8 |
 | 📊 **총 토큰 수**: 69 |  |
 
 

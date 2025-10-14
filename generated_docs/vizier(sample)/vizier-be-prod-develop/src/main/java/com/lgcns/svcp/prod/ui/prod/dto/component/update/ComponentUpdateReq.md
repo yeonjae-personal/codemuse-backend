@@ -1,7 +1,7 @@
 # 📄 ComponentUpdateReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/update/ComponentUpdateReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentUpdateReq`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 5
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/update/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/update/*
 - **라인**: 13
 
 
@@ -64,7 +64,7 @@ public class ComponentUpdateReq extends ItemMappingDetailDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fc1e28706f6a`
+- 🆔 **ID**: `06cae8de3404`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 16
 - 🏷️ **태그**: `class, java`

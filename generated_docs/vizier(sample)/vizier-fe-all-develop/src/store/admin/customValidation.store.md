@@ -1,7 +1,7 @@
 # 📄 customValidation.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/admin/customValidation.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 40개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/constants/index` • `@/constants/userInfor` • `@/constants/` • `@/enums/customValidation` • `@/utils/extend-utils` 외 4개 | ⚡ **총 복잡도**: 313 |
+| 📦 **의존성**: `vue-i18n` • `@/utils/extend-utils` • `@/types/catalog/component/ComponentSearch` • `moment-timezone` • `lodash-es/cloneDeep` • `@/enums/customValidation` 외 4개 | ⚡ **총 복잡도**: 313 |
 | 📊 **총 토큰 수**: 4,424 |  |
 
 

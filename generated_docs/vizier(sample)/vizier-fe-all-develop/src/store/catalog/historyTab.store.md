@@ -1,7 +1,7 @@
 # 📄 historyTab.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/catalog/historyTab.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Typescript
 ---
@@ -54,7 +54,7 @@
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `e5a09cab76e2`
+- 🆔 **ID**: `5814e73df2cc`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

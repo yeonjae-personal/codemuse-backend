@@ -1,7 +1,7 @@
 # 📄 DynamicFieldReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/search/DynamicFieldReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class DynamicFieldReq {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e2f1594b5b3a`
+- 🆔 **ID**: `8de7e4683f04`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 112
 - 🏷️ **태그**: `class, java`

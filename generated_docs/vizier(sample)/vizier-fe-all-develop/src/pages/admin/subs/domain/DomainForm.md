@@ -1,7 +1,7 @@
 # 📄 DomainForm.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/domain/DomainForm.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useInputValidation` • `@/constants/index` • `@/store` • `vue-i18n` • `@/constants/admin/domain` | 📊 **총 토큰 수**: 497 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/constants/admin/domain` • `@/constants/index` • `@/composables/useInputValidation` | 📊 **총 토큰 수**: 497 |
 
 
 

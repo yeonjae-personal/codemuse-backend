@@ -1,7 +1,7 @@
 # 📄 MenuUpdatePopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/menu/MenuUpdatePopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 21개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useInputValidation` • `@/constants/index` • `@/constants/admin/admin` • `@/store` • `@/pages/admin/subs/menu/MenuSearch.vue` • `@/pages/admin/subs/screen/ScreenListPopup.vue` 외 5개 | ⚡ **총 복잡도**: 224 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/pages/admin/subs/menu/MenuSearch.vue` • `@/interfaces/admin/admin` • `@/utils/http-common` • `@/constants/index` 외 5개 | ⚡ **총 복잡도**: 224 |
 | 📊 **총 토큰 수**: 1,897 |  |
 
 

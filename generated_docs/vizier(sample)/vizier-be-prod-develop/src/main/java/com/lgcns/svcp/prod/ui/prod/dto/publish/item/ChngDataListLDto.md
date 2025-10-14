@@ -1,7 +1,7 @@
 # 📄 ChngDataListLDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/item/ChngDataListLDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -61,7 +61,7 @@ public class ChngDataListLDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `db21bd012143`
+- 🆔 **ID**: `76753cb5b4ed`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 43
 - 🏷️ **태그**: `class, java`

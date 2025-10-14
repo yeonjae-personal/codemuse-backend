@@ -1,7 +1,7 @@
 # 📄 SubscriberTop10Grid.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/subscriber-top-10/SubscriberTop10Grid.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/types/common` • `vue-i18n` • `@/constants/dashboard` • `@/utils/format-data` | ⚡ **총 복잡도**: 4 |
+| 📦 **의존성**: `@/utils/format-data` • `vue-i18n` • `@/constants/dashboard` • `@/types/common` | ⚡ **총 복잡도**: 4 |
 | 📊 **총 토큰 수**: 428 |  |
 
 

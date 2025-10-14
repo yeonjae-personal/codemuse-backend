@@ -1,7 +1,7 @@
 # 📄 RestTemplateConfig.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/config/RestTemplateConfig.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class RestTemplateConfig {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0399a9c005f7`
+- 🆔 **ID**: `7468c37db82b`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 23
 - 🏷️ **태그**: `class, java, bean, spring-boot`

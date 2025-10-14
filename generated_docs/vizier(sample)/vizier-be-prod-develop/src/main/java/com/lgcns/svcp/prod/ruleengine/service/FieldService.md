@@ -1,7 +1,7 @@
 # 📄 FieldService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ruleengine/service/FieldService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class FieldService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `396c69443193`
+- 🆔 **ID**: `1e7b0369c778`
 - 📍 **라인**: 25-25
 - 📊 **토큰**: 110
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

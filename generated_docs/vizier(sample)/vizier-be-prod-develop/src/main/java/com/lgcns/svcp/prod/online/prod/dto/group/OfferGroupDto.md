@@ -1,7 +1,7 @@
 # 📄 OfferGroupDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/group/OfferGroupDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -58,7 +58,7 @@ public class OfferGroupDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4f69dba42d48`
+- 🆔 **ID**: `5ad16594c6e1`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class, java`

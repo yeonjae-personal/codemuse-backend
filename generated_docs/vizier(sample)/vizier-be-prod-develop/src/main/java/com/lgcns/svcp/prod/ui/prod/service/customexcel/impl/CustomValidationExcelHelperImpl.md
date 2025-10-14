@@ -1,7 +1,7 @@
 # 📄 CustomValidationExcelHelperImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/impl/CustomValidationExcelHelperImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -63,7 +63,7 @@ public class CustomValidationExcelHelperImpl extends ExcelHelperImpl implements 
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `55348e39a9d0`
+- 🆔 **ID**: `1ed80e81c925`
 - 📍 **라인**: 32-32
 - 📊 **토큰**: 1285
 - 🏷️ **태그**: `class, java`

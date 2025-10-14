@@ -1,7 +1,7 @@
 # 📄 PublishManagerPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/publish/PublishManagerPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useRedirect` • `@/api/prod/componentApi` • `@/interfaces/prod/publishInterface` • `@/store` • `@/constants/publish` • `@/components/prod/publish/PublishPackageSearch.vue` 외 1개 | ⚡ **총 복잡도**: 34 |
+| 📦 **의존성**: `@/api/prod/extendsApi` • `@/store` • `@/api/prod/componentApi` • `@/interfaces/prod/publishInterface` • `@/constants/publish` • `@/composables/useRedirect` 외 1개 | ⚡ **총 복잡도**: 34 |
 | 📊 **총 토큰 수**: 439 |  |
 
 

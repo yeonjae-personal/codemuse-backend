@@ -1,7 +1,7 @@
 # 📄 ruleField.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/admin/ruleField.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `uuid` • `lodash-es/cloneDeep` • `@/store` | ⚡ **총 복잡도**: 14 |
+| 📦 **의존성**: `@/store` • `uuid` • `lodash-es/cloneDeep` | ⚡ **총 복잡도**: 14 |
 | 📊 **총 토큰 수**: 402 |  |
 
 

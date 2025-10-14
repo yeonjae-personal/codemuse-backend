@@ -1,7 +1,7 @@
 # 📄 CfAccordionExample.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/controls/examples/CfAccordionExample.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfButton.vue` • `@/components/controls/CfAvatar.vue` • `@/components/controls/CfCard.vue` • `@/components/controls/CfAccordion.vue` | 📊 **총 토큰 수**: 112 |
+| 📦 **의존성**: `@/components/controls/CfAvatar.vue` • `@/components/controls/CfCard.vue` • `@/components/controls/CfButton.vue` • `@/components/controls/CfAccordion.vue` | 📊 **총 토큰 수**: 112 |
 
 
 

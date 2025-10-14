@@ -1,7 +1,7 @@
 # 📄 advanced_analyzer.py
 
 > **파일 경로**: `rule_analyzer/analyzers/advanced_analyzer.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 20개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `models` • `logging` • `exceptions` • `typing` | ⚡ **총 복잡도**: 68 |
+| 📦 **의존성**: `models` • `typing` • `exceptions` • `logging` | ⚡ **총 복잡도**: 68 |
 | 📊 **총 토큰 수**: 4,042 | 🔄 **비동기 함수**: 1개 |
 
 
@@ -214,7 +214,7 @@ class AdvancedAnalyzer:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `cc52bd634884`
+- 🆔 **ID**: `bee539d933bd`
 - 📍 **라인**: 25-35
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class`
@@ -251,21 +251,25 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant _calculate_performance_m as _calculate_performance_metrics
+  participant _identify_bottleneck_con as _identify_bottleneck_conditions
   participant len as len
-  participant items as items
-  participant _calculate_consistency_s as _calculate_consistency_score
-  participant PerformanceMetrics as PerformanceMetrics
-  participant sum as sum
-  participant _detect_potential_dead_c as _detect_potential_dead_code
-  participant _calculate_branch_covera as _calculate_branch_coverage
+  participant _determine_field_type as _determine_field_type
+  participant count_recursive as count_recursive
+  participant _calculate_performance_m as _calculate_performance_metrics
   participant perform_advanced_analysi as perform_advanced_analysis
-  participant FieldAnalysis as FieldAnalysis
-  participant _calculate_field_complex as _calculate_field_complexity
+  participant _analyze_fields as _analyze_fields
+  participant min as min
   participant getLogger as getLogger
+  participant PerformanceMetrics as PerformanceMetrics
+  participant _calculate_completeness_ as _calculate_completeness_score
+  participant _analyze_logic_flow as _analyze_logic_flow
+  perform_advanced_analysis->>_analyze_fields: call
+  perform_advanced_analysis->>_analyze_logic_flow: call
   perform_advanced_analysis->>_calculate_performance_metrics: call
+  _calculate_performance_metrics->>_identify_bottleneck_conditions: call
   _calculate_performance_metrics->>PerformanceMetrics: call
-  _calculate_consistency_score->>len: call
+  _identify_bottleneck_conditions->>len: call
+  _calculate_completeness_score->>len: call
 ```
 
 

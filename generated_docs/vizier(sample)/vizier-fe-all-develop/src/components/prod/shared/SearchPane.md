@@ -1,7 +1,7 @@
 # 📄 SearchPane.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/SearchPane.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 21개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@vueuse/core` • `@/enums` • `@/store` • `@/components/prod/icons/ArrowLeftIcon.vue` • `lodash-es` • `@/utils/format-data` 외 3개 | ⚡ **총 복잡도**: 107 |
+| 📦 **의존성**: `@/store` • `@vueuse/core` • `@/enums` • `@/constants/` • `vue` • `@/components/prod/icons/ArrowLeftIcon.vue` 외 3개 | ⚡ **총 복잡도**: 107 |
 | 📊 **총 토큰 수**: 1,617 |  |
 
 

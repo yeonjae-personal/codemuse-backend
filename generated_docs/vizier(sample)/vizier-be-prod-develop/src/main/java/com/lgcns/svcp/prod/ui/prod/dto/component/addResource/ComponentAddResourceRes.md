@@ -1,7 +1,7 @@
 # 📄 ComponentAddResourceRes.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource/ComponentAddResourceRes.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentAddResourceRes`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 9
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/component/addResource/*
 - **라인**: 9
 
 
@@ -65,7 +65,7 @@ public class ComponentAddResourceRes {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `76519f9038e0`
+- 🆔 **ID**: `6f51e2ca817e`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 26
 - 🏷️ **태그**: `class, java`

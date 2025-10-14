@@ -1,7 +1,7 @@
 # 📄 UserPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/user/UserPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 13개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/admin/subs/org/OrgSearch.vue` • `@/composables/useInputValidation` • `@/store/cmcd.store` • `@/constants/index` • `@/constants/admin/admin` • `@/store` 외 5개 | ⚡ **총 복잡도**: 144 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/http-common` • `@/constants/index` • `@/store/cmcd.store` • `@/constants/admin/admin` 외 5개 | ⚡ **총 복잡도**: 144 |
 | 📊 **총 토큰 수**: 1,379 |  |
 
 

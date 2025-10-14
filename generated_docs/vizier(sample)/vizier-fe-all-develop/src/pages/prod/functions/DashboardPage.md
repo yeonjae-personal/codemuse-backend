@@ -1,7 +1,7 @@
 # 📄 DashboardPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/DashboardPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -19,7 +19,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/layout/UserProfile.vue` • `@/enums` • `@/store` • `@/components/controls/CustomDatePicker.vue` • `@/api/prod/path` • `@/utils/http-common` 외 4개 | ⚡ **총 복잡도**: 11 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/layout/BentoGrid.vue` • `@/utils/http-common` • `@/components/prod/layout/BentoGridList.vue` • `@/enums` 외 4개 | ⚡ **총 복잡도**: 11 |
 | 📊 **총 토큰 수**: 479 |  |
 
 

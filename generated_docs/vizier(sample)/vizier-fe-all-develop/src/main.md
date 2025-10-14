@@ -1,7 +1,7 @@
 # 📄 main.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/main.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `vuetify/directives` • `@mdi/font/css/materialdesignicons.min.css` • `@vuepic/vue-datepicker` • `vuetify` • `./styles/settings.scss` • `prismjs/themes/prism.css` 외 11개 | 📊 **총 토큰 수**: 118 |
+| 📦 **의존성**: `@vuepic/vue-datepicker/dist/main.css` • `prismjs/themes/prism.css` • `vuetify/components` • `prismjs` • `@mdi/font/css/materialdesignicons.min.css` • `vuetify` 외 11개 | 📊 **총 토큰 수**: 118 |
 
 
 

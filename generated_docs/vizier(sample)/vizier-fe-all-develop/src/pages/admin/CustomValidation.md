@@ -1,7 +1,7 @@
 # 📄 CustomValidation.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/CustomValidation.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./subs/custom-validation/CustomValidationTable.vue` • `./subs/custom-validation/CustomValidationGrid.vue` • `./subs/custom-validation/History.vue` • `@/constants/` • `./subs/custom-validation/ActionSearch.vue` • `./subs/custom-validation/ConditionSearch.vue` 외 1개 | 📊 **총 토큰 수**: 88 |
+| 📦 **의존성**: `./subs/custom-validation/CustomValidationGrid.vue` • `./subs/custom-validation/ConditionSearch.vue` • `./subs/custom-validation/CustomValidationTable.vue` • `@/constants/` • `@/store/admin/customValidation.store` • `./subs/custom-validation/ActionSearch.vue` 외 1개 | 📊 **총 토큰 수**: 88 |
 
 
 

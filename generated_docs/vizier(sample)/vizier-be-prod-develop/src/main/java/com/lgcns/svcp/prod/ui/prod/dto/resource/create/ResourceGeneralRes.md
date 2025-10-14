@@ -1,7 +1,7 @@
 # 📄 ResourceGeneralRes.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/create/ResourceGeneralRes.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class ResourceGeneralRes {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fc9740bc8beb`
+- 🆔 **ID**: `914cae91b8f5`
 - 📍 **라인**: 9-9
 - 📊 **토큰**: 38
 - 🏷️ **태그**: `class, java`

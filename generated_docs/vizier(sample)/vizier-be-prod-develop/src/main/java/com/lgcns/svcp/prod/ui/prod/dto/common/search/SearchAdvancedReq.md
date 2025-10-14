@@ -1,7 +1,7 @@
 # 📄 SearchAdvancedReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/search/SearchAdvancedReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class SearchAdvancedReq extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8ffcb4ccbf71`
+- 🆔 **ID**: `8b4a35673c46`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 32
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 useApp.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/composables/useApp.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/labelApi` • `@/store` • `@/interfaces/admin/label-management` | 📊 **총 토큰 수**: 73 |
+| 📦 **의존성**: `@/store` • `@/interfaces/admin/label-management` • `@/api/prod/labelApi` | 📊 **총 토큰 수**: 73 |
 
 
 

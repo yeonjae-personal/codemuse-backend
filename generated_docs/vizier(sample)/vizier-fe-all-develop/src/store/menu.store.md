@@ -1,7 +1,7 @@
 # 📄 menu.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/menu.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 24개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/interfaces/prod/menu` • `@/components/prod/icons/SettingsIcon.vue` • `@/components/prod/icons/PublishIcon.vue` • `./admin/customValidation.store` • `@/components/prod/icons/DashboardIcon.vue` • `@/components/prod/icons/HelpIcon.vue` 외 11개 | ⚡ **총 복잡도**: 108 |
+| 📦 **의존성**: `./admin/attributeManagement.store` • `@/components/prod/icons/PuzzlesIcon.vue` • `@/components/prod/icons/ExtendsIcon.vue` • `@/components/prod/icons/CodeIcon.vue` • `./admin/tableStructure.store` • `@/interfaces/prod/menu` 외 11개 | ⚡ **총 복잡도**: 108 |
 | 📊 **총 토큰 수**: 1,257 |  |
 
 

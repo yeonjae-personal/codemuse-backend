@@ -1,7 +1,7 @@
 # 📄 chunk_builder.py
 
 > **파일 경로**: `rule_analyzer/streaming/utils/chunk_builder.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 12개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `logging` • `stream_models` • `typing` | ⚡ **총 복잡도**: 33 |
+| 📦 **의존성**: `stream_models` • `typing` • `logging` | ⚡ **총 복잡도**: 33 |
 | 📊 **총 토큰 수**: 2,052 |  |
 
 
@@ -146,7 +146,7 @@ class ChunkBuilder:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f0f6ffa16906`
+- 🆔 **ID**: `3db237f9ca86`
 - 📍 **라인**: 13-23
 - 📊 **토큰**: 74
 - 🏷️ **태그**: `class`
@@ -183,31 +183,25 @@ pie title 함수 유형 분포
 ```mermaid
 sequenceDiagram
   participant len as len
-  participant items as items
-  participant build_structured_chunks as build_structured_chunks
-  participant merge_small_chunks as merge_small_chunks
-  participant build_text_chunks as build_text_chunks
+  participant min as min
   participant StreamingChunk as StreamingChunk
-  participant _dict_to_text as _dict_to_text
-  participant optimize_chunk_size as optimize_chunk_size
   participant getLogger as getLogger
+  participant build_structured_chunks as build_structured_chunks
+  participant str as str
+  participant update as update
   participant enumerate as enumerate
-  participant append as append
-  participant join as join
+  participant build_text_chunks as build_text_chunks
+  participant build_error_chunk as build_error_chunk
+  participant estimate_chunk_count as estimate_chunk_count
+  participant max as max
   build_text_chunks->>len: call
   build_text_chunks->>StreamingChunk: call
-  build_text_chunks->>append: call
-  build_text_chunks->>join: call
-  build_structured_chunks->>_dict_to_text: call
   build_structured_chunks->>build_text_chunks: call
   build_structured_chunks->>enumerate: call
   build_structured_chunks->>len: call
-  build_structured_chunks->>append: call
-  merge_small_chunks->>append: call
-  merge_small_chunks->>len: call
-  _dict_to_text->>items: call
-  _dict_to_text->>join: call
-  _dict_to_text->>append: call
+  build_error_chunk->>StreamingChunk: call
+  estimate_chunk_count->>max: call
+  estimate_chunk_count->>len: call
 ```
 
 

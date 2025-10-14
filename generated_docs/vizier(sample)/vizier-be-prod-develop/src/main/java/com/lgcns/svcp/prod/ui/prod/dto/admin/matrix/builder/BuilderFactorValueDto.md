@@ -1,7 +1,7 @@
 # 📄 BuilderFactorValueDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/matrix/builder/BuilderFactorValueDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class BuilderFactorValueDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `24adcfea3648`
+- 🆔 **ID**: `9fa30fd4bc9a`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

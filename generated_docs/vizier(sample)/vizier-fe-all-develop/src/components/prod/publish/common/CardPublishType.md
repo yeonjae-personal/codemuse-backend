@@ -1,7 +1,7 @@
 # 📄 CardPublishType.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/publish/common/CardPublishType.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/RLinearIcon.vue` • `@/components/prod/icons/MultiEntityIcon.vue` • `@/constants/index` • `@/components/prod/icons/ComponentIcon.vue` • `@/components/prod/icons/DIcon.vue` • `@/components/prod/icons/MatrixIcon.vue` 외 16개 | ⚡ **총 복잡도**: 40 |
+| 📦 **의존성**: `@/components/prod/icons/SLinearIcon.vue` • `@/components/prod/icons/RelationIcon.vue` • `@/components/prod/icons/CategoryIcon.vue` • `@/constants/index` • `@/components/prod/icons/AIcon.vue` • `@/interfaces/prod/publishInterface` 외 16개 | ⚡ **총 복잡도**: 40 |
 | 📊 **총 토큰 수**: 1,154 |  |
 
 

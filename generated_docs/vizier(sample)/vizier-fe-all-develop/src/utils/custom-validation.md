@@ -1,7 +1,7 @@
 # 📄 custom-validation.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/utils/custom-validation.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 12개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/isEqual` • `lodash-es/cloneDeep` • `lodash-es/includes` • `@/enums` • `./extend-utils` • `@/constants/` 외 3개 | ⚡ **총 복잡도**: 143 |
+| 📦 **의존성**: `lodash-es/isEmpty` • `lodash-es/cloneDeep` • `lodash-es/every` • `moment-timezone` • `./extend-utils` • `@/enums` 외 3개 | ⚡ **총 복잡도**: 143 |
 | 📊 **총 토큰 수**: 3,311 |  |
 
 

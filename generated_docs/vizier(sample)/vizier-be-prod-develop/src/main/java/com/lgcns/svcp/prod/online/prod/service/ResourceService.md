@@ -1,7 +1,7 @@
 # 📄 ResourceService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service/ResourceService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class ResourceService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `28ccb52b1c51`
+- 🆔 **ID**: `fb80619c0ceb`
 - 📍 **라인**: 20-20
 - 📊 **토큰**: 297
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

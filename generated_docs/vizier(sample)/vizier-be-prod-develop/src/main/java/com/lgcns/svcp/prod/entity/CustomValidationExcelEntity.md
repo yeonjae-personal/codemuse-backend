@@ -1,7 +1,7 @@
 # 📄 CustomValidationExcelEntity.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/CustomValidationExcelEntity.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class CustomValidationExcelEntity extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `69c4faa53c5d`
+- 🆔 **ID**: `f2cbcc34916a`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 58
 - 🏷️ **태그**: `class, java`

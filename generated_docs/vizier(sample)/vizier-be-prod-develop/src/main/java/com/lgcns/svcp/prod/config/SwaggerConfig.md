@@ -1,7 +1,7 @@
 # 📄 SwaggerConfig.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/config/SwaggerConfig.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class SwaggerConfig {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6e0a62f72cf7`
+- 🆔 **ID**: `e2ac995df17c`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 24
 - 🏷️ **태그**: `class, java, bean, spring-boot`

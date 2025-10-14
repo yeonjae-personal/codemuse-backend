@@ -1,7 +1,7 @@
 # 📄 common-util.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/utils/common-util.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -46,7 +46,7 @@ export class CommonUtil {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e03acaf03ee5`
+- 🆔 **ID**: `8bdb65708452`
 - 📍 **라인**: 3-10
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, javascript`

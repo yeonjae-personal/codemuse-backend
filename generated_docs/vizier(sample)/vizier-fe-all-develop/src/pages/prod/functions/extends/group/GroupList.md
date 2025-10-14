@@ -1,7 +1,7 @@
 # 📄 GroupList.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/group/GroupList.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/enums` • `lodash-es` • `@/utils/config-path` • `@/enums/redirect` • `@/constants/offer` 외 1개 | ⚡ **총 복잡도**: 57 |
+| 📦 **의존성**: `vue-i18n` • `@/composables/useDragUserPocket` • `@/constants/offer` • `@/utils/config-path` • `@/enums` • `lodash-es` 외 1개 | ⚡ **총 복잡도**: 57 |
 | 📊 **총 토큰 수**: 806 |  |
 
 

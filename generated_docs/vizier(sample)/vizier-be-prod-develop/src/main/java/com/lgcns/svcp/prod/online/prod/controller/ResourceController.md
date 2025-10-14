@@ -1,7 +1,7 @@
 # 📄 ResourceController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/ResourceController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class ResourceController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `81a45e8b8f72`
+- 🆔 **ID**: `954636620e69`
 - 📍 **라인**: 23-23
 - 📊 **토큰**: 198
 - 🏷️ **태그**: `class, java, autowired, getmapping, pathvariable...`

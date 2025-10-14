@@ -1,7 +1,7 @@
 # 📄 ServiceElementDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/resource/ServiceElementDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ServiceElementDto`
-- **도메인**: user
+- **도메인**: product_online
 - **목적**: ServiceElementDto 비즈니스 로직 처리
 - **복잡도**: 15
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/resource/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/resource/*
 - **라인**: 10
 
 
@@ -71,7 +71,7 @@ public class ServiceElementDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `96838deb7d80`
+- 🆔 **ID**: `6cc8736d2903`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 44
 - 🏷️ **태그**: `class, java`

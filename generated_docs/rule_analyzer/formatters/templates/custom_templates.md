@@ -1,7 +1,7 @@
 # 📄 custom_templates.py
 
 > **파일 경로**: `rule_analyzer/formatters/templates/custom_templates.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 15개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `options` • `re` • `logging` • `json` | ⚡ **총 복잡도**: 36 |
+| 📦 **의존성**: `re` • `json` • `typing` • `options` • `logging` | ⚡ **총 복잡도**: 36 |
 | 📊 **총 토큰 수**: 2,668 |  |
 
 
@@ -173,7 +173,7 @@ class CustomTemplateManager:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `811c203ba551`
+- 🆔 **ID**: `3617b6c195fe`
 - 📍 **라인**: 14-24
 - 📊 **토큰**: 62
 - 🏷️ **태그**: `class, manager`
@@ -209,24 +209,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant list as list
-  participant clear as clear
-  participant items as items
-  participant len as len
-  participant load_custom_template as load_custom_template
   participant dumps as dumps
-  participant _add_detailed_fields as _add_detailed_fields
-  participant list_custom_templates as list_custom_templates
+  participant len as len
   participant _translate_to_english as _translate_to_english
+  participant _add_detailed_fields as _add_detailed_fields
+  participant _validate_placeholders as _validate_placeholders
+  participant any as any
+  participant list_custom_templates as list_custom_templates
+  participant get_custom_template as get_custom_template
   participant _apply_template_variatio as _apply_template_variations
   participant loads as loads
+  participant get_template_info as get_template_info
   participant getLogger as getLogger
-  load_custom_template->>loads: call
-  list_custom_templates->>list: call
+  get_custom_template->>_apply_template_variations: call
   _apply_template_variations->>_translate_to_english: call
   _apply_template_variations->>_add_detailed_fields: call
-  _add_detailed_fields->>items: call
-  _translate_to_english->>items: call
+  get_template_info->>len: call
+  get_template_info->>any: call
+  get_template_info->>dumps: call
 ```
 
 

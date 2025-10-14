@@ -1,7 +1,7 @@
 # 📄 ComponentCreatePage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/component/ComponentCreatePage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 13개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/constants/index` • `@/components/prod/shared/AdditionalTab.vue` • `@/components/prod/shared/ResourceTab.vue` • `@/store/component.store` • `lodash-es/cloneDeep` 외 16개 | ⚡ **총 복잡도**: 70 |
+| 📦 **의존성**: `@/components/prod/shared/ResourceTab.vue` • `vuetify/lib/components/index.mjs` • `@/utils/impact-analysis-utils` • `@/constants/userInfor` • `@/components/prod/shared/GeneralTab.vue` • `@/enums/columnTypes` 외 16개 | ⚡ **총 복잡도**: 70 |
 | 📊 **총 토큰 수**: 1,786 |  |
 
 

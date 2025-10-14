@@ -1,7 +1,7 @@
 # 📄 UserOrgPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/user/UserOrgPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -22,7 +22,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/store` • `@/pages/admin/subs/DataTableCustom.vue` • `vue-i18n` | ⚡ **총 복잡도**: 40 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/pages/admin/subs/DataTableCustom.vue` • `@/enums` | ⚡ **총 복잡도**: 40 |
 | 📊 **총 토큰 수**: 715 |  |
 
 

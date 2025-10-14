@@ -1,7 +1,7 @@
 # 📄 SearchItemRelationReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/search/SearchItemRelationReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `SearchItemRelationReq`
-- **도메인**: user
+- **도메인**: relation
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 4
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/search/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/search/*
 - **라인**: 8
 
 
@@ -60,7 +60,7 @@ public class SearchItemRelationReq {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `79bc09a13875`
+- 🆔 **ID**: `73e554c0d84d`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

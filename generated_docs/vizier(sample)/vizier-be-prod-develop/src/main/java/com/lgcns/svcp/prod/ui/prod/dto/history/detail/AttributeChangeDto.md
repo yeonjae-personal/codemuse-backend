@@ -1,7 +1,7 @@
 # 📄 AttributeChangeDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/detail/AttributeChangeDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class AttributeChangeDto extends ChangedDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5d330ac808ed`
+- 🆔 **ID**: `1d284dec6a77`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 22
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 AttributeCodeSearchItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit/AttributeCodeSearchItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/interfaces/admin/attribute-management` • `@/store/admin/attributeManagement.store` • `@/constants/admin/label` • `@/components/prod/icons/OpenInNewIcon.vue` • `@/utils/format-data` • `vue-i18n` 외 1개 | 📊 **총 토큰 수**: 513 |
+| 📦 **의존성**: `vue-i18n` • `@/interfaces/admin/attribute-management` • `@/store/admin/attributeManagement.store` • `@/interfaces/prod` • `@/components/prod/icons/OpenInNewIcon.vue` • `@/utils/format-data` 외 1개 | 📊 **총 토큰 수**: 513 |
 
 
 

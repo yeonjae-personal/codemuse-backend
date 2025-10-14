@@ -1,7 +1,7 @@
 # 📄 UIController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UIController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class UIController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `a7ad2c4647d9`
+- 🆔 **ID**: `25cc28775363`
 - 📍 **라인**: 23-23
 - 📊 **토큰**: 39
 - 🏷️ **태그**: `class, java, getmapping, requestparam, spring-boot`

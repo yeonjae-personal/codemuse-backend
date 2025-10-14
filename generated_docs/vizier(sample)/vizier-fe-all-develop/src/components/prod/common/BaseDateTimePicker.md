@@ -1,7 +1,7 @@
 # 📄 BaseDateTimePicker.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/common/BaseDateTimePicker.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 13개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@vuepic/vue-datepicker` • `@/store` • `@/constants/` • `@/utils/format-data` • `moment-timezone` • `vue-i18n` | ⚡ **총 복잡도**: 83 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `moment-timezone` • `@/constants/` • `@vuepic/vue-datepicker` • `@/utils/format-data` | ⚡ **총 복잡도**: 83 |
 | 📊 **총 토큰 수**: 987 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 UiCalendarServiceImpl.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/impl/UiCalendarServiceImpl.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -60,7 +60,7 @@ public class UiCalendarServiceImpl implements UiCalendarService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `247140792b33`
+- 🆔 **ID**: `870dea41a983`
 - 📍 **라인**: 28-28
 - 📊 **토큰**: 399
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

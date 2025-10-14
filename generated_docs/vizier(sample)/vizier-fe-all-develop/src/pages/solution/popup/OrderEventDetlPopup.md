@@ -1,7 +1,7 @@
 # 📄 OrderEventDetlPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup/OrderEventDetlPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 29개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `@/store/global.store` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/utils/common-ordr` • `@/utils/common-util` | ⚡ **총 복잡도**: 533 |
+| 📦 **의존성**: `@/utils/common-ordr` • `ag-grid-vue3` • `@/utils/common-util` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/store/global.store` • `ag-grid-community/styles/ag-grid.css` | ⚡ **총 복잡도**: 533 |
 | 📊 **총 토큰 수**: 3,930 |  |
 
 

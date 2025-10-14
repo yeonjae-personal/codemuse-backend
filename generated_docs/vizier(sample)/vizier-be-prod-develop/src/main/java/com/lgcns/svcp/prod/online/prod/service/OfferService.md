@@ -1,7 +1,7 @@
 # 📄 OfferService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/service/OfferService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class OfferService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `1b1c30b29f53`
+- 🆔 **ID**: `91cfb1bdac7f`
 - 📍 **라인**: 24-24
 - 📊 **토큰**: 545
 - 🏷️ **태그**: `class, java, autowired, param, spring-boot`

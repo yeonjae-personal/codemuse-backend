@@ -1,7 +1,7 @@
 # 📄 WebConfig.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/config/WebConfig.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -62,7 +62,7 @@ public class WebConfig implements WebMvcConfigurer {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8557439386e5`
+- 🆔 **ID**: `3cb511c1ec28`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 28
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

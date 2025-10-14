@@ -1,7 +1,7 @@
 # 📄 CommonController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/controller/CommonController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class CommonController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `511aaac6ba28`
+- 🆔 **ID**: `8663ff6903a5`
 - 📍 **라인**: 29-29
 - 📊 **토큰**: 133
 - 🏷️ **태그**: `class, java, autowired, getmapping, pathvariable...`

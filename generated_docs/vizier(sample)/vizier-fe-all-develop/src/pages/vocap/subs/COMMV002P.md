@@ -1,7 +1,7 @@
 # 📄 COMMV002P.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/vocap/subs/COMMV002P.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `@/store/global.store` • `axios` • `ag-grid-community/styles/ag-grid.css` • `@/composables/useInputValidation` • `ag-grid-community` 외 3개 | ⚡ **총 복잡도**: 56 |
+| 📦 **의존성**: `ag-grid-vue3` • `@/pages/vocap/subs/COMMW001P.vue` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/store/global.store` • `ag-grid-community/styles/ag-grid.css` • `ag-grid-community` 외 3개 | ⚡ **총 복잡도**: 56 |
 | 📊 **총 토큰 수**: 755 |  |
 
 

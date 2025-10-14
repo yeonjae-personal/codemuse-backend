@@ -1,7 +1,7 @@
 # 📄 componentApi.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/api/prod/componentApi.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Typescript
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/utils/http-common` • `@/api/prod/path` • `@/utils/format-data` | ⚡ **총 복잡도**: 45 |
+| 📦 **의존성**: `@/api/prod/path` • `@/utils/format-data` • `@/utils/http-common` | ⚡ **총 복잡도**: 45 |
 | 📊 **총 토큰 수**: 385 |  |
 
 

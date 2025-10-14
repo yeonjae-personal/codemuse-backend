@@ -1,7 +1,7 @@
 # 📄 UserManagement.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/UserManagement.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -25,7 +25,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/admin/subs/user/UserPopup.vue` • `@/constants/admin/admin` • `@/enums` • `@/store` • `vue-i18n` • `@/interfaces/admin/admin` 외 1개 | ⚡ **총 복잡도**: 58 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/pages/admin/subs/user/UserPopup.vue` • `@/constants/admin/admin` • `@/enums` • `@/pages/admin/subs/DataTableCustom.vue` 외 1개 | ⚡ **총 복잡도**: 58 |
 | 📊 **총 토큰 수**: 739 |  |
 
 

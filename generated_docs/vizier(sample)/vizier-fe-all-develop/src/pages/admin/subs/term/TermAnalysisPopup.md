@@ -1,7 +1,7 @@
 # 📄 TermAnalysisPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/term/TermAnalysisPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/admin/subs/TableAnalysis.vue` • `@/constants/index` • `@/components/prod/icons/FalseIcon.vue` • `@/constants/admin/admin` • `@/enums` • `@/store` 외 4개 | ⚡ **총 복잡도**: 36 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/pages/admin/subs/TableAnalysis.vue` • `@/constants/admin/terminology` • `@/components/prod/icons/TrueIcon.vue` • `@/utils/http-common` 외 4개 | ⚡ **총 복잡도**: 36 |
 | 📊 **총 토큰 수**: 736 |  |
 
 

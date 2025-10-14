@@ -1,7 +1,7 @@
 # 📄 DomainContent.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/domain/DomainContent.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `../../types/domain` • `@/components/prod/common/BaseTotalSearchResult.vue` • `@/store` • `@/components/prod/common/SearchAndRefreshButton.vue` • `@/pages/admin/subs/domain/DomainLookupTable.vue` • `@/interfaces/admin/admin` 외 1개 | ⚡ **총 복잡도**: 29 |
+| 📦 **의존성**: `@/store` • `@/pages/admin/subs/domain/DomainLookupTable.vue` • `../../types/domain` • `@/interfaces/admin/admin` • `@/components/prod/common/SearchAndRefreshButton.vue` • `@/components/prod/common/BaseTotalSearchResult.vue` 외 1개 | ⚡ **총 복잡도**: 29 |
 | 📊 **총 토큰 수**: 563 |  |
 
 

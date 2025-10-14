@@ -1,7 +1,7 @@
 # 📄 product.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/product.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/interfaces/prod/table` • `@/interfaces/prod/offer` • `@/api/prod/impactAnalysisApi` • `@/utils/format-data` • `lodash-es/set` 외 1개 | ⚡ **총 복잡도**: 174 |
+| 📦 **의존성**: `@/constants/table` • `lodash-es/cloneDeep` • `@/interfaces/prod/table` • `@/utils/format-data` • `@/api/prod/impactAnalysisApi` • `@/interfaces/prod/offer` 외 1개 | ⚡ **총 복잡도**: 174 |
 | 📊 **총 토큰 수**: 1,408 |  |
 
 

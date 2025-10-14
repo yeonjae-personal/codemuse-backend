@@ -1,7 +1,7 @@
 # 📄 SubscriberTop10Item.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/subscriber-top-10/SubscriberTop10Item.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `vue-chartjs` • `@/utils/http-common` • `@/api/prod/path` • `chartjs-plugin-datalabels` | ⚡ **총 복잡도**: 10 |
+| 📦 **의존성**: `vue-chartjs` • `chartjs-plugin-datalabels` • `@/api/prod/path` • `@/utils/http-common` | ⚡ **총 복잡도**: 10 |
 | 📊 **총 토큰 수**: 336 |  |
 
 

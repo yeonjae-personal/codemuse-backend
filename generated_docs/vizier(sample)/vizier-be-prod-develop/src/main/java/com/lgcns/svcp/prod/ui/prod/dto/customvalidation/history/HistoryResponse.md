@@ -1,7 +1,7 @@
 # 📄 HistoryResponse.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/history/HistoryResponse.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class HistoryResponse {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ed89e391d333`
+- 🆔 **ID**: `4039033a0a1f`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

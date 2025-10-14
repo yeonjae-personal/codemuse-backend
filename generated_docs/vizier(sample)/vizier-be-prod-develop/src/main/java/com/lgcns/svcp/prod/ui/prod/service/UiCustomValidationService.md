@@ -1,7 +1,7 @@
 # 📄 UiCustomValidationService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiCustomValidationService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -47,7 +47,7 @@ public interface UiCustomValidationService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f970c3977156`
+- 🆔 **ID**: `50d946c106a2`
 - 📊 **토큰**: 65
 
 </details>

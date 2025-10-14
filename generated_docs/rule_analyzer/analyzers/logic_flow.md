@@ -1,7 +1,7 @@
 # 📄 logic_flow.py
 
 > **파일 경로**: `rule_analyzer/analyzers/logic_flow.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개
 
 ---
@@ -101,7 +101,7 @@ def build_logic_flow_from_condition_tree(condition_tree: Dict[str, Any]) -> Logi
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `eb1d0c68d3c0`
+- 🆔 **ID**: `29f64ee845cf`
 - 🏷️ **태그**: ``
 
 </details>
@@ -132,11 +132,11 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant LogicFlow as LogicFlow
   participant len as len
+  participant get as get
   participant build_logic_flow_from_co as build_logic_flow_from_condition_tree
   participant append as append
+  participant LogicFlow as LogicFlow
   participant traverse as traverse
   build_logic_flow_from_condition_tree->>traverse: call
   build_logic_flow_from_condition_tree->>LogicFlow: call

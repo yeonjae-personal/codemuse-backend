@@ -1,7 +1,7 @@
 # 📄 LabelMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/LabelMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -45,7 +45,7 @@ public interface LabelMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `13006827fe9c`
+- 🆔 **ID**: `72677668fd92`
 - 📊 **토큰**: 8
 
 </details>

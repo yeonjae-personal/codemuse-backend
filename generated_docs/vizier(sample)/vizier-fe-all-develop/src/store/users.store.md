@@ -1,7 +1,7 @@
 # 📄 users.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/users.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/router/index` • `@/utils/http-common` • `./global.store` • `@/utils/common-util` | ⚡ **총 복잡도**: 1 |
+| 📦 **의존성**: `@/router/index` • `./global.store` • `@/utils/common-util` • `@/utils/http-common` | ⚡ **총 복잡도**: 1 |
 | 📊 **총 토큰 수**: 389 |  |
 
 

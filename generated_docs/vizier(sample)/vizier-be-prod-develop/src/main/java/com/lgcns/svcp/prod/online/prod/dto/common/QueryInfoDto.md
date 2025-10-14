@@ -1,7 +1,7 @@
 # 📄 QueryInfoDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/common/QueryInfoDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -47,7 +47,7 @@ public class QueryInfoDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4d3b5f938c92`
+- 🆔 **ID**: `13251d34a300`
 - 📍 **라인**: 5-5
 - 📊 **토큰**: 7
 - 🏷️ **태그**: `class, java`

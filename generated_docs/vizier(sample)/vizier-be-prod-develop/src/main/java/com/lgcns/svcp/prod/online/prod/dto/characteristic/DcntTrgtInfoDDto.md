@@ -1,7 +1,7 @@
 # 📄 DcntTrgtInfoDDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/characteristic/DcntTrgtInfoDDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -66,7 +66,7 @@ public class DcntTrgtInfoDDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `10741233b2e9`
+- 🆔 **ID**: `781f2f17516d`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 55
 - 🏷️ **태그**: `class, java`

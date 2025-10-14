@@ -1,7 +1,7 @@
 # 📄 DeviceWithCatgUuid.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/DeviceWithCatgUuid.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -72,7 +72,7 @@ public class DeviceWithCatgUuid {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4ac2427b6d99`
+- 🆔 **ID**: `4e2cf1408782`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 86
 - 🏷️ **태그**: `class, java`

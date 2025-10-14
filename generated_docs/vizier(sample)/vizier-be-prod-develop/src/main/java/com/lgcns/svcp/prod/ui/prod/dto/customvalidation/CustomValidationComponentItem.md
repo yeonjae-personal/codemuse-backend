@@ -1,7 +1,7 @@
 # 📄 CustomValidationComponentItem.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/CustomValidationComponentItem.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `CustomValidationComponentItem`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: 비즈니스 로직 처리
 - **복잡도**: 6
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/customvalidation/*
 - **라인**: 12
 
 
@@ -63,7 +63,7 @@ public class CustomValidationComponentItem {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f955530d3b86`
+- 🆔 **ID**: `66423dd3ff75`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

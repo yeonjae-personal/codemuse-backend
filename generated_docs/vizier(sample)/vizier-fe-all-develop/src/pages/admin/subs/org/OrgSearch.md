@@ -1,7 +1,7 @@
 # 📄 OrgSearch.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/org/OrgSearch.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 12개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./OrgUtils.ts` • `@/store/cmcd.store` • `@/enums` • `@/components/prod/icons/ExpandIcon.vue` • `@/store` • `vue-i18n` 외 3개 | ⚡ **총 복잡도**: 72 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `./OrgUtils.ts` • `@/store/cmcd.store` • `@/enums` • `vuetify/labs/VTreeview` 외 3개 | ⚡ **총 복잡도**: 72 |
 | 📊 **총 토큰 수**: 1,276 |  |
 
 

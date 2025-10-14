@@ -1,7 +1,7 @@
 # 📄 InsertGroupOfferDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/group/InsertGroupOfferDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -53,7 +53,7 @@ public class InsertGroupOfferDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2d40359bf988`
+- 🆔 **ID**: `d632b9b5a50c`
 - 📍 **라인**: 14-14
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java`

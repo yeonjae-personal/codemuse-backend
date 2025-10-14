@@ -1,7 +1,7 @@
 # 📄 resource.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/constants/resource.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums/component.ts` • `./index` • `@/types/common` | 📊 **총 토큰 수**: 75 |
+| 📦 **의존성**: `./index` • `@/enums/component.ts` • `@/types/common` | 📊 **총 토큰 수**: 75 |
 
 
 

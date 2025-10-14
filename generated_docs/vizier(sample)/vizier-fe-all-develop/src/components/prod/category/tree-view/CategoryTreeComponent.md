@@ -1,7 +1,7 @@
 # 📄 CategoryTreeComponent.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/category/tree-view/CategoryTreeComponent.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `./TreeView/TreeListLevelDescriptionSection.vue` • `@/constants/category` • `@/enums` • `@/store` • `lodash-es` 외 5개 | 📊 **총 토큰 수**: 2,179 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `lodash-es/cloneDeep` • `@/enums` • `./TreeView/TreeListLevelDescriptionSection.vue` • `./TreeView/TreeViewChart.vue` 외 5개 | 📊 **총 토큰 수**: 2,179 |
 
 
 

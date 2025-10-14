@@ -1,7 +1,7 @@
 # 📄 vite.config.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/vite.config.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `unplugin-vue-components/vite` • `unplugin-auto-import/vite` • `vite` • `node:url` • `./package.json` • `vite-svg-loader` 외 2개 | 📊 **총 토큰 수**: 236 |
+| 📦 **의존성**: `unplugin-vue-components/vite` • `@vitejs/plugin-vue` • `node:url` • `@module-federation/vite` • `./package.json` • `vite-svg-loader` 외 2개 | 📊 **총 토큰 수**: 236 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 OfferCreateInfo.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/OfferCreateInfo.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class OfferCreateInfo extends ItemMappingDetailDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d856412a5031`
+- 🆔 **ID**: `2100eeb417bf`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 10
 - 🏷️ **태그**: `class, java`

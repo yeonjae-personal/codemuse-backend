@@ -1,7 +1,7 @@
 # 📄 common.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/common.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/interfaces/prod` • `@/constants/` | ⚡ **총 복잡도**: 15 |
+| 📦 **의존성**: `@/constants/` • `@/interfaces/prod` | ⚡ **총 복잡도**: 15 |
 | 📊 **총 토큰 수**: 235 |  |
 
 

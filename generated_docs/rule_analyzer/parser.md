@@ -1,7 +1,7 @@
 # 📄 parser.py
 
 > **파일 경로**: `rule_analyzer/parser.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 15개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `models` • `exceptions` • `typing` • `logging` • `json` • `uuid` | ⚡ **총 복잡도**: 65 |
+| 📦 **의존성**: `logging` • `json` • `typing` • `uuid` • `models` • `exceptions` | ⚡ **총 복잡도**: 65 |
 | 📊 **총 토큰 수**: 3,299 |  |
 
 
@@ -179,7 +179,7 @@ class RuleParser:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `5524d2250e31`
+- 🆔 **ID**: `9b7d0cc6af26`
 - 📍 **라인**: 18-28
 - 📊 **토큰**: 77
 - 🏷️ **태그**: `class`
@@ -216,21 +216,28 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
+  participant parse as parse
+  participant _validate_rule_object as _validate_rule_object
   participant len as len
-  participant warning as warning
-  participant RuleCondition as RuleCondition
-  participant uuid4 as uuid4
-  participant getattr as getattr
-  participant _parse_condition_dict as _parse_condition_dict
-  participant Rule as Rule
-  participant hasattr as hasattr
+  participant _parse_dict as _parse_dict
+  participant _parse_condition_tree as _parse_condition_tree
+  participant normalize_rule as normalize_rule
   participant loads as loads
+  participant _parse_single_condition as _parse_single_condition
   participant getLogger as getLogger
-  participant enumerate as enumerate
-  _parse_condition_dict->>get: call
-  _parse_condition_dict->>RuleCondition: call
+  participant _parse_condition_dict as _parse_condition_dict
+  participant uuid4 as uuid4
+  participant str as str
+  parse->>_parse_dict: call
+  parse->>_validate_rule_object: call
+  _parse_dict->>_parse_condition_tree: call
+  _parse_single_condition->>_parse_condition_dict: call
+  _parse_single_condition->>str: call
+  _parse_condition_dict->>str: call
   _parse_condition_dict->>uuid4: call
+  _validate_rule_object->>str: call
+  normalize_rule->>str: call
+  normalize_rule->>uuid4: call
 ```
 
 

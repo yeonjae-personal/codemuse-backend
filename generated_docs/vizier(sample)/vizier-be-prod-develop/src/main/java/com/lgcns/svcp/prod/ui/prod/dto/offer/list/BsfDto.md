@@ -1,7 +1,7 @@
 # 📄 BsfDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list/BsfDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class BsfDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6b15f0a75d4d`
+- 🆔 **ID**: `304bac644939`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

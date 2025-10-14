@@ -1,7 +1,7 @@
 # 📄 SecurityHeaderFilter.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/filters/SecurityHeaderFilter.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -59,7 +59,7 @@ public class SecurityHeaderFilter extends OncePerRequestFilter {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2226eff7e7eb`
+- 🆔 **ID**: `040764420005`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 33
 - 🏷️ **태그**: `class, java`

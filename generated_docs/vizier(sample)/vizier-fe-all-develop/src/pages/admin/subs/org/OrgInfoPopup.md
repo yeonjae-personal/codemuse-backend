@@ -1,7 +1,7 @@
 # 📄 OrgInfoPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/org/OrgInfoPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 13개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/admin/subs/org/OrgSearch.vue` • `@/composables/useInputValidation` • `@/store/cmcd.store` • `@/constants/index` • `@/constants/admin/admin` • `@/store` 외 4개 | ⚡ **총 복잡도**: 136 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/http-common` • `@/store/cmcd.store` • `@/constants/admin/admin` • `@/composables/useFormValidation` 외 4개 | ⚡ **총 복잡도**: 136 |
 | 📊 **총 토큰 수**: 1,501 |  |
 
 

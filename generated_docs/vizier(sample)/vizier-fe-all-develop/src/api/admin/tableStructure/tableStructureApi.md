@@ -1,7 +1,7 @@
 # 📄 tableStructureApi.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/api/admin/tableStructure/tableStructureApi.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Typescript
 ---

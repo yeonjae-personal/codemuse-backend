@@ -1,7 +1,7 @@
 # 📄 useDownloadFIle.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/composables/useDownloadFIle.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `axios` • `@/interfaces/prod/offer.ts` • `@/interfaces/prod/CategoryInterface` • `moment-timezone` • `@/interfaces/prod/ImpactAnalysisInterface` • `@/utils/format-data.ts` 외 2개 | ⚡ **총 복잡도**: 28 |
+| 📦 **의존성**: `@/interfaces/prod/offer.ts` • `@/interfaces/prod/CategoryInterface` • `qs` • `@/utils/format-data.ts` • `moment-timezone` • `@/interfaces/prod/ImpactAnalysisInterface` 외 2개 | ⚡ **총 복잡도**: 28 |
 | 📊 **총 토큰 수**: 393 |  |
 
 

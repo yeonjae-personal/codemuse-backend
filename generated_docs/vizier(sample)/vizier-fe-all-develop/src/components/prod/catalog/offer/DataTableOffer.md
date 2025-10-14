@@ -1,7 +1,7 @@
 # 📄 DataTableOffer.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/DataTableOffer.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/store` • `@/types/common` • `@/utils/format-data` • `@/composables/useGroupCode` • `vue-i18n` 외 1개 | ⚡ **총 복잡도**: 23 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `lodash-es/cloneDeep` • `@/composables/useGroupCode` • `@/enums/columnTypes` • `@/utils/format-data` 외 1개 | ⚡ **총 복잡도**: 23 |
 | 📊 **총 토큰 수**: 856 |  |
 
 

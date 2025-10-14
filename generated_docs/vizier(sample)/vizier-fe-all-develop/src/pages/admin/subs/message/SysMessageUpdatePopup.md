@@ -1,7 +1,7 @@
 # 📄 SysMessageUpdatePopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/message/SysMessageUpdatePopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/admin/sysMessage` • `lodash-es/cloneDeep` • `@/composables/useInputValidation` • `@/constants/index` • `@/constants/admin/admin` • `@/store` 외 6개 | ⚡ **총 복잡도**: 84 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/common-ordr` • `@/constants/admin/sysMessage` • `@/utils/http-common` • `@/constants/admin/admin` 외 6개 | ⚡ **총 복잡도**: 84 |
 | 📊 **총 토큰 수**: 949 |  |
 
 

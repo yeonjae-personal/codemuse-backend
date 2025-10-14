@@ -1,7 +1,7 @@
 # 📄 extendCreate.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/extendCreate.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/enums` • `@/constants/userInfor` • `@/constants/` • `@/constants/offer` • `@/api/prod/extendsApi` 외 1개 | 📊 **총 토큰 수**: 504 |
+| 📦 **의존성**: `@/api/prod/extendsApi` • `@/constants/offer` • `@/constants/userInfor` • `lodash-es/cloneDeep` • `@/enums` • `@/constants/` 외 1개 | 📊 **총 토큰 수**: 504 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 StructureChangeResDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/history/detail/StructureChangeResDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class StructureChangeResDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `aa2b83b6f4b5`
+- 🆔 **ID**: `b68ae0d0bb37`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 20
 - 🏷️ **태그**: `class, java`

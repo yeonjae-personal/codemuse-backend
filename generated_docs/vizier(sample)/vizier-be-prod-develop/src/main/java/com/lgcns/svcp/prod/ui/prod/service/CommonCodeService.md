@@ -1,7 +1,7 @@
 # 📄 CommonCodeService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/CommonCodeService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class CommonCodeService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `422943a776a5`
+- 🆔 **ID**: `5d712d5eb100`
 - 📍 **라인**: 23-23
 - 📊 **토큰**: 193
 - 🏷️ **태그**: `class, java, autowired, spring-boot`

@@ -1,7 +1,7 @@
 # 📄 handlers.js
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/mocks/handlers.js`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Javascript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/mocks/prod/catalog/componentHandlers.ts` • `./voca/vocaHandlers` • `./cmcd/cmcdHandlers` • `@/mocks/prod/catalog/resourceHandlers.ts` • `@/mocks/prod/catalog/offerHandlers.ts` • `./smg/sysmsgHandlers` 외 6개 | 📊 **총 토큰 수**: 88 |
+| 📦 **의존성**: `./cmcd/cmcdHandlers` • `./user/userHandlers` • `@/mocks/prod/catalog/resourceHandlers.ts` • `./org/orgHandlers` • `./voca/vocaHandlers` • `@/mocks/prod/catalog/componentHandlers.ts` 외 6개 | 📊 **총 토큰 수**: 88 |
 
 
 

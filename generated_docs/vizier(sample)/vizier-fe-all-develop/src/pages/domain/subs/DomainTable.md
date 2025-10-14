@@ -1,7 +1,7 @@
 # 📄 DomainTable.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/domain/subs/DomainTable.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `@/store/global.store` • `@/pages/domain/subs/COMMD001P.vue` • `@/pages/vocap/subs/COMMW001P.vue` • `@/pages/vocap/subs/COMMV001P.vue` 외 2개 | ⚡ **총 복잡도**: 53 |
+| 📦 **의존성**: `vue-i18n` • `ag-grid-vue3` • `@/pages/vocap/subs/COMMW001P.vue` • `@/pages/domain/subs/COMMD001P.vue` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/store/global.store` 외 2개 | ⚡ **총 복잡도**: 53 |
 | 📊 **총 토큰 수**: 702 |  |
 
 

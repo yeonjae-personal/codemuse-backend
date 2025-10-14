@@ -1,7 +1,7 @@
 # 📄 UiAttributeManagementService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/UiAttributeManagementService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -46,7 +46,7 @@ public interface UiAttributeManagementService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `e6d339d24102`
+- 🆔 **ID**: `6c2308cbd324`
 - 📊 **토큰**: 16
 
 </details>

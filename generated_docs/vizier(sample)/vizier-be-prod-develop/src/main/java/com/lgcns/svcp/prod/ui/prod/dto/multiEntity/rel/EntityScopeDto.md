@@ -1,7 +1,7 @@
 # 📄 EntityScopeDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/rel/EntityScopeDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -19,10 +19,10 @@
 ## 💼 비즈니스 로직
 
 ### `EntityScopeDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: EntityScopeDto 데이터 모델 정의
 - **복잡도**: 4
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/rel/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/rel/*
 - **라인**: 8
 
 
@@ -68,7 +68,7 @@ public class EntityScopeDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2de17de1d8b8`
+- 🆔 **ID**: `89e737ae3f8b`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 11
 - 🏷️ **태그**: `class, java`

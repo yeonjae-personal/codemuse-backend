@@ -1,7 +1,7 @@
 # 📄 MultiEntityDetail.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/extends/mutil-entity/search/MultiEntityDetail.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/enums/columnTypes` • `@/components/prod/extends/mutil-entity/search/tabs/MultiEntityGeneralTab.vue` • `@/enums` • `@/components/prod/extends/mutil-entity/search/tabs/MultiEntityAdditionalTab.vue` • `@/enums/redirect` 외 5개 | ⚡ **총 복잡도**: 71 |
+| 📦 **의존성**: `@/api/prod/extendsApi` • `vue-i18n` • `@/constants/offer` • `lodash-es/cloneDeep` • `@/enums` • `@/composables/useGroupCode` 외 5개 | ⚡ **총 복잡도**: 71 |
 | 📊 **총 토큰 수**: 1,230 |  |
 
 

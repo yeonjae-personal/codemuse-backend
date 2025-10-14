@@ -1,7 +1,7 @@
 # 📄 DsbdOfferSubCntDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/DsbdOfferSubCntDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class DsbdOfferSubCntDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d55d3b636628`
+- 🆔 **ID**: `d4032f1280a3`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 29
 - 🏷️ **태그**: `class, java`

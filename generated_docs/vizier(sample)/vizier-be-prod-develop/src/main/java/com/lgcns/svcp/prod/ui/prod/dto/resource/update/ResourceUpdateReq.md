@@ -1,7 +1,7 @@
 # 📄 ResourceUpdateReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/update/ResourceUpdateReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class ResourceUpdateReq extends ItemMappingDetailDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d05103818ad1`
+- 🆔 **ID**: `a31eef066d02`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 13
 - 🏷️ **태그**: `class, java`

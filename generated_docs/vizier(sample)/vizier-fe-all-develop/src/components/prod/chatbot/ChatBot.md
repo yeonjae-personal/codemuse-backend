@@ -1,7 +1,7 @@
 # 📄 ChatBot.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/chatbot/ChatBot.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 26개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@vueuse/core` • `lodash-es/cloneDeep` • `marked` • `./ChatBotFrame.vue` • `@/store` • `@/utils/config-path` 외 6개 | ⚡ **총 복잡도**: 451 |
+| 📦 **의존성**: `@/store` • `marked` • `@/store/userPocket.store` • `@vueuse/core` • `@/utils/config-path` • `lodash-es/cloneDeep` 외 6개 | ⚡ **총 복잡도**: 451 |
 | 📊 **총 토큰 수**: 3,534 |  |
 
 

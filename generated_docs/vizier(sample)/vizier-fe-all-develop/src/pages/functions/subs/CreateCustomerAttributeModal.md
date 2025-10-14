@@ -1,7 +1,7 @@
 # 📄 CreateCustomerAttributeModal.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/functions/subs/CreateCustomerAttributeModal.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `vuetify/components/VForm` • `@/store` • `@/pages/solution/SystemPage.vue` • `@/utils/http-common` • `@/utils/common-util` | ⚡ **총 복잡도**: 96 |
+| 📦 **의존성**: `@/store` • `@/utils/common-util` • `vuetify/components/VForm` • `@/utils/http-common` • `@/pages/solution/SystemPage.vue` | ⚡ **총 복잡도**: 96 |
 | 📊 **총 토큰 수**: 1,016 |  |
 
 

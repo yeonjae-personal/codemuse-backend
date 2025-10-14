@@ -1,7 +1,7 @@
 # 📄 LabelAction.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/label/LabelAction.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/store/admin/label.store` • `@/enums` • `@/api/prod/path` • `vue-i18n` • `@/composables/useDownloadFIle` 외 2개 | 📊 **총 토큰 수**: 196 |
+| 📦 **의존성**: `vue-i18n` • `@/constants/index` • `@/components/prod/icons/DownloadIcon.vue` • `@/enums` • `@/store/admin/label.store` • `@/composables/useDownloadFIle` 외 2개 | 📊 **총 토큰 수**: 196 |
 
 
 

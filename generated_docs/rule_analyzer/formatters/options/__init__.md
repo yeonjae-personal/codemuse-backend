@@ -1,7 +1,7 @@
 # 📄 __init__.py
 
 > **파일 경로**: `rule_analyzer/formatters/options/__init__.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개
 
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `formatting_options` • `option_validator` | 📊 **총 토큰 수**: 64 |
+| 📦 **의존성**: `option_validator` • `formatting_options` | 📊 **총 토큰 수**: 64 |
 
 
 

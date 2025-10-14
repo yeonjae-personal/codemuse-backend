@@ -1,7 +1,7 @@
 # 📄 MatrixTable.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure/MatrixTable.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/FalseIcon.vue` • `@/components/prod/icons/TrueIcon.vue` | ⚡ **총 복잡도**: 104 |
+| 📦 **의존성**: `@/components/prod/icons/TrueIcon.vue` • `@/components/prod/icons/FalseIcon.vue` | ⚡ **총 복잡도**: 104 |
 | 📊 **총 토큰 수**: 1,495 |  |
 
 

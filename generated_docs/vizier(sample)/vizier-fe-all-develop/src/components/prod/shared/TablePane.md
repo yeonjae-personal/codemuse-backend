@@ -1,7 +1,7 @@
 # 📄 TablePane.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/TablePane.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/constants/` • `@/utils/format-data` • `@/composables/useGroupCode` • `vue` • `vue-i18n` 외 1개 | ⚡ **총 복잡도**: 36 |
+| 📦 **의존성**: `vue-i18n` • `@/enums` • `@/composables/useGroupCode` • `@/constants/` • `vue` • `@/enums/columnTypes` 외 1개 | ⚡ **총 복잡도**: 36 |
 | 📊 **총 토큰 수**: 990 |  |
 
 

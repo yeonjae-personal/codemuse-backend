@@ -1,7 +1,7 @@
 # 📄 ResourceCreateReq.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/resource/create/ResourceCreateReq.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -50,7 +50,7 @@ public class ResourceCreateReq extends ItemMappingDetailDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bd40b33b8a32`
+- 🆔 **ID**: `b17371757875`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 10
 - 🏷️ **태그**: `class, java`

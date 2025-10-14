@@ -1,7 +1,7 @@
 # 📄 TreeViewDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/attribute/TreeViewDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class TreeViewDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c2809cee61fb`
+- 🆔 **ID**: `0857dfce4ce8`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 29
 - 🏷️ **태그**: `class, java`

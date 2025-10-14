@@ -938,7 +938,6 @@
     "validate_streaming_options"
   ],
   "domain_concepts": [
-    "Users",
     "__init__",
     "__init__.py",
     "abstract",
@@ -954,7 +953,6 @@
     "chunk_builder.py",
     "class",
     "class_method",
-    "codemuse-backend",
     "concurrency",
     "concurrent",
     "condition_analyzer",
@@ -1031,7 +1029,6 @@
     "processing",
     "progress_tracker",
     "progress_tracker.py",
-    "projects",
     "protocols",
     "public_method",
     "putmapping",
@@ -1041,7 +1038,6 @@
     "repository",
     "requestbody",
     "requestparam",
-    "roseline",
     "rule_analyzer",
     "rule_analyzer.py",
     "sample_code",

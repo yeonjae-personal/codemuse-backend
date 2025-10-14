@@ -1,7 +1,7 @@
 # 📄 __init__.py
 
 > **파일 경로**: `rule_analyzer/streaming/__init__.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개
 
 ---
@@ -92,7 +92,7 @@ async def stream_analysis_result(
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `d82f2f926339`
+- 🆔 **ID**: `1bf8a1ca82d4`
 - 🏷️ **태그**: `async, generator`
 
 </details>
@@ -150,7 +150,7 @@ def get_streaming_options() -> dict:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `7f0f648469ba`
+- 🆔 **ID**: `3bfd6958d17b`
 - 🏷️ **태그**: `getter`
 
 </details>
@@ -223,7 +223,7 @@ def validate_streaming_options(options: dict) -> tuple[bool, list[str]]:
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `ec54bf5d3194`
+- 🆔 **ID**: `9438cf4caae2`
 - 🏷️ **태그**: `validation`
 
 </details>
@@ -254,14 +254,14 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant validate_streaming_optio as validate_streaming_options
-  participant generate_stream as generate_stream
-  participant str as str
   participant stream_analysis_result as stream_analysis_result
-  participant StreamGenerator as StreamGenerator
   participant get_streaming_options as get_streaming_options
   participant StreamingOptions as StreamingOptions
+  participant generate_stream as generate_stream
+  participant str as str
   participant get_available_options as get_available_options
+  participant validate_streaming_optio as validate_streaming_options
+  participant StreamGenerator as StreamGenerator
   stream_analysis_result->>StreamGenerator: call
   stream_analysis_result->>generate_stream: call
   get_streaming_options->>get_available_options: call

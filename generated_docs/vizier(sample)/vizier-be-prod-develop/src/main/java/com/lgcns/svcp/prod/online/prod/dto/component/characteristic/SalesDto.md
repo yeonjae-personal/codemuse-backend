@@ -1,7 +1,7 @@
 # 📄 SalesDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/SalesDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `SalesDto`
-- **도메인**: user
+- **도메인**: product_online
 - **목적**: SalesDto 데이터 전송 객체
 - **복잡도**: 14
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/online/prod/dto/component/characteristic/*
 - **라인**: 10
 
 
@@ -70,7 +70,7 @@ public class SalesDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `189769cbe2ff`
+- 🆔 **ID**: `d341eccf2555`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 41
 - 🏷️ **태그**: `class, java`

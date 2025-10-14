@@ -1,7 +1,7 @@
 # 📄 CustomValidationTable.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/custom-validation/CustomValidationTable.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/componentApi` • `@/components/prod/common/BaseButton.vue` • `@/enums` • `./CustomValidationTableData.vue` • `@/components/prod/common/SearchAndRefreshButton.vue` • `@/constants/` 외 5개 | ⚡ **총 복잡도**: 120 |
+| 📦 **의존성**: `vue-i18n` • `@/api/prod/componentApi` • `./CustomValidationTableData.vue` • `@/utils/http-common` • `@/components/prod/common/SwitchViewTable.vue` • `@/enums` 외 5개 | ⚡ **총 복잡도**: 120 |
 | 📊 **총 토큰 수**: 1,515 |  |
 
 

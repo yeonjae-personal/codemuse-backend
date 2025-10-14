@@ -1,7 +1,7 @@
 # 📄 stream_manager.py
 
 > **파일 경로**: `rule_analyzer/streaming/stream_manager.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 19개
 
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `typing` • `stream_generator` • `asyncio` • `logging` • `stream_models` • `uuid` 외 2개 | ⚡ **총 복잡도**: 50 |
+| 📦 **의존성**: `concurrent` • `stream_generator` • `typing` • `datetime` • `stream_models` • `asyncio` 외 2개 | ⚡ **총 복잡도**: 50 |
 | 📊 **총 토큰 수**: 2,851 | 🔄 **비동기 함수**: 12개 |
 
 
@@ -209,7 +209,7 @@ class StreamManager:
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `37a6ecf06f20`
+- 🆔 **ID**: `64d1912a3cb5`
 - 📍 **라인**: 22-32
 - 📊 **토큰**: 67
 - 🏷️ **태그**: `class, manager`
@@ -245,20 +245,24 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant list_active_sessions as list_active_sessions
-  participant isoformat as isoformat
-  participant generate_stream as generate_stream
+  participant ValueError as ValueError
   participant len as len
-  participant items as items
-  participant list as list
-  participant sleep as sleep
+  participant get_stream as get_stream
+  participant list_active_sessions as list_active_sessions
+  participant _stop_heartbeat as _stop_heartbeat
+  participant shutdown as shutdown
   participant resume_session as resume_session
-  participant _start_heartbeat as _start_heartbeat
-  participant start_streaming as start_streaming
   participant timedelta as timedelta
-  participant RuntimeError as RuntimeError
-  start_streaming->>len: call
-  start_streaming->>RuntimeError: call
+  participant _start_heartbeat as _start_heartbeat
+  participant debug as debug
+  participant list_completed_sessions as list_completed_sessions
+  participant values as values
+  get_stream->>ValueError: call
+  list_active_sessions->>values: call
+  list_completed_sessions->>values: call
+  shutdown->>shutdown: call
+  _start_heartbeat->>debug: call
+  _stop_heartbeat->>debug: call
 ```
 
 

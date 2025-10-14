@@ -1,7 +1,7 @@
 # 📄 ComponentAndOfferPane.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component/ComponentAndOfferPane.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 12개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/constants/index` • `@/enums` • `@/store` • `@/api/prod/productApi` • `vue-i18n` | ⚡ **총 복잡도**: 75 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/composables/useDragUserPocket` • `@/enums` • `@/api/prod/productApi` • `@/constants/index` | ⚡ **총 복잡도**: 75 |
 | 📊 **총 토큰 수**: 689 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 FieldList.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/FieldList.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/admin/rule-field` • `@/constants/index` • `lodash-es/uniqBy` • `@/enums` • `@/store/admin/ruleEngine.store` • `@/store` 외 5개 | ⚡ **총 복잡도**: 4 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/shared/SearchPane.vue` • `@/store/admin/ruleField.store` • `./FieldItem.vue` • `@/enums` 외 5개 | ⚡ **총 복잡도**: 4 |
 | 📊 **총 토큰 수**: 449 |  |
 
 

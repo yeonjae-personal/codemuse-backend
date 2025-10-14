@@ -1,7 +1,7 @@
 # 📄 DsbdOfferSubCntMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/DsbdOfferSubCntMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -52,7 +52,7 @@ public interface DsbdOfferSubCntMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `4167b1e96800`
+- 🆔 **ID**: `0169474e819b`
 - 📊 **토큰**: 98
 
 </details>

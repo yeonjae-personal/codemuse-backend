@@ -1,7 +1,7 @@
 # 📄 CtgrTabMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/CtgrTabMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -44,7 +44,7 @@ public interface CtgrTabMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6867181907e0`
+- 🆔 **ID**: `9cc3d0cee210`
 - 📊 **토큰**: 8
 
 </details>

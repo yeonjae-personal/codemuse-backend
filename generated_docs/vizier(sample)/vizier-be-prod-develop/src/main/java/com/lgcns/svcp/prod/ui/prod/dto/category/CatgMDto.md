@@ -1,7 +1,7 @@
 # 📄 CatgMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/CatgMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -58,7 +58,7 @@ public class CatgMDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `699adf268c19`
+- 🆔 **ID**: `6d942bf8ff28`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 34
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 PermissionGroupManagement.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/PermissionGroupManagement.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 16개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/cmcd.store` • `@/constants/index` • `lodash-es/clone` • `@/constants/admin/admin` • `@/enums` • `@/store` 외 7개 | ⚡ **총 복잡도**: 137 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/pages/admin/subs/permission/group/PermissionGroupForm.vue` • `@/pages/admin/subs/permission/group/PermissionCreatePopup.vue` • `@/utils/http-common` • `@/store/cmcd.store` 외 7개 | ⚡ **총 복잡도**: 137 |
 | 📊 **총 토큰 수**: 1,502 |  |
 
 

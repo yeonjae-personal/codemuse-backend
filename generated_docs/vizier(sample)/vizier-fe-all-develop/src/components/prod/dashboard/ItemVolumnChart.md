@@ -1,7 +1,7 @@
 # 📄 ItemVolumnChart.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/ItemVolumnChart.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `chartjs-plugin-datalabels` • `chart.js` • `@/utils/http-common` • `@/api/prod/path` • `vue-chartjs` • `chartjs-plugin-annotation` | ⚡ **총 복잡도**: 9 |
+| 📦 **의존성**: `@/utils/http-common` • `@/api/prod/path` • `chartjs-plugin-annotation` • `vue-chartjs` • `chartjs-plugin-datalabels` • `chart.js` | ⚡ **총 복잡도**: 9 |
 | 📊 **총 토큰 수**: 505 |  |
 
 

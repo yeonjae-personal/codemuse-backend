@@ -1,7 +1,7 @@
 # 📄 UiMatrixService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/admin/UiMatrixService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -65,7 +65,7 @@ public class UiMatrixService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `084e95e591b4`
+- 🆔 **ID**: `cb7e5e20420a`
 - 📍 **라인**: 45-45
 - 📊 **토큰**: 759
 - 🏷️ **태그**: `class, java, transactional, spring-boot`

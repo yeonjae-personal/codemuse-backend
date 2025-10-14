@@ -1,7 +1,7 @@
 # 📄 OfferTabDuplicate.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/extends/group/OfferTabDuplicate.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useDragUserPocket` • `@/composables/useRedirect` • `@/store` • `@/components/prod/icons/OpenInNewIcon.vue` • `@/components/prod/icons/TrashIcon.vue` • `@/constants/offer` 외 3개 | ⚡ **총 복잡도**: 6 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/composables/useDragUserPocket` • `@/components/prod/icons/TrashIcon.vue` • `@/constants/offer` • `@/composables/useRedirect` 외 3개 | ⚡ **총 복잡도**: 6 |
 | 📊 **총 토큰 수**: 378 |  |
 
 

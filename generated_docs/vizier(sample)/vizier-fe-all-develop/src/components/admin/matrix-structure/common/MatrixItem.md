@@ -1,7 +1,7 @@
 # 📄 MatrixItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/matrix-structure/common/MatrixItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/utils/format-data` | ⚡ **총 복잡도**: 48 |
+| 📦 **의존성**: `@/utils/format-data` • `@/constants/index` | ⚡ **총 복잡도**: 48 |
 | 📊 **총 토큰 수**: 677 |  |
 
 

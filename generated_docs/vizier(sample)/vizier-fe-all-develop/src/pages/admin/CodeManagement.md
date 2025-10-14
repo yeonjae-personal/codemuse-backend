@@ -1,7 +1,7 @@
 # 📄 CodeManagement.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/CodeManagement.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/common/BaseTotalSearchResult.vue` • `@/constants/index` • `@/constants/admin/admin` • `@/enums` • `@/store` • `@/components/prod/common/SearchAndRefreshButton.vue` 외 1개 | ⚡ **총 복잡도**: 32 |
+| 📦 **의존성**: `@/store` • `@/constants/admin/admin` • `@/enums` • `@/pages/admin/subs/DataTableCustom.vue` • `@/constants/index` • `@/components/prod/common/SearchAndRefreshButton.vue` 외 1개 | ⚡ **총 복잡도**: 32 |
 | 📊 **총 토큰 수**: 605 |  |
 
 

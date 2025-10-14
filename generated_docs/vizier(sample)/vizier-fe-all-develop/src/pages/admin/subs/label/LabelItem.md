@@ -1,7 +1,7 @@
 # 📄 LabelItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/label/LabelItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/store/admin/label.store` • `@/enums` • `@/constants/admin/label` • `@/store` • `@/utils/format-data` 외 7개 | 📊 **총 토큰 수**: 540 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/icons/TrashIcon.vue` • `@/constants/index` • `@/api/prod/labelApi` • `@/enums` 외 7개 | 📊 **총 토큰 수**: 540 |
 
 
 

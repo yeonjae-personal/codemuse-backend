@@ -1,7 +1,7 @@
 # 📄 RtngDcntMDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/price/RtngDcntMDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -73,7 +73,7 @@ public class RtngDcntMDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `37f8a290238a`
+- 🆔 **ID**: `b622c9e958e8`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 89
 - 🏷️ **태그**: `class, java`

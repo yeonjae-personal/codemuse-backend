@@ -1,7 +1,7 @@
 # 📄 ComponentStructureExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export/ComponentStructureExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -11,10 +11,10 @@
 ## 💼 비즈니스 로직
 
 ### `ComponentStructureExportDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: ComponentStructureExportDto 데이터 전송 객체
 - **복잡도**: 16
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/export/*
 - **라인**: 12
 
 
@@ -80,7 +80,7 @@ public class ComponentStructureExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bda3b05e038a`
+- 🆔 **ID**: `eed866788fad`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class, java, value, spring-boot`

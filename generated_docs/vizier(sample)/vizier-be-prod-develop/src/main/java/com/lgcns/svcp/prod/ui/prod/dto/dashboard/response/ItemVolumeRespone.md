@@ -1,7 +1,7 @@
 # 📄 ItemVolumeRespone.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/response/ItemVolumeRespone.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class ItemVolumeRespone {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c93b5bc41872`
+- 🆔 **ID**: `c13e80d03e08`
 - 📍 **라인**: 13-13
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, java`

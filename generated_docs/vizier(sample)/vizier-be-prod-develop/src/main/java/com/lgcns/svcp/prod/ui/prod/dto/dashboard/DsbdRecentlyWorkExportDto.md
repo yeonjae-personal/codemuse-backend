@@ -1,7 +1,7 @@
 # 📄 DsbdRecentlyWorkExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/DsbdRecentlyWorkExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -70,7 +70,7 @@ public class DsbdRecentlyWorkExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ad6b82ed4723`
+- 🆔 **ID**: `e5ee3a4f0775`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 45
 - 🏷️ **태그**: `class, java, value, spring-boot`

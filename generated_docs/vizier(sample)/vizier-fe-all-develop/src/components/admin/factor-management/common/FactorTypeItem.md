@@ -1,7 +1,7 @@
 # 📄 FactorTypeItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/common/FactorTypeItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/DevicePlanIcon.vue` • `@/components/prod/icons/MarketingIcon.vue` • `@/components/prod/icons/CustomerIcon.vue` • `@/components/prod/icons/LocationIcon.vue` • `@/constants/index` • `@/components/prod/icons/UsageIcon.vue` 외 7개 | ⚡ **총 복잡도**: 22 |
+| 📦 **의존성**: `@/components/prod/icons/UsageIcon.vue` • `@/components/prod/icons/LocationIcon.vue` • `@/constants/index` • `@/components/prod/icons/BehavioralIcon.vue` • `@/components/prod/icons/DemographicIcon.vue` • `@/components/prod/icons/ContractIcon.vue` 외 7개 | ⚡ **총 복잡도**: 22 |
 | 📊 **총 토큰 수**: 384 |  |
 
 

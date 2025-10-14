@@ -1,7 +1,7 @@
 # 📄 COMMD002P.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/vocap/subs/COMMD002P.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/global.store` • `ag-grid-community/styles/ag-grid.css` • `@/pages/domain/subs/DomainTable.vue` • `@/pages/domain/subs/DomainSearch.vue` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/pages/domain/type` 외 1개 | ⚡ **총 복잡도**: 47 |
+| 📦 **의존성**: `@/pages/domain/subs/DomainSearch.vue` • `@/utils/http-common` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/store/global.store` • `ag-grid-community/styles/ag-grid.css` • `@/pages/domain/subs/DomainTable.vue` 외 1개 | ⚡ **총 복잡도**: 47 |
 | 📊 **총 토큰 수**: 430 |  |
 
 

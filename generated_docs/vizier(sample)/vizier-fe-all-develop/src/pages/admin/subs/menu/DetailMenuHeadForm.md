@@ -1,7 +1,7 @@
 # 📄 DetailMenuHeadForm.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/menu/DetailMenuHeadForm.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 14개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/constants/index` • `@/constants/admin/admin` • `@/enums` • `@/store` • `@/components/prod/common/SearchAndRefreshButton.vue` • `vue-i18n` 외 2개 | ⚡ **총 복잡도**: 115 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/utils/http-common` • `@/pages/admin/subs/menu/MenuUpdatePopup.vue` • `@/constants/admin/admin` • `@/enums` 외 2개 | ⚡ **총 복잡도**: 115 |
 | 📊 **총 토큰 수**: 1,032 |  |
 
 

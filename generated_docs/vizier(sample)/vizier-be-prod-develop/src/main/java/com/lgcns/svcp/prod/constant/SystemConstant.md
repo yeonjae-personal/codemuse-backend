@@ -1,7 +1,7 @@
 # 📄 SystemConstant.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/constant/SystemConstant.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -58,7 +58,7 @@ public class SystemConstant {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `185ca180b616`
+- 🆔 **ID**: `c266184f0822`
 - 📍 **라인**: 3-3
 - 📊 **토큰**: 140
 - 🏷️ **태그**: `class, java`

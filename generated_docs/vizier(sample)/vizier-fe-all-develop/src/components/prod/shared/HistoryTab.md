@@ -1,7 +1,7 @@
 # 📄 HistoryTab.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/HistoryTab.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/isEqual` • `@/store` • `@/interfaces/prod/HistoryTab` • `@/composables/useGroupCode` • `vue-i18n` • `@/enums/columnTypes` | ⚡ **총 복잡도**: 37 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/composables/useGroupCode` • `lodash-es/isEqual` • `@/enums/columnTypes` • `@/interfaces/prod/HistoryTab` | ⚡ **총 복잡도**: 37 |
 | 📊 **총 토큰 수**: 1,182 |  |
 
 

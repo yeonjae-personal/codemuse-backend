@@ -1,7 +1,7 @@
 # 📄 CookieUtil.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/util/CookieUtil.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class CookieUtil {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fd8a19b92a70`
+- 🆔 **ID**: `abdd72371e3c`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 28
 - 🏷️ **태그**: `class, java`

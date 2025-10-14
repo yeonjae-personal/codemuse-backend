@@ -1,7 +1,7 @@
 # 📄 models.py
 
 > **파일 경로**: `rule_analyzer/models.py`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 21개
 
 ---
@@ -30,7 +30,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `uuid` • `typing` • `datetime` • `pydantic` | ⚡ **총 복잡도**: 16 |
+| 📦 **의존성**: `uuid` • `pydantic` • `typing` • `datetime` | ⚡ **총 복잡도**: 16 |
 | 📊 **총 토큰 수**: 3,888 |  |
 
 
@@ -89,7 +89,7 @@ class ConditionIssue(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `7ddbad31ae53`
+- 🆔 **ID**: `c5cdceb93e80`
 - 📍 **라인**: 8-18
 - 📊 **토큰**: 140
 - 🏷️ **태그**: `class, pydantic`
@@ -156,7 +156,7 @@ class RuleCondition(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `9d59919f3271`
+- 🆔 **ID**: `3a6179ab3070`
 - 📍 **라인**: 41-51
 - 📊 **토큰**: 271
 - 🏷️ **태그**: `class, pydantic`
@@ -197,7 +197,7 @@ class Rule(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f144212500e4`
+- 🆔 **ID**: `0ee45daa137f`
 - 📍 **라인**: 81-91
 - 📊 **토큰**: 88
 - 🏷️ **태그**: `class, pydantic`
@@ -272,7 +272,7 @@ class Rule(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `32cfb1add9cf`
+- 🆔 **ID**: `010c5d22d32b`
 - 📍 **라인**: 92-102
 - 📊 **토큰**: 223
 - 🏷️ **태그**: `class, pydantic`
@@ -317,7 +317,7 @@ class LogicFlow(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `59ccdd8b4fdc`
+- 🆔 **ID**: `2d142693eea0`
 - 📍 **라인**: 149-159
 - 📊 **토큰**: 228
 - 🏷️ **태그**: `class, pydantic`
@@ -356,7 +356,7 @@ class PerformanceMetrics(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `266f9579e67d`
+- 🆔 **ID**: `840875759712`
 - 📍 **라인**: 164-174
 - 📊 **토큰**: 143
 - 🏷️ **태그**: `class, pydantic`
@@ -404,7 +404,7 @@ class QualityMetrics(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `88949a3a31d6`
+- 🆔 **ID**: `f4082a6188cf`
 - 📍 **라인**: 173-183
 - 📊 **토큰**: 183
 - 🏷️ **태그**: `class, pydantic`
@@ -444,7 +444,7 @@ class ReportMetadata(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `751bc4a55d61`
+- 🆔 **ID**: `2f108212508e`
 - 📍 **라인**: 191-201
 - 📊 **토큰**: 179
 - 🏷️ **태그**: `class, pydantic`
@@ -491,7 +491,7 @@ class ReportMetadata(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6db987165441`
+- 🆔 **ID**: `78ba98171630`
 - 📍 **라인**: 201-211
 - 📊 **토큰**: 285
 - 🏷️ **태그**: `class, pydantic`
@@ -535,7 +535,7 @@ class ValidationResult(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8d7caeb76449`
+- 🆔 **ID**: `28ac22c835d9`
 - 📍 **라인**: 222-232
 - 📊 **토큰**: 167
 - 🏷️ **태그**: `class, pydantic`
@@ -600,7 +600,7 @@ class ValidationResult(BaseModel):
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c3e95c9377f6`
+- 🆔 **ID**: `936afca1ea71`
 - 📍 **라인**: 236-246
 - 📊 **토큰**: 321
 - 🏷️ **태그**: `class, pydantic`
@@ -642,7 +642,7 @@ class RuleJsonOutput(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bb0c4643a447`
+- 🆔 **ID**: `bc5936da8bf6`
 - 📍 **라인**: 290-300
 - 📊 **토큰**: 136
 - 🏷️ **태그**: `class, pydantic`
@@ -688,7 +688,7 @@ class AnalysisOptions(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `bedb7e2628c2`
+- 🆔 **ID**: `6dc2eae63083`
 - 📍 **라인**: 302-312
 - 📊 **토큰**: 188
 - 🏷️ **태그**: `class, pydantic`
@@ -730,7 +730,7 @@ class BatchAnalysisResult(BaseModel):...
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ce741cf1bb11`
+- 🆔 **ID**: `d828d94e1f88`
 - 📍 **라인**: 318-328
 - 📊 **토큰**: 105
 - 🏷️ **태그**: `class, pydantic`
@@ -774,7 +774,7 @@ RuleCondition.model_rebuild()
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2f35ac15da9f`
+- 🆔 **ID**: `c6ef4cdfd8a5`
 - 📍 **라인**: 330-340
 - 📊 **토큰**: 161
 - 🏷️ **태그**: `class, pydantic`
@@ -809,11 +809,11 @@ pie title 함수 유형 분포
 
 ```mermaid
 sequenceDiagram
-  participant get as get
-  participant to_json as to_json
-  participant super as super
-  participant dict as dict
   participant __init__ as __init__
+  participant get as get
+  participant dict as dict
+  participant super as super
+  participant to_json as to_json
   __init__->>__init__: call
   __init__->>get: call
   __init__->>super: call

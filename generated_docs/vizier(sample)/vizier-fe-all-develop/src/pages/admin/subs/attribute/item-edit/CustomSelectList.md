@@ -1,7 +1,7 @@
 # 📄 CustomSelectList.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit/CustomSelectList.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/DeleteIcon.vue` • `lodash-es/get` • `vue-i18n` | 📊 **총 토큰 수**: 622 |
+| 📦 **의존성**: `vue-i18n` • `@/components/prod/icons/DeleteIcon.vue` • `lodash-es/get` | 📊 **총 토큰 수**: 622 |
 
 
 

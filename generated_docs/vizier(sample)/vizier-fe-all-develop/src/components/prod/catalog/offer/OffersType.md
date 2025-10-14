@@ -1,7 +1,7 @@
 # 📄 OffersType.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/OffersType.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/constants/` • `@/utils/format-data` • `moment-timezone` • `@/constants/offer` • `vue-i18n` 외 2개 | ⚡ **총 복잡도**: 64 |
+| 📦 **의존성**: `vue-i18n` • `@/constants/offer` • `@/enums/component` • `@/enums` • `moment-timezone` • `@/constants/` 외 2개 | ⚡ **총 복잡도**: 64 |
 | 📊 **총 토큰 수**: 881 |  |
 
 

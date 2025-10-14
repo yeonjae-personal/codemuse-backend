@@ -1,7 +1,7 @@
 # 📄 TermUpdatePopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/term/TermUpdatePopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/composables/useInputValidation` • `@/constants/index` • `@/pages/admin/subs/term/TermAnalysisPopup.vue` • `@/constants/admin/terminology` • `@/utils/http-common` 외 6개 | ⚡ **총 복잡도**: 105 |
+| 📦 **의존성**: `@/utils/common-ordr` • `vue-i18n` • `@/interfaces/admin/admin` • `@/constants/admin/terminology` • `@/utils/http-common` • `@/pages/admin/subs/term/TermAnalysisPopup.vue` 외 6개 | ⚡ **총 복잡도**: 105 |
 | 📊 **총 토큰 수**: 1,352 |  |
 
 

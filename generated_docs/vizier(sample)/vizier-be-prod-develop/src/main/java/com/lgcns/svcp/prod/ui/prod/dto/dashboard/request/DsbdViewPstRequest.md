@@ -1,7 +1,7 @@
 # 📄 DsbdViewPstRequest.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/request/DsbdViewPstRequest.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -55,7 +55,7 @@ public class DsbdViewPstRequest {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8755d8f48024`
+- 🆔 **ID**: `7f512ef3ef42`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 17
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 COMM0003P.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/orgInfo/subs/COMM0003P.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/global.store` • `axios` • `@/composables/useInputValidation` • `@/store` • `../type` • `@/types/common` 외 5개 | ⚡ **총 복잡도**: 141 |
+| 📦 **의존성**: `@/store` • `@/utils/common-ordr` • `@/pages/userinfo/subs/COMMU001P.vue` • `@/utils/common-util` • `@/utils/http-common` • `@/pages/orgInfo/subs/COMM0001P.vue` 외 5개 | ⚡ **총 복잡도**: 141 |
 | 📊 **총 토큰 수**: 1,495 |  |
 
 

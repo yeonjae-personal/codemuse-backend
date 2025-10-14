@@ -1,7 +1,7 @@
 # 📄 BentoGrid.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/BentoGrid.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -24,7 +24,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `grid-layout-plus` • `@/store` • `vue` | ⚡ **총 복잡도**: 108 |
+| 📦 **의존성**: `@/store` • `grid-layout-plus` • `vue` | ⚡ **총 복잡도**: 108 |
 | 📊 **총 토큰 수**: 1,137 |  |
 
 
@@ -63,7 +63,7 @@ function filterLoading(x, y) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `f772f18afa7b`
+- 🆔 **ID**: `d3839074df72`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -104,7 +104,7 @@ function handleDragMoving(event) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `b6b47ea1541f`
+- 🆔 **ID**: `9a57f1122473`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -137,7 +137,7 @@ function getGridCell(mouseX, mouseY, cellWidth, cellHeight) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `46caff3238c0`
+- 🆔 **ID**: `5701fbdf110f`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -187,7 +187,7 @@ async function handleDragEnded(event) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `4c9f3f60ef30`
+- 🆔 **ID**: `1c6843350143`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -229,7 +229,7 @@ function moveEvent(i, newX, newY) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `114bd979424e`
+- 🆔 **ID**: `8a19c448fadd`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -268,7 +268,7 @@ function removeItem(id) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `dee94121915d`
+- 🆔 **ID**: `19f574161859`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 UiDashboardController.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/controller/UiDashboardController.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class UiDashboardController {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `f9cd97f860d2`
+- 🆔 **ID**: `d03b97087092`
 - 📍 **라인**: 48-48
 - 📊 **토큰**: 472
 - 🏷️ **태그**: `class, java, getmapping, postmapping, pathvariable...`

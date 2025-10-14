@@ -1,7 +1,7 @@
 # 📄 AlertPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/controls/AlertPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfButton.vue` • `@//components/Description/index.vue` • `@/components/controls/examples/CfAlertExample` • `@/store` • `vue-prism-component` • `@/utils/common-util` | ⚡ **총 복잡도**: 13 |
+| 📦 **의존성**: `@/store` • `@/components/controls/CfButton.vue` • `@/utils/common-util` • `@//components/Description/index.vue` • `@/components/controls/examples/CfAlertExample` • `vue-prism-component` | ⚡ **총 복잡도**: 13 |
 | 📊 **총 토큰 수**: 176 |  |
 
 

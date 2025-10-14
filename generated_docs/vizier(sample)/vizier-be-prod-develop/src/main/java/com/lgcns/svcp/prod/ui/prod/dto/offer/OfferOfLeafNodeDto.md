@@ -1,7 +1,7 @@
 # 📄 OfferOfLeafNodeDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/OfferOfLeafNodeDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -52,7 +52,7 @@ public class OfferOfLeafNodeDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2289167c26d1`
+- 🆔 **ID**: `426e46a081b1`
 - 📍 **라인**: 8-8
 - 📊 **토큰**: 23
 - 🏷️ **태그**: `class, java`

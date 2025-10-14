@@ -1,7 +1,7 @@
 # 📄 MessageManagement.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/functions/MessageManagement.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 8개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfButton.vue` • `@/store` • `@/components/controls/CfFileInput.vue` • `@/assets/arrow.png` | ⚡ **총 복잡도**: 124 |
+| 📦 **의존성**: `@/components/controls/CfFileInput.vue` • `@/components/controls/CfButton.vue` • `@/store` • `@/assets/arrow.png` | ⚡ **총 복잡도**: 124 |
 | 📊 **총 토큰 수**: 1,154 |  |
 
 

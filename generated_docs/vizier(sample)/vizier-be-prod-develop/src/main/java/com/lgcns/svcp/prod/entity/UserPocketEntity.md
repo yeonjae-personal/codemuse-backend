@@ -1,7 +1,7 @@
 # 📄 UserPocketEntity.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/entity/UserPocketEntity.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -54,7 +54,7 @@ public class UserPocketEntity extends BaseEntity {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `52ce9d18e68f`
+- 🆔 **ID**: `5b3b4cd0e356`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 MultiEntityAdditionalDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/MultiEntityAdditionalDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -19,10 +19,10 @@
 ## 💼 비즈니스 로직
 
 ### `MultiEntityAdditionalDto`
-- **도메인**: user
+- **도메인**: product_ui
 - **목적**: MultiEntityAdditionalDto 데이터 모델 정의
 - **복잡도**: 13
-- **관련 파일**: /Users/roseline/projects/codemuse-backend/sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/*
+- **관련 파일**: ./sample_code/vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/multiEntity/*
 - **라인**: 10
 
 
@@ -80,7 +80,7 @@ public class MultiEntityAdditionalDto extends BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `eb5c2ff96b65`
+- 🆔 **ID**: `77e5361ee7b2`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 40
 - 🏷️ **태그**: `class, java`

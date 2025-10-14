@@ -1,7 +1,7 @@
 # 📄 prodHandlers.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/mocks/prod/prodHandlers.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/isEqual` • `./dashboard` • `./impact-analysis/items-offer` • `msw` • `./impact-analysis/relation` • `./catalog/data/offer` 외 2개 | 📊 **총 토큰 수**: 665 |
+| 📦 **의존성**: `./catalog/data/offer` • `../../constants` • `./impact-analysis/items-offer` • `./dashboard` • `./impact-analysis/relation` • `./impact-analysis/structure` 외 2개 | 📊 **총 토큰 수**: 665 |
 
 
 

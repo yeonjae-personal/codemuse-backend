@@ -1,7 +1,7 @@
 # 📄 ComponentSearchPane.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/shared/ComponentSearchPane.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/composables/useDragUserPocket` • `@/composables/useRedirect` • `@/constants/index` • `@/enums` • `@/store` 외 5개 | ⚡ **총 복잡도**: 62 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/composables/useDragUserPocket` • `@/types/catalog/component/ComponentSearch` • `@/composables/useRedirect` • `@/enums` 외 5개 | ⚡ **총 복잡도**: 62 |
 | 📊 **총 토큰 수**: 789 |  |
 
 

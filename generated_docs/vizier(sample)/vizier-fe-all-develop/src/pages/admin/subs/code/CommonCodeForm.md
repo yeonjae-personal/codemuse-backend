@@ -1,7 +1,7 @@
 # 📄 CommonCodeForm.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/code/CommonCodeForm.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/store` • `@/constants/index` | 📊 **총 토큰 수**: 186 |
+| 📦 **의존성**: `@/store` • `@/enums` • `@/constants/index` | 📊 **총 토큰 수**: 186 |
 
 
 

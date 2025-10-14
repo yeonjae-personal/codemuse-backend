@@ -1,7 +1,7 @@
 # 📄 BasePopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/common/BasePopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/icons/WarningIcon.vue` • `@/constants/index` • `@/components/prod/common/BaseButton.vue` • `@/components/prod/icons/CloseIcon.vue` • `@/components/prod/icons/InfoIcon.vue` | ⚡ **총 복잡도**: 7 |
+| 📦 **의존성**: `@/components/prod/icons/WarningIcon.vue` • `@/components/prod/icons/InfoIcon.vue` • `@/components/prod/icons/CloseIcon.vue` • `@/constants/index` • `@/components/prod/common/BaseButton.vue` | ⚡ **총 복잡도**: 7 |
 | 📊 **총 토큰 수**: 372 |  |
 
 

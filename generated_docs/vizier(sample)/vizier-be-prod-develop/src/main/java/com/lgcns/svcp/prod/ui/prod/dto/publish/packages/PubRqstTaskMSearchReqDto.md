@@ -1,7 +1,7 @@
 # 📄 PubRqstTaskMSearchReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/publish/packages/PubRqstTaskMSearchReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -53,7 +53,7 @@ public class PubRqstTaskMSearchReqDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `37af6c0ba9a7`
+- 🆔 **ID**: `f87dc352711b`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java`

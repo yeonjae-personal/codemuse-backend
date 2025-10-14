@@ -1,7 +1,7 @@
 # 📄 AdditionalCreateDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/common/AdditionalCreateDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class AdditionalCreateDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ca2dc8bf44c8`
+- 🆔 **ID**: `314a91aa90f4`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 18
 - 🏷️ **태그**: `class, java`

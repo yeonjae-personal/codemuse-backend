@@ -1,7 +1,7 @@
 # 📄 CustomValidationExcelMapper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/mapper/CustomValidationExcelMapper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -44,7 +44,7 @@ public interface CustomValidationExcelMapper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `c69e08816ac7`
+- 🆔 **ID**: `540fc37a4478`
 - 📊 **토큰**: 8
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 commonApi.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/api/prod/commonApi.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/interfaces/prod` • `@/utils/http-common` • `./path` | ⚡ **총 복잡도**: 9 |
+| 📦 **의존성**: `@/interfaces/prod` • `./path` • `@/utils/http-common` | ⚡ **총 복잡도**: 9 |
 | 📊 **총 토큰 수**: 109 |  |
 
 

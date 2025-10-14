@@ -1,7 +1,7 @@
 # 📄 CfAlertExample.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/controls/examples/CfAlertExample.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfButton.vue` • `@/store` • `@/utils/common-util` | ⚡ **총 복잡도**: 13 |
+| 📦 **의존성**: `@/store` • `@/components/controls/CfButton.vue` • `@/utils/common-util` | ⚡ **총 복잡도**: 13 |
 | 📊 **총 토큰 수**: 132 |  |
 
 

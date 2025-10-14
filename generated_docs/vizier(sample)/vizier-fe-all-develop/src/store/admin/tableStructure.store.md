@@ -1,7 +1,7 @@
 # 📄 tableStructure.store.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/admin/tableStructure.store.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/constants/index` • `@/types/common` • `@/utils/format-data` • `@/enums/columnTypes` | 📊 **총 토큰 수**: 779 |
+| 📦 **의존성**: `@/constants/index` • `lodash-es/cloneDeep` • `@/enums/columnTypes` • `@/utils/format-data` • `@/types/common` | 📊 **총 토큰 수**: 779 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 index.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/store/index.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 1개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `pinia-plugin-persistedstate` • `@/store/global.store` • `@/store/menu.store` • `@/store/admin/terminology.store` • `@/store/admin/screen.store` • `./approval.store` 외 39개 | 📊 **총 토큰 수**: 295 |
+| 📦 **의존성**: `@/store/admin/screen.store` • `@/store/snackbar.store` • `@/store/extendSearch.store` • `./offerCreateProcess.store` • `@/store/discount.store` • `@/store/admin/url.store` 외 39개 | 📊 **총 토큰 수**: 295 |
 
 
 

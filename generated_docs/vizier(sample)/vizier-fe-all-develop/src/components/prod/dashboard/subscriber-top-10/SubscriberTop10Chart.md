@@ -1,7 +1,7 @@
 # 📄 SubscriberTop10Chart.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/subscriber-top-10/SubscriberTop10Chart.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `vue-chartjs` • `vue-i18n` • `chartjs-plugin-datalabels` • `@/utils/format-data` | 📊 **총 토큰 수**: 679 |
+| 📦 **의존성**: `vue-chartjs` • `chartjs-plugin-datalabels` • `@/utils/format-data` • `vue-i18n` | 📊 **총 토큰 수**: 679 |
 
 
 

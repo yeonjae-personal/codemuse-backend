@@ -1,7 +1,7 @@
 # 📄 OfferSearchDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/offer/list/OfferSearchDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -53,7 +53,7 @@ public class OfferSearchDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `d468d98f7f02`
+- 🆔 **ID**: `c37cef3490d9`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 19
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 MiddleItemDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/item/MiddleItemDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -51,7 +51,7 @@ public class MiddleItemDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `cb80f621f780`
+- 🆔 **ID**: `a1652e2bf718`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 20
 - 🏷️ **태그**: `class, java`

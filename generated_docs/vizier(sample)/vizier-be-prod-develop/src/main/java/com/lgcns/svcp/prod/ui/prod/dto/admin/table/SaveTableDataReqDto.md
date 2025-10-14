@@ -1,7 +1,7 @@
 # 📄 SaveTableDataReqDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/admin/table/SaveTableDataReqDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -49,7 +49,7 @@ public class SaveTableDataReqDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `6be77dd51fbc`
+- 🆔 **ID**: `c8e1a1f03fa4`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 14
 - 🏷️ **태그**: `class, java`

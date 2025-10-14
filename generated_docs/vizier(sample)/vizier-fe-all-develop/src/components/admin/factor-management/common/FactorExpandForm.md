@@ -1,7 +1,7 @@
 # 📄 FactorExpandForm.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/factor-management/common/FactorExpandForm.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 6개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `@/composables/useInputValidation` • `@/constants/index` • `@/components/prod/layout/DetailPane.vue` | ⚡ **총 복잡도**: 15 |
+| 📦 **의존성**: `@/enums` • `@/components/prod/layout/DetailPane.vue` • `@/composables/useInputValidation` • `@/constants/index` | ⚡ **총 복잡도**: 15 |
 | 📊 **총 토큰 수**: 527 |  |
 
 

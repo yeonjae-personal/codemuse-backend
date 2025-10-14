@@ -1,7 +1,7 @@
 # 📄 SubscribeTop10SearchPagingDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/dashboard/SubscribeTop10SearchPagingDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class SubscribeTop10SearchPagingDto extends BasePaginationDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `8edd6bd194d9`
+- 🆔 **ID**: `14a9d3a3415c`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 31
 - 🏷️ **태그**: `class, java`

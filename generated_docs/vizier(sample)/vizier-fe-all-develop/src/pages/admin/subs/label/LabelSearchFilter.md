@@ -1,7 +1,7 @@
 # 📄 LabelSearchFilter.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/label/LabelSearchFilter.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/admin/label.store` • `@/components/prod/common/BaseSelectScroll.vue` • `vue-i18n` | 📊 **총 토큰 수**: 160 |
+| 📦 **의존성**: `vue-i18n` • `@/store/admin/label.store` • `@/components/prod/common/BaseSelectScroll.vue` | 📊 **총 토큰 수**: 160 |
 
 
 

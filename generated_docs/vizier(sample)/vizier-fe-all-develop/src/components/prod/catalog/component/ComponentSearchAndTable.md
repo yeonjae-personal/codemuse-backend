@@ -1,7 +1,7 @@
 # 📄 ComponentSearchAndTable.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/component/ComponentSearchAndTable.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 18개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store/component.store` • `@/composables/useDragUserPocket` • `@/constants/index` • `@/enums` • `@/store` • `@/components/prod/icons/DuplicateIcon.vue` 외 8개 | ⚡ **총 복잡도**: 204 |
+| 📦 **의존성**: `@/store` • `@/components/prod/icons/DuplicateIcon.vue` • `vue-i18n` • `@/composables/useDragUserPocket` • `@/constants/offer` • `@/constants/index` 외 8개 | ⚡ **총 복잡도**: 204 |
 | 📊 **총 토큰 수**: 2,047 |  |
 
 

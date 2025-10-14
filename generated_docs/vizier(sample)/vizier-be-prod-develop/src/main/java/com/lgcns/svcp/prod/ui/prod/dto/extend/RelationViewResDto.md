@@ -1,7 +1,7 @@
 # 📄 RelationViewResDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend/RelationViewResDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -68,7 +68,7 @@ public class RelationViewResDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b9096f970292`
+- 🆔 **ID**: `ebb0bd9a84f3`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 71
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 GridExtendedDisplayMode.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/impact-analysis/view/GridDisplayMode/GridExtendedDisplayMode.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/offerApi` • `@/composables/useDragUserPocket` • `@/components/prod/icons/RLinearIcon.vue` • `@/composables/useRedirect` • `@/enums` • `@/store` 외 7개 | ⚡ **총 복잡도**: 131 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/icons/RLinearIcon.vue` • `@/composables/useDragUserPocket` • `@/constants/offer` • `@/store/userPocket.store` 외 7개 | ⚡ **총 복잡도**: 131 |
 | 📊 **총 토큰 수**: 1,776 |  |
 
 

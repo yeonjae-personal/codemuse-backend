@@ -1,7 +1,7 @@
 # 📄 RelationGridViewExportDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/extend/RelationGridViewExportDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -74,7 +74,7 @@ public class RelationGridViewExportDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `fee48e6d551a`
+- 🆔 **ID**: `f532532a31c6`
 - 📍 **라인**: 12-12
 - 📊 **토큰**: 70
 - 🏷️ **태그**: `class, java, value, spring-boot`

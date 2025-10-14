@@ -1,7 +1,7 @@
 # 📄 CardItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/catalog/offer/CardItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/prod/catalog/offer/TypeOfProd.vue` • `@/composables/useDragUserPocket` • `@/enums` • `@/components/prod/icons/BlurPurple.vue` • `@/constants/` • `@/utils/format-data` 외 7개 | ⚡ **총 복잡도**: 20 |
+| 📦 **의존성**: `vue-i18n` • `@/composables/useDragUserPocket` • `@/store/userPocket.store` • `@/components/prod/icons/DotsVerticalIcon.vue` • `@/components/prod/icons/BlurPurple.vue` • `@/enums` 외 7개 | ⚡ **총 복잡도**: 20 |
 | 📊 **총 토큰 수**: 1,292 |  |
 
 

@@ -1,7 +1,7 @@
 # 📄 OfferListExcelHelper.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/customexcel/OfferListExcelHelper.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -43,7 +43,7 @@ public interface OfferListExcelHelper extends ExcelHelper {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `0cdfc80b8d6d`
+- 🆔 **ID**: `312dd46eb664`
 - 📊 **토큰**: 12
 
 </details>

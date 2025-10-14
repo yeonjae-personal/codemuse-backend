@@ -1,7 +1,7 @@
 # 📄 SummaryPopup.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/bulk-upload/SummaryPopup.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/enums` • `./ExecutionReport.vue` • `./ErrorReport.vue` | 📊 **총 토큰 수**: 499 |
+| 📦 **의존성**: `./ErrorReport.vue` • `./ExecutionReport.vue` • `@/enums` | 📊 **총 토큰 수**: 499 |
 
 
 

@@ -1,7 +1,7 @@
 # 📄 COMMC001M.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/code/COMMC001M.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/pages/code/subs/CmcdTable.vue` • `ag-grid-community/styles/ag-grid.css` • `@/pages/code/type` • `@/pages/code/subs/CodeSearch.vue` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/utils/http-common` | ⚡ **총 복잡도**: 16 |
+| 📦 **의존성**: `@/utils/http-common` • `@/pages/code/subs/CmcdTable.vue` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/pages/code/subs/CodeSearch.vue` • `ag-grid-community/styles/ag-grid.css` • `@/pages/code/type` | ⚡ **총 복잡도**: 16 |
 | 📊 **총 토큰 수**: 203 |  |
 
 

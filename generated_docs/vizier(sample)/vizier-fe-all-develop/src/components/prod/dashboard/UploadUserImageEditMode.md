@@ -1,7 +1,7 @@
 # 📄 UploadUserImageEditMode.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/dashboard/UploadUserImageEditMode.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 11개  
 > **언어**: Javascript / Vue
 ---
@@ -29,7 +29,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `keen-slider/keen-slider.min.css` • `keen-slider` • `../icons/UserImageIconDetail.vue` • `@/store` • `vue-upload-drop-images` • `@/api/prod/path` 외 3개 | ⚡ **총 복잡도**: 62 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `keen-slider/keen-slider.min.css` • `@/utils/http-common` • `vue-upload-drop-images` • `keen-slider` 외 3개 | ⚡ **총 복잡도**: 62 |
 | 📊 **총 토큰 수**: 2,494 |  |
 
 
@@ -65,7 +65,7 @@ function handleDeleteImage(index) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `e14f3ac0a816`
+- 🆔 **ID**: `8fbadfb16047`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -119,7 +119,7 @@ function handleImageUpload(event, index) {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `6aae95d82b8c`
+- 🆔 **ID**: `63a7a10a8385`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -150,7 +150,7 @@ function closeEditDialog() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `4906cc029798`
+- 🆔 **ID**: `43424778288f`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -181,7 +181,7 @@ function cancelEditDialog() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `be9a3f7c2ed5`
+- 🆔 **ID**: `44f9ff3735d6`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -212,7 +212,7 @@ function goToPrevSlide() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `b2e25455f487`
+- 🆔 **ID**: `705a9c1013eb`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -243,7 +243,7 @@ function goToNextSlide() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `cedc8181c37a`
+- 🆔 **ID**: `aec156ba653a`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

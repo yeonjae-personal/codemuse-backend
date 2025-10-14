@@ -1,7 +1,7 @@
 # 📄 CategoryPathDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/category/CategoryPathDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -67,7 +67,7 @@ public class CategoryPathDto extends BasePaginationDto{
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `219b2e8aef4e`
+- 🆔 **ID**: `c7b6b9b4035e`
 - 📍 **라인**: 11-11
 - 📊 **토큰**: 54
 - 🏷️ **태그**: `class, java`

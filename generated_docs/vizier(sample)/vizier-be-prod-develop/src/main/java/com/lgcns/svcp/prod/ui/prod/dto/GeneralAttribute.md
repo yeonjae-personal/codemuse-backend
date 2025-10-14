@@ -1,7 +1,7 @@
 # 📄 GeneralAttribute.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/GeneralAttribute.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -53,7 +53,7 @@ public class GeneralAttribute {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `b37762196b0a`
+- 🆔 **ID**: `7c8a75d98822`
 - 📍 **라인**: 6-6
 - 📊 **토큰**: 26
 - 🏷️ **태그**: `class, java`

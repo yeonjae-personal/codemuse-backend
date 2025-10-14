@@ -1,7 +1,7 @@
 # 📄 BaseForm.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/layout/BaseForm.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 9개  
 > **언어**: Javascript / Vue
 ---
@@ -24,7 +24,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `uuid` • `@vuelidate/core` • `@/store` • `@vuelidate/validators` | ⚡ **총 복잡도**: 68 |
+| 📦 **의존성**: `@/store` • `uuid` • `@vuelidate/validators` • `@vuelidate/core` | ⚡ **총 복잡도**: 68 |
 | 📊 **총 토큰 수**: 852 |  |
 
 
@@ -68,7 +68,7 @@ function updateMenuItem() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `fa98f7438f6a`
+- 🆔 **ID**: `a5955a569a61`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -101,7 +101,7 @@ function removeMenuItem() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `6dc03e114722`
+- 🆔 **ID**: `c1123978a091`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -139,7 +139,7 @@ function addMenuItem() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `df6ad717a412`
+- 🆔 **ID**: `bcf7542b9ee1`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -170,7 +170,7 @@ function resetSelectedMenuItem() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `ffd95d0166b4`
+- 🆔 **ID**: `566d627140b6`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -217,7 +217,7 @@ function constructUpdateMenuItemPayload() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `8ad19a48367c`
+- 🆔 **ID**: `7a1178e2446c`
 - 🏷️ **태그**: `function, javascript`
 
 </details>
@@ -264,7 +264,7 @@ function constructAddMenuItemPayload() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `636d545cf8bd`
+- 🆔 **ID**: `5a59ef31aa24`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

@@ -1,7 +1,7 @@
 # 📄 SortDirection.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/enums/SortDirection.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -37,7 +37,7 @@ public enum SortDirection {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `2745d7b73b79`
+- 🆔 **ID**: `501d98c23c75`
 - 📍 **라인**: 3-3
 
 </details>

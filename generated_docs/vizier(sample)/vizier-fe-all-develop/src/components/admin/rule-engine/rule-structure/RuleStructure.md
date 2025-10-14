@@ -1,7 +1,7 @@
 # 📄 RuleStructure.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/rule-structure/RuleStructure.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `./AndConditionGroup.vue` • `./StartNode.vue` • `lodash-es/cloneDeep` • `@vueuse/core` • `@/constants/index` • `lodash-es/uniqBy` 외 7개 | ⚡ **총 복잡도**: 3 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `./MessageNode.vue` • `@vueuse/core` • `@/constants/index` • `./StartNode.vue` 외 7개 | ⚡ **총 복잡도**: 3 |
 | 📊 **총 토큰 수**: 1,575 |  |
 
 

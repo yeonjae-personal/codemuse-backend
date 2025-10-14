@@ -1,7 +1,7 @@
 # 📄 LabelSearch.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/admin/subs/attribute/item-edit/LabelSearch.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 2개  
 > **언어**: Javascript / Vue
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/composables/useRedirect` • `@/store/admin/attributeManagement.store` • `@/constants/admin/label` • `@/store` • `@/enums` • `@/enums/labelManagement` 외 4개 | 📊 **총 토큰 수**: 468 |
+| 📦 **의존성**: `@/store` • `vue-i18n` • `@/components/prod/shared/SearchPane.vue` • `@/store/admin/attributeManagement.store` • `@/enums` • `@/composables/useRedirect` 외 4개 | 📊 **총 토큰 수**: 468 |
 
 
 

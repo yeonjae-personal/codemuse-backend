@@ -1,7 +1,7 @@
 # 📄 UiUserImageService.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/service/dashboard/UiUserImageService.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -44,7 +44,7 @@ public interface UiUserImageService {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `ebc64d5e9901`
+- 🆔 **ID**: `e68a17259dd6`
 - 📊 **토큰**: 11
 
 </details>

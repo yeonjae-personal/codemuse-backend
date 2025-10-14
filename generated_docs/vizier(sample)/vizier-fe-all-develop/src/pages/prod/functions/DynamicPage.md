@@ -1,7 +1,7 @@
 # 📄 DynamicPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/DynamicPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Javascript / Vue
 ---
@@ -16,7 +16,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/store` • `./ResizeLayout.vue` • `vue-router` | ⚡ **총 복잡도**: 3 |
+| 📦 **의존성**: `@/store` • `vue-router` • `./ResizeLayout.vue` | ⚡ **총 복잡도**: 3 |
 | 📊 **총 토큰 수**: 145 |  |
 
 
@@ -48,7 +48,7 @@ function handleSwitchChange() {
 ```
 
 **Chunk 메타데이터**
-- 🆔 **ID**: `4007955731c1`
+- 🆔 **ID**: `d6ed0cf3558f`
 - 🏷️ **태그**: `function, javascript`
 
 </details>

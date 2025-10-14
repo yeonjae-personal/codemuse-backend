@@ -1,7 +1,7 @@
 # 📄 OrderPage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/OrderPage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 15개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `@/store/global.store` • `@/pages/solution/SystemPage.vue` • `@/pages/functions/subs/CreateOrderModal.vue` • `ag-grid-community/styles/ag-theme-alpine.css` 외 4개 | ⚡ **총 복잡도**: 167 |
+| 📦 **의존성**: `@/pages/functions/subs/CreateOrderModal.vue` • `ag-grid-vue3` • `@/utils/common-util` • `@/utils/http-common` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/store/global.store` 외 4개 | ⚡ **총 복잡도**: 167 |
 | 📊 **총 토큰 수**: 1,482 |  |
 
 

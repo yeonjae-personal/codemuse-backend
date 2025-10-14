@@ -1,7 +1,7 @@
 # 📄 index.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/Description/index.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 5개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/components/controls/CfSpinner.vue` • `@/store` • `@/utils/http-common` • `./subs/editDescriptionModal.vue` • `@/utils/common-util` | ⚡ **총 복잡도**: 51 |
+| 📦 **의존성**: `@/store` • `@/utils/common-util` • `@/utils/http-common` • `./subs/editDescriptionModal.vue` • `@/components/controls/CfSpinner.vue` | ⚡ **총 복잡도**: 51 |
 | 📊 **총 토큰 수**: 396 |  |
 
 

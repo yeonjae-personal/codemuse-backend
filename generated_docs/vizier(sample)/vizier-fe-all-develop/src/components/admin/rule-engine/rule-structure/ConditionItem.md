@@ -1,7 +1,7 @@
 # 📄 ConditionItem.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/admin/rule-engine/rule-structure/ConditionItem.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 4개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `lodash-es/cloneDeep` • `@/components/prod/icons/EqualIcon.vue` • `@/components/prod/icons/GreaterThanIcon.vue` • `@/components/prod/icons/LessOrEqualIcon.vue` • `@/constants/index` • `@/store/admin/ruleEngine.store` 외 9개 | ⚡ **총 복잡도**: 10 |
+| 📦 **의존성**: `@/components/prod/icons/NotEqualIcon.vue` • `vue-i18n` • `@/interfaces/admin/rule-field` • `@/components/prod/icons/LessOrEqualIcon.vue` • `@/constants/index` • `@/components/prod/icons/GreaterThanIcon.vue` 외 9개 | ⚡ **총 복잡도**: 10 |
 | 📊 **총 토큰 수**: 1,839 |  |
 
 

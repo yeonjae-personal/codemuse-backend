@@ -1,7 +1,7 @@
 # 📄 DetailLogManagementModal.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/solution/popup/DetailLogManagementModal.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 7개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `ag-grid-vue3` • `ag-grid-community/styles/ag-grid.css` • `@/store` • `@/utils/common-ordr` • `ag-grid-community/styles/ag-theme-alpine.css` • `@/utils/common-util` | ⚡ **총 복잡도**: 76 |
+| 📦 **의존성**: `@/store` • `@/utils/common-ordr` • `ag-grid-vue3` • `@/utils/common-util` • `ag-grid-community/styles/ag-theme-alpine.css` • `ag-grid-community/styles/ag-grid.css` | ⚡ **총 복잡도**: 76 |
 | 📊 **총 토큰 수**: 648 |  |
 
 

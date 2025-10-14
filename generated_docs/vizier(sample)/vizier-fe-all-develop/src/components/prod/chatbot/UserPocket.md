@@ -1,7 +1,7 @@
 # 📄 UserPocket.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/components/prod/chatbot/UserPocket.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 10개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `../icons/OpenInNewIcon.vue` • `@/composables/useDragUserPocket` • `@/composables/useRedirect` • `@/constants/multiEntity` • `@/enums` • `../icons/FolderIcon.vue` 외 8개 | ⚡ **총 복잡도**: 135 |
+| 📦 **의존성**: `vue-i18n` • `../icons/FolderIcon.vue` • `@/composables/useDragUserPocket` • `../common/BasePopover.vue` • `@/store/userPocket.store` • `../icons/DeleteIcon.vue` 외 8개 | ⚡ **총 복잡도**: 135 |
 | 📊 **총 토큰 수**: 2,439 |  |
 
 

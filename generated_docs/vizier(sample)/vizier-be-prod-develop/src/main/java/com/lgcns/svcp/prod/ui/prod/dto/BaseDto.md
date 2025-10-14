@@ -1,7 +1,7 @@
 # 📄 BaseDto.java
 
 > **파일 경로**: `vizier(sample)/vizier-be-prod-develop/src/main/java/com/lgcns/svcp/prod/ui/prod/dto/BaseDto.java`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 3개  
 > **언어**: Java
 ---
@@ -57,7 +57,7 @@ public class BaseDto {
 ```
 
 **Chunk 정보**
-- 🆔 **ID**: `9bd5f648d90e`
+- 🆔 **ID**: `c58074154618`
 - 📍 **라인**: 10-10
 - 📊 **토큰**: 21
 - 🏷️ **태그**: `class, java`

@@ -1,7 +1,7 @@
 # 📄 format-data.ts
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/utils/format-data.ts`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 27개  
 > **언어**: Javascript / Typescript
 ---
@@ -11,7 +11,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `moment-timezone` • `@/constants/` | ⚡ **총 복잡도**: 192 |
+| 📦 **의존성**: `@/constants/` • `moment-timezone` | ⚡ **총 복잡도**: 192 |
 | 📊 **총 토큰 수**: 1,843 |  |
 
 

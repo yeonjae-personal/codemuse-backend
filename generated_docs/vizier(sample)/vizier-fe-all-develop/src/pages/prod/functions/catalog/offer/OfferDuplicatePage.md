@@ -1,7 +1,7 @@
 # 📄 OfferDuplicatePage.vue
 
 > **파일 경로**: `vizier(sample)/vizier-fe-all-develop/src/pages/prod/functions/catalog/offer/OfferDuplicatePage.vue`  
-> **생성일**: 2025-10-01  
+> **생성일**: 2025-10-13  
 > **Chunk 수**: 25개  
 > **언어**: Javascript / Vue
 ---
@@ -14,7 +14,7 @@
 
 | | |
 |--|--|
-| 📦 **의존성**: `@/api/prod/commonApi` • `@/api/prod/offerApi` • `@/constants/index` • `lodash-es` • `lodash-es/cloneDeep` • `@/composables/useRedirect` 외 13개 | ⚡ **총 복잡도**: 244 |
+| 📦 **의존성**: `@/utils/config-path` • `@/constants/userInfor` • `@/constants/index` • `@/enums/columnTypes` • `@/components/prod/icons/OpenInNewIcon.vue` • `@/api/prod/offerApi` 외 13개 | ⚡ **총 복잡도**: 244 |
 | 📊 **총 토큰 수**: 2,758 |  |
 
 
