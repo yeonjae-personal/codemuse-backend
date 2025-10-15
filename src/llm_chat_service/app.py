@@ -34,15 +34,9 @@ app.add_middleware(
 
 # OpenAI 클라이언트 설정
 openai.api_key = os.getenv("OPENAI_API_KEY")
-print(f"🔑 OpenAI API Key 설정됨: {openai.api_key[:20]}..." if openai.api_key else "❌ OpenAI API Key가 설정되지 않음")
-
-# 환경변수 확인
-print(f"🔍 환경변수 OPENAI_API_KEY: {os.getenv('OPENAI_API_KEY', 'NOT_SET')[:20]}...")
-
-# 강제로 올바른 API 키 설정
-correct_api_key = "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"
-openai.api_key = correct_api_key
-print(f"🔧 강제 API 키 설정: {openai.api_key[:20]}...")
+if not openai.api_key:
+    raise ValueError("OPENAI_API_KEY 환경 변수가 설정되지 않았습니다.")
+print(f"🔑 OpenAI API Key 설정됨: {openai.api_key[:20]}...")
 
 # API 호출 통계
 api_call_stats = {
@@ -394,11 +388,6 @@ async def send_message(session_id: str, request: MessageRequest):
         print(f"🔍 [{request_id}] OpenAI API 호출 시작: model={request.model}, messages={len(chat_messages)}개")
         print(f"🔑 [{request_id}] 사용 중인 API Key: {openai.api_key[:20]}..." if openai.api_key else f"❌ [{request_id}] API Key 없음")
         print(f"📊 [{request_id}] 통계 - 총 호출: {api_call_stats['total_calls']}, 분당: {api_call_stats['calls_per_minute']}")
-        
-        # API 호출 전에 API 키를 다시 설정
-        correct_api_key = "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"
-        openai.api_key = correct_api_key
-        print(f"🔧 [{request_id}] API 호출 전 키 재설정: {openai.api_key[:20]}...")
         
         try:
             response = await call_openai_with_retry(chat_messages, request.model)

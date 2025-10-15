@@ -5,9 +5,9 @@ services:
   postgres:
     image: postgres:15
     environment:
-      POSTGRES_DB: codemuse
-      POSTGRES_USER: codemuse
-      POSTGRES_PASSWORD: codemuse_password
+      POSTGRES_DB: ${POSTGRES_DB:-codemuse}
+      POSTGRES_USER: ${POSTGRES_USER:-codemuse}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-codemuse_password}
     ports:
       - "5432:5432"
     volumes:
@@ -42,8 +42,8 @@ services:
     ports:
       - "8001:8001"
     environment:
-      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
-      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=${DATABASE_URL:-postgresql://codemuse:codemuse_password@postgres:5432/codemuse}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379}
     depends_on:
       postgres:
         condition: service_healthy
@@ -66,8 +66,8 @@ services:
     ports:
       - "8003:8003"
     environment:
-      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
-      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=${DATABASE_URL:-postgresql://codemuse:codemuse_password@postgres:5432/codemuse}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379}
       # VECTOR_DB_URL 사용 안함 (로컬 퍼시스턴트 클라이언트 사용)
     depends_on:
       postgres:
@@ -91,8 +91,8 @@ services:
     ports:
       - "8004:8004"
     environment:
-      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
-      - REDIS_URL=redis://redis:6379
+      - DATABASE_URL=${DATABASE_URL:-postgresql://codemuse:codemuse_password@postgres:5432/codemuse}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379}
       - OPENAI_API_KEY=${OPENAI_API_KEY}
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
     depends_on:
@@ -116,10 +116,10 @@ services:
     ports:
       - "8006:8006"
     environment:
-      - DATABASE_URL=postgresql://codemuse:codemuse_password@postgres:5432/codemuse
-      - REDIS_URL=redis://redis:6379
-      - RAG_SERVICE_URL=http://rag-engine:8003
-      - LLM_SERVICE_URL=http://llm-chat:8004
+      - DATABASE_URL=${DATABASE_URL:-postgresql://codemuse:codemuse_password@postgres:5432/codemuse}
+      - REDIS_URL=${REDIS_URL:-redis://redis:6379}
+      - RAG_SERVICE_URL=${RAG_SERVICE_URL:-http://rag-engine:8003}
+      - LLM_SERVICE_URL=${LLM_SERVICE_URL:-http://llm-chat:8004}
     depends_on:
       postgres:
         condition: service_healthy

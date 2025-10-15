@@ -193,8 +193,9 @@ async def get_comprehensive_status() -> Dict[str, Any]:
         rag_count = 0
         rag_status = "unknown"
         try:
+            rag_service_url = os.getenv("RAG_SERVICE_URL", "http://localhost:8003")
             async with httpx.AsyncClient() as client:
-                response = await client.get("http://localhost:8003/health", timeout=3.0)
+                response = await client.get(f"{rag_service_url}/health", timeout=3.0)
                 if response.status_code == 200:
                     rag_data = response.json()
                     rag_count = rag_data.get("documents_count", 0)
