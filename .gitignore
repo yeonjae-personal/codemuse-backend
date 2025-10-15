@@ -1,2 +1,81 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Environment Variables (CRITICAL - 절대 커밋하지 말 것)
+.env
+.env.*
+!.env.example
+*.env
+!env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+*.pid
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+chroma.sqlite3
+
+# Vector Database & Storage
 rag_storage/
+chroma_db/
+
+# Sample Code
 sample_code/
+
+# Generated Documentation
+generated_docs/
+
+# Test Results
+*.txt
+!requirements.txt
+
+# Docker
+docker-compose.override.yml
+
+# Secrets & Keys (추가 보안)
+*.pem
+*.key
+secrets/
+.secrets/
+
+# Temporary Files
+*.tmp
+*.temp
+.cache/
